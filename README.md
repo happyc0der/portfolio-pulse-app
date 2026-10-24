@@ -6,7 +6,7 @@ cited. Nothing sends itself.
 
 - **Live app:** https://portfolio-pulse-portfolio-mo-193e.ninoo.app
 - **Ninoo Marketplace:** https://market.ninoo.ai/a/portfolio-pulse
-- **Roadmap:** see the open issues
+- **Roadmap:** [issue #1, from portfolio signals to fund management](https://github.com/happyc0der/portfolio-pulse-app/issues/1)
 
 Built on October 24, 2026 at Deal Flow, NYC's VC hackathon at Betaworks (Track 3: Portfolio).
 
@@ -105,8 +105,8 @@ akta.pro news, tags, headcount ──► filters (relevance, language, market po
 ## Outcome and what's next
 
 Portfolio Pulse did not win at Deal Flow. The judge said the project was good; the main feedback was
-that it reports signals but doesn't help **manage the fund**. That is the next step, tracked in the
-issues:
+that it reports signals but doesn't help **manage the fund**. That is the next step, tracked in
+[issue #1](https://github.com/happyc0der/portfolio-pulse-app/issues/1):
 
 - **Fund management:** positions per company (ownership, cost basis, rounds), current marks and fund
   metrics (MOIC, IRR, TVPI/DPI), follow-on reserves, and an LP update that carries the numbers next to
