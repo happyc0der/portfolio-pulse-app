@@ -1,0 +1,534 @@
+[
+  {
+    "id": 40465892,
+    "group_id": 13513631,
+    "title": "Granola API Review: Endpoints, Limits & Pricing [Aug 2026]",
+    "url": "https://pipeline.zoominfo.com/sales/granola-api",
+    "publisher": "Zoominfo",
+    "published_date": "2026-10-12T23:26:14",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.7162,
+    "ai_summary": "Granola's read-only REST API (v1.2.0) exposes meeting notes, transcripts, and summaries via three endpoints, with a 5 req/sec sustained rate limit and no webhooks. It is bundled into Business ($14/user) and Enterprise ($35/user) plans, while ZoomInfo's API provides B2B intelligence for attendee enrichment.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "review",
+      "label": "Review"
+    },
+    "sentiment_score": 0.5204,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 35084416,
+    "group_id": 10516193,
+    "title": "Apple Brings Free AI Note-Taking to the Watch",
+    "url": "https://www.pymnts.com/news/artificial-intelligence/2026/apple-brings-free-ai-note-taking-watch/",
+    "publisher": "PYMNTS.com",
+    "published_date": "2026-09-10T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.7877,
+    "ai_summary": "Apple announced Siri Recap, an AI note-taker for the Apple Watch that listens and summarizes conversations for free, with no transcript or speaker ID. Granola beat Apple to the wrist by over a month, already shipping a full Watch app with transcripts and action items, while Siri Recap remains in beta.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.8848,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 34818625,
+    "group_id": 10793561,
+    "title": "AI notetakers at work could leave companies at risk for lawsuits",
+    "url": "https://www.computerworld.com/article/4219742/ai-notetakers-at-work-could-leave-companies-at-risk-for-lawsuits.html",
+    "publisher": "Computerworld",
+    "published_date": "2026-09-09T11:00:00",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Attorney Brian McGinnis discusses privacy lawsuits against AI notetaking tools, citing cases against Otter, Fireflies, Microsoft Teams, and Granola. The suits allege unauthorized recording and use of biometric data, with potential outcomes requiring opt-in consent from all meeting participants. Businesses are advised to obtain written consent and implement internal policies to avoid legal risk.",
+    "tags": [
+      {
+        "name": "Legal Proceedings & Litigation",
+        "code": "RC03",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.0085,
+    "entities": {
+      "person": [
+        "brian mcginnis"
+      ]
+    }
+  },
+  {
+    "id": 32552078,
+    "group_id": 8728169,
+    "title": "Granola API Review: Endpoints, Limits & Pricing [Aug 2026]",
+    "url": "https://pipeline.zoominfo.com/sales/granola-api",
+    "publisher": "Zoominfo",
+    "published_date": "2026-08-20T10:43:35",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.7165,
+    "ai_summary": "The article provides a technical review of Granola's read-only REST API, which allows developers to programmatically access meeting notes and transcripts from workspaces on paid plans. It contrasts this with ZoomInfo's Enterprise API, positioning the latter as an enrichment layer that provides B2B intelligence such as contact data and buying intent to complement Granola's meeting context. ",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "review",
+      "label": "Review"
+    },
+    "sentiment_score": 0.5203,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 32049748,
+    "group_id": 6927013,
+    "title": "10 AI Tools Quietly Taking Over Every Industry in 2026",
+    "url": "https://www.simplilearn.com/ai-tools-taking-over-every-industry-article",
+    "publisher": "Simplilearn.com",
+    "published_date": "2026-08-13T10:26:28",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.7891,
+    "ai_summary": "The article outlines ten AI tools currently transforming professional workflows across various industries, including Granola, NotebookLM by Google, Lovable, and Replit. These platforms enable users to automate tasks such as meeting summarization, code generation, data analytics, and voice agent deployment, significantly reducing manual effort and development time. The report highlights how these technologies are shifting startup economics and operational efficiency by allowing non-technical founders and solo operators to build complex applications rapidly. ",
+    "tags": [
+      {
+        "name": "Technology Adoption & Disruption",
+        "code": "II02",
+        "is_primary": true
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 31917532,
+    "group_id": 6827685,
+    "title": "Growing Line of Litigation Involving AI Note-Takers Exposes Risks",
+    "url": "https://natlawreview.com/article/ai-note-taking-tools-silent-recording-and-consent-problem",
+    "publisher": "The National Law Review",
+    "published_date": "2026-08-12T21:56:03",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "A class action lawsuit, Chamberlain v. Granola, Inc., has been filed in the Northern District of California alleging that AI note-taker Granola illegally records meetings without participant consent and uses data for model training by default. This case joins similar pending litigation against competitors Otter.ai and Fireflies.ai, highlighting a growing legal conflict over privacy, wiretapping laws, and biometric data collection in AI transcription services. ",
+    "tags": [
+      {
+        "name": "Legal Proceedings & Litigation",
+        "code": "RC03",
+        "is_primary": true
+      },
+      {
+        "name": "Data Privacy & Cybersecurity Regulation",
+        "code": "RC07",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.0122,
+    "entities": {
+      "person": [
+        "brian j. mcginnis",
+        "mariana renke",
+        "owen agho",
+        "parrinello",
+        "cruz"
+      ]
+    }
+  },
+  {
+    "id": 31430307,
+    "group_id": 6196635,
+    "title": "Takeaways from the California Lawsuit Agaist Granola AI Notetakin",
+    "url": "https://natlawreview.com/article/ai-meeting-tools-face-wiretapping-wake-call",
+    "publisher": "The National Law Review",
+    "published_date": "2026-08-06T22:32:16",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "A California federal lawsuit has been filed against AI notetaking provider Granola, alleging the company's software recorded meeting participants without notice or consent and used meeting contents by default for commercial purposes including AI model training. The complaint combines multiple privacy legal theories, including claims under the federal Electronic Communications Privacy Act and the California Invasion of Privacy Act. The case highlights growing regulatory and legal risks for companies deploying AI transcription tools, emphasizing that consent and transparency must be built into workflows rather than treated as an afterthought.",
+    "tags": [
+      {
+        "name": "Legal Proceedings & Litigation",
+        "code": "RC03",
+        "is_primary": true
+      },
+      {
+        "name": "Data Privacy & Cybersecurity Regulation",
+        "code": "RC07",
+        "is_primary": false
+      },
+      {
+        "name": "Reputational Damage",
+        "code": "RK06",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.0057,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 31427575,
+    "group_id": 6195571,
+    "title": "Granola lawsuit raises concerns over AI note-taking app privacy",
+    "url": "https://www.computerworld.com/article/4206255/granola-lawsuit-raises-concerns-over-ai-note-taking-app-privacy.html",
+    "publisher": "Computerworld",
+    "published_date": "2026-08-06T15:21:33",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "A privacy lawsuit was filed July 30 in a US District Court for the Northern District of California against AI note-taking app maker Granola, alleging the company \"purposefully\" designed its software to record and transcribe workplace conversations without requiring disclosure to all participants, violating the California Invasion of Privacy Act. The class action complaint, brought by Florida resident Tarra Chamberlain, also claims Granola by default uses transcription data for commercial purposes including AI model training. The case follows a similar ongoing lawsuit against Otter.ai and highlights broader privacy concerns surrounding AI note-taking tools in enterprise environments.",
+    "tags": [
+      {
+        "name": "Legal Proceedings & Litigation",
+        "code": "RC03",
+        "is_primary": true
+      },
+      {
+        "name": "Data Privacy & Cybersecurity Regulation",
+        "code": "RC07",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.0023,
+    "entities": {
+      "person": [
+        "enza iannopollo",
+        "tarra chamberlain",
+        "eumi k. lee"
+      ]
+    }
+  },
+  {
+    "id": 31557060,
+    "group_id": 6347942,
+    "title": "The Wave Continues to Build",
+    "url": "https://www.hklaw.com/en/insights/publications/2026/08/the-wave-continues-to-build",
+    "publisher": "Hklaw",
+    "published_date": "2026-08-06T00:00:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Two new privacy class action cases filed in late July 2026 demonstrate that AI-related wiretap litigation is accelerating and expanding into workplaces and restaurant telephone systems. In Chamberlain v. Granola, Inc., a plaintiff alleges the company's AI notetaking application secretly intercepted Microsoft Teams and Zoom communications without consent, advancing a novel theory against non-party class members. In Thompson v. SoundHound AI, Inc., a plaintiff alleges the company's restaurant phone AI intercepted calls before any human greeting, routing communications through SoundHound's servers for real-time transcription. Both cases raise novel legal questions around federal statutory claims and consent requirements that organizations deploying AI voice tools must consider.",
+    "tags": [
+      {
+        "name": "Legal Proceedings & Litigation",
+        "code": "RC03",
+        "is_primary": true
+      },
+      {
+        "name": "Data Privacy & Cybersecurity Regulation",
+        "code": "RC07",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "blog_post",
+      "label": "Blog post"
+    },
+    "sentiment_score": 0.4905,
+    "entities": {
+      "person": [
+        "ashley shively",
+        "ambriz",
+        "thompson"
+      ]
+    }
+  },
+  {
+    "id": 32340358,
+    "group_id": 7416613,
+    "title": "Granola CEO Refuses Enterprise Surveillance Deals — AI Note",
+    "url": "https://www.machinebrief.com/news/granola-ceo-refuses-enterprise-deals-employee-privacy-ai-note-taking-july-2026",
+    "publisher": "Machinebrief",
+    "published_date": "2026-07-31T13:07:15",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Granola CEO Chris Pedregal announced that the company has declined enterprise contracts requiring admin surveillance access to employee meeting notes, positioning individual ownership of data as a core product philosophy. This stance differentiates Granola from competitors like Fireflies, Otter, and Microsoft Copilot, which typically offer administrative oversight features for compliance and productivity tracking. The decision highlights a strategic tension between user privacy preferences and the procurement demands of enterprise buyers who often require such surveillance capabilities. ",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      },
+      {
+        "name": "Reputational Damage",
+        "code": "RK06",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.216,
+    "entities": {
+      "person": [
+        "chris pedregal"
+      ]
+    }
+  },
+  {
+    "id": 30794145,
+    "group_id": 5317385,
+    "title": "This AI notetaker won't sell surveillance to your boss",
+    "url": "https://www.platformer.news/granola-chris-pedregal-interview/",
+    "publisher": "Platformer",
+    "published_date": "2026-07-30T23:59:21",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "In a Platformer podcast interview, Chris Pedregal, co-founder and CEO of AI notetaker company Granola, discussed the company's privacy-first approach to workplace AI tools, including its decision to keep meeting notes private by default and refuse employer access to transcripts. The company, valued at $1.5 billion with approximately 70-80 employees, is researching automatic deletion of verbatim transcripts and developing enhanced transcripts designed for AI agents. Pedregal predicted that AI transcription will likely become the default in work meetings and expressed optimism about the broader AI revolution, describing current AI tools as only '5 percent' into the transformation of how people work.",
+    "tags": [
+      {
+        "name": "Executive Commentary & Interviews",
+        "code": "LG05",
+        "is_primary": true
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "interview",
+      "label": "Interview"
+    },
+    "sentiment_score": 0.1706,
+    "entities": {
+      "person": [
+        "chris pedregal",
+        "sam stephenson",
+        "thomas paul mann",
+        "casey newton",
+        "pedregal",
+        "newton",
+        "casey",
+        "patty",
+        "sam garson",
+        "chris",
+        "sam",
+        "sergey",
+        "larry"
+      ]
+    }
+  },
+  {
+    "id": 30606922,
+    "group_id": 4979540,
+    "title": "Granola AI notepad launches on Apple Watch, bringing one-tap meeting notes to your wrist",
+    "url": "https://macdailynews.com/2026/07/30/granola-ai-notepad-launches-on-apple-watch-bringing-one-tap-meeting-notes-to-your-wrist/",
+    "publisher": "MacDailyNews",
+    "published_date": "2026-07-30T16:00:33",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.7599,
+    "ai_summary": "AI note-taking startup Granola launched its meeting notepad app on Apple Watch on July 28, 2026, enabling users to capture and transcribe conversations with a single tap without needing a phone or laptop. The watchOS app records offline and syncs to the paired iPhone where AI processes audio into structured notes including highlights, decisions, and action items. The launch positions Granola in the growing market for discreet AI capture tools, following the company's prior unicorn milestone after a $125 million Series C led by Index Ventures.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "chris pedregal"
+      ]
+    }
+  },
+  {
+    "id": 30454879,
+    "group_id": 5886225,
+    "title": "AI Notetakers Have Reached the Wrist. Big Privacy Questions Are Now at Hand",
+    "url": "https://www.inc.com/georgia-fearn/ai-notetakers-have-reached-the-wrist-big-privacy-questions-are-now-at-hand/91381033",
+    "publisher": "Inc.",
+    "published_date": "2026-07-28T20:46:08",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9094,
+    "ai_summary": "Granola, an AI note-taking startup, launched a free Apple Watch app on Tuesday that lets workers record and transcribe workplace conversations from their wrists during meetings, conference sessions, and office interactions. The app requires a paired iPhone and watchOS 11 or later, with audio syncing through the iPhone to produce transcripts and structured notes accessible on mobile and desktop. The company, which raised $125 million in Series C funding in March valuing it at $1.5 billion, reported that during testing, mobile meeting capture among Apple Watch users increased 50 percent, shifting usage almost entirely from iPhone to Watch.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      },
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "feature",
+      "label": "Feature"
+    },
+    "sentiment_score": 0.6936,
+    "entities": {
+      "person": [
+        "chris pedregal",
+        "mordy golding",
+        "ron holloway",
+        "seth goldman",
+        "patty arvielo"
+      ]
+    }
+  },
+  {
+    "id": 30312983,
+    "group_id": 5030834,
+    "title": "Apple Watch just gained a brand-new app for AI meeting notes",
+    "url": "https://9to5mac.com/2026/07/28/granola-meeting-notepad-comes-to-watchos-as-apple-watch-becomes-an-ai-device/",
+    "publisher": "9to5Mac",
+    "published_date": "2026-07-28T14:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.7332,
+    "ai_summary": "Granola, an AI-powered meeting notepad app known for its Mac application, is expanding to Apple Watch today with a watchOS app designed for capturing notes during in-person conversations such as one-on-ones, whiteboard sessions, and coffee meetings. The Apple Watch app requires one tap to start note-taking with visual and audio confirmation, and notes sync across iPhone, Mac, and Windows for review or editing. The launch positions Apple Watch as an increasingly viable platform for third-party AI tools, arriving alongside Apple's own watchOS 27 AI enhancements including an upgraded Siri experience.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 29734725,
+    "group_id": 4715470,
+    "title": "Granola launches an Apple Watch app",
+    "url": "https://techcrunch.com/2026/07/28/granola-launches-an-apple-watch-app/",
+    "publisher": "TechCrunch",
+    "published_date": "2026-07-28T13:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.768,
+    "ai_summary": "AI note-taking app Granola has launched an Apple Watch app that allows users to record and transcribe meetings without needing their smartphones, with the app functioning as a watch face and syncing with the existing iOS app launched last year. The company reported that internal testing showed a significant shift in usage from iOS to the Watch among employees with Apple Watches. Granola, which achieved unicorn status earlier this year after raising a $125 million Series C round led by Index Ventures, opted to build a Watch app rather than integrate with additional hardware products.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.9854,
+    "entities": {
+      "person": [
+        "chris pedregal"
+      ]
+    }
+  }
+]

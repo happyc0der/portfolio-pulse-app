@@ -1,0 +1,171 @@
+[
+  {
+    "id": 40573816,
+    "group_id": 14132502,
+    "title": "Robotics labs are hunting for motion and video data to train AI models",
+    "url": "https://cryptobriefing.com/robotics-labs-motion-video-data-ai/",
+    "publisher": "Crypto Briefing",
+    "published_date": "2026-10-13T15:42:28",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9251,
+    "ai_summary": "Robotics labs are collecting motion and video data at scale to train AI models, with Dyna Robotics' Dyna-2 model seeing task success rise from 20% to 53% after expanding its dataset to over 1 million hours of egocentric footage. Innodata opened a motion-capture lab in New Jersey and Agile Robots announced a Robot Academy in Munich, while companies have raised nearly $48 billion in 2026 funding.",
+    "tags": [
+      {
+        "name": "Research, Development & Innovation",
+        "code": "SD08",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5189,
+    "entities": {
+      "person": [
+        "diego almada lopez"
+      ]
+    }
+  },
+  {
+    "id": 39198839,
+    "group_id": 12838884,
+    "title": "DYNA Robotics Launches DYNA 2.1 Physical Agent, a Semi-humanoid Robot that Completes Full Workflows such as a Commercial Laundry Shift",
+    "url": "https://www.prnewswire.com/news-releases/dyna-robotics-launches-dyna-2-1-physical-agent-a-semi-humanoid-robot-that-completes-full-workflows-such-as-a-commercial-laundry-shift-302892411.html",
+    "publisher": "PR Newswire",
+    "published_date": "2026-09-29T08:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9444,
+    "ai_summary": "DYNA Robotics launched the DYNA 2.1 semi-humanoid robot, which autonomously completes full workflows like a commercial laundry shift. The robot, deployed in hotels, laundromats, and restaurants, uses a proprietary model to reason through complex tasks. It is optimized for Mean Time Between Interventions to ensure commercial viability.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "lindon gao",
+        "jason ma",
+        "york yang"
+      ]
+    }
+  },
+  {
+    "id": 35050439,
+    "group_id": 11289477,
+    "title": "WRC 2026: 300-Plus Companies Showcase Applications, Yet Technical Routes Remain Unsettled",
+    "url": "https://pandaily.com/wrc-2026-embodied-intelligence-route-divergence-aug2026",
+    "publisher": "Pandaily",
+    "published_date": "2026-08-25T00:00:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.8527,
+    "ai_summary": "WRC 2026 in Beijing saw 373 companies showcase over 3,000 products, with 311 new launches, and robots performing real tasks. Technical routes for embodied intelligence remain unsettled, with new models like Dyna-2 and GEN-1.5 released. Chinese players face pressure to ship deployments amid this uncertainty.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      },
+      {
+        "name": "Research, Development & Innovation",
+        "code": "SD08",
+        "is_primary": false
+      },
+      {
+        "name": "Operational Milestones",
+        "code": "SD04",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5311,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 31640423,
+    "group_id": 6486205,
+    "title": "Dyna Robotics Introduces Groundbreaking DYNA-2 World-Action Model for Robotics Innovation",
+    "url": "https://third-news.com/article/493e33ec-94d5-11f1-9531-9ca3ba08e13f",
+    "publisher": "Third News",
+    "published_date": "2026-08-10T16:05:20",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Dyna Robotics introduced its new DYNA-2 robot model, trained on over a million hours of human video data, representing a major development in robotic intelligence. The model demonstrates significant performance improvements and adaptability across various tasks with minimal fine-tuning, indicating a breakthrough in automation capabilities. ",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "york yang",
+        "jason ma",
+        "lindon gao"
+      ]
+    }
+  },
+  {
+    "id": 35229341,
+    "group_id": 6486591,
+    "title": "/C O R R E C T I O N — DYNA Robotics/",
+    "url": "https://www.morningstar.com/news/pr-newswire/20260810sf22606/c-o-r-r-e-c-t-i-o-n-dyna-robotics",
+    "publisher": "Morningstar",
+    "published_date": "2026-08-10T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9661,
+    "ai_summary": "Dyna Robotics unveiled DYNA-2, a robot foundation model trained on over 1 million hours of human video, establishing a scaling law for physical AI. The model improved task success rates from 20% to 80–90% in manufacturing and achieved an 87% quality pass rate in zero-shot deployment. It enables cross-embodiment transfer with just hours of local fine-tuning.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "jason ma",
+        "york yang",
+        "lindon gao"
+      ]
+    }
+  }
+]

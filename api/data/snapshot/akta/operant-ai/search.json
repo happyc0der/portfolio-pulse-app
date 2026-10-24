@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "00009h7",
+    "product_category": "Runtime Application Protection Platform",
+    "match": {
+      "uuid": "00009h7",
+      "name": "Operant AI",
+      "website": "https://operant.ai",
+      "product_category": "Runtime Application Protection Platform",
+      "company_status": "private",
+      "akta_rank": 130588
+    }
+  },
+  "fetched_at": "2026-10-24T16:02:11.941818+00:00",
+  "credits_consumed": 0
+}

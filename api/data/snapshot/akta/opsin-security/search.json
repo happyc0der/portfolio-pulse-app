@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "00008ud",
+    "product_category": "Ai Security Orchestration Platform",
+    "match": {
+      "uuid": "00008ud",
+      "name": "Opsin",
+      "website": "https://www.opsinsecurity.com/",
+      "product_category": "Ai Security Orchestration Platform",
+      "company_status": "private",
+      "akta_rank": 360012
+    }
+  },
+  "fetched_at": "2026-10-24T16:02:28.561713+00:00",
+  "credits_consumed": 0
+}

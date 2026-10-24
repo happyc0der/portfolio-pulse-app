@@ -1,0 +1,179 @@
+[
+  {
+    "id": 33192077,
+    "group_id": 9824385,
+    "title": "This Startup Banned Video From Its Launch Events. That Rule Helped It Build Something Hype Can’t Buy",
+    "url": "https://www.inc.com/victoria-watters/this-startup-banned-video-from-its-launch-events-that-rule-helped-it-build-something-hype-cant-buy/91397364",
+    "publisher": "Inc.",
+    "published_date": "2026-08-29T09:00:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9409,
+    "ai_summary": "Sandbar, a New York interface company shipping its next batch of Stream rings this fall, cited a pattern in which failed AI hardware launches overpromised and underdelivered, pointing to Humane and Rabbit as examples. Brooke Travis, Sandbar's marketing vice president, said the company grew more than 100 percent in a month after deliberately delaying a feature announcement.",
+    "tags": [
+      {
+        "name": "Brand & Marketing Initiatives",
+        "code": "SD07",
+        "is_primary": true
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.3364,
+    "entities": {
+      "person": [
+        "brooke travis",
+        "latoshia norwood",
+        "latosha norwood"
+      ]
+    }
+  },
+  {
+    "id": 31938765,
+    "group_id": 7757866,
+    "title": "Sandbar Stream Ring Signals Voice as Key to Smarter AI Wearables",
+    "url": "https://beamstart.com/news/why-streamring-maker-sandbar-says-17865537292620",
+    "publisher": "BEAMSTART: News",
+    "published_date": "2026-08-12T20:57:09",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9525,
+    "ai_summary": "Sandbar has launched the Stream ring, an AI-powered wearable device designed for voice note-taking and music control. The company has secured $36 million in funding, including a $23 million Series A round, to support its product development. This launch aims to differentiate itself in the crowded wearable market by prioritizing user control over privacy and natural speech interaction. ",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      },
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.7828,
+    "entities": {
+      "person": [
+        "mina fahmi"
+      ]
+    }
+  },
+  {
+    "id": 31938763,
+    "group_id": 7757864,
+    "title": "Sandbar Stream Ring Uses Push-to-Talk Voice to Dodge AI Hardware Pitfalls",
+    "url": "https://beamstart.com/news/why-sandbar-thinks-its-voice-17865527879808",
+    "publisher": "BEAMSTART: News",
+    "published_date": "2026-08-12T18:53:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.8903,
+    "ai_summary": "Sandbar launched the Stream Ring, a wearable device that uses push-to-talk functionality to record voice notes and control music without continuously listening. The device features custom hardware designed for better fit and privacy, as no raw audio is stored on the ring itself. Investors view the product favorably as it addresses common adoption barriers faced by previous AI wearables. ",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "mina fahmi",
+        "andrew lee"
+      ]
+    }
+  },
+  {
+    "id": 31903683,
+    "group_id": 6860518,
+    "title": "Why Sandbar thinks it’s voice-enabled ring can avoid the AI hardware graveyard",
+    "url": "https://techcrunch.com/podcast/why-sandbar-thinks-its-voice-enabled-ring-can-avoid-the-ai-hardware-graveyard/",
+    "publisher": "TechCrunch",
+    "published_date": "2026-08-12T14:22:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.8055,
+    "ai_summary": "Sandbar, a startup behind the private voice ring Stream, has raised $36 million in funding, including a $23 million Series A led by Adjacent and Kindred Ventures. The company is differentiating its product by using push-to-talk functionality and custom hardware to address previous failures in voice-enabled AI wearables. ",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5438,
+    "entities": {
+      "person": [
+        "mina fahmi",
+        "theresa loconsolo",
+        "rebecca bellan"
+      ]
+    }
+  },
+  {
+    "id": 29663229,
+    "group_id": 4574565,
+    "title": "Smart rings are looking like my kind of AI gadget",
+    "url": "https://www.theverge.com/gadgets/971744/smart-ring-ai-gadget-stream-index",
+    "publisher": "The Verge",
+    "published_date": "2026-07-28T12:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.7239,
+    "ai_summary": "The Verge editor-at-large David Pierce published an opinion piece on July 28, 2026, discussing his experience with AI-powered dictation apps and a recent product demo of the Sandbar Stream smart ring, which features voice-to-text transcription across devices.",
+    "tags": [
+      {
+        "name": "Others",
+        "code": "OT01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "review",
+      "label": "Review"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "david pierce",
+        "mina fahmi",
+        "fahmi"
+      ]
+    }
+  }
+]

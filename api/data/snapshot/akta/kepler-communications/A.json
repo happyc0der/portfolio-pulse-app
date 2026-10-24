@@ -1,0 +1,274 @@
+{
+  "status": "ok",
+  "data": {
+    "data": {
+      "uuid": "000063o",
+      "linkedin_username": "kepler-communications-inc-",
+      "linkedin_official_name": "Kepler Communications Inc.",
+      "linkedin_id": "10058309",
+      "total_employees": 244,
+      "growth_periods": [
+        {
+          "month_difference": 6,
+          "change_percentage": 20
+        },
+        {
+          "month_difference": 12,
+          "change_percentage": 37
+        },
+        {
+          "month_difference": 24,
+          "change_percentage": 38
+        }
+      ],
+      "headcount_monthly": [
+        {
+          "employee_count": 177,
+          "date": "2024-10-01"
+        },
+        {
+          "employee_count": 175,
+          "date": "2024-11-01"
+        },
+        {
+          "employee_count": 169,
+          "date": "2024-12-01"
+        },
+        {
+          "employee_count": 172,
+          "date": "2025-01-01"
+        },
+        {
+          "employee_count": 172,
+          "date": "2025-02-01"
+        },
+        {
+          "employee_count": 166,
+          "date": "2025-03-01"
+        },
+        {
+          "employee_count": 165,
+          "date": "2025-04-01"
+        },
+        {
+          "employee_count": 166,
+          "date": "2025-05-01"
+        },
+        {
+          "employee_count": 168,
+          "date": "2025-06-01"
+        },
+        {
+          "employee_count": 168,
+          "date": "2025-07-01"
+        },
+        {
+          "employee_count": 159,
+          "date": "2025-08-01"
+        },
+        {
+          "employee_count": 171,
+          "date": "2025-09-01"
+        },
+        {
+          "employee_count": 178,
+          "date": "2025-10-01"
+        },
+        {
+          "employee_count": 183,
+          "date": "2025-11-01"
+        },
+        {
+          "employee_count": 181,
+          "date": "2025-12-01"
+        },
+        {
+          "employee_count": 194,
+          "date": "2026-01-01"
+        },
+        {
+          "employee_count": 201,
+          "date": "2026-02-01"
+        },
+        {
+          "employee_count": 199,
+          "date": "2026-03-01"
+        },
+        {
+          "employee_count": 203,
+          "date": "2026-04-01"
+        },
+        {
+          "employee_count": 216,
+          "date": "2026-05-01"
+        },
+        {
+          "employee_count": 222,
+          "date": "2026-06-01"
+        },
+        {
+          "employee_count": 223,
+          "date": "2026-07-01"
+        },
+        {
+          "employee_count": 225,
+          "date": "2026-08-01"
+        },
+        {
+          "employee_count": 240,
+          "date": "2026-09-01"
+        },
+        {
+          "employee_count": 244,
+          "date": "2026-10-01"
+        }
+      ],
+      "date": "2026-10-01",
+      "headcount_by_function": [
+        {
+          "name": "Engineering",
+          "employee_count": 105,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": 24
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": 65
+            }
+          ]
+        },
+        {
+          "name": "Operations",
+          "employee_count": 25,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": 19
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": 32
+            }
+          ]
+        },
+        {
+          "name": "Information Technology",
+          "employee_count": 25,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": 25
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": 32
+            }
+          ]
+        },
+        {
+          "name": "Business Development",
+          "employee_count": 12,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": null
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": 10
+            }
+          ]
+        },
+        {
+          "name": "Arts and Design",
+          "employee_count": 13,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": 8
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": 18
+            }
+          ]
+        },
+        {
+          "name": "Program and Project Management",
+          "employee_count": 12,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": 33
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": 20
+            }
+          ]
+        },
+        {
+          "name": "Human Resources",
+          "employee_count": 9,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": 50
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": 29
+            }
+          ]
+        },
+        {
+          "name": "Quality Assurance",
+          "employee_count": 10,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": 43
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": 67
+            }
+          ]
+        },
+        {
+          "name": "Marketing",
+          "employee_count": 4,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": 33
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": 33
+            }
+          ]
+        },
+        {
+          "name": "Legal",
+          "employee_count": 6,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": null
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": 20
+            }
+          ]
+        }
+      ]
+    },
+    "credits_consumed": 2.5
+  },
+  "fetched_at": "2026-10-24T16:04:33.203365+00:00",
+  "credits_consumed": 2.5
+}

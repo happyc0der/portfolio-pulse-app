@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "00004b5",
+    "product_category": "Investing and Saving Products",
+    "match": {
+      "uuid": "00004b5",
+      "name": "Wealthfront",
+      "website": "https://www.wealthfront.com",
+      "product_category": "Investing and Saving Products",
+      "company_status": "public",
+      "akta_rank": 1509
+    }
+  },
+  "fetched_at": "2026-10-24T16:02:33.948811+00:00",
+  "credits_consumed": 0
+}

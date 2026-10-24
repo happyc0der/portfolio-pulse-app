@@ -1,0 +1,67 @@
+[
+  {
+    "id": 40691268,
+    "group_id": 14217190,
+    "title": "The Dataset Inside You: Why Your Gut Microbiome Is Personalised Health's Most Underrated Resource",
+    "url": "https://www.analyticsinsight.net/healthcare/the-dataset-inside-you-why-your-gut-microbiome-is-personalised-healths-most-underrated-resource",
+    "publisher": "Analytics Insight",
+    "published_date": "2026-10-14T13:44:01",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.8411,
+    "ai_summary": "The gut microbiome contains a vast biological dataset, but metagenomic sequencing alone is insufficient for clinical use. Everlab's test adds a doctor's interpretation layer to the raw data. As sequencing costs fall, this analytical approach is expected to become mainstream in healthcare.",
+    "tags": [
+      {
+        "name": "Research, Development & Innovation",
+        "code": "SD08",
+        "is_primary": true
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.6147,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 40493793,
+    "group_id": 14099225,
+    "title": "The Gut Microbiome Is the Most Overlooked Biomarker in Preventive Health, Here’s Why That Needs to Change",
+    "url": "https://techbullion.com/the-gut-microbiome-is-the-most-overlooked-biomarker-in-preventive-health-heres-why-that-needs-to-change/",
+    "publisher": "TechBullion",
+    "published_date": "2026-10-13T05:20:18",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Gut microbiome testing is overlooked in preventive health despite its role in digestion, immunity, and metabolism. The article cites Everlab's doctor-reviewed approach as a key differentiator, arguing it follows the path of cholesterol and blood sugar testing. It suggests gut microbiome testing will become standard in preventive assessments.",
+    "tags": [
+      {
+        "name": "Others",
+        "code": "OT01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.4785,
+    "entities": {
+      "person": [
+        "doctor"
+      ]
+    }
+  }
+]

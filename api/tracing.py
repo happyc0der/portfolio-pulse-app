@@ -22,28 +22,80 @@ def get_secret(name: str) -> str:
 
 _client: Any | None = None
 _client_checked = False
+last_tracing_error: str | None = None
 
 
 def prism_enabled() -> bool:
     return bool(get_secret("PRISMTRACE_API_KEY") and get_secret("PRISMTRACE_PROJECT_ID"))
 
 
-def get_prism_client() -> Any | None:
-    global _client, _client_checked
-    if _client_checked:
+def get_prism_client(*, force: bool = False) -> Any | None:
+    global _client, _client_checked, last_tracing_error
+    if _client_checked and not force:
         return _client
-    _client_checked = True
     api_key = get_secret("PRISMTRACE_API_KEY")
     project_id = get_secret("PRISMTRACE_PROJECT_ID")
     host = get_secret("PRISMTRACE_HOST") or "https://prism.blockconvey.com"
     if not api_key or not project_id:
+        last_tracing_error = "Missing PRISMTRACE_API_KEY or PRISMTRACE_PROJECT_ID"
+        _client = None
+        _client_checked = True
         return None
     try:
         from prismtrace import PRISMtrace
         _client = PRISMtrace(api_key=api_key, host=host, project_id=project_id)
-    except Exception:
+        _client_checked = True
+        last_tracing_error = None
+    except Exception as exc:
         _client = None
+        _client_checked = True
+        last_tracing_error = f"{type(exc).__name__}: {exc}"
     return _client
+
+
+def prism_settings() -> tuple[str, str]:
+    return get_secret("PRISMTRACE_HOST") or "https://prism.blockconvey.com", get_secret("PRISMTRACE_PROJECT_ID")
+
+
+def direct_trace_check(host: str, project_id: str) -> dict[str, Any]:
+    """POST one trace synchronously to each PRISM host and report the HTTP result.
+
+    The SDK sends from a background thread and only prints failures, so its silence proves
+    nothing. Never returns the key."""
+    import httpx
+
+    api_key = get_secret("PRISMTRACE_API_KEY")
+    payload = {"project_id": project_id, "model": "selftest", "input_messages": [{"role": "user", "content": "ping"}],
+               "output_message": "pong", "latency_ms": 0, "token_count_input": 1, "token_count_output": 1,
+               "trace_id": secrets.token_hex(8), "agent_id": "selftest", "agent_name": "selftest",
+               "session_id": secrets.token_hex(8), "metadata": {"run_kind": "live", "task": "selftest-direct"}}
+    results: dict[str, Any] = {}
+    for candidate in dict.fromkeys([host.rstrip("/"), "https://api.prism.blockconvey.com", "https://prism.blockconvey.com"]):
+        try:
+            response = httpx.post(f"{candidate}/api/traces", json=payload, timeout=15,
+                                  headers={"x-prismtrace-key": api_key, "Content-Type": "application/json"})
+            body = response.text[:300].replace(api_key, "[redacted]") if api_key else response.text[:300]
+            results[candidate] = {"status": response.status_code, "body": body}
+        except Exception as exc:
+            results[candidate] = {"error": f"{type(exc).__name__}: {exc}"[:300]}
+    return results
+
+
+def prism_selftest() -> dict[str, Any]:
+    global last_tracing_error
+    host, project_id = prism_settings()
+    prefix = project_id[:8] if project_id else ""
+    client = get_prism_client(force=True)
+    if client is None:
+        return {"sent": False, "host": host, "project_id_prefix": prefix, "error": last_tracing_error}
+    try:
+        client.trace_llm(model="selftest", input_messages=[{"role": "user", "content": "ping"}], output="pong", latency_ms=0, token_count_input=1, token_count_output=1, agent_id="selftest", agent_name="selftest", session_id=secrets.token_hex(8), trace_id=secrets.token_hex(8), metadata={"run_kind": "live", "task": "selftest"})
+        flush_result = client.flush()
+        last_tracing_error = None
+        return {"sent": True, "host": host, "project_id_prefix": prefix, "error": None, "flush": flush_result, "direct": direct_trace_check(host, project_id)}
+    except Exception as exc:
+        last_tracing_error = f"{type(exc).__name__}: {exc}"
+        return {"sent": False, "host": host, "project_id_prefix": prefix, "error": last_tracing_error}
 
 
 def citation_metrics(text: str, sources: list[dict[str, Any]], splitter: Any) -> tuple[int, int, int, int]:
@@ -90,16 +142,15 @@ async def traced_chat(*, messages: list[dict[str, str]], model: str, run_name: s
     trace_metadata = {**metadata, "nicrron_generation_id": generation_id}
     if version == "v2":
         trace_metadata["raw_output"] = raw_text[:4000]
+    global last_tracing_error
     prism = get_prism_client()
     if prism is not None:
-        async def trace_and_flush() -> None:
-            try:
-                prism.trace_llm(model=body.get("model") or model, input_messages=messages, output=output_text, latency_ms=elapsed_ms, token_count_input=input_tokens, token_count_output=output_tokens, agent_id=run_name, agent_name=run_name, session_id=trace_id, trace_id=trace_id, metadata=trace_metadata)
-                await asyncio.to_thread(prism.flush)
-            except Exception:
-                return
+        async def trace_and_flush() -> Any:
+            prism.trace_llm(model=body.get("model") or model, input_messages=messages, output=output_text, latency_ms=elapsed_ms, token_count_input=input_tokens, token_count_output=output_tokens, agent_id=run_name, agent_name=run_name, session_id=trace_id, trace_id=trace_id, metadata=trace_metadata)
+            return await asyncio.to_thread(prism.flush)
         try:
-            await asyncio.wait_for(trace_and_flush(), timeout=2.0)
-        except Exception:
-            pass
+            flush_result = await asyncio.wait_for(trace_and_flush(), timeout=2.0)
+            last_tracing_error = None
+        except Exception as exc:
+            last_tracing_error = f"{type(exc).__name__}: {exc}"
     return output_text, {"raw_text": raw_text, "dropped": dropped, "generation_id": generation_id, "usage": usage, "latency_ms": elapsed_ms}

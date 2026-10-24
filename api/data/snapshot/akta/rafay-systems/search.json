@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "0000dwb",
+    "product_category": "Kubernetes Management Software",
+    "match": {
+      "uuid": "0000dwb",
+      "name": "Rafay Systems",
+      "website": "https://rafay.co",
+      "product_category": "Kubernetes Management Software",
+      "company_status": "private",
+      "akta_rank": 16602
+    }
+  },
+  "fetched_at": "2026-10-24T16:02:45.444018+00:00",
+  "credits_consumed": 0
+}

@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "00005ir",
+    "product_category": "Hair Color Products And Services",
+    "match": {
+      "uuid": "00005ir",
+      "name": "Madison Reed",
+      "website": "http://www.madison-reed.com",
+      "product_category": "Hair Color Products And Services",
+      "company_status": "private",
+      "akta_rank": 72698
+    }
+  },
+  "fetched_at": "2026-10-24T16:02:31.269194+00:00",
+  "credits_consumed": 0
+}

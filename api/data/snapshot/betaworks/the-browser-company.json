@@ -1,0 +1,70 @@
+[
+  {
+    "id": 42272708,
+    "group_id": 15451412,
+    "title": "Web Browser Arc Is Shutting Down Later This Year, Asks You to Switch to Dia",
+    "url": "https://www.pcmag.com/news/web-browser-arc-is-shutting-down-later-this-year-asks-you-to-switch-to",
+    "publisher": "PCMag",
+    "published_date": "2026-10-23T10:06:54",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "The Browser Company will shut down Arc on Dec. 22, 2026, and migrate users to its new browser Dia. New accounts can no longer be created on Oct. 22, and all Arc accounts will be deactivated by Dec. 22, with data deleted by Jan. 21, 2027.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.0328,
+    "entities": {
+      "person": [
+        "josh miller",
+        "ajit varma"
+      ]
+    }
+  },
+  {
+    "id": 30560670,
+    "group_id": 4722943,
+    "title": "After a long wait, Dia browser is finally coming to Windows",
+    "url": "https://www.digitaltrends.com/computing/after-a-long-wait-dia-browser-is-finally-coming-to-windows/",
+    "publisher": "Digital Trends",
+    "published_date": "2026-07-29T21:00:49",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.916,
+    "ai_summary": "The Browser Company has announced that its AI-first Dia browser will arrive on Windows this fall, ending the macOS exclusivity that began with its launch last year. Built on Chromium, Dia integrates AI capabilities directly into the browsing experience, allowing users to summarize information, answer questions using browsing context, and compare products across tabs. Windows users can now sign up for the beta waitlist, with pricing following a freemium model at $20/month for the Pro tier.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      },
+      {
+        "name": "Pricing & Commercial Strategy",
+        "code": "SD10",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "manisha priyadarshini"
+      ]
+    }
+  }
+]

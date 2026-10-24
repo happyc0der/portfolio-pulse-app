@@ -1,0 +1,254 @@
+[
+  {
+    "id": 39757305,
+    "group_id": 11099887,
+    "title": "Open or closed AI? Learn what to build on at Disrupt 2026",
+    "url": "https://techcrunch.com/2026/10/05/open-or-closed-ai-how-founders-are-choosing-what-to-build-on-at-techcrunch-disrupt-2026/",
+    "publisher": "TechCrunch",
+    "published_date": "2026-10-05T15:00:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9273,
+    "ai_summary": "TechCrunch Disrupt 2026 will feature four sessions on AI model choices, covering multi-model applications, ownership, and hardware. Speakers include leaders from Together AI, Pathway, Oumi, and Nvidia, discussing trade-offs between open and proprietary models. The event runs October 13-15 in San Francisco.",
+    "tags": [
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.6404,
+    "entities": {
+      "person": [
+        "sydney sykes",
+        "manos koukoumidis",
+        "azalia mirhoseini",
+        "mo jomaa",
+        "zuzanna stamirowska",
+        "nader khalil",
+        "anna goldie",
+        "vipul ved prakash"
+      ]
+    }
+  },
+  {
+    "id": 33031754,
+    "group_id": 9550157,
+    "title": "Oumi Want Every Enterprise to Build Its Own AI Brain",
+    "url": "https://www.pymnts.com/news/artificial-intelligence/2026/oumi-want-every-enterprise-to-build-its-own-ai-brain/",
+    "publisher": "PYMNTS.com",
+    "published_date": "2026-08-26T08:00:10",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9592,
+    "ai_summary": "Oumi launched its Compounding AI Factory, a platform that automates the development of specialized enterprise AI models, generating data, evaluating performance, training and continuously improving models from a company's own data. CEO Manos Koukoumidis said the tool lets organizations build custom models in minutes rather than weeks, reducing cost and complexity. He argued enterprises should own rather than rent AI, citing control, pricing and data security.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.9979,
+    "entities": {
+      "person": [
+        "manos koukoumidis",
+        "koukoumidis"
+      ]
+    }
+  },
+  {
+    "id": 31964939,
+    "group_id": 6848453,
+    "title": "Companies Want to Own Their AI, Not Rent It",
+    "url": "https://www.pymnts.com/news/artificial-intelligence/2026/companies-want-to-own-their-ai-not-rent-it/",
+    "publisher": "PYMNTS.com",
+    "published_date": "2026-08-12T22:41:53",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Oumi launched its Compounding AI Factory to enable enterprises to deploy and continuously retrain specialized AI models on proprietary data, positioning itself against the trend of renting general-purpose models. Major financial institutions like Morgan Stanley and JPMorgan are already demonstrating significant efficiency gains through similar in-house AI strategies, while companies like Mistral have built substantial revenue from this model. Despite high adoption rates in the financial sector, fragmented and poor-quality data remains a primary barrier to broader enterprise AI deployment. ",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      },
+      {
+        "name": "Technology Adoption & Disruption",
+        "code": "II02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.0888,
+    "entities": {
+      "person": [
+        "manos koukoumidis",
+        "mike pizzi"
+      ]
+    }
+  },
+  {
+    "id": 31800851,
+    "group_id": 6762840,
+    "title": "Oumi Launches Compounding AI Factory, Enabling Every Enterprise to Build, Own and Compound Its Intelligence",
+    "url": "https://martechseries.com/analytics/data-management-platforms/oumi-launches-compounding-ai-factory-enabling-every-enterprise-to-build-own-and-compound-its-intelligence/",
+    "publisher": "MarTech Series",
+    "published_date": "2026-08-12T06:34:36",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Oumi, an enterprise AI platform, unveiled new capabilities that enable companies to build, deploy, and continuously improve specialized AI models on their own production data, effectively turning them into AI factories. The platform addresses limitations of using general closed frontier models, including lack of differentiation, intellectual property leakage, and costs running 5 to 10 times higher than necessary. The launch includes auto-scaling deployment, continuous retraining from production data, and an agent-operable CLI, all under full AI sovereignty with Apache 2.0 open-source licensing.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "manos koukoumidis",
+        "mark listes"
+      ]
+    }
+  },
+  {
+    "id": 30992632,
+    "group_id": 5405663,
+    "title": "Meet the coaches, measurers, and builders carving out a slice of the AI cost-saving business",
+    "url": "https://www.businessinsider.com/ai-cost-saving-businesses-startups-roi-2026-7",
+    "publisher": "Business Insider",
+    "published_date": "2026-08-03T01:30:26",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "A new wave of AI cost-saving companies has emerged to help enterprises reduce inflated AI spending by offering consulting services, measurement tools, and specialized model-building products. Notable players include Oumi AI ($10M seed), Larridin ($17M seed from Andreessen Horowitz and Google Ventures), Tensormesh ($20M from AMD and NVentures), and Conifer (Y Combinator-backed). Industry experts argue that companies have been inefficiently using expensive frontier AI models from Anthropic, OpenAI, and Google for niche tasks, and advocate for lighter, open-source models and better ROI measurement practices.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      },
+      {
+        "name": "Technology Adoption & Disruption",
+        "code": "II02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.0265,
+    "entities": {
+      "person": [
+        "manos koukoumidis",
+        "michael murphy",
+        "junchen jiang",
+        "ameya kanitkar",
+        "ioana hreninciuc",
+        "charles muehlberger",
+        "michael jeffords",
+        "kanitkar",
+        "hreninciuc"
+      ]
+    }
+  },
+  {
+    "id": 30899567,
+    "group_id": 5160820,
+    "title": "Seattle Tech Week notebook: AI, startups, and the best insights and takeaways we heard",
+    "url": "https://www.geekwire.com/2026/seattle-tech-week-takeaways-ai-startups-and-the-best-insights-and-quotes-we-heard/",
+    "publisher": "GeekWire",
+    "published_date": "2026-07-31T17:44:36",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.7601,
+    "ai_summary": "Seattle Tech Week brought together more than 250 events focused on AI and the regional startup ecosystem, with attendees noting strong engagement and enthusiasm despite concerns about the city's standing relative to Philadelphia, Austin, and New York in venture capital rankings. Panel discussions highlighted tensions between companies building on frontier AI models and those controlling the underlying intelligence, while executives debated whether firms relying on third-party AI are true AI companies or merely application layers. Industry leaders including Oumi, Clarify, OpenAI, and Mistral AI executives shared insights on AI spending, hiring practices, and the shift toward outcome-based business models.",
+    "tags": [
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": true
+      },
+      {
+        "name": "Business-Model Evolution",
+        "code": "II03",
+        "is_primary": false
+      },
+      {
+        "name": "Competitive Threats",
+        "code": "II04",
+        "is_primary": false
+      },
+      {
+        "name": "Sector Outlook & Forecasts",
+        "code": "MM07",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.9725,
+    "entities": {
+      "person": [
+        "manos koukoumidis",
+        "sabrina albert",
+        "nizar tarhuni",
+        "patrick thompson",
+        "kirby winfield",
+        "ben gaffney",
+        "jacob colker",
+        "brian hall",
+        "boaz ashkenazy",
+        "ken horenstein",
+        "todd bishop",
+        "karl siebrecht",
+        "molly klein",
+        "winfield"
+      ]
+    }
+  }
+]

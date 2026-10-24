@@ -1,0 +1,109 @@
+[
+  {
+    "id": 32490430,
+    "group_id": 7892988,
+    "title": "FTC sends investigative inquiries to health tech companies",
+    "url": "https://medicalbuyer.co.in/ftc-sends-investigative-inquiries-to-health-tech-companies/",
+    "publisher": "Medical Buyer",
+    "published_date": "2026-08-19T11:41:50",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "The US Federal Trade Commission has sent investigative inquiries to health technology companies, specifically targeting Epic Systems regarding allegations that it stifles innovation by preventing lawful access to patient data. Epic Systems disputes these claims, asserting its leadership in interoperability and citing the use of its APIs by over 3,000 applications. This regulatory scrutiny follows ongoing legal battles, including an antitrust lawsuit from Particle Health and a suit from the Texas Attorney General. ",
+    "tags": [
+      {
+        "name": "Antitrust & Competition",
+        "code": "RC06",
+        "is_primary": true
+      },
+      {
+        "name": "Legal Proceedings & Litigation",
+        "code": "RC03",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "investigative",
+      "label": "Investigative"
+    },
+    "sentiment_score": 0.2626,
+    "entities": {
+      "person": [
+        "jason prestinario",
+        "ken paxton"
+      ]
+    }
+  },
+  {
+    "id": 35090350,
+    "group_id": 6970548,
+    "title": "Epic Systems faces FTC antitrust probe over health data access",
+    "url": "https://www.taiwansun.com/news/279244591/epic-systems-faces-ftc-antitrust-probe-over-health-data-access",
+    "publisher": "Taiwansun",
+    "published_date": "2026-08-17T00:00:00",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "The U.S. Federal Trade Commission is investigating Epic Systems over how it grants or restricts access to health data, sending investigative demands to the health technology industry. Epic denies anticompetitive behavior, while Texas Attorney General Ken Paxton and Particle Health have sued the company over similar claims.",
+    "tags": [
+      {
+        "name": "Antitrust & Competition",
+        "code": "RC06",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "investigative",
+      "label": "Investigative"
+    },
+    "sentiment_score": 0.1039,
+    "entities": {
+      "person": [
+        "ken paxton"
+      ]
+    }
+  },
+  {
+    "id": 32311889,
+    "group_id": 6975106,
+    "title": "Exclusive: FTC Zooms in on Epic-Healthcare's Data-Moat Story Just Got a Regulatory Hit",
+    "url": "https://www.ainvest.com/news/exclusive-ftc-zooms-epic-healthcare-data-moat-story-regulatory-hit-2608/",
+    "publisher": "AInvest",
+    "published_date": "2026-08-16T04:34:28",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "The Federal Trade Commission is investigating Epic Systems regarding its control over healthcare data access and interoperability, moving beyond scrutiny of its electronic health record software. The probe involves investigative demands sent to Epic as well as other health-tech firms like Texas and Particle Health, who accuse Epic of blocking rivals by restricting data flows. This regulatory action could reshape the healthcare IT landscape by favoring interoperability tools over closed data ecosystems.",
+    "tags": [
+      {
+        "name": "Antitrust & Competition",
+        "code": "RC06",
+        "is_primary": true
+      },
+      {
+        "name": "Data Privacy & Cybersecurity Regulation",
+        "code": "RC07",
+        "is_primary": false
+      },
+      {
+        "name": "Competitive Threats",
+        "code": "II04",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.4903,
+    "entities": {
+      "person": []
+    }
+  }
+]

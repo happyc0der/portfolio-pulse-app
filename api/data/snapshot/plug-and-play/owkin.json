@@ -1,0 +1,223 @@
+[
+  {
+    "id": 39169408,
+    "group_id": 12814020,
+    "title": "Estonia and Owkin Partner to Advance Sovereign AI in Biology",
+    "url": "https://www.financialcontent.com/article/bizwire-2026-9-29-estonia-and-owkin-partner-to-advance-sovereign-ai-in-biology",
+    "publisher": "FinancialContent Business Page",
+    "published_date": "2026-09-29T06:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9526,
+    "ai_summary": "Estonia and Owkin announced a collaboration to evaluate Owkin's K Pro AI platform for working with Estonian health data in secure national infrastructure. The first phase will focus on selected health-data cohorts, including oncology, to explore reusable AI-enabled research capability. The partnership aims to strengthen domestic scientific excellence and attract international life-sciences investment.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "promotional",
+      "label": "Promotional"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "thomas clozel",
+        "liina vahtras"
+      ]
+    }
+  },
+  {
+    "id": 35105748,
+    "group_id": 10960364,
+    "title": "Owkin, Servier ink oncology R&D deal to guide discovery and trial design",
+    "url": "https://www.fiercebiotech.com/cro/owkin-servier-ink-oncology-rd-deal-guide-trial-design-and-discovery",
+    "publisher": "FierceBiotech",
+    "published_date": "2026-09-11T14:03:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9535,
+    "ai_summary": "Owkin and Servier signed a deal to license Owkin's AI scientist K Pro for Servier's oncology discovery and trial operations. The partnership gives Servier access to multimodal patient data from Owkin's MOSAIC network for analysis. It builds on a 2023 agreement to use AI for patient population identification.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "promotional",
+      "label": "Promotional"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "claude bertrand",
+        "thomas clozel"
+      ]
+    }
+  },
+  {
+    "id": 34875608,
+    "group_id": 10912178,
+    "title": "Thomas Clozel, M.D., Co-Founder and CEO of Owkin – Interview Series",
+    "url": "https://www.unite.ai/thomas-clozel-m-d-co-founder-and-ceo-of-owkin-interview-series/",
+    "publisher": "Unite.AI",
+    "published_date": "2026-09-10T16:13:04",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Thomas Clozel, CEO of Owkin, discusses the company's AI platform K Pro, which combines multimodal patient data to generate biological hypotheses. He outlines a four-stage validation process and mentions partnerships with Sanofi, Bristol Myers Squibb, and MSD. Owkin aims to develop Biological Artificial Superintelligence, an autonomous AI system for drug discovery.",
+    "tags": [
+      {
+        "name": "Executive Commentary & Interviews",
+        "code": "LG05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "interview",
+      "label": "Interview"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "gilles wainrib",
+        "thomas clozel",
+        "dr. ari melnick",
+        "antoine tardif"
+      ]
+    }
+  },
+  {
+    "id": 35082444,
+    "group_id": 11299269,
+    "title": "Owkin Partners with Boehringer Ingelheim to Accelerate Drug Discovery with AI",
+    "url": "https://www.synbiobeta.com/read/owkin-partners-with-boehringer-ingelheim-to-accelerate-drug-discovery-with-ai",
+    "publisher": "SynBioBeta",
+    "published_date": "2026-09-08T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9018,
+    "ai_summary": "Owkin licensed its AI Scientist K Pro to Boehringer Ingelheim to accelerate drug discovery in oncology and immunology. The agreement includes licensing existing multimodal oncology data and generating new immunology data, building on a 2025 pilot. Owkin expects AI and multimodal patient data to define the next decade of drug development.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "promotional",
+      "label": "Promotional"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "thomas clozel"
+      ]
+    }
+  },
+  {
+    "id": 35084070,
+    "group_id": 10262917,
+    "title": "Boehringer signs AI drug discovery deal with Owkin",
+    "url": "https://pharmaphorum.com/news/boehringer-signs-ai-drug-discovery-deal-owkin",
+    "publisher": "pharmaphorum",
+    "published_date": "2026-09-03T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Boehringer Ingelheim signed an agreement to deploy Owkin's K Pro AI platform in its oncology and immunology R&D, following a pilot that analyzed the $50 million MOSAIC dataset. Financial terms were not disclosed, and Owkin expects additional partnerships soon.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "thomas clozel",
+        "pascal weinberger"
+      ]
+    }
+  },
+  {
+    "id": 35071422,
+    "group_id": 10256836,
+    "title": "Owkin licenses AI Scientist platform and multimodal patient data to Boehringer",
+    "url": "https://www.thepharmaletter.com/pharma-news/owkin-licenses-ai-scientist-platform-and-multimodal-patient-data-to-boehringer",
+    "publisher": "The Pharma Letter",
+    "published_date": "2026-09-03T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Owkin signed a licensing agreement with Boehringer Ingelheim, granting the German pharma major access to Owkin's AI Scientist platform and multimodal patient data. The deal aims to speed up discovery across oncology and immunology indications.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.8419,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 12969256,
+    "group_id": 11334144,
+    "title": "Jean-Frederic Petit-Nivard - Owkin",
+    "url": "https://www.linkedin.com/in/jfpetitnivard/",
+    "publisher": "LinkedIn",
+    "published_date": "2026-09-02T06:00:18.916000",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Owkin announced the 2025 IA40 winners, with 340+ companies nominated and $86B raised in the past 12 months. Twenty-seven companies are new this year, and the list highlights the Reasoning Revolution. The winners will be celebrated at the IA40 Summit in Seattle on September 30th and October 1st.",
+    "tags": [
+      {
+        "name": "Awards, Rankings & Recognitions",
+        "code": "SD11",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "jean-frederic petit-nivard"
+      ]
+    }
+  }
+]

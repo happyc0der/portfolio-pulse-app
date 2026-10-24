@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "0000dgb",
+    "product_category": "Children Eyewear Frames",
+    "match": {
+      "uuid": "0000dgb",
+      "name": "Pair Eyewear",
+      "website": "https://paireyewear.com",
+      "product_category": "Children Eyewear Frames",
+      "company_status": "private",
+      "akta_rank": 47590
+    }
+  },
+  "fetched_at": "2026-10-24T16:02:00.939725+00:00",
+  "credits_consumed": 0
+}

@@ -1,0 +1,260 @@
+{
+  "status": "ok",
+  "data": {
+    "data": {
+      "uuid": "0000b6h",
+      "linkedin_username": "electric-ai",
+      "linkedin_official_name": "Electric",
+      "linkedin_id": "15212511",
+      "total_employees": 494,
+      "growth_periods": [
+        {
+          "month_difference": 6,
+          "change_percentage": 2
+        },
+        {
+          "month_difference": 12,
+          "change_percentage": 20
+        },
+        {
+          "month_difference": 24,
+          "change_percentage": 83
+        }
+      ],
+      "headcount_monthly": [
+        {
+          "employee_count": 270,
+          "date": "2024-10-01"
+        },
+        {
+          "employee_count": 266,
+          "date": "2024-11-01"
+        },
+        {
+          "employee_count": 262,
+          "date": "2024-12-01"
+        },
+        {
+          "employee_count": 259,
+          "date": "2025-01-01"
+        },
+        {
+          "employee_count": 255,
+          "date": "2025-02-01"
+        },
+        {
+          "employee_count": 252,
+          "date": "2025-03-01"
+        },
+        {
+          "employee_count": 214,
+          "date": "2025-04-01"
+        },
+        {
+          "employee_count": 233,
+          "date": "2025-05-01"
+        },
+        {
+          "employee_count": 254,
+          "date": "2025-06-01"
+        },
+        {
+          "employee_count": 300,
+          "date": "2025-07-01"
+        },
+        {
+          "employee_count": 343,
+          "date": "2025-08-01"
+        },
+        {
+          "employee_count": 376,
+          "date": "2025-09-01"
+        },
+        {
+          "employee_count": 410,
+          "date": "2025-10-01"
+        },
+        {
+          "employee_count": 429,
+          "date": "2025-11-01"
+        },
+        {
+          "employee_count": 455,
+          "date": "2025-12-01"
+        },
+        {
+          "employee_count": 477,
+          "date": "2026-01-01"
+        },
+        {
+          "employee_count": 482,
+          "date": "2026-02-01"
+        },
+        {
+          "employee_count": 484,
+          "date": "2026-03-01"
+        },
+        {
+          "employee_count": 484,
+          "date": "2026-04-01"
+        },
+        {
+          "employee_count": 479,
+          "date": "2026-05-01"
+        },
+        {
+          "employee_count": 481,
+          "date": "2026-06-01"
+        },
+        {
+          "employee_count": 490,
+          "date": "2026-07-01"
+        },
+        {
+          "employee_count": 493,
+          "date": "2026-08-01"
+        },
+        {
+          "employee_count": 494,
+          "date": "2026-09-01"
+        },
+        {
+          "employee_count": 494,
+          "date": "2026-10-01"
+        }
+      ],
+      "date": "2026-10-01",
+      "headcount_by_function": [
+        {
+          "name": "Operations",
+          "employee_count": 138,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": 6
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": 52
+            }
+          ]
+        },
+        {
+          "name": "Engineering",
+          "employee_count": 111,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": 2
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": 23
+            }
+          ]
+        },
+        {
+          "name": "Business Development",
+          "employee_count": 28,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": 4
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": 22
+            }
+          ]
+        },
+        {
+          "name": "Sales",
+          "employee_count": 29,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": -6
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": 26
+            }
+          ]
+        },
+        {
+          "name": "Support",
+          "employee_count": 21,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": 5
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": 31
+            }
+          ]
+        },
+        {
+          "name": "Information Technology",
+          "employee_count": 19,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": -5
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": -10
+            }
+          ]
+        },
+        {
+          "name": "Administrative",
+          "employee_count": 14,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": null
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": 40
+            }
+          ]
+        },
+        {
+          "name": "Education",
+          "employee_count": 11,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": null
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": 83
+            }
+          ]
+        },
+        {
+          "name": "Entrepreneurship",
+          "employee_count": 12,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": null
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": 20
+            }
+          ]
+        }
+      ]
+    },
+    "credits_consumed": 2.5
+  },
+  "fetched_at": "2026-10-24T16:05:29.802640+00:00",
+  "credits_consumed": 2.5
+}

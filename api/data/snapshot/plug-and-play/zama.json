@@ -1,0 +1,217 @@
+[
+  {
+    "id": 40732423,
+    "group_id": 14258209,
+    "title": "Irene Patrikios has been appointed Chief...",
+    "url": "https://www.chaincatcher.com/en/article/2296369",
+    "publisher": "链捕手 ChainCatcher",
+    "published_date": "2026-10-14T23:05:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Irene Patrikios was appointed Chief Business Officer of Zama, a fully homomorphic encryption company. She joined in November 2025 and has worked in cryptocurrency for nearly 12 years. She noted Zama's business team has launched confidential DeFi collaborations with major participants.",
+    "tags": [
+      {
+        "name": "C-Suite Appointments & Departures",
+        "code": "LG01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "other",
+      "label": "Other"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "irene patrikios",
+        "rand hindi"
+      ]
+    }
+  },
+  {
+    "id": 40154490,
+    "group_id": 13742379,
+    "title": "Shiba Inu prediction: Zama's Q2 2026 target window has passed, Shibarium holds $159,561: Guest Post by CryptoTicker ENG",
+    "url": "https://coinmarketcap.com/community/articles/6ac80edd52231a50ba5867b9/",
+    "publisher": "CoinMarketCap",
+    "published_date": "2026-10-08T21:46:52",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9623,
+    "ai_summary": "Zama's Q2 2026 target window for Shibarium's confidential smart contracts has passed without a confirmed mainnet date. SHIB traded at $0.00000528, 2.6% below the prior day, while Shibarium holds $159,561 in deposited capital and averages 3,012 daily transactions. The lack of a new date weakens the upgrade's credibility.",
+    "tags": [
+      {
+        "name": "Guidance & Forecast Revisions",
+        "code": "FR05",
+        "is_primary": true
+      },
+      {
+        "name": "Daily Stock Market News",
+        "code": "CM12",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.2348,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 39625863,
+    "group_id": 13317147,
+    "title": "Zama One Day Trading Volume Tops $53.45 Million (ZAMA)",
+    "url": "https://www.americanbankingnews.com/2026/10/04/zama-one-day-trading-volume-tops-53-45-million-zama.html",
+    "publisher": "American Banking and Market News",
+    "published_date": "2026-10-04T11:29:25",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9031,
+    "ai_summary": "Zama's trading volume exceeded $53.45 million in the 24 hours ending October 4th, with the token up 9.3% against the dollar. The market cap stands at $222.57 million, and one ZAMA token trades at about $0.0874.",
+    "tags": [
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.9924,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 39671881,
+    "group_id": 13395352,
+    "title": "Morpho: Zama confidential vaults go live with over $66M in deposits - Sep 2026",
+    "url": "https://www.tradingview.com/news/coinmarketcal:e00c7afe6094b:0-morpho-zama-confidential-vaults-go-live-with-over-66m-in-deposits-sep-2026/",
+    "publisher": "TradingView",
+    "published_date": "2026-09-28T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Zama's confidential vaults launched on Morpho, bringing encrypted balances to the lending protocol. Over $66M in confidential deposits were received, including more than $16M through launch partner RockawayX, whose vaults anchor the initial rollout. The deposits do not yet feed a direct token-economic mechanism for MORPHO.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 37312221,
+    "group_id": 11313060,
+    "title": "ZAMA Surges 42% as Confidential Vaults and FHE Privacy Drive Institutional DeFi Adoption",
+    "url": "https://www.ainvest.com/news/zama-surges-42-confidential-vaults-fhe-privacy-drive-institutional-defi-adoption-2609/",
+    "publisher": "AInvest",
+    "published_date": "2026-09-22T05:53:06",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "ZAMA token surged 42% to $0.085, pushing market cap past $210 million, after deploying 16 confidential Morpho vaults and the Zama Swap Protocol on Ethereum. The protocol charges $0.13 per encryption, with cUSDT shielded volume at $131.3 million, but tokenomics remain inflationary due to staking rewards.",
+    "tags": [
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 36208416,
+    "group_id": 11644916,
+    "title": "Zama (ZAMA) Protocol Expansion Drives Price Growth Amid Privacy Sector Rally",
+    "url": "https://www.ainvest.com/news/zama-zama-protocol-expansion-drives-price-growth-privacy-sector-rally-2609/",
+    "publisher": "AInvest",
+    "published_date": "2026-09-19T09:04:17",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Zama launched 16 confidential yield vaults and a swap protocol, pushing its shielded TVL above $65M. The price rose 3.69% to $0.0497, with support at $0.045 and resistance at $0.055. Sustained TVL growth will determine future price movement.",
+    "tags": [
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "aime"
+      ]
+    }
+  },
+  {
+    "id": 36200242,
+    "group_id": 11552655,
+    "title": "ZAMA’s 20% Surge Hits a Wall",
+    "url": "https://www.ainvest.com/news/zama-20-surge-hits-wall-2609/",
+    "publisher": "AInvest",
+    "published_date": "2026-09-19T01:50:47",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9688,
+    "ai_summary": "ZAMAUSDT surged 20% in three days, testing resistance near 0.060 with high volume before consolidating. Price rejected 0.0580 multiple times, showing bearish pressure, while a 03:00 volume spike drove a 4% rally that weakened. A break above 0.0605 could confirm bullish continuation, while rejection risks reversion to the 0.0540-0.0605 range.",
+    "tags": [
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "aime"
+      ]
+    }
+  }
+]

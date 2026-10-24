@@ -1,0 +1,257 @@
+[
+  {
+    "id": 41666599,
+    "group_id": 15120195,
+    "title": "Top 3 Penny Stocks To Watch In October 2026",
+    "url": "https://simplywall.st/stocks/us/healthcare/nasdaq-gdrx/goodrx-holdings/news/top-3-penny-stocks-to-watch-in-october-2026-4",
+    "publisher": "Simply Wall St",
+    "published_date": "2026-10-21T02:37:53",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9574,
+    "ai_summary": "GoodRx Holdings, Grab Holdings, and SoundHound AI are highlighted as financially stronger penny stocks for October 2026. GoodRx reports $785 million in healthcare software revenue and 32% YoY growth in pharma solutions, while Grab's operating profit rose to $19 million and SoundHound AI's voice AI adoption continues to drive growth.",
+    "tags": [
+      {
+        "name": "Guidance & Forecast Revisions",
+        "code": "FR05",
+        "is_primary": true
+      },
+      {
+        "name": "Daily Stock Market News",
+        "code": "CM12",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.6221,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 41572414,
+    "group_id": 12933134,
+    "title": "SoundHound AI Stock Hasn't Been This Cheap in Over 2 Years. Is Now the Time to Buy?",
+    "url": "https://www.fool.com/investing/2026/10/20/soundhound-ai-stock-hasn-t-been-this-cheap-in-over-2-years-is-now-the-time-to-buy/",
+    "publisher": "The Motley Fool",
+    "published_date": "2026-10-20T14:16:02",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "SoundHound AI's stock has fallen over 75% in the past year, trading near 2024 lows. The company reported 45% revenue growth to $61.9 million but an operating loss of $43.3 million, burning nearly $60 million in cash. The stock may decline further without improved profitability.",
+    "tags": [
+      {
+        "name": "Daily Stock Market News",
+        "code": "CM12",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": true,
+    "article_type": {
+      "code": "opinion",
+      "label": "Opinion"
+    },
+    "sentiment_score": 0.0191,
+    "entities": {
+      "person": [
+        "david jagielski"
+      ]
+    }
+  },
+  {
+    "id": 41553848,
+    "group_id": 14996466,
+    "title": "2 Revolutionary AI Stocks With 241% and 324% Upside, According to Select Wall Street Analysts",
+    "url": "https://www.fool.com/investing/2026/10/20/2-revolutionary-ai-stocks-241-and-324-upside-according-to-wall-street-analysts/",
+    "publisher": "The Motley Fool",
+    "published_date": "2026-10-20T11:06:01",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Analysts see Micron and SoundHound AI as AI stocks with up to 324% upside from Oct. 16 close. Micron's Gil Luria raised his price target to $3,000, implying 241% upside, while SoundHound's Scott Buck sees $20, implying 324% upside. Both face risks: Micron's HBM competition and SoundHound's losses and dilution.",
+    "tags": [
+      {
+        "name": "Guidance & Forecast Revisions",
+        "code": "FR05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "gil luria",
+        "scott buck"
+      ]
+    }
+  },
+  {
+    "id": 41095205,
+    "group_id": 14555142,
+    "title": "The Biggest Risk Facing These 3 High-Growth Stocks Isn't Demand",
+    "url": "https://www.fool.com/investing/2026/10/17/the-biggest-risk-facing-these-3-high-growth-stocks/?source=iedfolrf0000001",
+    "publisher": "The Motley Fool",
+    "published_date": "2026-10-17T15:30:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9535,
+    "ai_summary": "Kratos, SoundHound AI, and Nebius are entering compelling markets, but their growth must withstand cheaper competition. The video examines operating metrics that could validate each bull case, covering unmanned systems demand, AI margins, and infrastructure payback.",
+    "tags": [
+      {
+        "name": "Competitive Threats",
+        "code": "II04",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.4877,
+    "entities": {
+      "person": [
+        "rick"
+      ]
+    }
+  },
+  {
+    "id": 40705104,
+    "group_id": 14212975,
+    "title": "Upstart, SoundHound AI, and Fastly Stocks Trade Down, What You Need To Know",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/upstart-soundhound-ai-fastly-stocks-182807429.html",
+    "publisher": "Yahoo",
+    "published_date": "2026-10-14T18:28:07",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Upstart, SoundHound AI, and Fastly stocks fell after September CPI rose 3.7% year-over-year, beating the 3.6% estimate and pushing Treasury yields higher. The move reflects valuation pressure from sticky inflation and higher discount rates. The article notes the declines are not fundamental to the companies' business outlook.",
+    "tags": [
+      {
+        "name": "Daily Stock Market News",
+        "code": "CM12",
+        "is_primary": true
+      },
+      {
+        "name": "Market Indices Performance",
+        "code": "MD01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.041,
+    "entities": {
+      "person": [
+        "jeff schulze"
+      ]
+    }
+  },
+  {
+    "id": 40708952,
+    "group_id": 14237215,
+    "title": "SoundHound AI (SOUN), Why Is It Getting Attention Today?",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/soundhound-ai-soun-why-getting-181214663.html",
+    "publisher": "Yahoo",
+    "published_date": "2026-10-14T18:12:14",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 0.9245,
+    "ai_summary": "SoundHound AI's voice and generative AI platform debuted in the Kia Sorento in India, marking its global launch. The stock trades at $4.88, down 53.96% year-to-date, while analysts see fair value at $12.57. Sustained losses of $136.8 million and heavy spending on LivePerson remain key risks.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "review",
+      "label": "Review"
+    },
+    "sentiment_score": 0.0598,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 40701591,
+    "group_id": 14228521,
+    "title": "Is SoundHound AI a Buy After Its OASYS Edge Launch?",
+    "url": "https://www.fool.com/investing/2026/10/14/is-soundhound-ai-a-buy-after-its-oasys-edge-launch/",
+    "publisher": "The Motley Fool",
+    "published_date": "2026-10-14T17:30:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.856,
+    "ai_summary": "SoundHound AI is launching OASYS Edge to bring its agentic platform to cars and devices. The move aims for deeper integrations, but competition from big tech and Cerence may require further proof points.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "review",
+      "label": "Review"
+    },
+    "sentiment_score": 0.8086,
+    "entities": {
+      "person": [
+        "rick"
+      ]
+    }
+  },
+  {
+    "id": 40600774,
+    "group_id": 14156824,
+    "title": "Innodata vs. SoundHound AI: Which Technology Stock Is a Better Buy in 2026?",
+    "url": "https://www.nasdaq.com/articles/innodata-vs-soundhound-ai-which-technology-stock-better-buy-2026-0",
+    "publisher": "Nasdaq",
+    "published_date": "2026-10-13T21:31:01",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Innododata and SoundHound AI are compared for 2026 investment, with Innodata showing profitable growth and SoundHound AI reporting rapid revenue expansion but net losses. SoundHound AI is selected as the better pick, citing its diversified customer base and voice AI potential, while Innodata faces revenue concentration risk.",
+    "tags": [
+      {
+        "name": "Guidance & Forecast Revisions",
+        "code": "FR05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.6992,
+    "entities": {
+      "person": [
+        "anders bylund"
+      ]
+    }
+  }
+]

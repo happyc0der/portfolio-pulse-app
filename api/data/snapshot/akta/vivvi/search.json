@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "0000kyr",
+    "product_category": "Early Childhood Education Services",
+    "match": {
+      "uuid": "0000kyr",
+      "name": "Vivvi",
+      "website": "https://vivvi.com",
+      "product_category": "Early Childhood Education Services",
+      "company_status": "private",
+      "akta_rank": 197574
+    }
+  },
+  "fetched_at": "2026-10-24T16:02:17.263850+00:00",
+  "credits_consumed": 0
+}

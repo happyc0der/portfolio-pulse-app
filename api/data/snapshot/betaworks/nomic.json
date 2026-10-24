@@ -1,0 +1,75 @@
+[
+  {
+    "id": 38783538,
+    "group_id": 12250651,
+    "title": "Nomic AI Inks 5K-SF Deal at 99 University Place Near Union Square",
+    "url": "https://commercialobserver.com/2026/09/nomic-ai-lease-99-university-place/",
+    "publisher": "Commercial Observer",
+    "published_date": "2026-09-23T20:21:06",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.947,
+    "ai_summary": "Four tenants signed office leases totaling 15,593 square feet at 99 University Place near Union Square. The leases, including Nomic AI, Therapeutic Alliance Suites, and T Moriarty & Son, carry an asking rent of $55 per square foot. The deals reflect demand for limited office supply in Greenwich Village.",
+    "tags": [
+      {
+        "name": "Operational Milestones",
+        "code": "SD04",
+        "is_primary": true
+      },
+      {
+        "name": "Geographic Expansion",
+        "code": "SD03",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "taylor walker",
+        "rachel fox",
+        "noah caspi",
+        "eddie sisca",
+        "benjamin blumenthal",
+        "todd korren",
+        "mark hallum",
+        "drew silvester",
+        "bijan nassi"
+      ]
+    }
+  },
+  {
+    "id": 39343254,
+    "group_id": 12971160,
+    "title": "Arcadis invests in AEC AI platform Nomic",
+    "url": "https://www.saasrise.com/deals/arcadis-invests-in-aec-ai-platform-nomic-29d55f1c-22e5-4420-bca3-3b7a6d1fa188",
+    "publisher": "Saasrise",
+    "published_date": "2026-08-03T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9624,
+    "ai_summary": "Arcadis made an undisclosed strategic investment in Nomic, an AI-driven SaaS platform for AEC workflows, and signed a long-term commercial partnership. The partnership followed a six-month trial with 150 engineers across 12 countries, where 86% reported a change in work approach. Arcadis aims to embed Nomic's agents into existing toolchains and expand the platform to additional project teams.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  }
+]

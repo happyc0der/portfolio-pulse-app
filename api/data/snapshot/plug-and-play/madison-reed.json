@@ -1,0 +1,201 @@
+[
+  {
+    "id": 41638180,
+    "group_id": 15012164,
+    "title": "Madison Reed welcomes new CMO and CCO",
+    "url": "https://drugstorenews.com/madison-reed-welcomes-new-cmo-and-cco",
+    "publisher": "Drug Store News",
+    "published_date": "2026-10-20T14:39:59",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Madison Reed appointed Michelle Peterson as chief marketing officer and promoted John Sullivan to chief commercial officer. Peterson brings over 20 years of experience, including as CMO of Kendra Scott, and will lead marketing, creative, and product innovation.",
+    "tags": [
+      {
+        "name": "C-Suite Appointments & Departures",
+        "code": "LG01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "promotional",
+      "label": "Promotional"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "michelle peterson",
+        "john sullivan",
+        "amy errett",
+        "eileen gu",
+        "madison reed"
+      ]
+    }
+  },
+  {
+    "id": 41490518,
+    "group_id": 14950877,
+    "title": "I Tried Madison Reed's Popular 10-Minute Har Dye to See If It Lived Up to the Hype",
+    "url": "https://www.goodhousekeeping.com/what-to-buy/beauty-products/a74182064/madison-reed-hair-dye/",
+    "publisher": "Good Housekeeping",
+    "published_date": "2026-10-19T21:25:06",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.6308,
+    "ai_summary": "A reviewer tried Madison Reed's permanent hair dye after a colleague's positive results, noting the 10-minute application and rich color. The product covers grays, contains ginseng, argan oil, and keratin, and costs $35 per color with a subscription discount.",
+    "tags": [
+      {
+        "name": "Others",
+        "code": "OT01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "review",
+      "label": "Review"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "sophie park"
+      ]
+    }
+  },
+  {
+    "id": 35629033,
+    "group_id": 11476783,
+    "title": "Madison Reed’s The Great Cover Up Root Touch Up + Brow Filler Wins Allure Best of Beauty Award for Fifth Consecutive Year",
+    "url": "https://www.businesswire.com/news/home/20260917335346/en/Madison-Reeds-The-Great-Cover-Up-Root-Touch-Up-Brow-Filler-Wins-Allure-Best-of-Beauty-Award-for-Fifth-Consecutive-Year",
+    "publisher": "Business Wire Blog",
+    "published_date": "2026-09-17T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.984,
+    "ai_summary": "Madison Reed's The Great Cover Up Root Touch Up + Brow Filler won a 2026 Allure Best of Beauty Award, its fifth consecutive win. The brush-on powder covers gray roots and defines brows, available in six shades with two brushes. The brand also offers salon services at 99 Hair Color Bars nationwide.",
+    "tags": [
+      {
+        "name": "Awards, Rankings & Recognitions",
+        "code": "SD11",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "amy errett",
+        "erika lopez"
+      ]
+    }
+  },
+  {
+    "id": 33348652,
+    "group_id": 9952869,
+    "title": "2026 Funding Rounds & List of Investors",
+    "url": "https://tracxn.com/d/companies/madison-reed/__NcCaKqe3FkUmEXX1IGBbw_FuKh6uZaYDBhzmr3zVwzM/funding-and-investors",
+    "publisher": "Tracxn",
+    "published_date": "2026-08-25T00:00:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.7864,
+    "ai_summary": "Madison Reed's funding rounds from 2013 to 2026 are listed, including Series D rounds in 2021, 2020, and 2019, with lead investors such as Comcast Ventures and Marcy Venture Partners. The table also shows a conventional debt round in March 2026.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      },
+      {
+        "name": "Debt Financing",
+        "code": "CM02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5083,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 32653204,
+    "group_id": 9166142,
+    "title": "How to turn an NIL partnership into something bigger than a campaign",
+    "url": "https://www.fastcompany.com/91581212/what-turns-an-nil-partnership-into-something-bigger-than-a-campaign-nil-marketing-advice",
+    "publisher": "Fast Company",
+    "published_date": "2026-08-21T10:48:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9084,
+    "ai_summary": "Madison Reed leveraged its Name, Image, and Likeness (NIL) partnership with University of Connecticut Athletics to establish long-term brand ambassador roles for athletes Paige Bueckers and Azzi Fudd. The collaboration focuses on shared values regarding women's empowerment and community investment, extending beyond standard marketing campaigns to create authentic connections. This approach aims to provide sustained opportunities for female athletes while integrating the brand into the university community. ",
+    "tags": [
+      {
+        "name": "Brand & Marketing Initiatives",
+        "code": "SD07",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.6875,
+    "entities": {
+      "person": [
+        "alice walton",
+        "azzi fudd",
+        "paige bueckers",
+        "amy errett",
+        "maurice the music"
+      ]
+    }
+  },
+  {
+    "id": 30612203,
+    "group_id": 4780030,
+    "title": "Madison Reed Appoints Consumer Investor and Brand-Builder Jay Sammons to Its Board of Directors",
+    "url": "https://finance.yahoo.com/small-business/articles/madison-reed-appoints-consumer-investor-130000163.html",
+    "publisher": "Yahoo",
+    "published_date": "2026-07-30T13:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Madison Reed, a San Francisco-based prestige beauty brand, announced the appointment of Jay Sammons to its Board of Directors. Sammons is a veteran consumer investor who previously served as Global Head of Consumer at Carlyle and later founded SKKY Partners. The appointment is intended to guide Madison Reed's next phase of growth as a $200 million+ revenue company expanding its omnichannel model across direct-to-consumer, 98 Hair Color Bars, and retail partnerships including Ulta Beauty, Walmart, Target, and Sally Beauty.",
+    "tags": [
+      {
+        "name": "Board Composition & Changes",
+        "code": "LG02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "other",
+      "label": "Other"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "jay sammons",
+        "amy errett"
+      ]
+    }
+  }
+]

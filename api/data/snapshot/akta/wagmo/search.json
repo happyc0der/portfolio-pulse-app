@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "00006tw",
+    "product_category": "Pet Insurance And Wellness",
+    "match": {
+      "uuid": "00006tw",
+      "name": "Wagmo",
+      "website": "https://wagmo.io/",
+      "product_category": "Pet Insurance And Wellness",
+      "company_status": "private",
+      "akta_rank": 121332
+    }
+  },
+  "fetched_at": "2026-10-24T16:02:18.009957+00:00",
+  "credits_consumed": 0
+}

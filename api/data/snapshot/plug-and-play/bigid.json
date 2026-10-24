@@ -1,0 +1,576 @@
+[
+  {
+    "id": 40923911,
+    "group_id": 14389829,
+    "title": "Top 10 Best Data Classification Tools in 2026 [Ranked & Scored]",
+    "url": "https://cybersecuritynews.com/best-data-classification-tools/",
+    "publisher": "Cyber Security News",
+    "published_date": "2026-10-16T08:18:57",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.8669,
+    "ai_summary": "BigID tops the 2026 data classification rankings for ML discovery at scale, followed by Microsoft Purview for enforced labeling and Varonis for classification-to-action. The ranking scores nine vendors, with enforcement wiring weighted highest, and advises wiring labels to consequences and consolidating vendor estates.",
+    "tags": [
+      {
+        "name": "Awards, Rankings & Recognitions",
+        "code": "SD11",
+        "is_primary": true
+      },
+      {
+        "name": "Market Share & Positioning",
+        "code": "SD05",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "boldon james",
+        "titus",
+        "[reviewer name]",
+        "[author name]"
+      ]
+    }
+  },
+  {
+    "id": 38170080,
+    "group_id": 11900143,
+    "title": "BigID Launches AgentIQ: The Agentic Automation Layer for Data & AI Security and Compliance",
+    "url": "https://martechseries.com/predictive-ai/ai-platforms-machine-learning/bigid-launches-agentiq-the-agentic-automation-layer-for-data-ai-security-and-compliance/",
+    "publisher": "MarTech Series",
+    "published_date": "2026-09-22T07:34:19",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9335,
+    "ai_summary": "BigID launched AgentIQ, an agentic automation interface for data and AI security and compliance. It lets customers operate their program from prompts or agents like Claude, Copilot, GPT, or Gemini, with no console required. The platform automates remediation actions and enforces guardrails at the API and MCP layer.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.9873,
+    "entities": {
+      "person": [
+        "dimitri sirota",
+        "mark listes",
+        "nimrod vax"
+      ]
+    }
+  },
+  {
+    "id": 35184550,
+    "group_id": 11372119,
+    "title": "Top 10 Best Data Security Posture Management (DSPM) Tools in 2026",
+    "url": "https://cybersecuritynews.com/best-dspm-tools/",
+    "publisher": "Cyber Security News",
+    "published_date": "2026-09-16T07:29:59",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9259,
+    "ai_summary": "A 2026 scorecard ranks ten data security posture management tools, with Wiz leading on access context, Cyera on classification accuracy, and BigID on discovery breadth. Four vendors—Dig Security, Laminar, Normalyze, and Flow Security—were acquired, and buyers are advised to confirm integration with current owners.",
+    "tags": [
+      {
+        "name": "Market Share & Positioning",
+        "code": "SD05",
+        "is_primary": true
+      },
+      {
+        "name": "Awards, Rankings & Recognitions",
+        "code": "SD11",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "review",
+      "label": "Review"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 33614835,
+    "group_id": 10166945,
+    "title": "BigID Highlights Role in AI Governance and Trusted Data Infrastructure",
+    "url": "https://www.tipranks.com/news/private-companies/bigid-highlights-role-in-ai-governance-and-trusted-data-infrastructure",
+    "publisher": "Tipranks",
+    "published_date": "2026-09-01T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.7948,
+    "ai_summary": "BigID promoted its AI Infrastructure Summit on October 8, featuring a Forrester analyst keynote on responsible AI for agentic enterprises. The event targets compliance and risk professionals, positioning BigID as an enabler of compliant, enterprise-grade AI governance.",
+    "tags": [
+      {
+        "name": "Brand & Marketing Initiatives",
+        "code": "SD07",
+        "is_primary": true
+      },
+      {
+        "name": "Technology Adoption & Disruption",
+        "code": "II02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "promotional",
+      "label": "Promotional"
+    },
+    "sentiment_score": 0.7817,
+    "entities": {
+      "person": [
+        "enza iannopollo"
+      ]
+    }
+  },
+  {
+    "id": 33614833,
+    "group_id": 10166943,
+    "title": "BigID Highlights AI Governance Accountability Risks to Enterprise Decision-Makers",
+    "url": "https://www.tipranks.com/news/private-companies/bigid-highlights-ai-governance-accountability-risks-to-enterprise-decision-makers",
+    "publisher": "Tipranks",
+    "published_date": "2026-09-01T00:00:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9004,
+    "ai_summary": "BigID highlighted AI governance accountability risks in a LinkedIn post, citing Fred Descloux's view that written policies are insufficient without a clearly identified decision-maker. The company positions itself as a thought leader on AI governance, targeting enterprise risk and compliance stakeholders. This focus may support customer acquisition among large organizations seeking structured AI risk approaches.",
+    "tags": [
+      {
+        "name": "Brand & Marketing Initiatives",
+        "code": "SD07",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.482,
+    "entities": {
+      "person": [
+        "fred descloux"
+      ]
+    }
+  },
+  {
+    "id": 33232750,
+    "group_id": 9849362,
+    "title": "Varonis vs Cyera vs BigID: 4.8★ DSPM Winner [2026]",
+    "url": "https://tech-insider.org/varonis-vs-cyera-vs-bigid-dspm-2026/",
+    "publisher": "Tech Insider",
+    "published_date": "2026-08-27T13:27:28",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "A comparison article evaluates DSPM vendors Varonis, Cyera and BigID, covering pricing, architecture, analyst standing and deployment scenarios. Varonis is publicly traded with a 4.8/5 G2 score, Cyera raised $600 million at a $12 billion valuation in June 2026, and BigID integrated with Atlan in March. IBM's 2026 breach report cites a $4.99 million global average cost.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "sofia lindström"
+      ]
+    }
+  },
+  {
+    "id": 33614838,
+    "group_id": 10166948,
+    "title": "2026 Funding Rounds & List of Investors",
+    "url": "https://tracxn.com/d/companies/bigid/__pHSLjAzI2aqF63ud9QosF69usdaBPTT49_kou_rHtgw/funding-and-investors",
+    "publisher": "Tracxn",
+    "published_date": "2026-08-25T00:00:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.8546,
+    "ai_summary": "BigID has raised $308M across 10 funding rounds, with its largest round being a $70M Series D in Dec 2020. The company has 35 investors, including Tiger Global Management and ServiceNow. The most recent funding was a $61.4M Series D in Feb 2024.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5281,
+    "entities": {
+      "person": [
+        "julian levy"
+      ]
+    }
+  },
+  {
+    "id": 31360737,
+    "group_id": 6007019,
+    "title": "Despite cloud growth, Kyndryl shares drop 5.4% on quarterly revenue decline",
+    "url": "https://siliconangle.com/2026/08/05/trusted-ai-data-enables-enterprise-production-ai-blackhat/",
+    "publisher": "SiliconANGLE",
+    "published_date": "2026-08-05T20:20:27",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 0.9859,
+    "ai_summary": "The article features an interview with representatives from Hewlett Packard Enterprise Co., BigID Inc., and Fortanix Inc. at Black Hat USA, discussing how trusted AI data is becoming a critical factor as enterprises move AI models from experimentation into production environments. The discussion highlights challenges including shadow AI deployments falling outside compliance oversight, the need for data discovery and classification, and encryption strategies for protecting sensitive data across hybrid environments. HPE GreenLake is presented as a platform addressing distributed data complexity by providing unified governance across on-premises and cloud infrastructure.",
+    "tags": [
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": true
+      },
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": false
+      },
+      {
+        "name": "Technology Adoption & Disruption",
+        "code": "II02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "interview",
+      "label": "Interview"
+    },
+    "sentiment_score": 0.0559,
+    "entities": {
+      "person": [
+        "john furrier",
+        "robin braun",
+        "patrick conte",
+        "ian williamson",
+        "dave vellante",
+        "krista case"
+      ]
+    }
+  },
+  {
+    "id": 31305913,
+    "group_id": 5981511,
+    "title": "BigID Defines the Missing Governance Layer for Autonomous AI Agents",
+    "url": "https://martechseries.com/predictive-ai/ai-platforms-machine-learning/bigid-defines-the-missing-governance-layer-for-autonomous-ai-agents/",
+    "publisher": "MarTech Series",
+    "published_date": "2026-08-05T07:40:48",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "BigID, a data security and AI governance company, announced two new capabilities—Agentic Access Control and Intent-Based Activity Monitoring—designed to address security gaps created by AI agents operating beyond traditional role-based access controls.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5767,
+    "entities": {
+      "person": [
+        "mark listes"
+      ]
+    }
+  },
+  {
+    "id": 31305903,
+    "group_id": 5981504,
+    "title": "BigID Delivers the AI Sovereignty Standard Designed for Enterprise Growth",
+    "url": "https://martechseries.com/predictive-ai/ai-platforms-machine-learning/bigid-delivers-the-ai-sovereignty-standard-designed-for-enterprise-growth/",
+    "publisher": "MarTech Series",
+    "published_date": "2026-08-05T07:38:10",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "BigID, a data security and AI governance platform, has announced expanded AI Sovereignty capabilities designed to help enterprises govern data and AI entirely within their own environment without depending on third-party providers. The platform supports cloud, on-prem, private cloud, and fully air-gapped deployments, with no outbound connectivity, telemetry, or dependency on hosted APIs required. According to CEO Dimitri Sirota, the architecture ensures configuration, findings, dashboards, and audit logs remain entirely inside the customer's boundary regardless of connectivity.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5764,
+    "entities": {
+      "person": [
+        "mark listes",
+        "dimitri sirota"
+      ]
+    }
+  },
+  {
+    "id": 31277815,
+    "group_id": 5674675,
+    "title": "BigID Introduces AI Sovereignty Standard for Business Expansion and Security",
+    "url": "https://third-news.com/article/701de9dc-9041-11f1-a85e-9ca3ba08e13f",
+    "publisher": "Third News",
+    "published_date": "2026-08-04T20:16:55",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "BigID has introduced an AI sovereignty standard aimed at helping enterprises expand their AI initiatives while maintaining control over their data. The standard emphasizes governance within controlled environments, including air-gapped conditions, to ensure data and AI model security. ",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      },
+      {
+        "name": "Data Privacy & Cybersecurity Regulation",
+        "code": "RC07",
+        "is_primary": false
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 31274410,
+    "group_id": 5659485,
+    "title": "BigID Defines the Missing Governance Layer for Autonomous AI Agents",
+    "url": "https://aijourn.com/bigid-defines-the-missing-governance-layer-for-autonomous-ai-agents/",
+    "publisher": "Aijourn",
+    "published_date": "2026-08-04T19:24:35",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9257,
+    "ai_summary": "BigID announced two new capabilities — Agentic Access Control and Intent-Based Activity Monitoring — at Black Hat 2026 in Las Vegas, designed to govern AI agents' access to sensitive data and monitor their behavior against declared intent. The capabilities address gaps left by traditional role-based access control, which assumes human operators rather than autonomous agents acting at machine speed. The announcement targets organizations deploying AI agents with access to customer records, financial systems, source code, or regulated data.",
+    "tags": [
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": true
+      },
+      {
+        "name": "Financial Distress & Restructuring",
+        "code": "RK07",
+        "is_primary": false
+      },
+      {
+        "name": "Data Privacy & Cybersecurity Regulation",
+        "code": "RC07",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.7393,
+    "entities": {
+      "person": [
+        "nimrod vax"
+      ]
+    }
+  },
+  {
+    "id": 31275620,
+    "group_id": 6135562,
+    "title": "BigID Introduces Revolutionary Governance Layer for AI Agents in Data Security",
+    "url": "https://third-news.com/article/0689de70-9039-11f1-aee1-9ca3ba08e13f",
+    "publisher": "Third News",
+    "published_date": "2026-08-04T19:16:42",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "BigID announced two new AI governance products at Black Hat 2026: Agentic Access Control and Intent-Based Activity Monitoring, designed to address security gaps in managing AI agents that interact with sensitive data. The products provide dynamic, real-time governance by adjusting access permissions based on data sensitivity and continuously monitoring AI agent behavior against their intended purposes. BigID is positioning itself as a governance partner for AI technologies with these pioneering capabilities.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      },
+      {
+        "name": "Technology Adoption & Disruption",
+        "code": "II02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "nimrod vax"
+      ]
+    }
+  },
+  {
+    "id": 31273276,
+    "group_id": 5650745,
+    "title": "BigID Defines the Missing Governance Layer for Autonomous AI Agents",
+    "url": "https://www.prnewswire.com/news-releases/bigid-defines-the-missing-governance-layer-for-autonomous-ai-agents-302842899.html",
+    "publisher": "PR Newswire",
+    "published_date": "2026-08-04T19:03:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9211,
+    "ai_summary": "BigID announced two new AI governance capabilities—Agentic Access Control and Intent-Based Activity Monitoring—at Black Hat 2026 in Las Vegas. The tools address a security gap where traditional role-based permissions fail to govern autonomous AI agents that act at machine speed and can drift from approved tasks. Agentic Access Control scopes agent access based on data sensitivity rather than static roles, while Intent-Based Activity Monitoring continuously verifies whether an agent's actual behavior matches its declared purpose.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      },
+      {
+        "name": "Data Privacy & Cybersecurity Regulation",
+        "code": "RC07",
+        "is_primary": false
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.7476,
+    "entities": {
+      "person": [
+        "nimrod vax"
+      ]
+    }
+  },
+  {
+    "id": 33614858,
+    "group_id": 10166964,
+    "title": "BigID Delivers the AI Sovereignty Standard Designed for Enterprise Growth",
+    "url": "https://finance.yahoo.com/technology/ai/articles/bigid-delivers-ai-sovereignty-standard-200000682.html",
+    "publisher": "Yahoo",
+    "published_date": "2026-08-04T00:00:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "BigID, a data security and AI governance platform, claims to enable enterprises to keep data, models, and governance inside their own boundary without third-party dependencies. The platform runs fully air-gapped with zero outbound connectivity, and customers can use their own approved language models. The company says the category is early and organizations meeting these requirements now will set terms for competitors and regulators.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      },
+      {
+        "name": "Technology Adoption & Disruption",
+        "code": "II02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5706,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 30959329,
+    "group_id": 6105750,
+    "title": "Top 7 DPDP Consent Managers Built for India’s Privacy-First Enterprise Era",
+    "url": "https://www.itvoice.in/top-7-dpdp-consent-managers-built-for-indias-privacy-first-enterprise-era",
+    "publisher": "ITVoice",
+    "published_date": "2026-07-30T15:03:31",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "This article profiles eight consent management platforms designed to help Indian businesses comply with the DPDP Act ahead of the May 2027 compliance deadline, which carries penalties of up to ₹250 crore for non-compliance. The platforms covered include Neokred (Blutic), Perfios, Redacto, Consentin by Leegality, Surepass, Complynz, and BigID, each offering varying approaches to consent capture, classification, tracking, and revocation. The article positions consent management as a critical enterprise need given that customer data is typically scattered across CRMs, loan origination systems, marketing stacks, and data warehouses, making it difficult for businesses to track who agreed to what.",
+    "tags": [
+      {
+        "name": "Data Privacy & Cybersecurity Regulation",
+        "code": "RC07",
+        "is_primary": true
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.0347,
+    "entities": {
+      "person": []
+    }
+  }
+]

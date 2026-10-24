@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "000063o",
+    "product_category": "Satellite Communications Services",
+    "match": {
+      "uuid": "000063o",
+      "name": "Kepler Communications",
+      "website": "https://kepler.space",
+      "product_category": "Satellite Communications Services",
+      "company_status": "private",
+      "akta_rank": 12380
+    }
+  },
+  "fetched_at": "2026-10-24T16:02:36.623825+00:00",
+  "credits_consumed": 0
+}

@@ -1,0 +1,384 @@
+[
+  {
+    "id": 42283040,
+    "group_id": 15656634,
+    "title": "CBN outlines market infrastructure supporting Nigeria–China financial flows at Beijing investor forum",
+    "url": "https://www.premiumtimesng.com/promoted/919590-cbn-outlines-market-infrastructure-supporting-nigeria-china-financial-flows-at-beijing-investor-forum.html",
+    "publisher": "Premium Times Nigeria",
+    "published_date": "2026-10-23T13:59:59",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "The Central Bank of Nigeria is developing financial-market infrastructure to support Nigeria-China transactions, including fixed-income and repo work, at a Beijing investor forum. Officials said the goal is to build confidence for direct and portfolio investors, with payment providers like Flutterwave already enabling naira payments to Chinese suppliers.",
+    "tags": [
+      {
+        "name": "Monetary Policy",
+        "code": "MM02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "kayode solola",
+        "olugbenga agboola",
+        "dr okey umeano"
+      ]
+    }
+  },
+  {
+    "id": 42225941,
+    "group_id": 15432275,
+    "title": "$3.3 Billion Fintech Flutterwave Becomes First Company In Africa To Offer Techdollar's Equity-Backed Liquidity Benefit To Employees",
+    "url": "https://menafn.com/1111851667/33-Billion-Fintech-Flutterwave-Becomes-First-Company-In-Africa-To-Offer-Techdollars-Equity-Backed-Liquidity-Benefit-To-Employees",
+    "publisher": "Business & Financial",
+    "published_date": "2026-10-22T16:17:01",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Flutterwave and Techdollar announced a partnership to offer equity-backed liquidity as an employee benefit, with Nuvion providing banking infrastructure. The arrangement is the first company-wide employee benefit for Techdollar, allowing Flutterwave staff to access proceeds without selling shares. Flutterwave's Series E valued the company at $3.3 billion in June 2026.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      },
+      {
+        "name": "Compensation & Benefits",
+        "code": "WT03",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "promotional",
+      "label": "Promotional"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "david tollemache",
+        "terence mcmenamin",
+        "olugbenga“gb” agboola",
+        "hudson sandler"
+      ]
+    }
+  },
+  {
+    "id": 41066101,
+    "group_id": 14509145,
+    "title": "From Flutterwave to Terra, the foreign money backing Nigerian tech is diversifying: Guest Post by Technext.ng",
+    "url": "https://coinmarketcap.com/community/articles/6ad345f5614ab63dcd4efda8/",
+    "publisher": "CoinMarketCap",
+    "published_date": "2026-10-17T09:55:24",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Terra Industries raised $22 million in a seed extension led by Lux Capital, bringing total funding to $34 million. The round marks diversification of foreign capital into defence and security, contrasting with earlier fintech dominance. Nigeria's startup funding fell 21% in 2025, prompting calls for more local investment.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.559,
+    "entities": {
+      "person": [
+        "maxwell maduka",
+        "nathan nwachuku",
+        "alex moore",
+        "joe lonsdale",
+        "gb agboola",
+        "olugbenga “gb” agboola",
+        "gbenga agboola"
+      ]
+    }
+  },
+  {
+    "id": 40480863,
+    "group_id": 14043528,
+    "title": "Send App by Flutterwave Named Headline Sponsor of EbonyLife Place London Launch as Flutterwave Becomes Exclusive Payments Partner",
+    "url": "https://nairametrics.com/2026/10/12/send-app-by-flutterwave-named-headline-sponsor-of-ebonylife-place-london-launch-as-flutterwave-becomes-exclusive-payments-partner/",
+    "publisher": "Nairametrics",
+    "published_date": "2026-10-12T14:30:52",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9013,
+    "ai_summary": "Flutterwave announced headline sponsorship of the EbonyLife Place London launch and became the venue's exclusive payments partner. The partnership brings Flutterwave's payment technology to Mo Abudu's new destination for African film, food, fashion, art, and music.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "promotional",
+      "label": "Promotional"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "mo abudu",
+        "florence eshalomi",
+        "johnson o. ememandu",
+        "olugbenga “gb” agboola"
+      ]
+    }
+  },
+  {
+    "id": 40481128,
+    "group_id": 14087407,
+    "title": "Flutterwave's GB Agboola gains global recognition as African fintechs head for IPOs - Innovation Village",
+    "url": "https://innovation-village.com/flutterwaves-gb-agboola-gains-global-recognition-as-african-fintechs-head-for-ipos/",
+    "publisher": "Innovation-village",
+    "published_date": "2026-10-12T13:42:03",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Flutterwave's GB Agboola was named to FinTech Magazine's Top 100 Fintech Leaders and Semafor's Silicon Valley advisory council. Flutterwave has delayed its IPO, citing need for stronger profitability, while OPay and Airtel Money have filed for listings.",
+    "tags": [
+      {
+        "name": "Awards, Rankings & Recognitions",
+        "code": "SD11",
+        "is_primary": true
+      },
+      {
+        "name": "IPOs & Follow-on Offerings",
+        "code": "CM05",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "jeremy allaire",
+        "jack dorsey",
+        "satya nadella",
+        "gb agboola",
+        "lisa su",
+        "brad garlinghouse",
+        "sam altman",
+        "divesh makan",
+        "brian armstrong",
+        "morounke olufemi",
+        "patrick collison",
+        "jensen huang",
+        "ruth porat",
+        "olugbenga agboola",
+        "agboola"
+      ]
+    }
+  },
+  {
+    "id": 40210153,
+    "group_id": 13783769,
+    "title": "Flutterwave CEO GB Agboola Joins Silicon Valley & The World Board",
+    "url": "https://thecondia.com/partners/gb-agboola-silicon-valley-and-the-world-founders-council/",
+    "publisher": "Condia",
+    "published_date": "2026-10-09T10:16:19",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9856,
+    "ai_summary": "Flutterwave CEO GB Agboola joined the Silicon Valley & The World Advisory Board's Founders Council. Under his leadership, Flutterwave has processed over $50 billion across more than one billion transactions, with a valuation of $3.2 billion. He will bring an African perspective to the initiative.",
+    "tags": [
+      {
+        "name": "Board Composition & Changes",
+        "code": "LG02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "interview",
+      "label": "Interview"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "lisa su",
+        "ruth porat",
+        "gb agboola",
+        "sam altman",
+        "satya nadella",
+        "jensen huang",
+        "divesh makan",
+        "olugbenga “gb” agboola"
+      ]
+    }
+  },
+  {
+    "id": 40200778,
+    "group_id": 13777838,
+    "title": "Lagos Life developer raises $500,000 at $10m valuation with backing from Flutterwave, Terra and Mono CEOs: Guest Post by Technext.ng",
+    "url": "https://coinmarketcap.com/community/articles/6ac8b5450e45ee0bc34c9aa6/",
+    "publisher": "CoinMarketCap",
+    "published_date": "2026-10-09T09:37:03",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Vatar Inc., the developer of Lagos Life, raised $500,000 in pre-seed funding at a $10 million valuation, with backing from Flutterwave, Terra, and Mono CEOs. The game, launched October 1, had 4.3 million players by October 8. The funding will support product development, marketing, and team expansion.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "shalom rayhamen",
+        "nathan nwachuku",
+        "owen rayhamen",
+        "anderson oriahi",
+        "olugbenga agboola",
+        "oo nwoye",
+        "abdulhamid hassan"
+      ]
+    }
+  },
+  {
+    "id": 39775712,
+    "group_id": 13470376,
+    "title": "African startup exits: What the Class of 2016 returned",
+    "url": "https://techcabal.com/2026/10/05/african-startup-exits-class-of-2016/",
+    "publisher": "TechCabal",
+    "published_date": "2026-10-05T16:45:16",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 0.9411,
+    "ai_summary": "A decade of venture capital for 200+ African startups founded in 2016 raised $1.89 billion, with Flutterwave leading at $475 million. Only 27 companies exited, and 166 averaged $1.25 million in funding. The cohort produced almost no liquidity, suggesting future cohorts need different instruments.",
+    "tags": [
+      {
+        "name": "Deal Flow & Volume Statistics",
+        "code": "CM10",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.1027,
+    "entities": {
+      "person": [
+        "obi ozor"
+      ]
+    }
+  },
+  {
+    "id": 39310773,
+    "group_id": 12934513,
+    "title": "Flutterwave’s GB Agboola is the only Nigerian on FinTech Magazine’s Top 100 leaders list: Guest Post by Technext.ng",
+    "url": "https://coinmarketcap.com/community/articles/6abd170d40aacf7de9e7c2d9/",
+    "publisher": "CoinMarketCap",
+    "published_date": "2026-09-30T14:07:26",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Flutterwave CEO GB Agboola was named to FinTech Magazine's Top 100 Fintech Leaders for 2026, the only Nigerian on the list. Flutterwave surpassed $50 billion in transaction value and holds a Nigerian Microfinance Bank license. The company is expanding into cross-border payments and digital assets.",
+    "tags": [
+      {
+        "name": "Awards, Rankings & Recognitions",
+        "code": "SD11",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "gb agboola",
+        "brian armstrong",
+        "jack dorsey",
+        "brad garlinghouse",
+        "patrick collison",
+        "jeremy allaire"
+      ]
+    }
+  },
+  {
+    "id": 39248797,
+    "group_id": 12877554,
+    "title": "Flutterwave and Invest Africa convene strategic roundtable at UNGA 81 - Innovation Village",
+    "url": "https://innovation-village.com/flutterwave-and-invest-africa-convene-strategic-roundtable-at-unga-81/",
+    "publisher": "Innovation-village",
+    "published_date": "2026-09-29T19:12:26",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Flutterwave and Invest Africa hosted a closed-door roundtable in New York on September 28, 2026, at UNGA 81, focusing on African financial infrastructure. Flutterwave, operating across 34 African nations, has processed over 1 billion transactions valued at more than $50 billion. The session concluded with a joint commitment to expand cross-border infrastructure and mobilize expansion capital.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      },
+      {
+        "name": "Geographic Expansion",
+        "code": "SD03",
+        "is_primary": false
+      },
+      {
+        "name": "Executive Commentary & Interviews",
+        "code": "LG05",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.9103,
+    "entities": {
+      "person": [
+        "dikko radda",
+        "taiwo oyedele",
+        "lateef kayode are",
+        "babajide sanwo-olu",
+        "kashim shettima",
+        "ibrahim hassan hadejia",
+        "olugbenga “gb” agboola"
+      ]
+    }
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "id": 41519527,
+    "group_id": 14038183,
+    "title": "Best AI Sales Video Generator for Enterprise Outreach 2026",
+    "url": "https://openart.ai/blog/best-ai-sales-video-generator-enterprise-outreach/",
+    "publisher": "Openart",
+    "published_date": "2026-09-08T00:00:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.7226,
+    "ai_summary": "The article advises enterprise sales teams to evaluate AI video tools by function, separating creative-generation platforms like OpenArt from sales-engagement platforms like Vidyard and Sendspark. It recommends choosing a creative tool when production limits campaigns and a sales platform when personalization or delivery is the bottleneck, and notes that combining both can address different workflow stages.",
+    "tags": [
+      {
+        "name": "Others",
+        "code": "OT01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.8022,
+    "entities": {
+      "person": []
+    }
+  }
+]

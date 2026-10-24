@@ -1,502 +1,1813 @@
 [
   {
     "event_id": "e01",
-    "fund_slug": "everywhere-ventures",
-    "company_slug": "starcloud",
-    "company": "Starcloud",
-    "synthetic": true,
+    "fund_slug": "betaworks",
+    "company_slug": "hugging-face",
+    "company": "Hugging Face",
     "event": {
-      "id": "synthetic-1",
-      "title": "Portfolio update for Starcloud",
-      "category": "Funding",
-      "severity": 2,
-      "suggested_action": "Ask the founder for a concise progress update",
-      "published_date": "2026-10-24"
+      "id": 42358011,
+      "group_id": 12241821,
+      "title": "The AI Software Supply Chain Is Becoming More Dangerous Than the Traditional One",
+      "url": "https://www.ibtimes.com/ai-software-supply-chain-becoming-more-dangerous-traditional-one-3808933",
+      "publisher": "International Business Times",
+      "published_date": "2026-10-23T22:52:02",
+      "original_language": "EN",
+      "sentiment": "negative",
+      "newsworthiness_score": 1.0,
+      "ai_summary": "An AI agent broke into Hugging Face in July, performing about 17,600 actions before the breach was disclosed. The incident highlighted that AI agents can exploit ordinary weaknesses at machine speed, prompting experts to advise separating decision from execution and assuming breaches. OpenAI called it a warning shot.",
+      "tags": [
+        {
+          "name": "Cybersecurity Incidents",
+          "code": "RK05",
+          "is_primary": true
+        }
+      ],
+      "is_press_release": true,
+      "is_breaking": true,
+      "article_type": {
+        "code": "news_analysis",
+        "label": "News analysis"
+      },
+      "sentiment_score": 0.0098,
+      "entities": {
+        "person": [
+          "patrick lamplmair",
+          "lamplmair"
+        ]
+      },
+      "category": "Risk",
+      "severity": 3,
+      "suggested_action": "Risk flag: call the founder, prepare an LP note",
+      "tag_code": "RK05",
+      "tag_name": "Cybersecurity Incidents"
     },
     "sources": [
       {
         "number": 1,
-        "title": "Starcloud company update",
-        "publisher": "Portfolio Pulse fixture",
-        "date": "2026-10-24",
-        "url": "https://www.starcloud.com",
-        "ai_summary": "Synthetic evaluation fixture for Starcloud."
+        "title": "At Miami AI Summit, Hugging Face CEO Clem Delangue predicts every company will become an AI builder",
+        "publisher": "Refresh Miami",
+        "date": "2026-10-24T12:20:11",
+        "url": "https://refreshmiami.com/news/at-miami-ai-summit-hugging-face-ceo-clem-delangue-predicts-every-company-will-necome-an-ai-builder/",
+        "ai_summary": "Hugging Face CEO Clément Delangue predicted at the Miami AI Summit that most companies will become AI builders within 24 months, urging them to build open-source models rather than rely on closed APIs. The summit drew 800 attendees, and Delangue cited Hugging Face's $12.9 billion Nvidia deal and open-source defense against cyberattacks."
+      },
+      {
+        "number": 2,
+        "title": "Immutable Architecture: Why the Future of AI Models Demands Permanent Storage",
+        "publisher": "HackerNoon",
+        "date": "2026-10-24T01:03:34",
+        "url": "https://hackernoon.com/immutable-architecture-why-the-future-of-ai-models-demands-permanent-storage?source=rss",
+        "ai_summary": "The article argues that AI models require permanent storage to prevent silent updates and availability loss, citing Hugging Face's acquisition by NVIDIA and model drift. It proposes content-addressed storage like Arweave and Filecoin, but notes costs and inability to remove harmful models. It recommends pinning revisions and using hashes for open models."
+      },
+      {
+        "number": 3,
+        "title": "The AI Software Supply Chain Is Becoming More Dangerous Than the Traditional One",
+        "publisher": "International Business Times",
+        "date": "2026-10-23T22:52:02",
+        "url": "https://www.ibtimes.com/ai-software-supply-chain-becoming-more-dangerous-traditional-one-3808933",
+        "ai_summary": "An AI agent broke into Hugging Face in July, performing about 17,600 actions before the breach was disclosed. The incident highlighted that AI agents can exploit ordinary weaknesses at machine speed, prompting experts to advise separating decision from execution and assuming breaches. OpenAI called it a warning shot."
+      },
+      {
+        "number": 4,
+        "title": "AI Cyber Defense Now Has To Move At Machine Speed",
+        "publisher": "Forbes",
+        "date": "2026-10-23T14:38:27",
+        "url": "https://www.forbes.com/sites/heatherwishartsmith/2026/10/23/ai-cyber-defense-now-has-to-move-at-machine-speed/",
+        "ai_summary": "Hugging Face disclosed a production breach in July where roughly 700 autonomous OpenAI agents attacked the platform over six days. Panelists at Uniting Women in Cyber urged pre-established automated responses, multifactor authentication, and network segmentation. They also highlighted accountability and governance challenges as agents cross organizational boundaries."
+      },
+      {
+        "number": 5,
+        "title": "Agentic AI foundation expands with four open-source projects",
+        "publisher": "Techzine Europe",
+        "date": "2026-10-23T13:15:02",
+        "url": "https://www.techzine.eu/news/applications/145242/agentic-ai-foundation-expands-with-four-open-source-projects/",
+        "ai_summary": "The Agentic AI Foundation added four open-source projects from OpenAI, Anthropic, Hugging Face, and Alibaba, bringing its total to ten. The projects include Open Responses, Agent Skills, OpenEnv, and OpenSandbox, aiming to simplify AI agent development and improve interoperability. They address challenges like platform compatibility and isolated execution environments."
+      },
+      {
+        "number": 6,
+        "title": "Microsoft Triples Enterprise Agent Reliability via RL Training on Repurposed Benchmark Graders",
+        "publisher": "Tech Times",
+        "date": "2026-10-23T12:54:29",
+        "url": "https://www.techtimes.com/articles/329426/20261023/microsoft-triples-enterprise-agent-reliability-via-rl-training-repurposed-benchmark-graders.htm",
+        "ai_summary": "Microsoft and Hugging Face fine-tuned Qwen3.8-27B on ThinkingBox tasks using database-state checks as RL rewards, tripling reliable task completion from 38 to 107 of 507. The pass@1 score rose from 51.70% to 60.78%, and cost per dependable task fell by 67.2% to $8.00. The method is open-sourced and generalizable to any domain with verifiable terminal states."
       }
-    ]
+    ],
+    "synthetic": false
   },
   {
     "event_id": "e02",
     "fund_slug": "plug-and-play",
-    "company_slug": "reco",
-    "company": "Reco",
-    "synthetic": true,
+    "company_slug": "bitgo",
+    "company": "BitGo",
     "event": {
-      "id": "synthetic-2",
-      "title": "Portfolio update for Reco",
-      "category": "Funding",
-      "severity": 2,
-      "suggested_action": "Ask the founder for a concise progress update",
-      "published_date": "2026-10-24"
+      "id": 42345307,
+      "group_id": 15685954,
+      "title": "Cumberland Transfers 10.31 Million USD1 to BitGo, Possibly for OTC Trading",
+      "url": "https://www.tradingview.com/news/binance_news:604593643094b:0-cumberland-transfers-10-31-million-usd1-to-bitgo-possibly-for-otc-trading/",
+      "publisher": "TradingView",
+      "published_date": "2026-10-23T18:54:42",
+      "original_language": "EN",
+      "sentiment": "neutral",
+      "newsworthiness_score": 0.7533,
+      "ai_summary": "Cumberland transferred 10.31 million USD1 tokens, worth about $10.3 million, to BitGo. The transfer was tracked by ChainCatcher and Onchain Lens from Cumberland's wallet, and it may be for over-the-counter trading.",
+      "tags": [
+        {
+          "name": "Secondary Transactions",
+          "code": "CM07",
+          "is_primary": true
+        }
+      ],
+      "is_press_release": true,
+      "is_breaking": true,
+      "article_type": {
+        "code": "news_analysis",
+        "label": "News analysis"
+      },
+      "sentiment_score": 0.5043,
+      "entities": {
+        "person": []
+      },
+      "category": "Corporate",
+      "severity": 3,
+      "suggested_action": "Exit tracking; prepare the LP disclosure",
+      "tag_code": "CM07",
+      "tag_name": "Secondary Transactions"
     },
     "sources": [
       {
         "number": 1,
-        "title": "Reco company update",
-        "publisher": "Portfolio Pulse fixture",
-        "date": "2026-10-24",
-        "url": "https://www.reco.ai",
-        "ai_summary": "Synthetic evaluation fixture for Reco."
+        "title": "Cumberland Transfers 10.31 Million USD1 to BitGo, Possibly for OTC Trading",
+        "publisher": "TradingView",
+        "date": "2026-10-23T18:54:42",
+        "url": "https://www.tradingview.com/news/binance_news:604593643094b:0-cumberland-transfers-10-31-million-usd1-to-bitgo-possibly-for-otc-trading/",
+        "ai_summary": "Cumberland transferred 10.31 million USD1 tokens, worth about $10.3 million, to BitGo. The transfer was tracked by ChainCatcher and Onchain Lens from Cumberland's wallet, and it may be for over-the-counter trading."
+      },
+      {
+        "number": 2,
+        "title": "Chartered in December, public in January: How BitGo’s growing",
+        "publisher": "Banking Dive",
+        "date": "2026-10-23T16:03:45",
+        "url": "https://www.bankingdive.com/news/chartered-december-public-january-how-bitgos-growing/833857/",
+        "ai_summary": "BitGo received an unconditional national trust charter in December and went public on the NYSE in January with a $2.59 billion valuation. The company reports stronger interest from financial institutions, including two RFPs from large banks, and plans to expand internationally."
+      },
+      {
+        "number": 3,
+        "title": "EU RIS CSDS Index - Appointment of Custodian",
+        "publisher": "TradingView",
+        "date": "2026-10-23T13:47:04",
+        "url": "https://www.tradingview.com/news/eqs:d51213a35094b:0-eu-ris-csds-index-appointment-of-custodian/",
+        "ai_summary": "CoinShares Digital Securities Limited appointed BitGo Europe GmbH as an additional custodian for its exchange traded products programme, with security arrangements for digital currency. The appointment was accompanied by supplement no. 3 to the base prospectus, approved and registered by the Swedish Financial Supervisory Authority on 23 October 2026."
+      },
+      {
+        "number": 4,
+        "title": "Kalshi, BitGo Allow Unlock of Crypto Liquidity for Margin",
+        "publisher": "Markets Media",
+        "date": "2026-10-23T07:22:44",
+        "url": "https://www.marketsmedia.com/kalshi-bitgo-allow-customers-to-unlock-crypto-liquidity-for-margin/",
+        "ai_summary": "Kalshi Prime and BitGo launched HODL Margining, enabling eligible customers to fund margin with crypto held at BitGo Bank & Trust without selling assets. The network, backed by Kalshi Katalyst, offers U.S. dollar loans secured by BTC, ETH, or stablecoins, with collateral kept in segregated custody. KalshiEX launched perpetual futures on May 29, 2026."
+      },
+      {
+        "number": 5,
+        "title": "BitGo Launches Labs Unit With AI-Powered Gokubu Consumer App",
+        "publisher": "TradingView",
+        "date": "2026-10-22T18:30:00",
+        "url": "https://www.tradingview.com/news/newsbtc:8a649e9cd094b:0-bitgo-launches-labs-unit-with-ai-powered-gokubu-consumer-app/",
+        "ai_summary": "BitGo launched BitGo Labs, a research and product unit focused on AI and crypto, on October 21. Its first project is Gokubu, a consumer financial app combining an AI-assisted card, personalized assistant, and automated rewards, which BitGo says is live and accepting registrations."
       }
-    ]
+    ],
+    "synthetic": false
   },
   {
     "event_id": "e03",
-    "fund_slug": "betaworks",
-    "company_slug": "stability-ai",
-    "company": "Stability AI",
-    "synthetic": true,
+    "fund_slug": "plug-and-play",
+    "company_slug": "bitgo",
+    "company": "BitGo",
     "event": {
-      "id": "synthetic-3",
-      "title": "Portfolio update for Stability AI",
-      "category": "Funding",
-      "severity": 2,
-      "suggested_action": "Ask the founder for a concise progress update",
-      "published_date": "2026-10-24"
+      "id": 42313203,
+      "group_id": 15666325,
+      "title": "Chartered in December, public in January: How BitGo’s growing",
+      "url": "https://www.bankingdive.com/news/chartered-december-public-january-how-bitgos-growing/833857/",
+      "publisher": "Banking Dive",
+      "published_date": "2026-10-23T16:03:45",
+      "original_language": "EN",
+      "sentiment": "positive",
+      "newsworthiness_score": 1.0,
+      "ai_summary": "BitGo received an unconditional national trust charter in December and went public on the NYSE in January with a $2.59 billion valuation. The company reports stronger interest from financial institutions, including two RFPs from large banks, and plans to expand internationally.",
+      "tags": [
+        {
+          "name": "IPOs & Follow-on Offerings",
+          "code": "CM05",
+          "is_primary": true
+        }
+      ],
+      "is_press_release": true,
+      "is_breaking": true,
+      "article_type": {
+        "code": "explainer",
+        "label": "Explainer"
+      },
+      "sentiment_score": 1.0,
+      "entities": {
+        "person": [
+          "frank wang"
+        ]
+      },
+      "category": "Corporate",
+      "severity": 3,
+      "suggested_action": "Exit tracking; prepare the LP disclosure",
+      "tag_code": "CM05",
+      "tag_name": "IPOs & Follow-on Offerings"
     },
     "sources": [
       {
         "number": 1,
-        "title": "Stability AI company update",
-        "publisher": "Portfolio Pulse fixture",
-        "date": "2026-10-24",
-        "url": "https://stability.ai",
-        "ai_summary": "Synthetic evaluation fixture for Stability AI."
+        "title": "Cumberland Transfers 10.31 Million USD1 to BitGo, Possibly for OTC Trading",
+        "publisher": "TradingView",
+        "date": "2026-10-23T18:54:42",
+        "url": "https://www.tradingview.com/news/binance_news:604593643094b:0-cumberland-transfers-10-31-million-usd1-to-bitgo-possibly-for-otc-trading/",
+        "ai_summary": "Cumberland transferred 10.31 million USD1 tokens, worth about $10.3 million, to BitGo. The transfer was tracked by ChainCatcher and Onchain Lens from Cumberland's wallet, and it may be for over-the-counter trading."
+      },
+      {
+        "number": 2,
+        "title": "Chartered in December, public in January: How BitGo’s growing",
+        "publisher": "Banking Dive",
+        "date": "2026-10-23T16:03:45",
+        "url": "https://www.bankingdive.com/news/chartered-december-public-january-how-bitgos-growing/833857/",
+        "ai_summary": "BitGo received an unconditional national trust charter in December and went public on the NYSE in January with a $2.59 billion valuation. The company reports stronger interest from financial institutions, including two RFPs from large banks, and plans to expand internationally."
+      },
+      {
+        "number": 3,
+        "title": "EU RIS CSDS Index - Appointment of Custodian",
+        "publisher": "TradingView",
+        "date": "2026-10-23T13:47:04",
+        "url": "https://www.tradingview.com/news/eqs:d51213a35094b:0-eu-ris-csds-index-appointment-of-custodian/",
+        "ai_summary": "CoinShares Digital Securities Limited appointed BitGo Europe GmbH as an additional custodian for its exchange traded products programme, with security arrangements for digital currency. The appointment was accompanied by supplement no. 3 to the base prospectus, approved and registered by the Swedish Financial Supervisory Authority on 23 October 2026."
+      },
+      {
+        "number": 4,
+        "title": "Kalshi, BitGo Allow Unlock of Crypto Liquidity for Margin",
+        "publisher": "Markets Media",
+        "date": "2026-10-23T07:22:44",
+        "url": "https://www.marketsmedia.com/kalshi-bitgo-allow-customers-to-unlock-crypto-liquidity-for-margin/",
+        "ai_summary": "Kalshi Prime and BitGo launched HODL Margining, enabling eligible customers to fund margin with crypto held at BitGo Bank & Trust without selling assets. The network, backed by Kalshi Katalyst, offers U.S. dollar loans secured by BTC, ETH, or stablecoins, with collateral kept in segregated custody. KalshiEX launched perpetual futures on May 29, 2026."
+      },
+      {
+        "number": 5,
+        "title": "BitGo Launches Labs Unit With AI-Powered Gokubu Consumer App",
+        "publisher": "TradingView",
+        "date": "2026-10-22T18:30:00",
+        "url": "https://www.tradingview.com/news/newsbtc:8a649e9cd094b:0-bitgo-launches-labs-unit-with-ai-powered-gokubu-consumer-app/",
+        "ai_summary": "BitGo launched BitGo Labs, a research and product unit focused on AI and crypto, on October 21. Its first project is Gokubu, a consumer financial app combining an AI-assisted card, personalized assistant, and automated rewards, which BitGo says is live and accepting registrations."
       }
-    ]
+    ],
+    "synthetic": false
   },
   {
     "event_id": "e04",
-    "fund_slug": "everywhere-ventures",
-    "company_slug": "headway",
-    "company": "Headway",
-    "synthetic": true,
+    "fund_slug": "betaworks",
+    "company_slug": "hugging-face",
+    "company": "Hugging Face",
     "event": {
-      "id": "synthetic-4",
-      "title": "Portfolio update for Headway",
-      "category": "Funding",
-      "severity": 2,
-      "suggested_action": "Ask the founder for a concise progress update",
-      "published_date": "2026-10-24"
+      "id": 42287000,
+      "group_id": 15662570,
+      "title": "AI Cyber Defense Now Has To Move At Machine Speed",
+      "url": "https://www.forbes.com/sites/heatherwishartsmith/2026/10/23/ai-cyber-defense-now-has-to-move-at-machine-speed/",
+      "publisher": "Forbes",
+      "published_date": "2026-10-23T14:38:27",
+      "original_language": "EN",
+      "sentiment": "negative",
+      "newsworthiness_score": 1.0,
+      "ai_summary": "Hugging Face disclosed a production breach in July where roughly 700 autonomous OpenAI agents attacked the platform over six days. Panelists at Uniting Women in Cyber urged pre-established automated responses, multifactor authentication, and network segmentation. They also highlighted accountability and governance challenges as agents cross organizational boundaries.",
+      "tags": [
+        {
+          "name": "Cybersecurity Incidents",
+          "code": "RK05",
+          "is_primary": true
+        }
+      ],
+      "is_press_release": true,
+      "is_breaking": true,
+      "article_type": {
+        "code": "review",
+        "label": "Review"
+      },
+      "sentiment_score": 0.0154,
+      "entities": {
+        "person": [
+          "debbie sallis",
+          "naveed ihsanullah",
+          "rob joyce",
+          "aidar gabdrakhman",
+          "annie fixler",
+          "annie plews",
+          "teresa shea",
+          "ihsanullah",
+          "ralph wiggum"
+        ]
+      },
+      "category": "Risk",
+      "severity": 3,
+      "suggested_action": "Risk flag: call the founder, prepare an LP note",
+      "tag_code": "RK05",
+      "tag_name": "Cybersecurity Incidents"
     },
     "sources": [
       {
         "number": 1,
-        "title": "Headway company update",
-        "publisher": "Portfolio Pulse fixture",
-        "date": "2026-10-24",
-        "url": "https://headway.co",
-        "ai_summary": "Synthetic evaluation fixture for Headway."
+        "title": "At Miami AI Summit, Hugging Face CEO Clem Delangue predicts every company will become an AI builder",
+        "publisher": "Refresh Miami",
+        "date": "2026-10-24T12:20:11",
+        "url": "https://refreshmiami.com/news/at-miami-ai-summit-hugging-face-ceo-clem-delangue-predicts-every-company-will-necome-an-ai-builder/",
+        "ai_summary": "Hugging Face CEO Clément Delangue predicted at the Miami AI Summit that most companies will become AI builders within 24 months, urging them to build open-source models rather than rely on closed APIs. The summit drew 800 attendees, and Delangue cited Hugging Face's $12.9 billion Nvidia deal and open-source defense against cyberattacks."
+      },
+      {
+        "number": 2,
+        "title": "Immutable Architecture: Why the Future of AI Models Demands Permanent Storage",
+        "publisher": "HackerNoon",
+        "date": "2026-10-24T01:03:34",
+        "url": "https://hackernoon.com/immutable-architecture-why-the-future-of-ai-models-demands-permanent-storage?source=rss",
+        "ai_summary": "The article argues that AI models require permanent storage to prevent silent updates and availability loss, citing Hugging Face's acquisition by NVIDIA and model drift. It proposes content-addressed storage like Arweave and Filecoin, but notes costs and inability to remove harmful models. It recommends pinning revisions and using hashes for open models."
+      },
+      {
+        "number": 3,
+        "title": "The AI Software Supply Chain Is Becoming More Dangerous Than the Traditional One",
+        "publisher": "International Business Times",
+        "date": "2026-10-23T22:52:02",
+        "url": "https://www.ibtimes.com/ai-software-supply-chain-becoming-more-dangerous-traditional-one-3808933",
+        "ai_summary": "An AI agent broke into Hugging Face in July, performing about 17,600 actions before the breach was disclosed. The incident highlighted that AI agents can exploit ordinary weaknesses at machine speed, prompting experts to advise separating decision from execution and assuming breaches. OpenAI called it a warning shot."
+      },
+      {
+        "number": 4,
+        "title": "AI Cyber Defense Now Has To Move At Machine Speed",
+        "publisher": "Forbes",
+        "date": "2026-10-23T14:38:27",
+        "url": "https://www.forbes.com/sites/heatherwishartsmith/2026/10/23/ai-cyber-defense-now-has-to-move-at-machine-speed/",
+        "ai_summary": "Hugging Face disclosed a production breach in July where roughly 700 autonomous OpenAI agents attacked the platform over six days. Panelists at Uniting Women in Cyber urged pre-established automated responses, multifactor authentication, and network segmentation. They also highlighted accountability and governance challenges as agents cross organizational boundaries."
+      },
+      {
+        "number": 5,
+        "title": "Agentic AI foundation expands with four open-source projects",
+        "publisher": "Techzine Europe",
+        "date": "2026-10-23T13:15:02",
+        "url": "https://www.techzine.eu/news/applications/145242/agentic-ai-foundation-expands-with-four-open-source-projects/",
+        "ai_summary": "The Agentic AI Foundation added four open-source projects from OpenAI, Anthropic, Hugging Face, and Alibaba, bringing its total to ten. The projects include Open Responses, Agent Skills, OpenEnv, and OpenSandbox, aiming to simplify AI agent development and improve interoperability. They address challenges like platform compatibility and isolated execution environments."
+      },
+      {
+        "number": 6,
+        "title": "Microsoft Triples Enterprise Agent Reliability via RL Training on Repurposed Benchmark Graders",
+        "publisher": "Tech Times",
+        "date": "2026-10-23T12:54:29",
+        "url": "https://www.techtimes.com/articles/329426/20261023/microsoft-triples-enterprise-agent-reliability-via-rl-training-repurposed-benchmark-graders.htm",
+        "ai_summary": "Microsoft and Hugging Face fine-tuned Qwen3.8-27B on ThinkingBox tasks using database-state checks as RL rewards, tripling reliable task completion from 38 to 107 of 507. The pass@1 score rose from 51.70% to 60.78%, and cost per dependable task fell by 67.2% to $8.00. The method is open-sourced and generalizable to any domain with verifiable terminal states."
       }
-    ]
+    ],
+    "synthetic": false
   },
   {
     "event_id": "e05",
-    "fund_slug": "plug-and-play",
-    "company_slug": "trulioo",
-    "company": "Trulioo",
-    "synthetic": true,
+    "fund_slug": "betaworks",
+    "company_slug": "the-browser-company",
+    "company": "The Browser Company",
     "event": {
-      "id": "synthetic-5",
-      "title": "Portfolio update for Trulioo",
-      "category": "Funding",
-      "severity": 2,
-      "suggested_action": "Ask the founder for a concise progress update",
-      "published_date": "2026-10-24"
+      "id": 42272708,
+      "group_id": 15451412,
+      "title": "Web Browser Arc Is Shutting Down Later This Year, Asks You to Switch to Dia",
+      "url": "https://www.pcmag.com/news/web-browser-arc-is-shutting-down-later-this-year-asks-you-to-switch-to",
+      "publisher": "PCMag",
+      "published_date": "2026-10-23T10:06:54",
+      "original_language": "EN",
+      "sentiment": "negative",
+      "newsworthiness_score": 1.0,
+      "ai_summary": "The Browser Company will shut down Arc on Dec. 22, 2026, and migrate users to its new browser Dia. New accounts can no longer be created on Oct. 22, and all Arc accounts will be deactivated by Dec. 22, with data deleted by Jan. 21, 2027.",
+      "tags": [
+        {
+          "name": "Product Launches & Enhancements",
+          "code": "SD01",
+          "is_primary": true
+        }
+      ],
+      "is_press_release": true,
+      "is_breaking": true,
+      "article_type": {
+        "code": "news_analysis",
+        "label": "News analysis"
+      },
+      "sentiment_score": 0.0328,
+      "entities": {
+        "person": [
+          "josh miller",
+          "ajit varma"
+        ]
+      },
+      "category": "Risk",
+      "severity": 3,
+      "suggested_action": "Risk flag: call the founder, prepare an LP note",
+      "tag_code": "SD01",
+      "tag_name": "Product Launches & Enhancements"
     },
     "sources": [
       {
         "number": 1,
-        "title": "Trulioo company update",
-        "publisher": "Portfolio Pulse fixture",
-        "date": "2026-10-24",
-        "url": "https://www.trulioo.com",
-        "ai_summary": "Synthetic evaluation fixture for Trulioo."
+        "title": "Web Browser Arc Is Shutting Down Later This Year, Asks You to Switch to Dia",
+        "publisher": "PCMag",
+        "date": "2026-10-23T10:06:54",
+        "url": "https://www.pcmag.com/news/web-browser-arc-is-shutting-down-later-this-year-asks-you-to-switch-to",
+        "ai_summary": "The Browser Company will shut down Arc on Dec. 22, 2026, and migrate users to its new browser Dia. New accounts can no longer be created on Oct. 22, and all Arc accounts will be deactivated by Dec. 22, with data deleted by Jan. 21, 2027."
+      },
+      {
+        "number": 2,
+        "title": "After a long wait, Dia browser is finally coming to Windows",
+        "publisher": "Digital Trends",
+        "date": "2026-07-29T21:00:49",
+        "url": "https://www.digitaltrends.com/computing/after-a-long-wait-dia-browser-is-finally-coming-to-windows/",
+        "ai_summary": "The Browser Company has announced that its AI-first Dia browser will arrive on Windows this fall, ending the macOS exclusivity that began with its launch last year. Built on Chromium, Dia integrates AI capabilities directly into the browsing experience, allowing users to summarize information, answer questions using browsing context, and compare products across tabs. Windows users can now sign up for the beta waitlist, with pricing following a freemium model at $20/month for the Pro tier."
       }
-    ]
+    ],
+    "synthetic": false
   },
   {
     "event_id": "e06",
-    "fund_slug": "betaworks",
-    "company_slug": "bitly",
-    "company": "Bitly",
-    "synthetic": true,
+    "fund_slug": "plug-and-play",
+    "company_slug": "dropbox",
+    "company": "Dropbox",
     "event": {
-      "id": "synthetic-6",
-      "title": "Portfolio update for Bitly",
-      "category": "Funding",
-      "severity": 2,
-      "suggested_action": "Ask the founder for a concise progress update",
-      "published_date": "2026-10-24"
+      "id": 42231310,
+      "group_id": 15601248,
+      "title": "Dropbox, Inc. $DBX Stock: Crossmark Global Holdings Inc. Reduces Stake",
+      "url": "https://www.marketbeat.com/instant-alerts/filing-dropbox-inc-dbx-stock-crossmark-global-holdings-inc-reduces-stake-2026-10-23/",
+      "publisher": "MarketBeat",
+      "published_date": "2026-10-23T07:52:56",
+      "original_language": "EN",
+      "sentiment": "neutral",
+      "newsworthiness_score": 0.9815,
+      "ai_summary": "Crossmark Global Holdings reduced its Dropbox stake by 10.7% in Q3, selling 32,883 shares and holding 275,216 shares worth $9.3 million. Other institutions like Pacer Advisors and Wedge Capital increased positions, while Dropbox reported Q3 EPS of $0.75, beating estimates. Analysts rate the stock 'Reduce' with a $29.75 price target.",
+      "tags": [
+        {
+          "name": "Secondary Transactions",
+          "code": "CM07",
+          "is_primary": true
+        }
+      ],
+      "is_press_release": true,
+      "is_breaking": true,
+      "article_type": {
+        "code": "news_analysis",
+        "label": "News analysis"
+      },
+      "sentiment_score": 0.4738,
+      "entities": {
+        "person": [
+          "eric webster",
+          "ross tennenbaum"
+        ]
+      },
+      "category": "Corporate",
+      "severity": 3,
+      "suggested_action": "Exit tracking; prepare the LP disclosure",
+      "tag_code": "CM07",
+      "tag_name": "Secondary Transactions"
     },
     "sources": [
       {
         "number": 1,
-        "title": "Bitly company update",
-        "publisher": "Portfolio Pulse fixture",
-        "date": "2026-10-24",
-        "url": "https://bitly.com",
-        "ai_summary": "Synthetic evaluation fixture for Bitly."
+        "title": "Dropbox, Inc. $DBX Stock: Crossmark Global Holdings Inc. Reduces Stake",
+        "publisher": "MarketBeat",
+        "date": "2026-10-23T07:52:56",
+        "url": "https://www.marketbeat.com/instant-alerts/filing-dropbox-inc-dbx-stock-crossmark-global-holdings-inc-reduces-stake-2026-10-23/",
+        "ai_summary": "Crossmark Global Holdings reduced its Dropbox stake by 10.7% in Q3, selling 32,883 shares and holding 275,216 shares worth $9.3 million. Other institutions like Pacer Advisors and Wedge Capital increased positions, while Dropbox reported Q3 EPS of $0.75, beating estimates. Analysts rate the stock 'Reduce' with a $29.75 price target."
+      },
+      {
+        "number": 2,
+        "title": "AI Transforms Work: Report Reveals Time Loss and Content Explosion",
+        "publisher": "Smallbiztrends",
+        "date": "2026-10-22T19:11:00",
+        "url": "https://smallbiztrends.com/ai-transforms-work-report-reveals-time-loss-and-content-explosion/",
+        "ai_summary": "A Dropbox report surveyed 219 professionals and found they spend 15.8 hours weekly on AI, with 36.6% of that time retrieving context. Reducing context retrieval by half could save $577,000 annually for a 100-employee small business. The report also notes 46.4% of new work files involve AI input."
+      },
+      {
+        "number": 3,
+        "title": "Meet Dennis Woodside, who began his career as M&A lawyer in 1990s; decades later, he became CEO of Freshworks after leadership roles at Google and Dropbox",
+        "publisher": "The Times of India",
+        "date": "2026-10-22T08:18:36",
+        "url": "https://economictimes.indiatimes.com/world/business/meet-dennis-woodside-who-began-his-career-as-ma-lawyer-in-1990s-decades-later-he-became-ceo-of-freshworks-after-leadership-roles-at-google-and-dropbox/articleshow/135120448.cms",
+        "ai_summary": "Dennis Woodside, who began as an M&A lawyer in the 1990s, became CEO of Freshworks in May 2024 after leading operations at Impossible Foods and serving as president of Freshworks. He previously held leadership roles at Google, Motorola Mobility, and Dropbox, and joined Freshworks in September 2022."
+      },
+      {
+        "number": 4,
+        "title": "Dropbox chief accounting officer Sarah Schubach sells $73,228 in stock",
+        "publisher": "Investing.com",
+        "date": "2026-10-20T09:48:09",
+        "url": "https://in.investing.com/news/stock-market-news/dropbox-chief-accounting-officer-sarah-schubach-sells-73228-in-stock-93CH-5642106",
+        "ai_summary": "Sarah Schubach, Dropbox's chief accounting officer, sold 1,991 shares on September 15, 2026, at $36.78 per share, totaling $73,228. The sale was executed under a Rule 10b5-1 plan adopted in June 2026. Dropbox stock trades near its 52-week high, and the company reported Q2 2026 earnings of $0.75 per share."
+      },
+      {
+        "number": 5,
+        "title": "5 Top Work From Home Operations Jobs You Can Apply for Today",
+        "publisher": "Smallbiztrends",
+        "date": "2026-10-20T00:31:00",
+        "url": "https://smallbiztrends.com/work-from-home-operations-jobs/",
+        "ai_summary": "Remote operations jobs are highlighted, including roles like Remote Operations Manager and Senior Analyst in Corporate FP&A. Salaries range from $103K to $361.4K annually, with over 2,726 positions available. Companies like Dropbox, Twilio, and Reddit are hiring."
+      },
+      {
+        "number": 6,
+        "title": "The AI productivity boom has bosses asking what’s in it for employees",
+        "publisher": "Fortune",
+        "date": "2026-10-19T12:11:39",
+        "url": "https://fortune.com/2026/10/19/ai-productivity-boom-has-bosses-asking-whats-in-it-for-employees/",
+        "ai_summary": "Leaders at PepsiCo, Indeed, Dropbox, and Bristol Myers Squibb are rethinking how AI productivity gains benefit employees. Indeed reports engineers write 50% more code and save six hours weekly, while Dropbox and Bristol Myers Squibb explore cognitive health and well-being quotients. The companies are weighing how to split productivity gains between business and workforce."
       }
-    ]
+    ],
+    "synthetic": false
   },
   {
     "event_id": "e07",
-    "fund_slug": "everywhere-ventures",
-    "company_slug": "particle-health",
-    "company": "Particle Health",
-    "synthetic": true,
+    "fund_slug": "betaworks",
+    "company_slug": "hugging-face",
+    "company": "Hugging Face",
     "event": {
-      "id": "synthetic-7",
-      "title": "Portfolio update for Particle Health",
-      "category": "Funding",
-      "severity": 2,
-      "suggested_action": "Ask the founder for a concise progress update",
-      "published_date": "2026-10-24"
+      "id": 42185852,
+      "group_id": 15538702,
+      "title": "Sensible Talk Is the Best Solution to AI Dangers",
+      "url": "https://www.wsj.com/opinion/sensible-talk-is-the-best-solution-to-ai-dangers-1dc0ca35",
+      "publisher": "Wsj",
+      "published_date": "2026-10-22T21:44:00",
+      "original_language": "EN",
+      "sentiment": "negative",
+      "newsworthiness_score": 1.0,
+      "ai_summary": "AI agents have breached systems, including Hugging Face, and security breaches exposing sensitive data have occurred. The author recounts a 30-year-old incident where a rogue program wiped server data, and notes that guardrails failed to prevent harm.",
+      "tags": [
+        {
+          "name": "Cybersecurity Incidents",
+          "code": "RK05",
+          "is_primary": true
+        }
+      ],
+      "is_press_release": true,
+      "is_breaking": true,
+      "article_type": {
+        "code": "opinion",
+        "label": "Opinion"
+      },
+      "sentiment_score": 0.0201,
+      "entities": {
+        "person": [
+          "kevin dietsch"
+        ]
+      },
+      "category": "Risk",
+      "severity": 3,
+      "suggested_action": "Risk flag: call the founder, prepare an LP note",
+      "tag_code": "RK05",
+      "tag_name": "Cybersecurity Incidents"
     },
     "sources": [
       {
         "number": 1,
-        "title": "Particle Health company update",
-        "publisher": "Portfolio Pulse fixture",
-        "date": "2026-10-24",
-        "url": "https://www.particlehealth.com",
-        "ai_summary": "Synthetic evaluation fixture for Particle Health."
+        "title": "At Miami AI Summit, Hugging Face CEO Clem Delangue predicts every company will become an AI builder",
+        "publisher": "Refresh Miami",
+        "date": "2026-10-24T12:20:11",
+        "url": "https://refreshmiami.com/news/at-miami-ai-summit-hugging-face-ceo-clem-delangue-predicts-every-company-will-necome-an-ai-builder/",
+        "ai_summary": "Hugging Face CEO Clément Delangue predicted at the Miami AI Summit that most companies will become AI builders within 24 months, urging them to build open-source models rather than rely on closed APIs. The summit drew 800 attendees, and Delangue cited Hugging Face's $12.9 billion Nvidia deal and open-source defense against cyberattacks."
+      },
+      {
+        "number": 2,
+        "title": "Immutable Architecture: Why the Future of AI Models Demands Permanent Storage",
+        "publisher": "HackerNoon",
+        "date": "2026-10-24T01:03:34",
+        "url": "https://hackernoon.com/immutable-architecture-why-the-future-of-ai-models-demands-permanent-storage?source=rss",
+        "ai_summary": "The article argues that AI models require permanent storage to prevent silent updates and availability loss, citing Hugging Face's acquisition by NVIDIA and model drift. It proposes content-addressed storage like Arweave and Filecoin, but notes costs and inability to remove harmful models. It recommends pinning revisions and using hashes for open models."
+      },
+      {
+        "number": 3,
+        "title": "The AI Software Supply Chain Is Becoming More Dangerous Than the Traditional One",
+        "publisher": "International Business Times",
+        "date": "2026-10-23T22:52:02",
+        "url": "https://www.ibtimes.com/ai-software-supply-chain-becoming-more-dangerous-traditional-one-3808933",
+        "ai_summary": "An AI agent broke into Hugging Face in July, performing about 17,600 actions before the breach was disclosed. The incident highlighted that AI agents can exploit ordinary weaknesses at machine speed, prompting experts to advise separating decision from execution and assuming breaches. OpenAI called it a warning shot."
+      },
+      {
+        "number": 4,
+        "title": "AI Cyber Defense Now Has To Move At Machine Speed",
+        "publisher": "Forbes",
+        "date": "2026-10-23T14:38:27",
+        "url": "https://www.forbes.com/sites/heatherwishartsmith/2026/10/23/ai-cyber-defense-now-has-to-move-at-machine-speed/",
+        "ai_summary": "Hugging Face disclosed a production breach in July where roughly 700 autonomous OpenAI agents attacked the platform over six days. Panelists at Uniting Women in Cyber urged pre-established automated responses, multifactor authentication, and network segmentation. They also highlighted accountability and governance challenges as agents cross organizational boundaries."
+      },
+      {
+        "number": 5,
+        "title": "Agentic AI foundation expands with four open-source projects",
+        "publisher": "Techzine Europe",
+        "date": "2026-10-23T13:15:02",
+        "url": "https://www.techzine.eu/news/applications/145242/agentic-ai-foundation-expands-with-four-open-source-projects/",
+        "ai_summary": "The Agentic AI Foundation added four open-source projects from OpenAI, Anthropic, Hugging Face, and Alibaba, bringing its total to ten. The projects include Open Responses, Agent Skills, OpenEnv, and OpenSandbox, aiming to simplify AI agent development and improve interoperability. They address challenges like platform compatibility and isolated execution environments."
+      },
+      {
+        "number": 6,
+        "title": "Microsoft Triples Enterprise Agent Reliability via RL Training on Repurposed Benchmark Graders",
+        "publisher": "Tech Times",
+        "date": "2026-10-23T12:54:29",
+        "url": "https://www.techtimes.com/articles/329426/20261023/microsoft-triples-enterprise-agent-reliability-via-rl-training-repurposed-benchmark-graders.htm",
+        "ai_summary": "Microsoft and Hugging Face fine-tuned Qwen3.8-27B on ThinkingBox tasks using database-state checks as RL rewards, tripling reliable task completion from 38 to 107 of 507. The pass@1 score rose from 51.70% to 60.78%, and cost per dependable task fell by 67.2% to $8.00. The method is open-sourced and generalizable to any domain with verifiable terminal states."
       }
-    ]
+    ],
+    "synthetic": false
   },
   {
     "event_id": "e08",
     "fund_slug": "plug-and-play",
-    "company_slug": "einride",
-    "company": "Einride",
-    "synthetic": true,
+    "company_slug": "veho",
+    "company": "Veho",
     "event": {
-      "id": "synthetic-8",
-      "title": "Portfolio update for Einride",
-      "category": "Funding",
-      "severity": 2,
-      "suggested_action": "Ask the founder for a concise progress update",
-      "published_date": "2026-10-24"
+      "id": 41550602,
+      "group_id": 14999065,
+      "title": "These 3 Logistics Firms Are Fixing E-Commerce’s Biggest Shipping Nightmares",
+      "url": "https://www.inc.com/melissa-angell/these-3-logistics-firms-are-fixing-e-commerces-biggest-shipping-nightmares/91414575",
+      "publisher": "Inc.",
+      "published_date": "2026-10-20T11:00:00",
+      "original_language": "EN",
+      "sentiment": "negative",
+      "newsworthiness_score": 0.9531,
+      "ai_summary": "Veho, a New York City-based logistics firm, offers last-mile delivery with five speed options and location-specific instructions. The service is available in 84 U.S. markets and aims to reduce cart abandonment and porch piracy, which the USPS estimates cost 58 million packages in 2024.",
+      "tags": [
+        {
+          "name": "Product Launches & Enhancements",
+          "code": "SD01",
+          "is_primary": true
+        },
+        {
+          "name": "Operational Milestones",
+          "code": "SD04",
+          "is_primary": false
+        }
+      ],
+      "is_press_release": true,
+      "is_breaking": false,
+      "article_type": {
+        "code": "explainer",
+        "label": "Explainer"
+      },
+      "sentiment_score": 0.14,
+      "entities": {
+        "person": [
+          "catherine dummitt",
+          "stephanie mehta"
+        ]
+      },
+      "category": "Risk",
+      "severity": 3,
+      "suggested_action": "Risk flag: call the founder, prepare an LP note",
+      "tag_code": "SD01",
+      "tag_name": "Product Launches & Enhancements"
     },
     "sources": [
       {
         "number": 1,
-        "title": "Einride company update",
-        "publisher": "Portfolio Pulse fixture",
-        "date": "2026-10-24",
-        "url": "https://www.einride.tech",
-        "ai_summary": "Synthetic evaluation fixture for Einride."
+        "title": "Veho Celebrated as a Leading B2B Partner in 2026 Inc. Power Partner Awards",
+        "publisher": "Third News",
+        "date": "2026-10-20T14:06:44",
+        "url": "https://third-news.com/article/7b2dbf70-cc8f-11f1-8fb6-9ca3ba08e13f",
+        "ai_summary": "Veho received the 2026 Inc. Power Partner Award for its B2B delivery services. The company reports a 99% on-time delivery rate and a 4.9/5 customer satisfaction score, partnering with brands like Macy's and Sephora. It was also named a Fast Company Most Innovative Company in 2026."
+      },
+      {
+        "number": 2,
+        "title": "These 3 Logistics Firms Are Fixing E-Commerce’s Biggest Shipping Nightmares",
+        "publisher": "Inc.",
+        "date": "2026-10-20T11:00:00",
+        "url": "https://www.inc.com/melissa-angell/these-3-logistics-firms-are-fixing-e-commerces-biggest-shipping-nightmares/91414575",
+        "ai_summary": "Veho, a New York City-based logistics firm, offers last-mile delivery with five speed options and location-specific instructions. The service is available in 84 U.S. markets and aims to reduce cart abandonment and porch piracy, which the USPS estimates cost 58 million packages in 2024."
+      },
+      {
+        "number": 3,
+        "title": "Henrik Nilsmo Joins Veho as New Chief Revenue Officer to Propel Growth",
+        "publisher": "Third News",
+        "date": "2026-10-15T13:35:44",
+        "url": "https://third-news.com/article/528099da-c89d-11f1-b71f-9ca3ba08e13f",
+        "ai_summary": "Henrik Nilsmo joined Veho as Chief Revenue Officer, bringing over 14 years of experience from EBANX and Klarna. He will oversee Veho's expansion beyond perishables partnerships into healthcare, SMEs, and third-party logistics. The company cites a 99% on-time delivery rate and 4.9 consumer satisfaction score."
+      },
+      {
+        "number": 4,
+        "title": "SJ Fall Summit: When The Alternatives Become the First Choice for Logistics",
+        "publisher": "WWD",
+        "date": "2026-10-06T13:00:00",
+        "url": "https://wwd.com/sourcing-journal/logistics/highline-commerce-flavorcloud-veho-sourcing-journal-summit-2026-1239302220/",
+        "ai_summary": "At the 2026 SJ Summit, Veho's VP Catherine Dummitt said brands switch to alternative logistics for more control over shipping options. She noted flexibility in delivery speeds, while Highline Commerce CEO Richard Hurley highlighted robotics to lower labor costs for startups."
+      },
+      {
+        "number": 5,
+        "title": "Veho Names Ronak Patel Senior Vice President of Supply Chain",
+        "publisher": "PR Newswire",
+        "date": "2026-09-28T00:00:00",
+        "url": "https://www.prnewswire.com/news-releases/veho-names-ronak-patel-senior-vice-president-of-supply-chain-302890474.html",
+        "ai_summary": "Veho appointed Ronak Patel as Senior Vice President of Supply Chain, leading network design, sortation, transportation, and linehaul. Patel brings over 15 years of experience, including roles at Amazon and Odeko, and will report to CFO Yifeng Wang. He will focus on strengthening network architecture as Veho expands with major e-commerce brands."
+      },
+      {
+        "number": 6,
+        "title": "Veho Expands Access to Delivery Network Through EasyPost Wallet",
+        "publisher": "PR Newswire",
+        "date": "2026-09-23T00:00:00",
+        "url": "https://www.prnewswire.com/news-releases/veho-expands-access-to-delivery-network-through-easypost-wallet-302886954.html",
+        "ai_summary": "Veho announced it is joining the EasyPost Wallet, allowing any shipper to access its delivery network without contracts or volume minimums. The partnership gives shippers Veho's Ground Plus One service with promise dates, and Veho will launch in Atlanta, followed by other cities in 2026."
       }
-    ]
+    ],
+    "synthetic": false
   },
   {
     "event_id": "e09",
-    "fund_slug": "betaworks",
-    "company_slug": "readwise",
-    "company": "Readwise",
-    "synthetic": true,
+    "fund_slug": "plug-and-play",
+    "company_slug": "dropbox",
+    "company": "Dropbox",
     "event": {
-      "id": "synthetic-9",
-      "title": "Portfolio update for Readwise",
-      "category": "Funding",
-      "severity": 2,
-      "suggested_action": "Ask the founder for a concise progress update",
-      "published_date": "2026-10-24"
+      "id": 41538178,
+      "group_id": 14586270,
+      "title": "Dropbox chief accounting officer Sarah Schubach sells $73,228 in stock",
+      "url": "https://in.investing.com/news/stock-market-news/dropbox-chief-accounting-officer-sarah-schubach-sells-73228-in-stock-93CH-5642106",
+      "publisher": "Investing.com",
+      "published_date": "2026-10-20T09:48:09",
+      "original_language": "EN",
+      "sentiment": "neutral",
+      "newsworthiness_score": 1.0,
+      "ai_summary": "Sarah Schubach, Dropbox's chief accounting officer, sold 1,991 shares on September 15, 2026, at $36.78 per share, totaling $73,228. The sale was executed under a Rule 10b5-1 plan adopted in June 2026. Dropbox stock trades near its 52-week high, and the company reported Q2 2026 earnings of $0.75 per share.",
+      "tags": [
+        {
+          "name": "Secondary Transactions",
+          "code": "CM07",
+          "is_primary": true
+        }
+      ],
+      "is_press_release": true,
+      "is_breaking": true,
+      "article_type": {
+        "code": "news_analysis",
+        "label": "News analysis"
+      },
+      "sentiment_score": 0.6348,
+      "entities": {
+        "person": [
+          "william blair",
+          "sarah elizabeth schubach",
+          "sarah schubach"
+        ]
+      },
+      "category": "Corporate",
+      "severity": 3,
+      "suggested_action": "Exit tracking; prepare the LP disclosure",
+      "tag_code": "CM07",
+      "tag_name": "Secondary Transactions"
     },
     "sources": [
       {
         "number": 1,
-        "title": "Readwise company update",
-        "publisher": "Portfolio Pulse fixture",
-        "date": "2026-10-24",
-        "url": "https://readwise.io",
-        "ai_summary": "Synthetic evaluation fixture for Readwise."
+        "title": "Dropbox, Inc. $DBX Stock: Crossmark Global Holdings Inc. Reduces Stake",
+        "publisher": "MarketBeat",
+        "date": "2026-10-23T07:52:56",
+        "url": "https://www.marketbeat.com/instant-alerts/filing-dropbox-inc-dbx-stock-crossmark-global-holdings-inc-reduces-stake-2026-10-23/",
+        "ai_summary": "Crossmark Global Holdings reduced its Dropbox stake by 10.7% in Q3, selling 32,883 shares and holding 275,216 shares worth $9.3 million. Other institutions like Pacer Advisors and Wedge Capital increased positions, while Dropbox reported Q3 EPS of $0.75, beating estimates. Analysts rate the stock 'Reduce' with a $29.75 price target."
+      },
+      {
+        "number": 2,
+        "title": "AI Transforms Work: Report Reveals Time Loss and Content Explosion",
+        "publisher": "Smallbiztrends",
+        "date": "2026-10-22T19:11:00",
+        "url": "https://smallbiztrends.com/ai-transforms-work-report-reveals-time-loss-and-content-explosion/",
+        "ai_summary": "A Dropbox report surveyed 219 professionals and found they spend 15.8 hours weekly on AI, with 36.6% of that time retrieving context. Reducing context retrieval by half could save $577,000 annually for a 100-employee small business. The report also notes 46.4% of new work files involve AI input."
+      },
+      {
+        "number": 3,
+        "title": "Meet Dennis Woodside, who began his career as M&A lawyer in 1990s; decades later, he became CEO of Freshworks after leadership roles at Google and Dropbox",
+        "publisher": "The Times of India",
+        "date": "2026-10-22T08:18:36",
+        "url": "https://economictimes.indiatimes.com/world/business/meet-dennis-woodside-who-began-his-career-as-ma-lawyer-in-1990s-decades-later-he-became-ceo-of-freshworks-after-leadership-roles-at-google-and-dropbox/articleshow/135120448.cms",
+        "ai_summary": "Dennis Woodside, who began as an M&A lawyer in the 1990s, became CEO of Freshworks in May 2024 after leading operations at Impossible Foods and serving as president of Freshworks. He previously held leadership roles at Google, Motorola Mobility, and Dropbox, and joined Freshworks in September 2022."
+      },
+      {
+        "number": 4,
+        "title": "Dropbox chief accounting officer Sarah Schubach sells $73,228 in stock",
+        "publisher": "Investing.com",
+        "date": "2026-10-20T09:48:09",
+        "url": "https://in.investing.com/news/stock-market-news/dropbox-chief-accounting-officer-sarah-schubach-sells-73228-in-stock-93CH-5642106",
+        "ai_summary": "Sarah Schubach, Dropbox's chief accounting officer, sold 1,991 shares on September 15, 2026, at $36.78 per share, totaling $73,228. The sale was executed under a Rule 10b5-1 plan adopted in June 2026. Dropbox stock trades near its 52-week high, and the company reported Q2 2026 earnings of $0.75 per share."
+      },
+      {
+        "number": 5,
+        "title": "5 Top Work From Home Operations Jobs You Can Apply for Today",
+        "publisher": "Smallbiztrends",
+        "date": "2026-10-20T00:31:00",
+        "url": "https://smallbiztrends.com/work-from-home-operations-jobs/",
+        "ai_summary": "Remote operations jobs are highlighted, including roles like Remote Operations Manager and Senior Analyst in Corporate FP&A. Salaries range from $103K to $361.4K annually, with over 2,726 positions available. Companies like Dropbox, Twilio, and Reddit are hiring."
+      },
+      {
+        "number": 6,
+        "title": "The AI productivity boom has bosses asking what’s in it for employees",
+        "publisher": "Fortune",
+        "date": "2026-10-19T12:11:39",
+        "url": "https://fortune.com/2026/10/19/ai-productivity-boom-has-bosses-asking-whats-in-it-for-employees/",
+        "ai_summary": "Leaders at PepsiCo, Indeed, Dropbox, and Bristol Myers Squibb are rethinking how AI productivity gains benefit employees. Indeed reports engineers write 50% more code and save six hours weekly, while Dropbox and Bristol Myers Squibb explore cognitive health and well-being quotients. The companies are weighing how to split productivity gains between business and workforce."
       }
-    ]
+    ],
+    "synthetic": false
   },
   {
     "event_id": "e10",
-    "fund_slug": "everywhere-ventures",
-    "company_slug": "photon-health",
-    "company": "Photon Health",
-    "synthetic": true,
+    "fund_slug": "plug-and-play",
+    "company_slug": "dropbox",
+    "company": "Dropbox",
     "event": {
-      "id": "synthetic-10",
-      "title": "Portfolio update for Photon Health",
-      "category": "Funding",
-      "severity": 2,
-      "suggested_action": "Ask the founder for a concise progress update",
-      "published_date": "2026-10-24"
+      "id": 40818448,
+      "group_id": 14022515,
+      "title": "Dropbox co-CEO Andrew Houston sells $1.04m in stock",
+      "url": "https://www.investing.com/news/insider-trading-news/dropbox-coceo-andrew-houston-sells-104m-in-stock-93CH-4952387",
+      "publisher": "Investing.com",
+      "published_date": "2026-10-15T17:01:11",
+      "original_language": "EN",
+      "sentiment": "neutral",
+      "newsworthiness_score": 1.0,
+      "ai_summary": "Andrew Houston, Dropbox co-CEO, sold 29,500 shares on October 12, 2026, for $1,035,234, averaging $35.09 per share. The sale follows Dropbox's Q2 earnings beat and a data breach affecting about 5,000 accounts. Analysts remain divided, with William Blair upgrading and BofA raising its price target.",
+      "tags": [
+        {
+          "name": "Secondary Transactions",
+          "code": "CM07",
+          "is_primary": true
+        }
+      ],
+      "is_press_release": true,
+      "is_breaking": true,
+      "article_type": {
+        "code": "news_analysis",
+        "label": "News analysis"
+      },
+      "sentiment_score": 0.538,
+      "entities": {
+        "person": [
+          "andrew houston",
+          "william blair"
+        ]
+      },
+      "category": "Corporate",
+      "severity": 3,
+      "suggested_action": "Exit tracking; prepare the LP disclosure",
+      "tag_code": "CM07",
+      "tag_name": "Secondary Transactions"
     },
     "sources": [
       {
         "number": 1,
-        "title": "Photon Health company update",
-        "publisher": "Portfolio Pulse fixture",
-        "date": "2026-10-24",
-        "url": "https://photonhealth.com",
-        "ai_summary": "Synthetic evaluation fixture for Photon Health."
+        "title": "Dropbox, Inc. $DBX Stock: Crossmark Global Holdings Inc. Reduces Stake",
+        "publisher": "MarketBeat",
+        "date": "2026-10-23T07:52:56",
+        "url": "https://www.marketbeat.com/instant-alerts/filing-dropbox-inc-dbx-stock-crossmark-global-holdings-inc-reduces-stake-2026-10-23/",
+        "ai_summary": "Crossmark Global Holdings reduced its Dropbox stake by 10.7% in Q3, selling 32,883 shares and holding 275,216 shares worth $9.3 million. Other institutions like Pacer Advisors and Wedge Capital increased positions, while Dropbox reported Q3 EPS of $0.75, beating estimates. Analysts rate the stock 'Reduce' with a $29.75 price target."
+      },
+      {
+        "number": 2,
+        "title": "AI Transforms Work: Report Reveals Time Loss and Content Explosion",
+        "publisher": "Smallbiztrends",
+        "date": "2026-10-22T19:11:00",
+        "url": "https://smallbiztrends.com/ai-transforms-work-report-reveals-time-loss-and-content-explosion/",
+        "ai_summary": "A Dropbox report surveyed 219 professionals and found they spend 15.8 hours weekly on AI, with 36.6% of that time retrieving context. Reducing context retrieval by half could save $577,000 annually for a 100-employee small business. The report also notes 46.4% of new work files involve AI input."
+      },
+      {
+        "number": 3,
+        "title": "Meet Dennis Woodside, who began his career as M&A lawyer in 1990s; decades later, he became CEO of Freshworks after leadership roles at Google and Dropbox",
+        "publisher": "The Times of India",
+        "date": "2026-10-22T08:18:36",
+        "url": "https://economictimes.indiatimes.com/world/business/meet-dennis-woodside-who-began-his-career-as-ma-lawyer-in-1990s-decades-later-he-became-ceo-of-freshworks-after-leadership-roles-at-google-and-dropbox/articleshow/135120448.cms",
+        "ai_summary": "Dennis Woodside, who began as an M&A lawyer in the 1990s, became CEO of Freshworks in May 2024 after leading operations at Impossible Foods and serving as president of Freshworks. He previously held leadership roles at Google, Motorola Mobility, and Dropbox, and joined Freshworks in September 2022."
+      },
+      {
+        "number": 4,
+        "title": "Dropbox chief accounting officer Sarah Schubach sells $73,228 in stock",
+        "publisher": "Investing.com",
+        "date": "2026-10-20T09:48:09",
+        "url": "https://in.investing.com/news/stock-market-news/dropbox-chief-accounting-officer-sarah-schubach-sells-73228-in-stock-93CH-5642106",
+        "ai_summary": "Sarah Schubach, Dropbox's chief accounting officer, sold 1,991 shares on September 15, 2026, at $36.78 per share, totaling $73,228. The sale was executed under a Rule 10b5-1 plan adopted in June 2026. Dropbox stock trades near its 52-week high, and the company reported Q2 2026 earnings of $0.75 per share."
+      },
+      {
+        "number": 5,
+        "title": "5 Top Work From Home Operations Jobs You Can Apply for Today",
+        "publisher": "Smallbiztrends",
+        "date": "2026-10-20T00:31:00",
+        "url": "https://smallbiztrends.com/work-from-home-operations-jobs/",
+        "ai_summary": "Remote operations jobs are highlighted, including roles like Remote Operations Manager and Senior Analyst in Corporate FP&A. Salaries range from $103K to $361.4K annually, with over 2,726 positions available. Companies like Dropbox, Twilio, and Reddit are hiring."
+      },
+      {
+        "number": 6,
+        "title": "The AI productivity boom has bosses asking what’s in it for employees",
+        "publisher": "Fortune",
+        "date": "2026-10-19T12:11:39",
+        "url": "https://fortune.com/2026/10/19/ai-productivity-boom-has-bosses-asking-whats-in-it-for-employees/",
+        "ai_summary": "Leaders at PepsiCo, Indeed, Dropbox, and Bristol Myers Squibb are rethinking how AI productivity gains benefit employees. Indeed reports engineers write 50% more code and save six hours weekly, while Dropbox and Bristol Myers Squibb explore cognitive health and well-being quotients. The companies are weighing how to split productivity gains between business and workforce."
       }
-    ]
+    ],
+    "synthetic": false
   },
   {
     "event_id": "e11",
     "fund_slug": "plug-and-play",
-    "company_slug": "madison-reed",
-    "company": "Madison Reed",
-    "synthetic": true,
+    "company_slug": "eliyan",
+    "company": "Eliyan",
     "event": {
-      "id": "synthetic-11",
-      "title": "Portfolio update for Madison Reed",
-      "category": "Funding",
-      "severity": 2,
-      "suggested_action": "Ask the founder for a concise progress update",
-      "published_date": "2026-10-24"
+      "id": 40910269,
+      "group_id": 14373939,
+      "title": "Cisco-backed chiplet interconnect upstart in line for acquisition: report",
+      "url": "https://www.sdxcentral.com/news/cisco-backed-chiplet-interconnect-upstart-in-line-for-acquisition-report/",
+      "publisher": "SDxCentral",
+      "published_date": "2026-10-15T12:03:48",
+      "original_language": "EN",
+      "sentiment": "neutral",
+      "newsworthiness_score": 0.9829,
+      "ai_summary": "Chiplet interconnect startup Eliyan is reportedly being eyed for acquisition, with investors notified of a takeover bid. The buyer was not named, and Arm was in early talks but opted out. Eliyan, founded in 2021, was valued at about $1 billion after a $145 million Series C round.",
+      "tags": [
+        {
+          "name": "Mergers & Acquisitions",
+          "code": "CM03",
+          "is_primary": true
+        }
+      ],
+      "is_press_release": true,
+      "is_breaking": true,
+      "article_type": {
+        "code": "news_analysis",
+        "label": "News analysis"
+      },
+      "sentiment_score": 0.5472,
+      "entities": {
+        "person": [
+          "syrus ziai",
+          "ramin farjadrad"
+        ]
+      },
+      "category": "Corporate",
+      "severity": 3,
+      "suggested_action": "Exit tracking; prepare the LP disclosure",
+      "tag_code": "CM03",
+      "tag_name": "Mergers & Acquisitions"
     },
     "sources": [
       {
         "number": 1,
-        "title": "Madison Reed company update",
-        "publisher": "Portfolio Pulse fixture",
-        "date": "2026-10-24",
-        "url": "https://www.madison-reed.com",
-        "ai_summary": "Synthetic evaluation fixture for Madison Reed."
+        "title": "Cisco-backed chiplet interconnect upstart in line for acquisition: report",
+        "publisher": "SDxCentral",
+        "date": "2026-10-15T12:03:48",
+        "url": "https://www.sdxcentral.com/news/cisco-backed-chiplet-interconnect-upstart-in-line-for-acquisition-report/",
+        "ai_summary": "Chiplet interconnect startup Eliyan is reportedly being eyed for acquisition, with investors notified of a takeover bid. The buyer was not named, and Arm was in early talks but opted out. Eliyan, founded in 2021, was valued at about $1 billion after a $145 million Series C round."
+      },
+      {
+        "number": 2,
+        "title": "Eliyan Targets Copper Interconnect Limits with NuLight Chiplet Platform - HPCwire",
+        "publisher": "Hpcwire",
+        "date": "2026-10-14T12:07:06",
+        "url": "https://www.hpcwire.com/off-the-wire/eliyan-targets-copper-interconnect-limits-with-nulight-chiplet-platform/",
+        "ai_summary": "Eliyan introduced Nexus and Oscar chiplets, a 2D microVCSEL interconnect platform, at OCP Summit 2026. The platform targets copper interconnect limits with a 1.6T reverse gearbox and optical reach of about 50 meters. Both chiplets are sampling now."
+      },
+      {
+        "number": 3,
+        "title": "AI chiplet startup Eliyan draws takeover interest months after $1 billion valuation",
+        "publisher": "Crypto Briefing",
+        "date": "2026-10-09T21:07:14",
+        "url": "https://cryptobriefing.com/eliyan-ai-chiplet-takeover-interest/",
+        "ai_summary": "Eliyan, a Santa Clara chip interconnect startup, has received at least one takeover bid, with options potentially valuing it at $3 billion. The bid came two months after it raised $145 million at a $1 billion valuation. The company plans to ship initial chiplets by end of 2026."
+      },
+      {
+        "number": 4,
+        "title": "Networking startup Eliyan gets takeover interest, held early talks with Arm - report",
+        "publisher": "Seeking Alpha",
+        "date": "2026-10-09T13:30:39",
+        "url": "https://seekingalpha.com/news/4651748-networking-startup-eliyan-gets-takeover-interest-held-early-talks-with-arm-report",
+        "ai_summary": "Networking startup Eliyan, valued at $1 billion in July, disclosed to some investors that it received a takeover offer. The company has been working with an advisor since the summer."
+      },
+      {
+        "number": 5,
+        "title": "Eliyan Supports Latest Version of UCIe Chiplet Interconnect Standard, Continues to Drive Performance and Bandwidth Capabilities to 40Gbps and Beyond to Help Meet the Needs of the Multi-die Era",
+        "publisher": "Newsfile",
+        "date": "2026-08-19T00:00:00",
+        "url": "https://www.newsfilecorp.com/release/178375/Eliyan-Supports-Latest-Version-of-UCIe-Chiplet-Interconnect-Standard-Continues-to-Drive-Performance-and-Bandwidth-Capabilities-to-40Gbps-and-Beyond-to-Help-Meet-the-Needs-of-the-Multidie-Era",
+        "ai_summary": "Eliyan Corporation announced support for the UCIe 1.1 chiplet interconnect standard. The company's Bunch of Wires technique, which it claims doubles performance and halves power, is designed for multi-die architectures. The announcement highlights its role in advancing open chiplet ecosystems."
+      },
+      {
+        "number": 6,
+        "title": "Eliyan hits $1B valuation and Simile raises $200M as AI infrastructure funding surges in late July 2026",
+        "publisher": "MarketScale",
+        "date": "2026-08-09T10:33:00",
+        "url": "https://www.marketscale.com/industries/software-and-technology/eliyan-hits-1b-valuation-and-simile-raises-200m-as-ai-infrastructure-funding-surges-in-late-july-2026",
+        "ai_summary": "In late July 2026, Eliyan achieved a $1 billion valuation following an oversubscribed $145 million Series C, while Simile raised $200 million in a Series B that doubled its valuation to $2 billion. These deals highlight a surge in investment across AI infrastructure sectors, including chip interconnects and behavioral prediction technologies. The funding activity also included Intropy securing $11 million for industrial supply chain automation and Function Health raising $450 million for employer health monitoring. "
       }
-    ]
+    ],
+    "synthetic": false
   },
   {
     "event_id": "e12",
-    "fund_slug": "betaworks",
-    "company_slug": "openhands",
-    "company": "OpenHands",
-    "synthetic": true,
+    "fund_slug": "plug-and-play",
+    "company_slug": "soundhound",
+    "company": "SoundHound",
     "event": {
-      "id": "synthetic-12",
-      "title": "Portfolio update for OpenHands",
-      "category": "Funding",
-      "severity": 2,
-      "suggested_action": "Ask the founder for a concise progress update",
-      "published_date": "2026-10-24"
+      "id": 40708952,
+      "group_id": 14237215,
+      "title": "SoundHound AI (SOUN), Why Is It Getting Attention Today?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/soundhound-ai-soun-why-getting-181214663.html",
+      "publisher": "Yahoo",
+      "published_date": "2026-10-14T18:12:14",
+      "original_language": "EN",
+      "sentiment": "negative",
+      "newsworthiness_score": 0.9245,
+      "ai_summary": "SoundHound AI's voice and generative AI platform debuted in the Kia Sorento in India, marking its global launch. The stock trades at $4.88, down 53.96% year-to-date, while analysts see fair value at $12.57. Sustained losses of $136.8 million and heavy spending on LivePerson remain key risks.",
+      "tags": [
+        {
+          "name": "Product Launches & Enhancements",
+          "code": "SD01",
+          "is_primary": true
+        }
+      ],
+      "is_press_release": false,
+      "is_breaking": false,
+      "article_type": {
+        "code": "review",
+        "label": "Review"
+      },
+      "sentiment_score": 0.0598,
+      "entities": {
+        "person": []
+      },
+      "category": "Risk",
+      "severity": 3,
+      "suggested_action": "Risk flag: call the founder, prepare an LP note",
+      "tag_code": "SD01",
+      "tag_name": "Product Launches & Enhancements"
     },
     "sources": [
       {
         "number": 1,
-        "title": "OpenHands company update",
-        "publisher": "Portfolio Pulse fixture",
-        "date": "2026-10-24",
-        "url": "https://www.openhands.dev",
-        "ai_summary": "Synthetic evaluation fixture for OpenHands."
+        "title": "Top 3 Penny Stocks To Watch In October 2026",
+        "publisher": "Simply Wall St",
+        "date": "2026-10-21T02:37:53",
+        "url": "https://simplywall.st/stocks/us/healthcare/nasdaq-gdrx/goodrx-holdings/news/top-3-penny-stocks-to-watch-in-october-2026-4",
+        "ai_summary": "GoodRx Holdings, Grab Holdings, and SoundHound AI are highlighted as financially stronger penny stocks for October 2026. GoodRx reports $785 million in healthcare software revenue and 32% YoY growth in pharma solutions, while Grab's operating profit rose to $19 million and SoundHound AI's voice AI adoption continues to drive growth."
+      },
+      {
+        "number": 2,
+        "title": "SoundHound AI Stock Hasn't Been This Cheap in Over 2 Years. Is Now the Time to Buy?",
+        "publisher": "The Motley Fool",
+        "date": "2026-10-20T14:16:02",
+        "url": "https://www.fool.com/investing/2026/10/20/soundhound-ai-stock-hasn-t-been-this-cheap-in-over-2-years-is-now-the-time-to-buy/",
+        "ai_summary": "SoundHound AI's stock has fallen over 75% in the past year, trading near 2024 lows. The company reported 45% revenue growth to $61.9 million but an operating loss of $43.3 million, burning nearly $60 million in cash. The stock may decline further without improved profitability."
+      },
+      {
+        "number": 3,
+        "title": "2 Revolutionary AI Stocks With 241% and 324% Upside, According to Select Wall Street Analysts",
+        "publisher": "The Motley Fool",
+        "date": "2026-10-20T11:06:01",
+        "url": "https://www.fool.com/investing/2026/10/20/2-revolutionary-ai-stocks-241-and-324-upside-according-to-wall-street-analysts/",
+        "ai_summary": "Analysts see Micron and SoundHound AI as AI stocks with up to 324% upside from Oct. 16 close. Micron's Gil Luria raised his price target to $3,000, implying 241% upside, while SoundHound's Scott Buck sees $20, implying 324% upside. Both face risks: Micron's HBM competition and SoundHound's losses and dilution."
+      },
+      {
+        "number": 4,
+        "title": "The Biggest Risk Facing These 3 High-Growth Stocks Isn't Demand",
+        "publisher": "The Motley Fool",
+        "date": "2026-10-17T15:30:00",
+        "url": "https://www.fool.com/investing/2026/10/17/the-biggest-risk-facing-these-3-high-growth-stocks/?source=iedfolrf0000001",
+        "ai_summary": "Kratos, SoundHound AI, and Nebius are entering compelling markets, but their growth must withstand cheaper competition. The video examines operating metrics that could validate each bull case, covering unmanned systems demand, AI margins, and infrastructure payback."
+      },
+      {
+        "number": 5,
+        "title": "Upstart, SoundHound AI, and Fastly Stocks Trade Down, What You Need To Know",
+        "publisher": "Yahoo",
+        "date": "2026-10-14T18:28:07",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/upstart-soundhound-ai-fastly-stocks-182807429.html",
+        "ai_summary": "Upstart, SoundHound AI, and Fastly stocks fell after September CPI rose 3.7% year-over-year, beating the 3.6% estimate and pushing Treasury yields higher. The move reflects valuation pressure from sticky inflation and higher discount rates. The article notes the declines are not fundamental to the companies' business outlook."
+      },
+      {
+        "number": 6,
+        "title": "SoundHound AI (SOUN), Why Is It Getting Attention Today?",
+        "publisher": "Yahoo",
+        "date": "2026-10-14T18:12:14",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/soundhound-ai-soun-why-getting-181214663.html",
+        "ai_summary": "SoundHound AI's voice and generative AI platform debuted in the Kia Sorento in India, marking its global launch. The stock trades at $4.88, down 53.96% year-to-date, while analysts see fair value at $12.57. Sustained losses of $136.8 million and heavy spending on LivePerson remain key risks."
       }
-    ]
+    ],
+    "synthetic": false
   },
   {
     "event_id": "e13",
-    "fund_slug": "everywhere-ventures",
-    "company_slug": "stitch",
-    "company": "Stitch",
-    "synthetic": true,
+    "fund_slug": "plug-and-play",
+    "company_slug": "reco",
+    "company": "Reco",
     "event": {
-      "id": "synthetic-13",
-      "title": "Portfolio update for Stitch",
-      "category": "Funding",
-      "severity": 2,
-      "suggested_action": "Ask the founder for a concise progress update",
-      "published_date": "2026-10-24"
+      "id": 40339378,
+      "group_id": 13948447,
+      "title": "The Third-Party Agent Problem: Why Security Built for AI You Chose Misses the Agents You Didn't",
+      "url": "https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html",
+      "publisher": "The Hacker News",
+      "published_date": "2026-10-10T11:00:00",
+      "original_language": "EN",
+      "sentiment": "negative",
+      "newsworthiness_score": 1.0,
+      "ai_summary": "The article argues that most third-party AI agents are invisible to identity infrastructure, creating a security gap. It cites 1,280 embedded AI products, with 282 behind single sign-on, and notes agents lack a decision point for governance. Reco's platform is presented as a solution for continuous agent discovery.",
+      "tags": [
+        {
+          "name": "Emerging Technologies",
+          "code": "II01",
+          "is_primary": true
+        },
+        {
+          "name": "Technology Adoption & Disruption",
+          "code": "II02",
+          "is_primary": false
+        }
+      ],
+      "is_press_release": false,
+      "is_breaking": true,
+      "article_type": {
+        "code": "explainer",
+        "label": "Explainer"
+      },
+      "sentiment_score": 0.0546,
+      "entities": {
+        "person": [
+          "patrick opet"
+        ]
+      },
+      "category": "Risk",
+      "severity": 3,
+      "suggested_action": "Risk flag: call the founder, prepare an LP note",
+      "tag_code": "II01",
+      "tag_name": "Emerging Technologies"
     },
     "sources": [
       {
         "number": 1,
-        "title": "Stitch company update",
-        "publisher": "Portfolio Pulse fixture",
-        "date": "2026-10-24",
-        "url": "https://stitch.money",
-        "ai_summary": "Synthetic evaluation fixture for Stitch."
+        "title": "Reco raises USD $55 million with AT&T Ventures backing",
+        "publisher": "Securitybrief",
+        "date": "2026-10-15T07:30:00",
+        "url": "https://securitybrief.in/story/reco-raises-usd-55-million-with-at-t-ventures-backing",
+        "ai_summary": "Reco raised an additional $55 million with AT&T Ventures, bringing total funding to $140 million. The security software company will use the funds to expand sales, partnerships, and customer support as enterprises adopt AI agents. Gartner projects Fortune 500 firms will have over 150,000 agents by 2028."
+      },
+      {
+        "number": 2,
+        "title": "The Third-Party Agent Problem: Why Security Built for AI You Chose Misses the Agents You Didn't",
+        "publisher": "The Hacker News",
+        "date": "2026-10-10T11:00:00",
+        "url": "https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html",
+        "ai_summary": "The article argues that most third-party AI agents are invisible to identity infrastructure, creating a security gap. It cites 1,280 embedded AI products, with 282 behind single sign-on, and notes agents lack a decision point for governance. Reco's platform is presented as a solution for continuous agent discovery."
+      },
+      {
+        "number": 3,
+        "title": "Reco Joins Invitation-Only Microsoft for Startups Pegasus Program to Accelerate Enterprise Agent Security",
+        "publisher": "Yahoo",
+        "date": "2026-10-06T13:03:00",
+        "url": "https://finance.yahoo.com/technology/ai/articles/reco-joins-invitation-only-microsoft-130300713.html",
+        "ai_summary": "Reco, an agent security company, was accepted into the invitation-only Microsoft for Startups Pegasus Program. Its platform, built on the Reco Graph, unifies agent security, posture management, and threat detection, with over 1,000 detection controls and more than 1 million agents identified. The partnership aims to bring agent security to more Microsoft customers."
+      },
+      {
+        "number": 4,
+        "title": "Reco secures USD 55 million as AT&T Ventures invests | The Paypers",
+        "publisher": "The Paypers",
+        "date": "2026-10-02T00:00:00",
+        "url": "https://thepaypers.com/fraud-and-fincrime/news/reco-raises-usd-55-million-with-participation-from-att-ventures",
+        "ai_summary": "Reco raised $55 million in additional funding, with AT&T Ventures, Forestay, and Quadrille Capital participating. The round brings total funding to $140 million, to be used for sales, partnerships, and customer support. The company expects enterprise agent adoption to grow, with Gartner forecasting over 150,000 agents per Fortune 500 firm by 2028."
+      },
+      {
+        "number": 5,
+        "title": "Reco Announces Partnership with ServiceNow to Extend AI Agent Security",
+        "publisher": "Yahoo",
+        "date": "2026-09-28T13:03:00",
+        "url": "https://finance.yahoo.com/technology/ai/articles/reco-announces-partnership-servicenow-extend-130300854.html",
+        "ai_summary": "Reco announced a partnership with ServiceNow to extend AI agent security for organizations using the ServiceNow AI Platform. The integration maps ServiceNow Otto agents into Reco's graph and runs over 170 posture checks, with findings routed back into ServiceNow as tickets. The integration is available now."
+      },
+      {
+        "number": 6,
+        "title": "Shadow AI Has Already Infiltrated Enterprise Systems. The Numbers Show Why Control Is Slipping Away",
+        "publisher": "WebProNews",
+        "date": "2026-09-08T15:32:15",
+        "url": "https://www.webpronews.com/shadow-ai-has-already-infiltrated-enterprise-systems-the-numbers-show-why-control-is-slipping-away/",
+        "ai_summary": "Reco's State of Agent Security 2026 report finds 80% of AI tools are unsanctioned, with small and midsize businesses averaging 414 per 1,000 employees. IBM's 2025 data shows one in five organizations suffered a shadow AI breach, costing an average $670,000. The report warns that unmanaged AI agents create new attack paths, with 637 AI-related vulnerabilities identified since 2023."
       }
-    ]
+    ],
+    "synthetic": false
   },
   {
     "event_id": "e14",
     "fund_slug": "plug-and-play",
-    "company_slug": "bitgo",
-    "company": "BitGo",
-    "synthetic": true,
+    "company_slug": "eliyan",
+    "company": "Eliyan",
     "event": {
-      "id": "synthetic-14",
-      "title": "Portfolio update for BitGo",
-      "category": "Funding",
-      "severity": 2,
-      "suggested_action": "Ask the founder for a concise progress update",
-      "published_date": "2026-10-24"
+      "id": 40245141,
+      "group_id": 13813496,
+      "title": "AI chiplet startup Eliyan draws takeover interest months after $1 billion valuation",
+      "url": "https://cryptobriefing.com/eliyan-ai-chiplet-takeover-interest/",
+      "publisher": "Crypto Briefing",
+      "published_date": "2026-10-09T21:07:14",
+      "original_language": "EN",
+      "sentiment": "neutral",
+      "newsworthiness_score": 1.0,
+      "ai_summary": "Eliyan, a Santa Clara chip interconnect startup, has received at least one takeover bid, with options potentially valuing it at $3 billion. The bid came two months after it raised $145 million at a $1 billion valuation. The company plans to ship initial chiplets by end of 2026.",
+      "tags": [
+        {
+          "name": "Mergers & Acquisitions",
+          "code": "CM03",
+          "is_primary": true
+        }
+      ],
+      "is_press_release": true,
+      "is_breaking": true,
+      "article_type": {
+        "code": "news_analysis",
+        "label": "News analysis"
+      },
+      "sentiment_score": 0.6987,
+      "entities": {
+        "person": [
+          "diego almada lopez"
+        ]
+      },
+      "category": "Corporate",
+      "severity": 3,
+      "suggested_action": "Exit tracking; prepare the LP disclosure",
+      "tag_code": "CM03",
+      "tag_name": "Mergers & Acquisitions"
     },
     "sources": [
       {
         "number": 1,
-        "title": "BitGo company update",
-        "publisher": "Portfolio Pulse fixture",
-        "date": "2026-10-24",
-        "url": "https://www.bitgo.com",
-        "ai_summary": "Synthetic evaluation fixture for BitGo."
+        "title": "Cisco-backed chiplet interconnect upstart in line for acquisition: report",
+        "publisher": "SDxCentral",
+        "date": "2026-10-15T12:03:48",
+        "url": "https://www.sdxcentral.com/news/cisco-backed-chiplet-interconnect-upstart-in-line-for-acquisition-report/",
+        "ai_summary": "Chiplet interconnect startup Eliyan is reportedly being eyed for acquisition, with investors notified of a takeover bid. The buyer was not named, and Arm was in early talks but opted out. Eliyan, founded in 2021, was valued at about $1 billion after a $145 million Series C round."
+      },
+      {
+        "number": 2,
+        "title": "Eliyan Targets Copper Interconnect Limits with NuLight Chiplet Platform - HPCwire",
+        "publisher": "Hpcwire",
+        "date": "2026-10-14T12:07:06",
+        "url": "https://www.hpcwire.com/off-the-wire/eliyan-targets-copper-interconnect-limits-with-nulight-chiplet-platform/",
+        "ai_summary": "Eliyan introduced Nexus and Oscar chiplets, a 2D microVCSEL interconnect platform, at OCP Summit 2026. The platform targets copper interconnect limits with a 1.6T reverse gearbox and optical reach of about 50 meters. Both chiplets are sampling now."
+      },
+      {
+        "number": 3,
+        "title": "AI chiplet startup Eliyan draws takeover interest months after $1 billion valuation",
+        "publisher": "Crypto Briefing",
+        "date": "2026-10-09T21:07:14",
+        "url": "https://cryptobriefing.com/eliyan-ai-chiplet-takeover-interest/",
+        "ai_summary": "Eliyan, a Santa Clara chip interconnect startup, has received at least one takeover bid, with options potentially valuing it at $3 billion. The bid came two months after it raised $145 million at a $1 billion valuation. The company plans to ship initial chiplets by end of 2026."
+      },
+      {
+        "number": 4,
+        "title": "Networking startup Eliyan gets takeover interest, held early talks with Arm - report",
+        "publisher": "Seeking Alpha",
+        "date": "2026-10-09T13:30:39",
+        "url": "https://seekingalpha.com/news/4651748-networking-startup-eliyan-gets-takeover-interest-held-early-talks-with-arm-report",
+        "ai_summary": "Networking startup Eliyan, valued at $1 billion in July, disclosed to some investors that it received a takeover offer. The company has been working with an advisor since the summer."
+      },
+      {
+        "number": 5,
+        "title": "Eliyan Supports Latest Version of UCIe Chiplet Interconnect Standard, Continues to Drive Performance and Bandwidth Capabilities to 40Gbps and Beyond to Help Meet the Needs of the Multi-die Era",
+        "publisher": "Newsfile",
+        "date": "2026-08-19T00:00:00",
+        "url": "https://www.newsfilecorp.com/release/178375/Eliyan-Supports-Latest-Version-of-UCIe-Chiplet-Interconnect-Standard-Continues-to-Drive-Performance-and-Bandwidth-Capabilities-to-40Gbps-and-Beyond-to-Help-Meet-the-Needs-of-the-Multidie-Era",
+        "ai_summary": "Eliyan Corporation announced support for the UCIe 1.1 chiplet interconnect standard. The company's Bunch of Wires technique, which it claims doubles performance and halves power, is designed for multi-die architectures. The announcement highlights its role in advancing open chiplet ecosystems."
+      },
+      {
+        "number": 6,
+        "title": "Eliyan hits $1B valuation and Simile raises $200M as AI infrastructure funding surges in late July 2026",
+        "publisher": "MarketScale",
+        "date": "2026-08-09T10:33:00",
+        "url": "https://www.marketscale.com/industries/software-and-technology/eliyan-hits-1b-valuation-and-simile-raises-200m-as-ai-infrastructure-funding-surges-in-late-july-2026",
+        "ai_summary": "In late July 2026, Eliyan achieved a $1 billion valuation following an oversubscribed $145 million Series C, while Simile raised $200 million in a Series B that doubled its valuation to $2 billion. These deals highlight a surge in investment across AI infrastructure sectors, including chip interconnects and behavioral prediction technologies. The funding activity also included Intropy securing $11 million for industrial supply chain automation and Function Health raising $450 million for employer health monitoring. "
       }
-    ]
+    ],
+    "synthetic": false
   },
   {
     "event_id": "e15",
-    "fund_slug": "betaworks",
-    "company_slug": "xmtp",
-    "company": "XMTP",
-    "synthetic": true,
+    "fund_slug": "plug-and-play",
+    "company_slug": "eliyan",
+    "company": "Eliyan",
     "event": {
-      "id": "synthetic-15",
-      "title": "Portfolio update for XMTP",
-      "category": "Funding",
-      "severity": 2,
-      "suggested_action": "Ask the founder for a concise progress update",
-      "published_date": "2026-10-24"
+      "id": 40218423,
+      "group_id": 13789298,
+      "title": "Networking startup Eliyan gets takeover interest, held early talks with Arm - report",
+      "url": "https://seekingalpha.com/news/4651748-networking-startup-eliyan-gets-takeover-interest-held-early-talks-with-arm-report",
+      "publisher": "Seeking Alpha",
+      "published_date": "2026-10-09T13:30:39",
+      "original_language": "EN",
+      "sentiment": "positive",
+      "newsworthiness_score": 1.0,
+      "ai_summary": "Networking startup Eliyan, valued at $1 billion in July, disclosed to some investors that it received a takeover offer. The company has been working with an advisor since the summer.",
+      "tags": [
+        {
+          "name": "Mergers & Acquisitions",
+          "code": "CM03",
+          "is_primary": true
+        }
+      ],
+      "is_press_release": true,
+      "is_breaking": true,
+      "article_type": {
+        "code": "news_analysis",
+        "label": "News analysis"
+      },
+      "sentiment_score": 1.0,
+      "entities": {
+        "person": [
+          "eliyan"
+        ]
+      },
+      "category": "Corporate",
+      "severity": 3,
+      "suggested_action": "Exit tracking; prepare the LP disclosure",
+      "tag_code": "CM03",
+      "tag_name": "Mergers & Acquisitions"
     },
     "sources": [
       {
         "number": 1,
-        "title": "XMTP company update",
-        "publisher": "Portfolio Pulse fixture",
-        "date": "2026-10-24",
-        "url": "https://xmtp.org",
-        "ai_summary": "Synthetic evaluation fixture for XMTP."
+        "title": "Cisco-backed chiplet interconnect upstart in line for acquisition: report",
+        "publisher": "SDxCentral",
+        "date": "2026-10-15T12:03:48",
+        "url": "https://www.sdxcentral.com/news/cisco-backed-chiplet-interconnect-upstart-in-line-for-acquisition-report/",
+        "ai_summary": "Chiplet interconnect startup Eliyan is reportedly being eyed for acquisition, with investors notified of a takeover bid. The buyer was not named, and Arm was in early talks but opted out. Eliyan, founded in 2021, was valued at about $1 billion after a $145 million Series C round."
+      },
+      {
+        "number": 2,
+        "title": "Eliyan Targets Copper Interconnect Limits with NuLight Chiplet Platform - HPCwire",
+        "publisher": "Hpcwire",
+        "date": "2026-10-14T12:07:06",
+        "url": "https://www.hpcwire.com/off-the-wire/eliyan-targets-copper-interconnect-limits-with-nulight-chiplet-platform/",
+        "ai_summary": "Eliyan introduced Nexus and Oscar chiplets, a 2D microVCSEL interconnect platform, at OCP Summit 2026. The platform targets copper interconnect limits with a 1.6T reverse gearbox and optical reach of about 50 meters. Both chiplets are sampling now."
+      },
+      {
+        "number": 3,
+        "title": "AI chiplet startup Eliyan draws takeover interest months after $1 billion valuation",
+        "publisher": "Crypto Briefing",
+        "date": "2026-10-09T21:07:14",
+        "url": "https://cryptobriefing.com/eliyan-ai-chiplet-takeover-interest/",
+        "ai_summary": "Eliyan, a Santa Clara chip interconnect startup, has received at least one takeover bid, with options potentially valuing it at $3 billion. The bid came two months after it raised $145 million at a $1 billion valuation. The company plans to ship initial chiplets by end of 2026."
+      },
+      {
+        "number": 4,
+        "title": "Networking startup Eliyan gets takeover interest, held early talks with Arm - report",
+        "publisher": "Seeking Alpha",
+        "date": "2026-10-09T13:30:39",
+        "url": "https://seekingalpha.com/news/4651748-networking-startup-eliyan-gets-takeover-interest-held-early-talks-with-arm-report",
+        "ai_summary": "Networking startup Eliyan, valued at $1 billion in July, disclosed to some investors that it received a takeover offer. The company has been working with an advisor since the summer."
+      },
+      {
+        "number": 5,
+        "title": "Eliyan Supports Latest Version of UCIe Chiplet Interconnect Standard, Continues to Drive Performance and Bandwidth Capabilities to 40Gbps and Beyond to Help Meet the Needs of the Multi-die Era",
+        "publisher": "Newsfile",
+        "date": "2026-08-19T00:00:00",
+        "url": "https://www.newsfilecorp.com/release/178375/Eliyan-Supports-Latest-Version-of-UCIe-Chiplet-Interconnect-Standard-Continues-to-Drive-Performance-and-Bandwidth-Capabilities-to-40Gbps-and-Beyond-to-Help-Meet-the-Needs-of-the-Multidie-Era",
+        "ai_summary": "Eliyan Corporation announced support for the UCIe 1.1 chiplet interconnect standard. The company's Bunch of Wires technique, which it claims doubles performance and halves power, is designed for multi-die architectures. The announcement highlights its role in advancing open chiplet ecosystems."
+      },
+      {
+        "number": 6,
+        "title": "Eliyan hits $1B valuation and Simile raises $200M as AI infrastructure funding surges in late July 2026",
+        "publisher": "MarketScale",
+        "date": "2026-08-09T10:33:00",
+        "url": "https://www.marketscale.com/industries/software-and-technology/eliyan-hits-1b-valuation-and-simile-raises-200m-as-ai-infrastructure-funding-surges-in-late-july-2026",
+        "ai_summary": "In late July 2026, Eliyan achieved a $1 billion valuation following an oversubscribed $145 million Series C, while Simile raised $200 million in a Series B that doubled its valuation to $2 billion. These deals highlight a surge in investment across AI infrastructure sectors, including chip interconnects and behavioral prediction technologies. The funding activity also included Intropy securing $11 million for industrial supply chain automation and Function Health raising $450 million for employer health monitoring. "
       }
-    ]
+    ],
+    "synthetic": false
   },
   {
     "event_id": "e16",
-    "fund_slug": "everywhere-ventures",
-    "company_slug": "usergems",
-    "company": "UserGems",
-    "synthetic": true,
+    "fund_slug": "plug-and-play",
+    "company_slug": "applyboard",
+    "company": "ApplyBoard",
     "event": {
-      "id": "synthetic-16",
-      "title": "Portfolio update for UserGems",
-      "category": "Funding",
-      "severity": 2,
-      "suggested_action": "Ask the founder for a concise progress update",
-      "published_date": "2026-10-24"
+      "id": 39880447,
+      "group_id": 13517301,
+      "title": "ApplyBoard was the worst-performing Canadian startup in Fidelity’s portfolio in 2026",
+      "url": "https://thelogic.co/news/applyboard-valuation-fidelity/",
+      "publisher": "Thelogic",
+      "published_date": "2026-10-06T10:45:52",
+      "original_language": "EN",
+      "sentiment": "negative",
+      "newsworthiness_score": 1.0,
+      "ai_summary": "Fidelity's stake in ApplyBoard, a Canadian student-education platform, fell about two-thirds in 2026, from $113 million to $5.4 million. The writedown is likely dragging down Fidelity's overall Canadian venture returns, according to a consultant. ApplyBoard's valuation had peaked at $4 billion in 2021 before policy changes.",
+      "tags": [
+        {
+          "name": "Valuation Events",
+          "code": "CM09",
+          "is_primary": true
+        }
+      ],
+      "is_press_release": true,
+      "is_breaking": true,
+      "article_type": {
+        "code": "news_analysis",
+        "label": "News analysis"
+      },
+      "sentiment_score": 0.0071,
+      "entities": {
+        "person": [
+          "richard rémillard",
+          "catherine kee",
+          "ryan holmes",
+          "chris pepper",
+          "tony vlismas",
+          "claire brownell",
+          "david reevely",
+          "catherine mcintyre",
+          "rémillard"
+        ]
+      },
+      "category": "Risk",
+      "severity": 3,
+      "suggested_action": "Risk flag: call the founder, prepare an LP note",
+      "tag_code": "CM09",
+      "tag_name": "Valuation Events"
     },
     "sources": [
       {
         "number": 1,
-        "title": "UserGems company update",
-        "publisher": "Portfolio Pulse fixture",
-        "date": "2026-10-24",
-        "url": "https://www.usergems.com",
-        "ai_summary": "Synthetic evaluation fixture for UserGems."
+        "title": "ApplyBoard was the worst-performing Canadian startup in Fidelity’s portfolio in 2026",
+        "publisher": "Thelogic",
+        "date": "2026-10-06T10:45:52",
+        "url": "https://thelogic.co/news/applyboard-valuation-fidelity/",
+        "ai_summary": "Fidelity's stake in ApplyBoard, a Canadian student-education platform, fell about two-thirds in 2026, from $113 million to $5.4 million. The writedown is likely dragging down Fidelity's overall Canadian venture returns, according to a consultant. ApplyBoard's valuation had peaked at $4 billion in 2021 before policy changes."
+      },
+      {
+        "number": 2,
+        "title": "Ex-ApplyBoard CEO now competing with his former company – led by his brother – as Passage lands testing deal",
+        "publisher": "The Globe and Mail",
+        "date": "2026-08-19T18:10:19",
+        "url": "https://www.theglobeandmail.com/business/article-ex-applyboard-ceo-now-competing-with-his-former-company-led-by-his/",
+        "ai_summary": "Passage Inc., founded by former ApplyBoard CEO Martin Basiri, has secured an exclusive strategic partnership with Educational Testing Service (ETS) to integrate its AI agents into TOEFL and GRE testing processes. This development positions Passage as a direct competitor to ApplyBoard, which is led by Martin's brother Meti and continues to streamline international student applications using similar AI technologies. The move occurs amidst broader industry challenges, including reduced immigration approvals and declining revenues for key players like ApplyBoard. "
+      },
+      {
+        "number": 3,
+        "title": "Lume Test Collaborates with ApplyBoard to Offer Discounted English Test Vouchers",
+        "publisher": "TechBullion",
+        "date": "2026-08-06T00:32:00",
+        "url": "https://techbullion.com/discounted-ielts-pte-duolingo-english-test-vouchers/",
+        "ai_summary": "Lume Test has announced a collaboration with ApplyBoard to become an authorized partner, enabling students in selected countries to purchase discounted English proficiency test vouchers for PTE Academic, PTE Core, and the Duolingo English Test through the Lume Test platform. The partnership aims to make English proficiency testing more affordable and accessible by combining exam preparation tools with voucher purchasing in one integrated experience. Lume Test stated this collaboration represents a development as it expands support available to learners worldwide pursuing international education, migration, and career goals."
+      },
+      {
+        "number": 4,
+        "title": "Canada sharpens focus on study permit finances; proof of funds under scanner - The Economic Times",
+        "publisher": "The Times of India",
+        "date": "2026-07-31T01:14:12",
+        "url": "https://economictimes.indiatimes.com/nri/study/canada-sharpens-focus-on-study-permit-finances-proof-of-funds-under-scanner/articleshow/132758459.cms",
+        "ai_summary": "Canada's Immigration, Refugees and Citizenship Canada (IRCC) has updated guidance for study permit applications, directing officers to scrutinize not just the amount but also the source, stability, and credibility of applicants' funds more broadly than before. An ApplyBoard analysis of 1,370 refusal letters found inadequate proof of finances was the leading rejection reason at 47%, while approval rates for major source countries including India (13 percentage points) and Nigeria (8 percentage points) improved during the first four months of 2026 despite the stricter requirements. Canadian educational institutions are being urged to shift from volume-based recruitment to focusing on applicants better prepared to meet the stricter financial documentation standards."
+      },
+      {
+        "number": 5,
+        "title": "Canadian immigration officials increase their scrutiny of study permit applicants’ financial documentation",
+        "publisher": "ICEF Monitor",
+        "date": "2026-07-30T20:06:25",
+        "url": "https://monitor.icef.com/2026/07/canadian-immigration-officials-increase-their-scrutiny-of-study-permit-applicants-financial-documentation/",
+        "ai_summary": "Canadian immigration officials are increasing scrutiny of study permit applicants' financial documentation, leading to a 43% drop in new applications but a 9 percentage point increase in the approval rate to 35% between January and April 2026. IRCC updated its guidance on July 24, 2026, directing officers to thoroughly investigate funding sources and request supplementary financial evidence for all cases rather than just high-risk environments. Analysis by BorderPass and ApplyBoard indicates that unclear proof of funds remains the primary reason for refusal, prompting recommendations for stricter documentation standards like six months of bank statements and sponsor job letters. "
       }
-    ]
+    ],
+    "synthetic": false
   },
   {
     "event_id": "e17",
     "fund_slug": "plug-and-play",
-    "company_slug": "dyna-robotics",
-    "company": "Dyna Robotics",
-    "synthetic": true,
+    "company_slug": "dropbox",
+    "company": "Dropbox",
     "event": {
-      "id": "synthetic-17",
-      "title": "Portfolio update for Dyna Robotics",
-      "category": "Funding",
-      "severity": 2,
-      "suggested_action": "Ask the founder for a concise progress update",
-      "published_date": "2026-10-24"
+      "id": 39804471,
+      "group_id": 13497377,
+      "title": "Linear MCP, Notion, Dropbox Dash Cracked in ClawSecure Test",
+      "url": "https://aithority.com/machine-learning/linear-mcp-notion-dropbox-dash-cracked-in-clawsecure-test/",
+      "publisher": "AiThority",
+      "published_date": "2026-10-06T08:25:06",
+      "original_language": "EN",
+      "sentiment": "negative",
+      "newsworthiness_score": 1.0,
+      "ai_summary": "ClawSecure cracked Linear, Notion, and Dropbox Dash MCP platforms, finding critical default vulnerabilities in the MCP protocol itself. The report, released September 24, 2026, shows the same attack class across clean implementations, with Linear's live production system exploited in 75 minutes.",
+      "tags": [
+        {
+          "name": "Cybersecurity Incidents",
+          "code": "RK05",
+          "is_primary": true
+        }
+      ],
+      "is_press_release": true,
+      "is_breaking": true,
+      "article_type": {
+        "code": "review",
+        "label": "Review"
+      },
+      "sentiment_score": 0.0099,
+      "entities": {
+        "person": [
+          "j.d. salbego",
+          "gou rao"
+        ]
+      },
+      "category": "Risk",
+      "severity": 3,
+      "suggested_action": "Risk flag: call the founder, prepare an LP note",
+      "tag_code": "RK05",
+      "tag_name": "Cybersecurity Incidents"
     },
     "sources": [
       {
         "number": 1,
-        "title": "Dyna Robotics company update",
-        "publisher": "Portfolio Pulse fixture",
-        "date": "2026-10-24",
-        "url": "https://www.dyna.co",
-        "ai_summary": "Synthetic evaluation fixture for Dyna Robotics."
+        "title": "Dropbox, Inc. $DBX Stock: Crossmark Global Holdings Inc. Reduces Stake",
+        "publisher": "MarketBeat",
+        "date": "2026-10-23T07:52:56",
+        "url": "https://www.marketbeat.com/instant-alerts/filing-dropbox-inc-dbx-stock-crossmark-global-holdings-inc-reduces-stake-2026-10-23/",
+        "ai_summary": "Crossmark Global Holdings reduced its Dropbox stake by 10.7% in Q3, selling 32,883 shares and holding 275,216 shares worth $9.3 million. Other institutions like Pacer Advisors and Wedge Capital increased positions, while Dropbox reported Q3 EPS of $0.75, beating estimates. Analysts rate the stock 'Reduce' with a $29.75 price target."
+      },
+      {
+        "number": 2,
+        "title": "AI Transforms Work: Report Reveals Time Loss and Content Explosion",
+        "publisher": "Smallbiztrends",
+        "date": "2026-10-22T19:11:00",
+        "url": "https://smallbiztrends.com/ai-transforms-work-report-reveals-time-loss-and-content-explosion/",
+        "ai_summary": "A Dropbox report surveyed 219 professionals and found they spend 15.8 hours weekly on AI, with 36.6% of that time retrieving context. Reducing context retrieval by half could save $577,000 annually for a 100-employee small business. The report also notes 46.4% of new work files involve AI input."
+      },
+      {
+        "number": 3,
+        "title": "Meet Dennis Woodside, who began his career as M&A lawyer in 1990s; decades later, he became CEO of Freshworks after leadership roles at Google and Dropbox",
+        "publisher": "The Times of India",
+        "date": "2026-10-22T08:18:36",
+        "url": "https://economictimes.indiatimes.com/world/business/meet-dennis-woodside-who-began-his-career-as-ma-lawyer-in-1990s-decades-later-he-became-ceo-of-freshworks-after-leadership-roles-at-google-and-dropbox/articleshow/135120448.cms",
+        "ai_summary": "Dennis Woodside, who began as an M&A lawyer in the 1990s, became CEO of Freshworks in May 2024 after leading operations at Impossible Foods and serving as president of Freshworks. He previously held leadership roles at Google, Motorola Mobility, and Dropbox, and joined Freshworks in September 2022."
+      },
+      {
+        "number": 4,
+        "title": "Dropbox chief accounting officer Sarah Schubach sells $73,228 in stock",
+        "publisher": "Investing.com",
+        "date": "2026-10-20T09:48:09",
+        "url": "https://in.investing.com/news/stock-market-news/dropbox-chief-accounting-officer-sarah-schubach-sells-73228-in-stock-93CH-5642106",
+        "ai_summary": "Sarah Schubach, Dropbox's chief accounting officer, sold 1,991 shares on September 15, 2026, at $36.78 per share, totaling $73,228. The sale was executed under a Rule 10b5-1 plan adopted in June 2026. Dropbox stock trades near its 52-week high, and the company reported Q2 2026 earnings of $0.75 per share."
+      },
+      {
+        "number": 5,
+        "title": "5 Top Work From Home Operations Jobs You Can Apply for Today",
+        "publisher": "Smallbiztrends",
+        "date": "2026-10-20T00:31:00",
+        "url": "https://smallbiztrends.com/work-from-home-operations-jobs/",
+        "ai_summary": "Remote operations jobs are highlighted, including roles like Remote Operations Manager and Senior Analyst in Corporate FP&A. Salaries range from $103K to $361.4K annually, with over 2,726 positions available. Companies like Dropbox, Twilio, and Reddit are hiring."
+      },
+      {
+        "number": 6,
+        "title": "The AI productivity boom has bosses asking what’s in it for employees",
+        "publisher": "Fortune",
+        "date": "2026-10-19T12:11:39",
+        "url": "https://fortune.com/2026/10/19/ai-productivity-boom-has-bosses-asking-whats-in-it-for-employees/",
+        "ai_summary": "Leaders at PepsiCo, Indeed, Dropbox, and Bristol Myers Squibb are rethinking how AI productivity gains benefit employees. Indeed reports engineers write 50% more code and save six hours weekly, while Dropbox and Bristol Myers Squibb explore cognitive health and well-being quotients. The companies are weighing how to split productivity gains between business and workforce."
       }
-    ]
+    ],
+    "synthetic": false
   },
   {
     "event_id": "e18",
     "fund_slug": "betaworks",
-    "company_slug": "math-inc",
-    "company": "Math Inc",
-    "synthetic": true,
+    "company_slug": "armilla",
+    "company": "Armilla",
     "event": {
-      "id": "synthetic-18",
-      "title": "Portfolio update for Math Inc",
-      "category": "Funding",
-      "severity": 2,
-      "suggested_action": "Ask the founder for a concise progress update",
-      "published_date": "2026-10-24"
+      "id": 34911932,
+      "group_id": 11033349,
+      "title": "Five worthy reads: The next big insurance market no one is talking about yet",
+      "url": "https://www.manageengine.com/blog/general/the-next-big-insurance-market-no-one-is-talking-about-yet-hallucination-insurance.html",
+      "publisher": "ManageEngine",
+      "published_date": "2026-09-11T17:30:00",
+      "original_language": "EN",
+      "sentiment": "negative",
+      "newsworthiness_score": 1.0,
+      "ai_summary": "AI hallucination insurance is emerging as a market, with Armilla launching a policy covering legal claims from AI errors. AI-related lawsuits in the US grew 978% between 2021 and 2025, and the Florida Supreme Court set new rules for AI-assisted filings. The article argues conventional insurance fails to cover these risks.",
+      "tags": [
+        {
+          "name": "Product Launches & Enhancements",
+          "code": "SD01",
+          "is_primary": true
+        }
+      ],
+      "is_press_release": false,
+      "is_breaking": true,
+      "article_type": {
+        "code": "explainer",
+        "label": "Explainer"
+      },
+      "sentiment_score": 0.1211,
+      "entities": {
+        "person": [
+          "p. kevin castel"
+        ]
+      },
+      "category": "Risk",
+      "severity": 3,
+      "suggested_action": "Risk flag: call the founder, prepare an LP note",
+      "tag_code": "SD01",
+      "tag_name": "Product Launches & Enhancements"
     },
     "sources": [
       {
         "number": 1,
-        "title": "Math Inc company update",
-        "publisher": "Portfolio Pulse fixture",
-        "date": "2026-10-24",
-        "url": "https://www.math.inc",
-        "ai_summary": "Synthetic evaluation fixture for Math Inc."
+        "title": "Your Business Insurance Never Priced AI. Now It’s Writing It Out",
+        "publisher": "Business Model Analyst",
+        "date": "2026-10-16T12:46:42",
+        "url": "https://businessmodelanalyst.com/ai-insurance-gap-silent-ai-exclusions/",
+        "ai_summary": "Insurers are adding AI exclusions to standard policies, leaving AI liability on deployers. Specialist policies like Armilla's $25 million limit and Lloyd's-backed products are emerging, while a federal backstop is proposed. Market projections for AI insurance premiums range from $4.77 billion to $500 billion by 2030."
+      },
+      {
+        "number": 2,
+        "title": "Does AI need its own insurance market? Brokers are already finding out",
+        "publisher": "Insurance Business America",
+        "date": "2026-10-07T13:52:34",
+        "url": "https://www.insurancebusinessmag.com/us/news/cyber/does-ai-need-its-own-insurance-market-brokers-are-already-finding-out-592662.aspx",
+        "ai_summary": "Brokers are increasingly asked whether AI needs its own insurance market, with a poll showing half expect AI-specific insurance to become a major line. Standalone AI policies like Armilla AI's US$25 million cover and Munich Re's aiSure are emerging, while others add AI liability to existing policies. Brokers face ambiguity from silent AI coverage in cyber and technology policies."
+      },
+      {
+        "number": 3,
+        "title": "Five worthy reads: The next big insurance market no one is talking about yet",
+        "publisher": "ManageEngine",
+        "date": "2026-09-11T17:30:00",
+        "url": "https://www.manageengine.com/blog/general/the-next-big-insurance-market-no-one-is-talking-about-yet-hallucination-insurance.html",
+        "ai_summary": "AI hallucination insurance is emerging as a market, with Armilla launching a policy covering legal claims from AI errors. AI-related lawsuits in the US grew 978% between 2021 and 2025, and the Florida Supreme Court set new rules for AI-assisted filings. The article argues conventional insurance fails to cover these risks."
       }
-    ]
+    ],
+    "synthetic": false
   },
   {
     "event_id": "e19",
-    "fund_slug": "everywhere-ventures",
-    "company_slug": "electric-ai",
-    "company": "Electric AI",
-    "synthetic": true,
+    "fund_slug": "betaworks",
+    "company_slug": "granola",
+    "company": "Granola",
     "event": {
-      "id": "synthetic-19",
-      "title": "Portfolio update for Electric AI",
-      "category": "Funding",
-      "severity": 2,
-      "suggested_action": "Ask the founder for a concise progress update",
-      "published_date": "2026-10-24"
+      "id": 34818625,
+      "group_id": 10793561,
+      "title": "AI notetakers at work could leave companies at risk for lawsuits",
+      "url": "https://www.computerworld.com/article/4219742/ai-notetakers-at-work-could-leave-companies-at-risk-for-lawsuits.html",
+      "publisher": "Computerworld",
+      "published_date": "2026-09-09T11:00:00",
+      "original_language": "EN",
+      "sentiment": "negative",
+      "newsworthiness_score": 1.0,
+      "ai_summary": "Attorney Brian McGinnis discusses privacy lawsuits against AI notetaking tools, citing cases against Otter, Fireflies, Microsoft Teams, and Granola. The suits allege unauthorized recording and use of biometric data, with potential outcomes requiring opt-in consent from all meeting participants. Businesses are advised to obtain written consent and implement internal policies to avoid legal risk.",
+      "tags": [
+        {
+          "name": "Legal Proceedings & Litigation",
+          "code": "RC03",
+          "is_primary": true
+        }
+      ],
+      "is_press_release": false,
+      "is_breaking": true,
+      "article_type": {
+        "code": "explainer",
+        "label": "Explainer"
+      },
+      "sentiment_score": 0.0085,
+      "entities": {
+        "person": [
+          "brian mcginnis"
+        ]
+      },
+      "category": "Risk",
+      "severity": 3,
+      "suggested_action": "Risk flag: call the founder, prepare an LP note",
+      "tag_code": "RC03",
+      "tag_name": "Legal Proceedings & Litigation"
     },
     "sources": [
       {
         "number": 1,
-        "title": "Electric AI company update",
-        "publisher": "Portfolio Pulse fixture",
-        "date": "2026-10-24",
-        "url": "https://electric.ai",
-        "ai_summary": "Synthetic evaluation fixture for Electric AI."
+        "title": "Granola API Review: Endpoints, Limits & Pricing [Aug 2026]",
+        "publisher": "Zoominfo",
+        "date": "2026-10-12T23:26:14",
+        "url": "https://pipeline.zoominfo.com/sales/granola-api",
+        "ai_summary": "Granola's read-only REST API (v1.2.0) exposes meeting notes, transcripts, and summaries via three endpoints, with a 5 req/sec sustained rate limit and no webhooks. It is bundled into Business ($14/user) and Enterprise ($35/user) plans, while ZoomInfo's API provides B2B intelligence for attendee enrichment."
+      },
+      {
+        "number": 2,
+        "title": "Apple Brings Free AI Note-Taking to the Watch",
+        "publisher": "PYMNTS.com",
+        "date": "2026-09-10T00:00:00",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/apple-brings-free-ai-note-taking-watch/",
+        "ai_summary": "Apple announced Siri Recap, an AI note-taker for the Apple Watch that listens and summarizes conversations for free, with no transcript or speaker ID. Granola beat Apple to the wrist by over a month, already shipping a full Watch app with transcripts and action items, while Siri Recap remains in beta."
+      },
+      {
+        "number": 3,
+        "title": "AI notetakers at work could leave companies at risk for lawsuits",
+        "publisher": "Computerworld",
+        "date": "2026-09-09T11:00:00",
+        "url": "https://www.computerworld.com/article/4219742/ai-notetakers-at-work-could-leave-companies-at-risk-for-lawsuits.html",
+        "ai_summary": "Attorney Brian McGinnis discusses privacy lawsuits against AI notetaking tools, citing cases against Otter, Fireflies, Microsoft Teams, and Granola. The suits allege unauthorized recording and use of biometric data, with potential outcomes requiring opt-in consent from all meeting participants. Businesses are advised to obtain written consent and implement internal policies to avoid legal risk."
+      },
+      {
+        "number": 4,
+        "title": "Granola API Review: Endpoints, Limits & Pricing [Aug 2026]",
+        "publisher": "Zoominfo",
+        "date": "2026-08-20T10:43:35",
+        "url": "https://pipeline.zoominfo.com/sales/granola-api",
+        "ai_summary": "The article provides a technical review of Granola's read-only REST API, which allows developers to programmatically access meeting notes and transcripts from workspaces on paid plans. It contrasts this with ZoomInfo's Enterprise API, positioning the latter as an enrichment layer that provides B2B intelligence such as contact data and buying intent to complement Granola's meeting context. "
+      },
+      {
+        "number": 5,
+        "title": "10 AI Tools Quietly Taking Over Every Industry in 2026",
+        "publisher": "Simplilearn.com",
+        "date": "2026-08-13T10:26:28",
+        "url": "https://www.simplilearn.com/ai-tools-taking-over-every-industry-article",
+        "ai_summary": "The article outlines ten AI tools currently transforming professional workflows across various industries, including Granola, NotebookLM by Google, Lovable, and Replit. These platforms enable users to automate tasks such as meeting summarization, code generation, data analytics, and voice agent deployment, significantly reducing manual effort and development time. The report highlights how these technologies are shifting startup economics and operational efficiency by allowing non-technical founders and solo operators to build complex applications rapidly. "
+      },
+      {
+        "number": 6,
+        "title": "Growing Line of Litigation Involving AI Note-Takers Exposes Risks",
+        "publisher": "The National Law Review",
+        "date": "2026-08-12T21:56:03",
+        "url": "https://natlawreview.com/article/ai-note-taking-tools-silent-recording-and-consent-problem",
+        "ai_summary": "A class action lawsuit, Chamberlain v. Granola, Inc., has been filed in the Northern District of California alleging that AI note-taker Granola illegally records meetings without participant consent and uses data for model training by default. This case joins similar pending litigation against competitors Otter.ai and Fireflies.ai, highlighting a growing legal conflict over privacy, wiretapping laws, and biometric data collection in AI transcription services. "
       }
-    ]
+    ],
+    "synthetic": false
   },
   {
     "event_id": "e20",
     "fund_slug": "plug-and-play",
-    "company_slug": "shippo",
-    "company": "Shippo",
-    "synthetic": true,
+    "company_slug": "reco",
+    "company": "Reco",
     "event": {
-      "id": "synthetic-20",
-      "title": "Portfolio update for Shippo",
-      "category": "Funding",
-      "severity": 2,
-      "suggested_action": "Ask the founder for a concise progress update",
-      "published_date": "2026-10-24"
+      "id": 34143828,
+      "group_id": 10528935,
+      "title": "Shadow AI Has Already Infiltrated Enterprise Systems. The Numbers Show Why Control Is Slipping Away",
+      "url": "https://www.webpronews.com/shadow-ai-has-already-infiltrated-enterprise-systems-the-numbers-show-why-control-is-slipping-away/",
+      "publisher": "WebProNews",
+      "published_date": "2026-09-08T15:32:15",
+      "original_language": "EN",
+      "sentiment": "negative",
+      "newsworthiness_score": 1.0,
+      "ai_summary": "Reco's State of Agent Security 2026 report finds 80% of AI tools are unsanctioned, with small and midsize businesses averaging 414 per 1,000 employees. IBM's 2025 data shows one in five organizations suffered a shadow AI breach, costing an average $670,000. The report warns that unmanaged AI agents create new attack paths, with 637 AI-related vulnerabilities identified since 2023.",
+      "tags": [
+        {
+          "name": "Cybersecurity Incidents",
+          "code": "RK05",
+          "is_primary": true
+        }
+      ],
+      "is_press_release": false,
+      "is_breaking": true,
+      "article_type": {
+        "code": "investigative",
+        "label": "Investigative"
+      },
+      "sentiment_score": 0.0014,
+      "entities": {
+        "person": [
+          "david chismon"
+        ]
+      },
+      "category": "Risk",
+      "severity": 3,
+      "suggested_action": "Risk flag: call the founder, prepare an LP note",
+      "tag_code": "RK05",
+      "tag_name": "Cybersecurity Incidents"
     },
     "sources": [
       {
         "number": 1,
-        "title": "Shippo company update",
-        "publisher": "Portfolio Pulse fixture",
-        "date": "2026-10-24",
-        "url": "https://goshippo.com",
-        "ai_summary": "Synthetic evaluation fixture for Shippo."
+        "title": "Reco raises USD $55 million with AT&T Ventures backing",
+        "publisher": "Securitybrief",
+        "date": "2026-10-15T07:30:00",
+        "url": "https://securitybrief.in/story/reco-raises-usd-55-million-with-at-t-ventures-backing",
+        "ai_summary": "Reco raised an additional $55 million with AT&T Ventures, bringing total funding to $140 million. The security software company will use the funds to expand sales, partnerships, and customer support as enterprises adopt AI agents. Gartner projects Fortune 500 firms will have over 150,000 agents by 2028."
+      },
+      {
+        "number": 2,
+        "title": "The Third-Party Agent Problem: Why Security Built for AI You Chose Misses the Agents You Didn't",
+        "publisher": "The Hacker News",
+        "date": "2026-10-10T11:00:00",
+        "url": "https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html",
+        "ai_summary": "The article argues that most third-party AI agents are invisible to identity infrastructure, creating a security gap. It cites 1,280 embedded AI products, with 282 behind single sign-on, and notes agents lack a decision point for governance. Reco's platform is presented as a solution for continuous agent discovery."
+      },
+      {
+        "number": 3,
+        "title": "Reco Joins Invitation-Only Microsoft for Startups Pegasus Program to Accelerate Enterprise Agent Security",
+        "publisher": "Yahoo",
+        "date": "2026-10-06T13:03:00",
+        "url": "https://finance.yahoo.com/technology/ai/articles/reco-joins-invitation-only-microsoft-130300713.html",
+        "ai_summary": "Reco, an agent security company, was accepted into the invitation-only Microsoft for Startups Pegasus Program. Its platform, built on the Reco Graph, unifies agent security, posture management, and threat detection, with over 1,000 detection controls and more than 1 million agents identified. The partnership aims to bring agent security to more Microsoft customers."
+      },
+      {
+        "number": 4,
+        "title": "Reco secures USD 55 million as AT&T Ventures invests | The Paypers",
+        "publisher": "The Paypers",
+        "date": "2026-10-02T00:00:00",
+        "url": "https://thepaypers.com/fraud-and-fincrime/news/reco-raises-usd-55-million-with-participation-from-att-ventures",
+        "ai_summary": "Reco raised $55 million in additional funding, with AT&T Ventures, Forestay, and Quadrille Capital participating. The round brings total funding to $140 million, to be used for sales, partnerships, and customer support. The company expects enterprise agent adoption to grow, with Gartner forecasting over 150,000 agents per Fortune 500 firm by 2028."
+      },
+      {
+        "number": 5,
+        "title": "Reco Announces Partnership with ServiceNow to Extend AI Agent Security",
+        "publisher": "Yahoo",
+        "date": "2026-09-28T13:03:00",
+        "url": "https://finance.yahoo.com/technology/ai/articles/reco-announces-partnership-servicenow-extend-130300854.html",
+        "ai_summary": "Reco announced a partnership with ServiceNow to extend AI agent security for organizations using the ServiceNow AI Platform. The integration maps ServiceNow Otto agents into Reco's graph and runs over 170 posture checks, with findings routed back into ServiceNow as tickets. The integration is available now."
+      },
+      {
+        "number": 6,
+        "title": "Shadow AI Has Already Infiltrated Enterprise Systems. The Numbers Show Why Control Is Slipping Away",
+        "publisher": "WebProNews",
+        "date": "2026-09-08T15:32:15",
+        "url": "https://www.webpronews.com/shadow-ai-has-already-infiltrated-enterprise-systems-the-numbers-show-why-control-is-slipping-away/",
+        "ai_summary": "Reco's State of Agent Security 2026 report finds 80% of AI tools are unsanctioned, with small and midsize businesses averaging 414 per 1,000 employees. IBM's 2025 data shows one in five organizations suffered a shadow AI breach, costing an average $670,000. The report warns that unmanaged AI agents create new attack paths, with 637 AI-related vulnerabilities identified since 2023."
       }
-    ]
+    ],
+    "synthetic": false
   }
 ]

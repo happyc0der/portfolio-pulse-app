@@ -1,0 +1,280 @@
+[
+  {
+    "id": 40570238,
+    "group_id": 14129339,
+    "title": "Skan AI Is a Digital Interaction Intelligence Leader in PEAK Matrix® Assessment 2026",
+    "url": "https://www.prnewswire.com/news-releases/skan-ai-is-a-digital-interaction-intelligence-leader-in-peak-matrix-assessment-2026-302907044.html",
+    "publisher": "PR Newswire",
+    "published_date": "2026-10-13T15:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Everest Group named Skan AI a Leader in Digital Interaction Intelligence for the third consecutive year, citing its strong product vision and revenue growth. Skan AI tripled its revenue in the past year and raised $63 million in a Series C round. The company is scaling its context graph platform globally for banking, insurance, and healthcare enterprises.",
+    "tags": [
+      {
+        "name": "Awards, Rankings & Recognitions",
+        "code": "SD11",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "manish garg",
+        "amardeep modi"
+      ]
+    }
+  },
+  {
+    "id": 32828591,
+    "group_id": 9286562,
+    "title": "Skan AI Secures $63M to Give Enterprise AI the Context It’s Missing: How Work Actually Gets Done",
+    "url": "https://theaiinsider.tech/2026/08/21/skan-ai-secures-63m-to-give-enterprise-ai-the-context-its-missing-how-work-actually-gets-done/",
+    "publisher": "AI Insider",
+    "published_date": "2026-08-21T16:27:55",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Skan AI secured $63 million in Series C funding co-led by Cathay Innovation and Dell Technologies Capital, with participation from investors including Citi Ventures and Wipro Ventures. The company simultaneously launched its enterprise AI platform, featuring Skan AI Blueprint and Skan AI Agents, which utilizes NVIDIA infrastructure to provide context-aware automation for enterprises. This development follows a period of significant growth for Skan AI, marked by a 300 percent year-over-year increase and partnerships with major financial institutions. ",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "simon wu",
+        "avinash misra",
+        "james dargan",
+        "aser blanco",
+        "cijo joseph",
+        "raman khanna",
+        "kate strubhar"
+      ]
+    }
+  },
+  {
+    "id": 32542072,
+    "group_id": 8590433,
+    "title": "Skan AI Raises $63 Million As Platform Grows 300%+ And Processes 25 Billion Work Signals",
+    "url": "https://pulse2.com/skan-ai-raises-63-million-as-platform-grows-300-and-processes-25-billion-work-signals/",
+    "publisher": "Pulse 2.0",
+    "published_date": "2026-08-20T06:53:52",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Skan AI has raised $63 million in a funding round co-led by Cathay Innovation and Dell Technologies Capital to support the general availability of its enterprise AI platform. The company reports processing over 25 billion work signals and claims to have delivered more than $500 million in measured customer value through its context-aware AI agents. This financing coincides with the expansion of partnerships including deployments at major U.S. banks and Fortune 50 companies. ",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "simon wu",
+        "avinash misra",
+        "aser blanco",
+        "cijo joseph",
+        "raman khanna",
+        "kate strubhar"
+      ]
+    }
+  },
+  {
+    "id": 32235661,
+    "group_id": 6989578,
+    "title": "Analytics and Data Science News for the Week of August 14; Updates from Alteryx, Skan AI, University of Virginia & More",
+    "url": "https://solutionsreview.com/business-intelligence/analytics-and-data-science-news-for-the-week-of-august-14-updates-from-alteryx-skan-ai-university-of-virginia-more/",
+    "publisher": "Solutions Review Technology News and Vendor Reviews",
+    "published_date": "2026-08-14T16:40:07",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Alteryx's 2026 IT Leader Research indicates that 53% of organizations face challenges in implementing business context into AI systems, despite a growing investment in AI technologies. Skan AI secured $63 million in Series C financing to enhance its Context Graph of Work, which aims to provide AI agents with operational context by observing enterprise processes. Additionally, UVA Wise is set to launch an online Master’s program in Technology Management and Data Analytics for the fall 2026 term, targeting professionals in data-driven organizations. ",
+    "tags": [
+      {
+        "name": "Debt Financing",
+        "code": "CM02",
+        "is_primary": true
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      },
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": false
+      },
+      {
+        "name": "Strategic Hiring",
+        "code": "WT01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.512,
+    "entities": {
+      "person": [
+        "tim king",
+        "dr. joe perez"
+      ]
+    }
+  },
+  {
+    "id": 35728916,
+    "group_id": 6827734,
+    "title": "Skan Lands $63 Million To Map How Employees Work – Is That Workflow Optimisation Or Workplace Surveillance?",
+    "url": "https://techround.co.uk/?post_type=post&p=157106",
+    "publisher": "TechRound",
+    "published_date": "2026-08-14T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Skan AI raised $63 million in a Series C led by Cathay Innovation, Dell Technologies Capital, and Citi Ventures. The startup's platform maps employee workflow patterns, with nearly a third of Fortune 500 companies and seven major US banks as customers. Regulatory rules are tightening, including EU AI Act and California's AB 1221.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 31845060,
+    "group_id": 6795074,
+    "title": "Skan AI Secures $63 Million to Enhance Contextual Understanding in Enterprise AI",
+    "url": "https://third-news.com/article/53551bd2-9649-11f1-8b3d-9ca3ba08e13f",
+    "publisher": "Third News",
+    "published_date": "2026-08-12T12:28:30",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Skan AI has secured $63 million in funding co-led by Cathay Innovation and Dell Technologies Capital to support the launch of its enterprise AI platform. The company reported over 300% year-on-year growth and highlighted that its contextual AI solutions have generated more than $500 million in realized value for clients, particularly in regulated sectors like banking. ",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "simon wu",
+        "avinash misra",
+        "aser blanco",
+        "raman khanna",
+        "cijo joseph"
+      ]
+    }
+  },
+  {
+    "id": 32072683,
+    "group_id": 6900349,
+    "title": "Skan AI Raises $63 Million to Give Enterprise AI the Context It's Missing: How Work Actually Gets Done",
+    "url": "https://finance.yahoo.com/technology/ai/articles/skan-ai-raises-63-million-120000480.html",
+    "publisher": "Yahoo",
+    "published_date": "2026-08-12T12:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9982,
+    "ai_summary": "Skan AI announced a $63 million funding round co-led by Cathay Innovation and Dell Technologies Capital, alongside the general availability of its enterprise AI platform. The company reports having secured a quarter of the Fortune 50 as clients, with significant growth metrics including over 300% year-over-year expansion and more than $500 million in measured customer uplift.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "simon wu",
+        "avinash misra"
+      ]
+    }
+  }
+]

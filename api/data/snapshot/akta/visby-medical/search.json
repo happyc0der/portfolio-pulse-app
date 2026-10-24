@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "005nyrt",
+    "product_category": "At-Home Molecular Diagnostics",
+    "match": {
+      "uuid": "005nyrt",
+      "name": "Visby Medical",
+      "website": "https://visby.com",
+      "product_category": "At-Home Molecular Diagnostics",
+      "company_status": "",
+      "akta_rank": 321550
+    }
+  },
+  "fetched_at": "2026-10-24T16:02:42.659441+00:00",
+  "credits_consumed": 0
+}

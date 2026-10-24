@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "0000qnt",
+    "product_category": "Digital Banking Services",
+    "match": {
+      "uuid": "0000qnt",
+      "name": "Umba",
+      "website": "https://www.umba.com",
+      "product_category": "Digital Banking Services",
+      "company_status": "private",
+      "akta_rank": 302116
+    }
+  },
+  "fetched_at": "2026-10-24T16:02:12.211792+00:00",
+  "credits_consumed": 0
+}

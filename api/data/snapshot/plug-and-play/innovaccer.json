@@ -1,0 +1,456 @@
+[
+  {
+    "id": 41569224,
+    "group_id": 15013974,
+    "title": "The Real Test for Healthcare AI Happens Six Months After Go-Live",
+    "url": "https://www.beckershospitalreview.com/healthcare-information-technology/the-real-test-for-healthcare-ai-happens-six-months-after-go-live/",
+    "publisher": "Beckershospitalreview",
+    "published_date": "2026-10-20T13:00:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Innovaccer and Mastek are partnering to ensure healthcare AI systems remain operational six months after go-live, addressing the second test that most AI fails. The partnership aims to keep AI running in EHRs and workflows, with Innovaccer's platform cutting prior authorization prep time from 45 minutes to 3 minutes.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5392,
+    "entities": {
+      "person": [
+        "becker"
+      ]
+    }
+  },
+  {
+    "id": 40807586,
+    "group_id": 14298869,
+    "title": "Value-based care technology ambitions outpace confidence in funding",
+    "url": "https://www.healthcareitnews.com/news/value-based-care-technology-ambitions-outpace-confidence-funding",
+    "publisher": "Healthcare IT News",
+    "published_date": "2026-10-14T15:54:07",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.7843,
+    "ai_summary": "A NAACOS-Innovaccer survey finds accountable care leaders are adjusting IT investment plans under the CMS ACCESS Model. They are seeking stronger evidence on outcomes, more sustainable funding, and better data integration.",
+    "tags": [
+      {
+        "name": "Sector Outlook & Forecasts",
+        "code": "MM07",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "lisa bari",
+        "bill siwicki"
+      ]
+    }
+  },
+  {
+    "id": 39669215,
+    "group_id": 13031876,
+    "title": "Former Allscripts CEO Paul M. Black Joins Innovaccer Board of Directors",
+    "url": "https://www.businesswire.com/news/home/20261001201986/en/Former-Allscripts-CEO-Paul-M.-Black-Joins-Innovaccer-Board-of-Directors",
+    "publisher": "Business Wire Blog",
+    "published_date": "2026-10-01T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Paul M. Black, former Allscripts CEO, joined Innovaccer's Board of Directors. He brings over 40 years of healthcare technology leadership, including roles at Cerner and IBM. The appointment aims to help build the industry chassis for Autonomous Healthcare Operations.",
+    "tags": [
+      {
+        "name": "Board Composition & Changes",
+        "code": "LG02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "promotional",
+      "label": "Promotional"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "paul m. black",
+        "abhinav shashank",
+        "rishita singh"
+      ]
+    }
+  },
+  {
+    "id": 39124200,
+    "group_id": 12761097,
+    "title": "Innovaccer's Flow Earns 96.2 KLAS Score, Nearly 14 Points Above the Market Average in Ambulatory RCM Services",
+    "url": "https://www.businesswire.com/news/home/20260928678108/en/Innovaccers-Flow-Earns-96.2-KLAS-Score-Nearly-14-Points-Above-the-Market-Average-in-Ambulatory-RCM-Services",
+    "publisher": "Business Wire Blog",
+    "published_date": "2026-09-28T14:30:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9766,
+    "ai_summary": "Innovaccer's Flow platform earned a 96.2 KLAS score in ambulatory RCM services, 14 points above the market average. Customers reported a 93% reduction in prior authorization prep time, 21% increase in collections, and 47-point rise in revenue realization. Innovaccer will showcase expanded capabilities at MGMA.",
+    "tags": [
+      {
+        "name": "Operational Milestones",
+        "code": "SD04",
+        "is_primary": true
+      },
+      {
+        "name": "Awards, Rankings & Recognitions",
+        "code": "SD11",
+        "is_primary": false
+      },
+      {
+        "name": "Revenue & Growth Metrics",
+        "code": "FR02",
+        "is_primary": false
+      },
+      {
+        "name": "Market Share & Positioning",
+        "code": "SD05",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "review",
+      "label": "Review"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "abhinav shashank"
+      ]
+    }
+  },
+  {
+    "id": 38691203,
+    "group_id": 12041427,
+    "title": "Innovaccer Brings Xccelerate to Washington D.C., Expanding Its Annual Healthcare Leadership Forum Ahead of the NAACOS Annual Conference",
+    "url": "https://www.businesswire.com/news/home/20260922610518/en/Innovaccer-Brings-Xccelerate-to-Washington-D.C.-Expanding-Its-Annual-Healthcare-Leadership-Forum-Ahead-of-the-NAACOS-Annual-Conference",
+    "publisher": "Business Wire Blog",
+    "published_date": "2026-09-22T12:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9972,
+    "ai_summary": "Innovaccer announced its Xccelerate healthcare leadership conference will expand to Washington, D.C. on Oct 13-14, ahead of NAACOS. The event convenes health system leaders, payers, and policy officials to discuss healthcare AI adoption and value-based care, with a focus on H.R.1 and the ACCESS Model.",
+    "tags": [
+      {
+        "name": "Others",
+        "code": "OT01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "justin kyle",
+        "abhinav shashank",
+        "luke harris",
+        "dr. ed clarke",
+        "dr. robert wachter"
+      ]
+    }
+  },
+  {
+    "id": 35158552,
+    "group_id": 11314642,
+    "title": "Delays, tech failures abound in CMS' WISeR AI prior auth pilot, documents show",
+    "url": "https://www.fiercehealthcare.com/regulatory/delays-tech-failures-abound-cms-wiser-ai-prior-auth-pilot-documents-show",
+    "publisher": "FierceHealthcare",
+    "published_date": "2026-09-15T16:43:00",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "FOIA documents released by the EFF show CMS' WISeR AI prior authorization pilot has faced delays, miscommunication, and provider frustration. Records include hundreds of unanswered requests, with one 83 days old, and technical issues from vendors like Innovaccer. The program, active in six states, plans to end in 2031.",
+    "tags": [
+      {
+        "name": "Policy & Legislative Changes",
+        "code": "RC02",
+        "is_primary": true
+      },
+      {
+        "name": "Compliance & Reporting Updates",
+        "code": "RC04",
+        "is_primary": false
+      },
+      {
+        "name": "Operational Disruptions",
+        "code": "RK04",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.001,
+    "entities": {
+      "person": [
+        "trump"
+      ]
+    }
+  },
+  {
+    "id": 33450911,
+    "group_id": 10029375,
+    "title": "Innovaccer And Documo Bring HIPAA-Compliant Digital Fax to the Innovaccer Health Cloud",
+    "url": "https://www.prlog.org/12878497-innovaccer-and-documo-bring-hipaa-compliant-digital-fax-to-the-innovaccer-health-cloud.html",
+    "publisher": "PRLog",
+    "published_date": "2026-09-01T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.6761,
+    "ai_summary": "Innovaccer and Documo added HIPAA-compliant digital fax capabilities to the Innovaccer Health Cloud. The advancement helps healthcare organizations eliminate paper, streamline workflows, and enhance patient-centric care.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "promotional",
+      "label": "Promotional"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 33437598,
+    "group_id": 10014354,
+    "title": "How a Rural North Carolina Network Uses AI to Coordinate Care",
+    "url": "https://www.hcinnovationgroup.com/analytics-ai/article/55402035/how-a-rural-north-carolina-network-is-using-ai-to-coordinate-care-at-scale",
+    "publisher": "Hcinnovationgroup",
+    "published_date": "2026-08-31T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.7996,
+    "ai_summary": "Impact Primary Care Network, a North Carolina population health organization, has used Innovaccer's care management platform and dashboards for two years. The system prioritizes patients, identifies care gaps, and tracks payor contracts, supporting its rural care programs. IPCN plans to continue integrating clinical and social support through the NC ROOTS Hub.",
+    "tags": [
+      {
+        "name": "Digital Transformation",
+        "code": "SD06",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "allison krivatch"
+      ]
+    }
+  },
+  {
+    "id": 35075187,
+    "group_id": 8952997,
+    "title": "Impact Primary Care Network Selects Innovaccer to Power Population Health and Care Management in Western North Carolina",
+    "url": "https://www.morningstar.com/news/business-wire/20260820827040/impact-primary-care-network-selects-innovaccer-to-power-population-health-and-care-management-in-western-north-carolina",
+    "publisher": "Morningstar",
+    "published_date": "2026-08-20T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9294,
+    "ai_summary": "Impact Primary Care Network deployed Innovaccer's care management platform and population health dashboards over nearly two years. The platform automates patient prioritization and care gap tracking, improving protocol adherence and penetration rates. The partnership aims to free care teams from administrative work.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "abhinav shashank",
+        "allison krivatch",
+        "rishita singh"
+      ]
+    }
+  },
+  {
+    "id": 32561119,
+    "group_id": 8734042,
+    "title": "Impact Primary Care Network Selects Innovaccer to Power Population Health and Care Management in Western North Carolina",
+    "url": "https://www.businesswire.com/news/home/20260820827040/en/Impact-Primary-Care-Network-Selects-Innovaccer-to-Power-Population-Health-and-Care-Management-in-Western-North-Carolina",
+    "publisher": "Business Wire Blog",
+    "published_date": "2026-08-20T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9182,
+    "ai_summary": "Innovaccer announced a partnership with Impact Primary Care Network (IPCN) to provide its care management solution and population health dashboards for operations in Western North Carolina. This deployment serves as the operational foundation for IPCN's programs, enabling care teams to manage complex patient populations more effectively through autonomous workflows. ",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "promotional",
+      "label": "Promotional"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "abhinav shashank",
+        "allison krivatch"
+      ]
+    }
+  },
+  {
+    "id": 33224248,
+    "group_id": 6900331,
+    "title": "Innovaccer and Mastek partner to scale healthcare AI in the US",
+    "url": "https://portalerp.com/noticia/innovaccer-and-mastek-partner-to-scale-healthcare-ai-in-the-us",
+    "publisher": "Portal ERP",
+    "published_date": "2026-08-18T20:29:15",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.994,
+    "ai_summary": "Innovaccer, an autonomous operations platform for healthcare, announced a partnership with Mastek, a global digital, cloud and AI services company, under which Mastek joins Innovaccer's Platinum GSI program. Mastek will deploy and localize Innovaccer's healthcare AI applications across new and existing markets, including agentic revenue cycle management, population health and patient access tools. The deal extends Innovaccer's presence into the UK and Europe.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      },
+      {
+        "name": "Geographic Expansion",
+        "code": "SD03",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "promotional",
+      "label": "Promotional"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "abhinav shashank",
+        "umang nahata"
+      ]
+    }
+  },
+  {
+    "id": 32451597,
+    "group_id": 6902100,
+    "title": "Innovaccer, Mastek ink strategic partnership to scale agentic AI in healthcare globally",
+    "url": "https://www.fiercehealthcare.com/health-tech/innovaccer-mastek-ink-strategic-partnership-accelerate-global-deployment-agentic",
+    "publisher": "FierceHealthcare",
+    "published_date": "2026-08-17T10:59:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9857,
+    "ai_summary": "Innovaccer and Mastek have entered an expanded strategic partnership where Mastek will deploy and localize Innovaccer's healthcare AI applications across new and existing global markets. This collaboration, which includes Mastek joining Innovaccer’s Platinum GSI program, is intended to support Innovaccer's expansion into Europe and the U.K. by leveraging Mastek's institutional relationships and delivery capabilities. ",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      },
+      {
+        "name": "Geographic Expansion",
+        "code": "SD03",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "promotional",
+      "label": "Promotional"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "umang nahata",
+        "abhinav shashank"
+      ]
+    }
+  },
+  {
+    "id": 33571551,
+    "group_id": 10554180,
+    "title": "Innovaccer CEO Abhinav Shashank Says Data Layer Can Cut Health Costs by 75% — BigGo Finance",
+    "url": "https://finance.biggo.com/news/fd391fb51c74776b",
+    "publisher": "Biggo",
+    "published_date": "2026-08-13T14:12:43",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Innovaccer CEO Abhinav Shashank says a separate data layer can cut health costs by 75%, with the platform covering 80 million American lives and removing $1.7 billion in 2025. He targets $10 billion in annual cost removal and $1 billion in recurring revenue within four to five years.",
+    "tags": [
+      {
+        "name": "Executive Commentary & Interviews",
+        "code": "LG05",
+        "is_primary": true
+      },
+      {
+        "name": "Digital Transformation",
+        "code": "SD06",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.1561,
+    "entities": {
+      "person": [
+        "abhinav shashank",
+        "shashank"
+      ]
+    }
+  }
+]

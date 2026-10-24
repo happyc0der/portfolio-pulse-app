@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "0000t9e",
+    "product_category": "International Student Application Platform",
+    "match": {
+      "uuid": "0000t9e",
+      "name": "ApplyBoard",
+      "website": "http://www.applyboard.com",
+      "product_category": "International Student Application Platform",
+      "company_status": "private",
+      "akta_rank": 20654
+    }
+  },
+  "fetched_at": "2026-10-24T16:02:44.878807+00:00",
+  "credits_consumed": 0
+}

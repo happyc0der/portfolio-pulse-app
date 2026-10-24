@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "0005b78",
+    "product_category": "Neurodiagnostic And Neuromodulation Devices",
+    "match": {
+      "uuid": "0005b78",
+      "name": "NeuroMetrix",
+      "website": "https://www.neurometrix.com",
+      "product_category": "Neurodiagnostic And Neuromodulation Devices",
+      "company_status": "delisted",
+      "akta_rank": 59518
+    }
+  },
+  "fetched_at": "2026-10-24T16:03:04.073799+00:00",
+  "credits_consumed": 0
+}

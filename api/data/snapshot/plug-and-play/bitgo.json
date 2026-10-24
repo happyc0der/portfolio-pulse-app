@@ -1,0 +1,154 @@
+[
+  {
+    "id": 42345307,
+    "group_id": 15685954,
+    "title": "Cumberland Transfers 10.31 Million USD1 to BitGo, Possibly for OTC Trading",
+    "url": "https://www.tradingview.com/news/binance_news:604593643094b:0-cumberland-transfers-10-31-million-usd1-to-bitgo-possibly-for-otc-trading/",
+    "publisher": "TradingView",
+    "published_date": "2026-10-23T18:54:42",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.7533,
+    "ai_summary": "Cumberland transferred 10.31 million USD1 tokens, worth about $10.3 million, to BitGo. The transfer was tracked by ChainCatcher and Onchain Lens from Cumberland's wallet, and it may be for over-the-counter trading.",
+    "tags": [
+      {
+        "name": "Secondary Transactions",
+        "code": "CM07",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.5043,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 42313203,
+    "group_id": 15666325,
+    "title": "Chartered in December, public in January: How BitGo’s growing",
+    "url": "https://www.bankingdive.com/news/chartered-december-public-january-how-bitgos-growing/833857/",
+    "publisher": "Banking Dive",
+    "published_date": "2026-10-23T16:03:45",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "BitGo received an unconditional national trust charter in December and went public on the NYSE in January with a $2.59 billion valuation. The company reports stronger interest from financial institutions, including two RFPs from large banks, and plans to expand internationally.",
+    "tags": [
+      {
+        "name": "IPOs & Follow-on Offerings",
+        "code": "CM05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "frank wang"
+      ]
+    }
+  },
+  {
+    "id": 42278166,
+    "group_id": 15657050,
+    "title": "EU RIS CSDS Index - Appointment of Custodian",
+    "url": "https://www.tradingview.com/news/eqs:d51213a35094b:0-eu-ris-csds-index-appointment-of-custodian/",
+    "publisher": "TradingView",
+    "published_date": "2026-10-23T13:47:04",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.8365,
+    "ai_summary": "CoinShares Digital Securities Limited appointed BitGo Europe GmbH as an additional custodian for its exchange traded products programme, with security arrangements for digital currency. The appointment was accompanied by supplement no. 3 to the base prospectus, approved and registered by the Swedish Financial Supervisory Authority on 23 October 2026.",
+    "tags": [
+      {
+        "name": "Compliance & Reporting Updates",
+        "code": "RC04",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "other",
+      "label": "Other"
+    },
+    "sentiment_score": 0.5355,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 42248602,
+    "group_id": 15200018,
+    "title": "Kalshi, BitGo Allow Unlock of Crypto Liquidity for Margin",
+    "url": "https://www.marketsmedia.com/kalshi-bitgo-allow-customers-to-unlock-crypto-liquidity-for-margin/",
+    "publisher": "Markets Media",
+    "published_date": "2026-10-23T07:22:44",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9879,
+    "ai_summary": "Kalshi Prime and BitGo launched HODL Margining, enabling eligible customers to fund margin with crypto held at BitGo Bank & Trust without selling assets. The network, backed by Kalshi Katalyst, offers U.S. dollar loans secured by BTC, ETH, or stablecoins, with collateral kept in segregated custody. KalshiEX launched perpetual futures on May 29, 2026.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "jeff bandman",
+        "mike belshe"
+      ]
+    }
+  },
+  {
+    "id": 42132503,
+    "group_id": 15165753,
+    "title": "BitGo Launches Labs Unit With AI-Powered Gokubu Consumer App",
+    "url": "https://www.tradingview.com/news/newsbtc:8a649e9cd094b:0-bitgo-launches-labs-unit-with-ai-powered-gokubu-consumer-app/",
+    "publisher": "TradingView",
+    "published_date": "2026-10-22T18:30:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.8319,
+    "ai_summary": "BitGo launched BitGo Labs, a research and product unit focused on AI and crypto, on October 21. Its first project is Gokubu, a consumer financial app combining an AI-assisted card, personalized assistant, and automated rewards, which BitGo says is live and accepting registrations.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.4986,
+    "entities": {
+      "person": [
+        "samuel rae"
+      ]
+    }
+  }
+]

@@ -10,7 +10,7 @@ from urllib.parse import urlparse
 import httpx
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
-from api.tracing import citation_metrics, prism_enabled, traced_chat
+from api.tracing import citation_metrics, prism_enabled, prism_selftest, traced_chat, last_tracing_error
 from api import roundtable
 from dotenv import dotenv_values, load_dotenv
 
@@ -60,6 +60,24 @@ def get_secret(name: str) -> str:
 FUNDS_FILE = API_DIR / "data" / "funds.json"
 CACHE_DIR = DATA_DIR
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
+# A committed copy of the cache (same layout), refreshed before the demo. The published backend's
+# disk resets on every publish, so reads fall back to it whenever the live cache has no file.
+SNAPSHOT_DIR = API_DIR / "data" / "snapshot"
+
+
+def snapshot_refreshed_at() -> float | None:
+    try:
+        return float(json.loads((SNAPSHOT_DIR / "manifest.json").read_text(encoding="utf-8"))["refreshed_at"])
+    except (OSError, ValueError, KeyError, TypeError):
+        return None
+
+
+def cache_file(*parts: str) -> Path:
+    live = CACHE_DIR.joinpath(*parts)
+    if live.is_file():
+        return live
+    snapshot = SNAPSHOT_DIR.joinpath(*parts)
+    return snapshot if snapshot.is_file() else live
 AKTA_BASE = "https://api.akta.pro/api/v1"
 NICRRON_BASE_URL = "https://api.nicrron.ai/v1"
 
@@ -96,7 +114,7 @@ def company_domain(website: str) -> str:
 
 
 def read_articles(fund_slug: str, company_name: str) -> list[dict[str, Any]]:
-    path = CACHE_DIR / fund_slug / f"{slugify(company_name)}.json"
+    path = cache_file(fund_slug, f"{slugify(company_name)}.json")
     if not path.is_file():
         return []
     try:
@@ -110,8 +128,9 @@ def fund_with_cache(slug: str) -> dict[str, Any]:
     fund = get_fund(slug)
     for company in fund["companies"]:
         company["articles"] = read_articles(slug, company["name"])
-        cache_path = CACHE_DIR / slug / f"{slugify(company['name'])}.json"
+        cache_path = cache_file(slug, f"{slugify(company['name'])}.json")
         company["cached_at"] = cache_path.stat().st_mtime if cache_path.is_file() else None
+        company["from_snapshot"] = cache_path.is_relative_to(SNAPSHOT_DIR)
         company["lookup_status"] = "unknown"
         if not company["articles"] and cache_path.is_file():
             try:
@@ -121,7 +140,7 @@ def fund_with_cache(slug: str) -> dict[str, Any]:
             except (OSError, json.JSONDecodeError):
                 pass
         clean_articles, inferred_irrelevant, inferred_language = filter_company_articles(company, company["articles"])
-        filter_meta_path = CACHE_DIR / slug / f"{slugify(company['name'])}.filters.json"
+        filter_meta_path = cache_file(slug, f"{slugify(company['name'])}.filters.json")
         try:
             filter_meta = json.loads(filter_meta_path.read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError):
@@ -139,7 +158,18 @@ def fund_with_cache(slug: str) -> dict[str, Any]:
         all_signals = classified + indicator_events
         company["articles"] = all_signals
         company["pulse"] = calculate_pulse(all_signals)
-    fund["companies"].sort(key=lambda company: (not company["articles"], -company["pulse"], company["name"].casefold()))
+        # akta's company search reports public / acquired companies. For a VC those are exits:
+        # their stock moves and insider sales are not portfolio events, so the UI keeps them out
+        # of "Needs your attention" and the severity counts.
+        search = read_akta_cache(company["name"], "search") or {}
+        match = (search.get("data") or {}).get("match") if isinstance(search.get("data"), dict) else None
+        status = str((match or {}).get("company_status") or "").lower()
+        company["company_status"] = status or None
+        company["exited"] = status in EXITED_STATUSES
+        if company["from_snapshot"]:
+            company["cached_at"] = snapshot_refreshed_at() or company["cached_at"]
+    # Active companies first (exits last), then by pulse.
+    fund["companies"].sort(key=lambda company: (company["exited"], not company["articles"], -company["pulse"], company["name"].casefold()))
     timestamps = [company["cached_at"] for company in fund["companies"] if company["cached_at"] is not None]
     fund["last_refreshed"] = max(timestamps) if timestamps else None
     return fund
@@ -147,7 +177,7 @@ def fund_with_cache(slug: str) -> dict[str, Any]:
 
 @app.get("/api/health")
 def health() -> dict[str, Any]:
-    return {"ok": True, "prism": "on" if prism_enabled() else "off", "keys": {name: "set" if get_secret(name) else "missing" for name in SECRET_NAMES}}
+    return {"ok": True, "prism": "on" if prism_enabled() else "off", "prism_last_error": last_tracing_error, "keys": {name: "set" if get_secret(name) else "missing" for name in SECRET_NAMES}}
 
 
 def history_versions(result: Any) -> list[dict[str, Any]]:
@@ -157,6 +187,11 @@ def history_versions(result: Any) -> list[dict[str, Any]]:
         versions = result.get("versions", result.get("history", result.get("items", [])))
         return versions if isinstance(versions, list) else []
     return []
+
+
+@app.get("/api/prism/selftest")
+def prism_trace_selftest() -> dict[str, Any]:
+    return prism_selftest()
 
 
 @app.get("/api/roundtable/status")
@@ -170,8 +205,22 @@ async def roundtable_history(path: str) -> dict[str, Any]:
     connected, reason = roundtable_config()
     if not connected:
         return {"connected": False, "reason": reason, "versions": []}
-    result = await roundtable.call("get_folder_history", get_secret("SIGNAL_WATCHER_KEY"), {"bank": get_secret("ROUNDTABLE_PROJECT"), "path": path})
-    return {"connected": result is not None, "reason": roundtable.last_error if result is None else "", "versions": history_versions(result)}
+    files = await roundtable_files(get_secret("SIGNAL_WATCHER_KEY"), get_secret("ROUNDTABLE_PROJECT"), path)
+    return {"connected": files is not None, "reason": roundtable.last_error if files is None else "", "versions": files or []}
+
+
+async def roundtable_files(key: str, bank: str, path: str) -> list[dict[str, Any]] | None:
+    # Roundtable's get_folder_history answers "Folder not found" for our folders, so list the
+    # shared folder's files instead and keep those under the requested path.
+    result = await roundtable.call("list_files", key, {"bank": bank})
+    if result is None:
+        return None
+    folder = path.strip("/")
+    if "." in folder.rsplit("/", 1)[-1]:
+        folder = folder.rsplit("/", 1)[0] if "/" in folder else ""
+    return [{"version": item["path"], "created_at": f"{item.get('size', 0)} bytes"}
+            for item in (result if isinstance(result, list) else [])
+            if isinstance(item, dict) and str(item.get("path", "")).startswith(folder)]
 
 
 @app.get("/api/roundtable/selftest")
@@ -357,8 +406,26 @@ def deduplicate_articles(articles: list[dict[str, Any]]) -> list[dict[str, Any]]
     return sorted(deduped, key=lambda item: str(item.get("published_date") or ""), reverse=True)
 
 
+EXITED_STATUSES = {"public", "acquired"}  # akta also reports "delisted" for some startups, so it is not used
+# akta sometimes labels Spanish, German, Portuguese, French or Italian articles as "EN".
+# Two or more of these common function words in a headline mean it is not English.
+NON_ENGLISH_WORDS = {
+    "el", "los", "las", "del", "una", "por", "para", "con", "como", "que", "der", "die", "das", "und",
+    "mit", "für", "ist", "nicht", "auf", "dos", "das", "não", "uma", "com", "pelo", "les", "des", "une",
+    "pour", "avec", "est", "dans", "della", "degli", "nel", "sono", "anche",
+}
+
+
+def looks_non_english(text: str) -> bool:
+    words = re.findall(r"[a-zà-ÿ]+", (text or "").lower())
+    hits = sum(1 for word in words if word in NON_ENGLISH_WORDS)
+    letters = re.findall(r"[^\W\d_]", text or "")
+    non_latin = sum(1 for ch in letters if ord(ch) > 0x24F)
+    return hits >= 2 or (bool(letters) and non_latin / len(letters) > 0.3)
+
+
 def company_main_word(company: dict[str, Any]) -> str:
-    company_name = re.sub(r"\\b(incorporated|corporation|company|technologies|technology|insurance|health|labs|laboratories|group|inc|llc|ltd|co)\\b", " ", company.get("name", ""), flags=re.IGNORECASE)
+    company_name = re.sub(r"\b(incorporated|corporation|company|technologies|technology|insurance|health|labs|laboratories|group|inc|llc|ltd|co)\b", " ", company.get("name", ""), flags=re.IGNORECASE)
     words = re.findall(r"[a-z0-9]+", company_name.lower())
     if words:
         return words[0]
@@ -384,7 +451,7 @@ def filter_company_articles(company: dict[str, Any], articles: list[dict[str, An
     kept: list[dict[str, Any]] = []
     irrelevant = language = 0
     for article in articles:
-        if str(article.get("original_language") or "").strip().upper() != "EN":
+        if str(article.get("original_language") or "").strip().upper() != "EN" or looks_non_english(str(article.get("title") or "")):
             language += 1
             continue
         if not article_is_relevant(company, article):
@@ -562,7 +629,7 @@ def akta_company_dir(company_name: str) -> Path:
 
 
 def read_akta_cache(company_name: str, endpoint: str) -> dict[str, Any] | None:
-    path = akta_company_dir(company_name) / f"{endpoint}.json"
+    path = cache_file("akta", slugify(company_name), f"{endpoint}.json")
     if not path.is_file():
         return None
     try:
@@ -599,7 +666,7 @@ def write_akta_cache(company_name: str, endpoint: str, data: Any, status: str = 
 
 
 def ledger_read() -> dict[str, Any]:
-    path = AKTA_CACHE_DIR / "ledger.json"
+    path = cache_file("akta", "ledger.json")
     try:
         result = json.loads(path.read_text(encoding="utf-8"))
         return result if isinstance(result, dict) else {"credits_consumed": 0.0}
@@ -842,6 +909,10 @@ def collect_draft_sources(fund_slug: str, company: dict[str, Any], event_id: str
     return sources
 
 
+LINE_PREFIX = re.compile(r"^(?:\s*(?:[-•*]|\d+\.)\s+)?(?:\*\*[^*]+\*\*:?\s*)?")
+HEADING_LINE = re.compile(r"^\s*(?:#{1,6}\s+\S.*|(?:[-•*]\s+)?\*\*[^*]+\*\*:?|[A-Z][A-Za-z ,'&/-]{0,60}:)\s*$")
+
+
 def citation_checked_text(text: str, sources: list[dict[str, Any]], kind: str) -> tuple[str, int, list[int]]:
     valid_numbers = {str(source["number"]) for source in sources}
     # Keep line boundaries so a greeting and a multi-line sign-off are identifiable.
@@ -861,27 +932,32 @@ def citation_checked_text(text: str, sources: list[dict[str, Any]], kind: str) -
     kept: list[str] = []
     dropped = 0
     cited: set[int] = set()
-    parts: list[tuple[str, bool]] = []
-    if kind == "founder_email" and lines:
-        for line_index, line in enumerate(lines):
-            if line_index == greeting_index or line_index in signoff_indexes:
-                parts.append((line, True))
-            else:
-                parts.extend((piece.strip(), False) for piece in re.split(r"(?<=[.!?])\s+", line) if piece.strip())
-    else:
-        parts = [(piece.strip(), False) for piece in re.split(r"(?<=[.!?])\s+|\n+", text.strip()) if piece.strip()]
-
-    for sentence, exempt in parts:
-        cleaned = sentence.strip().lstrip("-•* ").strip()
-        citations = re.findall(r"\[(\d+)\]", cleaned)
-        if exempt and not citations:
-            kept.append(cleaned)
+    # Work line by line so Markdown structure survives the check: a bullet ("- ") and a bold
+    # label ("**What happened:**") stay attached to the sentences after them, and a line that is
+    # only a heading or label is kept without a citation (it states no fact).
+    for line_index, line in enumerate(lines):
+        if line_index == greeting_index or line_index in signoff_indexes:
+            kept.append(line)
             continue
-        if not citations or any(number not in valid_numbers for number in citations):
-            dropped += 1
+        if HEADING_LINE.match(line) and not re.search(r"\[\d+\]", line):
+            kept.append(line)
             continue
-        cited.update(int(number) for number in citations)
-        kept.append(cleaned)
+        prefix = LINE_PREFIX.match(line).group(0)
+        body = line[len(prefix):]
+        good: list[str] = []
+        for sentence in (piece.strip() for piece in re.split(r"(?<=[.!?])\s+(?!\[)|(?<=\])\s+(?=[A-Z])", body) if piece.strip()):
+            citations = re.findall(r"\[(\d+)\]", sentence)
+            if not citations or any(number not in valid_numbers for number in citations):
+                dropped += 1
+                continue
+            cited.update(int(number) for number in citations)
+            good.append(sentence)
+        if not good:
+            continue
+        if prefix.strip():
+            kept.append(prefix + " ".join(good))
+        else:
+            kept.extend(good)
     return "\n".join(kept), dropped, sorted(cited)
 
 
@@ -1037,7 +1113,7 @@ async def lp_update(request: LPUpdateRequest) -> dict[str, Any]:
     if request.version not in {"v1", "v2"}:
         raise HTTPException(status_code=400, detail="version must be v1 or v2")
     fund = get_fund(request.fund_slug)
-    cache_path = CACHE_DIR / "lp-updates" / f"{slugify(fund['slug'])}.json"
+    cache_path = cache_file("lp-updates", f"{slugify(fund['slug'])}.json")
     if cache_path.is_file() and not request.regenerate:
         try:
             cached = json.loads(cache_path.read_text(encoding="utf-8"))
@@ -1106,13 +1182,18 @@ async def lp_update(request: LPUpdateRequest) -> dict[str, Any]:
     _, info = await traced_chat(messages=messages, model="anthropic/claude-opus-5-5", run_name=run_name, session_id=run_id, metadata=metadata, validator=citation_checked_text, sources=numbered, version=request.version, timeout=90.0)
     raw_text = info["raw_text"]
     if request.version == "v2":
-        text, removed, cited = citation_checked_text(raw_text, numbered, "partner_note")
+        # The app writes the title and subtitle itself; the model's copies carry no citation and
+        # would otherwise count as removed sentences.
+        body = "\n".join(line for line in raw_text.strip().splitlines()
+                         if not re.match(r"^\s*#\s+", line) and not re.match(r"^\s*[*_]*last 90 days", line, re.IGNORECASE))
+        text, removed, cited = citation_checked_text(body, numbered, "partner_note")
     else:
         text, removed, cited = raw_text, 0, []
     closing = f"Drafted from public news and company data via akta.pro. Every claim is cited; {removed} sentences were removed by the citation check."
     text = text.rstrip() + "\n\n" + closing
     cited_sources = [source for source in numbered if source["number"] in cited]
-    markdown = text + "\n\n## Sources\n" + "\n".join(f"[{source['number']}] {source['title']} — {source['publisher']}, {str(source.get('date') or '')[:10]}" + (f" ({source['url']})" if source.get("url") else "") for source in numbered)
+    header = f"# {fund['name']}: portfolio update\n\nLast 90 days, as of {date.today().isoformat()}\n\n"
+    markdown = (header if request.version == "v2" else "") + text + "\n\n## Sources\n" + "\n".join(f"[{source['number']}] {source['title']} — {source['publisher']}, {str(source.get('date') or '')[:10]}" + (f" ({source['url']})" if source.get("url") else "") for source in numbered)
     result = {"text": text, "markdown": markdown, "version": request.version, "sources": numbered, "cited_sources": cited, "sentences_removed": removed, "cached": False}
     cache_path.parent.mkdir(parents=True, exist_ok=True)
     cache_path.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -1153,8 +1234,8 @@ async def roundtable_lp_update(fund: dict[str, Any], sources: list[dict[str, Any
         if isinstance(latest, dict): status = latest.get("status", status)
         if status in {"done", "blocked"}: break
         await asyncio.sleep(min(1.5, max(0, deadline-asyncio.get_running_loop().time())))
-    history = await roundtable.call("get_folder_history", watcher_key, {"bank": bank, "path": path})
-    return {"connected": True, "task_id": task_id, "status": status, "sources": versions, "history": history_versions(history)}
+    history = await roundtable_files(watcher_key, bank, path)
+    return {"connected": True, "task_id": task_id, "status": status, "sources": versions, "history": history or []}
 
 
 def build_eval_events() -> list[dict[str, Any]]:
@@ -1186,7 +1267,7 @@ def build_eval_events() -> list[dict[str, Any]]:
 
 @app.get("/api/eval/events")
 def eval_event_ids() -> list[dict[str, Any]]:
-    fixture = DATA_DIR / "eval_events.json"
+    fixture = cache_file("eval_events.json")
     if not fixture.exists() or not json.loads(fixture.read_text(encoding="utf-8")):
         events = build_eval_events()
     else:

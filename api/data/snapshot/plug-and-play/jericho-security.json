@@ -1,0 +1,31 @@
+[
+  {
+    "id": 31306193,
+    "group_id": 5981623,
+    "title": "Go invests in AI cybersecurity company Jericho Security",
+    "url": "https://www.telecompaper.com/news/go-invests-in-ai-cybersecurity-company-jericho-security--1579071",
+    "publisher": "Telecompaper",
+    "published_date": "2026-08-05T07:43:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.6871,
+    "ai_summary": "Go Ventures, the venture capital arm of Maltese operator Go, has invested in Jericho Security, a New York-based cybersecurity company that develops AI tools to help organizations protect against social engineering attacks. The financial terms of the investment have not been disclosed. This represents a venture capital deployment by Go into the AI cybersecurity sector, targeting protection against emerging social engineering threats.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5187,
+    "entities": {
+      "person": []
+    }
+  }
+]

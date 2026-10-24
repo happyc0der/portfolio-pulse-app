@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "00005mb",
+    "product_category": "Digital Banking Services",
+    "match": {
+      "uuid": "00005mb",
+      "name": "N26",
+      "website": "https://n26.com",
+      "product_category": "Digital Banking Services",
+      "company_status": "private",
+      "akta_rank": 10434
+    }
+  },
+  "fetched_at": "2026-10-24T16:02:25.841915+00:00",
+  "credits_consumed": 0
+}

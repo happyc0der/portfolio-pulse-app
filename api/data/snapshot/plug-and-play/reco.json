@@ -1,0 +1,266 @@
+[
+  {
+    "id": 40791325,
+    "group_id": 14203126,
+    "title": "Reco raises USD $55 million with AT&T Ventures backing",
+    "url": "https://securitybrief.in/story/reco-raises-usd-55-million-with-at-t-ventures-backing",
+    "publisher": "Securitybrief",
+    "published_date": "2026-10-15T07:30:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Reco raised an additional $55 million with AT&T Ventures, bringing total funding to $140 million. The security software company will use the funds to expand sales, partnerships, and customer support as enterprises adopt AI agents. Gartner projects Fortune 500 firms will have over 150,000 agents by 2028.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "rich baich",
+        "ofer klein",
+        "vikram taneja",
+        "joseph gabriel lagonsin"
+      ]
+    }
+  },
+  {
+    "id": 40339378,
+    "group_id": 13948447,
+    "title": "The Third-Party Agent Problem: Why Security Built for AI You Chose Misses the Agents You Didn't",
+    "url": "https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html",
+    "publisher": "The Hacker News",
+    "published_date": "2026-10-10T11:00:00",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "The article argues that most third-party AI agents are invisible to identity infrastructure, creating a security gap. It cites 1,280 embedded AI products, with 282 behind single sign-on, and notes agents lack a decision point for governance. Reco's platform is presented as a solution for continuous agent discovery.",
+    "tags": [
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": true
+      },
+      {
+        "name": "Technology Adoption & Disruption",
+        "code": "II02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.0546,
+    "entities": {
+      "person": [
+        "patrick opet"
+      ]
+    }
+  },
+  {
+    "id": 39886872,
+    "group_id": 13522836,
+    "title": "Reco Joins Invitation-Only Microsoft for Startups Pegasus Program to Accelerate Enterprise Agent Security",
+    "url": "https://finance.yahoo.com/technology/ai/articles/reco-joins-invitation-only-microsoft-130300713.html",
+    "publisher": "Yahoo",
+    "published_date": "2026-10-06T13:03:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9273,
+    "ai_summary": "Reco, an agent security company, was accepted into the invitation-only Microsoft for Startups Pegasus Program. Its platform, built on the Reco Graph, unifies agent security, posture management, and threat detection, with over 1,000 detection controls and more than 1 million agents identified. The partnership aims to bring agent security to more Microsoft customers.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "ofer klein",
+        "tom davis"
+      ]
+    }
+  },
+  {
+    "id": 39548084,
+    "group_id": 12844599,
+    "title": "Reco secures USD 55 million as AT&T Ventures invests | The Paypers",
+    "url": "https://thepaypers.com/fraud-and-fincrime/news/reco-raises-usd-55-million-with-participation-from-att-ventures",
+    "publisher": "The Paypers",
+    "published_date": "2026-10-02T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Reco raised $55 million in additional funding, with AT&T Ventures, Forestay, and Quadrille Capital participating. The round brings total funding to $140 million, to be used for sales, partnerships, and customer support. The company expects enterprise agent adoption to grow, with Gartner forecasting over 150,000 agents per Fortune 500 firm by 2028.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "rich baich",
+        "ofer klein",
+        "vikram taneja"
+      ]
+    }
+  },
+  {
+    "id": 39116722,
+    "group_id": 12752081,
+    "title": "Reco Announces Partnership with ServiceNow to Extend AI Agent Security",
+    "url": "https://finance.yahoo.com/technology/ai/articles/reco-announces-partnership-servicenow-extend-130300854.html",
+    "publisher": "Yahoo",
+    "published_date": "2026-09-28T13:03:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9196,
+    "ai_summary": "Reco announced a partnership with ServiceNow to extend AI agent security for organizations using the ServiceNow AI Platform. The integration maps ServiceNow Otto agents into Reco's graph and runs over 170 posture checks, with findings routed back into ServiceNow as tickets. The integration is available now.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "zoe hillenmeyer",
+        "marc gendron"
+      ]
+    }
+  },
+  {
+    "id": 34143828,
+    "group_id": 10528935,
+    "title": "Shadow AI Has Already Infiltrated Enterprise Systems. The Numbers Show Why Control Is Slipping Away",
+    "url": "https://www.webpronews.com/shadow-ai-has-already-infiltrated-enterprise-systems-the-numbers-show-why-control-is-slipping-away/",
+    "publisher": "WebProNews",
+    "published_date": "2026-09-08T15:32:15",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Reco's State of Agent Security 2026 report finds 80% of AI tools are unsanctioned, with small and midsize businesses averaging 414 per 1,000 employees. IBM's 2025 data shows one in five organizations suffered a shadow AI breach, costing an average $670,000. The report warns that unmanaged AI agents create new attack paths, with 637 AI-related vulnerabilities identified since 2023.",
+    "tags": [
+      {
+        "name": "Cybersecurity Incidents",
+        "code": "RK05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": true,
+    "article_type": {
+      "code": "investigative",
+      "label": "Investigative"
+    },
+    "sentiment_score": 0.0014,
+    "entities": {
+      "person": [
+        "david chismon"
+      ]
+    }
+  },
+  {
+    "id": 33888772,
+    "group_id": 10277796,
+    "title": "Reco launches Browser Guard to curb shadow AI risks",
+    "url": "https://securitybrief.in/story/reco-launches-browser-guard-to-curb-shadow-ai-risks",
+    "publisher": "Securitybrief",
+    "published_date": "2026-09-04T07:00:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9446,
+    "ai_summary": "Reco launched Browser Guard, a browser-based security product for employee AI tool use, now generally available. It monitors prompts and agent activity, applying policy controls to prevent data exposure or unauthorized actions. The product targets shadow AI and agent ecosystem security, with over 280 integrations and 1,000 detection controls.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5116,
+    "entities": {
+      "person": [
+        "ofer klein",
+        "joseph gabriel lagonsin"
+      ]
+    }
+  },
+  {
+    "id": 33998385,
+    "group_id": 10468559,
+    "title": "Four in Five Enterprise AI Tools Lack IT Oversight -- Security Today",
+    "url": "https://securitytoday.com/articles/2026/08/31/four-in-five-enterprise-ai-tools-lack-it-oversight.aspx?admgarea=ht.videosurveillance",
+    "publisher": "Securitytoday",
+    "published_date": "2026-08-31T00:00:00",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Reco's 2026 report found 62% of 500 published AI tools can read local files and connect to the internet, creating data exfiltration risks. The analysis highlights that unsanctioned agents inherit user permissions, enabling unauthorized network traversal. Experts recommend embedding security policies into workflows rather than blocking AI usage.",
+    "tags": [
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": true
+      },
+      {
+        "name": "Cybersecurity Incidents",
+        "code": "RK05",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.0037,
+    "entities": {
+      "person": []
+    }
+  }
+]

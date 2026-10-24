@@ -1,0 +1,167 @@
+[
+  {
+    "id": 41733055,
+    "group_id": 15171370,
+    "title": "N26 appoints chief comms officer",
+    "url": "https://www.finextra.com/pressarticle/111386/n26-appoints-chief-comms-officer?utm_medium=rssfinextra&utm_source=finextrafeed",
+    "publisher": "Finextra",
+    "published_date": "2026-10-21T12:35:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "N26 appointed Michael Steen as Chief Communications Officer effective 1 January 2027. He previously served as Managing Director and Head of External Communications at Deutsche Bank. The appointment supports N26's focus on scaling its core European markets and launching its new signature banking experience, N26 Aura.",
+    "tags": [
+      {
+        "name": "C-Suite Appointments & Departures",
+        "code": "LG01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "michael steen",
+        "mike dargan",
+        "marc hess"
+      ]
+    }
+  },
+  {
+    "id": 40583822,
+    "group_id": 14025158,
+    "title": "N26 Names Banking Veteran Marc Hess as Chief Financial Officer",
+    "url": "https://financefeeds.com/n26-names-banking-veteran-marc-hess-as-chief-financial-officer/",
+    "publisher": "FinanceFeeds",
+    "published_date": "2026-10-13T17:29:35",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "N26 appointed Marc Hess as CFO, effective October 15, replacing Arnd Schwierholz. The bank reported €501.6 million revenue and €1.6 million net income in 2025, its first full-year profit. Hess will oversee expansion into payments and investment products under BaFin supervision.",
+    "tags": [
+      {
+        "name": "C-Suite Appointments & Departures",
+        "code": "LG01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.5878,
+    "entities": {
+      "person": [
+        "marc hess",
+        "arnd schwierholz",
+        "aytac aydin",
+        "maximilian tayenthal",
+        "jochen klöpper",
+        "mike dargan",
+        "valentin stalf",
+        "andreas dombret",
+        "dargan"
+      ]
+    }
+  },
+  {
+    "id": 40124623,
+    "group_id": 13723112,
+    "title": "N26 expands Flexible Cash Fund access to all membership tiers",
+    "url": "https://www.finextra.com/pressarticle/111199/n26-expands-flexible-cash-fund-access-to-all-membership-tiers?utm_medium=rssfinextra&utm_source=finextrafeed",
+    "publisher": "Finextra",
+    "published_date": "2026-10-08T14:22:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9098,
+    "ai_summary": "N26 expanded its Flexible Cash Fund to all membership tiers, offering yields up to 2.57% p.a. until January 2027. The fund, managed by Fidelity International, carries a low risk rating of 1 out of 7 and allows unlimited deposits and withdrawals.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.9935,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 39608927,
+    "group_id": 13291368,
+    "title": "Virtual credit cards in the Netherlands: best options for expats in 2026",
+    "url": "https://www.expatica.com/nl/finance/money-management/virtual-credit-cards-guide-2174827/",
+    "publisher": "Expatica",
+    "published_date": "2026-09-29T00:00:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.7797,
+    "ai_summary": "Virtual card options for Dutch expats are compared, with Wise, bunq, Revolut, and N26 highlighted. Wise is best for multi-currency spending, bunq for everyday Dutch banking, and Revolut and N26 for travel or secondary accounts. Traditional credit cards may still be needed for hotel deposits or car hire.",
+    "tags": [
+      {
+        "name": "Others",
+        "code": "OT01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.6787,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 35083178,
+    "group_id": 11299474,
+    "title": "N26: From a $9B Unicorn to a Profitable Bank",
+    "url": "https://www.startuprad.io/post/n26-europe-s-pioneering-neobank-berlin-s-billion-euro-bank-that-grew-up-first-profit-2025",
+    "publisher": "Startuprad.io Startup Podcast",
+    "published_date": "2026-09-07T00:00:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "N26, a Berlin-based digital bank, reported its first full-year net profit of €1.6 million in 2025 on €501.6 million revenue, after BaFin lifted a growth cap in June 2024. Its last primary valuation was $9 billion in October 2021, but secondary estimates now suggest a lower mark. The company is considering an IPO.",
+    "tags": [
+      {
+        "name": "Earnings Releases",
+        "code": "FR01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.667,
+    "entities": {
+      "person": [
+        "maximilian tayenthal",
+        "valentin stalf",
+        "mike dargan",
+        "jörn menninger",
+        "joern \"joe\" menninger"
+      ]
+    }
+  }
+]

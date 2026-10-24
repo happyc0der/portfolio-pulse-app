@@ -1,0 +1,271 @@
+[
+  {
+    "id": 42228323,
+    "group_id": 15397097,
+    "title": "Wealthfront (WLTH) Investor Alert: Johnson Fistel Investigates Post-IPO Disclosures",
+    "url": "https://menafn.com/1111850763/Wealthfront-WLTH-Investor-Alert-Johnson-Fistel-Investigates-Post-IPO-Disclosures",
+    "publisher": "Business & Financial",
+    "published_date": "2026-10-22T13:31:59",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Wealthfront's stock fell after Q3 net deposits dropped 64% to $1.57 billion and Q1 revenue rose 7% to $90.5 million. Johnson Fistel is investigating whether the company adequately disclosed the impact of declining interest rates and client behavior on its financials and IPO materials.",
+    "tags": [
+      {
+        "name": "Compliance & Reporting Updates",
+        "code": "RC04",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "investigative",
+      "label": "Investigative"
+    },
+    "sentiment_score": 0.0275,
+    "entities": {
+      "person": [
+        "james baker",
+        "frank j. johnson"
+      ]
+    }
+  },
+  {
+    "id": 41970185,
+    "group_id": 15241176,
+    "title": "Wealthfront approves additional $150M buyback, raising repurchase capacity to $250M",
+    "url": "https://www.tradingview.com/news/tradingview:db9b1c13457c6:0-wealthfront-approves-additional-150m-buyback-raising-repurchase-capacity-to-250m/",
+    "publisher": "TradingView",
+    "published_date": "2026-10-21T21:13:01",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Wealthfront's board approved an additional $150 million common stock repurchase authorization, raising the program to $250 million. About $18.3 million of the original $100 million remains available as of October 20, 2026. Repurchases may be funded with existing cash and cash equivalents.",
+    "tags": [
+      {
+        "name": "Shareholder Returns (Buybacks & Dividends)",
+        "code": "CM08",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 41359706,
+    "group_id": 14822086,
+    "title": "Financial Contrast: SEI Investments (NASDAQ:SEIC) vs. Wealthfront (NASDAQ:WLTH)",
+    "url": "https://www.americanbankingnews.com/2026/10/19/financial-contrast-sei-investments-nasdaqseic-vs-wealthfront-nasdaqwlth.html",
+    "publisher": "American Banking and Market News",
+    "published_date": "2026-10-19T09:16:44",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9775,
+    "ai_summary": "SEI Investments outperforms Wealthfront on 12 of 13 factors, including profitability and analyst ratings. SEI has higher revenue ($2.45B vs $364.99M) and a stronger consensus rating, with a target price of $123.67 versus $12.29 for Wealthfront.",
+    "tags": [
+      {
+        "name": "Daily Stock Market News",
+        "code": "CM12",
+        "is_primary": true
+      },
+      {
+        "name": "Market Share & Positioning",
+        "code": "SD05",
+        "is_primary": false
+      },
+      {
+        "name": "Guidance & Forecast Revisions",
+        "code": "FR05",
+        "is_primary": false
+      },
+      {
+        "name": "Earnings Releases",
+        "code": "FR01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.9056,
+    "entities": {
+      "person": [
+        "ceo"
+      ]
+    }
+  },
+  {
+    "id": 40879777,
+    "group_id": 14359287,
+    "title": "Critical Analysis: Wealthfront (NASDAQ:WLTH) vs. Carlyle Secured Lending (NASDAQ:CGBD)",
+    "url": "https://www.americanbankingnews.com/2026/10/16/critical-analysis-wealthfront-nasdaqwlth-vs-carlyle-secured-lending-nasdaqcgbd.html",
+    "publisher": "American Banking and Market News",
+    "published_date": "2026-10-16T01:16:51",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "A comparison of Carlyle Secured Lending and Wealthfront finds Wealthfront more favorable, with a consensus target price of $12.29 versus $11.33 for Carlyle. Wealthfront shows higher probable upside at 9.89% versus 6.32%, and analysts beat Carlyle on 8 of 13 factors.",
+    "tags": [
+      {
+        "name": "Guidance & Forecast Revisions",
+        "code": "FR05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "review",
+      "label": "Review"
+    },
+    "sentiment_score": 0.9507,
+    "entities": {
+      "person": [
+        "ceo"
+      ]
+    }
+  },
+  {
+    "id": 40699687,
+    "group_id": 13413116,
+    "title": "Wealthfront (NASDAQ:WLTH) Shares Up 3.4% - Should You Buy?",
+    "url": "https://www.marketbeat.com/instant-alerts/price-wealthfront-nasdaq-wlth-shares-up-34-should-you-buy-2026-10-14/",
+    "publisher": "MarketBeat",
+    "published_date": "2026-10-14T18:21:34",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9765,
+    "ai_summary": "Wealthfront shares rose 3.4% to $10.4450 on Wednesday, with mid-day volume down 69% from average. The company reported Q2 EPS of $0.10, beating estimates, but revenue grew only 0.9% year-over-year. Analysts rate the stock a Hold with a consensus target of $12.29.",
+    "tags": [
+      {
+        "name": "Daily Stock Market News",
+        "code": "CM12",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.656,
+    "entities": {
+      "person": [
+        "lauren lin",
+        "kal iyer"
+      ]
+    }
+  },
+  {
+    "id": 40299504,
+    "group_id": 13885285,
+    "title": "Wealthfront (WLTH) Draws Scrutiny Over Post IPO Disclosures",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/wealthfront-wlth-draws-scrutiny-over-171604572.html",
+    "publisher": "Yahoo",
+    "published_date": "2026-10-10T17:16:04",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Law firm Johnson Fistel is investigating Wealthfront's post-IPO disclosures, focusing on asset flows, interest rate sensitivity, operating performance, and home lending activity. The probe examines possible breaches of federal securities laws, which could affect the firm's referral-driven growth narrative. A clean outcome would reduce overhang, while findings could undermine client trust.",
+    "tags": [
+      {
+        "name": "Compliance & Reporting Updates",
+        "code": "RC04",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": true,
+    "article_type": {
+      "code": "investigative",
+      "label": "Investigative"
+    },
+    "sentiment_score": 0.2755,
+    "entities": {
+      "person": [
+        "charles schwab"
+      ]
+    }
+  },
+  {
+    "id": 40301101,
+    "group_id": 11727840,
+    "title": "Best Fintech Stocks To Watch Now - October 10th",
+    "url": "https://www.marketbeat.com/instant-alerts/list-best-fintech-stocks-to-watch-now-october-10th-2026-10-10/",
+    "publisher": "MarketBeat",
+    "published_date": "2026-10-10T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.978,
+    "ai_summary": "MarketBeat's stock screener identified seven fintech stocks—Rocket Companies, Kaspi.kz, OLB Group, IDT, Wealthfront, Netcapital, and DeFi Development—as having the highest dollar trading volume in recent days. The companies span mortgage lending, payments, e-commerce, and crypto mining, with risks from competition, regulation, and cybersecurity.",
+    "tags": [
+      {
+        "name": "Daily Stock Market News",
+        "code": "CM12",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 40276575,
+    "group_id": 10447129,
+    "title": "Wealthfront Advisers LLC Buys 5,985 Shares of Microsoft Corporation $MSFT",
+    "url": "https://www.marketbeat.com/instant-alerts/filing-wealthfront-advisers-llc-buys-5985-shares-of-microsoft-corporation-msft-2026-10-10/",
+    "publisher": "MarketBeat",
+    "published_date": "2026-10-10T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.989,
+    "ai_summary": "Wealthfront Advisers increased its Microsoft stake by 0.8% in Q2, buying 5,985 shares to hold 790,104 shares worth $294.7 million. The stock is its 18th largest position, and other funds also raised stakes. Microsoft reported Q2 EPS of $4.74, beating estimates, and declared a $0.98 quarterly dividend.",
+    "tags": [
+      {
+        "name": "Institutional Flows & Positioning",
+        "code": "MD02",
+        "is_primary": true
+      },
+      {
+        "name": "Secondary Transactions",
+        "code": "CM07",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "paul allen",
+        "judson althoff",
+        "satya nadella",
+        "bill gates"
+      ]
+    }
+  }
+]

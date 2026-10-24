@@ -1,0 +1,148 @@
+[
+  {
+    "id": 42224858,
+    "group_id": 15386925,
+    "title": "Resemble AI Ad Study Finds 1 In 11 Ads On Meta Platforms Contain AI-Generated Media, Many Featuring UGC-Style“Reviews”",
+    "url": "https://menafn.com/1111850123/Resemble-AI-Ad-Study-Finds-1-In-11-Ads-On-Meta-Platforms-Contain-AI-Generated-Media-Many-Featuring-UGC-StyleReviews",
+    "publisher": "Business & Financial",
+    "published_date": "2026-10-22T12:31:48",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Resemble AI's 2026 Synthetic Advertising Report scanned 37,768 ads from 509 brands, finding 8.9% contained AI-generated media, with 70% photoreal and only 0.06% disclosing AI use. The study highlights UGC-style reviews and audio-only fakes, urging brands to watermark and label AI content.",
+    "tags": [
+      {
+        "name": "Brand & Marketing Initiatives",
+        "code": "SD07",
+        "is_primary": true
+      },
+      {
+        "name": "Reputational Damage",
+        "code": "RK06",
+        "is_primary": false
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      },
+      {
+        "name": "Technology Adoption & Disruption",
+        "code": "II02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "investigative",
+      "label": "Investigative"
+    },
+    "sentiment_score": 0.006,
+    "entities": {
+      "person": [
+        "elliot choy",
+        "zohaib ahmed",
+        "clint bagley"
+      ]
+    }
+  },
+  {
+    "id": 33157211,
+    "group_id": 9802872,
+    "title": "Nepal floods: Is the footage you’re seeing real or AI?",
+    "url": "https://newswav.com/article/nepal-floods-is-the-footage-you-re-seeing-real-or-ai-A2608_v0f8tb",
+    "publisher": "Malaysia Latest News",
+    "published_date": "2026-08-28T12:00:00",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "The Independent reported that viral footage of Nepal's ongoing floods is spreading across social media, and used deepfake detection tools including Resemble AI to distinguish real from AI-generated clips. Alan Turing Institute's Sam Stockwell said the main incentive for such content is capturing attention and advertising revenue, creating a financial opportunity.",
+    "tags": [
+      {
+        "name": "Others",
+        "code": "OT01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.0691,
+    "entities": {
+      "person": [
+        "sam stockwell"
+      ]
+    }
+  },
+  {
+    "id": 35261838,
+    "group_id": 7753673,
+    "title": "Resemble AI Launches DETECT-World, the First Deepfake Detector Built on World Model Architecture",
+    "url": "https://www.einpresswire.com/article/933504344/resemble-ai-launches-detect-world-the-first-deepfake-detector-built-on-world-model-architecture",
+    "publisher": "EIN Presswire",
+    "published_date": "2026-08-12T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Resemble AI launched DETECT-World, a deepfake detector built on world-model architecture that checks physical reality. The model achieves 99.5% audio accuracy and covers 54 languages, and is available via real-time streaming and batch APIs. It is designed to detect synthetic identity fraud, claims review, and other use cases.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.9943,
+    "entities": {
+      "person": [
+        "tomaz levak",
+        "zohaib ahmed",
+        "clint bagley"
+      ]
+    }
+  },
+  {
+    "id": 40556110,
+    "group_id": 14123108,
+    "title": "Best voice cloning APIs for developers (2026)",
+    "url": "https://www.veed.io/learn/best-voice-cloning-apis",
+    "publisher": "Veed",
+    "published_date": "2026-07-29T14:55:55",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.769,
+    "ai_summary": "A 2025 guide compares voice cloning APIs for developers, ranking them by use case. ElevenLabs leads on quality and language breadth, Cartesia on real-time latency, and Resemble AI on enterprise security. VEED's lip sync API is recommended for video output.",
+    "tags": [
+      {
+        "name": "Market Share & Positioning",
+        "code": "SD05",
+        "is_primary": true
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  }
+]

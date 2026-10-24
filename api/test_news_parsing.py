@@ -1,4 +1,4 @@
-from api.main import deduplicate_articles, sanitize_article
+from api.main import article_is_relevant, deduplicate_articles, filter_company_articles, sanitize_article, sum_credits
 
 
 def article(**kwargs):
@@ -40,3 +40,18 @@ def test_deduplicates_group_prefer_english_then_score_and_same_day_tag_translati
     other_translation = article(id="de", group_id="different", original_language="DE", published_date="2026-10-15T08:00:00", newsworthiness_score=0.9)
     result = deduplicate_articles([translated, english, other_translation])
     assert [item["id"] for item in result] == ["en"]
+
+
+def test_mislabelled_non_english_titles_are_filtered():
+    from api.main import looks_non_english, filter_company_articles
+    assert looks_non_english("Starcloud y Star Catcher: la carrera por los centros de datos en el espacio")
+    assert looks_non_english("融资周报 | 英伟达收购开源AI平台Hugging Face")
+    assert not looks_non_english("Startups that die young: why founders quit")
+    assert not looks_non_english("Eliyan draws takeover interest months after $1 billion valuation")
+    company = {"name": "Starcloud", "website": "https://www.starcloud.com"}
+    kept, irrelevant, language = filter_company_articles(company, [
+        {"title": "Starcloud y Star Catcher: la carrera por los centros de datos", "ai_summary": "", "original_language": "EN"},
+        {"title": "Starcloud raises $250M", "ai_summary": "", "original_language": "EN"},
+    ])
+    assert [a["title"] for a in kept] == ["Starcloud raises $250M"]
+    assert language == 1 and irrelevant == 0

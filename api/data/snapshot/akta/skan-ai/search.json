@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "0000b5f",
+    "product_category": "Ai Business Process Automation",
+    "match": {
+      "uuid": "0000b5f",
+      "name": "skan.ai",
+      "website": "https://www.skan.ai",
+      "product_category": "Ai Business Process Automation",
+      "company_status": "private",
+      "akta_rank": 12567
+    }
+  },
+  "fetched_at": "2026-10-24T16:02:39.311184+00:00",
+  "credits_consumed": 0
+}

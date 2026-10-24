@@ -1,0 +1,81 @@
+[
+  {
+    "id": 31618925,
+    "group_id": 6545689,
+    "title": "AI Investor and CEO Rob May Discusses the Value of the Post-Model World Thesis",
+    "url": "https://hackernoon.com/ai-investor-and-ceo-rob-may-discusses-the-value-of-the-post-model-world-thesis?source=rss",
+    "publisher": "HackerNoon",
+    "published_date": "2026-08-10T08:00:02",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.7801,
+    "ai_summary": "AI investor and CEO Rob May has developed a \"Post-Model World\" thesis arguing that AI models are becoming commoditized and losing value relative to the broader systems they power. To test this theory, May founded Neurometric, which explores what he calls \"model fragmentation\"—using multiple smaller systems rather than a single large one. May has invested in over 75 AI companies and continues to publish his theories through his Substack newsletter \"Investing in AI\" and an upcoming book.",
+    "tags": [
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": true
+      },
+      {
+        "name": "Executive Commentary & Interviews",
+        "code": "LG05",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5184,
+    "entities": {
+      "person": [
+        "rob may",
+        "jon stojan"
+      ]
+    }
+  },
+  {
+    "id": 31214929,
+    "group_id": 5519824,
+    "title": "Why An AI Infrastructure Founder Still Thinks Like An Economist",
+    "url": "https://www.benzinga.com/partner/general/26/08/60885380/why-ai-infrastructure-founder-still-thinks-economist",
+    "publisher": "Benzinga",
+    "published_date": "2026-08-03T18:49:14",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.7587,
+    "ai_summary": "Calvin Cooper, co-founder and COO of Neurometric AI, is applying an economist's framework on market concentration to the AI infrastructure sector, warning that enterprises increasingly relying on a narrow set of AI model providers face vendor lock-in risks that could affect pricing, operations, and strategic flexibility. Neurometric AI is developing model routing infrastructure that directs workloads across different AI providers based on cost, performance, and task requirements, allowing enterprises to manage dependency as a portfolio decision rather than a fixed commitment. Cooper's background includes roles at The Carlton Group, advisory work with the Milken Institute, and leading Rhove through its Nasdaq direct listing, informing his focus on where control sits and how value moves in emerging technology markets.",
+    "tags": [
+      {
+        "name": "Technology Adoption & Disruption",
+        "code": "II02",
+        "is_primary": true
+      },
+      {
+        "name": "Competitive Threats",
+        "code": "II04",
+        "is_primary": false
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.4912,
+    "entities": {
+      "person": [
+        "calvin cooper",
+        "benzinga"
+      ]
+    }
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "id": 41012795,
+    "group_id": 14474982,
+    "title": "Your Business Insurance Never Priced AI. Now It’s Writing It Out",
+    "url": "https://businessmodelanalyst.com/ai-insurance-gap-silent-ai-exclusions/",
+    "publisher": "Business Model Analyst",
+    "published_date": "2026-10-16T12:46:42",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Insurers are adding AI exclusions to standard policies, leaving AI liability on deployers. Specialist policies like Armilla's $25 million limit and Lloyd's-backed products are emerging, while a federal backstop is proposed. Market projections for AI insurance premiums range from $4.77 billion to $500 billion by 2030.",
+    "tags": [
+      {
+        "name": "Policy & Legislative Changes",
+        "code": "RC02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.0247,
+    "entities": {
+      "person": [
+        "nick studer",
+        "john doyle",
+        "kevin kalinich",
+        "aman gour",
+        "ian adams",
+        "gallagher re"
+      ]
+    }
+  },
+  {
+    "id": 40008899,
+    "group_id": 13632403,
+    "title": "Does AI need its own insurance market? Brokers are already finding out",
+    "url": "https://www.insurancebusinessmag.com/us/news/cyber/does-ai-need-its-own-insurance-market-brokers-are-already-finding-out-592662.aspx",
+    "publisher": "Insurance Business America",
+    "published_date": "2026-10-07T13:52:34",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Brokers are increasingly asked whether AI needs its own insurance market, with a poll showing half expect AI-specific insurance to become a major line. Standalone AI policies like Armilla AI's US$25 million cover and Munich Re's aiSure are emerging, while others add AI liability to existing policies. Brokers face ambiguity from silent AI coverage in cyber and technology policies.",
+    "tags": [
+      {
+        "name": "Sector Outlook & Forecasts",
+        "code": "MM07",
+        "is_primary": true
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.4971,
+    "entities": {
+      "person": [
+        "keith savino",
+        "jennifer wilson"
+      ]
+    }
+  },
+  {
+    "id": 34911932,
+    "group_id": 11033349,
+    "title": "Five worthy reads: The next big insurance market no one is talking about yet",
+    "url": "https://www.manageengine.com/blog/general/the-next-big-insurance-market-no-one-is-talking-about-yet-hallucination-insurance.html",
+    "publisher": "ManageEngine",
+    "published_date": "2026-09-11T17:30:00",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "AI hallucination insurance is emerging as a market, with Armilla launching a policy covering legal claims from AI errors. AI-related lawsuits in the US grew 978% between 2021 and 2025, and the Florida Supreme Court set new rules for AI-assisted filings. The article argues conventional insurance fails to cover these risks.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.1211,
+    "entities": {
+      "person": [
+        "p. kevin castel"
+      ]
+    }
+  }
+]

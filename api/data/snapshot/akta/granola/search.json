@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "000024b",
+    "product_category": "Ai Meeting Transcription Software",
+    "match": {
+      "uuid": "000024b",
+      "name": "Granola",
+      "website": "https://www.granola.ai",
+      "product_category": "Ai Meeting Transcription Software",
+      "company_status": "private",
+      "akta_rank": 31264
+    }
+  },
+  "fetched_at": "2026-10-24T16:02:50.463409+00:00",
+  "credits_consumed": 0
+}

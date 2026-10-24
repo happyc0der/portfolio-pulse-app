@@ -1,0 +1,69 @@
+[
+  {
+    "id": 39897736,
+    "group_id": 13532391,
+    "title": "Archetype AI Builds Momentum in Physical AI with Fast Company Recognition and Major Industry Speaking Engagements",
+    "url": "https://www.financialcontent.com/article/bizwire-2026-10-6-archetype-ai-builds-momentum-in-physical-ai-with-fast-company-recognition-and-major-industry-speaking-engagements",
+    "publisher": "FinancialContent Business Page",
+    "published_date": "2026-10-06T15:56:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Archetype AI's Newton world model was named to Fast Company's Next Big Things in Tech list. CEO Ivan Poupyrev will speak at TechCrunch Disrupt and Long Horizon summits in October. The company aims to bring AI intelligence to existing machines and infrastructure.",
+    "tags": [
+      {
+        "name": "Awards, Rankings & Recognitions",
+        "code": "SD11",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "ivan poupyrev",
+        "ashish kapoor",
+        "samir menon",
+        "eric chan",
+        "ian rountree",
+        "ethan batraski"
+      ]
+    }
+  },
+  {
+    "id": 32136253,
+    "group_id": 9103012,
+    "title": "The Biggest Physical AI Opportunity Isn't A Robot",
+    "url": "https://www.forbes.com/councils/forbestechcouncil/2026/08/14/the-biggest-physical-ai-opportunity-isnt-a-robot/",
+    "publisher": "Forbes",
+    "published_date": "2026-08-14T12:15:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.8404,
+    "ai_summary": "Brandon Barbello, co-founder of Archetype AI, argues that the primary opportunity in physical AI lies in applying intelligent software to existing infrastructure rather than developing new humanoid robots. The article highlights how general-purpose models can process diverse sensor data from assets like data centers and wind farms to optimize operations and detect anomalies without requiring custom training for each site. ",
+    "tags": [
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.8843,
+    "entities": {
+      "person": [
+        "brandon barbello"
+      ]
+    }
+  }
+]

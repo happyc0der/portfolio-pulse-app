@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "000039n",
+    "product_category": "Algorithmic Problem Solving Software",
+    "match": {
+      "uuid": "000039n",
+      "name": "Hugging Face",
+      "website": "https://huggingface.co",
+      "product_category": "Algorithmic Problem Solving Software",
+      "company_status": "private",
+      "akta_rank": 2118
+    }
+  },
+  "fetched_at": "2026-10-24T16:02:50.371303+00:00",
+  "credits_consumed": 0
+}

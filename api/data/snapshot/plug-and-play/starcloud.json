@@ -1,0 +1,339 @@
+[
+  {
+    "id": 40622978,
+    "group_id": 14181322,
+    "title": "We’re Already Building Data Centers In Space",
+    "url": "https://www.forbes.com/sites/johnwerner/2026/10/13/were-already-building-data-centers-in-space/",
+    "publisher": "Forbes",
+    "published_date": "2026-10-14T02:41:30",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.7771,
+    "ai_summary": "Starcloud's Philip Johnston discussed orbital data centers and Dyson swarms in a podcast, including an FCC filing for 88,000 satellites yielding about 20 gigawatts. He also proposed dismantling the Moon or Mercury for materials and mentioned the Fermi Explorer mission to showcase galactic settlement.",
+    "tags": [
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": true
+      },
+      {
+        "name": "Policy & Legislative Changes",
+        "code": "RC02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.8811,
+    "entities": {
+      "person": [
+        "philip johnston",
+        "alex wissner-gross",
+        "johnston",
+        "alex"
+      ]
+    }
+  },
+  {
+    "id": 40071812,
+    "group_id": 12313175,
+    "title": "Data Centers In Space: The Opportunity Is Real",
+    "url": "https://seekingalpha.com/article/4952693-data-centers-in-space-opportunity-is-real?source=feed_all_articles",
+    "publisher": "Seeking Alpha",
+    "published_date": "2026-10-08T07:15:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9944,
+    "ai_summary": "Orbital data centers could alleviate terrestrial power and cooling constraints for AI, but launch costs must fall over 90% to become viable. Google estimates viability at $200 per kilogram, with SpaceX's Starship potentially reaching that by the mid-2030s. Early deployments like Starcloud's 2025 mission could establish a market for space-native computing.",
+    "tags": [
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": true
+      },
+      {
+        "name": "Technology Adoption & Disruption",
+        "code": "II02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "elon musk",
+        "trump"
+      ]
+    }
+  },
+  {
+    "id": 39400191,
+    "group_id": 13026393,
+    "title": "Starcloud AI’s Firefly Satellite Brings Real-Time Orbital AI Computing, Cuts Bandwidth 80%",
+    "url": "https://www.webpronews.com/starcloud-ais-firefly-satellite-brings-real-time-orbital-ai-computing-cuts-bandwidth-80/",
+    "publisher": "WebProNews",
+    "published_date": "2026-10-01T10:22:15",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9193,
+    "ai_summary": "Starcloud AI's Firefly satellite processes data in orbit using radiation-hardened processors, reducing data transmission by over 80%. The first satellite in the constellation runs neural networks for tasks like land-use classification. The company plans to expand the constellation to dozens of satellites within three years.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 39339225,
+    "group_id": 12965365,
+    "title": "Industrial Shares Fell as Bond Yields Hovered Near Multiyear Highs -- Industrials Roundup",
+    "url": "https://www.marketscreener.com/news/industrial-shares-fell-as-bond-yields-hovered-near-multiyear-highs-industrials-roundup-ce785ad3db8bff24",
+    "publisher": "MarketScreener",
+    "published_date": "2026-09-30T21:00:23",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Industrial shares fell as bond yields stayed near multiyear highs, with Boeing winning a $20 billion Navy contract for next-generation jets. Ford's F-150 production halted for a week due to a supplier issue, and Nidec swung to a heavy annual net loss from a $4 billion impairment. Firefly Aerospace advanced after disclosing a new commercial payload agreement with Starcloud.",
+    "tags": [
+      {
+        "name": "Daily Stock Market News",
+        "code": "CM12",
+        "is_primary": true
+      },
+      {
+        "name": "Market Indices Performance",
+        "code": "MD01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.0242,
+    "entities": {
+      "person": [
+        "paulo trevisani"
+      ]
+    }
+  },
+  {
+    "id": 39321325,
+    "group_id": 12924551,
+    "title": "Firefly Aerospace stock rises on Starcloud AI computing deal",
+    "url": "https://www.investing.com/news/stock-market-news/firefly-aerospace-stock-rises-on-starcloud-ai-computing-deal-4925610",
+    "publisher": "Investing.com",
+    "published_date": "2026-09-30T16:32:03",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9883,
+    "ai_summary": "Firefly Aerospace shares rose 5.3% after announcing a commercial payload agreement with Starcloud to demonstrate AI computing in lunar orbit. The SC-1L payload will fly aboard Elytra, processing data from Firefly's Solux vision system and transmitting results to Earth. The demonstration is scheduled for Firefly's third lunar mission, targeted no earlier than 2028.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "ezra feilden",
+        "ray allensworth"
+      ]
+    }
+  },
+  {
+    "id": 38740366,
+    "group_id": 12162404,
+    "title": "Starcloud wants to mine Bitcoin in space, if it can figure out how to cool the hardware",
+    "url": "https://www.techspot.com/news/113942-nvidia-backed-starcloud-wants-first-mine-bitcoin-space.html",
+    "publisher": "TechSpot",
+    "published_date": "2026-09-22T15:38:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Starcloud plans to mine Bitcoin in space, launching ASICs aboard Starcloud-2 in early 2027. CEO Philip Johnston estimates a B200 GPU costs about $30,000 per kilowatt versus $1,000 for an ASIC, but cooling remains a challenge. The startup's success depends on launch and cooling costs and ASIC profitability.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.4792,
+    "entities": {
+      "person": [
+        "philip johnston"
+      ]
+    }
+  },
+  {
+    "id": 34112104,
+    "group_id": 10543329,
+    "title": "Starcloud wants to mine bitcoin in space — what could go wrong?",
+    "url": "https://protos.com/starcloud-wants-to-mine-bitcoin-in-space-what-could-go-wrong/",
+    "publisher": "Protos",
+    "published_date": "2026-09-07T17:59:39",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Starcloud, a space data center firm, raised nearly $500 million for a plan to mine Bitcoin in orbit. The article argues the idea is impractical due to launch costs, heat dissipation, and radiation, and that even partial success would take over a decade and cost far more than the funding raised.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.0057,
+    "entities": {
+      "person": [
+        "philip johnston"
+      ]
+    }
+  },
+  {
+    "id": 34095409,
+    "group_id": 10383663,
+    "title": "U.S. Commercial Launch and Satellite Operators Withdraw from European Space Summit Following White House Interventions – SatNews",
+    "url": "https://satnews.com/2026/09/06/u-s-commercial-launch-and-satellite-operators-withdraw-from-european-space-summit-following-white-house-interventions/",
+    "publisher": "Satnews",
+    "published_date": "2026-09-06T23:02:19",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "On September 3, 2026, SpaceX, Blue Origin, Stoke Space, and Starcloud withdrew from the European Space Summit in Paris on September 9–10. The withdrawals follow White House interventions over EU spectrum access, launch procurement, and industrial policies. The summit will now focus on European contractors and ESA leadership.",
+    "tags": [
+      {
+        "name": "Policy & Legislative Changes",
+        "code": "RC02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.0027,
+    "entities": {
+      "person": [
+        "emmanuel macron"
+      ]
+    }
+  },
+  {
+    "id": 33690850,
+    "group_id": 10257137,
+    "title": "Starcloud: From GPUs in Space to an Odyssey Over 80,000 Years to Alpha Centauri",
+    "url": "https://cxotoday.com/ai/starcloud-from-gpus-in-space-to-an-odyssey-over-80000-years-to-alpha-centauri/",
+    "publisher": "CXOToday.com",
+    "published_date": "2026-09-02T06:36:38",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.8138,
+    "ai_summary": "Starcloud, a datacentre satellite company, announced a non-profit mission to send a 1kg spacecraft to Alpha Centauri, a journey taking 80,000 years. The mission, costing about $15 million and launching in 2029, would be deemed successful if it reaches 99% of the way. The company seeks partners and vendors to build the craft.",
+    "tags": [
+      {
+        "name": "Operational Milestones",
+        "code": "SD04",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5011,
+    "entities": {
+      "person": [
+        "elon musk",
+        "adi oltean",
+        "ezra feilden",
+        "mark zuckerberg",
+        "philip johnston",
+        "garret jameson",
+        "jules verne",
+        "yuri milner"
+      ]
+    }
+  },
+  {
+    "id": 33563298,
+    "group_id": 10111477,
+    "title": "Want to Help Fund an 80,000-Year Journey? Nonprofit Wants to Send Space Probe to Alpha Centauri",
+    "url": "https://www.pcmag.com/news/80000-year-journey-nonprofit-wants-to-send-space-probe-to-alpha-centauri",
+    "publisher": "PCMag",
+    "published_date": "2026-09-01T15:42:23",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.8175,
+    "ai_summary": "A nonprofit led by Starcloud executives announced the Fermi Explorer mission to send a probe to Alpha Centauri, seeking donations under $15 million. The craft will use solar-electric propulsion and gravity assists, with a 50% success chance, and aims to launch before 2029.",
+    "tags": [
+      {
+        "name": "Others",
+        "code": "OT01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.8704,
+    "entities": {
+      "person": [
+        "jeff thornburg",
+        "rob meyerson",
+        "philip johnston"
+      ]
+    }
+  }
+]

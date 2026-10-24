@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "00sosv3",
+    "product_category": "",
+    "match": {
+      "uuid": "00sosv3",
+      "name": "Unternet",
+      "website": "https://unternet.co/",
+      "product_category": "",
+      "company_status": "private",
+      "akta_rank": 5868940
+    }
+  },
+  "fetched_at": "2026-10-24T16:03:10.862921+00:00",
+  "credits_consumed": 0
+}

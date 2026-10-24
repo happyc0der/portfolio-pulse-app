@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "0000g5t",
+    "product_category": "AI development tools",
+    "match": {
+      "uuid": "0000g5t",
+      "name": "Nomic",
+      "website": "http://nomic.ai",
+      "product_category": "AI development tools",
+      "company_status": "private",
+      "akta_rank": 95028
+    }
+  },
+  "fetched_at": "2026-10-24T16:02:56.760400+00:00",
+  "credits_consumed": 0
+}

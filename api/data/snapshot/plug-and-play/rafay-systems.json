@@ -1,0 +1,377 @@
+[
+  {
+    "id": 35087072,
+    "group_id": 10385379,
+    "title": "Sharon AI signs five-year Rafay Systems orchestration agreement",
+    "url": "https://www.verdict.co.uk/sharon-ai-rafay-systems-orchestration/",
+    "publisher": "Verdict",
+    "published_date": "2026-09-07T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9806,
+    "ai_summary": "Sharon AI signed a five-year agreement to use Rafay Systems as a centralised orchestration layer for its AI Factory environments. The platform will standardise provisioning, governance, and monitoring, supporting up to 150,000 GPUs over the term. The deal follows recent $373m and $1.32bn cloud computing contracts.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "james manning",
+        "haseeb budhani"
+      ]
+    }
+  },
+  {
+    "id": 33875761,
+    "group_id": 10385374,
+    "title": "Sharon AI Partners with Rafay Systems for Scalable AI Infrastructure Management",
+    "url": "https://third-news.com/article/9a39e75c-a851-11f1-99e7-9ca3ba08e13f",
+    "publisher": "Third News",
+    "published_date": "2026-09-04T11:13:05",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.997,
+    "ai_summary": "Sharon AI Holdings and Rafay Systems signed a five-year partnership to use Rafay's orchestration platform for Sharon AI's AI Factory environments. The agreement aims to standardize provisioning, governance, and monitoring across locations, supporting expansion in Asia-Pacific. The architecture is designed to orchestrate up to 150,000 GPUs over the term.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "james manning",
+        "haseeb budhani"
+      ]
+    }
+  },
+  {
+    "id": 33088984,
+    "group_id": 9755821,
+    "title": "Rafay Systems Receives NVIDIA-Certified Hypervisors Accreditation for AI Infrastructure",
+    "url": "https://third-news.com/article/d0812854-a223-11f1-8b65-9ca3ba08e13f",
+    "publisher": "Third News",
+    "published_date": "2026-08-27T14:30:13",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Rafay Systems announced that its Virtual Machines-as-a-Service offering has been certified by NVIDIA under the NVIDIA-Certified Hypervisors program, covering HGX systems and NVL72 rack-scale infrastructure. CEO Haseeb Budhani said the certification validates the platform's governance and multi-tenancy capabilities for AI workloads. Rafay is a member of NVIDIA Inception.",
+    "tags": [
+      {
+        "name": "Regulatory Approvals & Certifications",
+        "code": "RC01",
+        "is_primary": true
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "haseeb budhani"
+      ]
+    }
+  },
+  {
+    "id": 31802409,
+    "group_id": 6763651,
+    "title": "MiTAC Computing Showcases Diversified Infra for Agentic Workloads at OCP APAC Summit",
+    "url": "https://en.prnasia.com/story/543762-0.shtml",
+    "publisher": "PR Newswire APAC",
+    "published_date": "2026-08-12T07:33:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9403,
+    "ai_summary": "MiTAC Computing showcased its diversified rack-scale infrastructure for Agentic AI workloads at the OCP APAC Summit in Taipei, premiering new OCP-compliant HPC servers developed in collaboration with AMD. The company introduced the C2810Z6 and C2610Z6 compute platforms powered by 6th Gen AMD EPYC CPUs, alongside comprehensive liquid-cooled rack solutions designed to support high-density GPU clusters and multi-agent reasoning loops. MiTAC also highlighted partnerships with DDN, Rafay, and Canonical to provide a full-stack 'AI Factory' ecosystem integrating storage, governance, and orchestration. ",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      },
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 30605469,
+    "group_id": 4771309,
+    "title": "Exclusive: Upwind adds context scanning for AI agents as AI DR hits general availability",
+    "url": "https://siliconangle.com/2026/07/30/multi-tenancy-expands-secure-enterprise-ai-infrastructure-roboticsaiinfraleaders/",
+    "publisher": "SiliconANGLE",
+    "published_date": "2026-07-30T14:25:51",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9586,
+    "ai_summary": "Protopia AI Inc. and Rafay Systems Inc. announced a partnership to combine multi-tenant token delivery with upstream data protection for enterprise AI infrastructure, enabling providers to monetize shared GPU capacity while keeping enterprise context private.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      },
+      {
+        "name": "Business-Model Evolution",
+        "code": "II03",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "john furrier",
+        "eiman ebrahimi",
+        "haseeb budhani",
+        "dave vellante"
+      ]
+    }
+  },
+  {
+    "id": 30542265,
+    "group_id": 6015058,
+    "title": "Aolani & Rafay deploy NVIDIA DSX OS on GB200 NVL72",
+    "url": "https://datacentrenews.in/story/aolani-rafay-deploy-nvidia-dsx-os-on-gb200-nvl72",
+    "publisher": "Datacentrenews",
+    "published_date": "2026-07-29T16:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.8964,
+    "ai_summary": "Aolani and Rafay have deployed NVIDIA DSX OS on NVIDIA GB200 NVL72 infrastructure in what they describe as among the first implementations of its kind in the industry. The collaboration combines Aolani's AI cloud infrastructure with Rafay's software for orchestration, automation, multi-tenancy and lifecycle management, enabling customers to provision Kubernetes clusters, virtual machines, AI workspaces and inference environments through a self-service model with central governance and policy enforcement. The companies position this as an example of how AI infrastructure operators can shift from simply installing GPU systems to offering governed, production-ready AI platforms that customers can use from day one.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      },
+      {
+        "name": "Technology Adoption & Disruption",
+        "code": "II02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "nicholas chia",
+        "haseeb budhani"
+      ]
+    }
+  },
+  {
+    "id": 29558095,
+    "group_id": 4365029,
+    "title": "Aolani and Rafay Collaborate on One of the Industry’s First NVIDIA DSX OS Deployments on NVIDIA GB200 NVL72 Infrastructure",
+    "url": "https://aijourn.com/aolani-and-rafay-collaborate-on-one-of-the-industrys-first-nvidia-dsx-os-deployments-on-nvidia-gb200-nvl72-infrastructure/",
+    "publisher": "Aijourn",
+    "published_date": "2026-07-27T01:03:30",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Aolani and Rafay Systems announced a strategic collaboration to deploy one of the industry's first instances of NVIDIA DSX OS running on NVIDIA GB200 NVL72 infrastructure, combining Aolani's AI cloud infrastructure with Rafay Platform's orchestration, automation, multi-tenancy, and lifecycle management capabilities. The solution enables organizations to provision Kubernetes clusters, virtual machines, AI workspaces, and inference environments through a secure self-service experience while maintaining centralized governance, policy enforcement, and operational visibility. The collaboration addresses the challenge of transforming next-generation GPU infrastructure into governed, production-ready AI platforms without requiring organizations to build the operational software stack themselves.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "haseeb budhani",
+        "nicholas chia",
+        "angela shugarts"
+      ]
+    }
+  },
+  {
+    "id": 29557442,
+    "group_id": 4365349,
+    "title": "Aolani and Rafay's Groundbreaking Partnership for AI Infrastructure",
+    "url": "https://third-news.com/article/3d1c0282-8950-11f1-bcf5-9ca3ba08e13f",
+    "publisher": "Third News",
+    "published_date": "2026-07-27T00:15:14",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Aolani and Rafay Systems have announced a strategic partnership to accelerate AI infrastructure deployment by combining Aolani's AI cloud solutions with Rafay's orchestration and automation platform. The collaboration represents one of the early deployments of NVIDIA DSX OS operating on NVIDIA GB200 NVL72 infrastructure, enabling organizations to move AI technology from installation phases directly into production-ready services. The companies aim to help enterprises and cloud providers manage multi-tenant environments more efficiently while developers gain immediate access to environments for AI model development, training, and inference.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "nicholas chia",
+        "haseeb budhani"
+      ]
+    }
+  },
+  {
+    "id": 29579216,
+    "group_id": 4375335,
+    "title": "Aolani and Rafay Collaborate on One of the Industry's First NVIDIA DSX OS Deployments on NVIDIA GB200 NVL72 Infrastructure",
+    "url": "https://finance.yahoo.com/technology/ai/articles/aolani-rafay-collaborate-one-industrys-000300787.html",
+    "publisher": "Yahoo",
+    "published_date": "2026-07-27T00:03:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9815,
+    "ai_summary": "Rafay Systems announced a strategic collaboration with Aolani to deliver one of the industry's first deployments of NVIDIA DSX OS running on NVIDIA GB200 NVL72 infrastructure, enabling organizations to transform next-generation AI infrastructure into production-ready AI services. The solution combines Aolani's AI infrastructure with Rafay Platform's orchestration, automation, multi-tenancy, and lifecycle management capabilities to create a secure, self-service platform with centralized governance for developers and enterprises. Both CEOs emphasized that the competitive advantage in AI infrastructure is shifting from acquiring GPUs to operationalizing them quickly at scale.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      },
+      {
+        "name": "Competitive Threats",
+        "code": "II04",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "haseeb budhani",
+        "nicholas chia"
+      ]
+    }
+  },
+  {
+    "id": 29557173,
+    "group_id": 4365262,
+    "title": "Aolani and Rafay Collaborate on One of the Industry's First NVIDIA DSX OS Deployments on NVIDIA GB200 NVL72 Infrastructure",
+    "url": "https://en.prnasia.com/story/541913-0.shtml",
+    "publisher": "PR Newswire APAC",
+    "published_date": "2026-07-27T00:03:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Aolani and Rafay Systems have announced a strategic collaboration to deliver one of the industry's first deployments of NVIDIA DSX OS running on NVIDIA GB200 NVL72 infrastructure, enabling organizations to transform next-generation AI hardware into production-ready AI platforms. The solution combines Aolani's AI cloud infrastructure with Rafay Platform's orchestration, automation, multi-tenancy, and lifecycle management capabilities, allowing organizations to provision Kubernetes clusters, virtual machines, AI workspaces, and inference environments through a secure self-service experience. The collaboration addresses the shifting competitive landscape in accelerated computing, where success increasingly depends on how quickly providers can operationalize GPU infrastructure and deliver commercially viable AI services rather than just acquiring hardware.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      },
+      {
+        "name": "Technology Adoption & Disruption",
+        "code": "II02",
+        "is_primary": false
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "haseeb budhani",
+        "nicholas chia",
+        "angela shugarts"
+      ]
+    }
+  }
+]

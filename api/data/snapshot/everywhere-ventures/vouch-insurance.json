@@ -1,0 +1,36 @@
+[
+  {
+    "id": 38845835,
+    "group_id": 12340135,
+    "title": "Brandon Kaufman's Appointment as Head of Claims at Vouch Insurance Strengthens Client Support",
+    "url": "https://third-news.com/article/e438f778-b849-11f1-af4d-9ca3ba08e13f",
+    "publisher": "Third News",
+    "published_date": "2026-09-24T18:58:12",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Vouch Insurance appointed Brandon Kaufman as Head of Claims, overseeing claims advocacy for its 6,000+ tech clients. He previously served as VP of Claims at EPIC and will guide clients through the claims process. The appointment signals Vouch's commitment to enhancing claims support.",
+    "tags": [
+      {
+        "name": "Strategic Hiring",
+        "code": "WT01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "brandon kaufman",
+        "tyson stevenson",
+        "steve kenning",
+        "jim loughlin"
+      ]
+    }
+  }
+]

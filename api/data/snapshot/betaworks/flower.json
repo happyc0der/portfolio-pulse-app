@@ -1,0 +1,33 @@
+[
+  {
+    "id": 35079499,
+    "group_id": 11298344,
+    "title": "Cambridge University spinout launches AI model \"competitive\" with OpenAI and Anthropic",
+    "url": "https://tech.eu/2026/09/01/cambridge-university-spinout-launches-ai-model-competitive-with-openai-and-anthropic/",
+    "publisher": "Tech.eu",
+    "published_date": "2026-09-01T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9614,
+    "ai_summary": "Flower Labs, a Cambridge University spinout, launched Endeavor 1.0, a generalist AI model it says is competitive with OpenAI and Anthropic's leading models. The model can be deployed locally, with data staying on the client's systems, and the startup has raised over £23m. It will be available under licence to a select group of organisations.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "nicholas lane"
+      ]
+    }
+  }
+]

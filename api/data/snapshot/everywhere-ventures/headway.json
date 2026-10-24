@@ -1,0 +1,134 @@
+[
+  {
+    "id": 41438441,
+    "group_id": 14899494,
+    "title": "Headway Issues, Then Retracts New Clinician Contracts After Backlash",
+    "url": "https://bhbusiness.com/2026/10/19/headway-issues-then-retracts-new-clinician-contracts-after-backlash/",
+    "publisher": "Bhbusiness",
+    "published_date": "2026-10-19T20:50:37",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Headway retracted new clinician contracts after backlash, pausing rollout via CEO email. The original contract included provisions like relinquishing provider rights and nonsolicitation clauses, prompting some clinicians to leave. No revised contract timeline was disclosed.",
+    "tags": [
+      {
+        "name": "Compensation & Benefits",
+        "code": "WT03",
+        "is_primary": true
+      },
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.0006,
+    "entities": {
+      "person": [
+        "andrew adams",
+        "jen bohan",
+        "bohan"
+      ]
+    }
+  },
+  {
+    "id": 39531058,
+    "group_id": 13157431,
+    "title": "Headway Faces Backlash After Unveiling New Opt-In Patient Marketplace With $10 Per-Session Fee",
+    "url": "https://bhbusiness.com/2026/10/02/headway-faces-backlash-after-unveiling-new-opt-in-patient-marketplace-with-10-per-session-fee/",
+    "publisher": "Bhbusiness",
+    "published_date": "2026-10-02T20:17:00",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Headway announced a new opt-in patient marketplace charging clinicians $9.99 per session, sparking backlash from clinicians and industry. The fee applies only to marketplace patients, not those booked via direct links, and clinicians can opt out. Headway will reinvest the revenue to expand its marketplace and app offerings.",
+    "tags": [
+      {
+        "name": "Pricing & Commercial Strategy",
+        "code": "SD10",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.0031,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 33198764,
+    "group_id": 9829075,
+    "title": "10 Remote Director of Operations Jobs You Can Apply for Today",
+    "url": "https://smallbiztrends.com/remote-director-of-operations-jobs/",
+    "publisher": "Smallbiztrends",
+    "published_date": "2026-08-29T00:31:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.8493,
+    "ai_summary": "A career guide article lists 10 remote Director of Operations positions across healthcare, technology, sales, and payment operations, including roles at Headway, ServiceNow, APEX M&A, and regional home care. It cites salary ranges from $97K to $361K, with specific bands such as $170K-$265K for patient operations and $229K-$412K for senior director roles. The piece also outlines required qualifications, resume tips, and remote team management advice.",
+    "tags": [
+      {
+        "name": "Others",
+        "code": "OT01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "executives",
+        "richard anderson"
+      ]
+    }
+  },
+  {
+    "id": 32972453,
+    "group_id": 9382720,
+    "title": "First Peer-Reviewed Headway Study Finds Nearly 1 in 5 Patients Report Suicidal Thoughts at Their First Mental Health Visit",
+    "url": "https://www.prnewswire.com/news-releases/first-peer-reviewed-headway-study-finds-nearly-1-in-5-patients-report-suicidal-thoughts-at-their-first-mental-health-visit-302859421.html",
+    "publisher": "PR Newswire",
+    "published_date": "2026-08-25T13:30:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Headway announced on Aug. 25, 2026 the publication of peer-reviewed research in JMIR Mental Health analyzing PHQ-9 responses from 189,225 patients ages 6 to 64 across all 50 states and D.C. between Jan. 2024 and Oct. 2025. The study found 18.6% of commercially insured patients reported suicidal ideation at their first outpatient visit, with adolescents at 32.8% and non-binary patients at 37.5%. State rates ranged from 14.1% in D.C. to 30% in West Virginia.",
+    "tags": [
+      {
+        "name": "Research, Development & Innovation",
+        "code": "SD08",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "academic",
+      "label": "Academic"
+    },
+    "sentiment_score": 0.5223,
+    "entities": {
+      "person": [
+        "dr. taft parsons iii",
+        "dr. nicole benson",
+        "gabriella lourie"
+      ]
+    }
+  }
+]

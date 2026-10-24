@@ -1,0 +1,127 @@
+[
+  {
+    "id": 40113291,
+    "group_id": 13617889,
+    "title": "Shippo Enhances AI-Powered Shipping Tools Ahead of Peak Season",
+    "url": "https://www.citybiz.co/article/916183/shippo-enhances-ai-powered-shipping-tools-ahead-of-peak-season/",
+    "publisher": "citybiz",
+    "published_date": "2026-10-08T14:39:32",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Shippo announced new AI-powered shipping tools ahead of peak season, citing data that 85% of merchants shipping over 100 labels monthly were overpaying, with average savings of 22%. Over the past year, 440 million packages were shipped through Shippo, a 39% increase. The company also expanded AI assistants and pick-and-pack capabilities.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "laura behrens wu"
+      ]
+    }
+  },
+  {
+    "id": 35177183,
+    "group_id": 7014867,
+    "title": "Shippo Named to the 2026 Inc. 5000 List",
+    "url": "https://www.prnewswire.com/news-releases/shippo-named-to-the-2026-inc-5000-list-302846667.html",
+    "publisher": "PR Newswire",
+    "published_date": "2026-08-11T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9953,
+    "ai_summary": "Shippo was ranked No. 3,839 on the 2026 Inc. 5000 list of fastest-growing private companies. The company, with over 4.6 million customers, uses its platform to access 40+ global carriers. CEO Laura Behrens Wu highlighted AI integration for carrier selection and delivery prediction.",
+    "tags": [
+      {
+        "name": "Awards, Rankings & Recognitions",
+        "code": "SD11",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "mike hofman",
+        "laura behrens wu",
+        "mike bradshaw"
+      ]
+    }
+  },
+  {
+    "id": 31282611,
+    "group_id": 5679547,
+    "title": "Ordoro and Shippo Launch Native Integration to Simplify eCommerce Shipping and Operations",
+    "url": "https://www.prweb.com/releases/ordoro-and-shippo-launch-native-integration-to-simplify-ecommerce-shipping-and-operations-302841565.html",
+    "publisher": "Prweb",
+    "published_date": "2026-08-04T19:20:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9157,
+    "ai_summary": "Ordoro, an eCommerce operations platform, and Shippo, a shipping platform for modern eCommerce, announced a native integration that brings Shippo's multi-carrier shipping capabilities into the Ordoro platform. The integration allows merchants to compare shipping rates, purchase labels, manage insurance, and automate fulfillment without leaving Ordoro, while gaining access to Shippo's network of over 40 global carriers. This partnership addresses the growing complexity of managing fulfillment across multiple systems as eCommerce businesses scale.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 32733072,
+    "group_id": 9223137,
+    "title": "Ordoro and Shippo Launch Native Integration to Simplify eCommerce Shipping and Operations",
+    "url": "https://www.streetinsider.com/Press+Releases/Ordoro+and+Shippo+Launch+Native+Integration+to+Simplify+eCommerce+Shipping+and+Operations/26865478.html",
+    "publisher": "Streetinsider",
+    "published_date": "2026-08-04T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9436,
+    "ai_summary": "Ordoro and Shippo announced a new native integration that embeds Shippo's multi-carrier shipping platform directly into the Ordoro eCommerce operations system. This partnership allows merchants to access over 40 global carriers, compare real-time rates, and automate fulfillment workflows within a single interface without disrupting existing inventory or warehouse management processes. ",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "jagath narayan",
+        "jennifer lozano"
+      ]
+    }
+  }
+]

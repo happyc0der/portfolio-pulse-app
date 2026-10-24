@@ -1,0 +1,72 @@
+[
+  {
+    "id": 39425298,
+    "group_id": 14502088,
+    "title": "Wagmo and Wonderdog Partner to Bring Early Disease Detection to Employee Pet Benefits",
+    "url": "https://www.businesswire.com/news/home/20261001009393/en/Wagmo-and-Wonderdog-Partner-to-Bring-Early-Disease-Detection-to-Employee-Pet-Benefits",
+    "publisher": "Business Wire Blog",
+    "published_date": "2026-10-01T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.926,
+    "ai_summary": "Wagmo and Wonderdog announced a perks partnership adding early disease detection to Wagmo's employee pet benefits. Wagmo members get 20% off the first year of Wonderdog's annual app membership and 10% off at-home blood draws in Los Angeles and New York City. The partnership aims to help employers offer proactive health tools during open enrollment.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "promotional",
+      "label": "Promotional"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "jeff safenowitz",
+        "christie horvath",
+        "sally slater"
+      ]
+    }
+  },
+  {
+    "id": 33422734,
+    "group_id": 10005700,
+    "title": "There’s a $158 Billion Opportunity in the Wellness Industry, but It Isn’t for Humans",
+    "url": "https://www.inc.com/lisa-bonos/theres-a-158-billion-opportunity-in-the-wellness-industry-but-it-isnt-for-humans/91376800",
+    "publisher": "Inc.",
+    "published_date": "2026-08-11T11:00:00",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 0.7951,
+    "ai_summary": "Pet spending reached $158 billion in 2025, with 71% of U.S. households owning at least one pet. Wagmo, a pet health insurance company, quadrupled in size over three years, generating nearly $15 million in revenue in 2025. The sector includes specialty foods, acupuncture, and behavioral training.",
+    "tags": [
+      {
+        "name": "Market-Structure Changes",
+        "code": "II05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.2961,
+    "entities": {
+      "person": [
+        "christie horvath",
+        "jessica berger",
+        "lisa bonos",
+        "denver",
+        "hugo yu",
+        "erica lutz",
+        "winston"
+      ]
+    }
+  }
+]

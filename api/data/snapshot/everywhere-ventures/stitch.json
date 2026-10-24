@@ -1,0 +1,199 @@
+[
+  {
+    "id": 40822849,
+    "group_id": 14311189,
+    "title": "Stitch launches AI-powered Pulse suite for payment analytics",
+    "url": "https://ibsintelligence.com/ibsi-news/stitch-launches-ai-powered-pulse-suite-for-payment-analytics/",
+    "publisher": "IBS Intelligence",
+    "published_date": "2026-10-15T11:56:31",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.8983,
+    "ai_summary": "Stitch launched Pulse, an AI-powered suite for payment analytics, starting with Pulse Analytics. The AI agent analyzes payment data, provides plain-language insights, and enables real-time alerts and actions. It will be rolled out to all existing Stitch payments clients, with additional products planned.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "junaid dadan",
+        "divya shah"
+      ]
+    }
+  },
+  {
+    "id": 35199961,
+    "group_id": 11373368,
+    "title": "Stitch and CrissCross expand cross-border payments in South Africa",
+    "url": "https://ibsintelligence.com/ibsi-news/stitch-and-crisscross-expand-cross-border-payments-in-south-africa/",
+    "publisher": "IBS Intelligence",
+    "published_date": "2026-09-16T07:26:48",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9221,
+    "ai_summary": "Stitch Group, a South Africa-based payments company, partnered with CrissCross FX to launch an international invoice payments service for enterprises. The service lets businesses settle invoices in USD and other G10 currencies via a single provider, with API access, faster turnaround, and competitive FX rates. Settlement occurs at T+0 or T+1, managed through a centralized dashboard.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "junaid dadan",
+        "puja sharma"
+      ]
+    }
+  },
+  {
+    "id": 33225424,
+    "group_id": 9844673,
+    "title": "Stitch enables real-time payments across South Africa’s major banks",
+    "url": "https://www.bizcommunity.com/article/stitch-enables-real-time-payments-across-south-africas-major-banks-419429a",
+    "publisher": "Bizcommunity",
+    "published_date": "2026-08-25T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.8677,
+    "ai_summary": "South African payments infrastructure company Stitch has expanded its real-time payments offering by launching PayShap Request, aimed at enterprise businesses. The announcement does not disclose pricing, technical specifications, or the number of participating banks.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.8995,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 31560192,
+    "group_id": 7348752,
+    "title": "Stitch offers PayShap Request with smart routing infrastructure",
+    "url": "https://www.dailymaverick.co.za/article/2026-08-07-stitch-offers-payshap-request-with-smart-routing-infrastructure/",
+    "publisher": "Daily Maverick",
+    "published_date": "2026-08-07T12:28:13",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "South African payments infrastructure company Stitch has launched PayShap Request, a service enabling businesses to collect real-time payments directly from customers' banking apps. The platform utilizes PayInc's infrastructure and features a multi-acquirer architecture that provides redundancy and automated routing across major South African banks. ",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "junaid dadan",
+        "israel skosana"
+      ]
+    }
+  },
+  {
+    "id": 31560338,
+    "group_id": 7497984,
+    "title": "How Can One Card Manage Multiple Currency Wallets?",
+    "url": "https://fintechnews.sg/135272/payments/lulu-exchange-multi-currency-card-stitch-wallet/",
+    "publisher": "Fintech Singapore",
+    "published_date": "2026-08-07T02:28:47",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9232,
+    "ai_summary": "LuLu Exchange is building a multi-currency card program in the UAE to enhance cross-border payment transactions, facing operational challenges due to the need for a coordinated architecture. The company is collaborating with Stitch, which integrates multiple functions like issuing, processing, and reconciliation into a single operating layer to streamline its currency management processes. This initiative supports access to 26 currency wallets, enabling customers to transact more efficiently during travel, while also emphasizing the importance of adaptable operational structures in financial technology. ",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      },
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5085,
+    "entities": {
+      "person": [
+        "joseph cleetus"
+      ]
+    }
+  },
+  {
+    "id": 31262738,
+    "group_id": 5631232,
+    "title": "Fintech start-up Stitch adds PayShap Request",
+    "url": "https://www.itweb.co.za/article/fintech-start-up-stitch-adds-payshap-request/6GxRKMYQ155Mb3Wj",
+    "publisher": "ITWeb",
+    "published_date": "2026-08-04T10:22:50",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Stitch, a South African payments infrastructure provider, has gone live with PayShap Request, a real-time payment feature allowing enterprise businesses to collect payments across all major South African banks through redundant, consumer-centric routing. Several enterprise clients have already migrated to this new payments rail, which is accessible through Stitch's API without requiring a separate build. The company, which raised $107 million in total funding including a $55 million Series B in April 2025, operates offices in Cape Town, Johannesburg, and Lagos.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "junaid dadan"
+      ]
+    }
+  }
+]

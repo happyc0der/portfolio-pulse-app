@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "00006az",
+    "product_category": "Shipping Management Platform",
+    "match": {
+      "uuid": "00006az",
+      "name": "Shippo",
+      "website": "https://goshippo.com",
+      "product_category": "Shipping Management Platform",
+      "company_status": "private",
+      "akta_rank": 25473
+    }
+  },
+  "fetched_at": "2026-10-24T16:02:36.837982+00:00",
+  "credits_consumed": 0
+}

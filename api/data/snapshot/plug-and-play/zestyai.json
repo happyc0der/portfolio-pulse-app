@@ -1,0 +1,340 @@
+[
+  {
+    "id": 42266043,
+    "group_id": 15644741,
+    "title": "Donegal expands partnership with ZestyAI, adding Z-PROPERTY",
+    "url": "https://www.reinsurancene.ws/donegal-expands-partnership-with-zestyai-adding-z-property/",
+    "publisher": "ReinsuranceNe.ws",
+    "published_date": "2026-10-23T10:00:38",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9211,
+    "ai_summary": "Donegal Insurance Group expanded its partnership with ZestyAI, adding Z-PROPERTY to its existing 2025 collaboration. The new tool verifies property variables like roof condition and lot debris, building on the Roof Age solution that uses permit records and aerial imagery. The expansion aims to improve risk decisions across Donegal's personal lines portfolio.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "jeffery hay",
+        "attila toth"
+      ]
+    }
+  },
+  {
+    "id": 40668581,
+    "group_id": 14204189,
+    "title": "ZestyAI Surpasses 500 Regulatory Approvals as Carriers Accelerate Adoption of Its AI Risk Models",
+    "url": "https://www.prnewswire.com/news-releases/zestyai-surpasses-500-regulatory-approvals-as-carriers-accelerate-adoption-of-its-ai-risk-models-302908472.html",
+    "publisher": "PR Newswire",
+    "published_date": "2026-10-14T11:36:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "ZestyAI announced its risk models surpassed 500 regulatory approvals across 317 carrier filings in 44 states. The approvals cover major perils like wildfire and severe storm, with over half of the top 100 U.S. P&C insurers using the platform.",
+    "tags": [
+      {
+        "name": "Regulatory Approvals & Certifications",
+        "code": "RC01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "kumar dhuvur"
+      ]
+    }
+  },
+  {
+    "id": 33850381,
+    "group_id": 10371528,
+    "title": "The Latest Launches from ZestyAI, Verisk",
+    "url": "https://www.carriermanagement.com/news/2026/09/03/291681.htm",
+    "publisher": "Carrier Management",
+    "published_date": "2026-09-03T21:30:58",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "DUAL North America, Kingstone, and Windward Risk Managers launched California homeowners programs using ZestyAI's Z-FIRE wildfire risk model. The model, trained on 2,000 historical events, rated 94% of the Palisades Fire area and 87% of the Eaton burn area as high risk. Verisk also announced a new U.S. data center exposure database.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5864,
+    "entities": {
+      "person": [
+        "attila toth",
+        "rob newbold",
+        "jay guin"
+      ]
+    }
+  },
+  {
+    "id": 33613134,
+    "group_id": 10166171,
+    "title": "Aon gets Zesty.ai for insurance underwriting",
+    "url": "https://www.fintechfutures.com/ai-in-fintech/aon-gets-zesty-ai-for-insurance-underwriting",
+    "publisher": "FinTech Futures",
+    "published_date": "2026-09-01T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9179,
+    "ai_summary": "Aon acquired San Francisco-based insurtech Zesty.ai to enhance underwriting with access to 130 billion data points on buildings and surroundings. The company's Z-FIRE wildfire model uses machine learning to combine property details with loss data, addressing historical modeling challenges. Aon cites California wildfires causing $16 billion in insured losses in 2017 and up to $18 billion in 2018.",
+    "tags": [
+      {
+        "name": "Mergers & Acquisitions",
+        "code": "CM03",
+        "is_primary": true
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "jobay cooney",
+        "george demenocal"
+      ]
+    }
+  },
+  {
+    "id": 33613130,
+    "group_id": 10166167,
+    "title": "Amica deepens ZestyAI tie-up with market intelligence tool",
+    "url": "https://fintech.global/2026/08/31/amica-deepens-zestyai-tie-up-with-market-intelligence-tool/",
+    "publisher": "Fintech",
+    "published_date": "2026-08-31T14:42:38",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9265,
+    "ai_summary": "Amica Insurance adopted ZestyAI's ZORRO Discover tool to gain real-time visibility into rate and form filings. The tool cut manual research time by 95% and is used to pre-empt regulator concerns. It builds on a partnership that began in 2021.",
+    "tags": [
+      {
+        "name": "Digital Transformation",
+        "code": "SD06",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "lynn malloney",
+        "attila toth"
+      ]
+    }
+  },
+  {
+    "id": 33613119,
+    "group_id": 10166158,
+    "title": "US Market: Amica Expands Partnership With ZestyAI",
+    "url": "https://insurance-edge.net/2026/08/28/us-market-amica-expands-partnership-with-zestyai/",
+    "publisher": "Home -",
+    "published_date": "2026-08-28T12:20:50",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Amica Insurance expanded its ZestyAI partnership to adopt ZORRO Discover, a platform analyzing over 200 million P&C rate and form filings. The expansion cuts manual research time by 95% and adds objection research and watchlist alerts. Amica uses it to anticipate regulator concerns before submitting responses.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "lynn malloney",
+        "attila toth"
+      ]
+    }
+  },
+  {
+    "id": 33492293,
+    "group_id": 10070240,
+    "title": "Wildfires put 4 million-plus homes at risk",
+    "url": "https://www.housingwire.com/articles/more-than-4-3-million-homes-at-high-risk-for-wildfires/",
+    "publisher": "HousingWire",
+    "published_date": "2026-08-26T00:00:00",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "ZestyAI's AI analysis of 126 million U.S. properties found over 4.3 million homes face high wildfire risk, with $2.15 trillion in residential property value at risk. California leads with $1.16 trillion, while South and Midwest states also face exposure. The firm projects coverage for 1 million previously uninsurable homes by 2025.",
+    "tags": [
+      {
+        "name": "Geographic Expansion",
+        "code": "SD03",
+        "is_primary": true
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.0031,
+    "entities": {
+      "person": [
+        "attila toth"
+      ]
+    }
+  },
+  {
+    "id": 32540146,
+    "group_id": 8589209,
+    "title": "44% of US rate filings draw a regulator objection, report finds",
+    "url": "https://www.insurancebusinessmag.com/us/news/excess-surplus/44-of-us-rate-filings-draw-a-regulator-objection-report-finds-586796.aspx",
+    "publisher": "Insurance Business America",
+    "published_date": "2026-08-20T04:45:48",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "A ZestyAI report analyzing over 20,000 US property and casualty rate filings found that 44% faced regulator objections, which extended median approval times by up to 38 days. The data indicates that slower admitted-market reviews, particularly in states like California and New York, are driving carriers to shift business into the excess and surplus lines market. ",
+    "tags": [
+      {
+        "name": "Policy & Legislative Changes",
+        "code": "RC02",
+        "is_primary": true
+      },
+      {
+        "name": "Data Privacy & Cybersecurity Regulation",
+        "code": "RC07",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.2137,
+    "entities": {
+      "person": [
+        "bryan rehor",
+        "ricardo lara",
+        "josh recamara"
+      ]
+    }
+  },
+  {
+    "id": 32485832,
+    "group_id": 8100269,
+    "title": "Regulator Objections Quantified: ZestyAI Says 44% of Filings Have at Least One",
+    "url": "https://www.insurancejournal.com/news/national/2026/08/19/882066.htm",
+    "publisher": "Insurance Journal",
+    "published_date": "2026-08-19T05:16:42",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "ZestyAI analyzed over 20,000 insurance rate filings and found that approximately 44% faced at least one regulator objection, adding a median of 38 days to the approval process. The study indicates that these delays compound costs for carriers and ultimately lead to larger rate shocks for consumers when adjustments are eventually implemented. ZestyAI recommends insurers proactively address potential regulatory questions in initial submissions to accelerate approvals and reduce implementation lag.",
+    "tags": [
+      {
+        "name": "Policy & Legislative Changes",
+        "code": "RC02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.0264,
+    "entities": {
+      "person": [
+        "bryan rehor"
+      ]
+    }
+  },
+  {
+    "id": 33492596,
+    "group_id": 10070871,
+    "title": "Severe Convective Storms inflicted $58bn in insured losses – ZestyAI’s research",
+    "url": "https://beinsure.com/news/severe-convective-storms-inflicted-58bn-insured-losses/",
+    "publisher": "Beinsure",
+    "published_date": "2026-08-12T00:00:00",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Severe convective storms caused $58bn in insured losses in 2024, surpassing hurricanes and ranking second on record. Roof damage accounted for up to 90% of residential catastrophe losses, and 62% of US homeowners are postponing essential maintenance. ZestyAI's research warns deferred repairs could push insurers toward $317bn in potential claims.",
+    "tags": [
+      {
+        "name": "Natural Disasters",
+        "code": "RK03",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.0119,
+    "entities": {
+      "person": [
+        "kumar dhuvur"
+      ]
+    }
+  }
+]

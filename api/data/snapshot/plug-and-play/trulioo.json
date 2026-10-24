@@ -1,0 +1,209 @@
+[
+  {
+    "id": 39736302,
+    "group_id": 13422915,
+    "title": "Trulioo strengthens identity verification for Fiserv clients",
+    "url": "https://www.finextra.com/pressarticle/111130/trulioo-strengthens-identity-verification-for-fiserv-clients?utm_medium=rssfinextra&utm_source=finextrafeed",
+    "publisher": "Finextra",
+    "published_date": "2026-10-05T14:27:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.858,
+    "ai_summary": "Trulioo announced a collaboration with Fiserv to bring person and business verification capabilities to Fiserv's clients. The partnership aims to streamline onboarding and underwriting across global markets by automating identity checks and reducing manual work. The scalable verification foundation can adapt to local requirements as businesses expand.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "vicky bindra",
+        "sanjay saraf"
+      ]
+    }
+  },
+  {
+    "id": 31184847,
+    "group_id": 5476891,
+    "title": "Nine Out of Ten Firms Struggle to Manage Bot Traffic",
+    "url": "https://www.pymnts.com/news/artificial-intelligence/2026/nine-out-of-ten-firms-struggle-to-manage-bot-traffic/",
+    "publisher": "PYMNTS.com",
+    "published_date": "2026-08-03T08:00:16",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "A PYMNTS Intelligence report produced with Trulioo found that 93% of firms reported increased bot traffic over the prior 12 months, with only about 1 in 10 saying bot traffic creates no difficulty in managing digital transactions. The report estimates that fraud and accidental blocking of legitimate transactions costs businesses nearly $100 billion annually, while 57% of companies with at least $1 billion in revenue experienced bot or agent-related incidents or losses. The report recommends that companies strengthen know-your-customer systems, add real-time monitoring, and set clear permissions for automated agents to reduce losses.",
+    "tags": [
+      {
+        "name": "Cybersecurity Incidents",
+        "code": "RK05",
+        "is_primary": true
+      },
+      {
+        "name": "Sector Outlook & Forecasts",
+        "code": "MM07",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.1559,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 30989657,
+    "group_id": 5404434,
+    "title": "10 Top AI-Powered Identity Verification Solutions for 2026",
+    "url": "https://itwire.com/guest-articles/guest-opinion/10-top-ai-powered-identity-verification-solutions-for-2026",
+    "publisher": "iTWire",
+    "published_date": "2026-08-02T21:42:31",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9407,
+    "ai_summary": "This guest opinion article ranks and profiles 10 leading AI-powered identity verification solutions for 2026, including AU10TIX, Veriff, Jumio, Entrust Identity Verification, Persona, Sumsub, Socure, Trulioo, Incode, and Mitek. The article evaluates each platform based on key capabilities such as KYC, KYB, AML support, biometric verification, liveness detection, fraud prevention, and workflow orchestration. The author recommends that businesses select identity verification providers based on use case, geography, fraud exposure, compliance requirements, user experience, and workflow control needs.",
+    "tags": [
+      {
+        "name": "Market Share & Positioning",
+        "code": "SD05",
+        "is_primary": true
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 30276402,
+    "group_id": 4672532,
+    "title": "Trulioo Launches UBO Discovery Agent to Automate Ownership Verification",
+    "url": "https://fintechnews.ch/aifintech/trulioo-ubo-discovery-agent-ai/84807/",
+    "publisher": "Fintech Schweiz Digital Finance News",
+    "published_date": "2026-07-28T09:40:36",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9273,
+    "ai_summary": "Trulioo has launched an AI agent called the UBO Discovery Agent designed to automate the discovery of ultimate beneficial owners for businesses, aiming to address inconsistencies across global corporate registries. Early deployments have significantly increased UBO coverage from under 5% to above 90% in markets where registry-only searches perform poorly. A global social commerce platform is the first enterprise customer deploying the tool across Malaysia, Vietnam and the UK from July 2026, with more AI agents planned for Trulioo's identity and fraud platform.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.7126,
+    "entities": {
+      "person": [
+        "zac cohen"
+      ]
+    }
+  },
+  {
+    "id": 30444030,
+    "group_id": 4841581,
+    "title": "Modern identity verification market navigates shift to continuous trust",
+    "url": "https://www.biometricupdate.com/202607/modern-identity-verification-market-navigates-shift-to-continuous-trust",
+    "publisher": "Biometric Update",
+    "published_date": "2026-07-27T19:15:13",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "The identity verification market is undergoing a fundamental shift from point-in-time verification to continuous identity operations that monitor trust throughout the customer lifecycle rather than just at onboarding. Companies including Trulioo, GBG, Alloy, IDnow, Nuggets, and OneSpan have launched AI-powered products reflecting this evolution, deploying AI as investigators, decision-support tools, and compliance analysts. This transition is driven by the rise of AI fraud and reflects buyer demand for comprehensive security and compliance packages rather than standalone verification tools, with competitive differentiation now centering on packaging and orchestration capabilities.",
+    "tags": [
+      {
+        "name": "Technology Adoption & Disruption",
+        "code": "II02",
+        "is_primary": true
+      },
+      {
+        "name": "Business-Model Evolution",
+        "code": "II03",
+        "is_primary": false
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5007,
+    "entities": {
+      "person": [
+        "a-list star",
+        "studio executive"
+      ]
+    }
+  },
+  {
+    "id": 30958896,
+    "group_id": 6105422,
+    "title": "Best Technology Partners for Enterprise RegTech Solutions Transforming Businesses in 2026",
+    "url": "https://www.inkl.com/news/best-technology-partners-for-enterprise-regtech-solutions-transforming-businesses-in-2026",
+    "publisher": "inkl",
+    "published_date": "2026-07-27T12:16:15",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "This article is a buyer\\'s guide ranking eight technology companies as recommended partners for enterprise RegTech solutions in 2026, covering areas such as KYC verification, AML monitoring, fraud prevention, and compliance reporting. The guide distinguishes between buying a finished compliance product (Fenergo, ComplyAdvantage, Trulioo, Feedzai, Sumsub, NICE Actimize, MetricStream) versus building one with an engineering partner (Dreamix), and provides criteria for selecting the right fit based on organizational needs and existing infrastructure. The article also notes the growing importance of agentic AI capabilities in compliance workflows across the RegTech sector.",
+    "tags": [
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  }
+]

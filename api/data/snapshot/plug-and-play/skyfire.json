@@ -1,0 +1,140 @@
+[
+  {
+    "id": 41367214,
+    "group_id": 14818990,
+    "title": "Skyfire and Forter Enrich Trusted Agentic Commerce Decisions at Checkout",
+    "url": "https://www.businesswire.com/news/home/20261019685711/en/Skyfire-and-Forter-Enrich-Trusted-Agentic-Commerce-Decisions-at-Checkout",
+    "publisher": "Business Wire Blog",
+    "published_date": "2026-10-19T09:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Skyfire and Forter announced a partnership integrating Skyfire's Know Your Agent (KYA) tokens into Forter's fraud decisioning, increasing agentic checkout success rates without added risk. The integration was piloted with Jomashop, which saw its agentic checkout success rate rise to nearly 100% without increasing chargebacks. The partnership aims to distinguish trusted agents from malicious bots as agentic commerce grows.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "craig dewitt",
+        "eran vanounou",
+        "osher karnowsky",
+        "kevin brown"
+      ]
+    }
+  },
+  {
+    "id": 39513536,
+    "group_id": 12928452,
+    "title": "Mastercard Expands Agentic Commerce With New Trust Services",
+    "url": "https://finance.yahoo.com/technology/ai/articles/mastercard-expands-agentic-commerce-trust-121500843.html",
+    "publisher": "Yahoo",
+    "published_date": "2026-10-02T12:15:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9024,
+    "ai_summary": "Mastercard is expanding Agent Pay with trust and intelligence services to assess AI-led transactions, with a probability-scoring tool entering U.S. testing. The company cites projections that one in 10 consumers could routinely use AI agents for purchases by 2030, and partnerships with Cloudflare and Skyfire could enhance fraud detection.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.9625,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 11458726,
+    "group_id": 11353186,
+    "title": "LinkedIn",
+    "url": "https://www.linkedin.com/company/tryskyfire",
+    "publisher": "LinkedIn",
+    "published_date": "2026-09-01T20:58:17.041000",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.7656,
+    "ai_summary": "Skyfire is building open infrastructure for agentic commerce, where AI agents act on behalf of users. The company says tokenized identity and payments will secure this new economic model, enabling purchases, API access, and automated vendor flows.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 31717097,
+    "group_id": 6782491,
+    "title": "Fastly: AI Traffic Grows 6.5x Faster Than Human Traffic As Skyfire Brings Agent Commerce To The Edge",
+    "url": "https://pulse2.com/fastly-ai-traffic-grows-6-5x-faster-than-human-traffic-as-skyfire-brings-agent-commerce-to-the-edge/",
+    "publisher": "Pulse 2.0",
+    "published_date": "2026-08-11T14:09:50",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Fastly is developing its edge cloud platform to support the growing AI traffic, which is expanding 6.5 times faster than human traffic, and has partnered with Skyfire to enable secure AI agent commerce. The company reported a record Q2 revenue of $183.3 million, with significant growth across various segments, and has moved into non-GAAP profitability. ",
+    "tags": [
+      {
+        "name": "Earnings Releases",
+        "code": "FR01",
+        "is_primary": true
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      },
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": false
+      },
+      {
+        "name": "Revenue & Growth Metrics",
+        "code": "FR02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "kip compton"
+      ]
+    }
+  }
+]

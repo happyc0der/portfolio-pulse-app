@@ -1,0 +1,386 @@
+[
+  {
+    "id": 33372747,
+    "group_id": 9970909,
+    "title": "Builders FirstSource stock trades below consensus as investors build new positions",
+    "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/builders-firstsource-stock-trades-below-consensus-as-investors-build-new/70019338",
+    "publisher": "AD HOC NEWS",
+    "published_date": "2026-08-29T11:09:25",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Builders FirstSource stock trades at $67.72 on August 28, 2026, below the $90.35 analyst consensus target. Institutional investors are adding positions, and the company has an AI partnership with Digs to improve project planning. The stock is down 2.11% over five days.",
+    "tags": [
+      {
+        "name": "Daily Stock Market News",
+        "code": "CM12",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.19,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 33377938,
+    "group_id": 9974557,
+    "title": "VC funding deals: Digs, Builders FirstSource, Vessev, Blackbird, Math Magic",
+    "url": "https://infotechlead.com/tech/vc-funding-deals-digs-builders-firstsource-vessev-blackbird-math-magic-98055?amp=1",
+    "publisher": "InfotechLead",
+    "published_date": "2026-08-29T04:38:26",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Digs raised $25.3 million in Series A from Builders FirstSource, Vessev raised $19 million for electric hydrofoil vessels, and Math Magic raised nearly $50 million across two rounds. The funding supports AI homebuilding, electric passenger vessels, and AI 3D content creation, respectively.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.6914,
+    "entities": {
+      "person": [
+        "ryan fink",
+        "eric laakmann"
+      ]
+    }
+  },
+  {
+    "id": 35059916,
+    "group_id": 9514617,
+    "title": "Digs Raises $25.3M in Series A Funding",
+    "url": "https://www.finsmes.com/2026/08/digs-raises-25-3m-in-series-a-funding.html",
+    "publisher": "FinSMEs",
+    "published_date": "2026-08-27T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9939,
+    "ai_summary": "Digs, a Vancouver-based AI and digital twin platform for residential construction, raised $25.3 million in Series A funding from Builders FirstSource. The investment brings total funding to over $47 million, and the company will use the capital to expand its workforce to over 60 and scale national sales. Builders FirstSource will integrate Digs' SaaS into its ecosystem for over 140,000 homebuilders.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "ty frackiewicz",
+        "ryan fink"
+      ]
+    }
+  },
+  {
+    "id": 33098046,
+    "group_id": 9766207,
+    "title": "Builders FirstSource Leads $25.3M Series A for Digs",
+    "url": "https://dallasinnovates.com/builders-firstsource-teams-up-with-ai-startup-digs-on-digital-twin-platform-for-homes/",
+    "publisher": "Dallas Innovates",
+    "published_date": "2026-08-26T20:24:17",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9824,
+    "ai_summary": "Builders FirstSource led a $25.3 million Series A round for Vancouver, Washington-based AI startup Digs, backing a five-year partnership to build an AI-powered platform that creates a \"digital twin\" of a home. The platform will consolidate construction documents into a single source covering plans, specifications, approvals and project history, plus AI chats, diagramming and homeowner guides.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      },
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "ryan fink",
+        "peter jackson",
+        "ty frackiewicz"
+      ]
+    }
+  },
+  {
+    "id": 33053995,
+    "group_id": 9612416,
+    "title": "Builders FirstSource Leads $25.3M Series A for Digs",
+    "url": "https://s24806.pcdn.co/builders-firstsource-teams-up-with-ai-startup-digs-on-digital-twin-platform-for-homes/",
+    "publisher": "Pcdn",
+    "published_date": "2026-08-26T20:24:17",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9824,
+    "ai_summary": "Builders FirstSource led a $25.3 million Series A round for Digs, a Vancouver, Washington startup making AI software for residential construction, as part of a five-year partnership. The deal will expand Builders FirstSource's digital platform, turning construction documents into a single source covering plans, specifications, approvals and project history, plus AI chats, diagramming and homeowner guides.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      },
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "ryan fink",
+        "peter jackson",
+        "ty frackiewicz"
+      ]
+    }
+  },
+  {
+    "id": 33095463,
+    "group_id": 9764756,
+    "title": "Builders FirstSource unveils AI platform partnership with Digs",
+    "url": "https://www.digitalcommerce360.com/2026/08/26/builders-firstsource-ai-platform-digs/",
+    "publisher": "Digital Commerce 360",
+    "published_date": "2026-08-26T18:46:11",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9821,
+    "ai_summary": "Builders FirstSource has closed a $25.3 million Series A round for AI platform Digs, forming a five-year partnership focused on product development and platform integration. The deal will bring Digs' AI features to residential homebuilders, including digital twins of homes, and add AI chat, electronic signatures and project collaboration tools.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      },
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "peter jackson",
+        "ryan fink"
+      ]
+    }
+  },
+  {
+    "id": 33995567,
+    "group_id": 10467752,
+    "title": "Builders FirstSource Leads $25.3 Million Digs Funding Round, Signs Five-Year AI Deal",
+    "url": "https://distributionstrategy.com/2026/08/builders-firstsource-leads-25-3-million-digs-funding-round-signs-five-year-ai-deal/",
+    "publisher": "Distributionstrategy",
+    "published_date": "2026-08-26T14:55:25",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Builders FirstSource led a $25.3 million Series A funding round for construction tech firm Digs and signed a five-year agreement to integrate Digs' AI into its digital platform. The deal aims to connect product data and purchasing with AI tools for estimating and project management. No details were disclosed on investment amounts, ownership stakes, or rollout timelines.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.7588,
+    "entities": {
+      "person": [
+        "peter jackson",
+        "ryan fink"
+      ]
+    }
+  },
+  {
+    "id": 33036619,
+    "group_id": 9367595,
+    "title": "Builders FirstSource Partners with Digs on AI-Powered Homebuilding Platform",
+    "url": "https://www.mdm.com/news/top-distributor-sectors/building-materials-construction/builders-firstsource-partners-with-digs-on-ai-powered-homebuilding-platform/?utm_source=rss&utm_medium=rss&utm_campaign=builders-firstsource-partners-with-digs-on-ai-powered-homebuilding-platform",
+    "publisher": "Modern Distribution Management",
+    "published_date": "2026-08-25T16:21:14",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Builders FirstSource announced on Aug. 25 a strategic partnership with AI provider Digs, becoming the sole lead investor in Digs' $25.3 million Series A and signing a five-year commercial agreement. The companies will integrate Digs' AI platform, which converts construction documents into centralized project information, across estimating, procurement, construction and post-construction services. BFS serves more than 140,000 customers and operates about 565 locations across 43 states.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      },
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.6631,
+    "entities": {
+      "person": [
+        "mike hiller",
+        "coley o’brien",
+        "steve herron",
+        "peter jackson"
+      ]
+    }
+  },
+  {
+    "id": 32978960,
+    "group_id": 9390238,
+    "title": "Vancouver startup Digs lands investment from Builders FirstSource",
+    "url": "https://www.bizjournals.com/portland/news/2026/08/25/digs-funding-builders-firstsource-hiring.html?ana=brss_6222",
+    "publisher": "American City Business Journals",
+    "published_date": "2026-08-25T14:50:29",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.8939,
+    "ai_summary": "A Vancouver-based startup called Digs signed an investment agreement with a publicly traded building supplies and materials company, according to a Portland Business Journal report. The deal will have the two firms working together for at least five years. The article does not disclose the investment amount, the investor's name, or the terms of the agreement.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      },
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "other",
+      "label": "Other"
+    },
+    "sentiment_score": 0.8832,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 32972186,
+    "group_id": 9880182,
+    "title": "Digs, Inc./WA announced that it has received $25.3 million in funding from Builders FirstSource, Inc.",
+    "url": "https://www.marketscreener.com/news/digs-inc-wa-announced-that-it-has-received-25-3-million-in-funding-from-builders-firstsource-inc-ce7858d8da8cf024",
+    "publisher": "MarketScreener",
+    "published_date": "2026-08-25T12:51:54",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.78,
+    "ai_summary": "The body is a company profile for Builders FirstSource, Inc., detailing its product lines, sales breakdown, and analyst ratings. It does not mention the $25.3 million funding from Digs, Inc./WA.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.9983,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 33004152,
+    "group_id": 9460915,
+    "title": "Homebuilding AI startup Digs raises $25.3M and partners with building products giant",
+    "url": "https://www.geekwire.com/2026/homebuilding-ai-startup-digs-raises-25-3m-and-partners-with-building-products-giant/",
+    "publisher": "GeekWire",
+    "published_date": "2026-08-25T10:30:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Vancouver, Wash.-based homebuilding AI startup Digs raised $25.3 million in Series A funding led by building products giant Builders FirstSource, announced Tuesday. Under a five-year agreement, Builders FirstSource will integrate Digs' AI platform into its digital ecosystem, serving 140,000 builder clients. Digs has 37 employees and plans to double to more than 60 by year-end.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      },
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "ryan fink",
+        "ty frackiewicz",
+        "kurt schlosser",
+        "peter jackson"
+      ]
+    }
+  }
+]

@@ -1,0 +1,220 @@
+[
+  {
+    "id": 38754662,
+    "group_id": 12206907,
+    "title": "Electric Partners with isolved to Automate IT Management for Small and Growing Businesses",
+    "url": "https://www.prnewswire.com/news-releases/electric-partners-with-isolved-to-automate-it-management-for-small-and-growing-businesses-302887682.html",
+    "publisher": "PR Newswire",
+    "published_date": "2026-09-23T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Electric partnered with isolved to launch the isolved IT Asset Hub powered by Electric, an AI platform automating device procurement, application provisioning, and security compliance. The platform targets isolved's 8 million employees and 195,000 employers, with onboarding and offboarding features rolling out in coming months.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "promotional",
+      "label": "Promotional"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "ryan denehy",
+        "todd la fever",
+        "brandie gerrish"
+      ]
+    }
+  },
+  {
+    "id": 32975959,
+    "group_id": 9386785,
+    "title": "Electric Unveils Advanced AI-Driven IT Management and Payroll Solutions",
+    "url": "https://third-news.com/article/38bd787a-a08d-11f1-b526-9ca3ba08e13f",
+    "publisher": "Third News",
+    "published_date": "2026-08-25T13:59:42",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Electric, founded in 2017, relaunched its company with an AI-driven platform for IT management and payroll, serving over 55,000 end users and 1,000 businesses globally. The platform draws on more than two million IT tickets and partners with payroll firms including ADP, Paychex, Paycor, UKG, Justworks, isolved and TriNet. It received a $200 million funding round and appears on Deloitte's Technology Fast 500 list.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      },
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": false
+      },
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 32972450,
+    "group_id": 9382718,
+    "title": "Electric Launches AI-Powered IT Platform and Payroll Industry Partnerships",
+    "url": "https://www.prnewswire.com/news-releases/electric-launches-ai-powered-it-platform-and-payroll-industry-partnerships-302858706.html",
+    "publisher": "PR Newswire",
+    "published_date": "2026-08-25T13:30:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9902,
+    "ai_summary": "Electric, an AI platform for IT management, relaunched on August 25, 2026 with a new platform automating IT and HR workflows, backed by a payroll partner network including ADP, Paychex, Paycor, UKG, Justworks, isolved and TriNet. The platform serves over 55,000 end users and 1,000 companies worldwide, and the company has raised $200 million.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      },
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "ryan denehy",
+        "brandie gerrish"
+      ]
+    }
+  },
+  {
+    "id": 32340278,
+    "group_id": 9097508,
+    "title": "Real-time Analytics News for the Week Ending August 15",
+    "url": "https://www.rtinsights.com/real-time-analytics-news-for-the-week-ending-august-15/",
+    "publisher": "Rtinsights",
+    "published_date": "2026-08-16T10:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.996,
+    "ai_summary": "This weekly news roundup highlights significant developments in the real-time analytics and AI sectors, including Databricks' acquisition of Electric, LG's partnership with NVIDIA to develop humanoid robots, and a $240 million infrastructure agreement between IBM and Together AI. The report also covers product launches and certifications from companies such as BMC, MongoDB, Nutanix, and Oracle aimed at enhancing agentic AI capabilities and cloud operations. ",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      },
+      {
+        "name": "Mergers & Acquisitions",
+        "code": "CM03",
+        "is_primary": false
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.9264,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 35725023,
+    "group_id": 6836813,
+    "title": "Electric is joining Databricks",
+    "url": "https://electric.ax/blog/2026/08/11/electric-joining-databricks",
+    "publisher": "Electric",
+    "published_date": "2026-08-13T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9787,
+    "ai_summary": "Electric is joining Databricks to integrate its data primitives and reactivity into Lakebase, a serverless Postgres platform. The move aligns Electric with Neon, which seeded its PGlite and sync services, while Electric Cloud winds down and open-source projects remain unchanged.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "blog_post",
+      "label": "Blog post"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "nikita shamgunov",
+        "stas kelvich"
+      ]
+    }
+  },
+  {
+    "id": 31832569,
+    "group_id": 6722893,
+    "title": "Oh no, not another one! Databricks buys Electric",
+    "url": "https://www.blocksandfiles.com/ai-ml/2026/08/12/oh-no-not-another-one-databricks-buys-electric/5286721",
+    "publisher": "Blocksandfiles",
+    "published_date": "2026-08-12T11:51:33",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Databricks has acquired Electric, the developer of PGLite and Electric Sync Engine, to enhance its Lakebase capabilities with distributed state management and real-time data synchronization for AI agents. This transaction follows Databricks' $1 billion acquisition of Neon last year, as part of a broader strategy to strengthen infrastructure for agentic and AI-native application development. The Electric team will join Databricks' Neon unit to build backend capabilities that allow agents to collaborate efficiently while maintaining synchronized local and cloud contexts. ",
+    "tags": [
+      {
+        "name": "Mergers & Acquisitions",
+        "code": "CM03",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "blog_post",
+      "label": "Blog post"
+    },
+    "sentiment_score": 0.2325,
+    "entities": {
+      "person": [
+        "sam willis",
+        "james arthur",
+        "kyle matthews",
+        "stas kelvich",
+        "valter balegas",
+        "purva gujar",
+        "ali ghodsi",
+        "neon"
+      ]
+    }
+  }
+]

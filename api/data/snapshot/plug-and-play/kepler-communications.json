@@ -1,0 +1,509 @@
+[
+  {
+    "id": 39899419,
+    "group_id": 13535443,
+    "title": "Caitlin Marsh Named Kepler US President",
+    "url": "https://www.govconwire.com/articles/caitlin-marsh-kepler-us-president-appointment",
+    "publisher": "GovCon Wire",
+    "published_date": "2026-10-06T09:43:32",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9924,
+    "ai_summary": "Caitlin Marsh was named president of Kepler Communications U.S., tasked with expanding the company's optical data relay services in the U.S. market. She will offer on-orbit computing and hosted payload services to government and commercial clients. Kepler plans to deploy a next tranche of satellites in 2028 with up to 100 gigabits per second data rates.",
+    "tags": [
+      {
+        "name": "C-Suite Appointments & Departures",
+        "code": "LG01",
+        "is_primary": true
+      },
+      {
+        "name": "Strategic Hiring",
+        "code": "WT01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "caitlin marsh",
+        "mina mitry"
+      ]
+    }
+  },
+  {
+    "id": 39395607,
+    "group_id": 12974193,
+    "title": "Why is Rocket Lab stock surging today?",
+    "url": "https://uk.investing.com/news/stock-market-news/why-is-rocket-lab-stock-surging-today-93CH-4891147",
+    "publisher": "Investing.com",
+    "published_date": "2026-10-01T10:36:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Rocket Lab stock surged 5.2% in pre-open trading after announcing a 20-mission Electron contract with Synspective, its largest launch customer. The deal brings Synspective's total Electron missions to 47 and pushes Rocket Lab's backlog beyond 100 missions. A separate Neutron contract with Kepler Communications and soft inflation data also supported the move.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      },
+      {
+        "name": "Daily Stock Market News",
+        "code": "CM12",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 39334817,
+    "group_id": 10799726,
+    "title": "Why is Rocket Lab stock rallying today?",
+    "url": "https://www.investing.com/news/stock-market-news/why-is-rocket-lab-stock-rallying-today-93CH-4925419",
+    "publisher": "Investing.com",
+    "published_date": "2026-09-30T14:24:15",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Rocket Lab stock rose 5.1% to $73.23 on renewed focus on its Neutron rocket program, after a new launch contract from Kepler Communications was reported. Institutional buying and a soft August PCE inflation print supported the rally, with analysts maintaining a Moderate Buy consensus. The stock remains well below its 52-week high of $151.",
+    "tags": [
+      {
+        "name": "Daily Stock Market News",
+        "code": "CM12",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 34139216,
+    "group_id": 10558285,
+    "title": "Kepler delivers optical infrastructure for real-time space operations – Intelligent CIO North America",
+    "url": "https://www.intelligentcio.com/north-america/2026/09/08/kepler-delivers-optical-infrastructure-for-real-time-space-operations/",
+    "publisher": "Intelligent CIO",
+    "published_date": "2026-09-08T09:59:29",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Kepler Communications launched its first commercial space data relay service, offering real-time optical connectivity for space operations. The network supports missions across Earth observation, ISR, and defense, with data rates up to 100 Gbps. In 2028, Kepler will expand its constellation with additional spacecraft, including a Rocket Lab launch.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "mina mitry"
+      ]
+    }
+  },
+  {
+    "id": 33200648,
+    "group_id": 9830395,
+    "title": "Rocket Lab Just Sold Its First Full Neutron Flight to Kepler Communications. Here's What That Means in Its Competition With SpaceX.",
+    "url": "https://www.fool.com/investing/2026/08/29/rocket-lab-just-sold-its-first-full-neutron-flight/?source=iedfolrf0000001",
+    "publisher": "The Motley Fool",
+    "published_date": "2026-08-29T16:00:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Rocket Lab has signed a launch contract with Canadian telecom firm Kepler Communications to use its Neutron rocket, which has never flown, to deploy a handful of satellites. The deal is not expected to begin until 2028 at the earliest, as Neutron's first flight has been delayed to late 2026 or early 2027.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.6294,
+    "entities": {
+      "person": [
+        "james brumley"
+      ]
+    }
+  },
+  {
+    "id": 33124522,
+    "group_id": 9782378,
+    "title": "Canadian Companies Partner on SDA Sat Solution",
+    "url": "https://payloadspace.com/canadian-companies-partner-on-sda-sat-solution/",
+    "publisher": "Payloadspace",
+    "published_date": "2026-08-27T22:44:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9372,
+    "ai_summary": "Montreal-based NorthStar Earth & Space and Toronto's Kepler Communications announced Wednesday that NorthStar will place SDA sensors on Kepler's spacecraft, aiming to expand their collaboration to meet demand for real-time satellite data. NorthStar is expected to go public via SPAC next quarter, following a $40M+ Canadian deal with the Royal Canadian Air Force's 3 Canadian Space Division in July.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      },
+      {
+        "name": "SPAC Deals & De-SPACs",
+        "code": "CM06",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "promotional",
+      "label": "Promotional"
+    },
+    "sentiment_score": 0.8735,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 33152439,
+    "group_id": 9799595,
+    "title": "Kepler Enters Optical Tech Partnership, Hosted Payload Agreement with NorthStar",
+    "url": "https://www.satellitetoday.com/technology/2026/08/27/kepler-enters-optical-tech-partnership-hosted-payload-agreement-with-northstar/",
+    "publisher": "Via Satellite",
+    "published_date": "2026-08-27T20:26:10",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9244,
+    "ai_summary": "Kepler Communications and NorthStar announced a strategic partnership Thursday combining Kepler's optical data relay infrastructure with NorthStar's Space Domain Awareness services. The deal hosts NorthStar's optical SDA sensors and patented Space Information & Intelligence platform on Kepler satellites, aiming to accelerate deployment of orbital sensing capabilities. NorthStar, based in Montreal with a Virginia U.S. base, supports clients including the RCAF, U.S. Space Force, DARPA, Luxembourg and ESA.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "promotional",
+      "label": "Promotional"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "mina mitry"
+      ]
+    }
+  },
+  {
+    "id": 33229036,
+    "group_id": 9846774,
+    "title": "Viking Acquisition (VACI) highlights NorthStar deal with Kepler partnership",
+    "url": "https://www.stocktitan.net/sec-filings/VACI/425-viking-acquisition-corp-i-business-combination-communication-a55e7254329e.html",
+    "publisher": "Stock Titan",
+    "published_date": "2026-08-27T20:10:05",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Viking Acquisition Corp I's August 27, 2026 Form 425 filing disclosed a proposed business combination with NorthStar Earth & Space Inc., under an amended Business Combination Agreement. The SEC declared the Form F-4 effective August 12, 2026, with a shareholder record date of August 3, 2026. NorthStar also announced a partnership with Kepler Communications to host its optical Space Domain Awareness sensors on Kepler's satellite infrastructure.",
+    "tags": [
+      {
+        "name": "SPAC Deals & De-SPACs",
+        "code": "CM06",
+        "is_primary": true
+      },
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.6931,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 33229038,
+    "group_id": 9828747,
+    "title": "NorthStar to deploy 11 sensors on Kepler relay satellites to track objects in orbit",
+    "url": "https://spacenews.com/northstar-to-deploy-11-sensors-on-kepler-relay-satellites-to-track-objects-in-orbit/",
+    "publisher": "SpaceNews",
+    "published_date": "2026-08-27T14:18:39",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9807,
+    "ai_summary": "NorthStar Earth & Space said it will deploy 11 optical space domain awareness sensors on Kepler Communications' data relay satellites in 2028, following the failure of four orbital-tracking spacecraft ordered from Spire Global. The Aug. 27 agreement combines NorthStar's sensing and analytics with Kepler's LEO relay infrastructure, with sensors to be launched across two separate missions. NorthStar is also preparing to go public via a SPAC merger.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      },
+      {
+        "name": "SPAC Deals & De-SPACs",
+        "code": "CM06",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.989,
+    "entities": {
+      "person": [
+        "mina mitry"
+      ]
+    }
+  },
+  {
+    "id": 33145878,
+    "group_id": 9555687,
+    "title": "Space-based Data Center Market Size to Surpass USD 8.4 Bn by 2035",
+    "url": "https://www.globemarketresearch.com/reports/space-based-data-center-market",
+    "publisher": "Globemarketresearch",
+    "published_date": "2026-08-27T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "A Globe Market Research report projects the global space-based data center market to grow from USD 1.9 billion in 2026 to about USD 8.4 billion by 2035, a 17.9% CAGR. North America led with 36.3% of the market in 2025, while LEO, sub-1 kW systems and commercial users held 55.5%, 43.2% and 35.7% shares. The report cites Kepler, Axiom Space, NVIDIA and SpaceXAI deployments, and notes launch costs, thermal management and radiation as restraints.",
+    "tags": [
+      {
+        "name": "Sector Outlook & Forecasts",
+        "code": "MM07",
+        "is_primary": true
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "gao"
+      ]
+    }
+  },
+  {
+    "id": 33013617,
+    "group_id": 9495947,
+    "title": "Kepler Communications’ space-based data centres come online",
+    "url": "https://betakit.com/kepler-communications-space-based-data-centres-come-online/",
+    "publisher": "BetaKit",
+    "published_date": "2026-08-25T16:25:17",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Kepler Communications, a Toronto firm, announced on Monday that its satellite constellation is delivering real-time, space-based computing to commercial and government customers, marking the first low-Earth orbit optical relay network online. Each satellite carries at least four optical terminals enabling laser links between space, air and ground, with planned expansion in 2028 supporting rates up to 100 Gbps.",
+    "tags": [
+      {
+        "name": "Operational Milestones",
+        "code": "SD04",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "mina mitry",
+        "john ruffolo"
+      ]
+    }
+  },
+  {
+    "id": 32980449,
+    "group_id": 9391923,
+    "title": "Kepler Launches Commercial Optical Data Relay Service",
+    "url": "https://www.executivebiz.com/articles/kepler-commercial-optical-data-relay",
+    "publisher": "ExecutiveBiz",
+    "published_date": "2026-08-25T15:20:05",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9895,
+    "ai_summary": "Kepler Communications said on Monday it has begun commercial operations for its optical data relay network, following commissioning of its first tranche of 10 satellites launched in January. The constellation uses optical inter-satellite links, onboard NVIDIA-powered edge computing and hosted payloads, targeting defense, intelligence and space domain awareness customers. A second tranche, including a Rocket Lab Neutron mission, is planned for 2028.",
+    "tags": [
+      {
+        "name": "Operational Milestones",
+        "code": "SD04",
+        "is_primary": true
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "mina mitry"
+      ]
+    }
+  },
+  {
+    "id": 32979932,
+    "group_id": 9335875,
+    "title": "Kepler Launches Service on its New Optical Data Relay Constellation",
+    "url": "https://www.satellitetoday.com/technology/2026/08/24/kepler-launches-service-on-its-new-optical-data-relay-constellation/",
+    "publisher": "Via Satellite",
+    "published_date": "2026-08-24T23:23:21",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Kepler Communications announced Monday that it is offering service from its next-generation optical data relay constellation to commercial and government customers, following SpaceX's successful January launch. The constellation uses IP-based architecture with optical inter-satellite links, supporting Earth observation, space domain awareness, ISR, defense and real-time capabilities. Kepler plans to expand the network starting in 2028, with terminals supporting up to 100 Gbps.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "promotional",
+      "label": "Promotional"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "mina mitry"
+      ]
+    }
+  },
+  {
+    "id": 33229156,
+    "group_id": 9846934,
+    "title": "Kepler Delivers Optical Infrastructure for Real-Time Space Operations",
+    "url": "https://www.manilatimes.net/2026/08/24/tmt-newswire/globenewswire/kepler-delivers-optical-infrastructure-for-real-time-space-operations/2411094",
+    "publisher": "The Manila Times ",
+    "published_date": "2026-08-24T22:13:26",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.971,
+    "ai_summary": "Kepler Communications announced on August 24, 2026 that its next-generation optical data relay network is delivering commercial services worldwide, with the first tranche completing commissioning after a January 2026 launch. The 33-satellite constellation supports Earth observation, SDA, ISR, defence and hosted payloads, with optical terminals supporting up to 100 Gbps. A second tranche, including a Rocket Lab launch, is planned for 2028.",
+    "tags": [
+      {
+        "name": "Operational Milestones",
+        "code": "SD04",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "mina mitry",
+        "crystalyn koch"
+      ]
+    }
+  },
+  {
+    "id": 31852943,
+    "group_id": 6798418,
+    "title": "Rocket Lab’s Neutron Window Narrows; Beck Reveals Reuse-First Strategy",
+    "url": "https://www.techtimes.com/articles/324010/20260811/rocket-labs-neutron-window-narrows-beck-reveals-reuse-first-strategy.htm",
+    "publisher": "Tech Times",
+    "published_date": "2026-08-11T15:49:52",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Rocket Lab reported a record Q2 2026 revenue of $234 million but missed net loss estimates, while CEO Peter Beck signaled that the Neutron rocket's maiden flight may slip to 2027 to prioritize long-term reusability over rapid initial deployment. The company secured $663 million in new Space Force contracts and announced a dedicated launch deal with Kepler Communications, despite acknowledging the schedule risks associated with its defense obligations. Following the earnings release, Rocket Lab shares fell 7.25% as investors weighed the strong top-line growth against profitability misses and the potential delay of its medium-lift vehicle. ",
+    "tags": [
+      {
+        "name": "Earnings Releases",
+        "code": "FR01",
+        "is_primary": true
+      },
+      {
+        "name": "Operational Milestones",
+        "code": "SD04",
+        "is_primary": false
+      },
+      {
+        "name": "Debt Financing",
+        "code": "CM02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.8718,
+    "entities": {
+      "person": [
+        "sir peter beck",
+        "beck",
+        "murielle baker"
+      ]
+    }
+  }
+]

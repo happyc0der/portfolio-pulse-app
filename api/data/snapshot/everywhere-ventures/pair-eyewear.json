@@ -1,0 +1,72 @@
+[
+  {
+    "id": 33350628,
+    "group_id": 9954325,
+    "title": "Pair Eyewear launches Sesame Street glasses with Big Bird, Elmo and more",
+    "url": "https://www.goodmorningamerica.com/style/story/pair-eyewear-launches-sesame-street-glasses-big-bird-76108187",
+    "publisher": "Good Morning America",
+    "published_date": "2026-08-31T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.8292,
+    "ai_summary": "Pair Eyewear launched a 20-piece Sesame Street glasses collection featuring Big Bird, Elmo, and other characters, with each frame priced at $30. The brand pledged to donate one pair of glasses to a child in need for each purchase, part of its Pair For a Pair program with The EYElliance.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      },
+      {
+        "name": "Pricing & Commercial Strategy",
+        "code": "SD10",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "promotional",
+      "label": "Promotional"
+    },
+    "sentiment_score": 0.8091,
+    "entities": {
+      "person": [
+        "elmo",
+        "ernie",
+        "big bird",
+        "dr. jordan kassalow"
+      ]
+    }
+  },
+  {
+    "id": 33350591,
+    "group_id": 9954615,
+    "title": "Pair Eyewear Expands Performance Series With ColorIQ Driving Lenses",
+    "url": "https://www.visionmonday.com/launchpad/frame-collection-1/article/pair-eyewear-expands-performance-series-with-coloriq-driving-lenses",
+    "publisher": "Visionmonday",
+    "published_date": "2026-08-28T00:08:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.7493,
+    "ai_summary": "Pair Eyewear launched a Driving Lens top frame with ColorIQ lens technology, developed with Colorboost. The non-polarized lens reduces glare by about 50% compared to many consumer driving lenses, and attaches magnetically to existing frames.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "nathan kondamuri"
+      ]
+    }
+  }
+]

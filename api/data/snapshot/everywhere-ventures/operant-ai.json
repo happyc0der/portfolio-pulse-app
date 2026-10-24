@@ -1,0 +1,33 @@
+[
+  {
+    "id": 33141239,
+    "group_id": 9793173,
+    "title": "Operant AI Launches Semantic Firewall for Enterprises",
+    "url": "https://www.passionateinmarketing.com/operant-ai-launches-semantic-firewall-to-enforce-ai-agents-in-real-time-as-enterprise-adoption-scales-in-india/",
+    "publisher": "www.passionateinmarketing.com",
+    "published_date": "2026-08-28T10:54:16",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "San Francisco-based Operant AI announced on August 28 the launch of Operant Semantic Firewall, a product that evaluates an AI agent's intent across prompts, responses, tool calls and data movement and enforces inline allow, block or redact decisions. The company cites IBM and Salesforce data showing 77% of CXOs and 76% of Indian security teams expect AI agent adoption within two years. Additional updates include Live Browser AI Protection, expanded Claude coverage and a dynamic Token Meter.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5311,
+    "entities": {
+      "person": [
+        "vrajesh bhavsar"
+      ]
+    }
+  }
+]

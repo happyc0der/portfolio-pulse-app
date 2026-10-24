@@ -1,0 +1,166 @@
+[
+  {
+    "id": 41743992,
+    "group_id": 15161869,
+    "title": "Einride expands Nvidia partnership to deploy AI reasoning model for self-driving trucks",
+    "url": "https://www.einnews.com/article/951230498/live",
+    "publisher": "EIN Presswire",
+    "published_date": "2026-10-21T10:56:35",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Einride will test Nvidia's Alpamayo AI reasoning model in its self-driving trucks, aiming to expand autonomous freight services and cut development costs. The Swedish company plans to be the first trucking operator to deploy the model, with a live road evaluation scheduled for the second half of 2027.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "shilpi majumdar",
+        "prathik jayaprakash"
+      ]
+    }
+  },
+  {
+    "id": 41345744,
+    "group_id": 14615801,
+    "title": "Einride (NASDAQ:ENRD) Stock Rating Cut to Sell at Wall Street Zen",
+    "url": "https://www.themarketsdaily.com/2026/10/19/einride-nasdaqenrd-stock-rating-cut-to-sell-at-wall-street-zen.html",
+    "publisher": "Markets Daily",
+    "published_date": "2026-10-19T06:13:04",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Wall Street Zen downgraded Einride from hold to sell in a research note. Weiss Ratings and Canaccord Genuity also commented, with a consensus hold and $8.00 target. Einride is a Swedish freight-technology company developing electric and autonomous solutions.",
+    "tags": [
+      {
+        "name": "Guidance & Forecast Revisions",
+        "code": "FR05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.01,
+    "entities": {
+      "person": [
+        "robert falck"
+      ]
+    }
+  },
+  {
+    "id": 41782606,
+    "group_id": 14789743,
+    "title": "Embedl Selected By Einride As Supplier Of Edge AI Development And Compliance Platform",
+    "url": "https://menafn.com/1111828660/Embedl-Selected-By-Einride-As-Supplier-Of-Edge-AI-Development-And-Compliance-Platform",
+    "publisher": "Business & Financial",
+    "published_date": "2026-10-19T05:16:26",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9419,
+    "ai_summary": "Embedl signed an agreement to supply electric driverless freight company Einride with its edge AI development and compliance platform. The platform supports Einride's development and certification of autonomous driver software for public roads. Embedl's CEO expressed excitement about supporting Einride's safety-critical autonomous driving.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "hans salomonsson",
+        "ola tiverman"
+      ]
+    }
+  },
+  {
+    "id": 40502046,
+    "group_id": 14104895,
+    "title": "Einride (NASDAQ:ENRD) Upgraded at Wall Street Zen",
+    "url": "https://www.themarketsdaily.com/2026/10/13/einride-nasdaqenrd-upgraded-at-wall-street-zen.html",
+    "publisher": "Markets Daily",
+    "published_date": "2026-10-13T05:37:07",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9801,
+    "ai_summary": "Wall Street Zen upgraded Einride from a sell to a hold rating. The stock opened at $3.15, with a market cap of $447.93 million and a consensus target price of $8.00. Einride develops electric and autonomous freight solutions.",
+    "tags": [
+      {
+        "name": "Guidance & Forecast Revisions",
+        "code": "FR05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "robert falck"
+      ]
+    }
+  },
+  {
+    "id": 40429397,
+    "group_id": 13458420,
+    "title": "Driverless Electric Trucks Are Coming For Your Diesel Fuel",
+    "url": "https://cleantechnica.com/2026/10/10/electric-trucks-autonomous-einride-ease-logistics-us-megacharger/",
+    "publisher": "CleanTechnica",
+    "published_date": "2026-10-10T14:07:25",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Einride's two autonomous electric trucks are operating in Marysville, Ohio, hauling freight for EASE Logistics. Tesla is installing Megachargers for its electric Semi at Pilot travel centers. The trucks aim to expand the fleet and test automation in real-world conditions.",
+    "tags": [
+      {
+        "name": "Operational Milestones",
+        "code": "SD04",
+        "is_primary": true
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "donald trump",
+        "vladimir putin",
+        "nussbaum"
+      ]
+    }
+  }
+]

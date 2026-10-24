@@ -1,0 +1,33 @@
+[
+  {
+    "id": 39504488,
+    "group_id": 13124959,
+    "title": "Champion Tracking Software: 8 Best Tools for 2026",
+    "url": "https://pipeline.zoominfo.com/sales/champion-tracking-software",
+    "publisher": "Zoominfo",
+    "published_date": "2026-09-23T22:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.8171,
+    "ai_summary": "Eight champion tracking tools are compared, with ZoomInfo, UserGems, Champify, and others ranked on detection accuracy, CRM sync, and pricing. ZoomInfo is highlighted for verified detection and native routing, while others like UserGems and Champify offer CRM-native or scored signals. The guide advises choosing based on CRM and team capacity.",
+    "tags": [
+      {
+        "name": "Others",
+        "code": "OT01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "kevin neely"
+      ]
+    }
+  }
+]

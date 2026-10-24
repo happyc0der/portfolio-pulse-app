@@ -1,0 +1,66 @@
+[
+  {
+    "id": 40529746,
+    "group_id": 14121181,
+    "title": "MP4 to GIF Converter: Best Free Tools Compared",
+    "url": "https://www.descript.com/blog/article/best-video-to-gif-tools",
+    "publisher": "Descript",
+    "published_date": "2026-07-29T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.8385,
+    "ai_summary": "Six MP4-to-GIF converters are compared, including Descript, Giphy, Movavi, Ezgif, Convertio, and Make a GIF. Descript offers text-based editing with AI clip finding, while Giphy and Ezgif are free web tools. Pricing ranges from free to $24/month for Descript's Creator plan.",
+    "tags": [
+      {
+        "name": "Others",
+        "code": "OT01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 40529616,
+    "group_id": 14408050,
+    "title": "How to Make a GIF on Instagram: Branded Stickers, Explained",
+    "url": "https://www.descript.com/blog/article/how-to-make-branded-gifs-for-instagram",
+    "publisher": "Descript",
+    "published_date": "2026-07-29T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.689,
+    "ai_summary": "Branded GIFs for Instagram must be uploaded to GIPHY, which requires brand approval and transparent backgrounds. The article lists 2021's top GIFs and advises making GIFs versatile, using recognizable figures, and being polite. It also notes legal risks when using copyrighted content.",
+    "tags": [
+      {
+        "name": "Others",
+        "code": "OT01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.8621,
+    "entities": {
+      "person": [
+        "kathryn hahn",
+        "christiana comer",
+        "stanley",
+        "tom the cat",
+        "christiana"
+      ]
+    }
+  }
+]

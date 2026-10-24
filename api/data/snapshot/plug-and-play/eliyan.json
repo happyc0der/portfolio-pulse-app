@@ -1,0 +1,518 @@
+[
+  {
+    "id": 40910269,
+    "group_id": 14373939,
+    "title": "Cisco-backed chiplet interconnect upstart in line for acquisition: report",
+    "url": "https://www.sdxcentral.com/news/cisco-backed-chiplet-interconnect-upstart-in-line-for-acquisition-report/",
+    "publisher": "SDxCentral",
+    "published_date": "2026-10-15T12:03:48",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9829,
+    "ai_summary": "Chiplet interconnect startup Eliyan is reportedly being eyed for acquisition, with investors notified of a takeover bid. The buyer was not named, and Arm was in early talks but opted out. Eliyan, founded in 2021, was valued at about $1 billion after a $145 million Series C round.",
+    "tags": [
+      {
+        "name": "Mergers & Acquisitions",
+        "code": "CM03",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.5472,
+    "entities": {
+      "person": [
+        "syrus ziai",
+        "ramin farjadrad"
+      ]
+    }
+  },
+  {
+    "id": 40677242,
+    "group_id": 14207337,
+    "title": "Eliyan Targets Copper Interconnect Limits with NuLight Chiplet Platform - HPCwire",
+    "url": "https://www.hpcwire.com/off-the-wire/eliyan-targets-copper-interconnect-limits-with-nulight-chiplet-platform/",
+    "publisher": "Hpcwire",
+    "published_date": "2026-10-14T12:07:06",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Eliyan introduced Nexus and Oscar chiplets, a 2D microVCSEL interconnect platform, at OCP Summit 2026. The platform targets copper interconnect limits with a 1.6T reverse gearbox and optical reach of about 50 meters. Both chiplets are sampling now.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "ramin farjadrad",
+        "ramin"
+      ]
+    }
+  },
+  {
+    "id": 40245141,
+    "group_id": 13813496,
+    "title": "AI chiplet startup Eliyan draws takeover interest months after $1 billion valuation",
+    "url": "https://cryptobriefing.com/eliyan-ai-chiplet-takeover-interest/",
+    "publisher": "Crypto Briefing",
+    "published_date": "2026-10-09T21:07:14",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Eliyan, a Santa Clara chip interconnect startup, has received at least one takeover bid, with options potentially valuing it at $3 billion. The bid came two months after it raised $145 million at a $1 billion valuation. The company plans to ship initial chiplets by end of 2026.",
+    "tags": [
+      {
+        "name": "Mergers & Acquisitions",
+        "code": "CM03",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.6987,
+    "entities": {
+      "person": [
+        "diego almada lopez"
+      ]
+    }
+  },
+  {
+    "id": 40218423,
+    "group_id": 13789298,
+    "title": "Networking startup Eliyan gets takeover interest, held early talks with Arm - report",
+    "url": "https://seekingalpha.com/news/4651748-networking-startup-eliyan-gets-takeover-interest-held-early-talks-with-arm-report",
+    "publisher": "Seeking Alpha",
+    "published_date": "2026-10-09T13:30:39",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Networking startup Eliyan, valued at $1 billion in July, disclosed to some investors that it received a takeover offer. The company has been working with an advisor since the summer.",
+    "tags": [
+      {
+        "name": "Mergers & Acquisitions",
+        "code": "CM03",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "eliyan"
+      ]
+    }
+  },
+  {
+    "id": 33427345,
+    "group_id": 10008535,
+    "title": "Eliyan Supports Latest Version of UCIe Chiplet Interconnect Standard, Continues to Drive Performance and Bandwidth Capabilities to 40Gbps and Beyond to Help Meet the Needs of the Multi-die Era",
+    "url": "https://www.newsfilecorp.com/release/178375/Eliyan-Supports-Latest-Version-of-UCIe-Chiplet-Interconnect-Standard-Continues-to-Drive-Performance-and-Bandwidth-Capabilities-to-40Gbps-and-Beyond-to-Help-Meet-the-Needs-of-the-Multidie-Era",
+    "publisher": "Newsfile",
+    "published_date": "2026-08-19T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9556,
+    "ai_summary": "Eliyan Corporation announced support for the UCIe 1.1 chiplet interconnect standard. The company's Bunch of Wires technique, which it claims doubles performance and halves power, is designed for multi-die architectures. The announcement highlights its role in advancing open chiplet ecosystems.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "ramin farjadrad",
+        "mike sottak"
+      ]
+    }
+  },
+  {
+    "id": 32314933,
+    "group_id": 7428839,
+    "title": "Eliyan hits $1B valuation and Simile raises $200M as AI infrastructure funding surges in late July 2026",
+    "url": "https://www.marketscale.com/industries/software-and-technology/eliyan-hits-1b-valuation-and-simile-raises-200m-as-ai-infrastructure-funding-surges-in-late-july-2026",
+    "publisher": "MarketScale",
+    "published_date": "2026-08-09T10:33:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "In late July 2026, Eliyan achieved a $1 billion valuation following an oversubscribed $145 million Series C, while Simile raised $200 million in a Series B that doubled its valuation to $2 billion. These deals highlight a surge in investment across AI infrastructure sectors, including chip interconnects and behavioral prediction technologies. The funding activity also included Intropy securing $11 million for industrial supply chain automation and Function Health raising $450 million for employer health monitoring. ",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      },
+      {
+        "name": "Valuation Events",
+        "code": "CM09",
+        "is_primary": false
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "franziska kirschner",
+        "kirschner"
+      ]
+    }
+  },
+  {
+    "id": 31550520,
+    "group_id": 7119747,
+    "title": "Eliyan, HyperLight, Lumilens Receive New Funding",
+    "url": "https://marklapedus.substack.com/p/eliyan-hyperlight-lumilens-receive",
+    "publisher": "Substack",
+    "published_date": "2026-08-07T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Three AI infrastructure startups—Lumilens, Eliyan, and HyperLight—have secured significant new funding to develop optical and interconnect technologies for data centers. Lumilens raised over $700 million to reach a $5.51 billion valuation while shipping its first products, whereas Eliyan and HyperLight completed Series C rounds of $145 million and $80 million respectively. These investments aim to address bandwidth, power, and efficiency bottlenecks in scaling AI network architectures. ",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      },
+      {
+        "name": "Operational Milestones",
+        "code": "SD04",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "umesh padval",
+        "mark lapedus"
+      ]
+    }
+  },
+  {
+    "id": 31284588,
+    "group_id": 5681592,
+    "title": "Eliyan Completes $145 Million Series C",
+    "url": "https://vcnewsdaily.com/eliyan/venture-capital-funding/swdktnfvbl",
+    "publisher": "VC News Daily",
+    "published_date": "2026-08-04T12:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Eliyan Corporation, a connectivity technology provider for AI compute, memory, and networking systems, announced the completion of its Series C funding round totaling $145 million at a $1 billion valuation. The oversubscribed round was led by Seligman Ventures with participation from new strategic investors Cisco Investments and Lumentum. The involvement of these strategic investors validates Eliyan's technology fit at major hyperscalers, chip developers, memory suppliers, and optical module providers.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      },
+      {
+        "name": "Valuation Events",
+        "code": "CM09",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 30902508,
+    "group_id": 5028185,
+    "title": "Eliyan Achieves Unicorn Status With $145 Million Series C To Advance Electro-Optical Interconnects For AI",
+    "url": "https://pulse2.com/eliyan-achieves-unicorn-status-with-145-million-series-c-to-advance-electro-optical-interconnects-for-ai/",
+    "publisher": "Pulse 2.0",
+    "published_date": "2026-07-31T20:08:41",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Eliyan Corporation has closed a $145 million Series C funding round at a $1 billion valuation, achieving unicorn status, with Seligman Ventures leading the round and new strategic investments from Cisco Investments and Lumentum. The financing will accelerate development of Eliyan's die-to-die, chip-to-chip, and rack-to-rack chiplet interconnect technologies, including NuLink PHYs and NuGear chiplet families designed to address I/O, memory, and power constraints in AI scale-up and scale-in networks. Seligman Ventures Managing Partner Umesh Padval will join Eliyan's board as part of the transaction.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      },
+      {
+        "name": "C-Suite Appointments & Departures",
+        "code": "LG01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "promotional",
+      "label": "Promotional"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "umesh padval",
+        "ramin farjadrad",
+        "syrus",
+        "patrick",
+        "ramin"
+      ]
+    }
+  },
+  {
+    "id": 30930751,
+    "group_id": 5177059,
+    "title": "Eliyan Hits Unicorn Status as AI Data Bottlenecks Shift Focus to Interconnects",
+    "url": "https://www.webpronews.com/eliyan-hits-unicorn-status-as-ai-data-bottlenecks-shift-focus-to-interconnects/",
+    "publisher": "WebProNews",
+    "published_date": "2026-07-31T10:32:06",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Santa Clara-based Eliyan raised $145 million in an oversubscribed Series C round at a $1 billion valuation, led by Seligman Ventures with participation from new strategic investors Cisco Investments and Lumentum, along with existing backers AMD, Arm, Meta and major memory suppliers. The company develops NuLink PHYs and NuGear chiplets to solve data bandwidth bottlenecks that leave AI accelerators operating at just 30–40% utilization due to slow data movement between chips, packages and racks. Eliyan expects revenue to grow from low millions in 2025 to hundreds of millions by the end of 2027, driven by licensing deals and chiplet sales to hyperscalers and AI accelerator designers.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      },
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "ramin farjadrad",
+        "patrick soheili",
+        "syrus ziai",
+        "umesh padval"
+      ]
+    }
+  },
+  {
+    "id": 30864793,
+    "group_id": 6068270,
+    "title": "Chiplet interconnect startup Eliyan valued at $1bn following $145m Series C funding round",
+    "url": "https://www.datacenterdynamics.com/en/news/chiplet-interconnect-startup-eliyan-valued-at-1bn-following-145m-series-c-funding-round/",
+    "publisher": "Datacenterdynamics",
+    "published_date": "2026-07-31T09:34:47",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Eliyan, a chiplet interconnect manufacturer, has raised $145 million in a Series C funding round led by Seligman Ventures, valuing the startup at $1 billion. The oversubscribed round, which saw participation from Cisco Investments and Lumentum, will fund development of next-generation interconnect technologies for AI chips, with the company claiming its NuLink PHY and NuGear offerings achieve up to four times the performance and half the power of competing solutions. Founded in 2021 by former Marvell Semiconductor executives, Eliyan's Universal Memory Interface addresses die-to-die and die-to-memory interconnect challenges in advanced AI infrastructure.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      },
+      {
+        "name": "Valuation Events",
+        "code": "CM09",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "umesh padval",
+        "ramin farjadrad",
+        "patrick soheili",
+        "syrus ziai"
+      ]
+    }
+  },
+  {
+    "id": 30943820,
+    "group_id": 4892769,
+    "title": "Eliyan Secures $145M Series C, $1B Valuation",
+    "url": "https://www.photonics.com/Articles/Eliyan-Secures-145M-Series-C-1B-Valuation/p5/a72458",
+    "publisher": "Photonics Spectra",
+    "published_date": "2026-07-31T07:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Eliyan Corporation, a developer of connectivity technologies for next-generation AI compute, memory, and networking systems, completed a $145 million Series C funding round in July 2026, achieving a $1 billion valuation. The round was led by Seligman Ventures with participation from new strategic investors Cisco Investments and Lumentum. The funding will be used to expand Eliyan's development of next-generation interconnect technologies and its entry into the electro-optical interconnect technology market, complementing its existing electrical interconnect capabilities for AI infrastructure.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "brian soller",
+        "eliyan"
+      ]
+    }
+  },
+  {
+    "id": 30587859,
+    "group_id": 4753917,
+    "title": "Cisco-Backed Startup Eliyan Raises $145M at $1B Valuation to Fix AI’s Data Bottleneck",
+    "url": "https://ventureburn.com/cisco-backed-eliyan-raises-145m-at-1b-valuation/",
+    "publisher": "Ventureburn",
+    "published_date": "2026-07-30T14:42:57",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Cisco-backed startup Eliyan has raised $145 million in a Series C funding round led by Seligman Ventures, with Cisco Investments and Lumentum joining as new strategic investors, pushing the company's valuation to $1 billion. The startup, founded in Santa Clara, builds electro-optical chiplets designed to solve the data bottleneck in AI training clusters where GPUs typically operate at only 30-40% utilization due to slow data movement between chips and racks. Eliyan plans to begin delivering its first chiplets later this year and targets hundreds of millions of dollars in revenue by 2027, holding over 100 patents in the interconnect space.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "patrick soheili",
+        "syrus ziai",
+        "umesh padval",
+        "ramin farjadrad",
+        "ekemini"
+      ]
+    }
+  },
+  {
+    "id": 30578365,
+    "group_id": 4958598,
+    "title": "Cisco-backed Silicon Valley startup Eliyan raises $145M at $1B valuation to build the future of AI interconnects — TFN",
+    "url": "https://techfundingnews.com/cisco-backed-silicon-valley-startup-eliyan-raises-145m-at-1b-valuation-to-build-the-future-of-ai-interconnects/",
+    "publisher": "Tech Funding News",
+    "published_date": "2026-07-30T11:50:02",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Eliyan, a Santa Clara-based chip interconnect startup, has raised $145 million in an oversubscribed Series C round, reaching a $1 billion valuation, led by Seligman Ventures with new strategic investors Cisco Investments and Lumentum. The company, which licenses its NuLink PHY and NuGear chiplet technologies enabling high-speed die-to-die and chip-to-chip communication using standard packaging, expects chiplet shipments to begin this year with revenue forecast to grow from low millions in 2025 to hundreds of millions by 2027. The funding will accelerate expansion into electro-optical interconnects, one of the fastest-growing areas of AI computing, as the company positions itself in a consolidating interconnect market following Celestial AI's $2.35 billion acquisition by Marvell.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      },
+      {
+        "name": "Valuation Events",
+        "code": "CM09",
+        "is_primary": false
+      },
+      {
+        "name": "Competitive Threats",
+        "code": "II04",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "patrick soheili",
+        "ramin farjadrad",
+        "syrus akbari",
+        "umesh padval",
+        "syrus ziai"
+      ]
+    }
+  }
+]

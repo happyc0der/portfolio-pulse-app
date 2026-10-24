@@ -1,0 +1,35 @@
+[
+  {
+    "id": 31465841,
+    "group_id": 6589146,
+    "title": "How motion design turns complex digital products into clear stories",
+    "url": "https://techbullion.com/how-motion-design-turns-complex-digital-products-into-clear-stories/",
+    "publisher": "TechBullion",
+    "published_date": "2026-08-07T11:47:19",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.7826,
+    "ai_summary": "This article profiles Serhii Kerkez, a motion designer and video editor, exploring his approach to using motion design as a communication discipline that converts complex digital products into clear visual stories. Kerkez details his work on ESAI, an AI-powered college guidance platform, including producing homepage animations and editing the product demonstration video for their Shark Tank pitch that secured investment from Mark Cuban. He currently works at a New York-based company developing AI tools for video creation, where he builds reusable motion systems, brand guidelines, and automated workflows while emphasizing that human judgment remains essential for determining which visual choices effectively communicate product value.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.6847,
+    "entities": {
+      "person": [
+        "serhii kerkez",
+        "mark cuban",
+        "kerkez"
+      ]
+    }
+  }
+]

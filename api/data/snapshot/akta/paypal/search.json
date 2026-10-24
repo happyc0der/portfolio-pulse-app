@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "00000r6",
+    "product_category": "Online Payment Platform",
+    "match": {
+      "uuid": "00000r6",
+      "name": "PayPal",
+      "website": "https://www.paypal.com/home",
+      "product_category": "Online Payment Platform",
+      "company_status": "public",
+      "akta_rank": 9
+    }
+  },
+  "fetched_at": "2026-10-24T16:02:47.518026+00:00",
+  "credits_consumed": 0
+}

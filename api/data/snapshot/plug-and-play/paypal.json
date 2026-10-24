@@ -1,0 +1,249 @@
+[
+  {
+    "id": 42383078,
+    "group_id": 14996468,
+    "title": "Coinbase vs. Paypal: Two Fintech Giants, Two Very Different Price Tags. Which Stock Wins?",
+    "url": "https://www.fool.com/coverage/better-buy/2026/10/24/coinbase-vs-paypal-two-fintech-giants-two-very-different-price-tags-which-stock-wins/?source=iedfolrf0000001",
+    "publisher": "The Motley Fool",
+    "published_date": "2026-10-24T09:10:02",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Coinbase and PayPal are compared on financials and valuations, with Coinbase showing faster revenue growth (9.4% vs 4.3%) but a higher valuation. PayPal trades at a lower P/E and P/S, offering a more attractive entry point. The author favors PayPal for long-term investors due to its lower valuation and established cash flow.",
+    "tags": [
+      {
+        "name": "Daily Stock Market News",
+        "code": "CM12",
+        "is_primary": true
+      },
+      {
+        "name": "Valuation Events",
+        "code": "CM09",
+        "is_primary": false
+      },
+      {
+        "name": "Guidance & Forecast Revisions",
+        "code": "FR05",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.514,
+    "entities": {
+      "person": [
+        "rj fulton"
+      ]
+    }
+  },
+  {
+    "id": 42306351,
+    "group_id": 15122023,
+    "title": "PayPal (NASDAQ:PYPL) Stock Price Expected to Rise, Truist Financial Analyst Says",
+    "url": "https://www.marketbeat.com/instant-alerts/analyst-paypal-nasdaq-pypl-stock-price-expected-to-rise-truist-financial-analyst-says-2026-10-23/",
+    "publisher": "MarketBeat",
+    "published_date": "2026-10-23T18:00:40",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Truist Financial raised its PayPal price target to $58 from $53, keeping a hold rating. Other analysts also adjusted targets, with an average rating of Hold and average target of $56.42. PayPal's stock closed at $57.25, down $0.28.",
+    "tags": [
+      {
+        "name": "Guidance & Forecast Revisions",
+        "code": "FR05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "suzan kereere",
+        "chris natali"
+      ]
+    }
+  },
+  {
+    "id": 42263284,
+    "group_id": 15055597,
+    "title": "PayPal Is Down More Than 80% From Its Peak. Here's Why I Still Own It",
+    "url": "https://www.fool.com/investing/2026/10/23/paypal-is-down-more-than-80-from-its-peak-here-s-why-i-still-own-it/",
+    "publisher": "The Motley Fool",
+    "published_date": "2026-10-23T11:52:01",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9823,
+    "ai_summary": "PayPal's stock has fallen over 80% from its 2021 peak, and takeover talks have ended. The company reported 5% revenue growth and $1.8 billion in quarterly free cash flow, with an aggressive buyback program. The author holds shares, citing a 10x forward earnings multiple and potential double-digit EPS growth from buybacks.",
+    "tags": [
+      {
+        "name": "Earnings Releases",
+        "code": "FR01",
+        "is_primary": true
+      },
+      {
+        "name": "Daily Stock Market News",
+        "code": "CM12",
+        "is_primary": false
+      },
+      {
+        "name": "Guidance & Forecast Revisions",
+        "code": "FR05",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5219,
+    "entities": {
+      "person": [
+        "matt frankel"
+      ]
+    }
+  },
+  {
+    "id": 42244715,
+    "group_id": 15539427,
+    "title": "LianLian Global taps PayPal, Venmo to streamline cross-border seller payouts (PYPL:NASDAQ)",
+    "url": "https://seekingalpha.com/news/4656455-lianlian-global-taps-paypal-venmo-to-streamline-cross-border-seller-payouts",
+    "publisher": "Seeking Alpha",
+    "published_date": "2026-10-23T09:11:05",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "LianLian Global announced a partnership with PayPal to enable payouts to PayPal and Venmo accounts for its social commerce, marketplace, and e-commerce clients. Brands are expected to spend $32.6 billion on creators in 2026, with PayPal holding over 400 million active accounts and Venmo reaching 67 million monthly active accounts.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.9567,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 42207773,
+    "group_id": 15571825,
+    "title": "PayPal Holdings (PYPL) Tests Its Undervalued Narrative After Glance Checkout Deal",
+    "url": "https://simplywall.st/stocks/us/diversified-financials/nasdaq-pypl/paypal-holdings/news/paypal-holdings-pypl-tests-its-undervalued-narrative-after-g",
+    "publisher": "Simply Wall St",
+    "published_date": "2026-10-23T04:47:57",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.864,
+    "ai_summary": "PayPal Holdings integrated Glance's agentic commerce into its app, giving U.S. shoppers native PayPal checkout. The stock gained 8.78% in one month, but the author estimates a fair value of $68 versus a last close of $57.54, citing $6.8B annual free cash flow and 440M active accounts.",
+    "tags": [
+      {
+        "name": "Daily Stock Market News",
+        "code": "CM12",
+        "is_primary": true
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "review",
+      "label": "Review"
+    },
+    "sentiment_score": 0.5292,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 42014360,
+    "group_id": 15238423,
+    "title": "$5 trillion wiped out: What went wrong for PayPal, Nike, Adobe and other global giants?",
+    "url": "https://www.fortuneindia.com/markets/5-trillion-wiped-out-what-went-wrong-for-paypal-nike-adobe-and-other-global-giants/165988",
+    "publisher": "Fortune India",
+    "published_date": "2026-10-22T02:14:06",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Between August 2021 and September 2026, 172 of the world's 1,000 largest companies lost $4.96 trillion in market capitalization, according to BestBrokers. PayPal led with an 85.41% drop, followed by Nike and Adobe, while pandemic-era firms like Zoom and BioNTech also fell sharply.",
+    "tags": [
+      {
+        "name": "Sector Performance Dashboards",
+        "code": "FR07",
+        "is_primary": true
+      },
+      {
+        "name": "Valuation Events",
+        "code": "CM09",
+        "is_primary": false
+      },
+      {
+        "name": "Financial Distress & Restructuring",
+        "code": "RK07",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.0027,
+    "entities": {
+      "person": [
+        "stanislava savisheva"
+      ]
+    }
+  },
+  {
+    "id": 41982853,
+    "group_id": 15259892,
+    "title": "Krak vs. PayPal vs. Cash App: Fees, Reach and Bank Withdrawals",
+    "url": "https://thedefiant.io/news/cefi/krak-vs-paypal-vs-cash-app-fees-reach-and-bank-withdrawals",
+    "publisher": "Thedefiant",
+    "published_date": "2026-10-21T19:47:52",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.6678,
+    "ai_summary": "Cash App requires US residency, while Krak and PayPal support US-to-UK personal payments. Conversion and bank withdrawal terms determine the cost beyond the in-app transfer.",
+    "tags": [
+      {
+        "name": "Pricing & Commercial Strategy",
+        "code": "SD10",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5039,
+    "entities": {
+      "person": []
+    }
+  }
+]

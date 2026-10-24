@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "0000028",
+    "product_category": "Digital Asset Custody Services",
+    "match": {
+      "uuid": "0000028",
+      "name": "BitGo",
+      "website": "https://www.bitgo.com",
+      "product_category": "Digital Asset Custody Services",
+      "company_status": "public",
+      "akta_rank": 306
+    }
+  },
+  "fetched_at": "2026-10-24T16:02:33.755014+00:00",
+  "credits_consumed": 0
+}

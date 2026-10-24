@@ -1,0 +1,79 @@
+[
+  {
+    "id": 39348126,
+    "group_id": 12975133,
+    "title": "Foundation Marketing Helped Strengthen Bitly's Position as a Top-Cited Brand in AI Search Through an Integrated GEO Program",
+    "url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/foundation-marketing-helped-strengthen-bitlys-position-as-a-top-cited-brand-in-ai-search-through-an-integrated-geo-program",
+    "publisher": "Financial Post",
+    "published_date": "2026-09-30T23:12:41",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Foundation Marketing joined Profound's inaugural agency certification cohort, citing Bitly's success in AI search. Bitly now holds 11.7% citation share among link shorteners, nearly double the next competitor, and saw a 422% increase in Reddit referral sessions. Foundation now offers Profound-powered baseline audits to all clients.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      },
+      {
+        "name": "Awards, Rankings & Recognitions",
+        "code": "SD11",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "trevor pyle",
+        "ross simmonds",
+        "david rielly",
+        "layla baradaran"
+      ]
+    }
+  },
+  {
+    "id": 32929368,
+    "group_id": 9341217,
+    "title": "'Instinct becomes the backup plan instead of the default': How marketers can beat data overload to make better decisions",
+    "url": "https://www.techradar.com/pro/instinct-becomes-the-backup-plan-instead-of-the-default-how-marketers-can-beat-data-overload-to-make-better-decisions",
+    "publisher": "TechRadar",
+    "published_date": "2026-08-24T14:10:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.8461,
+    "ai_summary": "In an interview with Bitly CMO Tara Robertson, the author discusses how data overload has pushed marketers back toward gut-based decisions, with 56% relying on instinct. Findings show teams average six measurement tools, 86% wait until campaigns end to analyze data, and only 14% track micro-interactions. Robertson recommends granular interaction analysis, AI-assisted insights, and flexible budgets.",
+    "tags": [
+      {
+        "name": "Technology Adoption & Disruption",
+        "code": "II02",
+        "is_primary": true
+      },
+      {
+        "name": "Digital Transformation",
+        "code": "SD06",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5067,
+    "entities": {
+      "person": [
+        "tara robertson",
+        "owain williams",
+        "robertson"
+      ]
+    }
+  }
+]

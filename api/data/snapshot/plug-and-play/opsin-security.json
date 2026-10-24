@@ -1,0 +1,108 @@
+[
+  {
+    "id": 31345918,
+    "group_id": 6205947,
+    "title": "Opsin Labs Report: 60% of Enterprise AI Agents Are Over-Permissioned as Adoption Accelerates 14x",
+    "url": "https://www.financialcontent.com/article/bizwire-2026-8-5-opsin-labs-report-60-of-enterprise-ai-agents-are-over-permissioned-as-adoption-accelerates-14x",
+    "publisher": "FinancialContent Business Page",
+    "published_date": "2026-08-05T16:21:00",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Opsin Labs released its inaugural State of Agentic Adoption 2026 report, finding that enterprises now average one AI agent per employee with workforce interactions growing 14x between January and June 2026. The report reveals that 60% of agents provisioned beyond default settings were granted allow-all access rather than scoped permissions, and 67% are built by non-engineering staff, creating security risks. The findings highlight that agent creation has outpaced security review, with the report outlining common attack paths stemming from over-provisioned access and limited human checkpoints.",
+    "tags": [
+      {
+        "name": "Technology Adoption & Disruption",
+        "code": "II02",
+        "is_primary": true
+      },
+      {
+        "name": "Cybersecurity Incidents",
+        "code": "RK05",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.0288,
+    "entities": {
+      "person": [
+        "james pham"
+      ]
+    }
+  },
+  {
+    "id": 30882458,
+    "group_id": 6069421,
+    "title": "Opsin Adds Support for Claude Cowork",
+    "url": "https://aijourn.com/opsin-adds-support-for-claude-cowork/",
+    "publisher": "Aijourn",
+    "published_date": "2026-07-31T17:18:01",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.8131,
+    "ai_summary": "Opsin announced support for Claude Cowork, Anthropic's autonomous AI agent for non-developers that connects to workplace tools like Slack, Gmail, and HubSpot. The addition expands Opsin's AI governance platform to cover Cowork across desktop, web, and mobile deployments, joining existing support for Claude Enterprise, Microsoft Copilot, ChatGPT Enterprise, and Google Gemini. The announcement addresses security concerns around Cowork, including risks of data exposure when employees connect AI agents to business systems without proper oversight.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      },
+      {
+        "name": "Data Privacy & Cybersecurity Regulation",
+        "code": "RC07",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "caroline maier"
+      ]
+    }
+  },
+  {
+    "id": 30884024,
+    "group_id": 5376262,
+    "title": "Opsin Adds Support for Claude Cowork",
+    "url": "https://www.financialcontent.com/article/bizwire-2026-7-31-opsin-adds-support-for-claude-cowork",
+    "publisher": "FinancialContent Business Page",
+    "published_date": "2026-07-31T16:59:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.7577,
+    "ai_summary": "Opsin announced support for Claude Cowork, Anthropic's autonomous agent platform for non-developers, expanding its AI governance platform to give security teams visibility and control over Cowork sessions running across desktop, web, and mobile. Claude Cowork allows employees to connect AI agents to files, email, Slack, CRM systems, and other tools, with sessions hosted in Anthropic's cloud and capable of chaining multiple tool calls that traditional DLP and CASB tools cannot track. The announcement highlights that employees are adopting these tools faster than governance can keep up, creating security risks around unauthorized data access, connector sprawl, and unsanctioned tool connections across the enterprise.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      },
+      {
+        "name": "Data Privacy & Cybersecurity Regulation",
+        "code": "RC07",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.948,
+    "entities": {
+      "person": []
+    }
+  }
+]

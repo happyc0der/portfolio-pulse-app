@@ -1,0 +1,1 @@
+([ -f api/requirements.txt ] && uv pip install -q -r api/requirements.txt; true) && exec uvicorn api.main:app --reload --reload-dir api --host 127.0.0.1 --port 8000

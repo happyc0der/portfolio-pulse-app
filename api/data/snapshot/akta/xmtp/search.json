@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "0000g1q",
+    "product_category": "Decentralized Messaging Protocol",
+    "match": {
+      "uuid": "0000g1q",
+      "name": "XMTP",
+      "website": "https://xmtp.com",
+      "product_category": "Decentralized Messaging Protocol",
+      "company_status": "private",
+      "akta_rank": 134582
+    }
+  },
+  "fetched_at": "2026-10-24T16:02:59.428686+00:00",
+  "credits_consumed": 0
+}

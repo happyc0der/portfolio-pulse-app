@@ -1,0 +1,519 @@
+[
+  {
+    "id": 39524727,
+    "group_id": 13147618,
+    "title": "Stability AI courts musicians with licensed tools and backing from all three major labels",
+    "url": "https://cryptobriefing.com/stability-ai-courts-musicians-licensed-tools/",
+    "publisher": "Crypto Briefing",
+    "published_date": "2026-10-02T18:34:22",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Stability AI raised $76 million in a Series B round, bringing total funding to $232 million, with Universal, Warner, and Sony Music Group taking equity stakes. The company launched Stable Audio 3.0, a music generation model trained on licensed data, and plans to distribute it via DAW plugins and its own platform.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5487,
+    "entities": {
+      "person": [
+        "sean parker",
+        "prem akkaraju",
+        "diego almada lopez"
+      ]
+    }
+  },
+  {
+    "id": 39233874,
+    "group_id": 12860088,
+    "title": "Stability AI CEO: In One Year, Our AI Tools Will Be Essential to Making All Music",
+    "url": "https://www.yahoo.com/entertainment/articles/stability-ai-ceo-one-ai-200036022.html",
+    "publisher": "Yahoo",
+    "published_date": "2026-09-29T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.8678,
+    "ai_summary": "Stability AI CEO Prem Akkaraju said at TheWrap's AI Creator Day that his company's audio platform will be essential to making music and audio for games, films, and creator content within a year. He cited his media background and partnerships with Universal, Warner, and Sony Music, plus James Cameron on the board, as key to building tools with creators.",
+    "tags": [
+      {
+        "name": "Executive Commentary & Interviews",
+        "code": "LG05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "interview",
+      "label": "Interview"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "prem akkaraju",
+        "james cameron",
+        "hank green"
+      ]
+    }
+  },
+  {
+    "id": 38923773,
+    "group_id": 12446668,
+    "title": "Stability AI CEO Prem Akkaraju to Open AI Creator Day as Jesse Wellens, Bernie Su and More Filmmakers Join",
+    "url": "https://www.yahoo.com/entertainment/movies/articles/stability-ai-ceo-prem-akkaraju-180000656.html",
+    "publisher": "Yahoo",
+    "published_date": "2026-09-25T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9779,
+    "ai_summary": "Stability AI CEO Prem Akkaraju will open TheWrap's inaugural AI Creator Day on Sept. 29 in Los Angeles, with sessions from filmmakers and creators. The event features Jesse Wellens, Bernie Su, and others, and is sponsored by multiple companies.",
+    "tags": [
+      {
+        "name": "Others",
+        "code": "OT01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "prem akkaraju",
+        "jesse wellens",
+        "david bianchi",
+        "bernie su",
+        "simone ferretti",
+        "dorothy pang",
+        "chris m. williams",
+        "colin petrie-norris",
+        "ana kley",
+        "taryn southern",
+        "sharon waxman",
+        "don allen iii",
+        "maverick maltin",
+        "jenny stojkovic",
+        "shira lazar",
+        "paige piskin",
+        "destorm power",
+        "james cameron",
+        "nik kleverov",
+        "darin stewart"
+      ]
+    }
+  },
+  {
+    "id": 41608404,
+    "group_id": 14038038,
+    "title": "Is Stable Diffusion Free in 2026? Where to Get It and What It Costs",
+    "url": "https://www.krea.ai/blog/is-stable-diffusion-free-where-to-get-it-and-what-it-costs-in-2026",
+    "publisher": "Krea",
+    "published_date": "2026-09-21T00:00:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.7432,
+    "ai_summary": "Stable Diffusion weights are free to download, but running them costs a GPU or a paid service. SD 1.5 and SDXL have open licenses with no revenue cap, while SD 3.5 is free only under $1M annual revenue. Hosting options include the Stability API, ThinkDiffusion, RunDiffusion, and Krea's free plan.",
+    "tags": [
+      {
+        "name": "Others",
+        "code": "OT01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5064,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 33926830,
+    "group_id": 10423480,
+    "title": "How AI And Peter Gabriel Changed Junie Lau’s Path To Directing",
+    "url": "https://www.forbes.com/sites/maureenkerr/2026/09/04/how-ai-and-peter-gabriel-changed-junie-laus-path-to-directing/",
+    "publisher": "Forbes",
+    "published_date": "2026-09-04T15:19:53",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.8108,
+    "ai_summary": "Junie Lau won a joint first prize in the Peter Gabriel/Stability AI competition for 'The Court,' which became the official music video. She is directing the female-led kung fu comedy 'Goldfish Mayhem,' premiering October 1, using Seedance 2.5 for action. She aims to create lasting work beyond AI's novelty.",
+    "tags": [
+      {
+        "name": "Others",
+        "code": "OT01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.9512,
+    "entities": {
+      "person": [
+        "junie lau",
+        "maureen kerr",
+        "peter gabriel",
+        "liang weiyong",
+        "yuxiao yan",
+        "zenith chen",
+        "stephen chow",
+        "lau",
+        "goblin"
+      ]
+    }
+  },
+  {
+    "id": 33155259,
+    "group_id": 9802404,
+    "title": "From the major labels’ $76M Stability AI bet to Universal and Sony’s Suno ‘stream ripping’ claim… it’s MBW’s",
+    "url": "https://www.musicbusinessworldwide.com/from-the-major-labels-76m-stability-ai-bet-to-universal-and-sonys-suno-stream-ripping-claim-its-mbws-weekly-round-up/",
+    "publisher": "Music Business Worldwide",
+    "published_date": "2026-08-28T15:41:28",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "A weekly round-up reported that Universal, Sony and Warner Music joined a $76 million Series B round in Stability AI, alongside Electronic Arts, AMD Ventures and Pacific Alliance Ventures. Elsewhere, Beggars Group posted 20% YoY revenue growth to $177 million in 2025, BMG's organic revenue rose 8.1% YoY in H1 2026, and Sony sued Kroger over 392 alleged unauthorized uses of its recordings.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      },
+      {
+        "name": "Earnings Releases",
+        "code": "FR01",
+        "is_primary": false
+      },
+      {
+        "name": "Legal Proceedings & Litigation",
+        "code": "RC03",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.4997,
+    "entities": {
+      "person": [
+        "martin mills",
+        "f. dennis saylor iv"
+      ]
+    }
+  },
+  {
+    "id": 33221673,
+    "group_id": 9842574,
+    "title": "Universal, Sony And Warner Back $76 Million Stability AI Funding Round",
+    "url": "https://celebrityaccess.com/2026/08/28/universal-sony-and-warner-back-76-million-stability-ai-funding-round/",
+    "publisher": "CelebrityAccess",
+    "published_date": "2026-08-28T14:43:04",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Universal Music Group, Sony Music Group and Warner Music Group joined a $76 million Series B round for Stability AI, alongside Electronic Arts, AMD Ventures, Pacific Alliance Ventures and returning backers including Coatue, Greycroft, Kadmos Capital, Sean Parker and Eric Schmidt. The round brings Stability AI's total funding to $232 million under CEO Prem Akkaraju, with capital directed toward creative production tools, applied research and professional services.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "feature",
+      "label": "Feature"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "prem akkaraju",
+        "eric schmidt",
+        "sean parker"
+      ]
+    }
+  },
+  {
+    "id": 33141574,
+    "group_id": 9792181,
+    "title": "Weekly Startup Funding Roundup: Gatik, Stability AI, Runable Secure Major Investment",
+    "url": "https://www.analyticsinsight.net/startups/weekly-startup-funding-roundup-gatik-stability-ai-runable-secure-major-investment",
+    "publisher": "Analytics Insight",
+    "published_date": "2026-08-28T10:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "A weekly funding roundup covering August 24-28, 2026, reported five rounds across autonomous vehicles, AI, space technology and physical computing. Gatik led with a $200 million Series D, followed by Stability AI's $76 million Series B, Runable's $21 million Series A, and Embedd's $2.7 million pre-seed. Gatik has over $600 million in contracted revenue and 85,000 driverless orders.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      },
+      {
+        "name": "Deal Flow & Volume Statistics",
+        "code": "CM10",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "review",
+      "label": "Review"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "ashish kacholia",
+        "manish gandhi",
+        "piyush goyal",
+        "pranchal srivastava",
+        "soham halder"
+      ]
+    }
+  },
+  {
+    "id": 33127000,
+    "group_id": 9783541,
+    "title": "Stability AI raises $76m as entertainment groups back generative AI company",
+    "url": "https://www.thedailystar.net/news/technology/news/stability-ai-raises-76m-entertainment-groups-back-generative-ai-company-4258126",
+    "publisher": "The Daily Star",
+    "published_date": "2026-08-28T00:00:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Stability AI, maker of the Stable Diffusion image-generation model, raised $76 million in a Series B round backed by Universal Music Group, Sony Music Group, Warner Music Group and Electronic Arts, plus AMD Ventures and Pacific Alliance Ventures. The round brings total fundraising to $232 million, with funds directed toward expanding creative production products and professional services.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.6992,
+    "entities": {
+      "person": [
+        "prem akkaraju"
+      ]
+    }
+  },
+  {
+    "id": 33101381,
+    "group_id": 9767956,
+    "title": "Elon Musk's Grok hit with another lawsuit from child sexual abuse survivor",
+    "url": "https://mashable.com/tech/grok-lawsuit-child-sexual-abuse-materials-training-data",
+    "publisher": "Mashable",
+    "published_date": "2026-08-27T16:47:03",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "A proposed nationwide class action lawsuit filed today alleges that xAI's Grok chatbot was trained on datasets containing child sexual abuse material featuring real children, and that the AI generated new explicit images of the lead plaintiff, a CSAM survivor. The suit also names Stability AI as a defendant. It follows earlier lawsuits over Grok's \"nudify\" features and alleged CSAM generation.",
+    "tags": [
+      {
+        "name": "Legal Proceedings & Litigation",
+        "code": "RC03",
+        "is_primary": true
+      },
+      {
+        "name": "Data Privacy & Cybersecurity Regulation",
+        "code": "RC07",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "investigative",
+      "label": "Investigative"
+    },
+    "sentiment_score": 0.0013,
+    "entities": {
+      "person": [
+        "elon musk",
+        "jane doe",
+        "sarah london"
+      ]
+    }
+  },
+  {
+    "id": 33085879,
+    "group_id": 9741692,
+    "title": "Stability AI Raises $76 Million Series B With EA, Sony, UMG And Warner Music Backing",
+    "url": "https://pulse2.com/stability-ai-raises-76-million-series-b-with-ea-sony-umg-and-warner-music-backing/",
+    "publisher": "Pulse 2.0",
+    "published_date": "2026-08-27T11:20:16",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Stability AI raised $76 million in a Series B round, bringing its total financing under CEO Prem Akkaraju to $232 million across two equity rounds and convertible notes. New investors include Electronic Arts, Sony Music Group, Universal Music Group, Warner Music Group, AMD Ventures and Pacific Alliance Ventures, alongside existing backers Coatue, Greycroft, Kadmos Capital, Sean Parker and Eric Schmidt. The company plans to expand its creative production product suite, deepen applied research and grow professional services.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      },
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "promotional",
+      "label": "Promotional"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "james cameron",
+        "prem akkaraju",
+        "mark burnett",
+        "robert nelsen",
+        "thomas laffont",
+        "vivi nevo",
+        "sean parker",
+        "kevin mayer",
+        "patrick whitesell",
+        "eric schmidt",
+        "dana settle"
+      ]
+    }
+  },
+  {
+    "id": 33056309,
+    "group_id": 9394486,
+    "title": "Stability AI Raises $76M: Music Labels Get Equity; Artists Still Get Nothing",
+    "url": "https://www.techtimes.com/articles/325673/20260826/stability-ai-raises-76m-music-labels-get-equity-artists-still-get-nothing.htm",
+    "publisher": "Tech Times",
+    "published_date": "2026-08-26T18:51:29",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Stability AI closed a $76 million Series B on August 25, 2026, with Universal, Sony and Warner Music Group, Electronic Arts, AMD Ventures and others, bringing total funding to $232 million. The round marks the first time all three majors invested in the same AI company, alongside Stable Audio 3.0 models trained on licensed data. No valuation was disclosed, and artists whose recordings built the labels' leverage remain excluded, with the American Federation of Musicians suing Warner and Universal over AI settlement money.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      },
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.5664,
+    "entities": {
+      "person": [
+        "sean parker",
+        "eric schmidt",
+        "prem akkaraju",
+        "james cameron",
+        "thomas laffont",
+        "dana settle",
+        "sarah andersen",
+        "kelly mckernan",
+        "karla ortiz",
+        "akkaraju",
+        "anders manga",
+        "emad mostaque",
+        "cyrus hodes",
+        "andersen"
+      ]
+    }
+  },
+  {
+    "id": 33219765,
+    "group_id": 9841927,
+    "title": "Universal, Sony and Warner Invest in Stability AI in $76 Million AI Funding Round",
+    "url": "https://routenote.com/radar/universal-sony-and-warner-invest-in-stability-ai-in-76-million-ai-funding-round/",
+    "publisher": "Routenote",
+    "published_date": "2026-08-26T14:45:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Universal Music Group, Sony Music Group and Warner Music Group joined Electronic Arts, AMD Ventures and Pacific Alliance Ventures in a $76 million Series B round for Stability AI, announced August 25, 2026. The round brings total capital raised to $232 million under CEO Prem Akkaraju. Individual stakes were not disclosed.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "eric schmidt",
+        "prem akkaraju",
+        "sean parker",
+        "tyler childers",
+        "eddie vedder",
+        "pearl jam",
+        "noah kahan",
+        "valdi sabev",
+        "harry styles"
+      ]
+    }
+  }
+]

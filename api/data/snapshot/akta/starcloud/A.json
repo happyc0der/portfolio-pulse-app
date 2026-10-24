@@ -1,0 +1,211 @@
+{
+  "status": "ok",
+  "data": {
+    "data": {
+      "uuid": "00009le",
+      "linkedin_username": "starcloudinc",
+      "linkedin_official_name": "Starcloud",
+      "linkedin_id": "100775936",
+      "total_employees": 66,
+      "growth_periods": [
+        {
+          "month_difference": 6,
+          "change_percentage": 57
+        },
+        {
+          "month_difference": 12,
+          "change_percentage": 136
+        },
+        {
+          "month_difference": 24,
+          "change_percentage": 340
+        }
+      ],
+      "headcount_monthly": [
+        {
+          "employee_count": 15,
+          "date": "2024-10-01"
+        },
+        {
+          "employee_count": 16,
+          "date": "2024-11-01"
+        },
+        {
+          "employee_count": 18,
+          "date": "2024-12-01"
+        },
+        {
+          "employee_count": 18,
+          "date": "2025-01-01"
+        },
+        {
+          "employee_count": 18,
+          "date": "2025-02-01"
+        },
+        {
+          "employee_count": 18,
+          "date": "2025-03-01"
+        },
+        {
+          "employee_count": 22,
+          "date": "2025-04-01"
+        },
+        {
+          "employee_count": 23,
+          "date": "2025-05-01"
+        },
+        {
+          "employee_count": 24,
+          "date": "2025-06-01"
+        },
+        {
+          "employee_count": 24,
+          "date": "2025-07-01"
+        },
+        {
+          "employee_count": 26,
+          "date": "2025-08-01"
+        },
+        {
+          "employee_count": 26,
+          "date": "2025-09-01"
+        },
+        {
+          "employee_count": 28,
+          "date": "2025-10-01"
+        },
+        {
+          "employee_count": 28,
+          "date": "2025-11-01"
+        },
+        {
+          "employee_count": 27,
+          "date": "2025-12-01"
+        },
+        {
+          "employee_count": 31,
+          "date": "2026-01-01"
+        },
+        {
+          "employee_count": 33,
+          "date": "2026-02-01"
+        },
+        {
+          "employee_count": 41,
+          "date": "2026-03-01"
+        },
+        {
+          "employee_count": 42,
+          "date": "2026-04-01"
+        },
+        {
+          "employee_count": 48,
+          "date": "2026-05-01"
+        },
+        {
+          "employee_count": 53,
+          "date": "2026-06-01"
+        },
+        {
+          "employee_count": 58,
+          "date": "2026-07-01"
+        },
+        {
+          "employee_count": 61,
+          "date": "2026-08-01"
+        },
+        {
+          "employee_count": 66,
+          "date": "2026-09-01"
+        },
+        {
+          "employee_count": 66,
+          "date": "2026-10-01"
+        }
+      ],
+      "date": "2026-10-01",
+      "headcount_by_function": [
+        {
+          "name": "Entrepreneurship",
+          "employee_count": 39,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": 50
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": 160
+            }
+          ]
+        },
+        {
+          "name": "Engineering",
+          "employee_count": 14,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": 75
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": 100
+            }
+          ]
+        },
+        {
+          "name": "Business Development",
+          "employee_count": 4,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": 33
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": 33
+            }
+          ]
+        },
+        {
+          "name": "Operations",
+          "employee_count": 3,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": 200
+            }
+          ]
+        },
+        {
+          "name": "Information Technology",
+          "employee_count": 3,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": null
+            }
+          ]
+        },
+        {
+          "name": "Community and Social Services",
+          "employee_count": 1,
+          "growth_periods": []
+        },
+        {
+          "name": "Sales",
+          "employee_count": 1,
+          "growth_periods": []
+        },
+        {
+          "name": "Administrative",
+          "employee_count": 1,
+          "growth_periods": []
+        }
+      ]
+    },
+    "credits_consumed": 2.5
+  },
+  "fetched_at": "2026-10-24T16:05:16.342927+00:00",
+  "credits_consumed": 2.5
+}

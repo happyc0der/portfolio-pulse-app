@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "00000bt",
+    "product_category": "Freight Electrification Platform",
+    "match": {
+      "uuid": "00000bt",
+      "name": "Einride",
+      "website": "http://www.einride.tech",
+      "product_category": "Freight Electrification Platform",
+      "company_status": "public",
+      "akta_rank": 10467
+    }
+  },
+  "fetched_at": "2026-10-24T16:02:28.693528+00:00",
+  "credits_consumed": 0
+}

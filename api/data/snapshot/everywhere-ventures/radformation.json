@@ -1,0 +1,34 @@
+[
+  {
+    "id": 36704501,
+    "group_id": 11897880,
+    "title": "Radformation Receives USFDA 510(k) Clearance for OptiPlan Automated VMAT Planning",
+    "url": "https://www.businesswire.com/news/home/20260921367282/en/Radformation-Receives-USFDA-510k-Clearance-for-OptiPlan-Automated-VMAT-Planning",
+    "publisher": "Business Wire Blog",
+    "published_date": "2026-09-21T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Radformation received FDA 510(k) clearance for OptiPlan, its automated VMAT planning module, expanding its availability in the U.S. The clearance makes OptiPlan available for clinical use, following its introduction in Europe and Canada. The module will be demonstrated at ASTRO 2026 in Boston.",
+    "tags": [
+      {
+        "name": "Regulatory Approvals & Certifications",
+        "code": "RC01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "promotional",
+      "label": "Promotional"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "jayne churness",
+        "melanie benton"
+      ]
+    }
+  }
+]

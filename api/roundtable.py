@@ -49,6 +49,8 @@ async def call(tool: str, key: str, args: dict[str, Any]) -> Any | None:
         async with httpx.AsyncClient(timeout=10.0) as client:
             for attempt in range(2):
                 response = await client.post(f"{base_url}/api/tools/{tool}", headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"}, json=body)
+                if response.status_code == 422 and tool == "get_folder_history":
+                    logger.error("Roundtable get_folder_history 422 body: %s", response.text[:4000])
                 if response.status_code in _RETRY and attempt == 0:
                     await asyncio.sleep(0.5)
                     continue

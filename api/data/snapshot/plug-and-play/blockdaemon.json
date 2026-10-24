@@ -1,0 +1,156 @@
+[
+  {
+    "id": 36211993,
+    "group_id": 11659622,
+    "title": "Best Institutional Crypto Staking Platforms in 2026 – Top Picks Reviewed",
+    "url": "https://coingape.com/best-institutional-crypto-staking-platforms/",
+    "publisher": "Coingape",
+    "published_date": "2026-09-19T11:43:34",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9979,
+    "ai_summary": "Eight institutional crypto staking platforms are reviewed, including Figment, Coinbase Prime, and Blockdaemon, with technical details and rankings. Figment leads with a 4.6 rating, while fees and security measures are compared. The ranking uses a CoinGape score across institutional fit, custody, and security.",
+    "tags": [
+      {
+        "name": "Awards, Rankings & Recognitions",
+        "code": "SD11",
+        "is_primary": true
+      },
+      {
+        "name": "Market Share & Positioning",
+        "code": "SD05",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "review",
+      "label": "Review"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 33555875,
+    "group_id": 10134604,
+    "title": "Blockdaemon advisor on the state of stablecoins",
+    "url": "https://www.siliconrepublic.com/business/blockdaemon-advisor-on-the-state-of-stablecoins",
+    "publisher": "Silicon Republic",
+    "published_date": "2026-09-01T14:31:52",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Stablecoins facilitated about $400bn in organic payment activity in 2025, up from under $30bn in 2020, with USD stablecoins dominating the US market. The US Treasury proposed rules requiring licenses for payment stablecoins by 2027, while Wells Fargo and BlackRock introduced tokenised deposits. Amor Sexton expects rapid development over the next six to 12 months.",
+    "tags": [
+      {
+        "name": "Policy & Legislative Changes",
+        "code": "RC02",
+        "is_primary": true
+      },
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": false
+      },
+      {
+        "name": "Debt Financing",
+        "code": "CM02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.8595,
+    "entities": {
+      "person": [
+        "amor sexton",
+        "sexton"
+      ]
+    }
+  },
+  {
+    "id": 32420916,
+    "group_id": 7450280,
+    "title": "The Bitcoin Bridge Nobody Asked For — And Why It Might Be The Right One",
+    "url": "https://www.ainvest.com/news/bitcoin-bridge-asked-2608/",
+    "publisher": "AInvest",
+    "published_date": "2026-08-18T00:00:00",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Sui's Hashi protocol processed 1.1 million simulated Bitcoin deposits on its testnet to stress-test an infrastructure that keeps native BTC on the Bitcoin network while minting collateral on Sui. This approach involves a coalition of institutional partners including BitGo, Blockdaemon, and Erebor, aiming to address previous failures in the BTCFi ecosystem by prioritizing security and trust models over token emissions. ",
+    "tags": [
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": true
+      },
+      {
+        "name": "Digital Transformation",
+        "code": "SD06",
+        "is_primary": false
+      },
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.0179,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 31951251,
+    "group_id": 7137159,
+    "title": "Hyperion's Profit 3x'd to $31M, but HYPE Treasury Is Now the Whole Story",
+    "url": "https://www.ainvest.com/news/hyperion-profit-3x-31m-hype-treasury-story-2608/",
+    "publisher": "AInvest",
+    "published_date": "2026-08-13T00:37:26",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Hyperion reported record net income of $31.0 million and adjusted EBITDA of $53.7 million for the second quarter, driven by its HYPE treasury deployment across staking and DeFi activities. The company expanded its infrastructure focus through new agreements with Entropy, Blockdaemon, and Skew Technologies to diversify revenue beyond static token holding. Despite these operational shifts, analysts note that the majority of profits still stem from HYPE price appreciation, keeping the stock's valuation highly sensitive to token sentiment. ",
+    "tags": [
+      {
+        "name": "Earnings Releases",
+        "code": "FR01",
+        "is_primary": true
+      },
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": false
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  }
+]
