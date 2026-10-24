@@ -35,8 +35,8 @@ akta.pro news + headcount ──► relevance + language filters ──► signa
 | **Ninoo Builder** | The whole app was built in Ninoo Builder from our prompts and is published on ninoo.app. |
 | **Nicrron** | Every AI call goes through `https://api.nicrron.ai/v1` (`anthropic/claude-opus-5-5`). |
 | **akta.pro** | News (`/news/` with `primary_company`, event tags, sentiment), headcount trends, website traffic, open roles, company profiles and comparable companies (List Generation). |
-| **PRISM by Block Convey** | `api/tracing.py` traces every draft and LP update. Run names `draft-v1` / `draft-v2` compare output without and with the citation check on the same inputs, and `/eval` replays 20 events. |
-| **Roundtable** | `api/roundtable.py`: a Signal Watcher bot writes each event to the shared folder and hands it to a Drafter bot as a task. The Drafter saves the cited draft as a versioned file and reports the files it used. |
+| **PRISM by Block Convey** | `api/tracing.py` traces every draft and LP update as one trace with three steps: the run (request in, draft out), an `akta_sources` step listing the numbered sources the model was given (what PRISM evaluators read as `{context}`), and the Nicrron call with tokens and cost. Run names `draft-v1` / `draft-v2` compare output without and with the citation check on the same inputs, and `/eval` replays 20 events. |
+| **Roundtable** | `api/roundtable.py`: a Signal Watcher bot writes each event to the shared folder and hands it to a Drafter bot as a task. The Drafter claims the task, saves the cited draft as a versioned file, closes the task and reports the files it used; the Signal Watcher reads the status back. Both bots run inside the backend on demand, each with its own Roundtable identity. |
 
 ## Signal rules (`api/main.py`)
 | Category | akta tag codes | Severity |
