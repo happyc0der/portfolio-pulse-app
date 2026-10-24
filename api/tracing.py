@@ -195,7 +195,8 @@ async def send_trace(*, trace_id: str, session_id: str, run_name: str, model: st
         start, end = started_at.isoformat(), ended_at.isoformat()
         spans = [
             {"span_id": root_id, "parent_span_id": None, "name": run_name, "span_type": "agent",
-             "input_text": messages[-1]["content"][:10000], "output_text": output, "start_time": start, "end_time": end,
+             # PRISM's automatic review reads the start of the input, so it opens with the source index.
+             "input_text": (sources_steps(sources)[0] + "\n\nRequest:\n" + messages[-1]["content"])[:10000], "output_text": output, "start_time": start, "end_time": end,
              "duration_ms": latency_ms, "status": "ok", "model": model, "metadata": metadata},
             *({"span_id": str(uuid.uuid4()), "parent_span_id": root_id, "name": "akta_sources" if index == 0 else f"akta_sources_detail_{index}",
                "span_type": "tool", "input_text": retrieval_query(messages) if index == 0 else f"Source details, part {index}",
