@@ -35,6 +35,10 @@ button:focus-visible, a:focus-visible, select:focus-visible { outline: 2px solid
 .bg-white { background-color: var(--surface) !important; }
 .bg-slate-50 { background-color: var(--raised) !important; }
 .bg-slate-100 { background-color: color-mix(in srgb, var(--secondary) 12%, transparent) !important; }
+/* Hover states too: Tailwind's light hovers flashed near-white rows on the dark theme. */
+.hover\:bg-white:hover, .hover\:bg-slate-50:hover, .hover\:bg-slate-100:hover, .hover\:bg-slate-800:hover, .hover\:bg-slate-900:hover { background-color: var(--hover) !important; }
+.hover\:bg-indigo-700:hover { background-color: var(--accent-pressed) !important; }
+.hover\:text-slate-700:hover, .hover\:text-slate-800:hover, .hover\:text-slate-100:hover, .hover\:text-slate-200:hover { color: var(--text) !important; }
 .bg-slate-900\/25 { background-color: rgb(5 3 10 / .78) !important; }
 .bg-indigo-50 { background-color: color-mix(in srgb, var(--accent) 18%, var(--surface)) !important; }
 .bg-indigo-50\/60 { background-color: color-mix(in srgb, var(--accent) 10%, var(--surface)) !important; }
@@ -66,4 +70,6 @@ button:focus-visible, a:focus-visible, select:focus-visible { outline: 2px solid
 .rounded-xl, .rounded-2xl { border-radius: 12px !important; }
 .shadow-sm, .shadow-md, .shadow-2xl { box-shadow: none !important; }
 section h2, aside h2 { color: var(--secondary) !important; letter-spacing: .08em; text-transform: uppercase; font-size: .72rem; }
+/* The event panel's headline is the page's main title, not a section label. */
+#event-title { color: var(--text) !important; letter-spacing: normal; text-transform: none; font-size: 1.5rem; }
 header { background-color: var(--surface) !important; border-bottom: 1px solid var(--border) !important; }
