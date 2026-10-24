@@ -8,6 +8,7 @@ from typing import Any
 from urllib.parse import urlparse
 
 import httpx
+from pydantic import BaseModel
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
 from api.tracing import citation_metrics, prism_enabled, prism_selftest, traced_chat, last_tracing_error
@@ -88,9 +89,23 @@ def roundtable_config() -> tuple[bool, str]:
     return (not missing, "missing " + ", ".join(missing) if missing else "configured")
 
 
+CUSTOM_FUNDS_FILE = "custom_funds.json"
+
+
+def read_custom_funds() -> list[dict[str, Any]]:
+    try:
+        funds = json.loads(cache_file(CUSTOM_FUNDS_FILE).read_text(encoding="utf-8"))
+        return [fund for fund in funds if isinstance(fund, dict) and fund.get("slug")] if isinstance(funds, list) else []
+    except (OSError, json.JSONDecodeError):
+        return []
+
+
 def load_funds() -> list[dict[str, Any]]:
     with FUNDS_FILE.open(encoding="utf-8") as source:
         data = json.load(source)
+    builtin = {fund["slug"] for fund in data}
+    # Funds added live from the home page (akta-built portfolios) come after the built-in ones.
+    data += [fund for fund in read_custom_funds() if fund["slug"] not in builtin]
     for fund in data:
         for company in fund.get("companies", []):
             company.setdefault("articles", [])
@@ -256,8 +271,94 @@ def list_funds() -> list[dict[str, Any]]:
                 signals.append(signal)
             signals.extend(derive_indicator_events(read_akta_cache(company["name"], "A")))
         signals.sort(key=lambda item: (item.get("severity", 0), str(item.get("published_date", ""))), reverse=True)
-        result.append({"slug": fund["slug"], "name": fund["name"], "company_count": len(fund["companies"])})
+        result.append({"slug": fund["slug"], "name": fund["name"], "company_count": len(fund["companies"]), "custom": bool(fund.get("custom"))})
     return result
+
+
+INVESTOR_WORDS = ("venture", "capital", "invest", "private equity", "fund", "accelerator", "angel")
+
+
+@app.get("/api/akta/search")
+async def akta_company_search(q: str = "") -> dict[str, Any]:
+    """Search-as-you-type over akta's company search (free). Investment firms are listed first."""
+    query = q.strip()
+    if len(query) < 2:
+        return {"results": []}
+    api_key = get_secret("AKTA_API_KEY")
+    if not api_key:
+        return {"results": [], "error": "akta.pro is not connected"}
+    async with httpx.AsyncClient() as client:
+        response = await client.get(f"{AKTA_BASE}/company/search/", params={"query": query}, headers={"x-api-key": api_key}, timeout=20)
+    if response.status_code == 204:
+        return {"results": []}
+    if response.status_code != 200:
+        return {"results": [], "error": f"akta.pro search failed (HTTP {response.status_code})"}
+    results = []
+    for row in (response.json().get("data") or [])[:10]:
+        if not isinstance(row, dict) or not row.get("uuid"):
+            continue
+        category = str(row.get("product_category") or "")
+        results.append({"uuid": row["uuid"], "name": row.get("name") or "", "website": row.get("website") or "",
+                        "category": category, "status": row.get("company_status"),
+                        "is_investor": any(word in category.lower() for word in INVESTOR_WORDS)})
+    results.sort(key=lambda item: not item["is_investor"])
+    return {"results": results[:8]}
+
+
+class FundImportRequest(BaseModel):
+    uuid: str
+    name: str
+    website: str | None = None
+
+
+@app.post("/api/funds/import")
+async def import_fund(request: FundImportRequest) -> dict[str, Any]:
+    """Build a fund's portfolio from akta: companies whose funding rounds list this investor."""
+    api_key = get_secret("AKTA_API_KEY")
+    if not api_key:
+        raise HTTPException(status_code=503, detail="akta.pro is not connected")
+    if cap_reached():
+        raise HTTPException(status_code=429, detail="akta credit cap reached")
+    builtin = {fund["slug"]: fund for fund in json.loads(FUNDS_FILE.read_text(encoding="utf-8"))}
+    slug = slugify(request.name) or slugify(request.uuid)
+    if slug in builtin:
+        return {"slug": slug, "name": builtin[slug]["name"], "company_count": len(builtin[slug]["companies"]), "total_matches": None, "credits": 0, "existing": True}
+    headers = {"x-api-key": api_key, "Content-Type": "application/json"}
+    bodies = [{"filters": {"funding_detail.funding_rounds.investors.uuid": [request.uuid]}, "limit": 25},
+              {"query": f"portfolio companies of the venture capital firm {request.name}", "limit": 25}]
+    payload: dict[str, Any] = {}
+    async with httpx.AsyncClient() as client:
+        for body in bodies:
+            response = await client.post(f"{AKTA_BASE}/list/generate/companies/", json=body, headers=headers, timeout=150)
+            if response.status_code == 200:
+                payload = response.json()
+                break
+    credits = float(payload.get("credits_consumed") or 0)
+    ledger_add(credits)
+    companies, seen = [], set()
+    for row in payload.get("data") or []:
+        website = str(row.get("website") or "").strip().rstrip("/")
+        if not website or not row.get("name"):
+            continue
+        website = website if website.startswith("http") else f"https://{website}"
+        website = website.replace("http://", "https://")
+        key = company_domain(website).lower().removeprefix("www.")
+        name_key = str(row["name"]).strip().casefold()
+        if key in seen or name_key in seen:
+            continue
+        seen.update({key, name_key})
+        companies.append({"name": row["name"], "website": website})
+    if not companies:
+        raise HTTPException(status_code=404, detail=f"akta.pro has no portfolio companies on record for {request.name}")
+    total = payload.get("total_count")
+    fund = {"slug": slug, "name": request.name, "sourceUrl": request.website or "", "custom": True,
+            "sourceNote": f"Portfolio assembled live by akta.pro: List Generation on funding rounds that list {request.name} as an investor ({total if total is not None else len(companies)} companies; top {len(companies)} shown).",
+            "companies": companies}
+    custom = [item for item in read_custom_funds() if item["slug"] != slug] + [fund]
+    path = CACHE_DIR / CUSTOM_FUNDS_FILE
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(custom, ensure_ascii=False, indent=2), encoding="utf-8")
+    return {"slug": slug, "name": request.name, "company_count": len(companies), "total_matches": total, "credits": credits, "existing": False}
 
 
 @app.get("/api/funds/{slug}")
@@ -574,6 +675,45 @@ async def lookup_company(client: httpx.AsyncClient, semaphore: asyncio.Semaphore
     return False
 
 
+async def record_company_status(companies: list[dict[str, Any]], api_key: str) -> None:
+    """Free akta company search for companies with no cached status, so exits (public companies)
+    are recognised in funds imported live. Best effort: a failure leaves the company active."""
+    missing = [company for company in companies if not read_akta_cache(company["name"], "search")]
+    if not missing:
+        return
+    async with httpx.AsyncClient() as client:
+        async def one(company: dict[str, Any]) -> None:
+            try:
+                response = await client.get(f"{AKTA_BASE}/company/search/", params={"query": company["website"]}, headers={"x-api-key": api_key}, timeout=15)
+                rows = response.json().get("data", []) if response.status_code == 200 else []
+            except (httpx.HTTPError, ValueError):
+                return
+            domain = company_domain(company["website"]).lower().removeprefix("www.")
+            match = next((row for row in rows if company_domain(row.get("website", "")).lower().removeprefix("www.") == domain), rows[0] if rows else None)
+            write_akta_cache(company["name"], "search", {"id": (match or {}).get("uuid") or company["website"], "product_category": (match or {}).get("product_category"), "match": match}, "ok" if match else "no_data", 0)
+        await asyncio.gather(*(one(company) for company in missing))
+
+
+# The published backend stops a request at 30 s, and akta allows 8 headcount calls a minute, so the
+# headcount pass runs in parallel inside what is left of this budget. Cached results are kept; the
+# rest refresh on the next run.
+SLICE_BUDGET_S = 24
+
+
+async def refresh_headcount(companies: list[dict[str, Any]], budget: float) -> None:
+    async def one(company: dict[str, Any]) -> None:
+        try:
+            search = await resolve_akta_company(company)
+            resolved = search.get("data", {}) if isinstance(search.get("data"), dict) else {}
+            await fetch_akta_endpoint(company, "A", resolved.get("id") or company.get("website"))
+        except Exception:
+            pass
+    try:
+        await asyncio.wait_for(asyncio.gather(*(one(company) for company in companies)), budget)
+    except asyncio.TimeoutError:
+        pass
+
+
 async def refresh_fund_slice(slug: str, start: int = 0, count: int = 6) -> dict[str, Any]:
     fund = get_fund(slug)
     companies = fund.get("companies", [])
@@ -585,9 +725,11 @@ async def refresh_fund_slice(slug: str, start: int = 0, count: int = 6) -> dict[
     api_key = get_secret("AKTA_API_KEY")
     if not api_key:
         return {"done": 0, "next_start": None, "with_news": 0, "quiet": 0, "failed": len(selected), "credits": 0, "message": "Akta not connected"}
+    started = asyncio.get_running_loop().time()
     semaphore = asyncio.Semaphore(3)
     async with httpx.AsyncClient() as client:
         results = await asyncio.gather(*(fetch_company_news(client, semaphore, slug, company, api_key) for company in selected))
+    await record_company_status(selected, api_key)
     for result in results:
         if result.get("status") == "news": with_news += 1
         elif result.get("status") == "quiet": quiet += 1
@@ -596,14 +738,9 @@ async def refresh_fund_slice(slug: str, start: int = 0, count: int = 6) -> dict[
     # Headcount refresh for the highest-pulse ten happens once the slice reaches fund end.
     next_start = start + len(selected)
     if next_start >= len(companies):
-        ranked = fund_with_cache(slug)["companies"][:10]
-        for company in ranked:
-            try:
-                search = await resolve_akta_company(company)
-                resolved = search.get("data", {}) if isinstance(search.get("data"), dict) else {}
-                await fetch_akta_endpoint(company, "A", resolved.get("id") or company.get("website"))
-            except Exception:
-                pass
+        remaining = SLICE_BUDGET_S - (asyncio.get_running_loop().time() - started)
+        if remaining > 2:
+            await refresh_headcount(fund_with_cache(slug)["companies"][:10], remaining)
     return {"done": len(selected), "next_start": next_start if next_start < len(companies) else None, "with_news": with_news, "quiet": quiet, "failed": failed, "credits": credits, "credits_total": float(ledger_read().get("credits_consumed", 0)), "credit_cap_reached": cap_reached()}
 
 
