@@ -1,0 +1,316 @@
+{
+  "status": "ok",
+  "data": {
+    "data": {
+      "uuid": "000021r",
+      "linkedin_username": "0gfoundation",
+      "linkedin_official_name": "0G",
+      "linkedin_id": "102726813",
+      "total_employees": 102,
+      "growth_periods": [
+        {
+          "month_difference": 6,
+          "change_percentage": 1
+        },
+        {
+          "month_difference": 12,
+          "change_percentage": 11
+        },
+        {
+          "month_difference": 24,
+          "change_percentage": 76
+        }
+      ],
+      "headcount_monthly": [
+        {
+          "employee_count": 58,
+          "date": "2024-10-01"
+        },
+        {
+          "employee_count": 61,
+          "date": "2024-11-01"
+        },
+        {
+          "employee_count": 62,
+          "date": "2024-12-01"
+        },
+        {
+          "employee_count": 69,
+          "date": "2025-01-01"
+        },
+        {
+          "employee_count": 73,
+          "date": "2025-02-01"
+        },
+        {
+          "employee_count": 80,
+          "date": "2025-03-01"
+        },
+        {
+          "employee_count": 88,
+          "date": "2025-04-01"
+        },
+        {
+          "employee_count": 90,
+          "date": "2025-05-01"
+        },
+        {
+          "employee_count": 95,
+          "date": "2025-06-01"
+        },
+        {
+          "employee_count": 96,
+          "date": "2025-07-01"
+        },
+        {
+          "employee_count": 101,
+          "date": "2025-08-01"
+        },
+        {
+          "employee_count": 96,
+          "date": "2025-09-01"
+        },
+        {
+          "employee_count": 92,
+          "date": "2025-10-01"
+        },
+        {
+          "employee_count": 96,
+          "date": "2025-11-01"
+        },
+        {
+          "employee_count": 96,
+          "date": "2025-12-01"
+        },
+        {
+          "employee_count": 98,
+          "date": "2026-01-01"
+        },
+        {
+          "employee_count": 99,
+          "date": "2026-02-01"
+        },
+        {
+          "employee_count": 103,
+          "date": "2026-03-01"
+        },
+        {
+          "employee_count": 101,
+          "date": "2026-04-01"
+        },
+        {
+          "employee_count": 100,
+          "date": "2026-05-01"
+        },
+        {
+          "employee_count": 101,
+          "date": "2026-06-01"
+        },
+        {
+          "employee_count": 99,
+          "date": "2026-07-01"
+        },
+        {
+          "employee_count": 100,
+          "date": "2026-08-01"
+        },
+        {
+          "employee_count": 101,
+          "date": "2026-09-01"
+        },
+        {
+          "employee_count": 102,
+          "date": "2026-10-01"
+        }
+      ],
+      "date": "2026-10-01",
+      "headcount_by_function": [
+        {
+          "name": "Business Development",
+          "employee_count": 17,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": null
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": 13
+            }
+          ]
+        },
+        {
+          "name": "Engineering",
+          "employee_count": 15,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": -12
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": null
+            }
+          ]
+        },
+        {
+          "name": "Information Technology",
+          "employee_count": 11,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": 22
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": 38
+            }
+          ]
+        },
+        {
+          "name": "Human Resources",
+          "employee_count": 6,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": 20
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": null
+            }
+          ]
+        },
+        {
+          "name": "Entrepreneurship",
+          "employee_count": 6,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": null
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": null
+            }
+          ]
+        },
+        {
+          "name": "Product Management",
+          "employee_count": 5,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": 25
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": 67
+            }
+          ]
+        },
+        {
+          "name": "Operations",
+          "employee_count": 5,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": -17
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": 25
+            }
+          ]
+        },
+        {
+          "name": "Media and Communication",
+          "employee_count": 5,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": -17
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": -29
+            }
+          ]
+        },
+        {
+          "name": "Education",
+          "employee_count": 3,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": null
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": 50
+            }
+          ]
+        },
+        {
+          "name": "Community and Social Services",
+          "employee_count": 3,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": 50
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": -50
+            }
+          ]
+        },
+        {
+          "name": "Sales",
+          "employee_count": 3,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": 50
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": 50
+            }
+          ]
+        },
+        {
+          "name": "Administrative",
+          "employee_count": 2,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": -33
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": -33
+            }
+          ]
+        },
+        {
+          "name": "Program and Project Management",
+          "employee_count": 2,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": -50
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": null
+            }
+          ]
+        }
+      ]
+    },
+    "credits_consumed": 2.5
+  },
+  "fetched_at": "2026-10-24T16:39:50.748474+00:00",
+  "credits_consumed": 2.5
+}

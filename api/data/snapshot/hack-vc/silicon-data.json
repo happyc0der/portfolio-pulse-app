@@ -1,0 +1,591 @@
+[
+  {
+    "id": 41943506,
+    "group_id": 15205245,
+    "title": "Want to Short the AI Boom? She Wants to Give You a Way to Bet on ‘Compute’ Prices",
+    "url": "https://www.wsj.com/finance/investing/want-to-short-the-ai-boom-she-wants-to-give-you-a-way-to-bet-on-compute-prices-bcdafd3e",
+    "publisher": "Wsj",
+    "published_date": "2026-10-21T19:32:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9243,
+    "ai_summary": "Carmen Li, founder of Silicon Data, plans to launch futures contracts on AI chip rental prices with CME Group next month. The startup compiles indexes tracking Nvidia chip rental prices, aiming to make compute an asset class like oil or gas.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.524,
+    "entities": {
+      "person": [
+        "carmen li"
+      ]
+    }
+  },
+  {
+    "id": 39587324,
+    "group_id": 13254041,
+    "title": "Wall Street puts a price on AI compute as miners pivot: Guest Post by Cryptopolitan_News",
+    "url": "https://coinmarketcap.com/community/articles/6ac15d957ef2be1dc4252e96/",
+    "publisher": "CoinMarketCap",
+    "published_date": "2026-10-03T19:56:34",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "CME Group will list AI compute futures on October 5, 2026, tracking Silicon Data's Nvidia index. Bitcoin miners have signed over $70 billion in AI compute contracts, and compute futures could reach $10 trillion in notional volume by 2030.",
+    "tags": [
+      {
+        "name": "Sector Outlook & Forecasts",
+        "code": "MM07",
+        "is_primary": true
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.9691,
+    "entities": {
+      "person": [
+        "don wilson",
+        "pete keavey",
+        "terry duffy",
+        "larry fink",
+        "brett harrison"
+      ]
+    }
+  },
+  {
+    "id": 37309876,
+    "group_id": 11984889,
+    "title": "Silicon Data CEO Carmen Li wants to turn GPU prices into a futures market",
+    "url": "https://cryptobriefing.com/silicon-data-ceo-carmen-li-gpu-futures-tokenomics/",
+    "publisher": "Crypto Briefing",
+    "published_date": "2026-09-22T05:04:53",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Silicon Data CEO Carmen Li is building pricing indices and a trading platform to hedge volatile AI compute costs, with CME Group planning cash-settled GPU futures and options. The company raised $35.2 million in funding, and CME targets a fall 2026 launch pending regulatory approval.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.9203,
+    "entities": {
+      "person": [
+        "carmen li"
+      ]
+    }
+  },
+  {
+    "id": 39690882,
+    "group_id": 13401962,
+    "title": "Watch Silicon Data CEO Li on AI Race and Tokenomics - Bloomberg",
+    "url": "https://www.bloomberg.com/news/videos/2026-09-22/silicon-data-ceo-li-on-ai-race-and-tokenomics-video",
+    "publisher": "Bloomberg",
+    "published_date": "2026-09-22T00:00:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.854,
+    "ai_summary": "Silicon Data CEO Carmen Li said the AI race is shifting focus from chip manufacturing to the economics of GPUs and data centers. She made the remarks at the CITIC Securities International Investors' Forum in Hong Kong.",
+    "tags": [
+      {
+        "name": "Executive Commentary & Interviews",
+        "code": "LG05",
+        "is_primary": true
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "interview",
+      "label": "Interview"
+    },
+    "sentiment_score": 0.511,
+    "entities": {
+      "person": [
+        "carmen li",
+        "li"
+      ]
+    }
+  },
+  {
+    "id": 34997197,
+    "group_id": 11275206,
+    "title": "Silicon Data Appoints Syntax Data As Independent Index Calculation Agent, Advancing Institutional Infrastructure For Compute Risk Management",
+    "url": "https://hedgefundalpha.com/news/silicon-data-syntax-compute-risk/",
+    "publisher": "Hedgefundalpha",
+    "published_date": "2026-09-14T11:14:47",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.7835,
+    "ai_summary": "Syntax Data was appointed index calculation agent for Silicon Data's benchmark index family covering GPU and AI infrastructure markets. The appointment brings independent, third-party calculation to benchmarks that serve as reference rates for a new asset class.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      },
+      {
+        "name": "Strategic Hiring",
+        "code": "WT01",
+        "is_primary": false
+      },
+      {
+        "name": "Operational Milestones",
+        "code": "SD04",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.9288,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 34145806,
+    "group_id": 10560930,
+    "title": "Does Michael Burry Have It Wrong? Nvidia Chips Retain Value, Data Shows - NVIDIA (NASDAQ:NVDA)",
+    "url": "https://www.benzinga.com/markets/prediction-markets/26/09/61668402/nvidia-a100-chips-michael-burry-depreciation?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral",
+    "publisher": "Benzinga",
+    "published_date": "2026-09-08T17:49:57",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Six-year-old Nvidia A100 chips retain nearly $5,000 residual value, complicating Michael Burry's warning that Big Tech overstays depreciation. Silicon Data estimates $4,956, with CoreWeave extending A100 contracts through 2029. Burry argues chips can rent and still depreciate fast.",
+    "tags": [
+      {
+        "name": "Sector Outlook & Forecasts",
+        "code": "MM07",
+        "is_primary": true
+      },
+      {
+        "name": "Valuation Events",
+        "code": "CM09",
+        "is_primary": false
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.4409,
+    "entities": {
+      "person": [
+        "michael burry",
+        "jensen huang"
+      ]
+    }
+  },
+  {
+    "id": 34131586,
+    "group_id": 10550958,
+    "title": "Silicon Data Appoints Syntax Data as Independent Index Calculation Agent, Advancing Institutional Infrastructure for Compute Risk Management",
+    "url": "https://www.businesswire.com/news/home/20260908565380/en/Silicon-Data-Appoints-Syntax-Data-as-Independent-Index-Calculation-Agent-Advancing-Institutional-Infrastructure-for-Compute-Risk-Management",
+    "publisher": "Business Wire Blog",
+    "published_date": "2026-09-08T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.981,
+    "ai_summary": "Silicon Data appointed Syntax Data as its independent index calculation agent for GPU and AI infrastructure benchmarks. Syntax will perform daily calculations under documented methodologies and audit processes. The arrangement supports expansion of compute-linked products, including listed derivatives and structured solutions.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "carmen li",
+        "bruce traan",
+        "jonny swift"
+      ]
+    }
+  },
+  {
+    "id": 33824953,
+    "group_id": 10353855,
+    "title": "AI Token Prices Collapse Nearly 60%, Raising Questions About the $600 Billion AI Boom",
+    "url": "https://techstartups.com/2026/09/03/ai-token-prices-collapse-nearly-60-raising-questions-about-the-600-billion-ai-boom/",
+    "publisher": "TechStartups",
+    "published_date": "2026-09-03T17:48:33",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Silicon Data's LLM token expenditure index fell to $0.9665 per million tokens on August 31, down nearly 60% from its May peak. The drop reflects competition and model routing to cheaper alternatives, not reduced demand. Q3 earnings will test whether consumption can outpace falling prices.",
+    "tags": [
+      {
+        "name": "Pricing & Commercial Strategy",
+        "code": "SD10",
+        "is_primary": true
+      },
+      {
+        "name": "Competitive Threats",
+        "code": "II04",
+        "is_primary": false
+      },
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.0243,
+    "entities": {
+      "person": [
+        "damir tokic"
+      ]
+    }
+  },
+  {
+    "id": 35079031,
+    "group_id": 11298002,
+    "title": "Silicon Data Launches Monthly GPU Residual Value Benchmarks for AI Infrastructure Finance",
+    "url": "https://www.einpresswire.com/article/936056292/silicon-data-launches-monthly-gpu-residual-value-benchmarks-for-ai-infrastructure-finance",
+    "publisher": "EIN Presswire",
+    "published_date": "2026-08-24T00:00:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9276,
+    "ai_summary": "Silicon Data launched monthly GPU residual value benchmarks for H100, A100, and B200, using a discounted cash flow model based on projected rental income. The estimates aim to provide fair-value guidance for asset-backed financing and fleet planning, complementing existing pricing indices.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.4644,
+    "entities": {
+      "person": [
+        "carmen li",
+        "kat aronofsky"
+      ]
+    }
+  },
+  {
+    "id": 32826502,
+    "group_id": 9285378,
+    "title": "The Era of Compute Securitization Has Arrived: Will AI Repeat the 2008 Subprime Crisis?",
+    "url": "https://en.macromicro.me/blog/the-era-of-computing-power-securitization-has-arrived-will-ai-repeat-the-2008-subprime-crisis",
+    "publisher": "Macromicro",
+    "published_date": "2026-08-21T00:00:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Nvidia partnered with six major financial institutions to mobilize US$500 billion in capital for AI infrastructure, providing residual value guarantees to mitigate asset depreciation risks. Concurrently, the CME launched computing power futures contracts linked to GPU rental costs in partnership with Silicon Data.",
+    "tags": [
+      {
+        "name": "Debt Financing",
+        "code": "CM02",
+        "is_primary": true
+      },
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": false
+      },
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5247,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 32762809,
+    "group_id": 9090603,
+    "title": "Compute Is Declared a Commodity Before It Has a Price: The CFTC's GPU Futures Push, Decomposed",
+    "url": "https://www.ainvest.com/news/compute-declared-commodity-price-cftc-gpu-futures-push-decomposed-2608/",
+    "publisher": "AInvest",
+    "published_date": "2026-08-21T00:00:00",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "The Commodity Futures Trading Commission issued a request for comment on derivatives tied to computing power, aiming to establish regulatory rules for an emerging market. CME Group and Silicon Data plan to list GPU futures contracts based on rental rates for Nvidia H100 and Blackwell B200 chips, pending regulatory approval. This move seeks to create a standardized pricing mechanism to help lenders underwrite data center debt and manage volatility in AI infrastructure costs. ",
+    "tags": [
+      {
+        "name": "Policy & Legislative Changes",
+        "code": "RC02",
+        "is_primary": true
+      },
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.1656,
+    "entities": {
+      "person": [
+        "michael selig",
+        "howard lutnick",
+        "selig"
+      ]
+    }
+  },
+  {
+    "id": 32826503,
+    "group_id": 9285379,
+    "title": "A startup wants Wall Street to trade AI computing power like oil",
+    "url": "https://northeasttimes.com/2026/08/20/a-startup-wants-wall-street-to-trade-ai-computing-power-like-oil/",
+    "publisher": "Northeasttimes",
+    "published_date": "2026-08-20T09:18:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.972,
+    "ai_summary": "Startup Silicon Data raised $30 million in a Series A round to develop a reference price index for GPU rental, aiming to standardize the pricing of AI computing power. The company plans to launch compute futures trading on the CME on October 5, pending regulatory approval, allowing firms to hedge against cost volatility. This development introduces a new financial instrument for a sector where computing costs represent a significant and unstandardized expense. ",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      },
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5122,
+    "entities": {
+      "person": [
+        "steve hou"
+      ]
+    }
+  },
+  {
+    "id": 32545972,
+    "group_id": 8592620,
+    "title": "Compute Is the New Oil, Apparently",
+    "url": "https://www.ainvest.com/news/compute-oil-apparently-2608/",
+    "publisher": "AInvest",
+    "published_date": "2026-08-20T08:04:09",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "CFTC Chairman Michael Selig announced that compute power is a commodity and requested public comment on listing derivatives for it, while CME Group and Intercontinental Exchange prepare to launch GPU compute futures contracts. These exchanges plan to list cash-settled futures tracking rental rates for Nvidia's H100 and Blackwell B200 chips in partnership with index provider Silicon Data. The move aims to establish clear regulatory rules and hedging mechanisms for the volatile AI infrastructure market.",
+    "tags": [
+      {
+        "name": "IPOs & Follow-on Offerings",
+        "code": "CM05",
+        "is_primary": true
+      },
+      {
+        "name": "Economic Indicators",
+        "code": "MM01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.8749,
+    "entities": {
+      "person": [
+        "michael selig"
+      ]
+    }
+  },
+  {
+    "id": 32547692,
+    "group_id": 8593386,
+    "title": "CME Eyes October Compute Futures as CFTC Opens the Door to a $450 Billion AI Hedge Market",
+    "url": "https://www.ainvest.com/news/cme-eyes-october-compute-futures-cftc-opens-door-450-billion-ai-hedge-market-2608/",
+    "publisher": "AInvest",
+    "published_date": "2026-08-20T07:41:09",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "The CFTC has initiated a public comment process regarding AI compute futures, paving the way for CME Group and Silicon Data to launch two contracts targeting an October 5, 2026 debut. This development aims to create a formal market for hedging the estimated $450 billion in AI infrastructure spending by hyperscalers through on-demand rental rate benchmarks. ",
+    "tags": [
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": true
+      },
+      {
+        "name": "Debt Financing",
+        "code": "CM02",
+        "is_primary": false
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.8639,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 32541596,
+    "group_id": 7399432,
+    "title": "CFTC seeks comments on AI compute derivatives: Guest Post by crypto.news",
+    "url": "https://coinmarketcap.com/community/articles/6a8692054945600102461dca/",
+    "publisher": "CoinMarketCap",
+    "published_date": "2026-08-20T05:49:19",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9698,
+    "ai_summary": "The U.S. Commodity Futures Trading Commission (CFTC) has requested public comments on the listing and oversight of derivatives tied to artificial intelligence computing capacity, focusing on market liquidity, manipulation risks, and customer safeguards. CME Group and Silicon Data plan to launch two cash-settled futures contracts based on Nvidia H100 and B200 rental benchmarks on October 5, pending regulatory review. ",
+    "tags": [
+      {
+        "name": "Policy & Legislative Changes",
+        "code": "RC02",
+        "is_primary": true
+      },
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.4895,
+    "entities": {
+      "person": [
+        "michael s. selig"
+      ]
+    }
+  },
+  {
+    "id": 32532564,
+    "group_id": 8440360,
+    "title": "CFTC seeks public input on futures contracts for AI computing power",
+    "url": "https://cryptobriefing.com/?p=343602",
+    "publisher": "Crypto Briefing",
+    "published_date": "2026-08-20T00:07:06",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.957,
+    "ai_summary": "The CFTC has submitted a draft request for public comment regarding new futures contracts tied to AI computing power, specifically those developed by CME Group in partnership with Silicon Data. The proposed contracts, tracking Nvidia H100 and B200 GPU rental prices, are scheduled for an October 5 launch pending regulatory review. This process aims to assess market structure and manipulation risks before the products begin trading. ",
+    "tags": [
+      {
+        "name": "Policy & Legislative Changes",
+        "code": "RC02",
+        "is_primary": true
+      },
+      {
+        "name": "Market Indices Performance",
+        "code": "MD01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.5001,
+    "entities": {
+      "person": []
+    }
+  }
+]

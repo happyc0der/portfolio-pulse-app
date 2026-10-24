@@ -1,0 +1,95 @@
+[
+  {
+    "id": 31241611,
+    "group_id": 5967923,
+    "title": "The 7 Largest NYC Tech Startup Funding Rounds of July 2026",
+    "url": "https://www.alleywatch.com/2026/08/nyc-startup-funding-top-largest-july-2026-vc/",
+    "publisher": "AlleyWatch",
+    "published_date": "2026-08-03T15:27:15",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "New York's startup ecosystem recorded nine significant funding rounds in July 2026, ranging from $50 million to $650 million, spanning sectors including healthcare AI, DeFi risk management, financial services, and food delivery. The largest round was Wonder's $650 million Series D, bringing its total funding to $3.1 billion, while Norm AI and Gauntlet also raised nine-figure rounds for AI-driven compliance and DeFi risk platforms respectively. The funding was backed by prominent investors including Andreessen Horowitz, Insight Partners, Bain Capital Ventures, and General Catalyst.",
+    "tags": [
+      {
+        "name": "Deal Flow & Volume Statistics",
+        "code": "CM10",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "feature",
+      "label": "Feature"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "ankit patel",
+        "john nay",
+        "kevin ryan",
+        "jeff de flavio",
+        "alex reynolds",
+        "stefan deeran",
+        "chris bayley",
+        "michael kopko",
+        "evan frank",
+        "amit shah",
+        "angus mcdonald",
+        "jake peters",
+        "sumantro das",
+        "henley vazquez",
+        "rei chiang",
+        "john morrow",
+        "jeff hammes",
+        "tony james",
+        "amy schumer",
+        "marc lore",
+        "tarun chitra",
+        "jeremy norton",
+        "matthew brown",
+        "juan cappello",
+        "rafay farooqui",
+        "lord abbett"
+      ]
+    }
+  },
+  {
+    "id": 30888584,
+    "group_id": 5021884,
+    "title": "Morph Joins Bitget, Morpho, and Gauntlet to Offer Institutional-Scale DeFi Yield: Guest Post by BlockchainReporter",
+    "url": "https://coinmarketcap.com/community/articles/6a6ce3cd46807531b2b9ac0b/",
+    "publisher": "CoinMarketCap",
+    "published_date": "2026-07-31T18:06:48",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.984,
+    "ai_summary": "Morph, an L2 blockchain infrastructure platform, has partnered with Morpho (decentralized lending), Gauntlet (DeFi risk management), Chainlink, RedStone, and Bitget to bring institutional-scale DeFi yield products to Bitget's user base of over 125 million consumers. The initial offerings include a Bitcoin vault targeting up to 3% annual yield and a USDC vault targeting approximately 18% annual yield, accessible through Bitget Wallet and Bitget Earn without requiring users to manually interact with DeFi protocols. Gauntlet manages the yield strategies, Morpho provides the decentralized lending framework, Chainlink delivers cross-chain reserve verification via CCIP, and RedStone supplies decentralized price feeds and on-chain risk ratings.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "satoshi nakamoto",
+        "scott bessent"
+      ]
+    }
+  }
+]

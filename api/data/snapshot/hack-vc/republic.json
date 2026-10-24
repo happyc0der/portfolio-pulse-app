@@ -1,0 +1,38 @@
+[
+  {
+    "id": 32245005,
+    "group_id": 7007797,
+    "title": "Meteora Capital Exits Top SPACs, Diversifying $1.2B Book",
+    "url": "https://www.ainvest.com/news/meteora-capital-exits-top-spacs-diversifying-1-2b-book-2608/",
+    "publisher": "AInvest",
+    "published_date": "2026-08-15T01:06:15",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Meteora Capital, LLC has reduced its reported portfolio value to $1.21 billion for the quarter ended June 30, 2026, following a significant shift away from special purpose acquisition companies (SPACs). The portfolio has expanded from 384 to 444 holdings, with notable exits from core SPAC positions including M3-Brigade Acquisition V Corp, Cantor Equity Partners I Inc, and Republic Digital Acquisition Co, amounting to approximately $103 million in reported value. The upcoming filing is anticipated to provide more details regarding the new portfolio composition and sector rotations. ",
+    "tags": [
+      {
+        "name": "Secondary Transactions",
+        "code": "CM07",
+        "is_primary": true
+      },
+      {
+        "name": "Valuation Events",
+        "code": "CM09",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.4239,
+    "entities": {
+      "person": [
+        "aime"
+      ]
+    }
+  }
+]

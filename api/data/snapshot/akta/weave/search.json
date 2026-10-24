@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "0000ees",
+    "product_category": "Healthcare Communication Payment Platform",
+    "match": {
+      "uuid": "0000ees",
+      "name": "Weave",
+      "website": "http://www.getweave.com",
+      "product_category": "Healthcare Communication Payment Platform",
+      "company_status": "public",
+      "akta_rank": 3397
+    }
+  },
+  "fetched_at": "2026-10-24T16:38:19.471354+00:00",
+  "credits_consumed": 0
+}

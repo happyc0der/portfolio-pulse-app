@@ -1,0 +1,183 @@
+[
+  {
+    "id": 40246385,
+    "group_id": 13805542,
+    "title": "These 5 Bitcoin Indicators Have Turned Bullish for the First Time Since 2025: Report",
+    "url": "https://cryptopotato.com/these-5-bitcoin-indicators-have-turned-bullish-for-the-first-time-since-2025-report/",
+    "publisher": "CryptoPotato",
+    "published_date": "2026-10-09T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "BIT's on-chain model returned to a 67% net-long position for two consecutive months, with five indicators in historically bullish territory. Bitcoin trades near $82,000, down 4.5% over seven days, with a $7,000 decline and ETF outflows of $731 million. The model cautions that a break below key levels would signal recovery loss.",
+    "tags": [
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 39333755,
+    "group_id": 12960240,
+    "title": "Bitcoin’s Biggest Holders Ramp Up Buying While Retail Traders Remain Flat: Guest Post by CryptoPotato_News",
+    "url": "https://coinmarketcap.com/community/articles/6abd69176302c866e1a78030/",
+    "publisher": "CoinMarketCap",
+    "published_date": "2026-09-30T20:00:16",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Bitcoin's largest holders added 41,025 BTC over 10 days, reaching 13.64 million BTC, while retail wallets remained flat. US spot Bitcoin ETFs attracted $2.4 billion last week, and BIT Research expects a bullish range of $185,000 to $215,000.",
+    "tags": [
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": true
+      },
+      {
+        "name": "Institutional Flows & Positioning",
+        "code": "MD02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "doctor profit"
+      ]
+    }
+  },
+  {
+    "id": 39291384,
+    "group_id": 10398997,
+    "title": "Bitcoin $215K Scenario Emerges as BTC Reclaims Key Market Levels: Guest Post by CryptoPotato_News",
+    "url": "https://coinmarketcap.com/community/articles/6abcce677656875fb0f2e71e/",
+    "publisher": "CoinMarketCap",
+    "published_date": "2026-09-30T08:56:36",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "BIT Research published a report on Wednesday arguing Bitcoin's bear market is over, with an upside scenario from $185,000 to $215,000. Bitcoin trades above $83,000, with Q3 gains at 42.22% and ETF net inflows of $2.8 billion in September. The report cites rising Treasury yields and a stronger dollar as headwinds.",
+    "tags": [
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 39076047,
+    "group_id": 12709706,
+    "title": "BIT Launches Hong Kong Stock Trading Service in Public Beta: Guest Post by Coincu",
+    "url": "https://coinmarketcap.com/community/articles/6aba119e4a5ad42d29de69b2/",
+    "publisher": "CoinMarketCap",
+    "published_date": "2026-09-28T07:06:14",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "BIT is reportedly planning a public beta for Hong Kong stock trading, but no official announcement has been found. The company's homepage restricts its content from Hong Kong residents, and no regulatory disclosures or launch details have been disclosed.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.0335,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 36217277,
+    "group_id": 11640867,
+    "title": "Bitcoin Price Stays Near $81,000 as Matrixport Ships 2,400 BTC to Binance",
+    "url": "https://news.bitcoin.com/market-updates/matrixport-bit-whale-2400-btc-binance/",
+    "publisher": "Bitcoin",
+    "published_date": "2026-09-19T12:15:21",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Matrixport sent 2,400 BTC to Binance over four days, with 1,400 BTC on Sept. 15 and 1,000 BTC on Sept. 19. Bitcoin trades near $81,000, below resistance at $81,700–$83,000. ETF inflows of $433 million on Sept. 18 offset the supply pressure.",
+    "tags": [
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.3554,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 34827266,
+    "group_id": 10796509,
+    "title": "As Security Returns to the Spotlight, How Does BIT Make Trust Verifiable?",
+    "url": "https://www.tribuneindia.com/news/liquidation/as-security-returns-to-the-spotlight-how-does-bit-make-trust-verifiable",
+    "publisher": "The Tribune",
+    "published_date": "2026-09-10T09:12:46",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "BIT released its Trust Whitepaper V2.0, detailing risk governance, security architecture, and compliance across digital assets and traditional financial services. The whitepaper emphasizes 24-hour risk monitoring, FIPS 140-3 Level 3 HSMs, and a security veto authority, with trust built on independent audits and transparency.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5558,
+    "entities": {
+      "person": []
+    }
+  }
+]

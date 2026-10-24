@@ -1,0 +1,429 @@
+[
+  {
+    "id": 42139814,
+    "group_id": 15462371,
+    "title": "INPUT Global expands to the US with 1inch’s Groundwork forum in Washington",
+    "url": "https://capital.com/en-int/news/input-global-expands-to-the-us-with-1inch-s-groundwork-forum",
+    "publisher": "The future of trading",
+    "published_date": "2026-10-22T18:49:35",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9862,
+    "ai_summary": "INPUT Global is establishing a permanent US presence, starting with a Groundwork forum event in Washington on October 16, 2026. Founder Mary Pedler moderated a panel on AI agents and autonomous finance, and will support client relationships in New York. The company has worked with over 500 companies, including Visa and Ledger.",
+    "tags": [
+      {
+        "name": "Geographic Expansion",
+        "code": "SD03",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "mary pedler",
+        "anastasiia kulibaba"
+      ]
+    }
+  },
+  {
+    "id": 41668045,
+    "group_id": 14997399,
+    "title": "1inch Card holders who miss Dec. 18 can still redeem funds for six years",
+    "url": "https://www.cryptopolitan.com/1inch-card-holders-redeem-funds-six-years/",
+    "publisher": "Cryptopolitan",
+    "published_date": "2026-10-20T19:50:17",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "1inch is closing its crypto debit card, urging holders to withdraw or spend balances by December 18, 2026. Missed holders can still claim e-wallet funds for up to six years after account closure, per Section 16 of the issuer's terms. The company cannot guarantee the exact end date, as the issuer and provider set the timeline.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      },
+      {
+        "name": "Pricing & Commercial Strategy",
+        "code": "SD10",
+        "is_primary": false
+      },
+      {
+        "name": "Compliance & Reporting Updates",
+        "code": "RC04",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.4697,
+    "entities": {
+      "person": [
+        "randa moses"
+      ]
+    }
+  },
+  {
+    "id": 41578002,
+    "group_id": 15022134,
+    "title": "1inch winds down card service, urges balance withdrawals by Dec. 18",
+    "url": "https://cryptobriefing.com/1inch-card-wind-down-december-18/",
+    "publisher": "Crypto Briefing",
+    "published_date": "2026-10-20T15:04:56",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "1inch is winding down its 1inch Card prepaid Mastercard, halting new sign-ups and urging EEA and UK users to spend or withdraw balances by December 18, 2026. Funds are held by Monavate, with a six-year redemption window, and the card launched in April 2024.",
+    "tags": [
+      {
+        "name": "Pricing & Commercial Strategy",
+        "code": "SD10",
+        "is_primary": true
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.019,
+    "entities": {
+      "person": [
+        "kaye quema"
+      ]
+    }
+  },
+  {
+    "id": 40448074,
+    "group_id": 14056963,
+    "title": "1inch hosts Groundwork forum in Washington to tackle DeFi policy and education",
+    "url": "https://cryptobriefing.com/1inch-groundwork-forum-defi-policy-education/",
+    "publisher": "Crypto Briefing",
+    "published_date": "2026-10-12T17:32:42",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "1inch will co-host Groundwork, a one-day forum on DeFi policy and education, on October 16, 2026, in Washington, DC, during DC Fintech Week. The event features seven panels, six roundtables, and student-moderated sessions, with travel sponsorship for students. It extends 1inch Forward, an initiative urging schools to teach digital assets.",
+    "tags": [
+      {
+        "name": "Others",
+        "code": "OT01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5115,
+    "entities": {
+      "person": [
+        "george mason",
+        "orest gavryliak",
+        "john chen"
+      ]
+    }
+  },
+  {
+    "id": 39747123,
+    "group_id": 13119741,
+    "title": "1inch lists 77 bStocks tokenized equities and ETFs on BNB Chain",
+    "url": "https://cryptobriefing.com/1inch-lists-77-bstocks-bnb-chain/",
+    "publisher": "Crypto Briefing",
+    "published_date": "2026-10-05T17:20:16",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "1inch's dApp and Wallet now list 77 bStocks tokenized equities and ETFs on BNB Chain, expanding self-custodied stock access. The BEP-20 tokens trade 24/7 with zero conversion fees, and BNB Chain holds about $1 billion in tokenized equities, roughly 30-34% of the sector.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "kaye quema"
+      ]
+    }
+  },
+  {
+    "id": 38560564,
+    "group_id": 12034164,
+    "title": "1INCH Rallies as the CLARITY Act Fails",
+    "url": "https://www.ainvest.com/news/1inch-rallies-clarity-act-fails-2609/",
+    "publisher": "AInvest",
+    "published_date": "2026-09-22T12:57:20",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "1INCH rose 0.19% daily to $0.10309, with a 13.98% weekly gain but a 27.84% annual decline. The CLARITY Act failed in the Senate, shifting regulatory focus to the SEC and CFTC, which proposed derivatives rules and granted tokenized asset exemptions. ZetaChain migrated to Solana, and Solana upgraded staking speeds.",
+    "tags": [
+      {
+        "name": "Policy & Legislative Changes",
+        "code": "RC02",
+        "is_primary": true
+      },
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.887,
+    "entities": {
+      "person": [
+        "shunan liu"
+      ]
+    }
+  },
+  {
+    "id": 36237440,
+    "group_id": 11792494,
+    "title": "1inch Launches Arc For Cross-Chain Swaps And Tokenized Tesla Trading",
+    "url": "https://www.ainvest.com/news/1inch-launches-arc-cross-chain-swaps-tokenized-tesla-trading-2609/",
+    "publisher": "AInvest",
+    "published_date": "2026-09-20T03:59:23",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "1inch launched Arc, a feature to streamline cross-chain swaps, and added tokenized Tesla shares for swapping against USDC on BNB Chain. The move taps into the $31B+ real-world asset sector, aiming to lower costs and expand DeFi utility. Specific trading volumes were not disclosed.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "review",
+      "label": "Review"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "shunan liu"
+      ]
+    }
+  },
+  {
+    "id": 36175311,
+    "group_id": 11569073,
+    "title": "1inch Moves a Lot of Money. The 1INCH Token Barely Gets a Cut.",
+    "url": "https://www.ainvest.com/news/1inch-moves-lot-money-1inch-token-barely-cut-2609/",
+    "publisher": "AInvest",
+    "published_date": "2026-09-18T13:58:42",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9588,
+    "ai_summary": "1inch routes about $97 million daily but its 1INCH token captures minimal protocol revenue, with a treasury-funded $5M buyback in 2025. The token's market cap fell 36% in Q1 2026 amid token sales, and its DEX-aggregator market share dropped from 25% to 17% quarter over quarter.",
+    "tags": [
+      {
+        "name": "Market Share & Positioning",
+        "code": "SD05",
+        "is_primary": true
+      },
+      {
+        "name": "Daily Stock Market News",
+        "code": "CM12",
+        "is_primary": false
+      },
+      {
+        "name": "Valuation Events",
+        "code": "CM09",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "review",
+      "label": "Review"
+    },
+    "sentiment_score": 0.5182,
+    "entities": {
+      "person": [
+        "valeria"
+      ]
+    }
+  },
+  {
+    "id": 34824692,
+    "group_id": 10751065,
+    "title": "1inch's $800 Billion, and the Profit It Hasn't Earned",
+    "url": "https://www.ainvest.com/news/1inch-800-billion-profit-hasn-earned-2609/",
+    "publisher": "AInvest",
+    "published_date": "2026-09-10T06:40:23",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "1inch has routed $800 billion in DeFi trades since 2019 but remains unprofitable, as it charges no protocol fees. The 1INCH token trades near $0.10, far below its $8.65 peak, reflecting a bet on future monetization via Aqua and Robinhood partnerships.",
+    "tags": [
+      {
+        "name": "Valuation Events",
+        "code": "CM09",
+        "is_primary": true
+      },
+      {
+        "name": "Revenue & Growth Metrics",
+        "code": "FR02",
+        "is_primary": false
+      },
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": false
+      },
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "review",
+      "label": "Review"
+    },
+    "sentiment_score": 0.0993,
+    "entities": {
+      "person": [
+        "kunz",
+        "evan hultman"
+      ]
+    }
+  },
+  {
+    "id": 34809089,
+    "group_id": 10746106,
+    "title": "1inch routes over $800B in trades, co-founder says DeFi still too small to turn a profit",
+    "url": "https://cryptobriefing.com/1inch-800b-trades-defi-profitability/",
+    "publisher": "Crypto Briefing",
+    "published_date": "2026-09-09T22:04:49",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "1inch has routed over $814 billion in cumulative swap volume since 2019, but co-founder Sergej Kunz says the protocol has not turned a profit. He attributes this to DeFi being too small to generate sustainable revenue, with 2025 volume up 39% to $214 billion. The Aqua protocol launch and Ondo Finance RWA integration are upcoming milestones.",
+    "tags": [
+      {
+        "name": "Operational Milestones",
+        "code": "SD04",
+        "is_primary": true
+      },
+      {
+        "name": "Revenue & Growth Metrics",
+        "code": "FR02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.3697,
+    "entities": {
+      "person": [
+        "sergej kunz",
+        "anton bukov"
+      ]
+    }
+  },
+  {
+    "id": 34190021,
+    "group_id": 10486204,
+    "title": "1INCH Stabilizes, But the 1-Year Decline Persists",
+    "url": "https://www.ainvest.com/news/1inch-stabilizes-1-year-decline-persists-2609/",
+    "publisher": "AInvest",
+    "published_date": "2026-09-09T04:03:58",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "On September 9, 2026, 1INCH rose 0.67% to $0.09323, with 2.71% weekly and 5.28% monthly gains, but a 34.15% annual decline persists. The token shows short-term stability amid broader DeFi volatility, with analysts watching whether the uptick signals a sustained recovery.",
+    "tags": [
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.8247,
+    "entities": {
+      "person": [
+        "aime"
+      ]
+    }
+  },
+  {
+    "id": 33854259,
+    "group_id": 10374204,
+    "title": "1INCH Launches Aqua to Automate DeFi Liquidity",
+    "url": "https://www.ainvest.com/news/1inch-launches-aqua-automate-defi-liquidity-2609/",
+    "publisher": "AInvest",
+    "published_date": "2026-09-04T05:58:12",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "1INCH launched Aqua, a DeFi liquidity management platform enabling automated limit orders and multi-position control. The 1INCH token dipped 0.22% on September 4, 2026, but rose 5.42% weekly, while Aqua aims to reduce manual oversight in uncertain markets.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.6758,
+    "entities": {
+      "person": [
+        "tianhao xu"
+      ]
+    }
+  }
+]

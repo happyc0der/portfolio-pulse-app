@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "02m87y9",
+    "product_category": "Physical AI Robotics Data Infrastructure",
+    "match": {
+      "uuid": "02m87y9",
+      "name": "Axis Robotics",
+      "website": "https://axisrobotics.ai",
+      "product_category": "Physical AI Robotics Data Infrastructure",
+      "company_status": "private",
+      "akta_rank": 34238
+    }
+  },
+  "fetched_at": "2026-10-24T16:37:40.462727+00:00",
+  "credits_consumed": 0
+}

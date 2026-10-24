@@ -1,0 +1,397 @@
+[
+  {
+    "id": 41593325,
+    "group_id": 15038669,
+    "title": "0G Labs CEO says AI security incidents are limited for now, but warns more risks are coming",
+    "url": "https://cryptobriefing.com/0g-labs-ceo-ai-security-token2049/",
+    "publisher": "Crypto Briefing",
+    "published_date": "2026-10-20T17:33:19",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9997,
+    "ai_summary": "0G Labs CEO Michael Heinrich said AI security incidents remain limited but warned more risks are coming as autonomous agents gain autonomy. He highlighted recursive AI and unchecked agents as dangers to critical infrastructure. 0G Labs' deAIOS platform, launched in September 2025, has over 400 integrations and raised over $350 million.",
+    "tags": [
+      {
+        "name": "Executive Commentary & Interviews",
+        "code": "LG05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.3738,
+    "entities": {
+      "person": [
+        "michael heinrich",
+        "diego almada lopez"
+      ]
+    }
+  },
+  {
+    "id": 41561597,
+    "group_id": 15006162,
+    "title": "Michael Heinrich, Co-Founder and CEO of 0G – Interview Series",
+    "url": "https://www.unite.ai/michael-heinrich-co-founder-and-ceo-of-0g-interview-series/",
+    "publisher": "Unite.AI",
+    "published_date": "2026-10-19T14:59:35",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9809,
+    "ai_summary": "Michael Heinrich, CEO of 0G, describes building a decentralized AI infrastructure stack with verifiable compute, encrypted storage, and a blockchain. The platform offers compute finance, where users stake 0G to earn compute credits, and reports over 24.9 million TEE proofs. He expects compute to become a financial asset, with agents and a machine economy emerging.",
+    "tags": [
+      {
+        "name": "Executive Commentary & Interviews",
+        "code": "LG05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "interview",
+      "label": "Interview"
+    },
+    "sentiment_score": 0.5846,
+    "entities": {
+      "person": [
+        "michael heinrich",
+        "ming wu",
+        "fan long",
+        "thomas yao",
+        "antoine tardif"
+      ]
+    }
+  },
+  {
+    "id": 41154765,
+    "group_id": 14594140,
+    "title": "Guest Post: AI Infrastructure Investment and the Future of Quantum Computing",
+    "url": "https://thequantuminsider.com/2026/10/17/ai-infrastructure-investment-future-quantum-computing/",
+    "publisher": "Thequantuminsider",
+    "published_date": "2026-10-17T07:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9766,
+    "ai_summary": "George Varghese, Head of Investment at 0G Labs, argues that AI infrastructure investment is early and quantum computing could expand computational demand. He highlights post-quantum cryptography and quantum-resistant transaction signing as key areas, noting that quantum processors may eventually aid molecular simulation and materials science. He expects sustained investment across computing and sees opportunities in integrating quantum resources with existing systems.",
+    "tags": [
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": true
+      },
+      {
+        "name": "Sector Outlook & Forecasts",
+        "code": "MM07",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "george varghese"
+      ]
+    }
+  },
+  {
+    "id": 40441792,
+    "group_id": 14050372,
+    "title": "0G and xBuilders Open Applications for Apollo AI Accelerator Cohort 2",
+    "url": "https://www.globenewswire.com/news-release/2026/10/12/3379135/0/en/0g-and-xbuilders-open-applications-for-apollo-ai-accelerator-cohort-2.html",
+    "publisher": "GlobeNewswire",
+    "published_date": "2026-10-12T17:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9339,
+    "ai_summary": "0G and xBuilders opened applications for Cohort 2 of the Apollo AI Accelerator, selecting up to 10 startups for a four-month program from November 2026 to February 2027. Each project can receive up to $2 million in investment, with applications accepted until November 2, 2026.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "michael heinrich",
+        "justin bebis",
+        "gil rosen"
+      ]
+    }
+  },
+  {
+    "id": 39623756,
+    "group_id": 13312268,
+    "title": "0G Self Reported Market Capitalization Hits $62.74 Million (0G)",
+    "url": "https://www.americanbankingnews.com/2026/10/04/0g-self-reported-market-capitalization-hits-62-74-million-0g.html",
+    "publisher": "American Banking and Market News",
+    "published_date": "2026-10-04T06:14:52",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.8215,
+    "ai_summary": "0G traded 1.1% lower on October 4th, trading at $0.29 with a market cap of $62.74 million. $7.75 million worth of 0G was traded in the last day, and the coin has risen 12.4% over the past week.",
+    "tags": [
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.4482,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 39506461,
+    "group_id": 13127931,
+    "title": "Korea Blockchain Week asks whether blockchains are ready for AI agents",
+    "url": "https://cryptobriefing.com/korea-blockchain-week-ai-agent-infrastructure/",
+    "publisher": "Crypto Briefing",
+    "published_date": "2026-10-02T13:58:01",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "At Korea Blockchain Week 2026 in Seoul, 0G Labs CEO Michael Heinrich argued that transaction-focused blockchains lack features needed for an agentic economy, such as machine-native identity and verifiable computing. He cited x402, which processed over 200 million transactions by mid-2026, as evidence of machine-to-machine payments. The event highlighted Korean policy initiatives, including a tokenized securities framework effective February 2027.",
+    "tags": [
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.4613,
+    "entities": {
+      "person": [
+        "michael heinrich",
+        "diego almada lopez"
+      ]
+    }
+  },
+  {
+    "id": 38961790,
+    "group_id": 12514029,
+    "title": "0G Wants To Turn AI Compute Into A Financial Asset",
+    "url": "https://bitcoinist.com/0g-wants-to-turn-ai-compute-into-a-financial-asset/",
+    "publisher": "Bitcoinist.com",
+    "published_date": "2026-09-26T08:30:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.8496,
+    "ai_summary": "0G introduced a Compute Finance framework to financialize AI compute access, with its Ascend liquid-staking product already live. The iAI compute-focused asset is scheduled to launch on September 29, offering staked iAI compute credits worth over $1 per day. The model aims to let users hold and earn claims on AI compute capacity.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "review",
+      "label": "Review"
+    },
+    "sentiment_score": 0.8822,
+    "entities": {
+      "person": [
+        "samuel rae"
+      ]
+    }
+  },
+  {
+    "id": 37293753,
+    "group_id": 11919168,
+    "title": "0G launches liquid staking gateway for AI compute credits: Guest Post by crypto.news",
+    "url": "https://coinmarketcap.com/community/articles/6ab1893f2552c134304b2cc0/",
+    "publisher": "CoinMarketCap",
+    "published_date": "2026-09-21T19:47:25",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9315,
+    "ai_summary": "0G launched Ascend, a liquid staking gateway that issues a0G from staked 0G, and introduced a five-step system to mint iAI credits for AI compute services. Infinite AI, the iAI asset, launches on Sep 29, with credits usable only on approved services like Private Computer. US access depends on final terms, and credits carry no cash value.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.657,
+    "entities": {
+      "person": [
+        "michael heinrich",
+        "denis saklakov"
+      ]
+    }
+  },
+  {
+    "id": 36272952,
+    "group_id": 11880638,
+    "title": "0G expands wrapped token to Ethereum, Solana, Base, and Robinhood Chain",
+    "url": "https://cryptobriefing.com/0g-expands-ethereum-solana-base-robinhood/",
+    "publisher": "Crypto Briefing",
+    "published_date": "2026-09-21T07:01:53",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "0G deployed its wrapped token across Ethereum, Solana, Base, and Robinhood Chain, enabling cross-chain trading, bridging, and staking. The expansion uses Chainlink's CCIP, with Robinhood Chain's inclusion noted for its high fee and DEX volume. 0G also announced ComFi and Ascend on September 21, 2026.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 35678489,
+    "group_id": 11468849,
+    "title": "0G (Zero Gravity) | +4.55% Bounce After 97% Drawdown — Private Computer Milestone Adds Traction",
+    "url": "https://www.ainvest.com/news/0g-gravity-4-55-bounce-97-drawdown-private-computer-milestone-adds-traction-2609/",
+    "publisher": "AInvest",
+    "published_date": "2026-09-17T16:14:05",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "0G token traded at $0.20, up 4.55% in 24 hours, after falling 97% from a $7.05 ATH. Private Computer AI service processed 250B tokens and added Stripe payments, but 787.8M tokens remain locked, creating dilution risk. Price recovery depends on controlled unlocks and AI narrative adoption.",
+    "tags": [
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.0621,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 39688361,
+    "group_id": 11371314,
+    "title": "Digital Asset Leaders Converge at KBW2026 as Partner Lineup Unveiled",
+    "url": "https://www.newsbtc.com/news/digital-asset-leaders-converge-at-kbw2026-as-partner-lineup-unveiled/",
+    "publisher": "NewsBTC",
+    "published_date": "2026-09-16T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "KBW2026 in Seoul unveiled its partner lineup, with Upbit as presenting partner, 0G and BRV as official conference partners, and Stable and Tria as diamond sponsors. BitGo joins as institutional sponsor, and CEOs from these companies will speak at the event. The conference runs September 29 to October 1.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      },
+      {
+        "name": "Brand & Marketing Initiatives",
+        "code": "SD07",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "kyoungsuk oh",
+        "brian mehler",
+        "michael heinrich",
+        "john lilic",
+        "mike belshe",
+        "andrew park"
+      ]
+    }
+  },
+  {
+    "id": 34972878,
+    "group_id": 11202068,
+    "title": "0G Rises 5% as Telecom Outages Highlight Network Weakness",
+    "url": "https://www.ainvest.com/news/0g-rises-5-telecom-outages-highlight-network-weakness-2609/",
+    "publisher": "AInvest",
+    "published_date": "2026-09-13T18:04:48",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "0G cryptocurrency rose 5.13% on September 13, 2026, amid telecom outages highlighting network vulnerabilities. The asset has declined 78.92% over the past year, but sector-wide infrastructure investments and resilience demands support its price action.",
+    "tags": [
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.8372,
+    "entities": {
+      "person": [
+        "aime"
+      ]
+    }
+  }
+]

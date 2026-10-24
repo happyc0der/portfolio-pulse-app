@@ -1,0 +1,306 @@
+[
+  {
+    "id": 42378326,
+    "group_id": 13966782,
+    "title": "New Crypto: 79% of Pump.fun Coins Stop Trading After Day One as Remittix Earn Readies Aave, Morpho and Fluid Pools",
+    "url": "https://techbullion.com/new-crypto-79-of-pump-fun-coins-stop-trading-after-day-one-as-remittix-earn-readies-aave-morpho-and-fluid-pools/",
+    "publisher": "TechBullion",
+    "published_date": "2026-10-24T08:00:03",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "A Bitquery study found 79% of Pump.fun tokens traded only on their launch day, with only one in 58 reaching a full liquidity pool. Remittix, launching November 24, offers PayFi transfers and Earn pools with up to 22% APY, aiming to retain capital. The project has raised $33 million toward a $36 million cap.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      },
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.2102,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 42326005,
+    "group_id": 15241719,
+    "title": "Chainlink Price Prediction: LINK Near $12.22 After Its Q3 Review as Remittix Earn Readies Aave, Morpho and Fluid Pools",
+    "url": "https://www.openpr.com/news/4671145/chainlink-price-prediction-link-near-12-22-after-its-q3-review",
+    "publisher": "openPR.com",
+    "published_date": "2026-10-23T20:05:16",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Chainlink's Q3 review reported over $15 billion in token value migrated to CCIP, while LINK trades near $12.22. Remittix's Earn plan offers up to 22% APY and a 300 million RTX supply burn, with a November 24 public-market debut.",
+    "tags": [
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": true
+      },
+      {
+        "name": "Daily Stock Market News",
+        "code": "CM12",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "review",
+      "label": "Review"
+    },
+    "sentiment_score": 0.6208,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 42260058,
+    "group_id": 15638258,
+    "title": "Morpho Midnight crosses $100 million in deposits as fixed-rate DeFi lending finds takers",
+    "url": "https://cryptobriefing.com/morpho-midnight-100-million-deposits/",
+    "publisher": "Crypto Briefing",
+    "published_date": "2026-10-23T12:07:14",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Morpho Midnight, the fixed-rate lending arm of Morpho, crossed $100 million in deposits, reaching the milestone on or before October 23, 2026. The protocol, launched July 21, 2026, uses intent-based offers and lend callbacks, while DefiLlama reported about $19.5 million TVL as of October 22, 2026.",
+    "tags": [
+      {
+        "name": "Operational Milestones",
+        "code": "SD04",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.9912,
+    "entities": {
+      "person": [
+        "estefano gomez",
+        "rostislav uzunov"
+      ]
+    }
+  },
+  {
+    "id": 42196786,
+    "group_id": 15555656,
+    "title": "SoDEX Adds Morpho-Powered USDC Lending Yield via Unified Labs",
+    "url": "https://thefintechtimes.com/sodex-adds-morpho-powered-usdc-lending-yield-via-unified-labs/",
+    "publisher": "The Fintech Times",
+    "published_date": "2026-10-23T02:01:51",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9007,
+    "ai_summary": "SoDEX integrated Morpho's USDC lending vault via Unified Labs, allowing users to deposit USDC and earn yield from borrowing activity. The vault is curated by Unified Labs, which manages allocation and risk limits. The product is live at sodex.com/wealth, with no yield or collateral details disclosed.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.7847,
+    "entities": {
+      "person": [
+        "louis wan",
+        "may wang",
+        "shanshan shui",
+        "mark walker",
+        "darlyn ho"
+      ]
+    }
+  },
+  {
+    "id": 42119989,
+    "group_id": 15415364,
+    "title": "Robinhood stock tokens go live on Morpho as collateral for stablecoin loans",
+    "url": "https://cryptobriefing.com/robinhood-stock-tokens-morpho-collateral/",
+    "publisher": "Crypto Briefing",
+    "published_date": "2026-10-22T15:50:46",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "As of October 22, 2026, Robinhood stock tokens can be posted as collateral on Morpho to borrow USDG stablecoins, available only to non-US users. The launch includes NVDA, SPY, and SPCX with liquidation thresholds of 62.5% and 77%. The product follows Robinhood Chain's mainnet launch and prior Morpho partnership.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.9211,
+    "entities": {
+      "person": [
+        "vivian nguyen"
+      ]
+    }
+  },
+  {
+    "id": 42140924,
+    "group_id": 15430569,
+    "title": "oTFY is Live on Morpho: The Money Behind Global Trade is Becoming Collateral.",
+    "url": "https://www.einpresswire.com/article/951523272/otfy-is-live-on-morpho-the-money-behind-global-trade-is-becoming-collateral",
+    "publisher": "EIN Presswire",
+    "published_date": "2026-10-22T15:19:14",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Obligate announced oTFY, its trade finance yield product, is now live on Morpho, allowing investors to borrow against it. Since July, oTFY has reached about $26 million outstanding on Solana, with underlying trade finance bonds growing from $40 million to $170 million.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "matthias wyss",
+        "tom james",
+        "matt gurbiel",
+        "tetiana shokhina"
+      ]
+    }
+  },
+  {
+    "id": 42226744,
+    "group_id": 15437749,
+    "title": "Crypto News: Remittix Earn Prepares Aave, Fluid And Morpho Pools As Ethereum's Four-Minute Settlement Plan Revives A $12,000 ETH Target",
+    "url": "https://menafn.com/1111851935/Crypto-News-Remittix-Earn-Prepares-Aave-Fluid-And-Morpho-Pools-As-Ethereums-Four-Minute-Settlement-Plan-Revives-A-12000-ETH-Target",
+    "publisher": "Business & Financial",
+    "published_date": "2026-10-22T05:02:12",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9454,
+    "ai_summary": "Remittix is preparing its Earn platform with Aave, Fluid, and Morpho pools, offering up to 22% APY. The project has raised $33 million of its $36 million hard cap, with RTX trading at $0.28 toward a $0.46 final stage. The announcement coincides with Ethereum's proposed four-minute settlement plan, which could support a $12,000 ETH target.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      },
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 41934086,
+    "group_id": 15203002,
+    "title": "Ledger wallet integrates Morpho lending...",
+    "url": "https://www.chaincatcher.com/en/article/2297933",
+    "publisher": "链捕手 ChainCatcher",
+    "published_date": "2026-10-21T09:24:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9586,
+    "ai_summary": "Ledger Wallet launched Crypto Loan, integrating Morpho's open credit network for lending. Users can borrow USDC or USDT using wBTC or cbBTC as collateral, with all on-chain interactions signed via Ledger Signer. The service uses floating interest rates and carries liquidation risks.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.9615,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 41578014,
+    "group_id": 14506719,
+    "title": "Spark supplies over $400M USDC to Morpho’s cbBTC/USDC market on Base",
+    "url": "https://cryptobriefing.com/spark-400m-usdc-morpho-cbbtc-base/",
+    "publisher": "Crypto Briefing",
+    "published_date": "2026-10-20T14:02:06",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Spark supplies over $400 million in USDC to Morpho's cbBTC/USDC lending market on Base, providing nearly a quarter of the market's USDC. The market has a utilization rate above 90%, with $1.60 billion borrowed against $1.77 billion in supplied assets. Spark's allocation decisions carry significant weight given its concentration.",
+    "tags": [
+      {
+        "name": "Operational Milestones",
+        "code": "SD04",
+        "is_primary": true
+      },
+      {
+        "name": "Market Share & Positioning",
+        "code": "SD05",
+        "is_primary": false
+      },
+      {
+        "name": "Revenue & Growth Metrics",
+        "code": "FR02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.5345,
+    "entities": {
+      "person": [
+        "estefano gomez"
+      ]
+    }
+  }
+]

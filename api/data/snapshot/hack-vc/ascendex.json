@@ -1,0 +1,220 @@
+[
+  {
+    "id": 32397141,
+    "group_id": 9085727,
+    "title": "Fourth crypto exchange shuts down in just six weeks",
+    "url": "https://protos.com/fourth-crypto-exchange-shuts-down-in-just-six-weeks/",
+    "publisher": "Protos",
+    "published_date": "2026-08-17T16:26:19",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "US-based crypto exchange ABFinance has closed down its operations before ever launching, following a brief six-month existence. This closure adds to the uncertainty in the crypto market as three other exchanges, BitMart, BitMEX, and AscendEX, have also announced their shutdowns in just six weeks. The recent wave of closures has left users concerned about the safety of their funds within these exchanges. ",
+    "tags": [
+      {
+        "name": "Financial Distress & Restructuring",
+        "code": "RK07",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "investigative",
+      "label": "Investigative"
+    },
+    "sentiment_score": 0.0148,
+    "entities": {
+      "person": [
+        "helen liu",
+        "zachxbt"
+      ]
+    }
+  },
+  {
+    "id": 30888480,
+    "group_id": 5021851,
+    "title": "Why Are More Crypto Exchanges Shutting Down? The Industry Is Entering a New Era of Consolidation",
+    "url": "https://techbullion.com/why-are-more-crypto-exchanges-shutting-down-the-industry-is-entering-a-new-era-of-consolidation/",
+    "publisher": "TechBullion",
+    "published_date": "2026-07-31T17:52:33",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Three cryptocurrency exchanges—AscendEX, BitMEX, and BitMart—announced shutdowns or wind-downs in mid-2026, representing a wave of consolidation in the centralized exchange (CEX) industry. AscendEX ceased operations on July 1 citing inability to comply with the EU's MiCA framework and a prior $78 million security breach, while BitMEX (whose daily trading volume fell to roughly $400,000 with market share below 0.01%) and BitMart (scheduled to fully close by January 2027) cited declining relevance and operating pressures. The closures reflect converging structural pressures including rising regulatory compliance costs, competition from larger exchanges like Binance and OKX, liquidity concentration in major platforms, and the growing market share of high-performance decentralized exchanges.",
+    "tags": [
+      {
+        "name": "Market-Structure Changes",
+        "code": "II05",
+        "is_primary": true
+      },
+      {
+        "name": "Policy & Legislative Changes",
+        "code": "RC02",
+        "is_primary": false
+      },
+      {
+        "name": "Technology Adoption & Disruption",
+        "code": "II02",
+        "is_primary": false
+      },
+      {
+        "name": "Competitive Threats",
+        "code": "II04",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.0782,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 30498957,
+    "group_id": 5157421,
+    "title": "Kapanan Borsalar Bitcoin’in Dip Yaptığını mı Gösteriyor?: Guest Post by Coin Muhendisi",
+    "url": "https://coinmarketcap.com/community/articles/6a69c94bcdbba06a56881861/",
+    "publisher": "CoinMarketCap",
+    "published_date": "2026-07-29T09:43:22",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9054,
+    "ai_summary": "Alphractal founder Joao Wedson has challenged the popular market narrative that closing cryptocurrency exchanges signal Bitcoin has hit bottom, presenting data showing only 9 platforms closed in 2026—the lowest in eight years. Multiple high-profile exchanges including BitMEX, AscendEX, BitMart, Odos, and Dango announced operational closures, while Storj Labs filed for voluntary Chapter 11 bankruptcy protection in the US; however, analysts remain divided on what these developments indicate about market cycles, with some viewing platform failures as natural market consolidation rather than a bottom signal.",
+    "tags": [
+      {
+        "name": "Investor Sentiment",
+        "code": "MD07",
+        "is_primary": true
+      },
+      {
+        "name": "Financial Distress & Restructuring",
+        "code": "RK07",
+        "is_primary": false
+      },
+      {
+        "name": "Volatility & Risk Appetite",
+        "code": "MD04",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.9927,
+    "entities": {
+      "person": [
+        "imon dedic",
+        "van liljeqvist",
+        "joao wedson",
+        "om lee,",
+        "ali martinez",
+        "tom lee"
+      ]
+    }
+  },
+  {
+    "id": 30467838,
+    "group_id": 5144141,
+    "title": "Don’t Be Fooled: Why Exchange Shutdowns Might Not Mean Bitcoin Has Bottomed: Guest Post by CryptoPotato_News",
+    "url": "https://coinmarketcap.com/community/articles/6a69774072b7233e8f14cbbe/",
+    "publisher": "CoinMarketCap",
+    "published_date": "2026-07-29T03:49:17",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Crypto analyst Joao Wedson has challenged the popular narrative that recent exchange shutdowns signal a Bitcoin cycle bottom, presenting data showing only nine crypto exchanges have shut down in 2026—the lowest annual total in at least eight years. Several high-profile platforms including BitMEX, AscendEX, BitMart, Odos, and Dango have announced wind-down plans, while Storj Labs separately filed for Chapter 11 bankruptcy protection. The debate continues as figures like Fundstrat's Tom Lee view closures as historically bullish, though Wedson argues the data contradicts claims that current shutdowns point to a major Bitcoin bottom, noting Bitcoin trades near $63,500 with little price impact from the announcements.",
+    "tags": [
+      {
+        "name": "Volatility & Risk Appetite",
+        "code": "MD04",
+        "is_primary": true
+      },
+      {
+        "name": "Market Indices Performance",
+        "code": "MD01",
+        "is_primary": false
+      },
+      {
+        "name": "Financial Distress & Restructuring",
+        "code": "RK07",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.1878,
+    "entities": {
+      "person": [
+        "ali martinez",
+        "simon dedi",
+        "joao wedson",
+        "tom lee",
+        "ivan liljeqvist",
+        "doctor profit"
+      ]
+    }
+  },
+  {
+    "id": 29579256,
+    "group_id": 4375349,
+    "title": "Why Retail Traders Couldn’t Take Their Eyes Off These Stocks Last Week: NVDA, GOOGL, ORCL, TSLA, INTC",
+    "url": "https://stocktwits.com/news-articles/markets/equity/why-retail-traders-couldn-t-take-their-eyes-off-these-stocks-last-week-nvda-googl-orcl-tsla-intc/cZZxG0NR7CR",
+    "publisher": "Stocktwits",
+    "published_date": "2026-07-27T02:05:25",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Retail traders last week focused on mixed earnings results across major tech stocks, with Tesla (TSLA) plunging 17% after reporting earnings per share below analyst forecasts despite higher revenue and record deliveries, while Intel (INTC) beat expectations with 25% quarterly revenue growth driven by a 59% jump in data center sales to $6.3 billion. Separately, BitMart became the third centralized crypto exchange to announce shutdown in two weeks, following AscendEX and BitMEX, as the revised CLARITY Act advanced in the Senate targeting decentralized crypto platforms. Nvidia (NVDA) is reportedly in discussions to support a $250 billion OpenAI data center financing package in southern Ohio, which could become the largest announced AI infrastructure complex.",
+    "tags": [
+      {
+        "name": "Earnings Releases",
+        "code": "FR01",
+        "is_primary": false
+      },
+      {
+        "name": "Policy & Legislative Changes",
+        "code": "RC02",
+        "is_primary": false
+      },
+      {
+        "name": "Supply-Chain Disruptions",
+        "code": "RK08",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.764,
+    "entities": {
+      "person": [
+        "arthur hayes",
+        "brian armstrong",
+        "simon dedic",
+        "matt smith",
+        "david solomon",
+        "cynthia lummis",
+        "michaël van de poppe",
+        "donald trump",
+        "matthew kennedy",
+        "lip-bu tan"
+      ]
+    }
+  }
+]

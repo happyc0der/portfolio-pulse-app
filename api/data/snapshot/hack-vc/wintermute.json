@@ -1,0 +1,253 @@
+[
+  {
+    "id": 42370136,
+    "group_id": 10398997,
+    "title": "Bitcoin eyes $84,000 as whale withdrawals surge and institutional activity grows",
+    "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-eyes-84-000-whale-054514426.html",
+    "publisher": "Yahoo",
+    "published_date": "2026-10-24T05:45:14",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Bitcoin traded under $81,000 at $80,841.9 early Saturday, with whale withdrawals and institutional activity raising hopes of a recovery toward $84,000. Large holders withdrew 9,458 BTC worth $771.5 million from Wintermute, while Fidelity and BlackRock-linked wallets received BTC from Binance. Technical indicators showed improving momentum, with support near $81,000.",
+    "tags": [
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.7482,
+    "entities": {
+      "person": [
+        "michael saylor"
+      ]
+    }
+  },
+  {
+    "id": 41735198,
+    "group_id": 15171923,
+    "title": "Bitcoin Worth $90 Million Pulled From Wintermute by a Mystery Whale",
+    "url": "https://news.bitcoin.com/crypto-news/bitcoin-whale-wintermute-1090-btc-new-wallets/",
+    "publisher": "Bitcoin",
+    "published_date": "2026-10-21T08:30:54",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Three new wallets received 1,090 BTC ($90.38M) from Wintermute on Oct. 20-21, with a similar 1,162 BTC transfer on Oct. 14, totaling about $187M in seven days. Bitcoin closed above $80,000 for 33 days, and $84,000 is the next level traders are watching.",
+    "tags": [
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.5464,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 41641207,
+    "group_id": 15094804,
+    "title": "Wintermute Says Capital Is Shifting From Altcoins to Bitcoin, Ether",
+    "url": "https://www.tradingview.com/news/bloomingbit:794aa6fdb094b:0-wintermute-says-capital-is-shifting-from-altcoins-to-bitcoin-ether/",
+    "publisher": "TradingView",
+    "published_date": "2026-10-20T20:34:02",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9337,
+    "ai_summary": "Wintermute said capital is shifting to Bitcoin and Ether as altcoins fell 5.69% over the past week. The market maker noted investment flows were more concentrated in Bitcoin and Ether than in altcoins. Wintermute said Bitcoin's price must rise first for a broad altcoin rally to resume.",
+    "tags": [
+      {
+        "name": "Institutional Flows & Positioning",
+        "code": "MD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.3895,
+    "entities": {
+      "person": [
+        "wintermute"
+      ]
+    }
+  },
+  {
+    "id": 41562755,
+    "group_id": 15007075,
+    "title": "Armitage, Wintermute’s onchain curation arm, selects Railnet for vault infrastructure",
+    "url": "https://www.tradingview.com/news/chainwire:635927abd094b:0-armitage-wintermute-s-onchain-curation-arm-selects-railnet-for-vault-infrastructure/",
+    "publisher": "TradingView",
+    "published_date": "2026-10-20T12:00:21",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9429,
+    "ai_summary": "Armitage, Wintermute's onchain curation arm, selected Railnet for vault infrastructure, with WETH Yield launching first. The strategy targets 3–4% yield using leveraged ETH staking, lending, and private credit. USDC Prime and USDC Select strategies follow, combining onchain lending and tokenized Treasuries.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.9896,
+    "entities": {
+      "person": [
+        "marie siegrist",
+        "igor igamberdiev"
+      ]
+    }
+  },
+  {
+    "id": 41365561,
+    "group_id": 14826616,
+    "title": "24X Completes Spot Cryptocurrency Trade in BTC with Standard Chartered and Wintermute",
+    "url": "https://www.tradingview.com/news/chainwire:602e96141094b:0-24x-completes-spot-cryptocurrency-trade-in-btc-with-standard-chartered-and-wintermute/",
+    "publisher": "TradingView",
+    "published_date": "2026-10-19T10:27:38",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "24X Bermuda completed its second consecutive spot cryptocurrency trade in Bitcoin, partnering with Standard Chartered and Wintermute. Standard Chartered acted as liquidity taker and Wintermute as liquidity provider, following an inaugural trade with Cumberland DRW. The trades demonstrate institutional-grade infrastructure for digital asset markets.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      },
+      {
+        "name": "Operational Milestones",
+        "code": "SD04",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "eric andrus"
+      ]
+    }
+  },
+  {
+    "id": 40764645,
+    "group_id": 6915163,
+    "title": "Ethereum Just Tanked to 2-Month Low as Wintermute Keeps Shorting ETH: Guest Post by CryptoPotato_News",
+    "url": "https://coinmarketcap.com/community/articles/6ad0766fc487575c4ddfa638/",
+    "publisher": "CoinMarketCap",
+    "published_date": "2026-10-15T06:46:22",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Ethereum fell to $2,315 on Bitstamp, its lowest since August, after a CPI-driven shorting surge. Wintermute holds $75M in ETH shorts on Hyperliquid, and ETFs saw $130M outflows. Total liquidated positions hit $293M, with 92% from longs.",
+    "tags": [
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.001,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 40579354,
+    "group_id": 14138157,
+    "title": "NEAR Claims Crown in Crypto's Pivot to AI: Wintermute",
+    "url": "https://u.today/near-claims-crown-in-cryptos-pivot-to-ai-wintermute",
+    "publisher": "U.Today",
+    "published_date": "2026-10-13T14:41:30",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Wintermute reports NEAR Protocol led an AI-driven rally as Fed hawkishness triggered crypto outflows. Bitcoin fell 3.2% to $83k and Ethereum 7% on a researcher's migration warning, while NEAR surged on a short squeeze. Wintermute warns altcoin buying remains unjustified until bond yields stabilize.",
+    "tags": [
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.2038,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 39900253,
+    "group_id": 13537156,
+    "title": "Wintermute says digital asset bull trend still at early stage, expects new highs: Guest Post by COINTURK NEWS",
+    "url": "https://coinmarketcap.com/community/articles/6ac520de60e8e243832ebe5d/",
+    "publisher": "CoinMarketCap",
+    "published_date": "2026-10-06T16:26:22",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Wintermute said the global digital asset uptrend is still early, with Bitcoin holding at $86,100 and targeting $90,000–$95,000. The firm noted rising U.S. Treasury yields and a sideways phase for major altcoins, while sector rotation toward newer projects signals structural evolution. It expects the November 3 U.S. midterm elections to reduce Treasury uncertainty and pave the way for new highs.",
+    "tags": [
+      {
+        "name": "Sector Outlook & Forecasts",
+        "code": "MM07",
+        "is_primary": true
+      },
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  }
+]

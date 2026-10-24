@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "00000p2",
+    "product_category": "Ai Marketing Platform",
+    "match": {
+      "uuid": "00000p2",
+      "name": "Jasper",
+      "website": "https://www.jasper.ai",
+      "product_category": "Ai Marketing Platform",
+      "company_status": "private",
+      "akta_rank": 7316
+    }
+  },
+  "fetched_at": "2026-10-24T16:38:27.934931+00:00",
+  "credits_consumed": 0
+}

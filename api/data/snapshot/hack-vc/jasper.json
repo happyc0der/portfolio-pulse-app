@@ -1,0 +1,374 @@
+[
+  {
+    "id": 41535471,
+    "group_id": 14984008,
+    "title": "When the model takes away the moat",
+    "url": "https://www.techradar.com/pro/when-the-model-takes-away-the-moat",
+    "publisher": "TechRadar",
+    "published_date": "2026-10-20T08:58:44",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.933,
+    "ai_summary": "AI wrappers built on third-party foundation models face structural fragility, as seen in Jasper's revenue drop from $120M to $55M. The author argues that democratizing model training and ownership is needed to give startups lasting competitive advantage.",
+    "tags": [
+      {
+        "name": "Business-Model Evolution",
+        "code": "II03",
+        "is_primary": true
+      },
+      {
+        "name": "Market-Structure Changes",
+        "code": "II05",
+        "is_primary": false
+      },
+      {
+        "name": "Competitive Threats",
+        "code": "II04",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.6111,
+    "entities": {
+      "person": [
+        "dr yichuan zhang"
+      ]
+    }
+  },
+  {
+    "id": 41118503,
+    "group_id": 14582429,
+    "title": "Best AI Content Studio for Employees Building Brand Locked Media",
+    "url": "https://www.einnews.com/article/950433017/live",
+    "publisher": "EIN Presswire",
+    "published_date": "2026-10-17T20:15:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.7539,
+    "ai_summary": "OnBrand is ranked the best AI content studio for employees, producing headshots, voice-based writing, and brand-locked video from a single photo and voice prompt. Pricing starts at $40 per credit for SMB, with enterprise custom licensing. Jasper and Copy.ai are noted for marketing copy, while EveryoneSocial and Haiilo focus on redistributing finished content.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      },
+      {
+        "name": "Awards, Rankings & Recognitions",
+        "code": "SD11",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "review",
+      "label": "Review"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 40472034,
+    "group_id": 10490483,
+    "title": "Choose Best AI Tools for Marketing in 2026",
+    "url": "https://openart.ai/blog/choose-best-ai-tools-for-marketing/",
+    "publisher": "Openart",
+    "published_date": "2026-09-24T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.7327,
+    "ai_summary": "A guide ranks AI marketing tools by category, recommending Perplexity for research, Jasper for copy, Semrush for SEO, and others. It emphasizes that a specialist stack across the campaign lifecycle outperforms a single product, and notes that human review remains necessary for accuracy and brand consistency.",
+    "tags": [
+      {
+        "name": "Others",
+        "code": "OT01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.9011,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 34819084,
+    "group_id": 10793796,
+    "title": "Jasper Review: Is This AI Writer Really Worth Using for Your Content in 2026?",
+    "url": "https://talkmarkets.com/article/jasper-review-is-this-ai-writer-really-worth-using-for-your-content-in-2026-169838",
+    "publisher": "TalkMarkets",
+    "published_date": "2026-09-10T04:45:17",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.7555,
+    "ai_summary": "Jasper is an AI writing platform for business and marketing content, offering tools for drafts, rewrites, and brand-focused writing. It can speed up writing tasks but requires human review for accuracy and originality. The review recommends testing Jasper against a user's actual workflow to determine its value.",
+    "tags": [
+      {
+        "name": "Others",
+        "code": "OT01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "review",
+      "label": "Review"
+    },
+    "sentiment_score": 0.5585,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 34127751,
+    "group_id": 10512775,
+    "title": "AI Social Media Post Generator Tools: How AI Is Changing Social Content Creation",
+    "url": "https://talkmarkets.com/article/ai-social-media-post-generator-tools-how-ai-is-changing-social-content-creation-602221",
+    "publisher": "TalkMarkets",
+    "published_date": "2026-09-08T11:43:48",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.749,
+    "ai_summary": "AI social media post generator tools use artificial intelligence to create social media drafts from user instructions, covering captions, hooks, and hashtags. Examples include ChatGPT, Jasper, and Copy.ai, with a guide from AI Just Works. The tools are presented as drafting assistants that require human fact-checking and editorial judgment.",
+    "tags": [
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5853,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 32334595,
+    "group_id": 7417045,
+    "title": "Jasper names a CFO with a $1B M&A track record as enterprise AI marketing enters its operationalization phase",
+    "url": "https://www.marketscale.com/industries/marketing-tech/jasper-names-a-cfo-with-a-1b-ma-track-record-as-enterprise-ai-marketing-enters-its-operationalization-phase",
+    "publisher": "MarketScale",
+    "published_date": "2026-08-15T12:18:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Jasper has appointed Tom Newton as Chief Marketing Officer and Lauren Newman as Chief Financial Officer, marking a strategic shift towards operationalizing its enterprise AI capabilities. Newman's experience includes overseeing a nearly $1 billion sale at her previous company, indicating a focus on scalable revenue generation for Jasper. The appointments reflect Jasper's transition from experimentation to a structured approach in the enterprise marketing space. ",
+    "tags": [
+      {
+        "name": "C-Suite Appointments & Departures",
+        "code": "LG01",
+        "is_primary": true
+      },
+      {
+        "name": "Mergers & Acquisitions",
+        "code": "CM03",
+        "is_primary": false
+      },
+      {
+        "name": "Operational Milestones",
+        "code": "SD04",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.9445,
+    "entities": {
+      "person": [
+        "lauren newman",
+        "tom newton",
+        "newman",
+        "timothy young",
+        "newton"
+      ]
+    }
+  },
+  {
+    "id": 35712268,
+    "group_id": 11629997,
+    "title": "You Pay Per Seat for Coding and Marketing Copilots: Fold Them Into One Owned System",
+    "url": "https://mickai.co.uk/articles/fold-copilots-into-owned-system",
+    "publisher": "Mickai",
+    "published_date": "2026-08-04T00:00:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.7465,
+    "ai_summary": "GitHub Copilot and Cursor added usage meters in 2026, while Jasper and Copy.ai similarly unbundled seats with credit pools. The article proposes folding coding and marketing copilots into an owned offline system, eliminating per-seat and per-token charges. It details three studios—Coding, Press, and Scribe—that run on local hardware with an audit trail.",
+    "tags": [
+      {
+        "name": "Business-Model Evolution",
+        "code": "II03",
+        "is_primary": true
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      },
+      {
+        "name": "Pricing & Commercial Strategy",
+        "code": "SD10",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.4946,
+    "entities": {
+      "person": [
+        "micky irons"
+      ]
+    }
+  },
+  {
+    "id": 31177374,
+    "group_id": 5475669,
+    "title": "Jasper Enhances Leadership Team to Pave the Future of Enterprise Marketing",
+    "url": "https://third-news.com/article/57f2401a-8f3d-11f1-9473-9ca3ba08e13f",
+    "publisher": "Third News",
+    "published_date": "2026-08-03T13:15:05",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Jasper, an AI marketing platform, announced leadership changes including Tom Newton's promotion to Chief Marketing Officer and Lauren Newman's appointment as Chief Financial Officer, aiming to strengthen its enterprise marketing capabilities. The company recently launched its GEO Agent product for optimizing brand visibility in AI-generated responses and counts Prudential and Cushman & Wakefield among its enterprise clients. CEO Timothy Young emphasized that the focus is shifting toward helping enterprises operationalize AI insights effectively.",
+    "tags": [
+      {
+        "name": "C-Suite Appointments & Departures",
+        "code": "LG01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "lauren newman",
+        "tom newton",
+        "timothy young"
+      ]
+    }
+  },
+  {
+    "id": 31187417,
+    "group_id": 5482606,
+    "title": "Jasper Strengthens Executive Leadership for the Next Era of Enterprise Marketing",
+    "url": "https://www.prnewswire.com/news-releases/jasper-strengthens-executive-leadership-for-the-next-era-of-enterprise-marketing-302840597.html",
+    "publisher": "PR Newswire",
+    "published_date": "2026-08-03T13:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Jasper, the marketing agents platform, announced the promotion of Tom Newton to Chief Marketing Officer and the appointment of Lauren Newman as Chief Financial Officer, strengthening its executive team as the company shifts from AI experimentation to operationalization. Lauren Newman brings nearly 20 years of experience scaling technology companies, including prior CFO roles at Aircall and Acclara, and seven years at Microsoft. The appointments come as Jasper continues expanding its agent platform, recently launching its end-to-end GEO Agent for enterprise marketers.",
+    "tags": [
+      {
+        "name": "C-Suite Appointments & Departures",
+        "code": "LG01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "promotional",
+      "label": "Promotional"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "tom newton",
+        "lauren newman",
+        "timothy young"
+      ]
+    }
+  },
+  {
+    "id": 40538475,
+    "group_id": 5886352,
+    "title": "20+ Best AI Tools in 2025 (The Only List You’ll Need)",
+    "url": "https://www.veed.io/learn/best-ai-tools",
+    "publisher": "Veed",
+    "published_date": "2026-07-29T14:06:57",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.789,
+    "ai_summary": "A curated list of 20+ AI tools for 2025 covers video/audio editing, content writing, image generation, and coding, with descriptions and pricing. Tools include Synthesia, VEED, ChatGPT4, Jasper, and GitHub Copilot, with plans ranging from free to enterprise pricing.",
+    "tags": [
+      {
+        "name": "Others",
+        "code": "OT01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "review",
+      "label": "Review"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 40529673,
+    "group_id": 14121193,
+    "title": "AI Rewriter: 11 Free and Paid Tools Compared",
+    "url": "https://www.descript.com/blog/article/best-free-ai-rewriter",
+    "publisher": "Descript",
+    "published_date": "2026-07-29T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.7584,
+    "ai_summary": "The article compares 11 AI rewriter tools, including Descript, Jasper, and Quillbot, detailing their features, pricing, and pros and cons. Descript's free Ask AI is highlighted as a free option, while others like Jasper and Frase require paid plans. The piece also covers how to use these tools effectively and addresses plagiarism concerns.",
+    "tags": [
+      {
+        "name": "Others",
+        "code": "OT01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.8811,
+    "entities": {
+      "person": []
+    }
+  }
+]

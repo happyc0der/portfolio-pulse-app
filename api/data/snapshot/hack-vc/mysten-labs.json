@@ -1,0 +1,165 @@
+[
+  {
+    "id": 42269594,
+    "group_id": 15651008,
+    "title": "Sui Developer Mysten Labs has a New CEO Amid AI Pivot: Who Is Kevin Boon?",
+    "url": "https://coingape.com/block-of-fame/cxo-stories/sui-developer-mysten-labs-has-a-new-ceo-amid-ai-pivot-who-is-kevin-boon/",
+    "publisher": "Coingape",
+    "published_date": "2026-10-23T13:03:49",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Mysten Labs appointed Kevin Boon as CEO, with co-founder Evan Cheng remaining CTO and leading a new AI business unit. The unit will develop AI-agent trust products and infrastructure built around Sui and Walrus, following a Google Cloud collaboration on Verifiable Agent Arbiter.",
+    "tags": [
+      {
+        "name": "C-Suite Appointments & Departures",
+        "code": "LG01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5579,
+    "entities": {
+      "person": [
+        "kevin boon",
+        "evan cheng",
+        "sneha agrawal",
+        "cheng"
+      ]
+    }
+  },
+  {
+    "id": 41178929,
+    "group_id": 14473633,
+    "title": "Sui Network News: Lawyer Becomes CEO, What Happens to SUI Price?: Guest Post by Coingabbar",
+    "url": "https://coinmarketcap.com/community/articles/6ad46d454644b97307cc5653/",
+    "publisher": "CoinMarketCap",
+    "published_date": "2026-10-18T06:58:16",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Kevin Boon, a former lawyer, became CEO of Mysten Labs on October 18, 2026, succeeding Evan Cheng, who remains CTO. SUI traded at $0.979, down 3.5% in 24 hours, with no price reaction cited. The company is launching an AI unit, with delivery uncertain.",
+    "tags": [
+      {
+        "name": "C-Suite Appointments & Departures",
+        "code": "LG01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.501,
+    "entities": {
+      "person": [
+        "evan cheng",
+        "kevin boon",
+        "coingabbar"
+      ]
+    }
+  },
+  {
+    "id": 40563791,
+    "group_id": 14125079,
+    "title": "Mysten Reports Sui's First Native Quantum-Safe Devnet Transaction",
+    "url": "https://thedefiant.io/news/blockchains/mysten-reports-sui-s-first-native-quantum-safe-devnet-transaction",
+    "publisher": "Thedefiant",
+    "published_date": "2026-10-13T12:10:08",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.8471,
+    "ai_summary": "Mysten's Sui devnet now supports ML-DSA-65 account signatures, a quantum-safe standard. Native mainnet support is targeted for Q1 2027, pending audits and testnet feedback.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "other",
+      "label": "Other"
+    },
+    "sentiment_score": 0.9686,
+    "entities": {
+      "person": [
+        "sui"
+      ]
+    }
+  },
+  {
+    "id": 40103027,
+    "group_id": 13670844,
+    "title": "Sui’s Hashi Bitcoin Network to Launch With $500M in Capital Commitments",
+    "url": "https://ct.com/news/sui-hashi-bitcoin-finance-commitments",
+    "publisher": "Cointelegraph",
+    "published_date": "2026-10-08T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Mysten Labs' Hashi Bitcoin finance network will launch in October with over $500 million in capital commitments from more than 20 partners, including BitGo, Bullish, and Ledger. The network uses Bitcoin as collateral to mint hBTC on Sui for lending, borrowing, and vaults, with Anchorage Digital joining as a launch partner.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.9366,
+    "entities": {
+      "person": [
+        "nathan mccauley"
+      ]
+    }
+  },
+  {
+    "id": 40003063,
+    "group_id": 13522048,
+    "title": "Google Cloud & Mysten Labs: Verifiable Agent Arbiter: Guest Post by AICryptocore.com",
+    "url": "https://coinmarketcap.com/community/articles/6ac6518e6ef49128d81053ab/",
+    "publisher": "CoinMarketCap",
+    "published_date": "2026-10-07T14:08:50",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Google Cloud and Mysten Labs announced a partnership to develop the Verifiable Agent Arbiter, a framework for on-chain verification of AI agent actions. The initiative aims to create tamper-resistant records of agent decisions, addressing accountability gaps in autonomous systems. Interoperability and governance remain open questions for the partnership.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5133,
+    "entities": {
+      "person": []
+    }
+  }
+]

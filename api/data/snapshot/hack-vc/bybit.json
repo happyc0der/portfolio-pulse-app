@@ -1,0 +1,134 @@
+[
+  {
+    "id": 42325937,
+    "group_id": 15357503,
+    "title": "Next Shiba Inu? Bybit Wins Dubai Exchange Licence as DOGE, PEPE and Remittix's PayFi Expansion Take Focus",
+    "url": "https://www.openpr.com/news/4671175/next-shiba-inu-bybit-wins-dubai-exchange-licence-as-doge-pepe",
+    "publisher": "openPR.com",
+    "published_date": "2026-10-23T20:58:16",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Bybit secured a Dubai licence to offer crypto spot-trading services, adding a regulated market. Remittix is expanding its PayFi to 41 additional fiat currencies, having raised about $33 million from over 40,000 participants. The project plans a 300 million RTX burn at launch, removing 20% of supply.",
+    "tags": [
+      {
+        "name": "Regulatory Approvals & Certifications",
+        "code": "RC01",
+        "is_primary": true
+      },
+      {
+        "name": "Geographic Expansion",
+        "code": "SD03",
+        "is_primary": false
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "pepe"
+      ]
+    }
+  },
+  {
+    "id": 42285962,
+    "group_id": 15341029,
+    "title": "Bybit AI Empowers Users with Their Personal Financial Edge, Adding Personalization and Memory",
+    "url": "https://cxotoday.com/media-coverage/bybit-ai-empowers-users-with-their-personal-financial-edge-adding-personalization-and-memory/?utm_source=rss&utm_medium=rss&utm_campaign=bybit-ai-empowers-users-with-their-personal-financial-edge-adding-personalization-and-memory",
+    "publisher": "CXOToday.com",
+    "published_date": "2026-10-23T12:05:54",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.8102,
+    "ai_summary": "Bybit announced new personalization and memory features for its in-app AI assistant, Bybit AI. The AI now builds a user profile from assets, positions, behavior, and risk profile, and retains long-term memory of preferences. Bybit expects further updates as it builds toward AI-native financial services.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 42270899,
+    "group_id": 14564578,
+    "title": "New Prize Pool Unlocked: Bybit Extends USD1 Hold & Earn Program With 27 Million WLFI in Rewards",
+    "url": "https://www.advfn.com/stock-market/stock-news/99548687/new-prize-pool-unlocked-bybit-extends-usd1-hold",
+    "publisher": "Advfn",
+    "published_date": "2026-10-23T07:37:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Bybit extended its USD1 Hold & Earn program with a 27 million WLFI reward pool, running from October 17 to November 15, 2026. Eligible users holding at least 1 USD1 earn daily WLFI rewards with up to 10% APR, no staking required.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "promotional",
+      "label": "Promotional"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 42196791,
+    "group_id": 15555660,
+    "title": "Bybit Adds Stock Trading and Tokenised Equities in TradFi push",
+    "url": "https://thefintechtimes.com/bybit-adds-stock-trading-and-tokenised-equities-in-tradfi-push/",
+    "publisher": "The Fintech Times",
+    "published_date": "2026-10-23T04:00:18",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Bybit launched trading in over 1,000 US stocks and ETFs, with fractional share support and 24-hour access. It is developing mStocks, a tokenised equity product backed one-to-one by real securities, targeting a November launch. The exchange also offers IPO Express, with SpaceX as the first offering.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.9733,
+    "entities": {
+      "person": [
+        "ben zhou",
+        "mark walker",
+        "darlyn ho"
+      ]
+    }
+  }
+]

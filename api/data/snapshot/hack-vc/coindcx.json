@@ -1,0 +1,99 @@
+[
+  {
+    "id": 42311851,
+    "group_id": 15357782,
+    "title": "Tether Blacklists USDT Wallets Linked to CoinDCX Outflows",
+    "url": "https://thedefiant.io/news/hacks/tether-blacklists-usdt-wallets-linked-to-coindcx-outflows",
+    "publisher": "Thedefiant",
+    "published_date": "2026-10-23T18:08:25",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Tether blacklisted USDT wallets linked to CoinDCX outflows, with AMLBot freezing about $2.2 million. The freeze follows CoinDCX's acknowledgment of losses from a failed process for securing deposits to retired addresses.",
+    "tags": [
+      {
+        "name": "Cybersecurity Incidents",
+        "code": "RK05",
+        "is_primary": true
+      },
+      {
+        "name": "Operational Disruptions",
+        "code": "RK04",
+        "is_primary": false
+      },
+      {
+        "name": "Financial Distress & Restructuring",
+        "code": "RK07",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.0777,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 42248197,
+    "group_id": 13705537,
+    "title": "BNB Price Prediction: On CoinDCX's $745 Target With Bearish MACD and Two Moving Averages Left to Clear",
+    "url": "https://blockchain.news/news/20261023-price-prediction-target-bnb-on-coindcxs-745-with-bearish-macd",
+    "publisher": "Blockchain News",
+    "published_date": "2026-10-23T07:25:42",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.8598,
+    "ai_summary": "BNB traded at $744.77 on Binance spot, nearly reaching CoinDCX's $745 target for October 31, 2026. The token sits below the SMA-20 at $745.53, with a bearish MACD and two overhead moving averages. A close above $750.37 would clear both, while a break below $743.21 would shift focus to support at $731.95.",
+    "tags": [
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.7981,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 42248199,
+    "group_id": 10398997,
+    "title": "BTC Price Prediction: MACD Flatlines at $81,882 as Open Interest Jumps 5.5% — Can Bulls Reclaim the Moving Average Stack?",
+    "url": "https://blockchain.news/news/20261023-price-prediction-btc-macd-flatlines-at-81882-as-open",
+    "publisher": "Blockchain News",
+    "published_date": "2026-10-23T07:08:04",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Bitcoin slipped 0.78% to $81,882.22 on Binance spot markets, with its MACD histogram at zero and open interest rising 5.53% to 94,643.32 contracts. Price sits below the SMA 7 and EMA 12, while a CoinDCX base-case target of $84,000 requires a sustained close above $82,281–$82,500, which has not been met.",
+    "tags": [
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.0804,
+    "entities": {
+      "person": []
+    }
+  }
+]

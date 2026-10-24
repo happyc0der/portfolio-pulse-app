@@ -1,0 +1,143 @@
+[
+  {
+    "id": 41310921,
+    "group_id": 14776146,
+    "title": "ClearToken and Consensys Tie Up for 24/7 Wholesale Settlement",
+    "url": "https://thefintechtimes.com/cleartoken-and-consensys-tie-up-for-24-7-wholesale-settlement/",
+    "publisher": "The Fintech Times",
+    "published_date": "2026-10-18T09:00:36",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "ClearToken Group and Consensys announced a partnership to deliver continuous settlement infrastructure for wholesale markets, combining on-chain finality with UK regulatory settlement. ClearToken contributes regulated entities for tokenisation and settlement, while Consensys provides blockchain layer. ClearToken has applied to the Bank of England for central counterparty authorisation under UK EMIR.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "david cunningham",
+        "ben santos-stephens",
+        "mark walker",
+        "darlyn ho"
+      ]
+    }
+  },
+  {
+    "id": 40506758,
+    "group_id": 14107746,
+    "title": "ClearToken and Consensys Bring 24",
+    "url": "https://financefeeds.com/cleartoken-and-consensys-target-the-legal-gap-in-24-7-tokenized-settlement/",
+    "publisher": "FinanceFeeds",
+    "published_date": "2026-10-13T07:52:45",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "ClearToken CSD passed Gate 2 in the Bank of England's Digital Securities Sandbox, allowing it to operate a digital securities depository with live activity under defined limits. The partnership with Consensys aims for 24/7 settlement, but 24/7 clearing remains subject to Bank of England approval. The model seeks fungibility across bank money, tokenized deposits, and stablecoins.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      },
+      {
+        "name": "Regulatory Approvals & Certifications",
+        "code": "RC01",
+        "is_primary": false
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.621,
+    "entities": {
+      "person": [
+        "ben santos-stephens",
+        "david cunningham"
+      ]
+    }
+  },
+  {
+    "id": 40139439,
+    "group_id": 13723113,
+    "title": "Consensys and ClearToken team up on 24/7 settlement for wholesale markets",
+    "url": "https://cryptobriefing.com/consensys-cleartoken-24-7-settlement-partnership/",
+    "publisher": "Crypto Briefing",
+    "published_date": "2026-10-08T18:32:33",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Consensys and ClearToken announced a partnership to build 24/7 settlement infrastructure for tokenized assets and cash in wholesale markets. ClearToken CSD received Gate 2 approval in the Bank of England's Digital Securities Sandbox, allowing it to act as a digital securities depository for tokenized gilts, corporate bonds, and FTSE 350 shares. The partnership aims to integrate ClearToken's DvP services with Consensys's blockchain protocols.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "david cunningham",
+        "kaye quema"
+      ]
+    }
+  },
+  {
+    "id": 39554542,
+    "group_id": 12982327,
+    "title": "Consensys founder says MetaMask wallets safe after security incident: Guest Post by Cryptopolitan_News",
+    "url": "https://coinmarketcap.com/community/articles/6ac094077b64516ab2e1b722/",
+    "publisher": "CoinMarketCap",
+    "published_date": "2026-10-03T05:34:59",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Consensys founder Joseph Lubin reassured MetaMask users that their wallets and private keys remain safe after a security incident, stating the attack did not affect user assets. The company rotated validator keys, and validators are expected to stop staking by October 7, with withdrawals taking about 45 days.",
+    "tags": [
+      {
+        "name": "Cybersecurity Incidents",
+        "code": "RK05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.7262,
+    "entities": {
+      "person": [
+        "joseph lubin",
+        "tyler knapp",
+        "matt corva"
+      ]
+    }
+  }
+]

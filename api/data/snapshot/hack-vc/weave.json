@@ -1,0 +1,362 @@
+[
+  {
+    "id": 42180434,
+    "group_id": 15200815,
+    "title": "Weave Communications, Inc.(NYSE: WEAV) dropped from S&P TMI Index",
+    "url": "https://www.marketscreener.com/news/weave-communications-inc-nyse-weav-dropped-from-s-p-tmi-index-ce785cdede8af027",
+    "publisher": "MarketScreener",
+    "published_date": "2026-10-23T01:37:15",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 0.847,
+    "ai_summary": "Weave Communications, Inc. (NYSE:WEAV) dropped from the S&P TMI Index on 10/22/2026, and also dropped from the S&P Software & Services Select Industry Index and the S&P Global BMI Index. The company's stock closed at $7.39, down 2.64% from the previous day.",
+    "tags": [
+      {
+        "name": "Daily Stock Market News",
+        "code": "CM12",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.0642,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 41375760,
+    "group_id": 14836987,
+    "title": "Weave Communications (NYSE:WEAV) versus Certara (NASDAQ:CERT) Head-To-Head Comparison",
+    "url": "https://www.defenseworld.net/2026/10/19/weave-communications-nyseweav-versus-certara-nasdaqcert-head-to-head-comparison.html",
+    "publisher": "Defense World",
+    "published_date": "2026-10-19T10:14:52",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.8267,
+    "ai_summary": "Certara and Weave Communications are compared on analyst ratings, revenue, and valuation. Certara has higher revenue and earnings, but Weave Communications shows higher potential upside and lower valuation. Certara beats Weave on 9 of 15 factors.",
+    "tags": [
+      {
+        "name": "Daily Stock Market News",
+        "code": "CM12",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.7185,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 40832652,
+    "group_id": 14320155,
+    "title": "Contrasting Weave Communications (NYSE:WEAV) and HealthStream (NASDAQ:HSTM)",
+    "url": "https://www.tickerreport.com/banking-finance/13620907/contrasting-weave-communications-nyseweav-and-healthstream-nasdaqhstm.html",
+    "publisher": "Ticker Report",
+    "published_date": "2026-10-15T20:15:06",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.8892,
+    "ai_summary": "HealthStream and Weave Communications are compared on valuation, earnings, and analyst ratings. HealthStream has higher revenue and earnings, but Weave Communications shows higher probable upside and lower P/E. Analysts favor Weave Communications due to its higher upside potential.",
+    "tags": [
+      {
+        "name": "Guidance & Forecast Revisions",
+        "code": "FR05",
+        "is_primary": true
+      },
+      {
+        "name": "Daily Stock Market News",
+        "code": "CM12",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5836,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 40792622,
+    "group_id": 14292562,
+    "title": "Weave Earns 8th Straight Great Place to Work Certification",
+    "url": "https://www.stocktitan.net/news/WEAV/weave-earns-2026-great-place-to-work-certification-8qs1ixr3ql0d.html",
+    "publisher": "Stock Titan",
+    "published_date": "2026-10-15T12:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9733,
+    "ai_summary": "Weave earned its eighth consecutive Great Place to Work certification in 2026, based on employee feedback. Seventy-seven percent of employees said it's a great place to work, 20 points above the U.S. average. The company also highlighted its hiring efforts and AI-powered healthcare platform.",
+    "tags": [
+      {
+        "name": "Awards, Rankings & Recognitions",
+        "code": "SD11",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "promotional",
+      "label": "Promotional"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "sarah lewis-kulin",
+        "brooke shreeve",
+        "chelsea kilpack"
+      ]
+    }
+  },
+  {
+    "id": 40673221,
+    "group_id": 13946151,
+    "title": "Critical Contrast: OneMedNet (NASDAQ:ONMD) versus Weave Communications (NYSE:WEAV)",
+    "url": "https://www.themarketsdaily.com/2026/10/14/critical-contrast-onemednet-nasdaqonmd-versus-weave-communications-nyseweav.html",
+    "publisher": "Markets Daily",
+    "published_date": "2026-10-14T12:15:05",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Weave Communications and OneMedNet are compared on analyst ratings, revenue, and institutional ownership. Weave has a stronger consensus rating, higher institutional ownership, and lower valuation, while OneMedNet has higher earnings per share. Weave beats OneMedNet on 9 of 13 factors.",
+    "tags": [
+      {
+        "name": "Daily Stock Market News",
+        "code": "CM12",
+        "is_primary": true
+      },
+      {
+        "name": "Sector Performance Dashboards",
+        "code": "FR07",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.9081,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 40416072,
+    "group_id": 14035806,
+    "title": "Weave launches CareCredit patient-financing integration",
+    "url": "https://www.stocktitan.net/news/SYF/weave-and-care-credit-go-live-with-integration-that-places-patient-nbhqs43vb4m9.html",
+    "publisher": "Stock Titan",
+    "published_date": "2026-10-12T12:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9789,
+    "ai_summary": "Weave launched its integration with CareCredit, placing patient financing inside its front-office workflow. The integration gives staff real-time visibility into a patient's financing options before the appointment. A survey of Weave payments customers found 43% would use Weave's payment services exclusively once CareCredit is added.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "greg pierce",
+        "marcus bertilson",
+        "chelsea kilpack"
+      ]
+    }
+  },
+  {
+    "id": 40194929,
+    "group_id": 13489632,
+    "title": "Critical Analysis: SOPHiA GENETICS (NASDAQ:SOPH) & Weave Communications (NYSE:WEAV)",
+    "url": "https://www.themarketsdaily.com/2026/10/09/critical-analysis-sophia-genetics-nasdaqsoph-weave-communications-nyseweav.html",
+    "publisher": "Markets Daily",
+    "published_date": "2026-10-09T07:45:05",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Weave Communications beats SOPHiA Genetics on 9 of 14 factors, including higher revenue and lower valuation. SOPHiA has a stronger analyst consensus and higher upside, while Weave has more institutional ownership. The comparison covers profitability, risk, and analyst ratings.",
+    "tags": [
+      {
+        "name": "Daily Stock Market News",
+        "code": "CM12",
+        "is_primary": true
+      },
+      {
+        "name": "Guidance & Forecast Revisions",
+        "code": "FR05",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "review",
+      "label": "Review"
+    },
+    "sentiment_score": 0.6987,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 40059056,
+    "group_id": 13520743,
+    "title": "Conversation Intelligence Software for Healthcare: 9 Tools Sorted by the Job They Do",
+    "url": "https://techbullion.com/conversation-intelligence-software-tools-healthcare/",
+    "publisher": "TechBullion",
+    "published_date": "2026-10-08T04:11:03",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.7526,
+    "ai_summary": "Nine healthcare conversation intelligence tools are sorted by function: scoring/coaching, call tracking, AI answering, and sales coaching. Alpharun is highlighted for coaching, while CallRail and CallTrackingMetrics track marketing-driven calls, and Weave AI Receptionist answers calls. Pricing and HIPAA compliance details are provided for each tool.",
+    "tags": [
+      {
+        "name": "Others",
+        "code": "OT01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 39958465,
+    "group_id": 13295470,
+    "title": "Weave Communications, Inc. (NYSE:WEAV) Stock Has Average Target Price of $7.84 According to Analysts",
+    "url": "https://www.themarketsdaily.com/2026/10/07/weave-communications-inc-nyseweav-stock-has-average-target-price-of-7-84-according-to-analysts.html",
+    "publisher": "Markets Daily",
+    "published_date": "2026-10-07T06:45:01",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Analysts rate Weave Communications a Hold with an average price target of $7.84. The company reported Q2 EPS of $0.04, meeting estimates, but revenue of $67.54 million missed the $67.88 million forecast. Institutional investors own 86.83% of the stock.",
+    "tags": [
+      {
+        "name": "Guidance & Forecast Revisions",
+        "code": "FR05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.5463,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 39715863,
+    "group_id": 13204573,
+    "title": "Critical Contrast: HealthStream (NASDAQ:HSTM) and Weave Communications (NYSE:WEAV)",
+    "url": "https://www.americanbankingnews.com/2026/10/05/critical-contrast-healthstream-nasdaqhstm-and-weave-communications-nyseweav.html",
+    "publisher": "American Banking and Market News",
+    "published_date": "2026-10-05T04:58:50",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "HealthStream and Weave Communications are compared on earnings, institutional ownership, risk, dividends, valuation, profitability, and analyst recommendations. Weave Communications has a stronger consensus rating and higher upside, while HealthStream beats on nine of fourteen factors. Analysts favor Weave Communications.",
+    "tags": [
+      {
+        "name": "Daily Stock Market News",
+        "code": "CM12",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "review",
+      "label": "Review"
+    },
+    "sentiment_score": 0.6016,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 38779885,
+    "group_id": 12065236,
+    "title": "BRODSKY & SMITH SHAREHOLDER UPDATE: Notifying Investors of the Following Investigations: Centerspace (NYSE – CSR), Fulcrum Therapeutics, Inc. (Nasdaq – FULC), Weave Communications, Inc. (NYSE – WEAV),",
+    "url": "https://www.financialcontent.com/article/gnwcq-2026-9-23-brodsky-and-smith-shareholder-update-notifying-investors-of-the-following-investigations-centerspace-nyse-csr-fulcrum-therapeutics-inc-nasdaq-fulc-weave-communications-inc-nyse-weav-personalis-inc-nasdaq-psnl",
+    "publisher": "FinancialContent Business Page",
+    "published_date": "2026-09-23T21:41:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9696,
+    "ai_summary": "Brodsky & Smith notified investors of investigations into four companies' merger boards: Centerspace, Fulcrum Therapeutics, Weave Communications, and Personalis. The investigations question whether the boards breached fiduciary duties by failing to conduct a fair process and pay fair value. The firm offers no cost or financial obligation to shareholders.",
+    "tags": [
+      {
+        "name": "Legal Proceedings & Litigation",
+        "code": "RC03",
+        "is_primary": true
+      },
+      {
+        "name": "Compliance & Reporting Updates",
+        "code": "RC04",
+        "is_primary": false
+      },
+      {
+        "name": "Conflicts of Interest & Related-Party Transactions",
+        "code": "LG06",
+        "is_primary": false
+      },
+      {
+        "name": "Mergers & Acquisitions",
+        "code": "CM03",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "investigative",
+      "label": "Investigative"
+    },
+    "sentiment_score": 0.4764,
+    "entities": {
+      "person": [
+        "marc ackerman",
+        "jason brodsky"
+      ]
+    }
+  }
+]

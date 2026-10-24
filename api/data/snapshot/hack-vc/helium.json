@@ -1,0 +1,525 @@
+[
+  {
+    "id": 39666331,
+    "group_id": 13388033,
+    "title": "Helium (HNT) | Down 80% YoY — Celina, TX Catalyst Fades, Price Consolidates Around $0.50",
+    "url": "https://www.ainvest.com/news/helium-hnt-80-yoy-celina-tx-catalyst-fades-price-consolidates-0-50-2610/",
+    "publisher": "AInvest",
+    "published_date": "2026-10-04T02:57:39",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Helium (HNT) trades near $0.50, down about 80% year-over-year and 99% from its disputed all-time high of $55.22. The Celina, TX municipal Wi-Fi integration catalyst faded, leaving the token in consolidation. Noble Mobile's Helium Mobile acquisition and 42,000+ US locations offer medium-term growth potential but lack immediate catalysts.",
+    "tags": [
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": true
+      },
+      {
+        "name": "Daily Stock Market News",
+        "code": "CM12",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.0682,
+    "entities": {
+      "person": [
+        "aime"
+      ]
+    }
+  },
+  {
+    "id": 38909425,
+    "group_id": 12426510,
+    "title": "3 Altcoins That Could Surge 10–100x in the Next Bull Run — RNDR, TAO, HNT: Guest Post by Crypto News Land",
+    "url": "https://coinmarketcap.com/community/articles/6ab67d375ebce6746422d47d/",
+    "publisher": "CoinMarketCap",
+    "published_date": "2026-09-25T13:56:34",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9981,
+    "ai_summary": "Render, Bittensor, and Helium are highlighted as altcoins that could surge 10–100x in the next bull run, each targeting different digital infrastructure needs. Render focuses on GPU demand, Bittensor on decentralized machine learning, and Helium on wireless networks. The article notes these returns are highly speculative and depend on adoption and market conditions.",
+    "tags": [
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": true
+      },
+      {
+        "name": "Sector Outlook & Forecasts",
+        "code": "MM07",
+        "is_primary": false
+      },
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.9646,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 37070219,
+    "group_id": 11904756,
+    "title": "Helium (HNT) Price Reaches $0.51 on Top Exchanges",
+    "url": "https://www.americanbankingnews.com/2026/09/21/helium-hnt-price-reaches-0-51-on-top-exchanges.html",
+    "publisher": "American Banking and Market News",
+    "published_date": "2026-09-21T13:16:48",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9985,
+    "ai_summary": "Helium (HNT) traded up 9.3% in 24 hours, reaching $0.51 on major exchanges. The coin's market capitalization is $94.16 million, with about $8.32 million traded in the last 24 hours. HNT is a blockchain-based IoT network launched in July 2019.",
+    "tags": [
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "shawn fanning",
+        "sean carey",
+        "amir haleem"
+      ]
+    }
+  },
+  {
+    "id": 35333741,
+    "group_id": 11417586,
+    "title": "Helium (HNT) Drops 8.6% After 142% Monthly Run -- Profit-Taking or Trend Reversal?",
+    "url": "https://www.ainvest.com/news/helium-hnt-drops-8-6-142-monthly-run-profit-trend-reversal-2609/",
+    "publisher": "AInvest",
+    "published_date": "2026-09-16T21:48:37",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Helium (HNT) fell 8.6% to trade around $0.40-0.50 after a 142% monthly rally, with profit-taking and macro risks cited. Noble Mobile's acquisition of Helium Mobile's subscriber business and AT&T collaboration were noted, but their impact on HNT remains unclear. The $0.395 support level and Fed rate decision are key watch points.",
+    "tags": [
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": true
+      },
+      {
+        "name": "Daily Stock Market News",
+        "code": "CM12",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.0418,
+    "entities": {
+      "person": [
+        "andrew yang",
+        "tianhao xu"
+      ]
+    }
+  },
+  {
+    "id": 34963253,
+    "group_id": 10479632,
+    "title": "Helium (HNT) | 158% Monthly Surge After Texas City Deploys Real-World Coverage — What Sustains the Rally?",
+    "url": "https://www.ainvest.com/news/helium-hnt-158-monthly-surge-texas-city-deploys-real-world-coverage-sustains-rally-2609/",
+    "publisher": "AInvest",
+    "published_date": "2026-09-13T09:33:05",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Helium's HNT token surged 73-109% after Celina, Texas deployed carrier-grade Wi-Fi via hotspots, handling ~100 GB/day. Price retreated to $0.45–$0.50, down ~86% from its 12-month baseline. Sustained growth depends on replicating the Celina model with additional municipal deployments.",
+    "tags": [
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": true
+      },
+      {
+        "name": "Daily Stock Market News",
+        "code": "CM12",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.984,
+    "entities": {
+      "person": [
+        "andrew yang"
+      ]
+    }
+  },
+  {
+    "id": 33920201,
+    "group_id": 10407413,
+    "title": "Helium (HNT) surges 171% weekly on real-world deployments — can the momentum last?",
+    "url": "https://www.ainvest.com/news/helium-hnt-surges-171-weekly-real-world-deployments-momentum-2609/",
+    "publisher": "AInvest",
+    "published_date": "2026-09-04T13:31:37",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Helium (HNT) surged roughly 171% in a week after real-world deployment announcements, including a Texas municipal Wi-Fi integration and a Hawaii remote-coverage project. The token now trades near $0.63 with a market cap of about $118M, but faces post-pump reversal risk and a tokenomics overhaul. Key levels to watch are $0.50 support and $0.86 resistance.",
+    "tags": [
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "rodder shi",
+        "ceo"
+      ]
+    }
+  },
+  {
+    "id": 33728500,
+    "group_id": 10282969,
+    "title": "Helium (HNT) — 167% Short Squeeze Fades to $0.63 as Summer Rally Unwinds",
+    "url": "https://www.ainvest.com/news/helium-hnt-167-short-squeeze-fades-0-63-summer-rally-unwinds-2609/",
+    "publisher": "AInvest",
+    "published_date": "2026-09-03T02:09:08",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Helium (HNT) surged 167% to $0.989 on a Texas municipal Wi-Fi deployment story, then retreated to ~$0.63 as leveraged short positions liquidated. Extreme negative funding rates and tripled open interest signaled a short squeeze, not organic demand. The token is a watchlist recommendation pending funding normalization and new municipal catalysts.",
+    "tags": [],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.5933,
+    "entities": {
+      "person": [
+        "andrew yang",
+        "david feng"
+      ]
+    }
+  },
+  {
+    "id": 33732116,
+    "group_id": 10207919,
+    "title": "HeliumOS Brings Wi-Fi Offload and Intelligent Connectivity to Carriers",
+    "url": "https://www.thefastmode.com/technology-solutions/50456-heliumos-brings-wi-fi-offload-and-intelligent-connectivity-to-carriers",
+    "publisher": "The Fast Mode",
+    "published_date": "2026-09-02T23:20:13",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Helium launched HeliumOS, an operating system for carriers and MVNOs to leverage Wi-Fi connectivity. The platform integrates with the Helium Network, which spans tens of thousands of access points, and includes carrier enablement, analytics, and Wi-Fi offload tools. It is live and signed with Affinity Ventures.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "mario di dio",
+        "andrew yang",
+        "tiago rodrigues"
+      ]
+    }
+  },
+  {
+    "id": 33726483,
+    "group_id": 10281707,
+    "title": "Helium takes Wi-Fi offload model to new heights",
+    "url": "https://www.lightreading.com/wifi/helium-seeks-new-heights-for-wi-fi-offload-model",
+    "publisher": "Light Reading",
+    "published_date": "2026-09-02T12:49:55",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.8757,
+    "ai_summary": "Helium's new CEO Mario Di Dio announced a connectivity management platform for mobile operators and MVNOs, aiming to give them control over Wi-Fi offload. The platform includes analytics, a Wi-Fi toolkit, and an offload experience manager. The first customer is Affinity Ventures, which owns Helium Mobile.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5892,
+    "entities": {
+      "person": [
+        "mario di dio",
+        "amir haleem",
+        "andrew yang"
+      ]
+    }
+  },
+  {
+    "id": 33691494,
+    "group_id": 10258482,
+    "title": "HNT Rockets 88% After Celina Turns City Wi-Fi Into Helium Coverage: Guest Post by Crypto News Land",
+    "url": "https://coinmarketcap.com/community/articles/6a980c402bdfb536c680f7c8/",
+    "publisher": "CoinMarketCap",
+    "published_date": "2026-09-02T11:46:14",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "HNT surged 88% after Celina, Texas adopted Helium's wireless network for city-wide coverage, with short liquidations exceeding $125,000. The token broke above a descending channel, facing $0.44 resistance, with a breakout potentially pushing it toward $0.53.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "blog_post",
+      "label": "Blog post"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 33614443,
+    "group_id": 10166746,
+    "title": "Helium Launches HeliumOS, the Platform for the Business of Connectivity",
+    "url": "https://www.webwire.com/ViewPressRel.asp?aId=359814",
+    "publisher": "WebWire",
+    "published_date": "2026-09-01T16:12:45",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Helium launched HeliumOS, an operating system for connectivity businesses, on Monday. The platform integrates with the Helium Network and offers carrier enablement, analytics, Wi-Fi offload, and network integration. It is signed on with Affinity Ventures, which owns Helium Mobile.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "mario di dio",
+        "tiago rodrigues",
+        "andrew yang",
+        "sara bonadies"
+      ]
+    }
+  },
+  {
+    "id": 33636022,
+    "group_id": 10179261,
+    "title": "Helium pitches its playbook to carriers, MVNOs and brands",
+    "url": "https://www.fierce-network.com/wireless/helium-pitches-its-playbook-carriers-mvnos-and-brands",
+    "publisher": "Fierce-network",
+    "published_date": "2026-09-01T12:35:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9476,
+    "ai_summary": "Helium is opening HeliumOS to carriers, MVNOs, ISPs, and brands, offering a platform for subscriber management, billing, and Wi-Fi offload. Affinity Ventures uses it for Noble Mobile and Helium Mobile, and AT&T uses it for Wi-Fi offload. The company is expanding into Mexico and Brazil.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      },
+      {
+        "name": "Geographic Expansion",
+        "code": "SD03",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "mario di dio",
+        "andrew yang",
+        "tiago rodrigues",
+        "di dio"
+      ]
+    }
+  },
+  {
+    "id": 33502528,
+    "group_id": 10109264,
+    "title": "Helium (HNT) Surges 291% on Texas Deployment -- But Overheated Charts Warn of Pullback",
+    "url": "https://www.ainvest.com/news/helium-hnt-surges-291-texas-deployment-overheated-charts-warn-pullback-2609/",
+    "publisher": "AInvest",
+    "published_date": "2026-09-01T09:15:56",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Helium's HNT surged 252% after Celina, Texas converted municipal Wi-Fi to carrier coverage on Helium's network, processing ~100 GB/day. Technical indicators show extreme overextension with RSI above 90 and 24h volume exceeding 149% of market cap, signaling high correction risk. The rally is driven by a single-city deployment, with a token unlock on Aug 31 adding selling pressure.",
+    "tags": [
+      {
+        "name": "Market Indices Performance",
+        "code": "MD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.9437,
+    "entities": {
+      "person": [
+        "aime",
+        "andrew yang"
+      ]
+    }
+  },
+  {
+    "id": 33309517,
+    "group_id": 9922216,
+    "title": "Celina Doubled Helium's HNT in a Day. The Network's Income From It: Tens of Dollars.",
+    "url": "https://www.ainvest.com/news/celina-doubled-helium-hnt-day-network-income-tens-dollars-2608/",
+    "publisher": "AInvest",
+    "published_date": "2026-08-31T15:39:13",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9106,
+    "ai_summary": "Celina, Texas, activated its existing Wi-Fi to offload carrier traffic onto Helium's network, causing HNT to double in a day. The revenue from this usage is trivial—tens of dollars daily—so the price move was speculative. The article notes carrier offload revenue has grown but questions whether it translates to open-market token demand.",
+    "tags": [
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.4955,
+    "entities": {
+      "person": [
+        "andrew yang"
+      ]
+    }
+  },
+  {
+    "id": 33275037,
+    "group_id": 9886238,
+    "title": "Why Helium's 170% Weekend Rally Stopped: A Short Squeeze Runs Out of Fuel",
+    "url": "https://www.ainvest.com/news/helium-170-weekend-rally-stopped-short-squeeze-runs-fuel-2608/",
+    "publisher": "AInvest",
+    "published_date": "2026-08-31T10:18:31",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9801,
+    "ai_summary": "Helium's HNT token surged 170% over August 28–30 after Celina, Texas integrated its Wi-Fi network into the Helium network, but the rally stalled as short positions ran out of fuel. Over $1.6 million in short positions were liquidated, and the token's turnover exceeded its market cap, with no fundamental changes to the network.",
+    "tags": [],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.4664,
+    "entities": {
+      "person": [
+        "william carey"
+      ]
+    }
+  },
+  {
+    "id": 33266748,
+    "group_id": 9872132,
+    "title": "Helium (HNT) Surges 100%+ on Texas Municipal Deal -- But Is the Rally Real or Just Hype?",
+    "url": "https://www.ainvest.com/news/helium-hnt-surges-100-texas-municipal-deal-rally-real-hype-2608/",
+    "publisher": "AInvest",
+    "published_date": "2026-08-31T06:49:42",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Helium (HNT) surged 266% in seven days after Celina, Texas integrated municipal Wi-Fi with its network on August 28. Daily trading volume exceeded $180M, surpassing HNT's $150M market cap, signaling speculative frenzy. The rally's sustainability depends on replication of the Celina model in other cities.",
+    "tags": [],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "andrew yang",
+        "amir haleem",
+        "mario di dio",
+        "depin"
+      ]
+    }
+  }
+]

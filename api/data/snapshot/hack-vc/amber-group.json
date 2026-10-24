@@ -1,0 +1,263 @@
+[
+  {
+    "id": 39691931,
+    "group_id": 13402265,
+    "title": "Travix Completes Seed Round with Participation from Amber Group",
+    "url": "https://www.kcex.com/news/25105?from=flash",
+    "publisher": "Kcex",
+    "published_date": "2026-09-20T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9857,
+    "ai_summary": "Travix completed a seed round with participation from Amber Group, though the funding amount was not disclosed. The funds will advance development of computing power assets, Compute-Led RWA trading pairs, financial world models, and a trustworthy AI agent trading engine, and support expansion into global markets.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "reference",
+      "label": "Reference"
+    },
+    "sentiment_score": 0.877,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 33267410,
+    "group_id": 9872826,
+    "title": "OpenCheck Raises $3M Seed",
+    "url": "https://www.thesaasnews.com/news/opencheck-raises-3m-seed/",
+    "publisher": "The SaaS News",
+    "published_date": "2026-08-31T07:28:48",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9588,
+    "ai_summary": "OpenCheck raised $3 million in seed funding led by Amber Group to build an AI and onchain authentication platform for luxury collectibles. The company plans to use the capital to develop its platform, which combines AI vision analysis with blockchain validation to verify high-value physical assets.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.916,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 35034341,
+    "group_id": 9324610,
+    "title": "NeoSoul Raises $11M in Pre-Series A Funding",
+    "url": "https://www.finsmes.com/2026/08/neosoul-raises-11m-in-pre-series-a-funding.html",
+    "publisher": "FinSMEs",
+    "published_date": "2026-08-24T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9566,
+    "ai_summary": "NeoSoul raised $11M in pre-Series A funding from MH Ventures, Amber Group, and others. The company will use the capital to develop NeoTrade, expand in Southeast Asia, and build protocol rails for AI agents on-chain. NeoSoul's platform integrates AI-driven trading infrastructure with BNB Chain and 0G storage.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 32828604,
+    "group_id": 9286572,
+    "title": "NeoSoul Raises $11 Million in Pre-A Funding to Accelerate Its Expansion in the AI Economy",
+    "url": "https://beincrypto.com/neosoul-raises-11-million-in-pre-a-funding/",
+    "publisher": "Beincrypto",
+    "published_date": "2026-08-20T15:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "NeoSoul has completed an $11 million Pre-A funding round to accelerate the development of its agentic trading products and AI economy infrastructure. The capital, raised from investors including MH Ventures, Amber Group, and Kirin Capital, will support NeoTrade, a platform allowing traders to configure autonomous AI agents for execution. This financing follows the product's launch and aims to expand NeoSoul's ecosystem across Vietnam and Southeast Asia. ",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "kaelan"
+      ]
+    }
+  },
+  {
+    "id": 32537049,
+    "group_id": 8443159,
+    "title": "The Day the Perps Conquered the CEX",
+    "url": "https://www.ainvest.com/news/day-perps-conquered-cex-2608/",
+    "publisher": "AInvest",
+    "published_date": "2026-08-20T03:16:17",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Coinbase integrated Hyperliquid's decentralized perpetual futures execution layer into its regulated Base App, while President Trump announced that the CFTC is working to bring Hyperliquid into the United States under federal rules. This development coincided with an institutional withdrawal of $13.83 million in HYPE tokens by Amber Group, signaling significant market movement ahead of broader regulatory clarity. ",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      },
+      {
+        "name": "Policy & Legislative Changes",
+        "code": "RC02",
+        "is_primary": false
+      },
+      {
+        "name": "Competitive Threats",
+        "code": "II04",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.8735,
+    "entities": {
+      "person": [
+        "mike selig",
+        "trump",
+        "president"
+      ]
+    }
+  },
+  {
+    "id": 32517467,
+    "group_id": 8302117,
+    "title": "Data suggests that a wallet related to Amber...｜Amber Group, Hyperliquid",
+    "url": "https://www.chaincatcher.com/en/article/2283899",
+    "publisher": "链捕手 ChainCatcher",
+    "published_date": "2026-08-19T20:15:26",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.8232,
+    "ai_summary": "Onchain monitoring data indicates that a wallet suspected to be related to Amber Group withdrew 200,000 HYPE tokens from the Hyperliquid platform. The withdrawn assets were valued at approximately $13.83 million at the time of the transaction. ",
+    "tags": [
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": true,
+    "article_type": {
+      "code": "investigative",
+      "label": "Investigative"
+    },
+    "sentiment_score": 0.3508,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 31448317,
+    "group_id": 6681492,
+    "title": "Five Altcoins Worth $10 Million Withdrawn from Binance to Amber Group-Linked Wallet! Here Are Those Altcoins: Guest Post by Bitcoin Sistemi EN",
+    "url": "https://coinmarketcap.com/community/articles/6a758f55be2055673e8e59e9/",
+    "publisher": "CoinMarketCap",
+    "published_date": "2026-08-07T07:55:43",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Approximately $10 million worth of five different cryptocurrencies was withdrawn from Binance by a wallet linked to Amber Group, according to on-chain data. The withdrawal included Ethereum, AAVE, Binance Coin, and Chainlink, and the event has attracted attention as it may indicate asset transfer to custody or portfolio reallocation. ",
+    "tags": [
+      {
+        "name": "Institutional Flows & Positioning",
+        "code": "MD02",
+        "is_primary": true
+      },
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.5161,
+    "entities": {
+      "person": [
+        "kevin warsh",
+        "sam bankman-fried"
+      ]
+    }
+  },
+  {
+    "id": 31442285,
+    "group_id": 6676784,
+    "title": "Data: Amber Group associated addresses...｜Amber Group, giant whale buying in",
+    "url": "https://www.chaincatcher.com/en/article/2281213",
+    "publisher": "链捕手 ChainCatcher",
+    "published_date": "2026-08-07T00:00:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.8088,
+    "ai_summary": "According to OnchainDataNerd monitoring, Amber Group associated addresses withdrew approximately $9.97 million in assets from Binance 10 hours ago. The withdrawal involved five types of tokens: 38.89 million ENA (~$3.58 million), 28,262 AAVE (~$2.52 million), 1,140 ETH (~$218,000), 2,017 BNB (~$120,000), and 59,202 LINK (~$490,000).",
+    "tags": [
+      {
+        "name": "Institutional Flows & Positioning",
+        "code": "MD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.4981,
+    "entities": {
+      "person": []
+    }
+  }
+]

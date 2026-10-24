@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "0000agp",
+    "product_category": "Defi Risk Management Simulation",
+    "match": {
+      "uuid": "0000agp",
+      "name": "Gauntlet",
+      "website": "https://www.gauntlet.xyz",
+      "product_category": "Defi Risk Management Simulation",
+      "company_status": "private",
+      "akta_rank": 15048
+    }
+  },
+  "fetched_at": "2026-10-24T16:39:03.264429+00:00",
+  "credits_consumed": 0
+}

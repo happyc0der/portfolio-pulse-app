@@ -1,0 +1,424 @@
+[
+  {
+    "id": 39343988,
+    "group_id": 12971690,
+    "title": "Superstate Expands Tokenized Short-Duration US Treasury Fund (USTB) To Base",
+    "url": "https://www.newsbtc.com/news/defi/superstate-expands-tokenized-short-duration-us-treasury-fund-ustb-to-b/",
+    "publisher": "NewsBTC",
+    "published_date": "2026-09-30T21:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Superstate expanded its tokenized short-duration US Treasury fund (USTB) to base on September 30, 2026, according to regulatory and corporate filings. The move introduces infrastructure enhancements and reflects a strategic pivot toward scalable, transparent operations. Analysts expect ongoing technological upgrades to sustain user confidence and market stability over the coming quarter.",
+    "tags": [
+      {
+        "name": "Operational Milestones",
+        "code": "SD04",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 38722729,
+    "group_id": 12141088,
+    "title": "Tokenized-Stock Lending Is Here — and the Wrapper Is the Whole Risk",
+    "url": "https://www.ainvest.com/news/tokenized-stock-lending-wrapper-risk-2609/",
+    "publisher": "AInvest",
+    "published_date": "2026-09-23T00:57:50",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9996,
+    "ai_summary": "Arch, a crypto-backed lender, plans to lend cash against tokenized stocks from Superstate, Robinhood, and Securitize, following its Bitcoin-backed model. The collateral's safety depends on whether the token is custodial or synthetic, with synthetic wrappers posing margin risk. The SEC granted a temporary exemption for tokenized national-market-system stocks, signaling regulatory attention.",
+    "tags": [
+      {
+        "name": "Policy & Legislative Changes",
+        "code": "RC02",
+        "is_primary": true
+      },
+      {
+        "name": "Debt Financing",
+        "code": "CM02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.5701,
+    "entities": {
+      "person": [
+        "himanshu sahay"
+      ]
+    }
+  },
+  {
+    "id": 34861524,
+    "group_id": 10845067,
+    "title": "Valinor Launches Tokenized BDC Fund on Superstate FundOS: Guest Post by Coincu",
+    "url": "https://coinmarketcap.com/community/articles/6aa301b74f98c21db6f3c466/",
+    "publisher": "CoinMarketCap",
+    "published_date": "2026-09-10T19:19:26",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Valinor launched a tokenized BDC fund on Superstate FundOS, but the announcement did not disclose a launch date, fund size, blockchain, eligibility, or returns. The BDC structure and token rights remain unverified, and investor terms such as minimums and liquidity are not specified.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      },
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.1212,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 34857471,
+    "group_id": 10836411,
+    "title": "Valinor Digital launches tokenized BDC fund on Superstate’s blockchain platform",
+    "url": "https://cryptobriefing.com/valinor-digital-tokenized-bdc-fund-superstate/",
+    "publisher": "Crypto Briefing",
+    "published_date": "2026-09-10T18:29:28",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9972,
+    "ai_summary": "Valinor Digital, founded by former Blackstone private credit executives, launched the VBDC tokenized fund on Superstate's blockchain platform. The fund holds publicly traded BDCs and offers daily subscriptions and redemptions, raising $25 million in seed funding led by Castle Island Ventures.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.8932,
+    "entities": {
+      "person": [
+        "lily yarborough",
+        "connor dougherty",
+        "david yu"
+      ]
+    }
+  },
+  {
+    "id": 34849679,
+    "group_id": 10800011,
+    "title": "What Bitwise's Solana Moves Really Change: The Wrapper, Not the Asset",
+    "url": "https://www.ainvest.com/news/bitwise-solana-moves-change-wrapper-asset-2609/",
+    "publisher": "AInvest",
+    "published_date": "2026-09-10T16:57:49",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.9341,
+    "ai_summary": "Bitwise launched the first U.S. spot Solana ETF with built-in staking, BSOL, on NYSE in late October 2025, trading $56 million on its first day. The fund stakes 100% of its Solana for a 7% annual yield, and Bitwise announced a tokenization partnership with Superstate in mid-August 2026. The moves aim to plug the ETF into Bitwise's tokenized real-world-asset market, but the asset's fundamentals remain unchanged.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5323,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 35077840,
+    "group_id": 9358701,
+    "title": "Bitwise Solana ETF Hits $1 Billion Inflows Despite 41% Loss: Staking Yield Explains Why",
+    "url": "https://www.techtimes.com/articles/325935/20260828/bitwise-solana-etf-hits-1-billion-inflows-despite-41-loss-staking-yield-explains-why.htm",
+    "publisher": "Tech Times",
+    "published_date": "2026-08-28T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Bitwise Solana Staking ETF (BSOL) crossed $1 billion in cumulative net inflows on Friday, becoming the first US spot Solana fund to reach that milestone. The fund paid a 5.80% annual staking yield on 96% of assets, offsetting a 41% price decline. Bitwise is exploring blockchain-based share ownership via Superstate.",
+    "tags": [
+      {
+        "name": "Institutional Flows & Positioning",
+        "code": "MD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.958,
+    "entities": {
+      "person": [
+        "eric balchunas",
+        "teddy fusaro",
+        "hunter horsley",
+        "james seyffart",
+        "kylie jenner"
+      ]
+    }
+  },
+  {
+    "id": 32420849,
+    "group_id": 7777187,
+    "title": "Uniswap founder pitches AMM as efficient alternative for RWA boom: Guest Post by Cryptopolitan_News",
+    "url": "https://coinmarketcap.com/community/articles/6a8430a56deee961274e79e2/",
+    "publisher": "CoinMarketCap",
+    "published_date": "2026-08-18T10:33:43",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Uniswap founder Hayden Adams advocates for automated market makers (AMMs) as the superior infrastructure for tokenized real-world assets, arguing that blockchain's separation of execution, custody, and settlement lowers entry barriers compared to traditional bundled models. This strategic positioning coincides with a surge in onchain real-world asset deposits reaching nearly $4 billion and Uniswap's integration of over 190 Robinhood stock tokens into its protocol. The company has further expanded its RWA capabilities by introducing Permissioned Pools via v4 hooks in partnership with issuers like Securitize and Superstate.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      },
+      {
+        "name": "Technology Adoption & Disruption",
+        "code": "II02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "hayden adams"
+      ]
+    }
+  },
+  {
+    "id": 32391989,
+    "group_id": 9372346,
+    "title": "Superstate Hopes Tokenized Equities Trading is Unlocked",
+    "url": "https://www.marketsmedia.com/superstate-hopes-tokenized-equities-trading-is-unlocked/",
+    "publisher": "Markets Media",
+    "published_date": "2026-08-17T19:16:10",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Superstate, an SEC-registered investment adviser and transfer agent, tokenizes issuer-sponsored shares on its Opening Bell platform and has built AMM and DeFi lending integrations, but trading remains off due to the U.S. trade-through rule. CEO Robert Leshner said rescinding Rule 611 of Regulation NMS would unlock the business.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      },
+      {
+        "name": "Policy & Legislative Changes",
+        "code": "RC02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.9692,
+    "entities": {
+      "person": [
+        "robert leshner",
+        "peter christiansen",
+        "alex thorn",
+        "paul atkins",
+        "leshner"
+      ]
+    }
+  },
+  {
+    "id": 32335965,
+    "group_id": 6943389,
+    "title": "Bitwise explores tokenizing Solana staking ETF with Superstate",
+    "url": "https://www.altcoinbuzz.io/bitwise-tokenize-solana-staking-etf-superstate",
+    "publisher": "Altcoinbuzz",
+    "published_date": "2026-08-15T06:59:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Bitwise Asset Management is partnering with fintech firm Superstate to develop a framework for tokenizing shares of its investment funds on the blockchain. The Bitwise Solana Staking ETF (BSOL) is identified as the potential first fund to utilize this new ownership recording system, which allows investors to choose between traditional book-entry and blockchain-based records without altering shareholder rights. ",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5303,
+    "entities": {
+      "person": [
+        "hunter horsley"
+      ]
+    }
+  },
+  {
+    "id": 32239069,
+    "group_id": 6878626,
+    "title": "Bitwise Targets Solana Staking ETF for First Tokenized Shares",
+    "url": "https://news.bitcoin.com/crypto-news/bitwise-targets-solana-staking-etf-for-first-tokenized-shares/",
+    "publisher": "Bitcoin",
+    "published_date": "2026-08-14T21:27:25",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Bitwise Asset Management has partnered with Superstate to develop infrastructure for tokenizing shares of its exchange-traded funds, starting with the Solana Staking ETF (BSOL). This initiative allows investors to hold fund shares as blockchain-based tokens while maintaining existing regulatory frameworks and ownership rights. The move occurs alongside Bitwise's recent 14% workforce reduction aimed at cost control. ",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      },
+      {
+        "name": "Workforce Reductions",
+        "code": "WT02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5917,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 32169085,
+    "group_id": 6878670,
+    "title": "Plume Explores Tokenizing Solana ETFs As Network TVL Surges 600%",
+    "url": "https://www.ainvest.com/news/plume-explores-tokenizing-solana-etfs-network-tvl-surges-600-2608/",
+    "publisher": "AInvest",
+    "published_date": "2026-08-14T17:16:14",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Bitwise Investment Advisers has partnered with Superstate to explore tokenizing its Bitwise Solana Staking ETF (BSOL), leveraging Superstate's infrastructure for compliant on-chain issuance. This strategic move coincides with a 600% surge in Solana's total value locked, which reached $9.77 billion driven largely by high trading volumes of the TRUMP token. ",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      },
+      {
+        "name": "Debt Financing",
+        "code": "CM02",
+        "is_primary": false
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 32136584,
+    "group_id": 6914285,
+    "title": "Solana TVL Divergence Highlights Strong User Commitment Amid Price Weakness",
+    "url": "https://www.ainvest.com/news/solana-tvl-divergence-highlights-strong-user-commitment-price-weakness-2608/",
+    "publisher": "AInvest",
+    "published_date": "2026-08-14T11:03:14",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Solana's dollar-denominated DeFi TVL fell 52% from its August 2025 peak to $5.5 billion, while SOL-denominated TVL reached an all-time high of 80 million tokens, indicating sustained user commitment despite price weakness. Institutional adoption accelerated with spot Solana ETFs recording over $1 billion in net inflows by May 2026, driven by partnerships such as Bitwise's integration with Superstate for blockchain-based settlements. The network continues to process significant stablecoin volume and is preparing for the Alpenglow upgrade to reduce finality times, although a high staking ratio presents potential selling pressure. ",
+    "tags": [
+      {
+        "name": "Market Indices Performance",
+        "code": "MD01",
+        "is_primary": true
+      },
+      {
+        "name": "Shareholder Returns (Buybacks & Dividends)",
+        "code": "CM08",
+        "is_primary": false
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.9991,
+    "entities": {
+      "person": [
+        "aime"
+      ]
+    }
+  }
+]

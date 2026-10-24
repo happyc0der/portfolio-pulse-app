@@ -1,0 +1,228 @@
+[
+  {
+    "id": 41402346,
+    "group_id": 14859937,
+    "title": "Unlocking Global Markets: Gabe Otte on the Future of Cross-Border Tokenization",
+    "url": "https://investingnews.com/blockchain-investing-2678086970/",
+    "publisher": "INN",
+    "published_date": "2026-10-19T14:19:03",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9784,
+    "ai_summary": "Dinari's Gabe Otte discussed cross-border tokenization with Kakao Pay Securities, noting regulatory, not technological, hurdles. The goal is to turn home-market tokenized shares into compliant tokens for direct cross-border access. He sees potential for securities and commodities to follow stablecoin adoption.",
+    "tags": [
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": true
+      },
+      {
+        "name": "Executive Commentary & Interviews",
+        "code": "LG05",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.9891,
+    "entities": {
+      "person": [
+        "gabe otte",
+        "meagen seatter",
+        "otte"
+      ]
+    }
+  },
+  {
+    "id": 39385958,
+    "group_id": 12809532,
+    "title": "Korea is Moving its Stocks Onchain, Here’s What it Means: Guest Post by ZyCrypto",
+    "url": "https://coinmarketcap.com/community/articles/6abe223fee782b34736dd91d/",
+    "publisher": "CoinMarketCap",
+    "published_date": "2026-10-01T09:06:48",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Kakao Pay Securities announced a partnership with Ondo Finance and Dinari to develop a framework for listing Korean stocks in a global market. The firms will research underlying assets and token issuance this year. South Korea ranks 2nd globally in on-chain cryptocurrency holdings.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "chung in-young"
+      ]
+    }
+  },
+  {
+    "id": 38830058,
+    "group_id": 12323100,
+    "title": "Dinari Expands Business Development Team to Scale Institutional Adoption of Tokenized Equities",
+    "url": "https://www.prnewswire.com/news-releases/dinari-expands-business-development-team-to-scale-institutional-adoption-of-tokenized-equities-302886879.html",
+    "publisher": "PR Newswire",
+    "published_date": "2026-09-24T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Dinari appointed Umair Dandia, Vera Wang, and Isha Varshney to its business development team to scale institutional adoption of tokenized equities. The appointments target broker-dealers, asset managers, and decentralized markets, as the company provides over 700 tokenized U.S. stocks and ETFs. The team will expand integration across financial institutions and platforms.",
+    "tags": [
+      {
+        "name": "Strategic Hiring",
+        "code": "WT01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "umair dandia",
+        "isha varshney",
+        "vera wang",
+        "kayla gill"
+      ]
+    }
+  },
+  {
+    "id": 35207769,
+    "group_id": 11276597,
+    "title": "tZERO Raises Funding Round",
+    "url": "https://www.thesaasnews.com/news/tzero-raises-funding-round/",
+    "publisher": "The SaaS News",
+    "published_date": "2026-09-16T07:20:32",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "tZERO Group announced a new funding round led by Marc and Max Cohodes to support its blockchain-based infrastructure for tokenized financial markets. Existing investors ICE and Bill Fleckenstein, plus strategic partner Dinari, participated, with Neighborhood Intelligence to fund its portion upon a binding agreement. The company will use the capital for operations and to position itself for capital independence.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "max cohodes",
+        "marc",
+        "bill fleckenstein"
+      ]
+    }
+  },
+  {
+    "id": 35152260,
+    "group_id": 11339977,
+    "title": "Dinari Powers Bitcoin.com’s U.S. Launch of Tokenized Equities",
+    "url": "https://news.bitcoin.com/branded-spotlight/dinari-powers-bitcoin-coms-u-s-launch-of-tokenized-equities/",
+    "publisher": "Bitcoin",
+    "published_date": "2026-09-15T18:33:39",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.8668,
+    "ai_summary": "Dinari integrated its tokenized U.S. equities into Bitcoin.com, making them available to eligible U.S. users. The integration demonstrates a turnkey embedded model that can extend to broker-dealers and other financial platforms.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      },
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "dinari"
+      ]
+    }
+  },
+  {
+    "id": 33964407,
+    "group_id": 10453656,
+    "title": "The AMC Fight Turned Into An Industry Argument Over Which Tokenized Stock Model Wins",
+    "url": "https://thedefiant.io/news/tradfi-and-fintech/the-amc-fight-turned-into-an-industry-argument-over-which-tokenized-stock-model-wins",
+    "publisher": "Thedefiant",
+    "published_date": "2026-09-05T15:13:15",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "A public debate over tokenized stock models emerged after AMC CEO Adam Aron clashed with Robinhood, with Dinari co-founder Gabriel Otte calling Robinhood and Ondo's tokens worse than common stocks. The three models compete for $2.91 billion, with Ondo leading at $869.6 million, and the SEC has mapped them into separate legal categories.",
+    "tags": [
+      {
+        "name": "Business-Model Evolution",
+        "code": "II03",
+        "is_primary": true
+      },
+      {
+        "name": "Market-Structure Changes",
+        "code": "II05",
+        "is_primary": false
+      },
+      {
+        "name": "Policy & Legislative Changes",
+        "code": "RC02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.0439,
+    "entities": {
+      "person": [
+        "gabriel otte",
+        "hayden adams",
+        "adam aron",
+        "anna wroblewska",
+        "vlad tenev",
+        "carlos domingo",
+        "brian huang",
+        "robert leshner",
+        "binji pande",
+        "dan gallagher",
+        "ariel givner",
+        "huang",
+        "adams",
+        "dinari"
+      ]
+    }
+  }
+]

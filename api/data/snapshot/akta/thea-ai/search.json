@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "02ien91",
+    "product_category": "AI Decision Intelligence Software",
+    "match": {
+      "uuid": "02ien91",
+      "name": "THEA-AI",
+      "website": "https://thea.ai/",
+      "product_category": "AI Decision Intelligence Software",
+      "company_status": "private",
+      "akta_rank": 2178827
+    }
+  },
+  "fetched_at": "2026-10-24T16:37:45.573375+00:00",
+  "credits_consumed": 0
+}

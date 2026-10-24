@@ -1,0 +1,600 @@
+[
+  {
+    "id": 41575196,
+    "group_id": 15014020,
+    "title": "dYdX to Update Arcus Perpetuals Fees on October 23rd",
+    "url": "https://www.tradingview.com/news/coindar:1b083e014094b:0-dydx-to-update-arcus-perpetuals-fees-on-october-23rd/",
+    "publisher": "TradingView",
+    "published_date": "2026-10-20T15:01:51",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "dYdX will update Arcus perpetual-contract fees on October 23rd, halving tier thresholds and returning crypto perpetuals to standard rates. RWA and spot-market fees remain unchanged. The update is effective Friday, Oct 23.",
+    "tags": [
+      {
+        "name": "Pricing & Commercial Strategy",
+        "code": "SD10",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "reference",
+      "label": "Reference"
+    },
+    "sentiment_score": 0.5245,
+    "entities": {
+      "person": [
+        "antonio juliano"
+      ]
+    }
+  },
+  {
+    "id": 41055597,
+    "group_id": 14503334,
+    "title": "dYdX to Reimburse Affected Traders in October",
+    "url": "https://www.tradingview.com/news/coindar:4df9ec734094b:0-dydx-to-reimburse-affected-traders-in-october/",
+    "publisher": "TradingView",
+    "published_date": "2026-10-17T08:26:06",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "dYdX will credit affected traders with liquidation-fee reimbursements in October, covering the period from the fee increase's live date through 05:00 UTC on October 16th. The fee increase, up to 1%, was implemented to strengthen the Arcus insurance fund. The company plans to announce all product changes publicly in advance going forward.",
+    "tags": [
+      {
+        "name": "Pricing & Commercial Strategy",
+        "code": "SD10",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "reference",
+      "label": "Reference"
+    },
+    "sentiment_score": 0.3564,
+    "entities": {
+      "person": [
+        "antonio juliano"
+      ]
+    }
+  },
+  {
+    "id": 39583202,
+    "group_id": 13242840,
+    "title": "dYdX Alternatives: Best Perpetual Trading Platforms in 2026",
+    "url": "https://www.liquid.trade/learn/dydx-alternatives",
+    "publisher": "Liquid",
+    "published_date": "2026-09-24T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.8802,
+    "ai_summary": "Liquid, Bybit, OKX, and Kraken are compared as dYdX alternatives, with Liquid highlighted for multi-asset perpetuals and non-custodial trading. Fee structures and custody models are detailed, with Liquid offering up to 50x multipliers and an AI assistant. dYdX remains a crypto-native perp DEX, while others suit different trader needs.",
+    "tags": [
+      {
+        "name": "Competitive Threats",
+        "code": "II04",
+        "is_primary": true
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      },
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "franklyn wang"
+      ]
+    }
+  },
+  {
+    "id": 34847054,
+    "group_id": 10805871,
+    "title": "Injective USDC becomes canonical USDC standard across Cosmos ecosystem including dYdX",
+    "url": "https://cryptobriefing.com/injective-usdc-cosmos-dydx-standard/",
+    "publisher": "Crypto Briefing",
+    "published_date": "2026-09-10T16:26:45",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Injective launched native USDC on its mainnet via Circle's CCTP, and Cosmos Hub, dYdX, and Skip:Go have adopted it as the canonical standard. dYdX, processing over $4 billion in monthly derivatives volume, was the first major chain to integrate it, with a four-year adoption window. Transaction fees will fund ATOM buybacks, and broader ecosystem adoption is targeted for late August or early September 2026.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      },
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "tima miroshnichenko"
+      ]
+    }
+  },
+  {
+    "id": 34782685,
+    "group_id": 10664696,
+    "title": "dYdX Reaches One Day Trading Volume of $2.58 Million (DYDX)",
+    "url": "https://www.tickerreport.com/banking-finance/13578392/dydx-reaches-one-day-trading-volume-of-2-58-million-dydx.html",
+    "publisher": "Ticker Report",
+    "published_date": "2026-09-09T14:15:09",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.8448,
+    "ai_summary": "dYdX traded $2.58 million in 24-hour volume, down 0.4% against the dollar on September 9th. Its market cap is $45.59 million, with a circulating supply of 377.8 million tokens. The platform, launched in August 2021, offers decentralized margin trading and derivatives.",
+    "tags": [
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": true
+      },
+      {
+        "name": "Daily Stock Market News",
+        "code": "CM12",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.5839,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 33656285,
+    "group_id": 10189907,
+    "title": "Dydx Review 2025 — Perpetual Crypto Trading on Dydx Exchange",
+    "url": "https://coinspot.io/en/reviews/dydx/",
+    "publisher": "Coinspot",
+    "published_date": "2026-09-02T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "dYdX is a non-custodial decentralized exchange for perpetual and margin trading, offering leverage up to 20x and gasless trading on its Layer-2 chain. It charges 0.05% taker and 0.02% maker fees, with volume-based discounts, and its DYDX token has a 65 million circulating supply. The platform is fully decentralized, requiring no KYC, but excludes US citizens.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "review",
+      "label": "Review"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "antonio juliano"
+      ]
+    }
+  },
+  {
+    "id": 33656275,
+    "group_id": 10189899,
+    "title": "THORWallet and dYdX Partner to Bring Decentralized Perpetual Trading to Thousands of Spot Traders",
+    "url": "https://coinmarketcap.com/academy/article/thorwallet-dydx-partner-decentralized-perpetual-trading-spot-traders",
+    "publisher": "CoinMarketCap",
+    "published_date": "2026-09-02T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "THORWallet integrated dYdX into its mobile app, enabling users to trade over 200 perpetual futures markets with up to 50x leverage without giving up custody. The partnership includes a $165,000 USDC prize pool for trading competitions and ongoing dYdX rewards. THORWallet also plans to launch its own utility token, TITN.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "promotional",
+      "label": "Promotional"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 33656272,
+    "group_id": 10189896,
+    "title": "dYdX Plans U.S. Market Entry by Year-End With Spot Trading",
+    "url": "https://coinmarketcap.com/academy/article/dydx-plans-us-market-entry-by-year-end-with-spot-trading",
+    "publisher": "CoinMarketCap",
+    "published_date": "2026-09-02T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "dYdX plans to enter U.S. markets by end of 2025, offering spot cryptocurrency trading, including Solana. Trading fees will be reduced to 50-65 basis points, and the company cites a favorable regulatory environment under President Trump. The exchange will not offer perpetual contracts in the U.S. due to current restrictions.",
+    "tags": [
+      {
+        "name": "Geographic Expansion",
+        "code": "SD03",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.9089,
+    "entities": {
+      "person": [
+        "eddie zhang",
+        "donald trump"
+      ]
+    }
+  },
+  {
+    "id": 33656270,
+    "group_id": 10189894,
+    "title": "dYdX Launches Spot Trading on Solana, Opens to U.S. Traders",
+    "url": "https://coinmarketcap.com/academy/article/dydx-launches-spot-trading-on-solana-opens-to-us-traders",
+    "publisher": "CoinMarketCap",
+    "published_date": "2026-09-02T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "dYdX Labs launched spot trading on Solana, opening its platform to U.S. traders after operating only in derivatives. The exchange waived all trading fees in December to attract new users, and has processed over $1.5 trillion in cumulative volume. U.S. users can access spot markets but not perpetuals domestically due to regulatory restrictions.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      },
+      {
+        "name": "Geographic Expansion",
+        "code": "SD03",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "eddie zhang"
+      ]
+    }
+  },
+  {
+    "id": 33537597,
+    "group_id": 10125789,
+    "title": "dYdX (DYDX) 24 Hour Trading Volume Tops $2.49 Million",
+    "url": "https://www.themarketsdaily.com/2026/09/01/dydx-dydx-24-hour-trading-volume-tops-2-49-million.html",
+    "publisher": "Markets Daily",
+    "published_date": "2026-09-01T14:15:01",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.8984,
+    "ai_summary": "dYdX traded up 3.3% against the U.S. dollar on September 1st, with $2.49 million in 24-hour volume. The token is priced at about $0.11, and its market cap is $41.87 million. The platform, launched in August 2021, offers decentralized margin trading and derivatives.",
+    "tags": [
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 33656286,
+    "group_id": 10189908,
+    "title": "What Is dYdX and How to Use It: A Beginner’s Guide",
+    "url": "https://www.bitget.com/academy/what-is-dydx-and-how-to-use-it-a-beginners-guide",
+    "publisher": "Bitget",
+    "published_date": "2026-08-30T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.7668,
+    "ai_summary": "dYdX is a decentralized exchange founded in 2017, specializing in perpetual contracts with leverage and low fees. It operates on its own Cosmos-based blockchain and offers staking rewards. The guide outlines setup steps and risk management tips for traders.",
+    "tags": [
+      {
+        "name": "Others",
+        "code": "OT01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.7762,
+    "entities": {
+      "person": [
+        "antonio juliano",
+        "trump"
+      ]
+    }
+  },
+  {
+    "id": 32983292,
+    "group_id": 9389499,
+    "title": "Arcus launches tokenized perpetual contract...",
+    "url": "https://www.chaincatcher.com/en/article/2285389",
+    "publisher": "链捕手 ChainCatcher",
+    "published_date": "2026-08-25T12:33:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Arcus, a decentralized exchange built by the dYdX team, launched a protocol on the Robinhood Chain that converts perpetual contract positions into transferable ERC-20 tokens and lets users collateralize with tokenized stocks. It offers pBTC3x and pHOOD3x products, with a 50% loan-to-value ratio on SPY, QQQ and MAG7 collateral. Trading volume has exceeded $250 million, averaging over $33 million daily.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "eddie zhang"
+      ]
+    }
+  },
+  {
+    "id": 32908093,
+    "group_id": 9327182,
+    "title": "Cosmos (ATOM) Faces Structural Value-Capture Gap Amid Ecosystem Expansion",
+    "url": "https://www.ainvest.com/news/cosmos-atom-faces-structural-capture-gap-ecosystem-expansion-2608/",
+    "publisher": "AInvest",
+    "published_date": "2026-08-24T09:08:58",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "Cosmos (ATOM) faces a structural value-capture gap where ecosystem expansion via the Cosmos SDK and Inter-Blockchain Communication protocol fails to generate direct revenue for the central Hub, as sovereign chains like dYdX and Injective bypass fee payments. This disconnect is exacerbated by continuous token inflation of 15–20%, which dilutes non-staker value despite governance capping maximum inflation at 10% in late 2023. Consequently, ATOM remains highly correlated with broader crypto market sentiment rather than benefiting directly from technological adoption.",
+    "tags": [
+      {
+        "name": "Emerging Technologies",
+        "code": "II01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.0132,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 32565915,
+    "group_id": 8737384,
+    "title": "dYdX Achieves Self Reported Market Capitalization of $42.18 Million (DYDX)",
+    "url": "https://www.tickerreport.com/banking-finance/13551629/dydx-achieves-self-reported-market-capitalization-of-42-18-million-dydx.html",
+    "publisher": "Ticker Report",
+    "published_date": "2026-08-20T14:16:06",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.8625,
+    "ai_summary": "dYdX reported a market capitalization of $42.18 million with its token trading 9.6% higher against the dollar during the 24-hour period ending August 20th. Approximately $3.20 million worth of dYdX tokens were traded on exchanges, with one token priced at roughly $0.11. The article provides additional background on the token's supply and technical details regarding how investors can purchase it via other cryptocurrencies. ",
+    "tags": [
+      {
+        "name": "Market Indices Performance",
+        "code": "MD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 31711644,
+    "group_id": 6777000,
+    "title": "dYdX Price Prediction 2026, 2027, 2028-2032",
+    "url": "https://www.cryptopolitan.com/dydx-price-prediction/",
+    "publisher": "Cryptopolitan",
+    "published_date": "2026-08-11T09:26:55",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 0.8475,
+    "ai_summary": "This article provides cryptocurrency price predictions for dYdX from 2026 to 2032, forecasting prices ranging from $0.4 (maximum in 2026) to $2.81 (maximum in 2032), with the token currently trading at approximately $0.114. The article includes technical analysis noting bearish pressure, with support at $0.10604 and resistance at $0.11746, alongside historical context that dYdX reduced its workforce by 35% in fall 2024 amid a broader market decline.",
+    "tags": [
+      {
+        "name": "FX & Commodity Pricing",
+        "code": "MD05",
+        "is_primary": true
+      },
+      {
+        "name": "Market Indices Performance",
+        "code": "MD01",
+        "is_primary": false
+      },
+      {
+        "name": "Revenue & Growth Metrics",
+        "code": "FR02",
+        "is_primary": false
+      },
+      {
+        "name": "Guidance & Forecast Revisions",
+        "code": "FR05",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.1459,
+    "entities": {
+      "person": [
+        "shayan chowdhury",
+        "kevin warsh",
+        "trump"
+      ]
+    }
+  },
+  {
+    "id": 31440311,
+    "group_id": 6675066,
+    "title": "8 Best BitMEX and BitMart Alternatives in 2026: Safer, Better-Regulated Exchanges Compared: Guest Post by Coinwy",
+    "url": "https://coinmarketcap.com/community/articles/6a756078e1407604afa40ac7/",
+    "publisher": "CoinMarketCap",
+    "published_date": "2026-08-07T04:42:58",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.7855,
+    "ai_summary": "An article discusses the top alternatives to BitMEX and BitMart in 2026, comparing features, security, liquidity, and regulation for derivatives and spot trading platforms. It highlights specific exchanges like dYdX, Hyperliquid, KuCoin, Gate.io, and others, noting their unique advantages and trade-offs. ",
+    "tags": [
+      {
+        "name": "Technology Adoption & Disruption",
+        "code": "II02",
+        "is_primary": true
+      },
+      {
+        "name": "Market Indices Performance",
+        "code": "MD01",
+        "is_primary": false
+      },
+      {
+        "name": "Economic Indicators",
+        "code": "MM01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.7832,
+    "entities": {
+      "person": [
+        "thiago alvarez"
+      ]
+    }
+  },
+  {
+    "id": 33656629,
+    "group_id": 10190072,
+    "title": "dYdX Price: DYDX Price Index and Live Chart",
+    "url": "https://www.theblock.co/price/dydx",
+    "publisher": "The Block",
+    "published_date": "2026-07-30T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.6968,
+    "ai_summary": "dYdX (DYDX) trades at $0.11, up 2.43% in 24 hours, with a market cap of $94.3M and 24-hour volume of $4.5M. The token has a circulating supply of 846.1M out of a total supply of 958.3M, and its all-time high is $4.52.",
+    "tags": [
+      {
+        "name": "Market Indices Performance",
+        "code": "MD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.9894,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 33656246,
+    "group_id": 10189877,
+    "title": "dYdX Price Prediction 2026, 2027 – 2030: Is DYDX Coin Worth A Buy?",
+    "url": "https://coinpedia.org/price-prediction/dydx-price-prediction/",
+    "publisher": "Coinpedia Fintech News",
+    "published_date": "2026-07-29T10:00:12",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 0.975,
+    "ai_summary": "DYDX fell 4.08% to $0.111 in 24 hours amid market deleveraging. The platform plans spot/perpetuals integration and RWA trading, with a 75% fee buyback program. Price predictions range from $0.36 in 2026 to $5.36 by 2030.",
+    "tags": [
+      {
+        "name": "Market Indices Performance",
+        "code": "MD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.4377,
+    "entities": {
+      "person": []
+    }
+  }
+]

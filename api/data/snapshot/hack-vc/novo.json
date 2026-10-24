@@ -1,0 +1,143 @@
+[
+  {
+    "id": 35160363,
+    "group_id": 11353929,
+    "title": "Michael Rangel, Founder of Novo – Interview Series",
+    "url": "https://www.unite.ai/michael-rangel-founder-of-novo-interview-series/",
+    "publisher": "Unite.AI",
+    "published_date": "2026-09-15T16:46:32",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.8148,
+    "ai_summary": "Michael Rangel, founder of Novo, discussed how AI can address small-business banking challenges, including transaction labeling accuracy above 97% and fraud detection. He outlined Novo's AI agent infrastructure for autonomous financial management, noting trust is key. He also addressed data privacy safeguards and the early stage of AI adoption in fintech.",
+    "tags": [
+      {
+        "name": "Executive Commentary & Interviews",
+        "code": "LG05",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "interview",
+      "label": "Interview"
+    },
+    "sentiment_score": 0.949,
+    "entities": {
+      "person": [
+        "michael rangel",
+        "antoine tardif"
+      ]
+    }
+  },
+  {
+    "id": 31534912,
+    "group_id": 7499129,
+    "title": "Painel: Novo pede cassação da chapa Lula-Alckmin por suposto abuso de poder econômico",
+    "url": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/colunas/painel/2026/08/novo-pede-cassacao-da-chapa-lula-alckmin-por-suposto-abuso-de-poder-economico.shtml",
+    "publisher": "Folha",
+    "published_date": "2026-08-08T19:42:00",
+    "original_language": "EN",
+    "sentiment": "negative",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "The party Novo filed a request for an investigation with the Electoral Justice against the electoral ticket formed by President Lula and Vice President Geraldo Alckmin following a Carnival parade by the Acadêmicos de Niterói school. Novo claims there was an abuse of political and economic power, including improper use of media, and seeks the annulment of the candidacy registrations with a declaration of inelegibility for eight years. The school reportedly received R$ 9.6 million from various government sources, which Novo argues indicates government resources were misused for electoral promotion. ",
+    "tags": [
+      {
+        "name": "Others",
+        "code": "OT01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "investigative",
+      "label": "Investigative"
+    },
+    "sentiment_score": 0.0015,
+    "entities": {
+      "person": [
+        "eduardo ribeiro",
+        "romeu zema",
+        "presidente lula",
+        "geraldo alckmin"
+      ]
+    }
+  },
+  {
+    "id": 31537111,
+    "group_id": 6690953,
+    "title": "OpenFX acquires Global Ledger, taps Novo co-founder to build multi-currency accounts",
+    "url": "https://refreshmiami.com/news/openfx-acquires-global-ledger-taps-novo-co-founder-to-build-multi-currency-accounts/",
+    "publisher": "Refresh Miami",
+    "published_date": "2026-08-07T18:21:00",
+    "original_language": "EN",
+    "sentiment": "neutral",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "OpenFX has acquired Global Ledger, a startup founded by Tyler McIntyre, to expand its services into multi-currency business banking accounts. This acquisition supports OpenFX's \"Embedded FX\" strategy by allowing businesses to hold funds in local currencies and utilize digital-asset payment rails alongside traditional banking infrastructure. ",
+    "tags": [
+      {
+        "name": "Mergers & Acquisitions",
+        "code": "CM03",
+        "is_primary": true
+      },
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": false
+      },
+      {
+        "name": "C-Suite Appointments & Departures",
+        "code": "LG01",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "news_analysis",
+      "label": "News analysis"
+    },
+    "sentiment_score": 0.6272,
+    "entities": {
+      "person": [
+        "tyler mcintyre",
+        "prabhakar reddy"
+      ]
+    }
+  },
+  {
+    "id": 31400878,
+    "group_id": 6033819,
+    "title": "5WPR Appointed as Agency for Novo, Revolutionizing Independent Business Communication",
+    "url": "https://third-news.com/article/854eda44-91a1-11f1-b2ad-9ca3ba08e13f",
+    "publisher": "Third News",
+    "published_date": "2026-08-06T14:17:13",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 1.0,
+    "ai_summary": "5W Public Relations announced its appointment as the agency of record for Novo, a financial platform designed for independent business owners. As part of the partnership, 5WPR will lead Novo's corporate communications, executive visibility, and thought leadership initiatives. Novo currently supports over 250,000 small businesses across the United States and seeks to amplify the voices of independent entrepreneurs through this collaboration.",
+    "tags": [
+      {
+        "name": "Partnerships & Alliances",
+        "code": "SD02",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "matthew caiola",
+        "michael rangel",
+        "jackson barnes"
+      ]
+    }
+  }
+]

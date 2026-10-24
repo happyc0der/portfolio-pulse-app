@@ -1,0 +1,211 @@
+[
+  {
+    "id": 42048188,
+    "group_id": 15334922,
+    "title": "Top 10 AI Startups in India 2026: The Companies Rewriting Enterprise Technology",
+    "url": "https://beststartup.in/top-ai-startups-india-2026/",
+    "publisher": "Best Startup India",
+    "published_date": "2026-10-22T06:01:30",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9836,
+    "ai_summary": "India's top 10 AI startups in 2026 are profiled, including Sarvam AI, Krutrim, and Observe.AI, with funding and product details. The ecosystem is valued at over USD 6 billion and growing 30% annually, with Bengaluru hosting six of the top 10 companies.",
+    "tags": [
+      {
+        "name": "Awards, Rankings & Recognitions",
+        "code": "SD11",
+        "is_primary": true
+      },
+      {
+        "name": "Market Share & Positioning",
+        "code": "SD05",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "bhavish aggarwal",
+        "umesh sachdev",
+        "swapnil jain",
+        "raghu ravinutala",
+        "vivek raghavan",
+        "pratyush kumar",
+        "kiran vangaveti",
+        "ashwini asokan",
+        "geetha manjunath",
+        "devansh trivedi",
+        "tathagato rai dastidar"
+      ]
+    }
+  },
+  {
+    "id": 40059055,
+    "group_id": 13681262,
+    "title": "9 Call Center Coaching Software Tools for Every Step of the Coaching Cycle",
+    "url": "https://techbullion.com/call-center-coaching-software-every-step/",
+    "publisher": "TechBullion",
+    "published_date": "2026-10-08T04:06:36",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.755,
+    "ai_summary": "Nine call center coaching software tools are compared across four steps of the coaching cycle. Alpharun is rated best for covering all steps, while Observe.AI, CallMiner, and others excel at specific steps. Pricing and integration details are provided for each tool.",
+    "tags": [
+      {
+        "name": "Others",
+        "code": "OT01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "rep"
+      ]
+    }
+  },
+  {
+    "id": 35090903,
+    "group_id": 10548423,
+    "title": "Observe.AI Launches Performance Agents for CX to Transform Coaching Into Measurable Outcomes",
+    "url": "https://www.morningstar.com/news/pr-newswire/20260908sf42030/observeai-launches-performance-agents-for-cx-to-transform-coaching-into-measurable-outcomes",
+    "publisher": "Morningstar",
+    "published_date": "2026-09-08T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9087,
+    "ai_summary": "Observe.AI launched Performance Agents for CX, AI agents that connect interaction intelligence, behavioral analysis, coaching, and performance measurement. The system reduces coaching preparation to under five minutes and measures subsequent performance. It expands Observe.AI's portfolio of purpose-built AI agents across the customer experience organization.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "swapnil jain",
+        "john mcmullan"
+      ]
+    }
+  },
+  {
+    "id": 33348569,
+    "group_id": 9952850,
+    "title": "ObserveAI Highlights Adaptive Noise Handling for Voice AI in Contact Centers",
+    "url": "https://www.tipranks.com/news/private-companies/observeai-highlights-adaptive-noise-handling-for-voice-ai-in-contact-centers",
+    "publisher": "Tipranks",
+    "published_date": "2026-08-28T00:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.7311,
+    "ai_summary": "ObserveAI promotes an adaptive filtering method that learns caller voice characteristics in real time to distinguish speech from ambient sounds. The approach aims to produce cleaner transcripts, accurate speaker attribution, and relevant agent responses. This could enhance product differentiation and expand the addressable market to sectors like retail and logistics.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.7617,
+    "entities": {
+      "person": []
+    }
+  },
+  {
+    "id": 33348595,
+    "group_id": 9953012,
+    "title": "Observe.ai raises $125 million from SoftBank Vision Fund, Zoom, others as it prepares for IPO",
+    "url": "https://m.economictimes.com/tech/funding/observe-ai-raises-125-million-from-softbank-vision-fund-zoom-others-as-it-prepares-for-ipo/articleshow/90804688.cms",
+    "publisher": "The Economic Times",
+    "published_date": "2026-08-09T08:50:12",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.9604,
+    "ai_summary": "Observe.ai raised $125 million in a funding round led by SoftBank Vision Fund 2, with participation from Zoom and existing investors. The company will use the funds to scale go-to-market, expand internationally, and accelerate its IPO readiness. Total funding to date is $213 million.",
+    "tags": [
+      {
+        "name": "Equity Fund-Raising",
+        "code": "CM01",
+        "is_primary": true
+      }
+    ],
+    "is_press_release": true,
+    "is_breaking": true,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 1.0,
+    "entities": {
+      "person": [
+        "sharath keshava",
+        "swapnil jain",
+        "akash singh"
+      ]
+    }
+  },
+  {
+    "id": 40466051,
+    "group_id": 4925988,
+    "title": "7 Best Observe.AI Alternatives for 2026",
+    "url": "https://pipeline.zoominfo.com/sales/observe-ai-alternatives",
+    "publisher": "Zoominfo",
+    "published_date": "2026-07-26T22:00:00",
+    "original_language": "EN",
+    "sentiment": "positive",
+    "newsworthiness_score": 0.7697,
+    "ai_summary": "Observe.AI alternatives for 2026 include ZoomInfo, NICE CXone, Level AI, Enthu.AI, Balto, Convin, and Cresta, each targeting specific needs like B2B GTM integration, full-stack CCaaS, or affordable QA. ZoomInfo's Chorus connects conversation intelligence to B2B data, while NICE CXone consolidates contact center infrastructure. Pricing varies, with ZoomInfo using a custom-quoted model and NICE CXone offering tiered per-agent rates.",
+    "tags": [
+      {
+        "name": "Product Launches & Enhancements",
+        "code": "SD01",
+        "is_primary": true
+      },
+      {
+        "name": "Competitive Threats",
+        "code": "II04",
+        "is_primary": false
+      }
+    ],
+    "is_press_release": false,
+    "is_breaking": false,
+    "article_type": {
+      "code": "explainer",
+      "label": "Explainer"
+    },
+    "sentiment_score": 0.9767,
+    "entities": {
+      "person": [
+        "vp of finance",
+        "dominik facher",
+        "cfo"
+      ]
+    }
+  }
+]

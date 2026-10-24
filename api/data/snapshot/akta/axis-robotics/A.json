@@ -1,0 +1,169 @@
+{
+  "status": "ok",
+  "data": {
+    "data": {
+      "uuid": "02m87y9",
+      "linkedin_username": "axis-physical-ai",
+      "linkedin_official_name": "Axis Robotics",
+      "linkedin_id": "112679076",
+      "total_employees": 17,
+      "growth_periods": [
+        {
+          "month_difference": 6,
+          "change_percentage": 42
+        },
+        {
+          "month_difference": 12,
+          "change_percentage": 1600
+        }
+      ],
+      "headcount_monthly": [
+        {
+          "employee_count": 1,
+          "date": "2025-01-01"
+        },
+        {
+          "employee_count": 1,
+          "date": "2025-02-01"
+        },
+        {
+          "employee_count": 1,
+          "date": "2025-03-01"
+        },
+        {
+          "employee_count": 1,
+          "date": "2025-04-01"
+        },
+        {
+          "employee_count": 1,
+          "date": "2025-05-01"
+        },
+        {
+          "employee_count": 1,
+          "date": "2025-06-01"
+        },
+        {
+          "employee_count": 1,
+          "date": "2025-07-01"
+        },
+        {
+          "employee_count": 1,
+          "date": "2025-10-01"
+        },
+        {
+          "employee_count": 3,
+          "date": "2025-11-01"
+        },
+        {
+          "employee_count": 3,
+          "date": "2025-12-01"
+        },
+        {
+          "employee_count": 4,
+          "date": "2026-01-01"
+        },
+        {
+          "employee_count": 5,
+          "date": "2026-02-01"
+        },
+        {
+          "employee_count": 8,
+          "date": "2026-03-01"
+        },
+        {
+          "employee_count": 12,
+          "date": "2026-04-01"
+        },
+        {
+          "employee_count": 16,
+          "date": "2026-05-01"
+        },
+        {
+          "employee_count": 17,
+          "date": "2026-06-01"
+        },
+        {
+          "employee_count": 18,
+          "date": "2026-07-01"
+        },
+        {
+          "employee_count": 18,
+          "date": "2026-08-01"
+        },
+        {
+          "employee_count": 17,
+          "date": "2026-09-01"
+        },
+        {
+          "employee_count": 17,
+          "date": "2026-10-01"
+        }
+      ],
+      "date": "2026-10-01",
+      "headcount_by_function": [
+        {
+          "name": "Engineering",
+          "employee_count": 3,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": 50
+            },
+            {
+              "month_difference": 12,
+              "change_percentage": 200
+            }
+          ]
+        },
+        {
+          "name": "Business Development",
+          "employee_count": 3,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": null
+            }
+          ]
+        },
+        {
+          "name": "Education",
+          "employee_count": 2,
+          "growth_periods": []
+        },
+        {
+          "name": "Support",
+          "employee_count": 2,
+          "growth_periods": [
+            {
+              "month_difference": 6,
+              "change_percentage": 100
+            }
+          ]
+        },
+        {
+          "name": "Media and Communication",
+          "employee_count": 1,
+          "growth_periods": []
+        },
+        {
+          "name": "Community and Social Services",
+          "employee_count": 1,
+          "growth_periods": []
+        },
+        {
+          "name": "Marketing",
+          "employee_count": 1,
+          "growth_periods": []
+        },
+        {
+          "name": "Research",
+          "employee_count": 1,
+          "growth_periods": []
+        }
+      ]
+    },
+    "credits_consumed": 2.5
+  },
+  "fetched_at": "2026-10-24T16:40:28.485815+00:00",
+  "credits_consumed": 2.5
+}

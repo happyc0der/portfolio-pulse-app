@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "0000d64",
+    "product_category": "Defi Api Platform",
+    "match": {
+      "uuid": "0000d64",
+      "name": "1inch",
+      "website": "https://1inch.com",
+      "product_category": "Defi Api Platform",
+      "company_status": "private",
+      "akta_rank": 9742
+    }
+  },
+  "fetched_at": "2026-10-24T16:38:49.423353+00:00",
+  "credits_consumed": 0
+}

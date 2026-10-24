@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "0000099",
+    "product_category": "Blockchain Software Solutions",
+    "match": {
+      "uuid": "0000099",
+      "name": "ConsenSys",
+      "website": "https://consensys.io",
+      "product_category": "Blockchain Software Solutions",
+      "company_status": "private",
+      "akta_rank": 460
+    }
+  },
+  "fetched_at": "2026-10-24T16:37:49.112767+00:00",
+  "credits_consumed": 0
+}

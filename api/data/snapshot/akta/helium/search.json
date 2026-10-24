@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "0000szk",
+    "product_category": "Iot Connectivity Platform",
+    "match": {
+      "uuid": "0000szk",
+      "name": "Helium",
+      "website": "https://www.helium.com",
+      "product_category": "Iot Connectivity Platform",
+      "company_status": "private",
+      "akta_rank": 10957
+    }
+  },
+  "fetched_at": "2026-10-24T16:38:55.045326+00:00",
+  "credits_consumed": 0
+}
