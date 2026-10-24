@@ -1525,9 +1525,19 @@ async def lp_update(request: LPUpdateRequest) -> dict[str, Any]:
         result["roundtable"] = await roundtable_lp_update(fund, [], result, request)
         return result
     watch = []
+    # Most serious first: what "Needs your attention" shows (severity 3 in the last 30 days), then
+    # severity, Risk before other categories, then the most recent.
+    recent_cutoff = (date.today() - timedelta(days=30)).isoformat()
+    def seriousness(entry: dict[str, Any]) -> tuple:
+        serious = [event for event in entry["events"] if event.get("severity", 0) >= 2]
+        latest = max((str(event.get("published_date", ""))[:10] for event in serious), default="")
+        return (any(event.get("severity") == 3 and str(event.get("published_date", ""))[:10] >= recent_cutoff for event in serious),
+                max((event.get("severity", 0) for event in serious), default=0),
+                any(event.get("severity") == 3 and event.get("category") == "Risk" for event in serious), latest)
+    concerns.sort(key=seriousness, reverse=True)
     for entry in concerns[:3]:
         company = entry["company"]
-        watch.append({"company": company["name"], "events": [{"source_index": next((s["number"] for s in numbered if s["company"] == company["name"] and s["title"] == (event.get("title") or "Company news")), None), "title": event.get("title"), "action": event.get("suggested_action")} for event in entry["events"] if event.get("severity") == 3 or event.get("indicator")]})
+        watch.append({"company": company["name"], "events": [{"source_index": next((s["number"] for s in numbered if s["company"] == company["name"] and s["title"] == (event.get("title") or "Company news")), None), "title": event.get("title"), "action": event.get("suggested_action")} for event in entry["events"] if event.get("severity") == 3 or (event.get("indicator") and event.get("severity", 0) >= 2)]})
     prompt = f"Create this Markdown LP update. Follow exactly this structure: title '{fund['name']}: portfolio update'; subtitle 'Last 90 days, as of {date.today().isoformat()}'; section 'Portfolio highlights' with 5 to 8 newest-first bullets; section 'Companies to watch' with 2 or 3 severity-3 or negative-indicator companies, each concern and action. Cite every factual sentence with [n]. The company watch sources are: {json.dumps(watch, ensure_ascii=False)}. Do not write a closing line; the app adds one. Write only the update an LP will read: no notes about the sources, your choices or these instructions."
     messages = [{"role": "system", "content": DRAFT_SYSTEM_PROMPT}, {"role": "user", "content": json.dumps({"fund": fund["name"], "task": prompt, "sources": numbered}, ensure_ascii=False)}]
     run_name = f"lp-update-{request.version}"
