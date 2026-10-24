@@ -61,6 +61,13 @@ export default function AddFund({ onClose }: { onClose: () => void }) {
           start = payload ? payload.next_start ?? null : start + BATCH < data.company_count ? start + BATCH : null;
         }
       }
+      // Open the fund only once the backend serves it, so the page never lands on a stale 404.
+      setProgress('Ranking signals…');
+      for (let attempt = 0; attempt < 6; attempt++) {
+        const check = await fetch(`/api/funds/${encodeURIComponent(data.slug)}`).catch(() => null);
+        if (check?.ok) break;
+        await new Promise(resolve => window.setTimeout(resolve, 1500));
+      }
       window.location.assign(`/fund/${encodeURIComponent(data.slug)}`);
     } catch (e) {
       setError((e as Error).message); setBusy(false); setProgress('');

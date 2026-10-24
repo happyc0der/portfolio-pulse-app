@@ -357,7 +357,10 @@ async def import_fund(request: FundImportRequest) -> dict[str, Any]:
     custom = [item for item in read_custom_funds() if item["slug"] != slug] + [fund]
     path = CACHE_DIR / CUSTOM_FUNDS_FILE
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(custom, ensure_ascii=False, indent=2), encoding="utf-8")
+    # Write then rename, so a request reading the fund list never sees a half-written file.
+    temp = path.with_suffix(".tmp")
+    temp.write_text(json.dumps(custom, ensure_ascii=False, indent=2), encoding="utf-8")
+    os.replace(temp, path)
     return {"slug": slug, "name": request.name, "company_count": len(companies), "total_matches": total, "credits": credits, "existing": False}
 
 
