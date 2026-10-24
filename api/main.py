@@ -1398,7 +1398,7 @@ async def draft_action(request: DraftRequest) -> dict[str, Any]:
             clicked = next((source for source in sources if source.get("url") == clicked_article.get("url")), None)
     if clicked is None:
         clicked = next((source for source in sources if source["kind"] == "article"), None)
-    task = "Write exactly three concise bullets: what happened, why it matters for our position, and what to ask the founder." if request.kind == "partner_note" else "Write an email to the founder of at most 90 words, warm in tone, with one concrete offer (an intro, a customer, or a candidate). Include a greeting and sign-off."
+    task = "Write exactly three concise bullets: what happened, why it matters for our position, and what to ask the founder (two or three direct questions, each ending with a question mark, without numbering words like 'First' or 'Second')." if request.kind == "partner_note" else "Write an email to the founder of at most 90 words, warm in tone, with one concrete offer (an intro, a customer, or a candidate). Include a greeting and sign-off."
     user_content = {"company": {"name": company["name"], "website": company.get("website")}, "task": task, "clicked_event": clicked, "sources": [{k:v for k,v in source.items() if k != 'event_id'} for source in sources]}
     messages = [{"role": "system", "content": DRAFT_SYSTEM_PROMPT}, {"role": "user", "content": json.dumps(user_content, ensure_ascii=False)}]
     run_name = f"draft-{request.version}"
@@ -1621,7 +1621,7 @@ async def eval_replay(body: dict[str, Any]) -> dict[str, Any]:
             try:
                 sources = item["sources"]
                 clicked = item["event"]
-                messages = [{"role": "system", "content": DRAFT_SYSTEM_PROMPT}, {"role": "user", "content": json.dumps({"company": item["company"], "task": "Write exactly three concise bullets: what happened, why it matters for our position, and what to ask the founder.", "clicked_event": clicked, "sources": sources}, ensure_ascii=False)}]
+                messages = [{"role": "system", "content": DRAFT_SYSTEM_PROMPT}, {"role": "user", "content": json.dumps({"company": item["company"], "task": "Write exactly three concise bullets: what happened, why it matters for our position, and what to ask the founder (two or three direct questions, each ending with a question mark, without numbering words like 'First' or 'Second').", "clicked_event": clicked, "sources": sources}, ensure_ascii=False)}]
                 run_name = f"draft-{version}"
                 run_id = f"{run_name}-{item['event_id']}-p{pass_number}"
                 metadata = {"run_kind": "eval", "prompt_version": version, "validator_on": version == "v2", "task": "draft", "event_id": item["event_id"], "pass_number": pass_number, "source_count": len(sources), "kind": "partner_note"}
