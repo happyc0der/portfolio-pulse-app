@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+pydantic
+httpx
+python-dotenv
+prismtrace-sdk==0.5.3

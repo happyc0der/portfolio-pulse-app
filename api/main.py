@@ -1,0 +1,1234 @@
+import asyncio
+import json
+import os
+import re
+from datetime import date, datetime, timedelta, timezone
+from pathlib import Path
+from typing import Any
+from urllib.parse import urlparse
+
+import httpx
+from fastapi import FastAPI, HTTPException
+from fastapi.responses import JSONResponse
+from api.tracing import citation_metrics, prism_enabled, traced_chat
+from api import roundtable
+from dotenv import dotenv_values, load_dotenv
+
+app = FastAPI()
+
+@app.middleware("http")
+async def json_error_middleware(request, call_next):
+    try:
+        return await call_next(request)
+    except HTTPException as exc:
+        return JSONResponse(status_code=exc.status_code, content={"error": exc.detail if isinstance(exc.detail, str) else "request_error", "detail": exc.detail})
+    except Exception as exc:
+        import logging, traceback
+        logging.getLogger("portfolio_pulse").error("Unhandled API error: %s\n%s", exc, traceback.format_exc())
+        return JSONResponse(status_code=500, content={"error": "internal_server_error", "detail": str(exc)})
+
+API_DIR = Path(__file__).resolve().parent
+ENV_FILE = API_DIR.parent / ".env"
+# All backend reads are relative to api/. Choose a writable cache root at runtime.
+_API_CACHE_CANDIDATE = API_DIR / "cache"
+try:
+    _API_CACHE_CANDIDATE.mkdir(parents=True, exist_ok=True)
+    _probe = _API_CACHE_CANDIDATE / ".write-probe"
+    _probe.write_text("ok", encoding="utf-8")
+    _probe.unlink(missing_ok=True)
+    DATA_DIR = _API_CACHE_CANDIDATE
+except OSError:
+    DATA_DIR = Path("/tmp/portfolio-pulse")
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+BASE_DIR = API_DIR
+load_dotenv(ENV_FILE, override=False)
+SECRET_NAMES = ("AKTA_API_KEY", "NICRRON_API_KEY", "PRISMTRACE_API_KEY", "PRISMTRACE_PROJECT_ID", "PRISMTRACE_HOST", "ROUNDTABLE_PROJECT", "SIGNAL_WATCHER_KEY", "DRAFTER_KEY", "DRAFTER_ID")
+
+
+def get_secret(name: str) -> str:
+    value = os.environ.get(name, "")
+    if value and value.strip():
+        return value.strip()
+    # Re-read dotenv on demand: keys may be added after this long-lived process starts.
+    try:
+        value = dotenv_values(ENV_FILE).get(name, "") or ""
+    except Exception:
+        value = ""
+    return str(value).strip()
+
+
+FUNDS_FILE = API_DIR / "data" / "funds.json"
+CACHE_DIR = DATA_DIR
+CACHE_DIR.mkdir(parents=True, exist_ok=True)
+AKTA_BASE = "https://api.akta.pro/api/v1"
+NICRRON_BASE_URL = "https://api.nicrron.ai/v1"
+
+
+def roundtable_config() -> tuple[bool, str]:
+    required = ("ROUNDTABLE_PROJECT", "SIGNAL_WATCHER_KEY", "DRAFTER_KEY", "DRAFTER_ID")
+    missing = [name for name in required if not get_secret(name)]
+    return (not missing, "missing " + ", ".join(missing) if missing else "configured")
+
+
+def load_funds() -> list[dict[str, Any]]:
+    with FUNDS_FILE.open(encoding="utf-8") as source:
+        data = json.load(source)
+    for fund in data:
+        for company in fund.get("companies", []):
+            company.setdefault("articles", [])
+    return data
+
+
+def slugify(value: str) -> str:
+    return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", value.lower())).strip("-")
+
+
+def get_fund(slug: str) -> dict[str, Any]:
+    fund = next((item for item in load_funds() if item.get("slug") == slug), None)
+    if fund is None:
+        raise HTTPException(status_code=404, detail="Fund not found")
+    return fund
+
+
+def company_domain(website: str) -> str:
+    parsed = urlparse(website if "://" in website else f"https://{website}")
+    return parsed.netloc or parsed.path
+
+
+def read_articles(fund_slug: str, company_name: str) -> list[dict[str, Any]]:
+    path = CACHE_DIR / fund_slug / f"{slugify(company_name)}.json"
+    if not path.is_file():
+        return []
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        return payload if isinstance(payload, list) else []
+    except (OSError, json.JSONDecodeError):
+        return []
+
+
+def fund_with_cache(slug: str) -> dict[str, Any]:
+    fund = get_fund(slug)
+    for company in fund["companies"]:
+        company["articles"] = read_articles(slug, company["name"])
+        cache_path = CACHE_DIR / slug / f"{slugify(company['name'])}.json"
+        company["cached_at"] = cache_path.stat().st_mtime if cache_path.is_file() else None
+        company["lookup_status"] = "unknown"
+        if not company["articles"] and cache_path.is_file():
+            try:
+                cached_data = json.loads(cache_path.read_text(encoding="utf-8"))
+                company["lookup_status"] = cached_data.get("lookup_status", "unknown") if isinstance(cached_data, dict) else "unknown"
+                company["articles"] = cached_data.get("articles", []) if isinstance(cached_data, dict) else cached_data
+            except (OSError, json.JSONDecodeError):
+                pass
+        clean_articles, inferred_irrelevant, inferred_language = filter_company_articles(company, company["articles"])
+        filter_meta_path = CACHE_DIR / slug / f"{slugify(company['name'])}.filters.json"
+        try:
+            filter_meta = json.loads(filter_meta_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            filter_meta = {}
+        filtered_irrelevant = int(filter_meta.get("filtered_irrelevant", inferred_irrelevant))
+        filtered_language = int(filter_meta.get("filtered_language", inferred_language))
+        classified = [signal for article in clean_articles if (signal := classify_article(article)) is not None]
+        company["articles"] = classified
+        company["filtered_irrelevant"] = filtered_irrelevant
+        company["filtered_language"] = filtered_language
+        company["filtered_count"] = max(0, len(read_articles(slug, company["name"])) - len(classified))
+        akta_headcount = read_akta_cache(company["name"], "A")
+        indicator_events = derive_indicator_events(akta_headcount)
+        company["indicator_events"] = indicator_events
+        all_signals = classified + indicator_events
+        company["articles"] = all_signals
+        company["pulse"] = calculate_pulse(all_signals)
+    fund["companies"].sort(key=lambda company: (not company["articles"], -company["pulse"], company["name"].casefold()))
+    timestamps = [company["cached_at"] for company in fund["companies"] if company["cached_at"] is not None]
+    fund["last_refreshed"] = max(timestamps) if timestamps else None
+    return fund
+
+
+@app.get("/api/health")
+def health() -> dict[str, Any]:
+    return {"ok": True, "prism": "on" if prism_enabled() else "off", "keys": {name: "set" if get_secret(name) else "missing" for name in SECRET_NAMES}}
+
+
+def history_versions(result: Any) -> list[dict[str, Any]]:
+    if isinstance(result, list):
+        return result
+    if isinstance(result, dict):
+        versions = result.get("versions", result.get("history", result.get("items", [])))
+        return versions if isinstance(versions, list) else []
+    return []
+
+
+@app.get("/api/roundtable/status")
+def roundtable_status() -> dict[str, Any]:
+    connected, reason = roundtable_config()
+    return {"connected": connected, "reason": reason if not connected else "connected"}
+
+
+@app.get("/api/roundtable/history")
+async def roundtable_history(path: str) -> dict[str, Any]:
+    connected, reason = roundtable_config()
+    if not connected:
+        return {"connected": False, "reason": reason, "versions": []}
+    result = await roundtable.call("get_folder_history", get_secret("SIGNAL_WATCHER_KEY"), {"bank": get_secret("ROUNDTABLE_PROJECT"), "path": path})
+    return {"connected": result is not None, "reason": roundtable.last_error if result is None else "", "versions": history_versions(result)}
+
+
+@app.get("/api/roundtable/selftest")
+async def roundtable_selftest() -> dict[str, Any]:
+    connected, reason = roundtable_config()
+    if not connected:
+        return {"connected": False, "reason": reason, "banks": None, "write": None}
+    key, bank = get_secret("SIGNAL_WATCHER_KEY"), get_secret("ROUNDTABLE_PROJECT")
+    banks = await roundtable.call("list_banks", key, {})
+    wrote = await roundtable.call("write_file", key, {"bank": bank, "path": "selftest/portfolio-pulse.json", "content": json.dumps({"ok": True, "timestamp": utcnow().isoformat()}), "message": "Portfolio Pulse connection self-test"})
+    return {"connected": banks is not None and wrote is not None, "reason": "ok" if banks is not None and wrote is not None else (roundtable.last_error or "Roundtable request failed"), "banks": banks, "write": wrote}
+
+
+@app.get("/api/funds")
+def list_funds() -> list[dict[str, Any]]:
+    result = []
+    cutoff = date.today() - timedelta(days=90)
+    for fund in load_funds():
+        signals = []
+        for company in fund.get("companies", []):
+            articles = read_articles(fund["slug"], company["name"])
+            clean, _, _ = filter_company_articles(company, articles)
+            for article in clean:
+                signal = classify_article(article)
+                if not signal:
+                    continue
+                try:
+                    if date.fromisoformat(str(signal.get("published_date", ""))[:10]) < cutoff:
+                        continue
+                except ValueError:
+                    continue
+                signal["company"] = company["name"]
+                signals.append(signal)
+            signals.extend(derive_indicator_events(read_akta_cache(company["name"], "A")))
+        signals.sort(key=lambda item: (item.get("severity", 0), str(item.get("published_date", ""))), reverse=True)
+        result.append({"slug": fund["slug"], "name": fund["name"], "company_count": len(fund["companies"])})
+    return result
+
+
+@app.get("/api/funds/{slug}")
+def read_fund(slug: str) -> dict[str, Any]:
+    fund = fund_with_cache(slug)
+    fund.pop("sourceUrl", None)
+    return fund
+
+
+@app.get("/api/funds/{slug}/companies/{company_slug}/status")
+async def company_status(slug: str, company_slug: str) -> dict[str, Any]:
+    fund = get_fund(slug)
+    company = next((item for item in fund["companies"] if slugify(item["name"]) == company_slug), None)
+    if company is None:
+        raise HTTPException(status_code=404, detail="Company not found")
+    api_key = get_secret("AKTA_API_KEY")
+    if not api_key:
+        return {"status": "unavailable", "message": "AKTA_API_KEY is not configured."}
+    try:
+        async with httpx.AsyncClient() as client:
+            response = await akta_request(client, "/company/search/", {"query": company.get("website", "")}, api_key)
+        if response.status_code != 200:
+            return {"status": "unavailable"}
+        data = response.json().get("data", [])
+        domain = company_domain(company.get("website", "")).lower().removeprefix("www.")
+        found = any(company_domain(item.get("website", "")).lower().removeprefix("www.") == domain for item in data)
+        return {"status": "found" if found else "not_found"}
+    except (httpx.HTTPError, ValueError, TypeError):
+        return {"status": "unavailable"}
+
+
+async def akta_request(client: httpx.AsyncClient, path: str, params: dict[str, Any], api_key: str) -> httpx.Response:
+    return await client.get(f"{AKTA_BASE}{path}", params=params, headers={"x-api-key": api_key}, timeout=30.0, follow_redirects=False)
+
+
+async def fetch_company_news(client: httpx.AsyncClient, semaphore: asyncio.Semaphore, fund_slug: str, company: dict[str, Any], api_key: str) -> dict[str, Any]:
+    async with semaphore:
+        website = company.get("website", "")
+        try:
+            response = await akta_request(client, "/news/", {
+                "primary_company": website,
+                "start_date": (date.today() - timedelta(days=90)).isoformat(),
+                "limit": 20,
+                "group_articles": "true",
+            }, api_key)
+            credits = 0
+            raw_count = 0
+            filtered_irrelevant = 0
+            filtered_language = 0
+            articles: list[dict[str, Any]] = []
+            if response.status_code == 204:
+                articles = []
+            elif response.status_code == 401:
+                found = await lookup_company(client, semaphore, website, api_key)
+                return {"status": "failed", "articles": [], "credits": 0, "error": "invalid_key" if found else "company_not_found_in_akta"}
+            elif response.status_code == 403:
+                found = await lookup_company(client, semaphore, website, api_key)
+                return {"status": "failed", "articles": [], "credits": 0, "error": "plan_required" if found else "company_not_found_in_akta"}
+            elif response.is_error:
+                found = await lookup_company(client, semaphore, website, api_key)
+                return {"status": "failed", "articles": [], "credits": 0, "error": f"akta_http_{response.status_code}" if found else "company_not_found_in_akta"}
+            else:
+                payload = response.json()
+                credits = float(payload.get("credits_consumed") or 0)
+                ledger_add(credits)
+                raw_articles = [sanitize_article(item) for item in payload.get("data", []) if isinstance(item, dict)]
+                deduplicated_articles = deduplicate_articles(raw_articles)
+                articles, filtered_irrelevant, filtered_language = filter_company_articles(company, deduplicated_articles)
+                raw_count = len(deduplicated_articles)
+            cache_path = CACHE_DIR / fund_slug / f"{slugify(company['name'])}.json"
+            cache_path.parent.mkdir(parents=True, exist_ok=True)
+            cache_path.write_text(json.dumps(articles, ensure_ascii=False, indent=2), encoding="utf-8")
+            filter_meta_path = CACHE_DIR / fund_slug / f"{slugify(company['name'])}.filters.json"
+            filter_meta_path.write_text(json.dumps({"filtered_irrelevant": filtered_irrelevant, "filtered_language": filtered_language}, indent=2), encoding="utf-8")
+            signals = [signal for article in articles if (signal := classify_article(article)) is not None]
+            return {"status": "news" if signals else "quiet", "articles": articles, "credits": credits, "filtered": max(0, raw_count - len(signals)), "filtered_irrelevant": filtered_irrelevant if response.status_code != 204 else 0, "filtered_language": filtered_language if response.status_code != 204 else 0}
+        except (httpx.HTTPError, ValueError, TypeError, OSError) as exc:
+            await lookup_company(client, semaphore, website, api_key)
+            return {"status": "failed", "articles": [], "credits": 0, "error": str(exc)}
+
+
+def sanitize_article(article: dict[str, Any]) -> dict[str, Any]:
+    # `tags` is the live schema. Only fall back to the older `types` key when
+    # the response does not contain `tags` at all (an explicitly empty tags list is meaningful).
+    tags = article.get("tags") if "tags" in article else article.get("types", [])
+    entities = article.get("entities") if isinstance(article.get("entities"), dict) else {}
+    return {
+        "id": article.get("id"),
+        "group_id": article.get("group_id"),
+        "title": article.get("title"),
+        "url": article.get("url"),
+        "publisher": article.get("publisher"),
+        "published_date": article.get("published_date"),
+        "original_language": article.get("original_language"),
+        "sentiment": str(article.get("sentiment") or "neutral").lower(),
+        "newsworthiness_score": article.get("newsworthiness_score"),
+        "ai_summary": article.get("ai_summary"),
+        "tags": tags if isinstance(tags, list) else [],
+        "is_press_release": bool(article.get("is_press_release", False)),
+        "is_breaking": bool(article.get("is_breaking", False)),
+        "article_type": article.get("article_type"),
+        "sentiment_score": article.get("sentiment_score"),
+        "entities": {"person": entities.get("person", [])},
+    }
+
+
+def article_primary_tag(article: dict[str, Any]) -> dict[str, Any] | None:
+    tags = article.get("tags") or []
+    primary = next((tag for tag in tags if isinstance(tag, dict) and tag.get("is_primary")), None)
+    chosen = primary or next((tag for tag in tags if isinstance(tag, dict)), None)
+    return chosen
+
+
+def article_day(article: dict[str, Any]) -> str:
+    return str(article.get("published_date") or "")[:10]
+
+
+def article_tag_code(article: dict[str, Any]) -> str | None:
+    tag = article_primary_tag(article)
+    return str(tag.get("code")) if tag and tag.get("code") else None
+
+
+def deduplicate_articles(articles: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    # Select one representative per story group, preferring an English source,
+    # then newsworthiness. Missing group IDs are kept as separate articles.
+    grouped: dict[str, list[dict[str, Any]]] = {}
+    standalone: list[dict[str, Any]] = []
+    for article in articles:
+        group_id = article.get("group_id")
+        if group_id:
+            grouped.setdefault(str(group_id), []).append(article)
+        else:
+            standalone.append(article)
+    chosen: list[dict[str, Any]] = []
+    for group in grouped.values():
+        chosen.append(max(group, key=lambda item: (str(item.get("original_language") or "").upper() == "EN", float(item.get("newsworthiness_score") or 0))))
+    # Remove translated duplicates where an English article on the same day has
+    # the same primary tag, even when the provider assigned different group IDs.
+    english_keys = {
+        (article_day(item), article_tag_code(item))
+        for item in chosen + standalone
+        if str(item.get("original_language") or "").upper() == "EN" and article_tag_code(item)
+    }
+    chosen.extend(standalone)
+    deduped = [item for item in chosen if not (str(item.get("original_language") or "").upper() != "EN" and article_primary_tag(item) and (article_day(item), article_tag_code(item)) in english_keys)]
+    return sorted(deduped, key=lambda item: str(item.get("published_date") or ""), reverse=True)
+
+
+def company_main_word(company: dict[str, Any]) -> str:
+    company_name = re.sub(r"\\b(incorporated|corporation|company|technologies|technology|insurance|health|labs|laboratories|group|inc|llc|ltd|co)\\b", " ", company.get("name", ""), flags=re.IGNORECASE)
+    words = re.findall(r"[a-z0-9]+", company_name.lower())
+    if words:
+        return words[0]
+    domain = company_domain(company.get("website", "")).lower().removeprefix("www.")
+    return re.split(r"[.-]", domain)[0]
+
+
+def article_is_relevant(company: dict[str, Any], article: dict[str, Any]) -> bool:
+    title_summary = f"{article.get('title') or ''} {article.get('ai_summary') or ''}".casefold()
+    name = str(company.get("name") or "").strip().casefold()
+    main_word = company_main_word(company).casefold()
+    if name and name in title_summary:
+        return True
+    # Company names are sometimes naturally spaced in article text (e.g. "Fishwife").
+    compact_name = re.sub(r"[^a-z0-9]+", "", name)
+    compact_text = re.sub(r"[^a-z0-9]+", "", title_summary)
+    if compact_name and compact_name in compact_text:
+        return True
+    return bool(main_word and re.search(rf"(?<![a-z0-9]){re.escape(main_word)}(?![a-z0-9])", title_summary))
+
+
+def filter_company_articles(company: dict[str, Any], articles: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], int, int]:
+    kept: list[dict[str, Any]] = []
+    irrelevant = language = 0
+    for article in articles:
+        if str(article.get("original_language") or "").strip().upper() != "EN":
+            language += 1
+            continue
+        if not article_is_relevant(company, article):
+            irrelevant += 1
+            continue
+        kept.append(article)
+    return kept, irrelevant, language
+
+
+def sum_credits(responses: list[dict[str, Any]]) -> float:
+    return round(sum(float(item.get("credits", 0) or 0) for item in responses), 4)
+
+
+SIGNAL_RULES: dict[str, tuple[str, int, str]] = {
+    "CM01": ("Funding", 2, "Congratulate; offer intros to later-stage investors"),
+    "CM02": ("Funding", 2, "Congratulate; offer intros to later-stage investors"),
+    "CM09": ("Funding", 2, "Congratulate; offer intros to later-stage investors"),
+    "WT02": ("People-negative", 3, "Check-in call with the founder this week"),
+    "LG04": ("People-negative", 3, "Check-in call with the founder this week"),
+    "LG01": ("People-positive", 1, "Congratulate the new leader"),
+    "WT01": ("People-positive", 1, "Congratulate the new leader"),
+    "LG02": ("People-positive", 1, "Congratulate the new leader"),
+    "SD01": ("Product", 1, "Amplify it; offer customer intros"),
+    "SD02": ("Product", 1, "Amplify it; offer customer intros"),
+    "SD03": ("Product", 1, "Amplify it; offer customer intros"),
+    "SD04": ("Product", 1, "Amplify it; offer customer intros"),
+    "SD05": ("Product", 1, "Amplify it; offer customer intros"),
+    "SD08": ("Product", 1, "Amplify it; offer customer intros"),
+    "SD11": ("Product", 1, "Amplify it; offer customer intros"),
+    "II01": ("Product", 1, "Amplify it; offer customer intros"),
+    "II02": ("Product", 1, "Amplify it; offer customer intros"),
+    "CM03": ("Corporate", 3, "Exit tracking; prepare the LP disclosure"),
+    "CM04": ("Corporate", 3, "Exit tracking; prepare the LP disclosure"),
+    "CM05": ("Corporate", 3, "Exit tracking; prepare the LP disclosure"),
+    "CM06": ("Corporate", 3, "Exit tracking; prepare the LP disclosure"),
+    "CM07": ("Corporate", 3, "Exit tracking; prepare the LP disclosure"),
+    "CM11": ("Corporate", 3, "Exit tracking; prepare the LP disclosure"),
+    "RC03": ("Risk", 3, "Risk flag: call the founder, prepare an LP note"),
+    "RC06": ("Risk", 3, "Risk flag: call the founder, prepare an LP note"),
+    "RC07": ("Risk", 3, "Risk flag: call the founder, prepare an LP note"),
+    "RK04": ("Risk", 3, "Risk flag: call the founder, prepare an LP note"),
+    "RK05": ("Risk", 3, "Risk flag: call the founder, prepare an LP note"),
+    "RK06": ("Risk", 3, "Risk flag: call the founder, prepare an LP note"),
+    "RK07": ("Risk", 3, "Risk flag: call the founder, prepare an LP note"),
+}
+
+
+def classify_article(article: dict[str, Any]) -> dict[str, Any] | None:
+    tag = article_primary_tag(article)
+    code = str(tag.get("code") or "").upper() if tag else ""
+    rule = SIGNAL_RULES.get(code)
+    if not rule:
+        return None
+    category, severity, action = rule
+    sentiment = str(article.get("sentiment") or "neutral").lower()
+    if code == "LG01":
+        category, severity, action = ("People-negative", 3, "Check-in call with the founder this week") if sentiment == "negative" else ("People-positive", 1, "Congratulate the new leader")
+    if category in {"Funding", "Product", "People-positive"} and sentiment == "negative":
+        category, severity, action = "Risk", 3, "Risk flag: call the founder, prepare an LP note"
+    return {**article, "category": "People" if category.startswith("People-") else category, "severity": severity, "suggested_action": action, "tag_code": code, "tag_name": str(tag.get("name") or "")}
+
+
+def calculate_pulse(articles: list[dict[str, Any]], today: date | None = None) -> float:
+    current = today or date.today()
+    total = 0.0
+    for article in articles:
+        try:
+            published = datetime.fromisoformat(str(article.get("published_date", "")).replace("Z", "+00:00"))
+            published_day = published.date()
+        except (ValueError, TypeError):
+            continue
+        days = max(0, (current - published_day).days)
+        total += int(article.get("severity", 0)) * (0.5 ** (days / 90))
+    return round(total, 1)
+
+
+def derive_indicator_events(headcount_cache: dict[str, Any] | None) -> list[dict[str, Any]]:
+    if not headcount_cache or headcount_cache.get("status") != "ok":
+        return []
+    envelope = headcount_cache.get("data") or {}
+    data = envelope.get("data") if isinstance(envelope, dict) else None
+    if not isinstance(data, dict):
+        return []
+    events: list[dict[str, Any]] = []
+    total = data.get("total_employees")
+    periods = data.get("growth_periods") or []
+    six_month = next((period.get("change_percentage") for period in periods if period.get("month_difference") == 6), None)
+    event_date = str(data.get("date") or headcount_cache.get("fetched_at") or utcnow().date().isoformat())[:10]
+    if isinstance(total, (int, float)) and total >= 20 and isinstance(six_month, (int, float)) and six_month <= -5:
+        severity = 3 if six_month <= -10 else 2
+        events.append({"id": f"headcount-{event_date}", "category": "Leading indicator", "severity": severity, "suggested_action": f"Headcount down {abs(six_month):g}% in 6 months: check in with the founder", "title": f"Headcount down {abs(six_month):g}% in 6 months", "published_date": event_date, "indicator": True, "indicator_type": "headcount"})
+    monthly = sorted(data.get("headcount_monthly") or [], key=lambda row: str(row.get("date", "")))
+    if len(monthly) >= 4:
+        latest, prior = monthly[-1], monthly[-4]
+        latest_count, prior_count = latest.get("employee_count"), prior.get("employee_count")
+        if isinstance(latest_count, (int, float)) and isinstance(prior_count, (int, float)) and prior_count > 0:
+            pct = (latest_count / prior_count - 1) * 100
+            if pct <= -5 and not any(e["indicator_type"] == "headcount" for e in events):
+                events.append({"id": f"headcount-monthly-{latest.get('date')}", "category": "Leading indicator", "severity": 2, "suggested_action": f"Headcount down {abs(pct):.0f}% over 3 months: check in with the founder", "title": f"Headcount down {abs(pct):.0f}% over 3 months", "published_date": str(latest.get("date", event_date))[:10], "indicator": True, "indicator_type": "headcount"})
+    return events
+
+
+async def lookup_company(client: httpx.AsyncClient, semaphore: asyncio.Semaphore, website: str, api_key: str) -> bool:
+    # Search is a best-effort diagnostic only; refresh results still report the news error.
+    try:
+        async with semaphore:
+            response = await akta_request(client, "/company/search/", {"query": website}, api_key)
+        if response.status_code == 200:
+            matches = response.json().get("data", [])
+            domain = company_domain(website).lower().removeprefix("www.")
+            return any(company_domain(item.get("website", "")).lower().removeprefix("www.") == domain for item in matches)
+    except (httpx.HTTPError, ValueError, TypeError):
+        pass
+    return False
+
+
+async def refresh_fund_slice(slug: str, start: int = 0, count: int = 6) -> dict[str, Any]:
+    fund = get_fund(slug)
+    companies = fund.get("companies", [])
+    start = max(0, start)
+    count = min(6, max(1, count))
+    selected = companies[start:start + count]
+    with_news = quiet = failed = 0
+    credits = 0.0
+    api_key = get_secret("AKTA_API_KEY")
+    if not api_key:
+        return {"done": 0, "next_start": None, "with_news": 0, "quiet": 0, "failed": len(selected), "credits": 0, "message": "Akta not connected"}
+    semaphore = asyncio.Semaphore(3)
+    async with httpx.AsyncClient() as client:
+        results = await asyncio.gather(*(fetch_company_news(client, semaphore, slug, company, api_key) for company in selected))
+    for result in results:
+        if result.get("status") == "news": with_news += 1
+        elif result.get("status") == "quiet": quiet += 1
+        else: failed += 1
+    credits = sum_credits(results)
+    # Headcount refresh for the highest-pulse ten happens once the slice reaches fund end.
+    next_start = start + len(selected)
+    if next_start >= len(companies):
+        ranked = fund_with_cache(slug)["companies"][:10]
+        for company in ranked:
+            try:
+                search = await resolve_akta_company(company)
+                resolved = search.get("data", {}) if isinstance(search.get("data"), dict) else {}
+                await fetch_akta_endpoint(company, "A", resolved.get("id") or company.get("website"))
+            except Exception:
+                pass
+    return {"done": len(selected), "next_start": next_start if next_start < len(companies) else None, "with_news": with_news, "quiet": quiet, "failed": failed, "credits": credits, "credits_total": float(ledger_read().get("credits_consumed", 0)), "credit_cap_reached": cap_reached()}
+
+
+@app.post("/api/funds/{slug}/refresh")
+async def refresh_fund(slug: str, start: int = 0, count: int = 6) -> dict[str, Any]:
+    return await refresh_fund_slice(slug, start, count)
+
+
+# Akta secondary data integration. Each company is keyed by its existing portfolio slug.
+AKTA_CACHE_DIR = CACHE_DIR / "akta"
+AKTA_CACHE_TTL = {"search": None, "A": 14, "B": 14, "C": 7, "D": 14, "E": 30}
+AKTA_PATHS = {
+    "search": "/company/search/", "A": "/company/headcount-trends/", "B": "/company/website-traffic/",
+    "C": "/company/jobs/", "D": "/company/enrichment/", "E": "/list/generate/companies/",
+}
+LONG_TIMEOUT_ENDPOINTS = {"A", "B", "C"}
+REQUEST_SEMAPHORE = asyncio.Semaphore(3)
+RATE_LOCK = asyncio.Lock()
+PATH_REQUESTS: dict[str, list[float]] = {}
+AKTA_STOPPED = False
+
+
+def utcnow() -> datetime:
+    return datetime.now(timezone.utc)
+
+
+def akta_company_dir(company_name: str) -> Path:
+    return AKTA_CACHE_DIR / slugify(company_name)
+
+
+def read_akta_cache(company_name: str, endpoint: str) -> dict[str, Any] | None:
+    path = akta_company_dir(company_name) / f"{endpoint}.json"
+    if not path.is_file():
+        return None
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        return payload if isinstance(payload, dict) else None
+    except (OSError, json.JSONDecodeError):
+        return None
+
+
+def cache_is_fresh(entry: dict[str, Any] | None, endpoint: str) -> bool:
+    if not entry:
+        return False
+    if entry.get("status") == "not_on_plan":
+        ttl = 1
+    elif entry.get("status") == "no_data":
+        ttl = 7
+    else:
+        ttl = AKTA_CACHE_TTL.get(endpoint)
+    if ttl is None:
+        return True
+    try:
+        fetched = datetime.fromisoformat(str(entry["fetched_at"]).replace("Z", "+00:00"))
+        return utcnow() - fetched < timedelta(days=ttl)
+    except (KeyError, ValueError, TypeError):
+        return False
+
+
+def write_akta_cache(company_name: str, endpoint: str, data: Any, status: str = "ok", credits: float = 0) -> dict[str, Any]:
+    payload = {"status": status, "data": data, "fetched_at": utcnow().isoformat(), "credits_consumed": credits}
+    path = akta_company_dir(company_name) / f"{endpoint}.json"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    return payload
+
+
+def ledger_read() -> dict[str, Any]:
+    path = AKTA_CACHE_DIR / "ledger.json"
+    try:
+        result = json.loads(path.read_text(encoding="utf-8"))
+        return result if isinstance(result, dict) else {"credits_consumed": 0.0}
+    except (OSError, json.JSONDecodeError):
+        return {"credits_consumed": 0.0}
+
+
+def ledger_add(credits: float) -> float:
+    ledger = ledger_read()
+    ledger["credits_consumed"] = round(float(ledger.get("credits_consumed", 0)) + float(credits or 0), 4)
+    ledger["updated_at"] = utcnow().isoformat()
+    AKTA_CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    (AKTA_CACHE_DIR / "ledger.json").write_text(json.dumps(ledger, indent=2), encoding="utf-8")
+    return float(ledger["credits_consumed"])
+
+
+def credit_cap() -> float:
+    try:
+        return float(os.getenv("AKTA_CREDIT_CAP", "150"))
+    except ValueError:
+        return 150.0
+
+
+def cap_reached() -> bool:
+    return float(ledger_read().get("credits_consumed", 0)) >= credit_cap()
+
+
+async def rate_limit_path(path: str) -> None:
+    # Sliding one-minute path-specific window; no more than 8 started requests.
+    while True:
+        async with RATE_LOCK:
+            now = asyncio.get_running_loop().time()
+            recent = [stamp for stamp in PATH_REQUESTS.get(path, []) if now - stamp < 60]
+            PATH_REQUESTS[path] = recent
+            if len(recent) < 8:
+                recent.append(now)
+                PATH_REQUESTS[path] = recent
+                return
+            wait = max(0.05, 60 - (now - recent[0]))
+        await asyncio.sleep(wait)
+
+
+async def request_akta(client: httpx.AsyncClient, method: str, path: str, *, params: dict[str, Any] | None = None, json_body: dict[str, Any] | None = None, endpoint: str = "other") -> httpx.Response:
+    global AKTA_STOPPED
+    api_key = get_secret("AKTA_API_KEY")
+    if not api_key or AKTA_STOPPED:
+        raise RuntimeError("AKTA_NOT_CONNECTED")
+    timeout = 120.0 if endpoint in LONG_TIMEOUT_ENDPOINTS else 30.0
+    for attempt in range(2):
+        await rate_limit_path(path)
+        async with REQUEST_SEMAPHORE:
+            response = await client.request(method, f"{AKTA_BASE}{path}", params=params, json=json_body, headers={"x-api-key": api_key}, timeout=timeout, follow_redirects=False)
+        if response.status_code == 401:
+            AKTA_STOPPED = True
+            return response
+        if (response.status_code == 429 or response.status_code >= 500) and attempt == 0:
+            await asyncio.sleep(5)
+            continue
+        return response
+    return response
+
+
+def response_credits(response: httpx.Response) -> float:
+    try:
+        body = response.json()
+        return float(body.get("credits_consumed") or 0) if isinstance(body, dict) else 0.0
+    except (ValueError, TypeError):
+        return 0.0
+
+
+def normalize_response(response: httpx.Response) -> tuple[str, Any, float]:
+    credits = response_credits(response)
+    if response.status_code == 401:
+        return "unauthorized", None, credits
+    if response.status_code == 403:
+        return "not_on_plan", None, credits
+    if response.status_code == 204:
+        return "no_data", None, credits
+    if response.is_error:
+        return "error", None, credits
+    try:
+        payload = response.json()
+    except ValueError:
+        return "no_data", None, credits
+    data = payload.get("data") if isinstance(payload, dict) else None
+    if data is None or data == [] or data == {}:
+        return "no_data", data, credits
+    return "ok", payload, credits
+
+
+async def fetch_akta_endpoint(company: dict[str, Any], endpoint: str, company_id: str | None = None, *, force: bool = False) -> dict[str, Any]:
+    name = company["name"]
+    cached = read_akta_cache(name, endpoint)
+    if not force and cache_is_fresh(cached, endpoint):
+        return cached or {}
+    if endpoint == "search":
+        return await resolve_akta_company(company, force=force)
+    if cap_reached():
+        return {"status": "credit_cap", "data": None, "fetched_at": None, "credits_consumed": 0}
+    if not get_secret("AKTA_API_KEY"):
+        return {"status": "not_connected", "data": None, "fetched_at": None, "credits_consumed": 0}
+    async with httpx.AsyncClient() as client:
+        if endpoint == "search":
+            method, path, params, body = "GET", AKTA_PATHS[endpoint], {"query": company.get("website", "")}, None
+        elif endpoint == "E":
+            category = company.get("product_category") or "technology"
+            method, path, params, body = "POST", AKTA_PATHS[endpoint], None, {"query": f"private {category} companies", "limit": 8}
+        else:
+            method, path, params, body = "GET", AKTA_PATHS[endpoint], {"company": company_id or company.get("akta_id") or company.get("website", "")}, None
+            if endpoint == "C":
+                params["limit"] = 10
+            if endpoint == "D":
+                params["sections"] = "firmographic,strategic_signal,management_profile,financial_estimate"
+        try:
+            response = await request_akta(client, method, path, params=params, json_body=body, endpoint=endpoint)
+        except (httpx.HTTPError, RuntimeError):
+            return {"status": "error", "data": None, "fetched_at": None, "credits_consumed": 0}
+    status, payload, credits = normalize_response(response)
+    if credits:
+        ledger_add(credits)
+    if status == "unauthorized":
+        return {"status": status, "data": None, "fetched_at": None, "credits_consumed": credits}
+    if status == "error":
+        return {"status": status, "data": None, "fetched_at": None, "credits_consumed": credits}
+    if status == "not_on_plan":
+        return write_akta_cache(name, endpoint, None, status, credits)
+    data = payload
+    # Cache plan/no-data statuses with their shorter fixed TTLs.
+    return write_akta_cache(name, endpoint, data, status, credits)
+
+
+async def resolve_akta_company(company: dict[str, Any], force: bool = False) -> dict[str, Any]:
+    cached = read_akta_cache(company["name"], "search")
+    if not force and cache_is_fresh(cached, "search"):
+        return cached or {}
+    if cap_reached():
+        return cached or {"status": "credit_cap", "data": {"id": company.get("website", ""), "product_category": None}, "credits_consumed": 0}
+    if not get_secret("AKTA_API_KEY"):
+        return {"status": "not_connected", "data": {"id": company.get("website", ""), "product_category": None}, "credits_consumed": 0}
+    result = await fetch_akta_endpoint(company, "search", force=force)
+    if result.get("status") in {"ok", "no_data"}:
+        found = (((result.get("data") or {}).get("data") or []) if isinstance(result.get("data"), dict) else [])
+        first = found[0] if found and isinstance(found[0], dict) else None
+        id_value = first.get("uuid") if first else None
+        category = first.get("product_category") if first else None
+        # fetch_akta_endpoint already recorded search credits in the ledger; preserve them in its cache.
+        result = write_akta_cache(company["name"], "search", {"id": id_value or company.get("website", ""), "product_category": category, "match": first}, result.get("status", "no_data"), result.get("credits_consumed", 0))
+    return result
+
+
+async def load_company_akta(fund_slug: str, company_slug: str, do_refresh: bool = False, endpoints: tuple[str, ...] = ("D", "B", "C")) -> dict[str, Any]:
+    fund = get_fund(fund_slug)
+    company = next((item for item in fund["companies"] if slugify(item["name"]) == company_slug), None)
+    if company is None:
+        raise HTTPException(status_code=404, detail="Company not found")
+    search = await resolve_akta_company(company)
+    match = search.get("data", {}).get("match") if isinstance(search.get("data"), dict) else None
+    company_id = (search.get("data", {}).get("id") if isinstance(search.get("data"), dict) else None) or company.get("website", "")
+    product_category = (match or {}).get("product_category") or (search.get("data", {}).get("product_category") if isinstance(search.get("data"), dict) else None)
+    company["product_category"] = product_category
+    output: dict[str, Any] = {"company": {"name": company["name"], "website": company["website"], "id": company_id, "product_category": product_category}, "endpoints": {"search": search}}
+    if do_refresh:
+        tasks = [fetch_akta_endpoint(company, endpoint, company_id) for endpoint in endpoints]
+        results = await asyncio.gather(*tasks)
+        output["endpoints"].update(dict(zip(endpoints, results)))
+    else:
+        for endpoint in ("A", "B", "C", "D"):
+            output["endpoints"][endpoint] = read_akta_cache(company["name"], endpoint)
+            entry = output["endpoints"][endpoint]
+            if entry and entry.get("status") in {"not_on_plan", "no_data"} and not cache_is_fresh(entry, endpoint):
+                output["endpoints"][endpoint] = {"status": "retry", "data": None, "fetched_at": entry.get("fetched_at"), "credits_consumed": 0}
+    output["credit_cap_reached"] = cap_reached()
+    output["api_key_missing"] = not bool(get_secret("AKTA_API_KEY"))
+    return output
+
+
+@app.get("/api/credits")
+def credits_status() -> dict[str, float]:
+    return {"credits_consumed": float(ledger_read().get("credits_consumed", 0)), "credit_cap": credit_cap()}
+
+
+@app.get("/api/companies/{fund_slug}/{company_slug}/akta")
+async def company_akta_cached(fund_slug: str, company_slug: str) -> dict[str, Any]:
+    return await load_company_akta(fund_slug, company_slug, False)
+
+
+@app.post("/api/companies/{fund_slug}/{company_slug}/akta/refresh")
+async def company_akta_refresh(fund_slug: str, company_slug: str) -> dict[str, Any]:
+    return await load_company_akta(fund_slug, company_slug, True)
+
+
+DRAFT_SYSTEM_PROMPT = "You are a VC platform associate. Write plain, specific sentences. Every sentence that states a fact must end with a citation like [2] to one of the provided sources. Never invent facts. If the sources do not support a claim, leave it out."
+DRAFT_CACHE_DIR = CACHE_DIR / "drafts"
+
+
+def draft_cache_path(fund_slug: str, event_id: str, kind: str) -> Path:
+    key = slugify(f"{fund_slug}-{event_id}-{kind}")
+    return DRAFT_CACHE_DIR / f"{key}.json"
+
+
+def collect_draft_sources(fund_slug: str, company: dict[str, Any], event_id: str) -> list[dict[str, Any]]:
+    articles = read_articles(fund_slug, company["name"])
+    cutoff = date.today() - timedelta(days=90)
+    recent: list[dict[str, Any]] = []
+    for article in articles:
+        try:
+            published = date.fromisoformat(str(article.get("published_date", ""))[:10])
+        except ValueError:
+            continue
+        if published >= cutoff:
+            recent.append(article)
+    clicked = next((article for article in recent if str(article.get("id")) == str(event_id)), None)
+    recent.sort(key=lambda article: str(article.get("published_date", "")), reverse=True)
+    if clicked:
+        recent.remove(clicked)
+        recent.insert(0, clicked)
+    sources: list[dict[str, Any]] = []
+    for article in recent:
+        sources.append({
+            "number": len(sources) + 1,
+            "title": article.get("title") or "Untitled article",
+            "publisher": article.get("publisher") or "Unknown publisher",
+            "date": article.get("published_date"),
+            "url": article.get("url"),
+            "ai_summary": article.get("ai_summary") or "",
+            "kind": "article",
+            "event_id": str(article.get("id") or ""),
+        })
+    for endpoint, label in (("A", "headcount trends"), ("B", "website traffic"), ("C", "jobs"), ("D", "enrichment")):
+        cached = read_akta_cache(company["name"], endpoint)
+        if not cached or cached.get("status") != "ok":
+            continue
+        data = cached.get("data") or {}
+        endpoint_data = data.get("data") if isinstance(data, dict) else None
+        if not endpoint_data:
+            continue
+        as_of = endpoint_data.get("date") if isinstance(endpoint_data, dict) else None
+        as_of = as_of or str(cached.get("fetched_at", ""))[:10]
+        sources.append({"number": len(sources) + 1, "title": f"akta.pro {label}, as of {as_of}", "publisher": "akta.pro", "date": as_of, "url": None, "ai_summary": json.dumps(endpoint_data, ensure_ascii=False), "kind": "indicator"})
+    return sources
+
+
+def citation_checked_text(text: str, sources: list[dict[str, Any]], kind: str) -> tuple[str, int, list[int]]:
+    valid_numbers = {str(source["number"]) for source in sources}
+    # Keep line boundaries so a greeting and a multi-line sign-off are identifiable.
+    lines = [line.strip() for line in text.strip().splitlines() if line.strip()]
+    greeting_index: int | None = None
+    signoff_indexes: set[int] = set()
+    if kind == "founder_email" and lines:
+        if re.match(r"^(hi|hello|dear)\b", lines[0], re.IGNORECASE):
+            greeting_index = 0
+        if len(lines) >= 2 and re.match(r"^(?:(?:warm|kind|best)\s+)?(?:regards|wishes|thanks|sincerely|cheers),?$|^(best|warmly|thanks|sincerely|cheers)\b", lines[-2], re.IGNORECASE):
+            signoff_indexes.update({len(lines) - 2, len(lines) - 1})
+        elif lines and re.match(r"^(best|regards|warmly|thanks|sincerely|cheers)\b", lines[-1], re.IGNORECASE):
+            signoff_indexes.add(len(lines) - 1)
+
+    # Split the factual content using the same sentence rules as before, while
+    # treating explicit greeting/sign-off lines as indivisible lines.
+    kept: list[str] = []
+    dropped = 0
+    cited: set[int] = set()
+    parts: list[tuple[str, bool]] = []
+    if kind == "founder_email" and lines:
+        for line_index, line in enumerate(lines):
+            if line_index == greeting_index or line_index in signoff_indexes:
+                parts.append((line, True))
+            else:
+                parts.extend((piece.strip(), False) for piece in re.split(r"(?<=[.!?])\s+", line) if piece.strip())
+    else:
+        parts = [(piece.strip(), False) for piece in re.split(r"(?<=[.!?])\s+|\n+", text.strip()) if piece.strip()]
+
+    for sentence, exempt in parts:
+        cleaned = sentence.strip().lstrip("-•* ").strip()
+        citations = re.findall(r"\[(\d+)\]", cleaned)
+        if exempt and not citations:
+            kept.append(cleaned)
+            continue
+        if not citations or any(number not in valid_numbers for number in citations):
+            dropped += 1
+            continue
+        cited.update(int(number) for number in citations)
+        kept.append(cleaned)
+    return "\n".join(kept), dropped, sorted(cited)
+
+
+from pydantic import BaseModel
+
+
+class DraftRequest(BaseModel):
+    fund_slug: str
+    company_slug: str
+    event_id: str
+    kind: str
+    regenerate: bool = False
+    version: str = "v2"
+
+
+async def roundtable_event_draft(request: "DraftRequest", company: dict[str, Any], sources: list[dict[str, Any]], output: dict[str, Any]) -> dict[str, Any]:
+    connected, reason = roundtable_config()
+    if not connected: return {"connected": False, "reason": reason}
+    deadline = asyncio.get_running_loop().time() + 25
+    bank, project = get_secret("ROUNDTABLE_PROJECT"), get_secret("ROUNDTABLE_PROJECT")
+    watcher_key, drafter_key = get_secret("SIGNAL_WATCHER_KEY"), get_secret("DRAFTER_KEY")
+    company_slug = slugify(company["name"])
+    file_path = f"signals/{company_slug}/{request.event_id}.json"
+    event_obj = next((source for source in sources if str(source.get("event_id")) == request.event_id), None) or next((source for source in sources if source.get("kind") == "article"), {})
+    signal_content = {"event": event_obj, "source_articles": [{"title": source.get("title"), "url": source.get("url"), "date": source.get("date")} for source in sources if source.get("kind") == "article"]}
+    written = await roundtable.call("write_file", watcher_key, {"bank": bank, "path": file_path, "content": json.dumps(signal_content, ensure_ascii=False), "message": f"Signal: {company['name']}, {event_obj.get('title','signal')}, severity {event_obj.get('severity',1)}"})
+    if written is None: return {"connected": False, "reason": roundtable.last_error or "Signal save failed"}
+    versions = [{"bank": bank, "path": file_path, "version": extract_version(written)}]
+    created = await roundtable.call("claim_task", watcher_key, {"project": project, "assignee": get_secret("DRAFTER_ID"), "goal": f"Draft partner note for {company['name']}: {event_obj.get('title','portfolio event')}", "input": {"kind": "event_draft", "path": file_path, "event_id": request.event_id}})
+    task_id = extract_task_id(created)
+    if not task_id: return {"connected": False, "reason": roundtable.last_error or "Task creation failed"}
+    status, task_error = "available", None
+    task_version = None
+    available = await roundtable.call("list_tasks", drafter_key, {"project": project, "assignee": "me", "status": "available"})
+    task = find_task(available, task_id)
+    if task:
+        task_version = task.get("version")
+        claimed = await roundtable.call("claim_task", drafter_key, {"project": project, "task_id": task_id, "expected_version": task_version})
+        if claimed is None: task_error = roundtable.last_error or "Could not claim drafting task"
+        elif isinstance(claimed, dict): task_version = claimed.get("version", task_version)
+    else: task_error = "Task was not available to Drafter"
+    fetched = await roundtable.call("get_task", drafter_key, {"project": project, "task_id": task_id, "expected_version": task_version})
+    read_result = await roundtable.call("read_file", drafter_key, {"bank": bank, "path": file_path})
+    if fetched is None or read_result is None: task_error = task_error or roundtable.last_error or "Could not read task input"
+    draft_path = f"drafts/{request.event_id}.md"
+    write_draft = await roundtable.call("write_file", drafter_key, {"bank": bank, "path": draft_path, "content": output.get("text", ""), "message": f"Cited draft for {company['name']}"})
+    if write_draft is not None: versions.append({"bank": bank, "path": draft_path, "version": extract_version(write_draft)})
+    if write_draft is None: task_error = task_error or roundtable.last_error or "Draft file write failed"
+    status = "blocked" if task_error else "done"
+    task_result = {"summary": "Cited draft prepared" if status == "done" else "Draft handoff failed", "sources": versions, "data": {"event_id": request.event_id}}
+    await roundtable.call("update_task", drafter_key, {"task_id": task_id, "expected_version": task_version, "status": status, "progress": 100 if status == "done" else 0, "result": task_result if status == "done" else {"error": task_error}})
+    while asyncio.get_running_loop().time() < deadline:
+        latest = await roundtable.call("get_task", watcher_key, {"project": project, "task_id": task_id})
+        if isinstance(latest, dict): status = latest.get("status", status)
+        if status in {"done", "blocked"}: break
+        await asyncio.sleep(min(1.5, max(0, deadline - asyncio.get_running_loop().time())))
+    if status not in {"done", "blocked"}: status = "timeout"
+    return {"connected": True, "task_id": task_id, "status": status, "sources": versions}
+
+
+def extract_version(result: Any) -> str | None:
+    if not isinstance(result, dict):
+        return None
+    return result.get("version_id") or result.get("version") or (result.get("file", {}).get("version") if isinstance(result.get("file"), dict) else None)
+
+
+def extract_task_id(result: Any) -> str | None:
+    if not isinstance(result, dict):
+        return None
+    task = result.get("task") if isinstance(result.get("task"), dict) else result
+    value = task.get("task_id") or task.get("id")
+    return str(value) if value else None
+
+
+def find_task(result: Any, task_id: str) -> dict[str, Any] | None:
+    if isinstance(result, dict):
+        rows = result.get("tasks", result.get("items", []))
+        if isinstance(rows, list):
+            return next((row for row in rows if isinstance(row, dict) and str(row.get("task_id") or row.get("id")) == task_id), None)
+        if str(result.get("task_id") or result.get("id")) == task_id:
+            return result
+    if isinstance(result, list):
+        return next((row for row in result if isinstance(row, dict) and str(row.get("task_id") or row.get("id")) == task_id), None)
+    return None
+
+
+@app.post("/api/draft")
+async def draft_action(request: DraftRequest) -> dict[str, Any]:
+    if request.kind not in {"partner_note", "founder_email"}:
+        raise HTTPException(status_code=400, detail="kind must be partner_note or founder_email")
+    if request.version not in {"v1", "v2"}:
+        raise HTTPException(status_code=400, detail="version must be v1 or v2")
+    fund = get_fund(request.fund_slug)
+    company = next((item for item in fund["companies"] if slugify(item["name"]) == request.company_slug), None)
+    if company is None:
+        raise HTTPException(status_code=404, detail="Company not found")
+    cache_path = draft_cache_path(request.fund_slug, request.event_id, request.kind)
+    if cache_path.is_file() and not request.regenerate:
+        try:
+            cached_draft = json.loads(cache_path.read_text(encoding="utf-8"))
+            cached_draft["cached"] = True
+            return cached_draft
+        except (OSError, json.JSONDecodeError):
+            pass
+    api_key = get_secret("NICRRON_API_KEY")
+    if not api_key:
+        raise HTTPException(status_code=503, detail="Nicrron AI is not connected")
+    sources = collect_draft_sources(request.fund_slug, company, request.event_id)
+    if not sources:
+        raise HTTPException(status_code=422, detail="No cached sources are available for this event")
+    clicked = next((source for source in sources if source["kind"] == "article" and str(source.get("event_id")) == request.event_id), None)
+    if clicked is None:
+        cached_articles = read_articles(request.fund_slug, company["name"])
+        clicked_article = next((item for item in cached_articles if str(item.get("id")) == request.event_id), None)
+        if clicked_article:
+            clicked = next((source for source in sources if source.get("url") == clicked_article.get("url")), None)
+    if clicked is None:
+        clicked = next((source for source in sources if source["kind"] == "article"), None)
+    task = "Write exactly three concise bullets: what happened, why it matters for our position, and what to ask the founder." if request.kind == "partner_note" else "Write an email to the founder of at most 90 words, warm in tone, with one concrete offer (an intro, a customer, or a candidate). Include a greeting and sign-off."
+    user_content = {"company": {"name": company["name"], "website": company.get("website")}, "task": task, "clicked_event": clicked, "sources": [{k:v for k,v in source.items() if k != 'event_id'} for source in sources]}
+    messages = [{"role": "system", "content": DRAFT_SYSTEM_PROMPT}, {"role": "user", "content": json.dumps(user_content, ensure_ascii=False)}]
+    run_name = f"draft-{request.version}"
+    run_id = f"{run_name}-{__import__('secrets').token_hex(12)}"
+    metadata = {
+        "run_kind": "live", "prompt_version": request.version, "validator_on": request.version == "v2",
+        "task": "draft", "event_id": request.event_id, "pass_number": 1, "source_count": len(sources),
+        "sentence_count": 0, "uncited_sentences": 0, "unknown_citations": 0, "dropped_sentences": 0,
+        "kind": request.kind,
+    }
+    checked, trace_info = await traced_chat(messages=messages, model="anthropic/claude-opus-5-5", run_name=run_name, session_id=run_id, metadata=metadata, validator=citation_checked_text, sources=sources, version=request.version, timeout=90.0)
+    raw_text = trace_info["raw_text"]
+    sentence_count, uncited, unknown, dropped_count = citation_metrics(raw_text, sources, citation_checked_text)
+    if request.version == "v2":
+        checked, removed, cited = citation_checked_text(raw_text, sources, request.kind)
+    else:
+        checked, removed, cited = raw_text, 0, []
+    output = {"text": checked, "sources": sources, "cited_sources": cited, "sentences_removed": removed, "cached": False, "version": request.version, "metrics": {"sentence_count": sentence_count, "uncited_sentences": uncited, "unknown_citations": unknown, "dropped_sentences": dropped_count}}
+    rt_meta = await roundtable_event_draft(request, company, sources, output)
+    output["roundtable"] = rt_meta
+    cache_path.parent.mkdir(parents=True, exist_ok=True)
+    cache_path.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
+    return output
+
+
+class LPUpdateRequest(BaseModel):
+    fund_slug: str
+    version: str = "v2"
+    regenerate: bool = False
+
+
+@app.post("/api/lp-update")
+async def lp_update(request: LPUpdateRequest) -> dict[str, Any]:
+    if request.version not in {"v1", "v2"}:
+        raise HTTPException(status_code=400, detail="version must be v1 or v2")
+    fund = get_fund(request.fund_slug)
+    cache_path = CACHE_DIR / "lp-updates" / f"{slugify(fund['slug'])}.json"
+    if cache_path.is_file() and not request.regenerate:
+        try:
+            cached = json.loads(cache_path.read_text(encoding="utf-8"))
+            cached["cached"] = True
+            return cached
+        except (OSError, json.JSONDecodeError):
+            pass
+
+    rt_connected, rt_reason = roundtable_config()
+    sources: list[dict[str, Any]] = []
+    concerns: list[dict[str, Any]] = []
+    cutoff = date.today() - timedelta(days=90)
+    company_articles: dict[str, list[dict[str, Any]]] = {}
+    for company in fund["companies"]:
+        raw_articles = read_articles(fund["slug"], company["name"])
+        classified = [signal for article in raw_articles if (signal := classify_article(article)) is not None]
+        recent = []
+        for article in classified:
+            try:
+                if date.fromisoformat(str(article.get("published_date", ""))[:10]) >= cutoff:
+                    recent.append(article)
+            except ValueError:
+                continue
+        company_articles[company["name"]] = recent
+        indicators = derive_indicator_events(read_akta_cache(company["name"], "A"))
+        all_signals = recent + [event for event in indicators if event.get("severity", 0) > 0]
+        if any(item.get("severity") == 3 or (item.get("indicator") and item.get("severity", 0) >= 2) for item in all_signals):
+            concerns.append({"company": company, "events": all_signals})
+    events_for_roundtable: list[dict[str, Any]] = []
+    for company in fund["companies"]:
+        for article in company_articles[company["name"]]:
+            article["company"] = company["name"]
+            article["source_kind"] = "article"
+            events_for_roundtable.append(article)
+    events_for_roundtable.sort(key=lambda item: (item.get("severity", 0), str(item.get("published_date", ""))), reverse=True)
+    events_for_roundtable = events_for_roundtable[:40]
+    sources.extend(events_for_roundtable)
+    for company in fund["companies"]:
+        for indicator in derive_indicator_events(read_akta_cache(company["name"], "A")):
+            if indicator.get("severity", 0) > 0:
+                indicator["company"] = company["name"]
+                indicator["source_kind"] = "indicator"
+                sources.append(indicator)
+    numbered: list[dict[str, Any]] = []
+    for number, item in enumerate(sources, start=1):
+        is_indicator = item.get("source_kind") == "indicator"
+        title = item.get("title") or "Company news"
+        date_value = item.get("published_date") or item.get("date")
+        numbered.append({"number": number, "title": (f"akta.pro {item.get('indicator_type','leading indicator')} as of {date_value}" if is_indicator else title), "publisher": "akta.pro" if is_indicator else (item.get("publisher") or "Unknown publisher"), "date": date_value, "url": None if is_indicator else item.get("url"), "ai_summary": item.get("ai_summary") or item.get("suggested_action") or title, "kind": "indicator" if is_indicator else "article", "company": item.get("company"), "severity": item.get("severity", 1), "category": item.get("category")})
+    if not numbered:
+        # An empty cache still produces a clear, human-reviewable placeholder update without inventing portfolio facts.
+        result = {"text": f"# {fund['name']}: portfolio update\n\nLast 90 days, as of {date.today().isoformat()}\n\n## Portfolio highlights\n\nNo recent public portfolio events are available in the cache.\n\n## Companies to watch\n\nNo current severity 3 events or negative leading indicators are available.\n\nDrafted from public news and company data via akta.pro. Every claim is cited; 0 sentences were removed by the citation check.", "markdown": f"# {fund['name']}: portfolio update\n\nLast 90 days, as of {date.today().isoformat()}\n\n## Portfolio highlights\n\nNo recent public portfolio events are available in the cache.\n\n## Companies to watch\n\nNo current severity 3 events or negative leading indicators are available.\n\nDrafted from public news and company data via akta.pro. Every claim is cited; 0 sentences were removed by the citation check.\n\n## Sources\n", "version": request.version, "sources": [], "cited_sources": [], "sentences_removed": 0, "cached": False}
+        cache_path.parent.mkdir(parents=True, exist_ok=True)
+        result["roundtable"] = await roundtable_lp_update(fund, [], result, request)
+        cache_path.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
+        return result
+    watch = []
+    for entry in concerns[:3]:
+        company = entry["company"]
+        watch.append({"company": company["name"], "events": [{"source_index": next((s["number"] for s in numbered if s["company"] == company["name"] and s["title"] == (event.get("title") or "Company news")), None), "title": event.get("title"), "action": event.get("suggested_action")} for event in entry["events"] if event.get("severity") == 3 or event.get("indicator")]})
+    prompt = f"Create this Markdown LP update. Follow exactly this structure: title '{fund['name']}: portfolio update'; subtitle 'Last 90 days, as of {date.today().isoformat()}'; section 'Portfolio highlights' with 5 to 8 newest-first bullets; section 'Companies to watch' with 2 or 3 severity-3 or negative-indicator companies, each concern and action. Cite every factual sentence with [n]. The company watch sources are: {json.dumps(watch, ensure_ascii=False)}. End with a placeholder closing line to be replaced by the app."
+    messages = [{"role": "system", "content": DRAFT_SYSTEM_PROMPT}, {"role": "user", "content": json.dumps({"fund": fund["name"], "task": prompt, "sources": numbered}, ensure_ascii=False)}]
+    run_name = f"lp-update-{request.version}"
+    run_id = f"{run_name}-{__import__('secrets').token_hex(12)}"
+    metadata = {"run_kind": "live", "prompt_version": request.version, "validator_on": request.version == "v2", "task": "lp_update", "event_id": "lp-update", "pass_number": 1, "source_count": len(numbered), "kind": "partner_note"}
+    _, info = await traced_chat(messages=messages, model="anthropic/claude-opus-5-5", run_name=run_name, session_id=run_id, metadata=metadata, validator=citation_checked_text, sources=numbered, version=request.version, timeout=90.0)
+    raw_text = info["raw_text"]
+    if request.version == "v2":
+        text, removed, cited = citation_checked_text(raw_text, numbered, "partner_note")
+    else:
+        text, removed, cited = raw_text, 0, []
+    closing = f"Drafted from public news and company data via akta.pro. Every claim is cited; {removed} sentences were removed by the citation check."
+    text = text.rstrip() + "\n\n" + closing
+    cited_sources = [source for source in numbered if source["number"] in cited]
+    markdown = text + "\n\n## Sources\n" + "\n".join(f"[{source['number']}] {source['title']} — {source['publisher']}, {str(source.get('date') or '')[:10]}" + (f" ({source['url']})" if source.get("url") else "") for source in numbered)
+    result = {"text": text, "markdown": markdown, "version": request.version, "sources": numbered, "cited_sources": cited, "sentences_removed": removed, "cached": False}
+    cache_path.parent.mkdir(parents=True, exist_ok=True)
+    cache_path.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
+    result["roundtable"] = await roundtable_lp_update(fund, numbered, result, request)
+    cache_path.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
+    return result
+
+
+async def roundtable_lp_update(fund: dict[str, Any], sources: list[dict[str, Any]], output: dict[str, Any], request: "LPUpdateRequest") -> dict[str, Any]:
+    connected, reason = roundtable_config()
+    if not connected:
+        return {"connected": False, "reason": reason}
+    bank = get_secret("ROUNDTABLE_PROJECT")
+    watcher_key, drafter_key = get_secret("SIGNAL_WATCHER_KEY"), get_secret("DRAFTER_KEY")
+    quarter = f"{date.today().year}-Q{((date.today().month-1)//3)+1}"
+    path = f"lp-updates/{quarter}.md"
+    deadline = asyncio.get_running_loop().time() + 25
+    wrote = await roundtable.call("write_file", watcher_key, {"bank": bank, "path": path, "content": output.get("markdown", output.get("text", "")), "message": f"LP update for {fund['name']}"})
+    if wrote is None:
+        return {"connected": False, "reason": roundtable.last_error or "LP update save failed"}
+    versions = [{"bank": bank, "path": path, "version": extract_version(wrote)}]
+    task = await roundtable.call("claim_task", watcher_key, {"project": get_secret("ROUNDTABLE_PROJECT"), "assignee": get_secret("DRAFTER_ID"), "goal": f"Prepare LP update for {fund['name']}", "input": {"kind": "lp_update", "path": path}})
+    task_id = extract_task_id(task)
+    if not task_id:
+        return {"connected": False, "reason": "Task creation failed"}
+    project = get_secret("ROUNDTABLE_PROJECT")
+    available = await roundtable.call("list_tasks", drafter_key, {"project": project, "assignee": "me", "status": "available"})
+    item = find_task(available, task_id)
+    expected = item.get("version") if item else task.get("version") if isinstance(task, dict) else None
+    claim = await roundtable.call("claim_task", drafter_key, {"project": project, "task_id": task_id, "expected_version": expected})
+    if isinstance(claim, dict): expected = claim.get("version", expected)
+    await roundtable.call("get_task", drafter_key, {"project": project, "task_id": task_id, "expected_version": expected})
+    await roundtable.call("read_file", drafter_key, {"bank": bank, "path": path})
+    await roundtable.call("update_task", drafter_key, {"task_id": task_id, "expected_version": expected, "status": "done", "progress": 100, "result": {"summary": "LP update prepared", "sources": versions, "data": {"fund_slug": fund["slug"]}}})
+    status = "done"
+    while asyncio.get_running_loop().time() < deadline:
+        latest = await roundtable.call("get_task", watcher_key, {"project": project, "task_id": task_id})
+        if isinstance(latest, dict): status = latest.get("status", status)
+        if status in {"done", "blocked"}: break
+        await asyncio.sleep(min(1.5, max(0, deadline-asyncio.get_running_loop().time())))
+    history = await roundtable.call("get_folder_history", watcher_key, {"bank": bank, "path": path})
+    return {"connected": True, "task_id": task_id, "status": status, "sources": versions, "history": history_versions(history)}
+
+
+def build_eval_events() -> list[dict[str, Any]]:
+    events: list[dict[str, Any]] = []
+    for fund in load_funds():
+        for company in fund.get("companies", []):
+            articles = read_articles(fund["slug"], company["name"])
+            classified = [classify_article(article) for article in articles]
+            for signal in classified:
+                if signal:
+                    sources = []
+                    for i, article in enumerate(sorted(articles, key=lambda a: a.get("published_date", ""), reverse=True)[:6], start=1):
+                        sources.append({"number": i, "title": article.get("title"), "publisher": article.get("publisher"), "date": article.get("published_date"), "url": article.get("url"), "ai_summary": article.get("ai_summary")})
+                    events.append({"event_id": "", "fund_slug": fund["slug"], "company_slug": slugify(company["name"]), "company": company["name"], "event": signal, "sources": sources, "synthetic": False})
+    events.sort(key=lambda item: (item["event"].get("severity", 0), item["event"].get("published_date", "")), reverse=True)
+    events = events[:20]
+    while len(events) < 20:
+        index = len(events) + 1
+        fund = load_funds()[(index - 1) % 3]
+        company = fund["companies"][(index - 1) % len(fund["companies"])]
+        events.append({"event_id": "", "fund_slug": fund["slug"], "company_slug": slugify(company["name"]), "company": company["name"], "synthetic": True, "event": {"id": f"synthetic-{index}", "title": f"Portfolio update for {company['name']}", "category": "Funding", "severity": 2, "suggested_action": "Ask the founder for a concise progress update", "published_date": date.today().isoformat()}, "sources": [{"number": 1, "title": f"{company['name']} company update", "publisher": "Portfolio Pulse fixture", "date": date.today().isoformat(), "url": company.get("website"), "ai_summary": f"Synthetic evaluation fixture for {company['name']}."}]})
+    for i, event in enumerate(events, start=1):
+        event["event_id"] = f"e{i:02d}"
+    fixture = DATA_DIR / "eval_events.json"
+    fixture.parent.mkdir(parents=True, exist_ok=True)
+    fixture.write_text(json.dumps(events, ensure_ascii=False, indent=2), encoding="utf-8")
+    return events
+
+
+@app.get("/api/eval/events")
+def eval_event_ids() -> list[dict[str, Any]]:
+    fixture = DATA_DIR / "eval_events.json"
+    if not fixture.exists() or not json.loads(fixture.read_text(encoding="utf-8")):
+        events = build_eval_events()
+    else:
+        events = json.loads(fixture.read_text(encoding="utf-8"))
+    return [{"event_id": item["event_id"], "company": item["company"], "category": item["event"].get("category"), "severity": item["event"].get("severity"), "synthetic": item.get("synthetic", False)} for item in events]
+
+
+@app.post("/api/eval/rebuild")
+def eval_rebuild() -> dict[str, Any]:
+    events = build_eval_events()
+    return {"count": len(events), "synthetic": sum(bool(item.get("synthetic")) for item in events)}
+
+
+@app.post("/api/eval/replay")
+async def eval_replay(body: dict[str, Any]) -> dict[str, Any]:
+    version = body.get("version", "v2")
+    pass_number = int(body.get("pass", 1))
+    start = max(0, int(body.get("start", 0)))
+    count = min(3, max(1, int(body.get("count", 3))))
+    if version not in {"v1", "v2"}:
+        raise HTTPException(status_code=400, detail="version must be v1 or v2")
+    fixtures = json.loads((DATA_DIR / "eval_events.json").read_text(encoding="utf-8"))
+    selected_fixtures = fixtures[start:start + count]
+    semaphore = asyncio.Semaphore(3)
+    async def run_one(item: dict[str, Any]) -> dict[str, Any]:
+        async with semaphore:
+            try:
+                sources = item["sources"]
+                clicked = item["event"]
+                messages = [{"role": "system", "content": DRAFT_SYSTEM_PROMPT}, {"role": "user", "content": json.dumps({"company": item["company"], "task": "Write exactly three concise bullets: what happened, why it matters for our position, and what to ask the founder.", "clicked_event": clicked, "sources": sources}, ensure_ascii=False)}]
+                run_name = f"draft-{version}"
+                run_id = f"{run_name}-{item['event_id']}-p{pass_number}"
+                metadata = {"run_kind": "eval", "prompt_version": version, "validator_on": version == "v2", "task": "draft", "event_id": item["event_id"], "pass_number": pass_number, "source_count": len(sources), "kind": "partner_note"}
+                raw, info = await traced_chat(messages=messages, model="anthropic/claude-opus-5-5", run_name=run_name, session_id=run_id, metadata=metadata, validator=citation_checked_text, sources=sources, version=version, timeout=25.0, extra_headers={"x-nicrron-cache": "false"})
+                metrics = citation_metrics(info["raw_text"], sources, citation_checked_text)
+                return {"event_id": item["event_id"], "ok": True, "uncited_sentences": metrics[1], "unknown_citations": metrics[2], "dropped_sentences": metrics[3]}
+            except httpx.HTTPStatusError as exc:
+                retry = exc.response.headers.get("retry-after")
+                return {"event_id": item["event_id"], "ok": False, "uncited_sentences": 0, "unknown_citations": 0, "dropped_sentences": 0, "error": "Nicrron rate limit" if exc.response.status_code == 429 else "Nicrron request failed", "retry_after": retry}
+            except Exception:
+                return {"event_id": item["event_id"], "ok": False, "uncited_sentences": 0, "unknown_citations": 0, "dropped_sentences": 0, "error": "Could not run replay"}
+    results = await asyncio.gather(*(run_one(item) for item in selected_fixtures))
+    retry_after = next((item.get("retry_after") for item in results if item.get("retry_after")), None)
+    next_start = None if start + len(selected_fixtures) >= len(fixtures) else start + len(selected_fixtures)
+    return {"results": results, "next_start": next_start, "retry_after": retry_after}

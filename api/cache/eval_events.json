@@ -1,0 +1,502 @@
+[
+  {
+    "event_id": "e01",
+    "fund_slug": "everywhere-ventures",
+    "company_slug": "starcloud",
+    "company": "Starcloud",
+    "synthetic": true,
+    "event": {
+      "id": "synthetic-1",
+      "title": "Portfolio update for Starcloud",
+      "category": "Funding",
+      "severity": 2,
+      "suggested_action": "Ask the founder for a concise progress update",
+      "published_date": "2026-10-24"
+    },
+    "sources": [
+      {
+        "number": 1,
+        "title": "Starcloud company update",
+        "publisher": "Portfolio Pulse fixture",
+        "date": "2026-10-24",
+        "url": "https://www.starcloud.com",
+        "ai_summary": "Synthetic evaluation fixture for Starcloud."
+      }
+    ]
+  },
+  {
+    "event_id": "e02",
+    "fund_slug": "plug-and-play",
+    "company_slug": "reco",
+    "company": "Reco",
+    "synthetic": true,
+    "event": {
+      "id": "synthetic-2",
+      "title": "Portfolio update for Reco",
+      "category": "Funding",
+      "severity": 2,
+      "suggested_action": "Ask the founder for a concise progress update",
+      "published_date": "2026-10-24"
+    },
+    "sources": [
+      {
+        "number": 1,
+        "title": "Reco company update",
+        "publisher": "Portfolio Pulse fixture",
+        "date": "2026-10-24",
+        "url": "https://www.reco.ai",
+        "ai_summary": "Synthetic evaluation fixture for Reco."
+      }
+    ]
+  },
+  {
+    "event_id": "e03",
+    "fund_slug": "betaworks",
+    "company_slug": "stability-ai",
+    "company": "Stability AI",
+    "synthetic": true,
+    "event": {
+      "id": "synthetic-3",
+      "title": "Portfolio update for Stability AI",
+      "category": "Funding",
+      "severity": 2,
+      "suggested_action": "Ask the founder for a concise progress update",
+      "published_date": "2026-10-24"
+    },
+    "sources": [
+      {
+        "number": 1,
+        "title": "Stability AI company update",
+        "publisher": "Portfolio Pulse fixture",
+        "date": "2026-10-24",
+        "url": "https://stability.ai",
+        "ai_summary": "Synthetic evaluation fixture for Stability AI."
+      }
+    ]
+  },
+  {
+    "event_id": "e04",
+    "fund_slug": "everywhere-ventures",
+    "company_slug": "headway",
+    "company": "Headway",
+    "synthetic": true,
+    "event": {
+      "id": "synthetic-4",
+      "title": "Portfolio update for Headway",
+      "category": "Funding",
+      "severity": 2,
+      "suggested_action": "Ask the founder for a concise progress update",
+      "published_date": "2026-10-24"
+    },
+    "sources": [
+      {
+        "number": 1,
+        "title": "Headway company update",
+        "publisher": "Portfolio Pulse fixture",
+        "date": "2026-10-24",
+        "url": "https://headway.co",
+        "ai_summary": "Synthetic evaluation fixture for Headway."
+      }
+    ]
+  },
+  {
+    "event_id": "e05",
+    "fund_slug": "plug-and-play",
+    "company_slug": "trulioo",
+    "company": "Trulioo",
+    "synthetic": true,
+    "event": {
+      "id": "synthetic-5",
+      "title": "Portfolio update for Trulioo",
+      "category": "Funding",
+      "severity": 2,
+      "suggested_action": "Ask the founder for a concise progress update",
+      "published_date": "2026-10-24"
+    },
+    "sources": [
+      {
+        "number": 1,
+        "title": "Trulioo company update",
+        "publisher": "Portfolio Pulse fixture",
+        "date": "2026-10-24",
+        "url": "https://www.trulioo.com",
+        "ai_summary": "Synthetic evaluation fixture for Trulioo."
+      }
+    ]
+  },
+  {
+    "event_id": "e06",
+    "fund_slug": "betaworks",
+    "company_slug": "bitly",
+    "company": "Bitly",
+    "synthetic": true,
+    "event": {
+      "id": "synthetic-6",
+      "title": "Portfolio update for Bitly",
+      "category": "Funding",
+      "severity": 2,
+      "suggested_action": "Ask the founder for a concise progress update",
+      "published_date": "2026-10-24"
+    },
+    "sources": [
+      {
+        "number": 1,
+        "title": "Bitly company update",
+        "publisher": "Portfolio Pulse fixture",
+        "date": "2026-10-24",
+        "url": "https://bitly.com",
+        "ai_summary": "Synthetic evaluation fixture for Bitly."
+      }
+    ]
+  },
+  {
+    "event_id": "e07",
+    "fund_slug": "everywhere-ventures",
+    "company_slug": "particle-health",
+    "company": "Particle Health",
+    "synthetic": true,
+    "event": {
+      "id": "synthetic-7",
+      "title": "Portfolio update for Particle Health",
+      "category": "Funding",
+      "severity": 2,
+      "suggested_action": "Ask the founder for a concise progress update",
+      "published_date": "2026-10-24"
+    },
+    "sources": [
+      {
+        "number": 1,
+        "title": "Particle Health company update",
+        "publisher": "Portfolio Pulse fixture",
+        "date": "2026-10-24",
+        "url": "https://www.particlehealth.com",
+        "ai_summary": "Synthetic evaluation fixture for Particle Health."
+      }
+    ]
+  },
+  {
+    "event_id": "e08",
+    "fund_slug": "plug-and-play",
+    "company_slug": "einride",
+    "company": "Einride",
+    "synthetic": true,
+    "event": {
+      "id": "synthetic-8",
+      "title": "Portfolio update for Einride",
+      "category": "Funding",
+      "severity": 2,
+      "suggested_action": "Ask the founder for a concise progress update",
+      "published_date": "2026-10-24"
+    },
+    "sources": [
+      {
+        "number": 1,
+        "title": "Einride company update",
+        "publisher": "Portfolio Pulse fixture",
+        "date": "2026-10-24",
+        "url": "https://www.einride.tech",
+        "ai_summary": "Synthetic evaluation fixture for Einride."
+      }
+    ]
+  },
+  {
+    "event_id": "e09",
+    "fund_slug": "betaworks",
+    "company_slug": "readwise",
+    "company": "Readwise",
+    "synthetic": true,
+    "event": {
+      "id": "synthetic-9",
+      "title": "Portfolio update for Readwise",
+      "category": "Funding",
+      "severity": 2,
+      "suggested_action": "Ask the founder for a concise progress update",
+      "published_date": "2026-10-24"
+    },
+    "sources": [
+      {
+        "number": 1,
+        "title": "Readwise company update",
+        "publisher": "Portfolio Pulse fixture",
+        "date": "2026-10-24",
+        "url": "https://readwise.io",
+        "ai_summary": "Synthetic evaluation fixture for Readwise."
+      }
+    ]
+  },
+  {
+    "event_id": "e10",
+    "fund_slug": "everywhere-ventures",
+    "company_slug": "photon-health",
+    "company": "Photon Health",
+    "synthetic": true,
+    "event": {
+      "id": "synthetic-10",
+      "title": "Portfolio update for Photon Health",
+      "category": "Funding",
+      "severity": 2,
+      "suggested_action": "Ask the founder for a concise progress update",
+      "published_date": "2026-10-24"
+    },
+    "sources": [
+      {
+        "number": 1,
+        "title": "Photon Health company update",
+        "publisher": "Portfolio Pulse fixture",
+        "date": "2026-10-24",
+        "url": "https://photonhealth.com",
+        "ai_summary": "Synthetic evaluation fixture for Photon Health."
+      }
+    ]
+  },
+  {
+    "event_id": "e11",
+    "fund_slug": "plug-and-play",
+    "company_slug": "madison-reed",
+    "company": "Madison Reed",
+    "synthetic": true,
+    "event": {
+      "id": "synthetic-11",
+      "title": "Portfolio update for Madison Reed",
+      "category": "Funding",
+      "severity": 2,
+      "suggested_action": "Ask the founder for a concise progress update",
+      "published_date": "2026-10-24"
+    },
+    "sources": [
+      {
+        "number": 1,
+        "title": "Madison Reed company update",
+        "publisher": "Portfolio Pulse fixture",
+        "date": "2026-10-24",
+        "url": "https://www.madison-reed.com",
+        "ai_summary": "Synthetic evaluation fixture for Madison Reed."
+      }
+    ]
+  },
+  {
+    "event_id": "e12",
+    "fund_slug": "betaworks",
+    "company_slug": "openhands",
+    "company": "OpenHands",
+    "synthetic": true,
+    "event": {
+      "id": "synthetic-12",
+      "title": "Portfolio update for OpenHands",
+      "category": "Funding",
+      "severity": 2,
+      "suggested_action": "Ask the founder for a concise progress update",
+      "published_date": "2026-10-24"
+    },
+    "sources": [
+      {
+        "number": 1,
+        "title": "OpenHands company update",
+        "publisher": "Portfolio Pulse fixture",
+        "date": "2026-10-24",
+        "url": "https://www.openhands.dev",
+        "ai_summary": "Synthetic evaluation fixture for OpenHands."
+      }
+    ]
+  },
+  {
+    "event_id": "e13",
+    "fund_slug": "everywhere-ventures",
+    "company_slug": "stitch",
+    "company": "Stitch",
+    "synthetic": true,
+    "event": {
+      "id": "synthetic-13",
+      "title": "Portfolio update for Stitch",
+      "category": "Funding",
+      "severity": 2,
+      "suggested_action": "Ask the founder for a concise progress update",
+      "published_date": "2026-10-24"
+    },
+    "sources": [
+      {
+        "number": 1,
+        "title": "Stitch company update",
+        "publisher": "Portfolio Pulse fixture",
+        "date": "2026-10-24",
+        "url": "https://stitch.money",
+        "ai_summary": "Synthetic evaluation fixture for Stitch."
+      }
+    ]
+  },
+  {
+    "event_id": "e14",
+    "fund_slug": "plug-and-play",
+    "company_slug": "bitgo",
+    "company": "BitGo",
+    "synthetic": true,
+    "event": {
+      "id": "synthetic-14",
+      "title": "Portfolio update for BitGo",
+      "category": "Funding",
+      "severity": 2,
+      "suggested_action": "Ask the founder for a concise progress update",
+      "published_date": "2026-10-24"
+    },
+    "sources": [
+      {
+        "number": 1,
+        "title": "BitGo company update",
+        "publisher": "Portfolio Pulse fixture",
+        "date": "2026-10-24",
+        "url": "https://www.bitgo.com",
+        "ai_summary": "Synthetic evaluation fixture for BitGo."
+      }
+    ]
+  },
+  {
+    "event_id": "e15",
+    "fund_slug": "betaworks",
+    "company_slug": "xmtp",
+    "company": "XMTP",
+    "synthetic": true,
+    "event": {
+      "id": "synthetic-15",
+      "title": "Portfolio update for XMTP",
+      "category": "Funding",
+      "severity": 2,
+      "suggested_action": "Ask the founder for a concise progress update",
+      "published_date": "2026-10-24"
+    },
+    "sources": [
+      {
+        "number": 1,
+        "title": "XMTP company update",
+        "publisher": "Portfolio Pulse fixture",
+        "date": "2026-10-24",
+        "url": "https://xmtp.org",
+        "ai_summary": "Synthetic evaluation fixture for XMTP."
+      }
+    ]
+  },
+  {
+    "event_id": "e16",
+    "fund_slug": "everywhere-ventures",
+    "company_slug": "usergems",
+    "company": "UserGems",
+    "synthetic": true,
+    "event": {
+      "id": "synthetic-16",
+      "title": "Portfolio update for UserGems",
+      "category": "Funding",
+      "severity": 2,
+      "suggested_action": "Ask the founder for a concise progress update",
+      "published_date": "2026-10-24"
+    },
+    "sources": [
+      {
+        "number": 1,
+        "title": "UserGems company update",
+        "publisher": "Portfolio Pulse fixture",
+        "date": "2026-10-24",
+        "url": "https://www.usergems.com",
+        "ai_summary": "Synthetic evaluation fixture for UserGems."
+      }
+    ]
+  },
+  {
+    "event_id": "e17",
+    "fund_slug": "plug-and-play",
+    "company_slug": "dyna-robotics",
+    "company": "Dyna Robotics",
+    "synthetic": true,
+    "event": {
+      "id": "synthetic-17",
+      "title": "Portfolio update for Dyna Robotics",
+      "category": "Funding",
+      "severity": 2,
+      "suggested_action": "Ask the founder for a concise progress update",
+      "published_date": "2026-10-24"
+    },
+    "sources": [
+      {
+        "number": 1,
+        "title": "Dyna Robotics company update",
+        "publisher": "Portfolio Pulse fixture",
+        "date": "2026-10-24",
+        "url": "https://www.dyna.co",
+        "ai_summary": "Synthetic evaluation fixture for Dyna Robotics."
+      }
+    ]
+  },
+  {
+    "event_id": "e18",
+    "fund_slug": "betaworks",
+    "company_slug": "math-inc",
+    "company": "Math Inc",
+    "synthetic": true,
+    "event": {
+      "id": "synthetic-18",
+      "title": "Portfolio update for Math Inc",
+      "category": "Funding",
+      "severity": 2,
+      "suggested_action": "Ask the founder for a concise progress update",
+      "published_date": "2026-10-24"
+    },
+    "sources": [
+      {
+        "number": 1,
+        "title": "Math Inc company update",
+        "publisher": "Portfolio Pulse fixture",
+        "date": "2026-10-24",
+        "url": "https://www.math.inc",
+        "ai_summary": "Synthetic evaluation fixture for Math Inc."
+      }
+    ]
+  },
+  {
+    "event_id": "e19",
+    "fund_slug": "everywhere-ventures",
+    "company_slug": "electric-ai",
+    "company": "Electric AI",
+    "synthetic": true,
+    "event": {
+      "id": "synthetic-19",
+      "title": "Portfolio update for Electric AI",
+      "category": "Funding",
+      "severity": 2,
+      "suggested_action": "Ask the founder for a concise progress update",
+      "published_date": "2026-10-24"
+    },
+    "sources": [
+      {
+        "number": 1,
+        "title": "Electric AI company update",
+        "publisher": "Portfolio Pulse fixture",
+        "date": "2026-10-24",
+        "url": "https://electric.ai",
+        "ai_summary": "Synthetic evaluation fixture for Electric AI."
+      }
+    ]
+  },
+  {
+    "event_id": "e20",
+    "fund_slug": "plug-and-play",
+    "company_slug": "shippo",
+    "company": "Shippo",
+    "synthetic": true,
+    "event": {
+      "id": "synthetic-20",
+      "title": "Portfolio update for Shippo",
+      "category": "Funding",
+      "severity": 2,
+      "suggested_action": "Ask the founder for a concise progress update",
+      "published_date": "2026-10-24"
+    },
+    "sources": [
+      {
+        "number": 1,
+        "title": "Shippo company update",
+        "publisher": "Portfolio Pulse fixture",
+        "date": "2026-10-24",
+        "url": "https://goshippo.com",
+        "ai_summary": "Synthetic evaluation fixture for Shippo."
+      }
+    ]
+  }
+]
