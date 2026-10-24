@@ -1234,7 +1234,14 @@ async def shared_cache_get(name: str) -> dict[str, Any] | None:
     connected, _ = roundtable_config()
     if not connected:
         return None
-    found = await roundtable.call("read_file", get_secret("SIGNAL_WATCHER_KEY"), {"bank": get_secret("ROUNDTABLE_PROJECT"), "path": f"{SHARED_CACHE_PREFIX}{name}"})
+    key, bank, path = get_secret("SIGNAL_WATCHER_KEY"), get_secret("ROUNDTABLE_PROJECT"), f"{SHARED_CACHE_PREFIX}{name}"
+    # Check before reading: Roundtable counts a read of a missing file as a failed request, and a
+    # cache miss is normal, so it showed our watcher as "needs attention" for every first open.
+    listing = await roundtable.call("list_files", key, {"bank": bank, "prefix": path})
+    rows = listing.get("files", []) if isinstance(listing, dict) else listing if isinstance(listing, list) else []
+    if not any(isinstance(row, dict) and row.get("path") == path for row in rows):
+        return None
+    found = await roundtable.call("read_file", key, {"bank": bank, "path": path})
     try:
         return json.loads(found["content"]) if isinstance(found, dict) and found.get("content") else None
     except (TypeError, ValueError):
