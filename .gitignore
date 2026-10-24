@@ -3,3 +3,12 @@ dist
 *.log
 __pycache__/
 .venv/
+
+# Runtime caches the backend writes (the committed copy lives in api/data/snapshot)
+api/cache/*
+!api/cache/eval_events.json
+.pytest_cache/
+.env
+.claude/
+.env.local
+.env.roundtable
