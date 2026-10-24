@@ -641,7 +641,7 @@ EXIT_CORRECTIONS = {
 }
 # Robo-written market posts (analyst ratings, price targets, fund position changes, insider trades)
 # say nothing about how the company is doing.
-MARKET_NOISE = re.compile(r"price target|\bEPS\b|earnings per share|(?:shares|stock|stake|position|holdings) (?:of|in) |(?:buys|sells|acquires|trims|lifts|boosts|raises|lowers|cuts|reduces|increases|takes) (?:its |a |new )?(?:stake|position|holdings)|insider (?:sale|sell|buy|trad)|short interest|(?:NYSE|NASDAQ|Nasdaq|NYSEARCA|OTCMKTS):|(?:upgraded|downgraded|reiterated|initiated) (?:by|at|to)|analyst rating", re.IGNORECASE)
+MARKET_NOISE = re.compile(r"\([A-Z]{2,5}\)|price target|\bEPS\b|earnings per share|(?:shares|stock|stake|position|holdings) (?:of|in) |(?:buys|sells|acquires|trims|lifts|boosts|raises|lowers|cuts|reduces|increases|takes) (?:its |a |new )?(?:stake|position|holdings)|insider (?:sale|sell|buy|trad)|short interest|(?:NYSE|NASDAQ|Nasdaq|NYSEARCA|OTCMKTS):|(?:upgraded|downgraded|reiterated|initiated) (?:by|at|to)|analyst rating", re.IGNORECASE)
 MARKET_PUBLISHERS = {"marketbeat", "defense world", "etf daily news", "ticker report", "the lincolnian online", "americanbankingnews", "zolmax", "the enterprise leader", "wkrb news", "modern readers", "the cerbat gem", "dispatch tribunal", "the markets daily", "stock titan", "marketscreener", "insidermonkey"}
 LEADER_CHANGE = re.compile(r"\b(?:steps? down|stepping down|resign\w*|ousted|replac\w*|depart\w*|fired|leaves|leaving|out as|succeed\w*)\b", re.IGNORECASE)
 SHUTDOWN = re.compile(r"\b(?:shut(?:s|ting)? down|shutter\w*|discontinu\w*|sunset\w*|wind(?:s|ing)? down|lay(?:s|ing)? off|layoffs?|job cuts|cuts? (?:\d+ )?jobs)\b", re.IGNORECASE)
@@ -806,9 +806,18 @@ def classify_article(article: dict[str, Any], company: dict[str, Any] | None = N
         category, severity, action = ("Risk", 3, "Risk flag: call the founder, prepare an LP note") if category == "Funding" else ("Risk", 2, "Negative coverage: read it before the next founder call")
     # Severity 3 asks a partner to act today, so it needs reported news that names the company in the
     # headline. Opinion pieces, explainers, listicles and industry stories that mention it drop to 2.
-    if severity == 3 and (article_type not in REPORTED_NEWS_TYPES or (company is not None and not company_named(company, title))):
+    named = company is None or company_named(company, title)
+    if severity == 3 and (article_type not in REPORTED_NEWS_TYPES or not named):
         severity = 2
         action = "Track it; confirm with the founder before telling LPs" if category == "Corporate" else "Read it; raise it on the next founder call"
+    # The action has to fit the story: a passing mention asks for nothing, and bad news is never
+    # met with "Congratulate" or "Amplify it".
+    if not named:
+        severity, action = (min(severity, 2), "Industry story that mentions the company: read it before the next founder call") if category == "Risk" else (1, "Mentions the company in passing; no action needed")
+    elif sentiment == "negative" and category in {"Product", "Funding", "People-positive"}:
+        action = {"Product": "Read it; check whether customers are affected", "Funding": "Read it; ask the founder about the round and runway"}.get(category, "Read it; check in with the founder")
+    elif sentiment == "neutral" and category == "Product":
+        action = "Note it for the next portfolio update"
     return {**article, "category": "People" if category.startswith("People-") else category, "severity": severity, "suggested_action": action, "tag_code": code, "tag_name": str(tag.get("name") or "")}
 
 

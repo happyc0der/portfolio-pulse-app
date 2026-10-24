@@ -25,9 +25,10 @@ def test_people_positive_classification():
 
 
 def test_product_classification():
-    result = classify_article(signal("SD01"))
+    result = classify_article({**signal("SD01"), "sentiment": "positive"})
     assert result["category"] == "Product" and result["severity"] == 1
     assert result["suggested_action"] == "Amplify it; offer customer intros"
+    assert classify_article({**signal("SD01"), "sentiment": "neutral"})["suggested_action"] == "Note it for the next portfolio update"
 
 
 def test_corporate_classification():
@@ -79,3 +80,21 @@ def test_negative_reported_news_still_escalates_to_risk():
     article = signal("SD01", sentiment="negative")
     article["article_type"] = {"code": "news_analysis", "label": "News analysis"}
     assert classify_article(article)["category"] == "Risk"
+
+
+def test_action_fits_the_story():
+    from api.main import classify_article
+    company = {"name": "Resy", "website": "resy.com"}
+    base = {"tags": [{"code": "SD01", "name": "Product Launches"}], "article_type": {"code": "news_analysis"}, "published_date": "2026-10-20"}
+    passing = classify_article({**base, "title": "Top 10 restaurant apps of 2026", "sentiment": "positive"}, company)
+    assert passing["severity"] == 1 and passing["suggested_action"].startswith("Mentions the company in passing")
+    bad = classify_article({**base, "title": "My AI agent got me banned from Resy", "sentiment": "negative", "article_type": {"code": "opinion"}}, company)
+    assert "Amplify" not in bad["suggested_action"] and bad["suggested_action"].startswith("Read it")
+    good = classify_article({**base, "title": "Resy launches a new booking feature", "sentiment": "positive"}, company)
+    assert good["suggested_action"].startswith("Amplify it")
+
+
+def test_ticker_headlines_are_market_noise():
+    from api.main import is_market_noise
+    assert is_market_noise({"title": "SoundHound AI (SOUN), Why Is It Getting Attention Today?", "publisher": "Yahoo"})
+    assert not is_market_noise({"title": "Firefly Aerospace stock rises on Starcloud AI computing deal", "publisher": "Reuters"})
