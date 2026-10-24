@@ -1,0 +1,238 @@
+{
+  "status": "ok",
+  "data": {
+    "data": {
+      "uuid": "028sxbd",
+      "firmographic": {
+        "name": "Eliya Chocolates Inc.",
+        "legal_name": "Eliya Chocolates Inc.",
+        "website": "eliya-chocolates.com",
+        "company_type": {
+          "code": "private",
+          "label": "Private"
+        },
+        "company_description": "Eliya Chocolates Inc. is a privately held, founder-owned artisan chocolate producer incorporated in Ontario, Canada and headquartered in Burlington. The company manufactures small-batch, handcrafted chocolates and confectionery using traditional French pâtisserie techniques — tempering, ganache creation, bonbon molding, and pâte de fruits preparation — acquired by founder Dr. Musabbir Chowdhury at École Ducasse (ENSP) in France. The product portfolio spans handcrafted bonbons in white, milk, and dark chocolate ($2.50 per piece), specialty bars including a Dubai Chocolate Bar with pistachio kunafa ($10), pralines such as Duetto di Cuori, handcrafted marshmallows, fruit jellies, a Chocolate Protein Bar, and a French Chocolate Cake infused with Canadian Maple Brandy ($100). Signature offerings deliberately fuse French technique with Canadian inputs — Ontario VQA wines, Canadian Maple Brandy — under the brand positioning \"Crafted in Canada. Inspired by France.\"\n\nThe company operates three revenue streams: direct retail at its Burlington innovation kitchen and tasting room; curated wine and chocolate pairing events hosted in partnership with Al Borgo Estates Winery in Beamsville, Ontario, delivered in three tiered packages (The Signature for 6–12 guests, The Grand for up to 25, The Ultimate for 40+) for corporate events, weddings, and private celebrations; and wholesale distribution to retailers, cafés, and specialty shops across Ontario. Customer segments are corporate clients, private-occasion hosts, and premium chocolate consumers, with secondary exposure to wholesale buyers. Go-to-market is event-driven and direct-to-consumer, supported by the company's website, social media, community-engagement initiatives, and email-based booking. E-commerce purchase functionality is limited; most orders are initiated in-person or by direct contact.\n\nEliya Chocolates is entirely bootstrapped and founder-controlled, with no disclosed institutional funding, no parent company, no subsidiaries, and no headcount data. Geographic footprint is confined to Ontario, Canada. The technology stack is fundamentally artisanal rather than software-driven — there are no APIs, AI integrations, mobile apps, or software patents disclosed — and the company's competitive position rests on the founder's French training, proprietary VQA wine-pairing methodology, and the Beamsville winery partnership.",
+        "company_description_short": "Eliya Chocolates Inc. is a Burlington, Ontario-based artisan chocolate producer that handcrafts small-batch bonbons, confectionery, and curated wine and chocolate pairing events for corporate clients, private celebrations, and premium consumers across Ontario.",
+        "operating_status": {
+          "code": "operating",
+          "label": "Operating"
+        },
+        "ownership_category": {
+          "code": "founder_individual_operated_bootstrapped",
+          "label": "Founder Individual Operated Bootstrapped"
+        },
+        "logo_url": "https://files.akta.pro/logos/02/8s/xb/9d35d3a3-0c13-5ce3-ab73-37f747c72d67.png",
+        "akta_rank": 15322516
+      },
+      "strategic_signal": {
+        "scale_indicator": [
+          {
+            "description": "Company operates in Burlington, Ontario and serves retailers across Ontario, Canada. Events serve guests across Ontario.",
+            "source": [
+              "https://eliya-chocolates.com/who-we-are/"
+            ],
+            "type": {
+              "code": "geographic_reach",
+              "label": "Geographic Reach"
+            },
+            "value": "Ontario, Canada"
+          },
+          {
+            "description": "Wine and chocolate pairing events accommodate groups ranging from 6-12 guests (The Signature) to 40+ guests (The Ultimate). Valentine's event hosted approximately 50 guests.",
+            "source": [
+              "https://eliya-chocolates.com/events/wine-and-chocolate/"
+            ],
+            "type": {
+              "code": "customer_outcomes",
+              "label": "Customer Outcomes"
+            },
+            "value": "6 to 40+ guests per event"
+          }
+        ],
+        "partnership": [
+          {
+            "announced_on": {
+              "day": 1,
+              "month": 1,
+              "year": 2026
+            },
+            "description": "Eliya Chocolates has formed a strategic partnership with Al Borgo Estates Winery in Beamsville, Ontario to deliver guided wine and chocolate pairing experiences. The partnership combines Eliya's handcrafted French-style chocolates with Al Borgo's VQA Ontario wines. Together, the companies have curated pairing menus featuring wines such as Moscato Rosa, Baco Noir, Pinot Noir, and Nobilissima paired with various bonbons, chocolate bars, and cakes. The partnership serves groups of 6-40+ guests for corporate events, private celebrations, and weddings. Multiple successful events have been hosted including Valentine's Day, Mother's Day, and wedding pre-reception celebrations.",
+            "name": "Al Borgo Estates Winery",
+            "source": [
+              "https://eliya-chocolates.com/events/wine-and-chocolate/"
+            ],
+            "strategic_tier": "Core",
+            "type": {
+              "code": "strategic_codevelopment",
+              "label": "Strategic or Co-development Partner"
+            }
+          }
+        ],
+        "recent_move": [
+          {
+            "date": {
+              "day": 1,
+              "month": 1,
+              "year": 2026
+            },
+            "description": "Formed a strategic partnership with Al Borgo Estates Winery in Beamsville, Ontario to deliver curated wine and chocolate pairing experiences combining VQA Ontario wines with handcrafted French-style bonbons, bars, and cakes.",
+            "source": [
+              "https://eliya-chocolates.com/events/wine-and-chocolate/"
+            ],
+            "type": {
+              "code": "partnership",
+              "label": "Partnership"
+            }
+          },
+          {
+            "date": {
+              "year": 2026
+            },
+            "description": "Launched a tiered wine and chocolate pairing event product line — The Signature (6–12 guests), The Grand (up to 25 guests), and The Ultimate (40+ guests) — with guided hosting, tasting notes, and Al Borgo Estate wines.",
+            "source": [
+              "https://eliya-chocolates.com/events/wine-and-chocolate/"
+            ],
+            "type": {
+              "code": "product_launch",
+              "label": "Product Launch"
+            }
+          },
+          {
+            "date": {
+              "year": 2026
+            },
+            "description": "Introduced a Dubai Chocolate Bar (pistachio kunafa, $10), Duetto di Cuori (hazelnut praline), and French Chocolate Cake with Canadian Maple Brandy ($100), broadening the menu beyond classic bonbons into trending and premium-occasion SKUs.",
+            "source": [
+              "http://eliya-chocolates.com/our-menu/"
+            ],
+            "type": {
+              "code": "product_launch",
+              "label": "Product Launch"
+            }
+          },
+          {
+            "date": {
+              "year": 2026
+            },
+            "description": "Opened a wholesale distribution channel supplying retailers, cafés, and specialty shops across Ontario with Eliya Chocolates collections for resale, extending the addressable market beyond the Burlington tasting room.",
+            "source": [
+              "https://eliya-chocolates.com/who-we-are/"
+            ],
+            "type": {
+              "code": "expansion",
+              "label": "Expansion"
+            }
+          },
+          {
+            "date": {
+              "year": 2026
+            },
+            "description": "Launched community-engagement marketing initiatives such as Canada Day chocolate deliveries to local Burlington businesses to build grassroots brand awareness and goodwill within the Ontario market.",
+            "source": [
+              "https://eliya-chocolates.com/uncategorized/sweetening-up-our-community-this-canada-day-%F0%9F%8D%81/"
+            ],
+            "type": {
+              "code": "expansion",
+              "label": "Expansion"
+            }
+          },
+          {
+            "date": {
+              "year": 2026
+            },
+            "description": "Established the Burlington innovation kitchen and tasting room as the company's primary production facility and direct-to-consumer retail showroom, anchoring the brand in the Ontario market.",
+            "source": [
+              "https://eliya-chocolates.com/who-we-are/"
+            ],
+            "type": {
+              "code": "product_launch",
+              "label": "Product Launch"
+            }
+          }
+        ],
+        "expansion_highlight": [
+          {
+            "description": "Wholesale distribution to retailers, cafés, and specialty shops across Ontario extends Eliya beyond its Burlington tasting room into third-party retail points, signaling intent to scale product distribution within the home province.",
+            "type": {
+              "code": "new_channel",
+              "label": "New Channel"
+            }
+          },
+          {
+            "description": "Introduction of a Chocolate Protein Bar targeting endurance athletes and fitness-conscious consumers marks entry into a new customer segment (performance nutrition) that is adjacent to but distinct from the premium gifting and corporate-event core.",
+            "type": {
+              "code": "new_customer_segment",
+              "label": "New Customer Segment"
+            }
+          },
+          {
+            "description": "Launch of trending SKUs such as the Dubai Chocolate Bar with pistachio kunafa signals opportunistic product-line extension into viral/market-driven categories rather than purely traditional French pâtisserie.",
+            "type": {
+              "code": "new_product_line",
+              "label": "New Product Line"
+            }
+          },
+          {
+            "description": "Rotation of seasonal collections for Christmas, Valentine's, Easter, and Eid indicates deliberate calendar-based demand capture and gifting-occasion monetization across multiple cultural and religious calendars.",
+            "type": {
+              "code": "new_product_line",
+              "label": "New Product Line"
+            }
+          },
+          {
+            "description": "Corporate-event packages (Signature, Grand, Ultimate) and wedding pre-reception hosting indicate Eliya is formalizing B2B event catering as a repeatable revenue line, expanding the addressable market from consumer gifting into corporate hospitality.",
+            "type": {
+              "code": "new_customer_segment",
+              "label": "New Customer Segment"
+            }
+          },
+          {
+            "description": "Co-marketing and cross-referral with Al Borgo Estates Winery represents an early ecosystem buildout, leveraging winery foot traffic and tourism channels that Eliya does not own natively.",
+            "type": {
+              "code": "ecosystem_buildout",
+              "label": "Ecosystem Buildout"
+            }
+          }
+        ]
+      },
+      "management_profile": {
+        "number_of_profiles": 1,
+        "profiles": [
+          {
+            "designation": "Founder and Chocolatier",
+            "designation_category": {
+              "code": "founder",
+              "label": "Founder"
+            },
+            "education": "Dr. Chowdhury holds a Ph.D., MBA, and M.Eng. He completed his Bachelor's and Master's studies at the National University of Aviation in Ukraine. He subsequently trained in France at École Ducasse (ENSP), École Callebaut, and École Valrhona under Michelin-starred chefs. His academic career included deanships at Fleming College, Loyalist College in Toronto, and Niagara College, where he also founded the Productivity and Innovation Lab (PiLab).",
+            "name": "Musabbir Chowdhury",
+            "overview": "Founder and trained French chocolatier of Eliya Chocolates who transitioned from a 25-year academic career to co-found the artisan chocolate business in Burlington, Ontario.",
+            "previous_companies": [
+              "Niagara College - Dean of Business and Information Technology",
+              "Loyalist College in Toronto - Dean of Business and Information Technology",
+              "Fleming College - Dean of Business and Information Technology",
+              "National University of Aviation, Ukraine - Student (Bachelor's and Master's)"
+            ],
+            "profile_commentary": "Dr. Musabbir Chowdhury is the founder and principal chocolatier of Eliya Chocolates. He trained at École Ducasse (ENSP), École Callebaut, and École Valrhona in France under Michelin-starred chefs and combines this craft training with a research and academic leadership background. He previously served as Dean of Business and Information Technology at Niagara College (where he founded the Productivity and Innovation Lab focused on productivity and happiness), Loyalist College in Toronto, and Fleming College. He earned a Ph.D., MBA, and M.Eng., and completed his Bachelor's and Master's studies at the National University of Aviation in Ukraine. He co-founded Eliya Chocolates after retiring from academia, drawing on his combined experience as engineer, artist, professor, dean, marathon runner, and French pâtissier to create handcrafted chocolates using French techniques.",
+            "source": [
+              "https://eliya-chocolates.com/our-chef/"
+            ]
+          }
+        ]
+      },
+      "financial_estimate": {
+        "revenue_estimate": {
+          "code": "under_1m",
+          "label": "Under $1M"
+        },
+        "valuation_estimate": {
+          "code": "under_10m",
+          "label": "Under $10M"
+        }
+      }
+    },
+    "credits_consumed": 5.0
+  },
+  "fetched_at": "2026-10-24T16:23:05.664717+00:00",
+  "credits_consumed": 5.0
+}

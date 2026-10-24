@@ -1,0 +1,36 @@
+{
+  "status": "ok",
+  "data": {
+    "data": {
+      "uuid": "028sxbd",
+      "engagements": {
+        "bounce_rate": "0.4227004205559858",
+        "month": "9",
+        "year": "2026",
+        "page_per_visit": "1.0999950769113516",
+        "visits": "1036",
+        "time_on_site": "0"
+      },
+      "estimated_monthly_visits": {
+        "2026-07-01": 0,
+        "2026-08-01": 61,
+        "2026-09-01": 1036
+      },
+      "traffic_sources": {
+        "social_organic": 0.04980651832449038,
+        "social_paid": 0.010556188673024342,
+        "mail": 0.02552159380704464,
+        "referrals": 0.13459895703369332,
+        "search_organic": 0.3832950624733911,
+        "search_paid": 0.012674819247369712,
+        "direct": 0.2712474473785744,
+        "gen_ai": 0.014788165911793405,
+        "affiliate": 0.030735633856314958,
+        "display_ads": 0.06677561329430357
+      }
+    },
+    "credits_consumed": 1.5
+  },
+  "fetched_at": "2026-10-24T16:23:11.423306+00:00",
+  "credits_consumed": 1.5
+}

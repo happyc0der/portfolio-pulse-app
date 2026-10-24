@@ -1,0 +1,801 @@
+{
+  "status": "ok",
+  "data": {
+    "data": {
+      "uuid": "00009le",
+      "firmographic": {
+        "name": "Starcloud",
+        "legal_name": "Starcloud, Inc.",
+        "website": "starcloud.com",
+        "company_type": {
+          "code": "private",
+          "label": "Private"
+        },
+        "founded_year": 2024,
+        "operating_status": {
+          "code": "operating",
+          "label": "Operating"
+        },
+        "ownership_category": {
+          "code": "venture_growth_investor_backed",
+          "label": "Venture Growth Investor Backed"
+        },
+        "headcount_range": "11-50",
+        "logo_url": "https://files.akta.pro/logos/00/00/9l/e2ea6f73-05a9-5eb7-a314-d85b272f627c.png",
+        "akta_rank": 9018
+      },
+      "strategic_signal": {
+        "scale_indicator": [
+          {
+            "description": "Achieved unicorn status in March 2026, approximately 17 months after Y Combinator demo day, making it the fastest Y Combinator company to reach unicorn status. Valued at $2.2 billion according to some sources discussing additional funding rounds.",
+            "source": [
+              "https://www.morningstar.com/news/business-wire/20260330024111/correcting-and-replacing-starcloud-raises-170m-series-a-at-11bn-valuation-led-by-benchmark-and-eqt-ventures"
+            ],
+            "type": {
+              "code": "valuation",
+              "label": "Valuation"
+            },
+            "value": "$1.1 billion"
+          },
+          {
+            "description": "Series A funding round led by Benchmark and EQT Ventures in March 2026. Total funding approximately $200 million including prior seed rounds. Round was more than double the next largest YC Series A.",
+            "source": [
+              "https://www.morningstar.com/news/business-wire/20260330024111/correcting-and-replacing-starcloud-raises-170m-series-a-at-11bn-valuation-led-by-benchmark-and-eqt-ventures"
+            ],
+            "type": {
+              "code": "funding_raised",
+              "label": "Funding Raised"
+            },
+            "value": "$170 million"
+          },
+          {
+            "description": "Fastest Y Combinator startup to reach unicorn status, achieving $1 billion valuation just 17 months after demo day.",
+            "source": [
+              "https://www.morningstar.com/news/business-wire/20260330024111/correcting-and-replacing-starcloud-raises-170m-series-a-at-11bn-valuation-led-by-benchmark-and-eqt-ventures"
+            ],
+            "type": {
+              "code": "regulatory_milestones",
+              "label": "Regulatory Milestones"
+            },
+            "value": "17 months"
+          },
+          {
+            "description": "FCC-filed plan for constellation of orbital data centers. Targets approximately 20 GW of compute capacity deployment.",
+            "source": [
+              "https://spacenews.com/starclouds-path-to-88000-computing-satellites/"
+            ],
+            "type": {
+              "code": "infrastructure_footprint",
+              "label": "Infrastructure Footprint"
+            },
+            "value": "88,000 satellites"
+          },
+          {
+            "description": "Starcloud-1 launched via SpaceX, carrying the first NVIDIA H100 GPU in orbit. First spacecraft to train an LLM in space.",
+            "source": [
+              "https://www.starcloud.com/"
+            ],
+            "type": {
+              "code": "regulatory_milestones",
+              "label": "Regulatory Milestones"
+            },
+            "value": "November 2025"
+          },
+          {
+            "description": "Starcloud-2 targeted for launch January 2027 on Falcon 9, featuring GPU cluster with persistent storage and 24/7 access. First commercial mission.",
+            "source": [
+              "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/"
+            ],
+            "type": {
+              "code": "regulatory_milestones",
+              "label": "Regulatory Milestones"
+            },
+            "value": "2027"
+          },
+          {
+            "description": "Starcloud-3 planned for SpaceX Starship deployment mid-to-late 2028. 200-kilowatt design, 3-ton spacecraft for high-volume manufacturing.",
+            "source": [
+              "https://techcrunch.com/2026/03/30/starcloud-raises-170-million-series-ato-build-data-centers-in-space/"
+            ],
+            "type": {
+              "code": "regulatory_milestones",
+              "label": "Regulatory Milestones"
+            },
+            "value": "2028"
+          },
+          {
+            "description": "Proposed constellation scale. Manufacturing facility in Woodinville, WA being established for production ramp.",
+            "source": [
+              "https://spacenews.com/starclouds-path-to-88000-computing-satellites/"
+            ],
+            "type": {
+              "code": "production_capacity",
+              "label": "Production Capacity"
+            },
+            "value": "88,000 satellites"
+          }
+        ],
+        "partnership": [
+          {
+            "announced_on": {
+              "day": 30,
+              "month": 3,
+              "year": 2026
+            },
+            "description": "Strategic partner developing space-optimized chips including Vera Rubin Space One module delivering up to 25x more AI compute than H100. NVIDIA CEO Jensen Huang announced partnership at GTC 2026. Starcloud participated in H100 launch in November 2025 and plans to use Blackwell chips on Starcloud-2.",
+            "name": "NVIDIA",
+            "source": [
+              "https://spacenews.com/starclouds-path-to-88000-computing-satellites/"
+            ],
+            "strategic_tier": "Core",
+            "type": {
+              "code": "technology_integration",
+              "label": "Technology or Integration"
+            },
+            "uuid": "000000q"
+          },
+          {
+            "announced_on": {
+              "day": 26,
+              "month": 5,
+              "year": 2026
+            },
+            "description": "Ordered 50+ mini laser terminals from Starlink for Starcloud-2 satellites enabling 25Gbps optical inter-satellite links over 4,000km. Existing relationship includes launch services via Falcon 9 and Starship, and Starlink terminal integration. Starcloud uses SpaceX for all launches including Starcloud-1 (November 2025) and planned Starship deployment for Starcloud-3.",
+            "name": "SpaceX (Starlink)",
+            "source": [
+              "https://www.datacenterdynamics.com/en/news/starcloud-buys-50-isl-lasers-off-starlink-for-orbital-data-center-network/"
+            ],
+            "strategic_tier": "Core",
+            "type": {
+              "code": "technology_integration",
+              "label": "Technology or Integration"
+            },
+            "uuid": "0000432"
+          },
+          {
+            "announced_on": {
+              "day": 30,
+              "month": 3,
+              "year": 2026
+            },
+            "description": "Early customer and strategic partner with binding energy offtake agreement for 10 gigawatts of power from early 2030s. Crusoe provides energy infrastructure for orbital compute deployment.",
+            "name": "Crusoe",
+            "source": [
+              "https://spacenews.com/starclouds-path-to-88000-computing-satellites/"
+            ],
+            "strategic_tier": "Core",
+            "type": {
+              "code": "strategic_codevelopment",
+              "label": "Strategic or Co-development Partner"
+            },
+            "uuid": "00005vx"
+          },
+          {
+            "announced_on": {
+              "day": 30,
+              "month": 3,
+              "year": 2026
+            },
+            "description": "Formal partnership with AWS for cloud integration. Starcloud-2 will host AWS Outposts offering, enabling AWS services from orbital infrastructure.",
+            "name": "Amazon Web Services (AWS)",
+            "source": [
+              "https://www.morningstar.com/news/business-wire/20260330024111/correcting-and-replacing-starcloud-raises-170m-series-a-at-11bn-valuation-led-by-benchmark-and-eqt-ventures"
+            ],
+            "strategic_tier": "Core",
+            "type": {
+              "code": "technology_integration",
+              "label": "Technology or Integration"
+            },
+            "uuid": "00008qf"
+          },
+          {
+            "announced_on": {
+              "day": 30,
+              "month": 3,
+              "year": 2026
+            },
+            "description": "Existing collaboration with Google Cloud for orbital compute integration. Partnership enables Google Cloud services deployment in space.",
+            "name": "Google Cloud",
+            "source": [
+              "https://www.morningstar.com/news/business-wire/20260330024111/correcting-and-replacing-starcloud-raises-170m-series-a-at-11bn-valuation-led-by-benchmark-and-eqt-ventures"
+            ],
+            "strategic_tier": "Core",
+            "type": {
+              "code": "technology_integration",
+              "label": "Technology or Integration"
+            },
+            "uuid": "0000d34"
+          },
+          {
+            "announced_on": {
+              "day": 13,
+              "month": 5,
+              "year": 2026
+            },
+            "description": "Power purchase agreement signed with Star Catcher Industries for optical power beaming technology to provide power from space-based solar collection.",
+            "name": "Star Catcher Industries",
+            "source": [
+              "https://spacedaily.com/sd-n-a-a-florida-startup-just-raised-65-million-to-beam-concentrated-sunlight-at-satellites-and-the-customer-list-shows-how-fast-orbital-power-is-becoming-a-real-market/"
+            ],
+            "strategic_tier": "Minor",
+            "type": {
+              "code": "strategic_codevelopment",
+              "label": "Strategic or Co-development Partner"
+            },
+            "uuid": "0000k6h"
+          },
+          {
+            "description": "Customer for which Starcloud processes Earth observation satellite data commercially, eliminating downlink bottlenecks for Capella's raw satellite imagery.",
+            "name": "Capella Space",
+            "source": [
+              "https://thenextweb.com/news/starcloud-170m-series"
+            ],
+            "strategic_tier": "Minor",
+            "type": {
+              "code": "others",
+              "label": "Others"
+            },
+            "uuid": "00005n9"
+          }
+        ],
+        "recent_move": [
+          {
+            "date": {
+              "day": 30,
+              "month": 3,
+              "year": 2026
+            },
+            "description": "Raised a $170M Series A at a $1.1B post-money valuation in March 2026, co-led by Benchmark and EQT Ventures with Macquarie Capital, NFX, Nebular, Y Combinator, and Nvidia participating, becoming the fastest Y Combinator company to reach unicorn status (17 months post-demo day).",
+            "source": [
+              "https://www.morningstar.com/news/business-wire/20260330024111/correcting-and-replacing-starcloud-raises-170m-series-a-at-11bn-valuation-led-by-benchmark-and-eqt-ventures"
+            ],
+            "type": {
+              "code": "funding_round",
+              "label": "Funding Round"
+            }
+          },
+          {
+            "date": {
+              "month": 11,
+              "year": 2025
+            },
+            "description": "Launched Starcloud-1 aboard SpaceX in November 2025, placing the first NVIDIA H100 GPU in orbit and demonstrating the first LLM training (nanoGPT) and inference (Gemini) in space.",
+            "source": [
+              "https://www.starcloud.com/"
+            ],
+            "type": {
+              "code": "product_launch",
+              "label": "Product Launch"
+            }
+          },
+          {
+            "date": {
+              "year": 2026
+            },
+            "description": "Signed a strategic co-development with NVIDIA, announced at GTC 2026, to field the Vera Rubin Space One module delivering up to 25x more AI compute than the H100 in orbit, with Starcloud as launch partner.",
+            "source": [
+              "https://spacenews.com/starclouds-path-to-88000-computing-satellites/"
+            ],
+            "type": {
+              "code": "partnership",
+              "label": "Partnership"
+            }
+          },
+          {
+            "date": {
+              "day": 30,
+              "month": 3,
+              "year": 2026
+            },
+            "description": "Signed a binding energy offtake agreement with Crusoe for 10 GW of orbital compute power from the early 2030s, locking in a flagship customer relationship ahead of Starcloud-2 commercial operations.",
+            "source": [
+              "https://spacenews.com/starclouds-path-to-88000-computing-satellites/"
+            ],
+            "type": {
+              "code": "partnership",
+              "label": "Partnership"
+            }
+          },
+          {
+            "date": {
+              "day": 30,
+              "month": 3,
+              "year": 2026
+            },
+            "description": "Established formal cloud platform partnerships with AWS (Starcloud-2 to host AWS Outposts) and Google Cloud, integrating orbital compute into the two largest hyperscaler ecosystems.",
+            "source": [
+              "https://www.morningstar.com/news/business-wire/20260330024111/correcting-and-replacing-starcloud-raises-170m-series-a-at-11bn-valuation-led-by-benchmark-and-eqt-ventures"
+            ],
+            "type": {
+              "code": "partnership",
+              "label": "Partnership"
+            }
+          },
+          {
+            "date": {
+              "month": 3,
+              "year": 2026
+            },
+            "description": "Opened a 3,000-square-meter satellite manufacturing facility in Woodinville, Washington, to support Starcloud-3 production and ramp toward an 88,000-satellite constellation.",
+            "source": [
+              "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/"
+            ],
+            "type": {
+              "code": "expansion",
+              "label": "Expansion"
+            }
+          },
+          {
+            "date": {
+              "month": 3,
+              "year": 2026
+            },
+            "description": "Starcloud is setting up a new 3,000-square-meter production facility in Woodinville, Washington to support the development and manufacturing of Starcloud-3 satellites.",
+            "source": [
+              "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/"
+            ],
+            "title": "New Woodinville Manufacturing Facility",
+            "type": {
+              "code": "expansion",
+              "label": "Expansion"
+            }
+          }
+        ],
+        "expansion_highlight": [
+          {
+            "description": "Public roadmap from Starcloud-1 (60 kg H100 demo, Nov 2025) through Starcloud-2 (smallsat GPU cluster with persistent storage, Jan 2027), Starcloud-3 (3-ton, 200 kW spacecraft on Starship, mid-to-late 2028), and Starcloud-4 indicates a clear product cadence scaling toward gigawatt-class orbital compute.",
+            "type": {
+              "code": "new_product_line",
+              "label": "New Product Line"
+            }
+          },
+          {
+            "description": "$200M raised across seed and a $170M Series A in March 2026, with valuation reportedly reaching $1.1B–$2.2B, provides capital to underwrite a multi-year hardware and constellation build-out that would not be fundable from operating cash flow.",
+            "type": {
+              "code": "funding_signal",
+              "label": "Funding Signal"
+            }
+          },
+          {
+            "description": "FCC filing for up to 88,000 satellites in 600–850 km sun-synchronous orbit targeting ~20 GW of compute capacity signals intent to evolve from a single-satellite demonstrator into a regulated, large-scale orbital infrastructure franchise.",
+            "type": {
+              "code": "ecosystem_buildout",
+              "label": "Ecosystem Buildout"
+            }
+          },
+          {
+            "description": "Addition of sovereign cloud and government as explicit segments, supported by an In-Q-Tel investment and a power purchase agreement with Star Catcher Industries for space-based optical power beaming, points to expansion beyond commercial hyperscalers into defense and sovereign buyers.",
+            "type": {
+              "code": "new_customer_segment",
+              "label": "New Customer Segment"
+            }
+          },
+          {
+            "description": "Hiring senior commercial and strategy leaders (Head of Strategy & Growth from US Space Force; Head of Global Business Development, Commercial ex-Rocket Lab, Astranis, Cisco) plus engineering hires from Amazon Leo, SpaceX Starshield, and Blue Origin, alongside an active Greenhouse careers page, signals aggressive organizational scaling ahead of Starcloud-2.",
+            "type": {
+              "code": "hiring_signal",
+              "label": "Hiring Signal"
+            }
+          },
+          {
+            "description": "Integration with AWS Outposts and Google Cloud on Starcloud-2 effectively turns the two largest hyperscalers into distribution channels for orbital compute, expanding the addressable sales motion from direct enterprise sales into marketplace-style delivery.",
+            "type": {
+              "code": "new_channel",
+              "label": "New Channel"
+            }
+          }
+        ]
+      },
+      "management_profile": {
+        "number_of_profiles": 18,
+        "profiles": [
+          {
+            "designation": "Co-Founder & CEO",
+            "designation_category": {
+              "code": "chief_executive_officer",
+              "label": "Chief Executive Officer"
+            },
+            "education": "Philip holds an MPA in National Security & Technology from Harvard University, an MBA from Wharton, and an MA in Applied Mathematics & Theoretical Physics from Columbia University; he is also a CFA Charter holder.",
+            "name": "Philip Johnston",
+            "overview": "Second-time founder and CEO of Starcloud; previously a consultant at McKinsey & Co. working on satellite projects for national space agencies.",
+            "previous_companies": [
+              "McKinsey & Co."
+            ],
+            "profile_commentary": "Philip Johnston co-founded Starcloud (originally Lumen Orbit) in January 2024 and leads the company as CEO. He is a second-time founder whose prior experience at McKinsey & Co. included satellite projects for national space agencies, giving him both the space-industry context and the strategic consulting background to position Starcloud against hyperscaler infrastructure needs. He holds an MPA in National Security & Technology from Harvard University, an MBA from Wharton, an MA in Applied Mathematics & Theoretical Physics from Columbia University, and is a CFA Charter holder. Under his leadership the company raised approximately $200 million across seed and Series A rounds and achieved unicorn status in March 2026.",
+            "source": [
+              "https://www.starcloud.com/"
+            ]
+          },
+          {
+            "designation": "Co-Founder & CTO",
+            "designation_category": {
+              "code": "cxo",
+              "label": "CXO"
+            },
+            "education": "Ezra holds a PhD in Materials Engineering from Imperial College London.",
+            "name": "Ezra Feilden",
+            "overview": "Co-founder and CTO of Starcloud; PhD in Materials Engineering with a decade of experience designing satellites and large deployable structures.",
+            "previous_companies": [
+              "Airbus Defense & Space (SSTL)",
+              "Oxford Space Systems"
+            ],
+            "profile_commentary": "Ezra Feilden co-founded Starcloud and serves as CTO. He brings roughly a decade of satellite design experience, with specialization in deployable solar arrays and large deployable structures, and has worked on missions including NASA's Lunar Pathfinder at Airbus Defense & Space (SSTL) and Oxford Space Systems. His PhD in Materials Engineering from Imperial College London underpins the proprietary thermal management and deployable radiator technology that is central to Starcloud's orbital data center design.",
+            "source": [
+              "https://www.starcloud.com/"
+            ]
+          },
+          {
+            "designation": "Co-Founder & Chief Engineer",
+            "designation_category": {
+              "code": "cxo",
+              "label": "CXO"
+            },
+            "education": "Adi holds degrees in Computer Science from University of Bucharest and in Chemistry from University Politehnica of Bucharest.",
+            "name": "Adi Oltean",
+            "overview": "Co-founder and Chief Engineer of Starcloud; veteran software engineer with experience at SpaceX (tracking beams for Starlink) and 20 years at Microsoft working on production GPU clusters.",
+            "previous_companies": [
+              "SpaceX",
+              "Microsoft"
+            ],
+            "profile_commentary": "Adi Oltean is a co-founder and Chief Engineer at Starcloud. He was previously a Principal Software Engineer at SpaceX, where he was the responsible engineer for 'tracking beams' that enable Starlink to support other spacecraft, including Starship. Before SpaceX, he spent 20 years as a Principal Software Engineer at Microsoft working on large production GPU clusters and is credited as inventor on more than 25 unique patents. He holds degrees in Computer Science from University of Bucharest and in Chemistry from University Politehnica of Bucharest.",
+            "source": [
+              "https://www.starcloud.com/"
+            ]
+          },
+          {
+            "designation": "Engineering Manager",
+            "designation_category": {
+              "code": "head_of_department",
+              "label": "Head of Department"
+            },
+            "education": "Bailey holds a BS in Mechanical Engineering from MIT.",
+            "name": "Bailey Montaño",
+            "overview": "Engineering Manager at Starcloud with prior experience at SpaceX on Raptor/Merlin engines and at Helion Energy leading the arc fusion crucible program.",
+            "previous_companies": [
+              "SpaceX",
+              "NASA Goddard Space Flight Center",
+              "Helion Energy"
+            ],
+            "profile_commentary": "Bailey Montaño is an Engineering Manager at Starcloud. He spent four years as a mechanical engineer at SpaceX working on the Raptor and Merlin engines, earlier interned at NASA's Goddard Space Flight Center, and after SpaceX was a senior mechanical engineer at Helion Energy where he was program lead and head designer of the arc fusion crucible program. He holds a BS in Mechanical Engineering from MIT.",
+            "source": [
+              "https://www.starcloud.com/team"
+            ]
+          },
+          {
+            "designation": "Principal Software Engineer",
+            "designation_category": {
+              "code": "others",
+              "label": "Others"
+            },
+            "education": "Cristian holds a BSc in Computer Science from The Politehnica University of Bucharest and an MS in Computer Science & Engineering from the University of Washington.",
+            "name": "Cristian Pop",
+            "overview": "Principal Software Engineer at Starcloud with 16 years at Microsoft Azure working on silicon and cloud hardware infrastructure.",
+            "previous_companies": [
+              "Microsoft",
+              "University of Washington"
+            ],
+            "profile_commentary": "Cristian Pop is a Principal Software Engineer at Starcloud. He spent 16 years at Microsoft, most recently as a Principal Software Engineer at Azure doing silicon and cloud hardware infrastructure engineering. He previously wrote software for the HuskySat-1 satellite and taught Embedded and Real-time Systems at the University of Washington for 3 years. He holds a BSc in CS from The Politehnica University of Bucharest and an MS in Computer Science & Engineering from the University of Washington.",
+            "source": [
+              "https://www.starcloud.com/team"
+            ]
+          },
+          {
+            "designation": "Manufacturing Engineer",
+            "designation_category": {
+              "code": "others",
+              "label": "Others"
+            },
+            "education": "Dylan holds a BS in Polymer Materials Engineering from Western Washington University.",
+            "name": "Dylan Chang",
+            "overview": "Manufacturing Engineer at Starcloud with prior SpaceX experience on Starlink hardware and the Dragon 2 crew capsule.",
+            "previous_companies": [
+              "SpaceX"
+            ],
+            "profile_commentary": "Dylan Chang is a Manufacturing Engineer at Starcloud. He spent four years at SpaceX, most recently as a mechanical engineer at Starlink responsible for designing, building, and testing hardware elements, and before that as a manufacturing engineer designing the manufacturing process for SpaceX's Dragon 2 human spaceflight crew capsule. He holds a BS in Polymer Materials Engineering from Western Washington University.",
+            "source": [
+              "https://www.starcloud.com/team"
+            ]
+          },
+          {
+            "designation": "Engineering Operations Lead",
+            "designation_category": {
+              "code": "head_of_department",
+              "label": "Head of Department"
+            },
+            "name": "Miguel Rivera",
+            "overview": "Engineering Operations Lead at Starcloud, formerly Senior Fusion Technician at Helion Energy and a decade with the US Army 101st Airborne Division.",
+            "previous_companies": [
+              "Helion Energy",
+              "US Army 101st Airborne Division"
+            ],
+            "profile_commentary": "Miguel Rivera is Engineering Operations Lead at Starcloud. He was previously a Senior Fusion Technician at Helion Energy, where he led the welding and fabrication department, and has 8 years of experience in various high-tech welding and fabrication roles. He also spent a decade in the US Army's 101st Airborne Division, with deployments to Afghanistan and Iraq.",
+            "source": [
+              "https://www.starcloud.com/team"
+            ]
+          },
+          {
+            "designation": "Senior Electrical Engineer",
+            "designation_category": {
+              "code": "others",
+              "label": "Others"
+            },
+            "education": "Stephen holds a BS in Electrical Engineering from Purdue University.",
+            "name": "Stephen Carlson",
+            "overview": "Senior Electrical Engineer at Starcloud with 11 years at Microsoft Azure focused on GPU firmware and devices.",
+            "previous_companies": [
+              "Microsoft"
+            ],
+            "profile_commentary": "Stephen Carlson is a Senior Electrical Engineer at Starcloud. He previously spent 11 years at Microsoft, most recently at Azure as a Senior Software Engineer working on firmware for GPUs, and before that as an Electrical Engineer in the devices division. He has also designed and built the hardware and software for satellites and high-altitude balloons equipped with GPUs for edge processing to detect wildfires. He holds a BS in Electrical Engineering from Purdue University.",
+            "source": [
+              "https://www.starcloud.com/team"
+            ]
+          },
+          {
+            "designation": "Mechanical Engineer",
+            "designation_category": {
+              "code": "others",
+              "label": "Others"
+            },
+            "education": "Yaseem holds a BS in Mechanical Engineering from MIT.",
+            "name": "Yaseem Rana",
+            "overview": "Mechanical Engineer at Starcloud with prior aerospace experience at Astra and Cuberg on rocket sensors, hall thrust computers, and Li-metal battery packs.",
+            "previous_companies": [
+              "Astra",
+              "Cuberg"
+            ],
+            "profile_commentary": "Yaseem Rana is a Mechanical Engineer at Starcloud. He spent four years at various aerospace companies, working as an engineer at Astra on rocket sensor and hall thrust computer systems, and as a senior engineer at Cuberg on high-performance Li-metal battery packs. He holds a BS in Mechanical Engineering from MIT.",
+            "source": [
+              "https://www.starcloud.com/team"
+            ]
+          },
+          {
+            "designation": "Lead Senior Technician",
+            "designation_category": {
+              "code": "others",
+              "label": "Others"
+            },
+            "education": "Camilo holds a Bachelor's from Rutgers University where he studied Mechanical Engineering and Criminology.",
+            "name": "Camilo Lopez",
+            "overview": "Lead Senior Technician at Starcloud, previously Lead Senior Fusion Technician at Helion Energy and Lead CNC Operator producing precision components for SpaceX and other aerospace clients.",
+            "previous_companies": [
+              "Helion Energy"
+            ],
+            "profile_commentary": "Camilo Lopez is Lead Senior Technician at Starcloud. He was previously a Lead Senior Fusion Technician at Helion Energy, where he led the build of the Polaris fusion reactor power system, and before that was a Lead CNC Operator producing precision components for SpaceX and other aerospace clients. He holds a Bachelor's from Rutgers University where he studied Mechanical Engineering and Criminology.",
+            "source": [
+              "https://www.starcloud.com/team"
+            ]
+          },
+          {
+            "designation": "Software Engineer",
+            "designation_category": {
+              "code": "others",
+              "label": "Others"
+            },
+            "education": "Arman is currently studying for a Masters in Computer Science at Georgia Tech.",
+            "name": "Arman Pithawala",
+            "overview": "Software Engineer at Starcloud joining from Amazon's Leo satellite constellation and previously Graphiant.",
+            "previous_companies": [
+              "Amazon's Leo satellite constellation",
+              "Graphiant"
+            ],
+            "profile_commentary": "Arman Pithawala is a Software Engineer at Starcloud. He joins from Amazon's Leo satellite constellation where he was a software engineer, and prior to that was a software engineer at Graphiant where he developed a distributed architecture for network orchestration on Azure. He is currently studying for a Masters in Computer Science at Georgia Tech.",
+            "source": [
+              "https://www.starcloud.com/team"
+            ]
+          },
+          {
+            "designation": "Integration Engineer",
+            "designation_category": {
+              "code": "others",
+              "label": "Others"
+            },
+            "education": "Catherine holds a BS in Mechanical Engineering from Boise State University, where she was part of a NASA Micro-gravity Research Team.",
+            "name": "Catherine Gale",
+            "overview": "Integration Engineer at Starcloud previously working on SpaceX's Starshield satellite constellation.",
+            "previous_companies": [
+              "SpaceX (Starshield)"
+            ],
+            "profile_commentary": "Catherine Gale is an Integration Engineer at Starcloud. She previously worked as an engineer on SpaceX's Starshield satellite constellation based in Redmond, WA. She holds a BS in Mechanical Engineering from Boise State University where she was also part of a NASA Micro-gravity Research Team.",
+            "source": [
+              "https://www.starcloud.com/team"
+            ]
+          },
+          {
+            "designation": "Technician",
+            "designation_category": {
+              "code": "others",
+              "label": "Others"
+            },
+            "name": "Dylan Caldwell",
+            "overview": "Technician at Starcloud with 5 years of welding and fabrication experience focused on thermal system components.",
+            "profile_commentary": "Dylan Caldwell is a Technician at Starcloud with 5 years of welding and fabrication experience, with a particular focus on technologies necessary for the Starcloud thermal system including fluid pipe routing, seals, pumps, air handlers, and other structural components.",
+            "source": [
+              "https://www.starcloud.com/team"
+            ]
+          },
+          {
+            "designation": "Senior Manufacturing Engineer",
+            "designation_category": {
+              "code": "others",
+              "label": "Others"
+            },
+            "education": "Sam holds a Bachelor's degree in Mechanical Engineering from Georgia Institute of Technology.",
+            "name": "Sam Derochers",
+            "overview": "Senior Manufacturing Engineer at Starcloud previously at Amazon's Leo satellite constellation and SpaceX Starlink.",
+            "previous_companies": [
+              "Amazon's Leo satellite constellation",
+              "SpaceX"
+            ],
+            "profile_commentary": "Sam Derochers is a Senior Manufacturing Engineer at Starcloud. He previously spent 5 years as a Senior Manufacturing Engineer at Amazon's Leo satellite constellation, and before that three years at SpaceX as an engineer working on Starlink. He holds a Bachelor's degree in Mechanical Engineering from Georgia Institute of Technology.",
+            "source": [
+              "https://www.starcloud.com/team"
+            ]
+          },
+          {
+            "designation": "Support Engineer",
+            "designation_category": {
+              "code": "others",
+              "label": "Others"
+            },
+            "name": "Jared Long",
+            "overview": "Support Engineer at Starcloud previously at Amazon's Leo satellite constellation, Blue Origin's New Glenn, and in enterprise network architecture for Qualcomm and Parker Aerospace.",
+            "previous_companies": [
+              "Amazon's Leo satellite constellation",
+              "Blue Origin (New Glenn)",
+              "Qualcomm",
+              "Parker Aerospace"
+            ],
+            "profile_commentary": "Jared Long is a Support Engineer at Starcloud. He joins from Amazon's Leo satellite constellation, where he built test infrastructure for the optical inter-satellite link division, and before that worked on the New Glenn avionics platform team at Blue Origin, focusing on system integration and performance monitoring. He has prior years of experience in enterprise network architecture, designing networks for companies including Qualcomm and Parker Aerospace.",
+            "source": [
+              "https://www.starcloud.com/team"
+            ]
+          },
+          {
+            "designation": "Head of Strategy & Growth",
+            "designation_category": {
+              "code": "head_of_department",
+              "label": "Head of Department"
+            },
+            "education": "Peter holds a Masters in Systems Engineering from the University of Virginia.",
+            "name": "Peter Potecha",
+            "overview": "Head of Strategy & Growth at Starcloud; former US Space Force officer leading GPS, missile warning, and Golden Dome acquisition programs.",
+            "previous_companies": [
+              "US Space Force"
+            ],
+            "profile_commentary": "Peter Potecha is Head of Strategy & Growth at Starcloud. He served as a US Space Force officer leading major defense acquisition programs across GPS Space Vehicle mission ops, missile warning/tracking, and as Executive Officer to General Guetlein, Director of Golden Dome. He remains a USAF Reservist shaping space acquisition strategy. He holds a Masters in Systems Engineering from the University of Virginia.",
+            "source": [
+              "https://www.starcloud.com/team"
+            ]
+          },
+          {
+            "designation": "Head of Global Business Development, Commercial",
+            "designation_category": {
+              "code": "head_of_department",
+              "label": "Head of Department"
+            },
+            "name": "Ajmair Heer",
+            "overview": "Head of Global Business Development, Commercial at Starcloud; previously led commercial BD at Rocket Lab, international growth at Astranis, and regional leadership at Cisco.",
+            "previous_companies": [
+              "Rocket Lab",
+              "Astranis",
+              "Cisco"
+            ],
+            "profile_commentary": "Ajmair Heer is Head of Global Business Development, Commercial at Starcloud. He most recently led commercial business development for space systems at Rocket Lab, focusing on multi-satellite programs and market expansion, and previously led international growth at Astranis across mobility and broadband segments. Earlier, he spent nearly two decades in the satellite/networking ecosystem, mainly at Cisco, in regional leadership roles across APAC and the Americas.",
+            "source": [
+              "https://www.starcloud.com/team"
+            ]
+          },
+          {
+            "designation": "Electrical Engineer",
+            "designation_category": {
+              "code": "others",
+              "label": "Others"
+            },
+            "education": "Elizavetta holds an MS in Computer and Electrical Engineering from the University of Florida.",
+            "name": "Elizavetta Stetsenko",
+            "overview": "Electrical Engineer at Starcloud with internships at SpaceX (Starship Avionics Crew) and Blue Origin (New Shepard avionics testing).",
+            "previous_companies": [
+              "SpaceX",
+              "Blue Origin"
+            ],
+            "profile_commentary": "Elizavetta Stetsenko is an Electrical Engineer at Starcloud. She previously interned at SpaceX on the Starship Avionics Crew team in Hawthorne, CA, working on power electronics and RF test systems, and also interned at Blue Origin on Avionics testing for New Shepard. She holds an MS in Computer and Electrical Engineering from the University of Florida.",
+            "source": [
+              "https://www.starcloud.com/team"
+            ]
+          }
+        ]
+      },
+      "financial_estimate": {
+        "revenue_estimate": {
+          "code": "pre_revenue",
+          "label": "Pre-revenue"
+        },
+        "valuation_estimate": {
+          "code": "1b_5b",
+          "label": "$1B-$5B"
+        }
+      },
+      "funding_detail": {
+        "funding_overview": {
+          "funding_stage": {
+            "code": "series_a",
+            "label": "Series A"
+          },
+          "last_funding_date": {
+            "month": 8,
+            "year": 2026
+          },
+          "total_funding_usd": 443900000
+        },
+        "funding_rounds": [
+          {
+            "id": 15558947,
+            "date": {
+              "month": 8,
+              "year": 2026
+            },
+            "round": {
+              "code": "series_a",
+              "label": "Series A"
+            }
+          },
+          {
+            "id": 7584297,
+            "date": {
+              "month": 3,
+              "year": 2026
+            },
+            "round": {
+              "code": "series_a",
+              "label": "Series A"
+            }
+          },
+          {
+            "id": 12112,
+            "date": {
+              "month": 2,
+              "year": 2025
+            },
+            "round": {
+              "code": "seed",
+              "label": "Seed"
+            }
+          }
+        ],
+        "investors": [
+          {
+            "name": "Cedar Hill Capital",
+            "type": {
+              "code": "private",
+              "label": "Private"
+            },
+            "uuid": "000b21c",
+            "website": "https://cedaribsicapital.vc"
+          },
+          {
+            "name": "Cisco Investments",
+            "type": {
+              "code": "private",
+              "label": "Private"
+            },
+            "uuid": "000034g",
+            "website": "http://www.ciscoinvestments.com"
+          },
+          {
+            "name": "Goanna Capital",
+            "type": {
+              "code": "private",
+              "label": "Private"
+            },
+            "uuid": "0007df8",
+            "website": "https://goannacapital.com"
+          }
+        ],
+        "note": "Additional data available on Enterprise tier: 3 more funding rounds; 44 more investors; last funding date; funding round details - date, investors, amount, news articles; investor details - date of entry and rounds participated."
+      }
+    },
+    "credits_consumed": 8.0
+  },
+  "fetched_at": "2026-10-24T16:24:01.080179+00:00",
+  "credits_consumed": 8.0
+}

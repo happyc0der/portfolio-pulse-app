@@ -499,6 +499,9 @@ SIGNAL_RULES: dict[str, tuple[str, int, str]] = {
 }
 
 
+REPORTED_NEWS_TYPES = {"news_analysis", "investigative"}
+
+
 def classify_article(article: dict[str, Any]) -> dict[str, Any] | None:
     tag = article_primary_tag(article)
     code = str(tag.get("code") or "").upper() if tag else ""
@@ -509,7 +512,10 @@ def classify_article(article: dict[str, Any]) -> dict[str, Any] | None:
     sentiment = str(article.get("sentiment") or "neutral").lower()
     if code == "LG01":
         category, severity, action = ("People-negative", 3, "Check-in call with the founder this week") if sentiment == "negative" else ("People-positive", 1, "Congratulate the new leader")
-    if category in {"Funding", "Product", "People-positive"} and sentiment == "negative":
+    # Negative sentiment escalates only reported news. Explainers, opinion, reviews and promotional
+    # pieces about a launch are not risks to the company (akta marks ~2/3 of articles "explainer").
+    article_type = str((article.get("article_type") or {}).get("code") or "news_analysis").lower()
+    if category in {"Funding", "Product", "People-positive"} and sentiment == "negative" and article_type in REPORTED_NEWS_TYPES:
         category, severity, action = "Risk", 3, "Risk flag: call the founder, prepare an LP note"
     return {**article, "category": "People" if category.startswith("People-") else category, "severity": severity, "suggested_action": action, "tag_code": code, "tag_name": str(tag.get("name") or "")}
 
@@ -779,7 +785,7 @@ async def fetch_akta_endpoint(company: dict[str, Any], endpoint: str, company_id
             if endpoint == "C":
                 params["limit"] = 10
             if endpoint == "D":
-                params["sections"] = "firmographic,strategic_signal,management_profile,financial_estimate"
+                params["sections"] = "firmographic,strategic_signal,management_profile,financial_estimate,funding_detail"
         try:
             response = await request_akta(client, method, path, params=params, json_body=body, endpoint=endpoint)
         except (httpx.HTTPError, RuntimeError):

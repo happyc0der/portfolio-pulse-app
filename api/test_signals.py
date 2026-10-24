@@ -66,3 +66,16 @@ def test_pulse_decay_uses_half_life_of_90_days():
     one_event = {"severity": 2, "published_date": (today - timedelta(days=90)).isoformat() + "T12:00:00"}
     assert calculate_pulse([one_event], today=today) == 1.0
     assert calculate_pulse([{**one_event, "published_date": today.isoformat()}], today=today) == 2.0
+
+
+def test_negative_explainer_does_not_escalate_to_risk():
+    article = signal("SD01", sentiment="negative")
+    article["article_type"] = {"code": "explainer", "label": "Explainer"}
+    result = classify_article(article)
+    assert result["category"] == "Product" and result["severity"] == 1
+
+
+def test_negative_reported_news_still_escalates_to_risk():
+    article = signal("SD01", sentiment="negative")
+    article["article_type"] = {"code": "news_analysis", "label": "News analysis"}
+    assert classify_article(article)["category"] == "Risk"
