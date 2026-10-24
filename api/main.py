@@ -1,6 +1,7 @@
 import asyncio
 import json
 import os
+import time
 import re
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -12,6 +13,7 @@ from pydantic import BaseModel
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
 from api import tracing
+from api.citations import citation_checked_text
 from api.tracing import citation_metrics, prism_enabled, prism_selftest, traced_chat
 from api import roundtable
 from dotenv import dotenv_values, load_dotenv
@@ -101,7 +103,112 @@ def read_custom_funds() -> list[dict[str, Any]]:
         return []
 
 
+# The published backend runs as several server instances, each with its own temporary disk, so a
+# fund added live on one instance was missing on the others (QA saw it vanish within minutes). Each
+# added fund and its news are saved as one file in the team's Roundtable folder, and any instance
+# that lacks it loads it from there.
+SHARED_FUNDS_PREFIX = "funds/"
+SHARED_FUNDS_TTL = 20.0
+SLIM_ARTICLE_FIELDS = ("id", "title", "url", "publisher", "published_date", "sentiment", "tags", "article_type", "ai_summary", "original_language", "newsworthiness_score", "is_breaking")
+_shared_seen: dict[str, Any] = {"at": 0.0, "sizes": {}}
+
+
+def slim_article(article: dict[str, Any]) -> dict[str, Any]:
+    """Roundtable files hold at most 200,000 characters, so a shared fund keeps only what the rules,
+    drafts and LP updates read."""
+    slim = {field: article[field] for field in SLIM_ARTICLE_FIELDS if field in article}
+    slim["ai_summary"] = str(slim.get("ai_summary") or "")[:350]
+    slim["tags"] = [{"code": tag.get("code"), "name": tag.get("name")} for tag in (article.get("tags") or [])[:2] if isinstance(tag, dict)]
+    return slim
+
+
+def write_json_atomic(path: Path, data: Any) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temp = path.with_suffix(path.suffix + ".tmp")
+    temp.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+    os.replace(temp, path)
+
+
+def shared_fund_bundle(slug: str, fund: dict[str, Any], companies: list[dict[str, Any]] | None = None, base: dict[str, Any] | None = None) -> dict[str, Any]:
+    bundle = base if isinstance(base, dict) else {"news": {}, "filters": {}, "search": {}}
+    bundle["fund"] = {key: value for key, value in fund.items() if key != "companies"}
+    bundle["fund"]["companies"] = [{key: value for key, value in company.items() if key in {"name", "website", "uuid"}} for company in fund["companies"]]
+    for company in fund["companies"] if companies is None else companies:
+        key = slugify(company["name"])
+        recent = sorted(read_articles(slug, company["name"]), key=lambda article: str(article.get("published_date", "")), reverse=True)[:10]
+        bundle.setdefault("news", {})[key] = [slim_article(article) for article in recent]
+        try:
+            bundle.setdefault("filters", {})[key] = json.loads(cache_file(slug, f"{key}.filters.json").read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            pass
+        search = read_akta_cache(company["name"], "search")
+        if search:
+            bundle.setdefault("search", {})[key] = search
+    bundle["saved_at"] = time.time()
+    return bundle
+
+
+async def save_shared_fund(slug: str, companies: list[dict[str, Any]] | None = None) -> None:
+    connected, _ = roundtable_config()
+    fund = next((item for item in read_custom_funds() if item["slug"] == slug), None)
+    if not connected or fund is None:
+        return
+    key, bank, path = get_secret("SIGNAL_WATCHER_KEY"), get_secret("ROUNDTABLE_PROJECT"), f"{SHARED_FUNDS_PREFIX}{slug}.json"
+    base = None
+    if companies is not None:
+        # Batches of one import can run on different instances: merge into what is saved.
+        current = await roundtable.call("read_file", key, {"bank": bank, "path": path})
+        try:
+            base = json.loads(current["content"]) if isinstance(current, dict) and current.get("content") else None
+        except (TypeError, ValueError):
+            base = None
+        if base is None:
+            companies = None
+    bundle = shared_fund_bundle(slug, fund, companies, base)
+    await roundtable.call("write_file", key, {"bank": bank, "path": path, "content": json.dumps(bundle, ensure_ascii=False), "message": f"Fund added live: {fund['name']}"})
+    _shared_seen["at"] = 0.0
+
+
+def apply_shared_bundle(bundle: dict[str, Any]) -> None:
+    fund = bundle.get("fund") or {}
+    slug = fund.get("slug")
+    if not slug:
+        return
+    others = [item for item in read_custom_funds() if item["slug"] != slug]
+    write_json_atomic(CACHE_DIR / CUSTOM_FUNDS_FILE, others + [fund])
+    for key, articles in (bundle.get("news") or {}).items():
+        if articles:
+            write_json_atomic(CACHE_DIR / slug / f"{key}.json", articles)
+    for key, meta in (bundle.get("filters") or {}).items():
+        write_json_atomic(CACHE_DIR / slug / f"{key}.filters.json", meta)
+    for key, search in (bundle.get("search") or {}).items():
+        path = AKTA_CACHE_DIR / key / "search.json"
+        if not path.is_file():
+            write_json_atomic(path, search)
+
+
+def hydrate_shared_funds() -> None:
+    connected, _ = roundtable_config()
+    if not connected or time.time() - _shared_seen["at"] < SHARED_FUNDS_TTL:
+        return
+    _shared_seen["at"] = time.time()
+    key, bank = get_secret("SIGNAL_WATCHER_KEY"), get_secret("ROUNDTABLE_PROJECT")
+    listing = roundtable.call_sync("list_files", key, {"bank": bank, "prefix": SHARED_FUNDS_PREFIX})
+    rows = listing.get("files", []) if isinstance(listing, dict) else listing if isinstance(listing, list) else []
+    for row in rows:
+        path, size = str(row.get("path") or ""), row.get("size")
+        if not path.endswith(".json") or _shared_seen["sizes"].get(path) == size:
+            continue
+        found = roundtable.call_sync("read_file", key, {"bank": bank, "path": path})
+        try:
+            apply_shared_bundle(json.loads(found["content"]))
+            _shared_seen["sizes"][path] = size
+        except (TypeError, ValueError, KeyError, OSError):
+            continue
+
+
 def load_funds() -> list[dict[str, Any]]:
+    hydrate_shared_funds()
     with FUNDS_FILE.open(encoding="utf-8") as source:
         data = json.load(source)
     builtin = {fund["slug"] for fund in data}
@@ -140,6 +247,32 @@ def read_articles(fund_slug: str, company_name: str) -> list[dict[str, Any]]:
         return []
 
 
+def akta_cache_for(company: dict[str, Any], endpoint: str) -> dict[str, Any] | None:
+    """Cached akta company data, only when akta's company match has this company's website.
+    A name match once gave Eliyan the data of "Eliya Chocolates"."""
+    search = read_akta_cache(company["name"], "search") or {}
+    match = (search.get("data") or {}).get("match") if isinstance(search.get("data"), dict) else None
+    if match and not same_domain(match.get("website", ""), company.get("website", "")):
+        return None
+    return search if endpoint == "search" else read_akta_cache(company["name"], endpoint)
+
+
+def same_domain(first: str, second: str) -> bool:
+    clean = lambda value: company_domain(value or "").lower().removeprefix("www.")
+    return bool(clean(first)) and clean(first) == clean(second)
+
+
+def company_signals(slug: str, company: dict[str, Any], articles: list[dict[str, Any]] | None = None) -> dict[str, Any]:
+    articles = read_articles(slug, company["name"]) if articles is None else articles
+    clean, irrelevant, language = filter_company_articles(company, articles)
+    market = [article for article in clean if is_market_noise(article)]
+    clean = [article for article in clean if not is_market_noise(article)]
+    classified = [signal for article in clean if (signal := classify_article(article, company)) is not None]
+    merged, duplicates = merge_repeat_reports(classified, company)
+    indicators = [{**event, "id": f"{slugify(company['name'])}-{event['id']}"} for event in derive_indicator_events(akta_cache_for(company, "A"))]
+    return {"articles": clean, "signals": merged + indicators, "indicators": indicators, "filtered_irrelevant": irrelevant, "filtered_language": language, "filtered_market": len(market), "filtered_duplicates": duplicates}
+
+
 def fund_with_cache(slug: str) -> dict[str, Any]:
     fund = get_fund(slug)
     for company in fund["companies"]:
@@ -163,24 +296,27 @@ def fund_with_cache(slug: str) -> dict[str, Any]:
             filter_meta = {}
         filtered_irrelevant = int(filter_meta.get("filtered_irrelevant", inferred_irrelevant))
         filtered_language = int(filter_meta.get("filtered_language", inferred_language))
-        classified = [signal for article in clean_articles if (signal := classify_article(article)) is not None]
-        company["articles"] = classified
+        built = company_signals(slug, company, company["articles"])
+        all_signals = built["signals"]
         company["filtered_irrelevant"] = filtered_irrelevant
         company["filtered_language"] = filtered_language
-        company["filtered_count"] = max(0, len(read_articles(slug, company["name"])) - len(classified))
-        akta_headcount = read_akta_cache(company["name"], "A")
-        indicator_events = derive_indicator_events(akta_headcount)
-        company["indicator_events"] = indicator_events
-        all_signals = classified + indicator_events
+        company["filtered_market"] = built["filtered_market"]
+        company["filtered_duplicates"] = built["filtered_duplicates"]
+        company["filtered_count"] = max(0, len(read_articles(slug, company["name"])) - len(all_signals))
+        company["indicator_events"] = built["indicators"]
         company["articles"] = all_signals
         company["pulse"] = calculate_pulse(all_signals)
         # akta's company search reports public / acquired companies. For a VC those are exits:
         # their stock moves and insider sales are not portfolio events, so the UI keeps them out
         # of "Needs your attention" and the severity counts.
-        search = read_akta_cache(company["name"], "search") or {}
+        search = akta_cache_for(company, "search") or {}
         match = (search.get("data") or {}).get("match") if isinstance(search.get("data"), dict) else None
         status = str((match or {}).get("company_status") or "").lower()
+        correction = EXIT_CORRECTIONS.get(company["name"].casefold())
+        if correction and status not in EXITED_STATUSES:
+            status = "acquired"
         company["company_status"] = status or None
+        company["exit_note"] = correction
         company["exited"] = status in EXITED_STATUSES
         if company["from_snapshot"]:
             company["cached_at"] = snapshot_refreshed_at() or company["cached_at"]
@@ -253,25 +389,7 @@ async def roundtable_selftest() -> dict[str, Any]:
 @app.get("/api/funds")
 def list_funds() -> list[dict[str, Any]]:
     result = []
-    cutoff = date.today() - timedelta(days=90)
     for fund in load_funds():
-        signals = []
-        for company in fund.get("companies", []):
-            articles = read_articles(fund["slug"], company["name"])
-            clean, _, _ = filter_company_articles(company, articles)
-            for article in clean:
-                signal = classify_article(article)
-                if not signal:
-                    continue
-                try:
-                    if date.fromisoformat(str(signal.get("published_date", ""))[:10]) < cutoff:
-                        continue
-                except ValueError:
-                    continue
-                signal["company"] = company["name"]
-                signals.append(signal)
-            signals.extend(derive_indicator_events(read_akta_cache(company["name"], "A")))
-        signals.sort(key=lambda item: (item.get("severity", 0), str(item.get("published_date", ""))), reverse=True)
         result.append({"slug": fund["slug"], "name": fund["name"], "company_count": len(fund["companies"]), "custom": bool(fund.get("custom"))})
     return result
 
@@ -324,6 +442,10 @@ async def import_fund(request: FundImportRequest) -> dict[str, Any]:
     slug = slugify(request.name) or slugify(request.uuid)
     if slug in builtin:
         return {"slug": slug, "name": builtin[slug]["name"], "company_count": len(builtin[slug]["companies"]), "total_matches": None, "credits": 0, "existing": True}
+    hydrate_shared_funds()
+    added = next((fund for fund in read_custom_funds() if fund["slug"] == slug), None)
+    if added and any(read_articles(slug, company["name"]) for company in added["companies"]):
+        return {"slug": slug, "name": added["name"], "company_count": len(added["companies"]), "total_matches": None, "credits": 0, "existing": True}
     headers = {"x-api-key": api_key, "Content-Type": "application/json"}
     bodies = [{"filters": {"funding_detail.funding_rounds.investors.uuid": [request.uuid]}, "limit": 25},
               {"query": f"portfolio companies of the venture capital firm {request.name}", "limit": 25}]
@@ -362,14 +484,13 @@ async def import_fund(request: FundImportRequest) -> dict[str, Any]:
     temp = path.with_suffix(".tmp")
     temp.write_text(json.dumps(custom, ensure_ascii=False, indent=2), encoding="utf-8")
     os.replace(temp, path)
+    await save_shared_fund(slug)
     return {"slug": slug, "name": request.name, "company_count": len(companies), "total_matches": total, "credits": credits, "existing": False}
 
 
 @app.get("/api/funds/{slug}")
 def read_fund(slug: str) -> dict[str, Any]:
-    fund = fund_with_cache(slug)
-    fund.pop("sourceUrl", None)
-    return fund
+    return fund_with_cache(slug)
 
 
 @app.get("/api/funds/{slug}/companies/{company_slug}/status")
@@ -512,6 +633,61 @@ def deduplicate_articles(articles: list[dict[str, Any]]) -> list[dict[str, Any]]
 
 
 EXITED_STATUSES = {"public", "acquired"}  # akta also reports "delisted" for some startups, so it is not used
+# akta.pro still lists these acquired companies as private; each correction names its source.
+EXIT_CORRECTIONS = {
+    "the browser company": "Acquired by Atlassian (announced September 2025)",
+    "zestyai": "Acquired by Aon (FinTech Futures, September 2026)",
+    "hugging face": "Joining Nvidia in a $12.9 billion deal (reported October 2026)",
+}
+# Robo-written market posts (analyst ratings, price targets, fund position changes, insider trades)
+# say nothing about how the company is doing.
+MARKET_NOISE = re.compile(r"price target|\bEPS\b|earnings per share|(?:shares|stock|stake|position|holdings) (?:of|in) |(?:buys|sells|acquires|trims|lifts|boosts|raises|lowers|cuts|reduces|increases|takes) (?:its |a |new )?(?:stake|position|holdings)|insider (?:sale|sell|buy|trad)|short interest|(?:NYSE|NASDAQ|Nasdaq|NYSEARCA|OTCMKTS):|(?:upgraded|downgraded|reiterated|initiated) (?:by|at|to)|analyst rating", re.IGNORECASE)
+MARKET_PUBLISHERS = {"marketbeat", "defense world", "etf daily news", "ticker report", "the lincolnian online", "americanbankingnews", "zolmax", "the enterprise leader", "wkrb news", "modern readers", "the cerbat gem", "dispatch tribunal", "the markets daily", "stock titan", "marketscreener", "insidermonkey"}
+LEADER_CHANGE = re.compile(r"\b(?:steps? down|stepping down|resign\w*|ousted|replac\w*|depart\w*|fired|leaves|leaving|out as|succeed\w*)\b", re.IGNORECASE)
+SHUTDOWN = re.compile(r"\b(?:shut(?:s|ting)? down|shutter\w*|discontinu\w*|sunset\w*|wind(?:s|ing)? down|lay(?:s|ing)? off|layoffs?|job cuts|cuts? (?:\d+ )?jobs)\b", re.IGNORECASE)
+
+
+def is_market_noise(article: dict[str, Any]) -> bool:
+    publisher = str(article.get("publisher") or "").strip().casefold()
+    return publisher in MARKET_PUBLISHERS or bool(MARKET_NOISE.search(str(article.get("title") or "")))
+
+
+def company_named(company: dict[str, Any], text: str) -> bool:
+    """The company itself is named, not just its industry: needed before anything becomes severity 3."""
+    return article_is_relevant(company, {"title": text, "ai_summary": ""})
+
+
+def merge_repeat_reports(signals: list[dict[str, Any]], company: dict[str, Any] | None = None) -> tuple[list[dict[str, Any]], int]:
+    """One story arrives many times (the Eliyan bid three times, the Granola lawsuit five). Signals of
+    the same category at severity 2 or 3 within 7 days of each other are one story: keep the strongest
+    report and count the others on it."""
+    def day(signal: dict[str, Any]) -> date | None:
+        try:
+            return date.fromisoformat(str(signal.get("published_date", ""))[:10])
+        except ValueError:
+            return None
+    def strength(signal: dict[str, Any]) -> tuple:
+        named = bool(company) and company_named(company, str(signal.get("title") or ""))
+        return (signal.get("severity", 0), named, float(signal.get("newsworthiness_score") or 0), str(signal.get("published_date", "")))
+    kept: list[dict[str, Any]] = []
+    stories: list[list[dict[str, Any]]] = []
+    for signal in sorted(signals, key=lambda item: str(item.get("published_date", ""))):
+        when = day(signal)
+        if signal.get("indicator") or signal.get("severity", 0) < 2 or when is None:
+            kept.append(signal)
+            continue
+        story = next((group for group in stories if group[-1]["category"] == signal["category"] and (when - day(group[-1])).days <= 7), None)
+        if story is None:
+            stories.append([signal])
+        else:
+            story.append(signal)
+    merged = 0
+    for story in stories:
+        best = max(story, key=strength)
+        kept.append({**best, "duplicates": len(story) - 1})
+        merged += len(story) - 1
+    kept.sort(key=lambda item: str(item.get("published_date", "")), reverse=True)
+    return kept, merged
 # akta sometimes labels Spanish, German, Portuguese, French or Italian articles as "EN".
 # Two or more of these common function words in a headline mean it is not English.
 NON_ENGLISH_WORDS = {
@@ -607,7 +783,7 @@ SIGNAL_RULES: dict[str, tuple[str, int, str]] = {
 REPORTED_NEWS_TYPES = {"news_analysis", "investigative"}
 
 
-def classify_article(article: dict[str, Any]) -> dict[str, Any] | None:
+def classify_article(article: dict[str, Any], company: dict[str, Any] | None = None) -> dict[str, Any] | None:
     tag = article_primary_tag(article)
     code = str(tag.get("code") or "").upper() if tag else ""
     rule = SIGNAL_RULES.get(code)
@@ -620,8 +796,19 @@ def classify_article(article: dict[str, Any]) -> dict[str, Any] | None:
     # Negative sentiment escalates only reported news. Explainers, opinion, reviews and promotional
     # pieces about a launch are not risks to the company (akta marks ~2/3 of articles "explainer").
     article_type = str((article.get("article_type") or {}).get("code") or "news_analysis").lower()
-    if category in {"Funding", "Product", "People-positive"} and sentiment == "negative" and article_type in REPORTED_NEWS_TYPES:
-        category, severity, action = "Risk", 3, "Risk flag: call the founder, prepare an LP note"
+    title = str(article.get("title") or "")
+    if code in {"LG01", "LG02", "WT01"} and LEADER_CHANGE.search(title):
+        category, severity, action = "People-negative", 3, "Check-in call with the founder this week"
+    elif category == "Product" and SHUTDOWN.search(title):
+        category, severity, action = "Risk", 2, "Read it; check in with the founder"
+    elif category in {"Funding", "Product", "People-positive"} and sentiment == "negative" and article_type in REPORTED_NEWS_TYPES:
+        # A down round or writedown is serious; bad press about a product or a hire is worth a read.
+        category, severity, action = ("Risk", 3, "Risk flag: call the founder, prepare an LP note") if category == "Funding" else ("Risk", 2, "Negative coverage: read it before the next founder call")
+    # Severity 3 asks a partner to act today, so it needs reported news that names the company in the
+    # headline. Opinion pieces, explainers, listicles and industry stories that mention it drop to 2.
+    if severity == 3 and (article_type not in REPORTED_NEWS_TYPES or (company is not None and not company_named(company, title))):
+        severity = 2
+        action = "Track it; confirm with the founder before telling LPs" if category == "Corporate" else "Read it; raise it on the next founder call"
     return {**article, "category": "People" if category.startswith("People-") else category, "severity": severity, "suggested_action": action, "tag_code": code, "tag_name": str(tag.get("name") or "")}
 
 
@@ -654,13 +841,15 @@ def derive_indicator_events(headcount_cache: dict[str, Any] | None) -> list[dict
     if isinstance(total, (int, float)) and total >= 20 and isinstance(six_month, (int, float)) and six_month <= -5:
         severity = 3 if six_month <= -10 else 2
         events.append({"id": f"headcount-{event_date}", "category": "Leading indicator", "severity": severity, "suggested_action": f"Headcount down {abs(six_month):g}% in 6 months: check in with the founder", "title": f"Headcount down {abs(six_month):g}% in 6 months", "published_date": event_date, "indicator": True, "indicator_type": "headcount"})
+    if isinstance(total, (int, float)) and total >= 20 and isinstance(six_month, (int, float)) and six_month >= 20:
+        events.append({"id": f"headcount-up-{event_date}", "category": "Leading indicator", "severity": 1, "suggested_action": "Hiring fast: ask which roles; offer candidate intros", "title": f"Headcount up {six_month:g}% in 6 months", "published_date": event_date, "indicator": True, "indicator_type": "headcount growth"})
     monthly = sorted(data.get("headcount_monthly") or [], key=lambda row: str(row.get("date", "")))
     if len(monthly) >= 4:
         latest, prior = monthly[-1], monthly[-4]
         latest_count, prior_count = latest.get("employee_count"), prior.get("employee_count")
         if isinstance(latest_count, (int, float)) and isinstance(prior_count, (int, float)) and prior_count > 0:
             pct = (latest_count / prior_count - 1) * 100
-            if pct <= -5 and not any(e["indicator_type"] == "headcount" for e in events):
+            if pct <= -5 and not any(e["indicator_type"] in {"headcount", "headcount growth"} for e in events):
                 events.append({"id": f"headcount-monthly-{latest.get('date')}", "category": "Leading indicator", "severity": 2, "suggested_action": f"Headcount down {abs(pct):.0f}% over 3 months: check in with the founder", "title": f"Headcount down {abs(pct):.0f}% over 3 months", "published_date": str(latest.get("date", event_date))[:10], "indicator": True, "indicator_type": "headcount"})
     return events
 
@@ -693,7 +882,7 @@ async def record_company_status(companies: list[dict[str, Any]], api_key: str) -
             except (httpx.HTTPError, ValueError):
                 return
             domain = company_domain(company["website"]).lower().removeprefix("www.")
-            match = next((row for row in rows if company_domain(row.get("website", "")).lower().removeprefix("www.") == domain), rows[0] if rows else None)
+            match = next((row for row in rows if company_domain(row.get("website", "")).lower().removeprefix("www.") == domain), None)
             write_akta_cache(company["name"], "search", {"id": (match or {}).get("uuid") or company["website"], "product_category": (match or {}).get("product_category"), "match": match}, "ok" if match else "no_data", 0)
         await asyncio.gather(*(one(company) for company in missing))
 
@@ -701,7 +890,7 @@ async def record_company_status(companies: list[dict[str, Any]], api_key: str) -
 # The published backend stops a request at 30 s, and akta allows 8 headcount calls a minute, so the
 # headcount pass runs in parallel inside what is left of this budget. Cached results are kept; the
 # rest refresh on the next run.
-SLICE_BUDGET_S = 24
+SLICE_BUDGET_S = 18
 
 
 async def refresh_headcount(companies: list[dict[str, Any]], budget: float) -> None:
@@ -734,6 +923,8 @@ async def refresh_fund_slice(slug: str, start: int = 0, count: int = 6) -> dict[
     async with httpx.AsyncClient() as client:
         results = await asyncio.gather(*(fetch_company_news(client, semaphore, slug, company, api_key) for company in selected))
     await record_company_status(selected, api_key)
+    if any(item["slug"] == slug for item in read_custom_funds()):
+        await save_shared_fund(slug, selected)
     for result in results:
         if result.get("status") == "news": with_news += 1
         elif result.get("status") == "quiet": quiet += 1
@@ -956,7 +1147,7 @@ async def resolve_akta_company(company: dict[str, Any], force: bool = False) -> 
     result = await fetch_akta_endpoint(company, "search", force=force)
     if result.get("status") in {"ok", "no_data"}:
         found = (((result.get("data") or {}).get("data") or []) if isinstance(result.get("data"), dict) else [])
-        first = found[0] if found and isinstance(found[0], dict) else None
+        first = next((row for row in found if isinstance(row, dict) and same_domain(row.get("website", ""), company.get("website", ""))), None)
         id_value = first.get("uuid") if first else None
         category = first.get("product_category") if first else None
         # fetch_akta_endpoint already recorded search credits in the ledger; preserve them in its cache.
@@ -1009,13 +1200,37 @@ DRAFT_SYSTEM_PROMPT = "You are a VC platform associate. Write plain, specific se
 DRAFT_CACHE_DIR = CACHE_DIR / "drafts"
 
 
-def draft_cache_path(fund_slug: str, event_id: str, kind: str) -> Path:
-    key = slugify(f"{fund_slug}-{event_id}-{kind}")
+# Generated drafts and LP updates are shared through the team's Roundtable folder: whoever opens one
+# first waits for the model, and every server instance serves it after that.
+SHARED_CACHE_PREFIX = "cache/"
+
+
+async def shared_cache_get(name: str) -> dict[str, Any] | None:
+    connected, _ = roundtable_config()
+    if not connected:
+        return None
+    found = await roundtable.call("read_file", get_secret("SIGNAL_WATCHER_KEY"), {"bank": get_secret("ROUNDTABLE_PROJECT"), "path": f"{SHARED_CACHE_PREFIX}{name}"})
+    try:
+        return json.loads(found["content"]) if isinstance(found, dict) and found.get("content") else None
+    except (TypeError, ValueError):
+        return None
+
+
+async def shared_cache_put(name: str, data: dict[str, Any]) -> None:
+    connected, _ = roundtable_config()
+    content = json.dumps(data, ensure_ascii=False)
+    if connected and len(content) < 190_000:
+        await roundtable.call("write_file", get_secret("SIGNAL_WATCHER_KEY"), {"bank": get_secret("ROUNDTABLE_PROJECT"), "path": f"{SHARED_CACHE_PREFIX}{name}", "content": content, "message": f"Generated {name}"})
+
+
+def draft_cache_path(fund_slug: str, event_id: str, kind: str, version: str = "v2") -> Path:
+    # One draft per version, so the v1/v2 comparison never shows the other version's cached text.
+    key = slugify(f"{fund_slug}-{event_id}-{kind}-{version}")
     return DRAFT_CACHE_DIR / f"{key}.json"
 
 
 def collect_draft_sources(fund_slug: str, company: dict[str, Any], event_id: str) -> list[dict[str, Any]]:
-    articles = read_articles(fund_slug, company["name"])
+    articles = company_signals(fund_slug, company)["articles"]
     cutoff = date.today() - timedelta(days=90)
     recent: list[dict[str, Any]] = []
     for article in articles:
@@ -1043,7 +1258,7 @@ def collect_draft_sources(fund_slug: str, company: dict[str, Any], event_id: str
             "event_id": str(article.get("id") or ""),
         })
     for endpoint, label in (("A", "headcount trends"), ("B", "website traffic"), ("C", "jobs"), ("D", "enrichment")):
-        cached = read_akta_cache(company["name"], endpoint)
+        cached = akta_cache_for(company, endpoint)
         if not cached or cached.get("status") != "ok":
             continue
         data = cached.get("data") or {}
@@ -1052,60 +1267,8 @@ def collect_draft_sources(fund_slug: str, company: dict[str, Any], event_id: str
             continue
         as_of = endpoint_data.get("date") if isinstance(endpoint_data, dict) else None
         as_of = as_of or str(cached.get("fetched_at", ""))[:10]
-        sources.append({"number": len(sources) + 1, "title": f"akta.pro {label}, as of {as_of}", "publisher": "akta.pro", "date": as_of, "url": None, "ai_summary": json.dumps(endpoint_data, ensure_ascii=False), "kind": "indicator"})
+        sources.append({"number": len(sources) + 1, "title": f"{company['name']}: akta.pro {label}, as of {as_of}", "publisher": "akta.pro", "date": as_of, "url": None, "ai_summary": json.dumps(endpoint_data, ensure_ascii=False), "kind": "indicator"})
     return sources
-
-
-LINE_PREFIX = re.compile(r"^(?:\s*(?:[-•*]|\d+\.)\s+)?(?:\*\*[^*]+\*\*:?\s*)?")
-HEADING_LINE = re.compile(r"^\s*(?:#{1,6}\s+\S.*|(?:[-•*]\s+)?\*\*[^*]+\*\*:?|[A-Z][A-Za-z ,'&/-]{0,60}:)\s*$")
-
-
-def citation_checked_text(text: str, sources: list[dict[str, Any]], kind: str) -> tuple[str, int, list[int]]:
-    valid_numbers = {str(source["number"]) for source in sources}
-    # Keep line boundaries so a greeting and a multi-line sign-off are identifiable.
-    lines = [line.strip() for line in text.strip().splitlines() if line.strip()]
-    greeting_index: int | None = None
-    signoff_indexes: set[int] = set()
-    if kind == "founder_email" and lines:
-        if re.match(r"^(hi|hello|dear)\b", lines[0], re.IGNORECASE):
-            greeting_index = 0
-        if len(lines) >= 2 and re.match(r"^(?:(?:warm|kind|best)\s+)?(?:regards|wishes|thanks|sincerely|cheers),?$|^(best|warmly|thanks|sincerely|cheers)\b", lines[-2], re.IGNORECASE):
-            signoff_indexes.update({len(lines) - 2, len(lines) - 1})
-        elif lines and re.match(r"^(best|regards|warmly|thanks|sincerely|cheers)\b", lines[-1], re.IGNORECASE):
-            signoff_indexes.add(len(lines) - 1)
-
-    # Split the factual content using the same sentence rules as before, while
-    # treating explicit greeting/sign-off lines as indivisible lines.
-    kept: list[str] = []
-    dropped = 0
-    cited: set[int] = set()
-    # Work line by line so Markdown structure survives the check: a bullet ("- ") and a bold
-    # label ("**What happened:**") stay attached to the sentences after them, and a line that is
-    # only a heading or label is kept without a citation (it states no fact).
-    for line_index, line in enumerate(lines):
-        if line_index == greeting_index or line_index in signoff_indexes:
-            kept.append(line)
-            continue
-        if HEADING_LINE.match(line) and not re.search(r"\[\d+\]", line):
-            kept.append(line)
-            continue
-        prefix = LINE_PREFIX.match(line).group(0)
-        body = line[len(prefix):]
-        good: list[str] = []
-        for sentence in (piece.strip() for piece in re.split(r"(?<=[.!?])\s+(?!\[)|(?<=\])\s+(?=[A-Z])", body) if piece.strip()):
-            citations = re.findall(r"\[(\d+)\]", sentence)
-            if not citations or any(number not in valid_numbers for number in citations):
-                dropped += 1
-                continue
-            cited.update(int(number) for number in citations)
-            good.append(sentence)
-        if not good:
-            continue
-        if prefix.strip():
-            kept.append(prefix + " ".join(good))
-        else:
-            kept.extend(good)
-    return "\n".join(kept), dropped, sorted(cited)
 
 
 from pydantic import BaseModel
@@ -1207,14 +1370,20 @@ async def draft_action(request: DraftRequest) -> dict[str, Any]:
     company = next((item for item in fund["companies"] if slugify(item["name"]) == request.company_slug), None)
     if company is None:
         raise HTTPException(status_code=404, detail="Company not found")
-    cache_path = draft_cache_path(request.fund_slug, request.event_id, request.kind)
-    if cache_path.is_file() and not request.regenerate:
+    cache_path = draft_cache_path(request.fund_slug, request.event_id, request.kind, request.version)
+    # Server instances keep separate disks: local copy, then the committed snapshot, then the team folder.
+    cached_path = cache_file("drafts", cache_path.name)
+    if cached_path.is_file() and not request.regenerate:
         try:
-            cached_draft = json.loads(cache_path.read_text(encoding="utf-8"))
+            cached_draft = json.loads(cached_path.read_text(encoding="utf-8"))
             cached_draft["cached"] = True
             return cached_draft
         except (OSError, json.JSONDecodeError):
             pass
+    if not request.regenerate and (shared := await shared_cache_get(f"drafts/{cache_path.name}")):
+        write_json_atomic(cache_path, shared)
+        shared["cached"] = True
+        return shared
     api_key = get_secret("NICRRON_API_KEY")
     if not api_key:
         raise HTTPException(status_code=503, detail="Nicrron AI is not connected")
@@ -1252,6 +1421,7 @@ async def draft_action(request: DraftRequest) -> dict[str, Any]:
     output["roundtable"] = rt_meta
     cache_path.parent.mkdir(parents=True, exist_ok=True)
     cache_path.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
+    await shared_cache_put(f"drafts/{cache_path.name}", output)
     return output
 
 
@@ -1266,7 +1436,8 @@ async def lp_update(request: LPUpdateRequest) -> dict[str, Any]:
     if request.version not in {"v1", "v2"}:
         raise HTTPException(status_code=400, detail="version must be v1 or v2")
     fund = get_fund(request.fund_slug)
-    cache_path = cache_file("lp-updates", f"{slugify(fund['slug'])}.json")
+    cache_name = f"{slugify(fund['slug'])}-{request.version}.json"
+    cache_path = cache_file("lp-updates", cache_name)
     if cache_path.is_file() and not request.regenerate:
         try:
             cached = json.loads(cache_path.read_text(encoding="utf-8"))
@@ -1274,15 +1445,21 @@ async def lp_update(request: LPUpdateRequest) -> dict[str, Any]:
             return cached
         except (OSError, json.JSONDecodeError):
             pass
+    if not request.regenerate and (shared := await shared_cache_get(f"lp-updates/{cache_name}")):
+        write_json_atomic(CACHE_DIR / "lp-updates" / cache_name, shared)
+        shared["cached"] = True
+        return shared
 
     rt_connected, rt_reason = roundtable_config()
     sources: list[dict[str, Any]] = []
     concerns: list[dict[str, Any]] = []
     cutoff = date.today() - timedelta(days=90)
     company_articles: dict[str, list[dict[str, Any]]] = {}
+    processed = {item["name"]: item for item in fund_with_cache(fund["slug"])["companies"]}
     for company in fund["companies"]:
-        raw_articles = read_articles(fund["slug"], company["name"])
-        classified = [signal for article in raw_articles if (signal := classify_article(article)) is not None]
+        built = processed.get(company["name"], {})
+        # Exits are reported to LPs separately; their stock news is not portfolio news.
+        classified = [] if built.get("exited") else [signal for signal in built.get("articles", []) if not signal.get("indicator")]
         recent = []
         for article in classified:
             try:
@@ -1291,7 +1468,7 @@ async def lp_update(request: LPUpdateRequest) -> dict[str, Any]:
             except ValueError:
                 continue
         company_articles[company["name"]] = recent
-        indicators = derive_indicator_events(read_akta_cache(company["name"], "A"))
+        indicators = [] if built.get("exited") else built.get("indicator_events", [])
         all_signals = recent + [event for event in indicators if event.get("severity", 0) > 0]
         if any(item.get("severity") == 3 or (item.get("indicator") and item.get("severity", 0) >= 2) for item in all_signals):
             concerns.append({"company": company, "events": all_signals})
@@ -1302,10 +1479,10 @@ async def lp_update(request: LPUpdateRequest) -> dict[str, Any]:
             article["source_kind"] = "article"
             events_for_roundtable.append(article)
     events_for_roundtable.sort(key=lambda item: (item.get("severity", 0), str(item.get("published_date", ""))), reverse=True)
-    events_for_roundtable = events_for_roundtable[:40]
+    events_for_roundtable = events_for_roundtable[:24]
     sources.extend(events_for_roundtable)
     for company in fund["companies"]:
-        for indicator in derive_indicator_events(read_akta_cache(company["name"], "A")):
+        for indicator in ([] if processed.get(company["name"], {}).get("exited") else processed.get(company["name"], {}).get("indicator_events", [])):
             if indicator.get("severity", 0) > 0:
                 indicator["company"] = company["name"]
                 indicator["source_kind"] = "indicator"
@@ -1315,19 +1492,18 @@ async def lp_update(request: LPUpdateRequest) -> dict[str, Any]:
         is_indicator = item.get("source_kind") == "indicator"
         title = item.get("title") or "Company news"
         date_value = item.get("published_date") or item.get("date")
-        numbered.append({"number": number, "title": (f"akta.pro {item.get('indicator_type','leading indicator')} as of {date_value}" if is_indicator else title), "publisher": "akta.pro" if is_indicator else (item.get("publisher") or "Unknown publisher"), "date": date_value, "url": None if is_indicator else item.get("url"), "ai_summary": item.get("ai_summary") or item.get("suggested_action") or title, "kind": "indicator" if is_indicator else "article", "company": item.get("company"), "severity": item.get("severity", 1), "category": item.get("category")})
+        numbered.append({"number": number, "title": (f"{item.get('company')}: {item.get('title')} (akta.pro {item.get('indicator_type', 'headcount')} data, as of {date_value})" if is_indicator else title), "publisher": "akta.pro" if is_indicator else (item.get("publisher") or "Unknown publisher"), "date": date_value, "url": None if is_indicator else item.get("url"), "ai_summary": item.get("ai_summary") or item.get("suggested_action") or title, "kind": "indicator" if is_indicator else "article", "company": item.get("company"), "severity": item.get("severity", 1), "category": item.get("category")})
     if not numbered:
         # An empty cache still produces a clear, human-reviewable placeholder update without inventing portfolio facts.
         result = {"text": f"# {fund['name']}: portfolio update\n\nLast 90 days, as of {date.today().isoformat()}\n\n## Portfolio highlights\n\nNo recent public portfolio events are available in the cache.\n\n## Companies to watch\n\nNo current severity 3 events or negative leading indicators are available.\n\nDrafted from public news and company data via akta.pro. Every claim is cited; 0 sentences were removed by the citation check.", "markdown": f"# {fund['name']}: portfolio update\n\nLast 90 days, as of {date.today().isoformat()}\n\n## Portfolio highlights\n\nNo recent public portfolio events are available in the cache.\n\n## Companies to watch\n\nNo current severity 3 events or negative leading indicators are available.\n\nDrafted from public news and company data via akta.pro. Every claim is cited; 0 sentences were removed by the citation check.\n\n## Sources\n", "version": request.version, "sources": [], "cited_sources": [], "sentences_removed": 0, "cached": False}
-        cache_path.parent.mkdir(parents=True, exist_ok=True)
+        # Not cached: an empty update must not outlive the next refresh (Betaworks kept one).
         result["roundtable"] = await roundtable_lp_update(fund, [], result, request)
-        cache_path.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
         return result
     watch = []
     for entry in concerns[:3]:
         company = entry["company"]
         watch.append({"company": company["name"], "events": [{"source_index": next((s["number"] for s in numbered if s["company"] == company["name"] and s["title"] == (event.get("title") or "Company news")), None), "title": event.get("title"), "action": event.get("suggested_action")} for event in entry["events"] if event.get("severity") == 3 or event.get("indicator")]})
-    prompt = f"Create this Markdown LP update. Follow exactly this structure: title '{fund['name']}: portfolio update'; subtitle 'Last 90 days, as of {date.today().isoformat()}'; section 'Portfolio highlights' with 5 to 8 newest-first bullets; section 'Companies to watch' with 2 or 3 severity-3 or negative-indicator companies, each concern and action. Cite every factual sentence with [n]. The company watch sources are: {json.dumps(watch, ensure_ascii=False)}. End with a placeholder closing line to be replaced by the app."
+    prompt = f"Create this Markdown LP update. Follow exactly this structure: title '{fund['name']}: portfolio update'; subtitle 'Last 90 days, as of {date.today().isoformat()}'; section 'Portfolio highlights' with 5 to 8 newest-first bullets; section 'Companies to watch' with 2 or 3 severity-3 or negative-indicator companies, each concern and action. Cite every factual sentence with [n]. The company watch sources are: {json.dumps(watch, ensure_ascii=False)}. Do not write a closing line; the app adds one. Write only the update an LP will read: no notes about the sources, your choices or these instructions."
     messages = [{"role": "system", "content": DRAFT_SYSTEM_PROMPT}, {"role": "user", "content": json.dumps({"fund": fund["name"], "task": prompt, "sources": numbered}, ensure_ascii=False)}]
     run_name = f"lp-update-{request.version}"
     run_id = f"{run_name}-{__import__('secrets').token_hex(12)}"
@@ -1342,16 +1518,18 @@ async def lp_update(request: LPUpdateRequest) -> dict[str, Any]:
         text, removed, cited = citation_checked_text(body, numbered, "partner_note")
     else:
         text, removed, cited = raw_text, 0, []
-    closing = f"Drafted from public news and company data via akta.pro. Every claim is cited; {removed} sentences were removed by the citation check."
+    closing = "Drafted from public news and company data via akta.pro. Every sentence cites its source."
     text = text.rstrip() + "\n\n" + closing
     cited_sources = [source for source in numbered if source["number"] in cited]
     header = f"# {fund['name']}: portfolio update\n\nLast 90 days, as of {date.today().isoformat()}\n\n"
-    markdown = (header if request.version == "v2" else "") + text + "\n\n## Sources\n" + "\n".join(f"[{source['number']}] {source['title']} — {source['publisher']}, {str(source.get('date') or '')[:10]}" + (f" ({source['url']})" if source.get("url") else "") for source in numbered)
+    markdown = (header if request.version == "v2" else "") + text + "\n\n## Sources\n" + "\n".join(f"[{source['number']}] {source['title']} — {source['publisher']}, {str(source.get('date') or '')[:10]}" + (f" ({source['url']})" if source.get("url") else "") for source in (cited_sources or numbered))
     result = {"text": text, "markdown": markdown, "version": request.version, "sources": numbered, "cited_sources": cited, "sentences_removed": removed, "cached": False}
+    cache_path = CACHE_DIR / "lp-updates" / cache_name
     cache_path.parent.mkdir(parents=True, exist_ok=True)
     cache_path.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
     result["roundtable"] = await roundtable_lp_update(fund, numbered, result, request)
     cache_path.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
+    await shared_cache_put(f"lp-updates/{cache_name}", result)
     return result
 
 
@@ -1362,7 +1540,7 @@ async def roundtable_lp_update(fund: dict[str, Any], sources: list[dict[str, Any
     bank = get_secret("ROUNDTABLE_PROJECT")
     watcher_key, drafter_key = get_secret("SIGNAL_WATCHER_KEY"), get_secret("DRAFTER_KEY")
     quarter = f"{date.today().year}-Q{((date.today().month-1)//3)+1}"
-    path = f"lp-updates/{quarter}.md"
+    path = f"lp-updates/{fund['slug']}/{quarter}.md"
     wrote = await roundtable.call("write_file", watcher_key, {"bank": bank, "path": path, "content": output.get("markdown", output.get("text", "")), "message": f"LP update for {fund['name']}"})
     if wrote is None:
         return {"connected": False, "reason": roundtable.last_error or "LP update save failed"}

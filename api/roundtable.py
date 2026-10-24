@@ -66,3 +66,24 @@ async def call(tool: str, key: str, args: dict[str, Any]) -> Any | None:
         last_error = f"{type(exc).__name__}: {exc}"
         logger.warning("Roundtable %s failed: %s", tool, last_error)
         return None
+
+
+def call_sync(tool: str, key: str, args: dict[str, Any], timeout: float = 8.0) -> Any | None:
+    """Blocking variant for code that cannot await, such as loading the fund list."""
+    global last_error
+    if not key:
+        last_error = "missing credentials"
+        return None
+    base_url = (os.environ.get("ROUNDTABLE_URL") or "https://roundtable.bot").rstrip("/")
+    body = dict(args)
+    if tool in _WRITE_TOOLS:
+        body.setdefault("request_id", str(uuid.uuid4()))
+    try:
+        response = httpx.post(f"{base_url}/api/tools/{tool}", headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"}, json=body, timeout=timeout)
+        response.raise_for_status()
+        last_error = None
+        return parse_result(response.json())
+    except Exception as exc:
+        last_error = f"{type(exc).__name__}: {exc}"
+        logger.warning("Roundtable %s failed: %s", tool, last_error)
+        return None
