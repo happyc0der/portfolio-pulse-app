@@ -656,6 +656,10 @@ def is_market_noise(article: dict[str, Any]) -> bool:
 def raise_is_theirs(company: dict[str, Any], title: str) -> bool:
     """A funding headline is the company's own raise only when the company comes before the raise
     ("Ramp Secures $1.85 Billion"), not "Lagos Life developer raises $500,000 ... with Flutterwave"."""
+    # "Anduril Co-founder ... Launches With $200 Million" is someone else's new company.
+    word = re.escape(company_main_word(company))
+    if re.search(rf"\b{word}\w*(?:'s)?\s+(?:co-?founders?|founders?|alum\w*|veterans?)\b|\b(?:former|ex-)\s*{word}", title, re.IGNORECASE):
+        return False
     verb = RAISE_WORDS.search(title)
     if not verb:
         return True

@@ -108,3 +108,5 @@ def test_congratulate_only_the_companys_own_raise():
     assert other["severity"] == 1 and other["suggested_action"].startswith("Mentions the company in passing")
     ramp = classify_article({**base, "title": "Ramp Secures $1.85 Billion Financing at $60 Billion Valuation"}, {"name": "Ramp", "website": "ramp.com"})
     assert ramp["suggested_action"].startswith("Congratulate")
+    cofounder = classify_article({**base, "title": "Anduril Co-founder Palmer Luckey's Warhound Launches With $200 Million"}, {"name": "Anduril Industries", "website": "anduril.com"})
+    assert cofounder["severity"] == 1
