@@ -98,3 +98,13 @@ def test_ticker_headlines_are_market_noise():
     from api.main import is_market_noise
     assert is_market_noise({"title": "SoundHound AI (SOUN), Why Is It Getting Attention Today?", "publisher": "Yahoo"})
     assert not is_market_noise({"title": "Firefly Aerospace stock rises on Starcloud AI computing deal", "publisher": "Reuters"})
+
+
+def test_congratulate_only_the_companys_own_raise():
+    from api.main import classify_article
+    company = {"name": "Flutterwave", "website": "flutterwave.com"}
+    base = {"tags": [{"code": "CM01", "name": "Funding Round"}], "article_type": {"code": "news_analysis"}, "published_date": "2026-10-20", "sentiment": "positive"}
+    other = classify_article({**base, "title": "Lagos Life developer raises $500,000 at $10m valuation with Flutterwave"}, company)
+    assert other["severity"] == 1 and other["suggested_action"].startswith("Mentions the company in passing")
+    ramp = classify_article({**base, "title": "Ramp Secures $1.85 Billion Financing at $60 Billion Valuation"}, {"name": "Ramp", "website": "ramp.com"})
+    assert ramp["suggested_action"].startswith("Congratulate")

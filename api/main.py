@@ -643,6 +643,7 @@ EXIT_CORRECTIONS = {
 # say nothing about how the company is doing.
 MARKET_NOISE = re.compile(r"\([A-Z]{2,5}\)|price target|\bEPS\b|earnings per share|(?:shares|stock|stake|position|holdings) (?:of|in) |(?:buys|sells|acquires|trims|lifts|boosts|raises|lowers|cuts|reduces|increases|takes) (?:its |a |new )?(?:stake|position|holdings)|insider (?:sale|sell|buy|trad)|short interest|(?:NYSE|NASDAQ|Nasdaq|NYSEARCA|OTCMKTS):|(?:upgraded|downgraded|reiterated|initiated) (?:by|at|to)|analyst rating", re.IGNORECASE)
 MARKET_PUBLISHERS = {"marketbeat", "defense world", "etf daily news", "ticker report", "the lincolnian online", "americanbankingnews", "zolmax", "the enterprise leader", "wkrb news", "modern readers", "the cerbat gem", "dispatch tribunal", "the markets daily", "stock titan", "marketscreener", "insidermonkey"}
+RAISE_WORDS = re.compile(r"\b(?:raises?|raised|raising|secures?|secured|closes?|closed|lands?|landed|bags?|nabs?|gets?|announces?|completes?|valuation|funding|round|invests?|investment)\b", re.IGNORECASE)
 LEADER_CHANGE = re.compile(r"\b(?:steps? down|stepping down|resign\w*|ousted|replac\w*|depart\w*|fired|leaves|leaving|out as|succeed\w*)\b", re.IGNORECASE)
 SHUTDOWN = re.compile(r"\b(?:shut(?:s|ting)? down|shutter\w*|discontinu\w*|sunset\w*|wind(?:s|ing)? down|lay(?:s|ing)? off|layoffs?|job cuts|cuts? (?:\d+ )?jobs)\b", re.IGNORECASE)
 
@@ -650,6 +651,15 @@ SHUTDOWN = re.compile(r"\b(?:shut(?:s|ting)? down|shutter\w*|discontinu\w*|sunse
 def is_market_noise(article: dict[str, Any]) -> bool:
     publisher = str(article.get("publisher") or "").strip().casefold()
     return publisher in MARKET_PUBLISHERS or bool(MARKET_NOISE.search(str(article.get("title") or "")))
+
+
+def raise_is_theirs(company: dict[str, Any], title: str) -> bool:
+    """A funding headline is the company's own raise only when the company comes before the raise
+    ("Ramp Secures $1.85 Billion"), not "Lagos Life developer raises $500,000 ... with Flutterwave"."""
+    verb = RAISE_WORDS.search(title)
+    if not verb:
+        return True
+    return company_named(company, title[:verb.start()])
 
 
 def company_named(company: dict[str, Any], text: str) -> bool:
@@ -807,6 +817,8 @@ def classify_article(article: dict[str, Any], company: dict[str, Any] | None = N
     # Severity 3 asks a partner to act today, so it needs reported news that names the company in the
     # headline. Opinion pieces, explainers, listicles and industry stories that mention it drop to 2.
     named = company is None or company_named(company, title)
+    if named and company is not None and category == "Funding" and not raise_is_theirs(company, title):
+        named = False
     if severity == 3 and (article_type not in REPORTED_NEWS_TYPES or not named):
         severity = 2
         action = "Track it; confirm with the founder before telling LPs" if category == "Corporate" else "Read it; raise it on the next founder call"

@@ -17,6 +17,10 @@ export default function AddFund({ onClose }: { onClose: () => void }) {
   const [progress, setProgress] = useState('');
   const [error, setError] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
+  const listRef = useRef<HTMLUListElement>(null);
+
+  // Keep the highlighted suggestion visible while moving with the arrow keys.
+  useEffect(() => { listRef.current?.children[active]?.scrollIntoView({ block: 'nearest' }); }, [active]);
 
   useEffect(() => { inputRef.current?.focus(); }, []);
 
@@ -94,7 +98,7 @@ export default function AddFund({ onClose }: { onClose: () => void }) {
       <input ref={inputRef} value={query} disabled={busy} onChange={e => setQuery(e.target.value)} placeholder="Try “sequoia”, “lightspeed” or “a16z”"
         className="mt-4 w-full rounded-lg border border-slate-200 bg-transparent px-3 py-2.5 text-sm text-slate-800 outline-none placeholder:text-slate-400 focus:border-indigo-400" />
       {searching && <p className="mt-3 text-xs text-slate-400">Searching akta.pro…</p>}
-      {results.length > 0 && <ul className="mt-3 max-h-80 overflow-y-auto rounded-lg border border-slate-200">
+      {results.length > 0 && <ul ref={listRef} className="mt-3 max-h-80 overflow-y-auto rounded-lg border border-slate-200">
         {results.map((result, index) => <li key={result.uuid}>
           <button onClick={() => void build(result)} onMouseEnter={() => setActive(index)}
             className={`flex w-full items-center gap-3 px-3 py-2.5 text-left ${index === active ? 'bg-slate-100' : ''}`}>
@@ -110,7 +114,7 @@ export default function AddFund({ onClose }: { onClose: () => void }) {
       {!searching && !busy && query.trim().length >= 2 && results.length === 0 && !error && <p className="mt-3 text-xs text-slate-500">No matches in akta.pro yet. Try the firm's full name.</p>}
       {busy && <div className="mt-4 flex items-center gap-3 rounded-lg border border-slate-200 px-3 py-3"><span className="h-4 w-4 animate-spin rounded-full border-2 border-indigo-400 border-t-transparent" /><p className="text-sm text-slate-600">{progress}</p></div>}
       {error && <p className="mt-3 text-sm text-rose-400">{error}</p>}
-      <p className="mt-4 text-[11px] leading-5 text-slate-500">Building a portfolio uses about 7 akta.pro credits, plus news for each company. Data: akta.pro company search and List Generation.</p>
+      <p className="mt-4 text-[11px] leading-5 text-slate-500">Building a portfolio uses about 35 akta.pro credits: the company list, then news and headcount data for 25 companies. Data: akta.pro company search and List Generation.</p>
     </div>
   </div>;
 }
