@@ -146,6 +146,34 @@ def sources_context(sources: list[dict[str, Any]]) -> str:
     return (header + "\n".join(out))[:CONTEXT_LIMIT]
 
 
+# Observed on 3 scored traces: PRISM's judge read only about the first 2,000 characters of the
+# sources step (it saw [1] to [6] of 17), although the docs say about 6,000. So the first step is a
+# compact index that names the full range and fits in that window, and the details follow in
+# further steps of at most the same size.
+STEP_LIMIT = 1900
+
+
+def sources_steps(sources: list[dict[str, Any]]) -> list[str]:
+    numbers = [source.get("number") for source in sources]
+    header = (f"The drafting model was given {len(sources)} numbered akta.pro sources, [{numbers[0]}] to [{numbers[-1]}]. "
+              "The output may cite only these numbers.\n" if sources else "The drafting model was given no sources.\n")
+    room = STEP_LIMIT - len(header) - 2 * len(sources)
+    title_room = max(12, room // max(1, len(sources)) - 6)
+    index = header + "\n".join(f"[{source.get('number')}] {' '.join(str(source.get('title') or '').split())[:title_room]}" for source in sources)
+    steps = [index[:STEP_LIMIT]]
+    current = ""
+    for line in sources_context(sources).split("\n")[1:]:
+        line = line[:STEP_LIMIT]
+        if current and len(current) + 1 + len(line) > STEP_LIMIT:
+            steps.append(current)
+            current = line
+        else:
+            current = f"{current}\n{line}" if current else line
+    if current:
+        steps.append(current)
+    return steps
+
+
 def retrieval_query(messages: list[dict[str, str]]) -> str:
     try:
         request = json.loads(messages[-1]["content"])
@@ -169,9 +197,10 @@ async def send_trace(*, trace_id: str, session_id: str, run_name: str, model: st
             {"span_id": root_id, "parent_span_id": None, "name": run_name, "span_type": "agent",
              "input_text": messages[-1]["content"][:10000], "output_text": output, "start_time": start, "end_time": end,
              "duration_ms": latency_ms, "status": "ok", "model": model, "metadata": metadata},
-            {"span_id": str(uuid.uuid4()), "parent_span_id": root_id, "name": "akta_sources", "span_type": "tool",
-             "input_text": retrieval_query(messages), "output_text": sources_context(sources), "start_time": start,
-             "end_time": start, "duration_ms": 0, "status": "ok", "metadata": {"source_count": len(sources)}},
+            *({"span_id": str(uuid.uuid4()), "parent_span_id": root_id, "name": "akta_sources" if index == 0 else f"akta_sources_detail_{index}",
+               "span_type": "tool", "input_text": retrieval_query(messages) if index == 0 else f"Source details, part {index}",
+               "output_text": text, "start_time": start, "end_time": start, "duration_ms": 0, "status": "ok",
+               "metadata": {"source_count": len(sources)}} for index, text in enumerate(sources_steps(sources))),
             {"span_id": str(uuid.uuid4()), "parent_span_id": root_id, "name": "nicrron_chat", "span_type": "llm",
              "input_text": json.dumps(messages, ensure_ascii=False)[:10000], "output_text": raw_output[:10000],
              "start_time": start, "end_time": end, "duration_ms": latency_ms, "status": "ok", "model": model,
