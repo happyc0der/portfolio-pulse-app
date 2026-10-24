@@ -11,7 +11,8 @@ import httpx
 from pydantic import BaseModel
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
-from api.tracing import citation_metrics, prism_enabled, prism_selftest, traced_chat, last_tracing_error
+from api import tracing
+from api.tracing import citation_metrics, prism_enabled, prism_selftest, traced_chat
 from api import roundtable
 from dotenv import dotenv_values, load_dotenv
 
@@ -192,7 +193,7 @@ def fund_with_cache(slug: str) -> dict[str, Any]:
 
 @app.get("/api/health")
 def health() -> dict[str, Any]:
-    return {"ok": True, "prism": "on" if prism_enabled() else "off", "prism_last_error": last_tracing_error, "keys": {name: "set" if get_secret(name) else "missing" for name in SECRET_NAMES}}
+    return {"ok": True, "prism": "on" if prism_enabled() else "off", "prism_last_error": tracing.last_tracing_error, "keys": {name: "set" if get_secret(name) else "missing" for name in SECRET_NAMES}}
 
 
 def history_versions(result: Any) -> list[dict[str, Any]]:

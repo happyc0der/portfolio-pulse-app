@@ -1,9 +1,12 @@
 from __future__ import annotations
 
 import asyncio
+import json
 import os
 import secrets
 import time
+import uuid
+from datetime import datetime, timedelta, timezone
 from typing import Any
 
 import httpx
@@ -119,12 +122,71 @@ def citation_metrics(text: str, sources: list[dict[str, Any]], splitter: Any) ->
     return len(pieces), uncited, unknown, dropped
 
 
+# PRISM's evaluators read {input} as the user's last message only, and {context} as what the
+# trace's retrieval and tool steps returned, up to about 6,000 characters. Our prompt carries every
+# source inside one long JSON message, so the judge saw only the first one or two. Each trace now
+# gets a retrieval span listing the numbered sources, so a rubric can check citations against
+# {context}, and an LLM span for the call itself.
+CONTEXT_LIMIT = 5800
+_pending_traces: set[asyncio.Task[Any]] = set()
+
+
+def sources_context(sources: list[dict[str, Any]]) -> str:
+    """The numbered sources the model was given, compact enough to fit PRISM's {context}."""
+    header = "Numbered sources the drafting model was given (akta.pro). The output may cite only these numbers.\n"
+    lines = [f"[{source.get('number')}] {str(source.get('title') or '')[:140]} ({source.get('publisher') or 'unknown'}, {str(source.get('date') or '')[:10]})" for source in sources]
+    room = CONTEXT_LIMIT - len(header) - sum(len(line) + 1 for line in lines)
+    per_source = room // max(1, len(sources)) - 3
+    out = []
+    for line, source in zip(lines, sources):
+        summary = " ".join(str(source.get("ai_summary") or "").split())
+        if per_source > 40 and summary:
+            line += ": " + (summary if len(summary) <= per_source else summary[:per_source - 1] + "…")
+        out.append(line)
+    return (header + "\n".join(out))[:CONTEXT_LIMIT]
+
+
+def retrieval_query(messages: list[dict[str, str]]) -> str:
+    try:
+        request = json.loads(messages[-1]["content"])
+        name = (request.get("company") or {}).get("name") or request.get("fund") or request.get("fund_name")
+        return f"akta.pro news and company data for {name}" if name else "akta.pro portfolio sources"
+    except (ValueError, KeyError, IndexError, AttributeError, TypeError):
+        return "akta.pro portfolio sources"
+
+
+async def send_trace(prism: Any, *, trace_id: str, session_id: str, run_name: str, model: str, messages: list[dict[str, str]], output: str, sources: list[dict[str, Any]], metadata: dict[str, Any], started_at: datetime, latency_ms: int, tokens_in: int, tokens_out: int) -> None:
+    """Record the call with the SDK, then attach its retrieval and LLM spans to the same trace."""
+    global last_tracing_error
+    try:
+        prism.trace_llm(model=model, input_messages=messages, output=output, latency_ms=latency_ms, token_count_input=tokens_in, token_count_output=tokens_out, agent_id=run_name, agent_name=run_name, session_id=session_id, trace_id=trace_id, metadata=metadata)
+        await asyncio.to_thread(prism.flush, 10.0)
+        ended_at = started_at + timedelta(milliseconds=latency_ms)
+        spans = [
+            {"span_id": str(uuid.uuid4()), "name": "akta_sources", "span_type": "tool", "input_text": retrieval_query(messages),
+             "output_text": sources_context(sources), "start_time": started_at.isoformat(), "end_time": started_at.isoformat(),
+             "duration_ms": 0, "status": "ok"},
+            {"span_id": str(uuid.uuid4()), "name": "nicrron_chat", "span_type": "llm", "model": model,
+             "input_text": messages[-1]["content"][:10000], "output_text": output, "start_time": started_at.isoformat(),
+             "end_time": ended_at.isoformat(), "duration_ms": latency_ms, "status": "ok",
+             "token_count_input": tokens_in, "token_count_output": tokens_out},
+        ]
+        host, project_id = prism_settings()
+        async with httpx.AsyncClient(timeout=15) as client:
+            response = await client.post(f"{host.rstrip('/')}/api/spans/ingest", headers={"X-PRISMtrace-Key": get_secret("PRISMTRACE_API_KEY")},
+                                         json={"trace_id": trace_id, "project_id": project_id, "session_id": session_id, "spans": spans})
+        last_tracing_error = None if response.status_code == 200 else f"PRISM spans ingest returned {response.status_code}"
+    except Exception as exc:
+        last_tracing_error = f"{type(exc).__name__}: {exc}"
+
+
 async def traced_chat(*, messages: list[dict[str, str]], model: str, run_name: str, session_id: str, metadata: dict[str, Any], validator: Any, sources: list[dict[str, Any]], version: str = "v2", timeout: float = 90.0, extra_headers: dict[str, str] | None = None) -> tuple[str, Any]:
     """Call Nicrron once, then best-effort trace without affecting the result."""
     api_key = get_secret("NICRRON_API_KEY")
     if not api_key:
         raise RuntimeError("NICRRON_API_KEY is not configured")
     base_url = os.getenv("NICRRON_BASE_URL", "https://api.nicrron.ai/v1").rstrip("/")
+    started_at = datetime.now(timezone.utc)
     started = time.perf_counter()
     headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json", **(extra_headers or {})}
     async with httpx.AsyncClient(timeout=timeout) as client:
@@ -138,19 +200,17 @@ async def traced_chat(*, messages: list[dict[str, str]], model: str, run_name: s
     usage = body.get("usage") or {}
     input_tokens = usage.get("prompt_tokens", usage.get("input_tokens"))
     output_tokens = usage.get("completion_tokens", usage.get("output_tokens"))
-    trace_id = session_id or secrets.token_hex(12)
     trace_metadata = {**metadata, "nicrron_generation_id": generation_id}
     if version == "v2":
         trace_metadata["raw_output"] = raw_text[:4000]
-    global last_tracing_error
     prism = get_prism_client()
     if prism is not None:
-        async def trace_and_flush() -> Any:
-            prism.trace_llm(model=body.get("model") or model, input_messages=messages, output=output_text, latency_ms=elapsed_ms, token_count_input=input_tokens, token_count_output=output_tokens, agent_id=run_name, agent_name=run_name, session_id=trace_id, trace_id=trace_id, metadata=trace_metadata)
-            return await asyncio.to_thread(prism.flush)
-        try:
-            flush_result = await asyncio.wait_for(trace_and_flush(), timeout=2.0)
-            last_tracing_error = None
-        except Exception as exc:
-            last_tracing_error = f"{type(exc).__name__}: {exc}"
+        # Traced in the background so a slow PRISM never delays the draft.
+        task = asyncio.create_task(send_trace(
+            prism, trace_id=str(uuid.uuid4()), session_id=session_id or secrets.token_hex(12), run_name=run_name,
+            model=body.get("model") or model, messages=messages, output=output_text, sources=sources,
+            metadata=trace_metadata, started_at=started_at, latency_ms=elapsed_ms,
+            tokens_in=input_tokens or 0, tokens_out=output_tokens or 0))
+        _pending_traces.add(task)
+        task.add_done_callback(_pending_traces.discard)
     return output_text, {"raw_text": raw_text, "dropped": dropped, "generation_id": generation_id, "usage": usage, "latency_ms": elapsed_ms}
