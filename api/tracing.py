@@ -176,7 +176,7 @@ def sources_steps(sources: list[dict[str, Any]]) -> list[str]:
 
 def retrieval_query(messages: list[dict[str, str]]) -> str:
     try:
-        request = json.loads(messages[-1]["content"])
+        request = json.loads(messages[-1]["content"].split("\n\nRequest:\n", 1)[-1])
         name = (request.get("company") or {}).get("name") or request.get("fund") or request.get("fund_name")
         return f"akta.pro news and company data for {name}" if name else "akta.pro portfolio sources"
     except (ValueError, KeyError, IndexError, AttributeError, TypeError):
@@ -195,8 +195,7 @@ async def send_trace(*, trace_id: str, session_id: str, run_name: str, model: st
         start, end = started_at.isoformat(), ended_at.isoformat()
         spans = [
             {"span_id": root_id, "parent_span_id": None, "name": run_name, "span_type": "agent",
-             # PRISM's automatic review reads the start of the input, so it opens with the source index.
-             "input_text": (sources_steps(sources)[0] + "\n\nRequest:\n" + messages[-1]["content"])[:10000], "output_text": output, "start_time": start, "end_time": end,
+             "input_text": messages[-1]["content"][:10000], "output_text": output, "start_time": start, "end_time": end,
              "duration_ms": latency_ms, "status": "ok", "model": model, "metadata": metadata},
             *({"span_id": str(uuid.uuid4()), "parent_span_id": root_id, "name": "akta_sources" if index == 0 else f"akta_sources_detail_{index}",
                "span_type": "tool", "input_text": retrieval_query(messages) if index == 0 else f"Source details, part {index}",
@@ -223,6 +222,10 @@ async def traced_chat(*, messages: list[dict[str, str]], model: str, run_name: s
     if not api_key:
         raise RuntimeError("NICRRON_API_KEY is not configured")
     base_url = os.getenv("NICRRON_BASE_URL", "https://api.nicrron.ai/v1").rstrip("/")
+    if sources and messages and messages[-1].get("role") == "user":
+        # The request opens with a compact index of every source number, so the model and any
+        # reviewer that reads only the start of the message (PRISM's does) see the full range.
+        messages = messages[:-1] + [{"role": "user", "content": sources_steps(sources)[0] + "\n\nRequest:\n" + messages[-1]["content"]}]
     started_at = datetime.now(timezone.utc)
     started = time.perf_counter()
     headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json", **(extra_headers or {})}
