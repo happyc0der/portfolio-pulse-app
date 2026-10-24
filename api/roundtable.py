@@ -18,7 +18,9 @@ _WRITE_TOOLS = {"write_file", "claim_task", "update_task"}
 def parse_result(payload: Any) -> Any:
     if not isinstance(payload, dict):
         return payload
-    result = payload.get("result", payload)
+    # A task is returned bare and has its own "result" field, so only unwrap a real envelope.
+    is_object = any(key in payload for key in ("id", "task_id", "status", "path"))
+    result = payload if is_object else payload.get("result", payload)
     if isinstance(result, str):
         try:
             result = json.loads(result)

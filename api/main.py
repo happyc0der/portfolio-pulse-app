@@ -1123,7 +1123,6 @@ class DraftRequest(BaseModel):
 async def roundtable_event_draft(request: "DraftRequest", company: dict[str, Any], sources: list[dict[str, Any]], output: dict[str, Any]) -> dict[str, Any]:
     connected, reason = roundtable_config()
     if not connected: return {"connected": False, "reason": reason}
-    deadline = asyncio.get_running_loop().time() + 25
     bank, project = get_secret("ROUNDTABLE_PROJECT"), get_secret("ROUNDTABLE_PROJECT")
     watcher_key, drafter_key = get_secret("SIGNAL_WATCHER_KEY"), get_secret("DRAFTER_KEY")
     company_slug = slugify(company["name"])
@@ -1146,7 +1145,7 @@ async def roundtable_event_draft(request: "DraftRequest", company: dict[str, Any
         if claimed is None: task_error = roundtable.last_error or "Could not claim drafting task"
         elif isinstance(claimed, dict): task_version = claimed.get("version", task_version)
     else: task_error = "Task was not available to Drafter"
-    fetched = await roundtable.call("get_task", drafter_key, {"project": project, "task_id": task_id, "expected_version": task_version})
+    fetched = await roundtable.call("get_task", drafter_key, {"task_id": task_id})
     read_result = await roundtable.call("read_file", drafter_key, {"bank": bank, "path": file_path})
     if fetched is None or read_result is None: task_error = task_error or roundtable.last_error or "Could not read task input"
     draft_path = f"drafts/{request.event_id}.md"
@@ -1155,20 +1154,27 @@ async def roundtable_event_draft(request: "DraftRequest", company: dict[str, Any
     if write_draft is None: task_error = task_error or roundtable.last_error or "Draft file write failed"
     status = "blocked" if task_error else "done"
     task_result = {"summary": "Cited draft prepared" if status == "done" else "Draft handoff failed", "sources": versions, "data": {"event_id": request.event_id}}
-    await roundtable.call("update_task", drafter_key, {"task_id": task_id, "expected_version": task_version, "status": status, "progress": 100 if status == "done" else 0, "result": task_result if status == "done" else {"error": task_error}})
-    while asyncio.get_running_loop().time() < deadline:
-        latest = await roundtable.call("get_task", watcher_key, {"project": project, "task_id": task_id})
-        if isinstance(latest, dict): status = latest.get("status", status)
-        if status in {"done", "blocked"}: break
-        await asyncio.sleep(min(1.5, max(0, deadline - asyncio.get_running_loop().time())))
-    if status not in {"done", "blocked"}: status = "timeout"
-    return {"connected": True, "task_id": task_id, "status": status, "sources": versions}
+    status, close_error = await roundtable_close_task(watcher_key, drafter_key, task_id, task_version, status, task_result if status == "done" else {"error": task_error}, "Cited draft written")
+    return {"connected": True, "task_id": task_id, "status": status, "sources": versions, "reason": task_error or close_error or ""}
+
+
+async def roundtable_close_task(watcher_key: str, drafter_key: str, task_id: str, version: Any, status: str, result: dict[str, Any], progress: str) -> tuple[str, str | None]:
+    """The Drafter closes its task, then the Signal Watcher reads the status back, so the app shows
+    what Roundtable recorded. update_task takes progress as text, and get_task takes only task_id
+    (any other field is rejected as "Invalid arguments", which left every task open before)."""
+    updated = await roundtable.call("update_task", drafter_key, {"task_id": task_id, "expected_version": version, "status": status, "progress": progress if status == "done" else "", "result": result})
+    if updated is None:
+        return "not closed", roundtable.last_error or "Could not close the task"
+    latest = await roundtable.call("get_task", watcher_key, {"task_id": task_id})
+    return (latest.get("status", status) if isinstance(latest, dict) else status), None
 
 
 def extract_version(result: Any) -> str | None:
     if not isinstance(result, dict):
         return None
-    return result.get("version_id") or result.get("version") or (result.get("file", {}).get("version") if isinstance(result.get("file"), dict) else None)
+    version = result.get("version_id") or result.get("version") or (result.get("file", {}).get("version") if isinstance(result.get("file"), dict) else None)
+    # write_file returns the version as an object; the app links to its id.
+    return str(version.get("id")) if isinstance(version, dict) and version.get("id") else version if isinstance(version, str) else None
 
 
 def extract_task_id(result: Any) -> str | None:
@@ -1357,7 +1363,6 @@ async def roundtable_lp_update(fund: dict[str, Any], sources: list[dict[str, Any
     watcher_key, drafter_key = get_secret("SIGNAL_WATCHER_KEY"), get_secret("DRAFTER_KEY")
     quarter = f"{date.today().year}-Q{((date.today().month-1)//3)+1}"
     path = f"lp-updates/{quarter}.md"
-    deadline = asyncio.get_running_loop().time() + 25
     wrote = await roundtable.call("write_file", watcher_key, {"bank": bank, "path": path, "content": output.get("markdown", output.get("text", "")), "message": f"LP update for {fund['name']}"})
     if wrote is None:
         return {"connected": False, "reason": roundtable.last_error or "LP update save failed"}
@@ -1372,17 +1377,11 @@ async def roundtable_lp_update(fund: dict[str, Any], sources: list[dict[str, Any
     expected = item.get("version") if item else task.get("version") if isinstance(task, dict) else None
     claim = await roundtable.call("claim_task", drafter_key, {"project": project, "task_id": task_id, "expected_version": expected})
     if isinstance(claim, dict): expected = claim.get("version", expected)
-    await roundtable.call("get_task", drafter_key, {"project": project, "task_id": task_id, "expected_version": expected})
+    await roundtable.call("get_task", drafter_key, {"task_id": task_id})
     await roundtable.call("read_file", drafter_key, {"bank": bank, "path": path})
-    await roundtable.call("update_task", drafter_key, {"task_id": task_id, "expected_version": expected, "status": "done", "progress": 100, "result": {"summary": "LP update prepared", "sources": versions, "data": {"fund_slug": fund["slug"]}}})
-    status = "done"
-    while asyncio.get_running_loop().time() < deadline:
-        latest = await roundtable.call("get_task", watcher_key, {"project": project, "task_id": task_id})
-        if isinstance(latest, dict): status = latest.get("status", status)
-        if status in {"done", "blocked"}: break
-        await asyncio.sleep(min(1.5, max(0, deadline-asyncio.get_running_loop().time())))
+    status, close_error = await roundtable_close_task(watcher_key, drafter_key, task_id, expected, "done", {"summary": "LP update prepared", "sources": versions, "data": {"fund_slug": fund["slug"]}}, "LP update written")
     history = await roundtable_files(watcher_key, bank, path)
-    return {"connected": True, "task_id": task_id, "status": status, "sources": versions, "history": history or []}
+    return {"connected": True, "task_id": task_id, "status": status, "sources": versions, "history": history or [], "reason": close_error or ""}
 
 
 def build_eval_events() -> list[dict[str, Any]]:

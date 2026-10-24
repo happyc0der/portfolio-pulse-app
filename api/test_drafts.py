@@ -48,6 +48,19 @@ def test_headings_and_label_lines_are_kept_without_citations():
     assert dropped == 1
 
 
+def test_partner_note_always_has_three_bold_label_bullets():
+    raw = ("- **What happened:** News about Eliyan [1].\n"
+           "- **Why it matters for our position:** The reported sale may affect our position [1].\n"
+           "- **What to ask the founder:** What is the timeline [1]?")
+    text, dropped, cited = citation_checked_text(raw, [{"number": 1}], "partner_note")
+    lines = text.splitlines()
+    assert len(lines) == 3
+    assert lines[0].startswith("- **What happened:**")
+    assert lines[1].startswith("- **Why it matters for our position:**")
+    assert lines[2].startswith("- **What to ask the founder:**")
+    assert dropped == 0 and cited == [1]
+
+
 def test_citation_after_the_full_stop_stays_with_its_sentence():
     text, dropped, _ = citation_checked_text("Reco raised $55M. [1] Uncited claim.", [{"number": 1}], "partner_note")
     assert text == "Reco raised $55M. [1]"

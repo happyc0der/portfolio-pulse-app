@@ -1,4 +1,4 @@
-from api.main import article_is_relevant, deduplicate_articles, filter_company_articles, sanitize_article, sum_credits
+from api.main import article_is_relevant, deduplicate_articles, filter_company_articles, sanitize_article, sum_credits, looks_non_english
 
 
 def article(**kwargs):
@@ -55,3 +55,27 @@ def test_mislabelled_non_english_titles_are_filtered():
     ])
     assert [a["title"] for a in kept] == ["Starcloud raises $250M"]
     assert language == 1 and irrelevant == 0
+
+
+def test_relevance_uses_company_name_or_domain_word_in_title_or_summary():
+    company = {"name": "Starcloud", "website": "https://www.starcloud.com"}
+    assert article_is_relevant(company, {"title": "Starcloud raises $250M"})
+    assert article_is_relevant(company, {"title": "Space compute startup raises $250M", "ai_summary": "Starcloud announced the financing."})
+    assert not article_is_relevant(company, {"title": "Space compute startup raises $250M", "ai_summary": "A different company's financing."})
+
+
+def test_filter_counts_irrelevant_and_non_english_separately():
+    company = {"name": "Starcloud", "website": "https://starcloud.com"}
+    kept, irrelevant, language = filter_company_articles(company, [
+        {"title": "Starcloud raises $250M", "original_language": "EN"},
+        {"title": "Other company raises $100M", "original_language": "EN"},
+        {"title": "Starcloud en la carrera por los datos", "original_language": "EN"},
+    ])
+    assert len(kept) == 1
+    assert irrelevant == 1
+    assert language == 1
+
+
+def test_credit_summing_handles_empty_and_fractional_responses():
+    assert sum_credits([]) == 0
+    assert sum_credits([{"credits": 1.5}, {"credits": 2.25}, {"credits": None}]) == 3.75
