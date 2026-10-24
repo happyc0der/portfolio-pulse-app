@@ -126,7 +126,7 @@ def citation_metrics(text: str, sources: list[dict[str, Any]], splitter: Any) ->
 # trace's retrieval and tool steps returned, up to about 6,000 characters. Our prompt carries every
 # source inside one long JSON message, so the judge saw only the first one or two. Each trace now
 # gets a retrieval span listing the numbered sources, so a rubric can check citations against
-# {context}, and an LLM span for the call itself.
+# {context}, and an LLM span for the call itself, all sent as one spans ingest (see send_trace).
 CONTEXT_LIMIT = 5800
 _pending_traces: set[asyncio.Task[Any]] = set()
 
@@ -155,27 +155,34 @@ def retrieval_query(messages: list[dict[str, str]]) -> str:
         return "akta.pro portfolio sources"
 
 
-async def send_trace(prism: Any, *, trace_id: str, session_id: str, run_name: str, model: str, messages: list[dict[str, str]], output: str, sources: list[dict[str, Any]], metadata: dict[str, Any], started_at: datetime, latency_ms: int, tokens_in: int, tokens_out: int) -> None:
-    """Record the call with the SDK, then attach its retrieval and LLM spans to the same trace."""
+async def send_trace(*, trace_id: str, session_id: str, run_name: str, model: str, messages: list[dict[str, str]], raw_output: str, output: str, sources: list[dict[str, Any]], metadata: dict[str, Any], started_at: datetime, latency_ms: int, tokens_in: int, tokens_out: int) -> None:
+    """Send one run as spans, the way the SDK's own handlers do. PRISM builds the trace from them:
+    its input and output come from the root span, {context} from the akta_sources step, and tokens
+    and cost from the LLM step. (A separate /api/traces record for the same id races the spans: the
+    first one to arrive wins, which dropped spans on some traces and swapped the output on others.)"""
     global last_tracing_error
     try:
-        prism.trace_llm(model=model, input_messages=messages, output=output, latency_ms=latency_ms, token_count_input=tokens_in, token_count_output=tokens_out, agent_id=run_name, agent_name=run_name, session_id=session_id, trace_id=trace_id, metadata=metadata)
-        await asyncio.to_thread(prism.flush, 10.0)
         ended_at = started_at + timedelta(milliseconds=latency_ms)
+        root_id = str(uuid.uuid4())
+        start, end = started_at.isoformat(), ended_at.isoformat()
         spans = [
-            {"span_id": str(uuid.uuid4()), "name": "akta_sources", "span_type": "tool", "input_text": retrieval_query(messages),
-             "output_text": sources_context(sources), "start_time": started_at.isoformat(), "end_time": started_at.isoformat(),
-             "duration_ms": 0, "status": "ok"},
-            {"span_id": str(uuid.uuid4()), "name": "nicrron_chat", "span_type": "llm", "model": model,
-             "input_text": messages[-1]["content"][:10000], "output_text": output, "start_time": started_at.isoformat(),
-             "end_time": ended_at.isoformat(), "duration_ms": latency_ms, "status": "ok",
+            {"span_id": root_id, "parent_span_id": None, "name": run_name, "span_type": "agent",
+             "input_text": messages[-1]["content"][:10000], "output_text": output, "start_time": start, "end_time": end,
+             "duration_ms": latency_ms, "status": "ok", "model": model, "metadata": metadata},
+            {"span_id": str(uuid.uuid4()), "parent_span_id": root_id, "name": "akta_sources", "span_type": "tool",
+             "input_text": retrieval_query(messages), "output_text": sources_context(sources), "start_time": start,
+             "end_time": start, "duration_ms": 0, "status": "ok", "metadata": {"source_count": len(sources)}},
+            {"span_id": str(uuid.uuid4()), "parent_span_id": root_id, "name": "nicrron_chat", "span_type": "llm",
+             "input_text": json.dumps(messages, ensure_ascii=False)[:10000], "output_text": raw_output[:10000],
+             "start_time": start, "end_time": end, "duration_ms": latency_ms, "status": "ok", "model": model,
              "token_count_input": tokens_in, "token_count_output": tokens_out},
         ]
         host, project_id = prism_settings()
         async with httpx.AsyncClient(timeout=15) as client:
             response = await client.post(f"{host.rstrip('/')}/api/spans/ingest", headers={"X-PRISMtrace-Key": get_secret("PRISMTRACE_API_KEY")},
-                                         json={"trace_id": trace_id, "project_id": project_id, "session_id": session_id, "spans": spans})
-        last_tracing_error = None if response.status_code == 200 else f"PRISM spans ingest returned {response.status_code}"
+                                         json={"trace_id": trace_id, "project_id": project_id, "session_id": session_id,
+                                               "metadata": {"agent_name": run_name, "agent_id": run_name, **metadata}, "spans": spans})
+        last_tracing_error = None if response.status_code == 200 else f"PRISM spans ingest returned {response.status_code}: {response.text[:200]}"
     except Exception as exc:
         last_tracing_error = f"{type(exc).__name__}: {exc}"
 
@@ -203,12 +210,11 @@ async def traced_chat(*, messages: list[dict[str, str]], model: str, run_name: s
     trace_metadata = {**metadata, "nicrron_generation_id": generation_id}
     if version == "v2":
         trace_metadata["raw_output"] = raw_text[:4000]
-    prism = get_prism_client()
-    if prism is not None:
+    if prism_enabled():
         # Traced in the background so a slow PRISM never delays the draft.
         task = asyncio.create_task(send_trace(
-            prism, trace_id=str(uuid.uuid4()), session_id=session_id or secrets.token_hex(12), run_name=run_name,
-            model=body.get("model") or model, messages=messages, output=output_text, sources=sources,
+            trace_id=str(uuid.uuid4()), session_id=session_id or secrets.token_hex(12), run_name=run_name,
+            model=body.get("model") or model, messages=messages, raw_output=raw_text, output=output_text, sources=sources,
             metadata=trace_metadata, started_at=started_at, latency_ms=elapsed_ms,
             tokens_in=input_tokens or 0, tokens_out=output_tokens or 0))
         _pending_traces.add(task)
